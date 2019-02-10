@@ -1,0 +1,29 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2019-01-18T19:18:44Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "datasync:Describe*", 
+                        "datasync:List*", 
+                        "ec2:DescribeSecurityGroups", 
+                        "ec2:DescribeSubnets", 
+                        "elasticfilesystem:DescribeFileSystems", 
+                        "elasticfilesystem:DescribeMountTargets", 
+                        "iam:GetRole", 
+                        "iam:ListRoles", 
+                        "logs:DescribeLogGroups", 
+                        "s3:ListAllMyBuckets", 
+                        "s3:ListBucket"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

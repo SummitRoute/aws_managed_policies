@@ -1,0 +1,30 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2017-11-14T22:39:11Z", 
+        "VersionId": "v3", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "NotAction": [
+                        "iam:*", 
+                        "organizations:*"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "iam:CreateServiceLinkedRole", 
+                        "iam:DeleteServiceLinkedRole", 
+                        "iam:ListRoles", 
+                        "organizations:DescribeOrganization"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

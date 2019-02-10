@@ -1,0 +1,21 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2017-02-17T22:18:13Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "polly:SynthesizeSpeech"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

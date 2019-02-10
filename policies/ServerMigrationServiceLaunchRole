@@ -1,0 +1,40 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-11-26T19:53:06Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "ec2:ModifyInstanceAttribute", 
+                        "ec2:StopInstances", 
+                        "ec2:StartInstances", 
+                        "ec2:TerminateInstances"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Condition": {
+                        "ForAllValues:StringLike": {
+                            "ec2:ResourceTag/aws:cloudformation:stack-id": "arn:aws:cloudformation:*:*:stack/sms-app-*/*"
+                        }
+                    }
+                }, 
+                {
+                    "Action": "ec2:CreateTags", 
+                    "Resource": "arn:aws:ec2:*:*:instance/*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "ec2:RunInstances", 
+                        "ec2:Describe*"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

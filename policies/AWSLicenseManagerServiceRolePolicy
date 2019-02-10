@@ -1,0 +1,98 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-11-26T19:02:53Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "s3:GetBucketLocation", 
+                        "s3:ListBucket"
+                    ], 
+                    "Resource": [
+                        "arn:aws:s3:::aws-license-manager-service-*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "S3BucketPermissions1"
+                }, 
+                {
+                    "Action": [
+                        "s3:ListAllMyBuckets"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "S3BucketPermissions2"
+                }, 
+                {
+                    "Action": [
+                        "s3:PutObject"
+                    ], 
+                    "Resource": [
+                        "arn:aws:s3:::aws-license-manager-service-*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "S3ObjectPermissions"
+                }, 
+                {
+                    "Action": [
+                        "sns:Publish"
+                    ], 
+                    "Resource": [
+                        "arn:aws:sns:*:*:aws-license-manager-service-*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "SNSAccountPermissions"
+                }, 
+                {
+                    "Action": [
+                        "sns:ListTopics"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "SNSTopicPermissions"
+                }, 
+                {
+                    "Action": [
+                        "ec2:DescribeInstances", 
+                        "ec2:DescribeImages", 
+                        "ec2:DescribeHosts"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "EC2Permissions"
+                }, 
+                {
+                    "Action": [
+                        "ssm:ListInventoryEntries", 
+                        "ssm:GetInventory", 
+                        "ssm:CreateAssociation"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "SSMPermissions"
+                }, 
+                {
+                    "Action": [
+                        "organizations:ListAWSServiceAccessForOrganization", 
+                        "organizations:DescribeOrganization"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "OrganizationPermissions"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

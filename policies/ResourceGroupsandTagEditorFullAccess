@@ -1,0 +1,25 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-04-03T18:56:09Z", 
+        "VersionId": "v3", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "tag:getResources", 
+                        "tag:getTagKeys", 
+                        "tag:getTagValues", 
+                        "tag:TagResources", 
+                        "tag:UntagResources", 
+                        "tag:AddResourceTags", 
+                        "tag:RemoveResourceTags"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

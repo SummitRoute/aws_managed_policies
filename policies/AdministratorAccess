@@ -1,0 +1,17 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2015-02-06T18:39:46Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": "*", 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

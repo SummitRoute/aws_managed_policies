@@ -1,0 +1,59 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-05-29T22:08:02Z", 
+        "VersionId": "v3", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "s3:ListBucket", 
+                        "s3:GetObject", 
+                        "s3:ListObjects"
+                    ], 
+                    "Resource": [
+                        "arn:aws:s3:::deeplens*/*", 
+                        "arn:aws:s3:::deeplens*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "DeepLensS3ObjectAccess"
+                }, 
+                {
+                    "Action": [
+                        "logs:CreateLogStream", 
+                        "logs:DescribeLogStreams", 
+                        "logs:PutLogEvents", 
+                        "logs:CreateLogGroup"
+                    ], 
+                    "Resource": "arn:aws:logs:*:*:log-group:/aws/greengrass/*", 
+                    "Effect": "Allow", 
+                    "Sid": "DeepLensGreenGrassCloudWatchAccess"
+                }, 
+                {
+                    "Action": [
+                        "deeplens:*"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "DeepLensAccess"
+                }, 
+                {
+                    "Action": [
+                        "kinesisvideo:DescribeStream", 
+                        "kinesisvideo:CreateStream", 
+                        "kinesisvideo:GetDataEndpoint", 
+                        "kinesisvideo:PutMedia"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "DeepLensKinesisVideoAccess"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

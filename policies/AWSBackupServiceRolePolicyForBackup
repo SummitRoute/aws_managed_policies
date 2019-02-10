@@ -1,0 +1,98 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2019-01-10T21:01:28Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "dynamodb:DescribeTable", 
+                        "dynamodb:CreateBackup"
+                    ], 
+                    "Resource": "arn:aws:dynamodb:*:*:table/*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "dynamodb:DescribeBackup", 
+                        "dynamodb:DeleteBackup"
+                    ], 
+                    "Resource": "arn:aws:dynamodb:*:*:table/*/backup/*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "rds:AddTagsToResource", 
+                        "rds:ListTagsForResource", 
+                        "rds:DescribeDBSnapshots", 
+                        "rds:CreateDBSnapshot", 
+                        "rds:CopyDBSnapshot", 
+                        "rds:DescribeDBInstances"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "rds:DeleteDBSnapshot"
+                    ], 
+                    "Resource": [
+                        "arn:aws:rds:*:*:snapshot:awsbackup:*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "storagegateway:CreateSnapshot"
+                    ], 
+                    "Resource": "arn:aws:storagegateway:*:*:gateway/*/volume/*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "ec2:CreateTags", 
+                        "ec2:DeleteSnapshot"
+                    ], 
+                    "Resource": "arn:aws:ec2:*::snapshot/*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "ec2:DescribeSnapshots"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "elasticfilesystem:Backup"
+                    ], 
+                    "Resource": "arn:aws:elasticfilesystem:*:*:file-system/*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "ec2:CreateSnapshot", 
+                        "ec2:DeleteSnapshot", 
+                        "ec2:DescribeVolumes", 
+                        "ec2:DescribeSnapshots"
+                    ], 
+                    "Resource": [
+                        "arn:aws:ec2:*::snapshot/*", 
+                        "arn:aws:ec2:*:*:volume/*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "tag:GetResources"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-05-11T21:49:24Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "iot1click:Describe*", 
+                        "iot1click:Get*", 
+                        "iot1click:List*"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

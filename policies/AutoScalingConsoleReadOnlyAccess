@@ -1,0 +1,49 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2017-01-12T19:48:53Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "ec2:DescribeVpcs", 
+                        "ec2:DescribeVpcClassicLink", 
+                        "ec2:DescribeAvailabilityZones", 
+                        "ec2:DescribeSubnets"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": "elasticloadbalancing:Describe*", 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "cloudwatch:ListMetrics", 
+                        "cloudwatch:GetMetricStatistics", 
+                        "cloudwatch:Describe*"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": "autoscaling:Describe*", 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "sns:ListSubscriptions", 
+                        "sns:ListTopics"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

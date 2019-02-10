@@ -1,0 +1,27 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2016-08-30T19:15:19Z", 
+        "VersionId": "v3", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "config:Get*", 
+                        "config:Describe*", 
+                        "config:Deliver*", 
+                        "config:List*", 
+                        "tag:GetResources", 
+                        "tag:GetTagKeys", 
+                        "cloudtrail:DescribeTrails", 
+                        "cloudtrail:GetTrailStatus", 
+                        "cloudtrail:LookupEvents"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

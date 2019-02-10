@@ -1,0 +1,22 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-10-31T23:49:32Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "sso-directory:Search*", 
+                        "sso-directory:Describe*", 
+                        "sso-directory:List*"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "AWSSSODirectoryReadOnly"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

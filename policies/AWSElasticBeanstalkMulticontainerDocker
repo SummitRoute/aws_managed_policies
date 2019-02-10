@@ -1,0 +1,29 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2016-06-06T23:45:37Z", 
+        "VersionId": "v2", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "ecs:Poll", 
+                        "ecs:StartTask", 
+                        "ecs:StopTask", 
+                        "ecs:DiscoverPollEndpoint", 
+                        "ecs:StartTelemetrySession", 
+                        "ecs:RegisterContainerInstance", 
+                        "ecs:DeregisterContainerInstance", 
+                        "ecs:DescribeContainerInstances", 
+                        "ecs:Submit*", 
+                        "ecs:DescribeTasks"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "ECSAccess"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

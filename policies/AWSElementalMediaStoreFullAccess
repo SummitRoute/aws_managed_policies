@@ -1,0 +1,24 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-03-05T23:15:31Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "mediastore:*"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Condition": {
+                        "Bool": {
+                            "aws:SecureTransport": "true"
+                        }
+                    }
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

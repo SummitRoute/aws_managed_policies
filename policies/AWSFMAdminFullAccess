@@ -1,0 +1,23 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-05-09T18:06:18Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "fms:*", 
+                        "waf:*", 
+                        "waf-regional:*", 
+                        "elasticloadbalancing:SetWebACL", 
+                        "organizations:DescribeOrganization"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

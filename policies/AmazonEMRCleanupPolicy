@@ -1,0 +1,29 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2017-09-26T23:54:19Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "ec2:DescribeInstances", 
+                        "ec2:DescribeSpotInstanceRequests", 
+                        "ec2:ModifyInstanceAttribute", 
+                        "ec2:TerminateInstances", 
+                        "ec2:CancelSpotInstanceRequests", 
+                        "ec2:DeleteNetworkInterface", 
+                        "ec2:DescribeInstanceAttribute", 
+                        "ec2:DescribeVolumeStatus", 
+                        "ec2:DescribeVolumes", 
+                        "ec2:DetachVolume", 
+                        "ec2:DeleteVolume"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

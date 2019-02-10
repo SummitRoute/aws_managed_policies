@@ -1,0 +1,26 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-09-20T20:17:09Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": "elasticloadbalancing:Describe*", 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "ec2:DescribeInstances", 
+                        "ec2:DescribeClassicLinkInstances", 
+                        "ec2:DescribeSecurityGroups"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

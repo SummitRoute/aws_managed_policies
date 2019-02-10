@@ -1,0 +1,33 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-10-04T22:50:32Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "redshift:GetClusterCredentials", 
+                        "redshift:ListSchemas", 
+                        "redshift:ListTables", 
+                        "redshift:ListDatabases", 
+                        "redshift:ExecuteQuery", 
+                        "redshift:FetchResults", 
+                        "redshift:CancelQuery", 
+                        "redshift:DescribeClusters", 
+                        "redshift:DescribeQuery", 
+                        "redshift:DescribeTable", 
+                        "redshift:ViewQueriesFromConsole", 
+                        "redshift:DescribeSavedQueries", 
+                        "redshift:CreateSavedQuery", 
+                        "redshift:DeleteSavedQueries", 
+                        "redshift:ModifySavedQuery"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

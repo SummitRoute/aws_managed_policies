@@ -1,0 +1,21 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2016-11-18T01:09:10Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "cloudwatch:DescribeAlarms", 
+                        "elasticmapreduce:ListInstanceGroups", 
+                        "elasticmapreduce:ModifyInstanceGroups"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

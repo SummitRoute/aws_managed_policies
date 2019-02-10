@@ -1,0 +1,26 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2017-11-10T22:03:49Z", 
+        "VersionId": "v2", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "states:ListStateMachines", 
+                        "states:ListActivities", 
+                        "states:DescribeStateMachine", 
+                        "states:DescribeStateMachineForExecution", 
+                        "states:ListExecutions", 
+                        "states:DescribeExecution", 
+                        "states:GetExecutionHistory", 
+                        "states:DescribeActivity"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

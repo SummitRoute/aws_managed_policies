@@ -1,0 +1,41 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-11-15T21:32:53Z", 
+        "VersionId": "v4", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "codebuild:StartBuild", 
+                        "codebuild:StopBuild", 
+                        "codebuild:BatchGet*", 
+                        "codebuild:Get*", 
+                        "codebuild:List*", 
+                        "codecommit:GetBranch", 
+                        "codecommit:GetCommit", 
+                        "codecommit:GetRepository", 
+                        "codecommit:ListBranches", 
+                        "cloudwatch:GetMetricStatistics", 
+                        "events:DescribeRule", 
+                        "events:ListTargetsByRule", 
+                        "events:ListRuleNamesByTarget", 
+                        "logs:GetLogEvents", 
+                        "s3:GetBucketLocation", 
+                        "s3:ListAllMyBuckets"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "ssm:PutParameter"
+                    ], 
+                    "Resource": "arn:aws:ssm:*:*:parameter/CodeBuild/*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

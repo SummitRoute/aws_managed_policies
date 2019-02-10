@@ -1,0 +1,29 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-11-20T23:06:16Z", 
+        "VersionId": "v3", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "xray:GetSamplingRules", 
+                        "xray:GetSamplingTargets", 
+                        "xray:GetSamplingStatisticSummaries", 
+                        "xray:BatchGetTraces", 
+                        "xray:GetServiceGraph", 
+                        "xray:GetTraceGraph", 
+                        "xray:GetTraceSummaries", 
+                        "xray:GetGroups", 
+                        "xray:GetGroup"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

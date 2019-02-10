@@ -1,0 +1,23 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-08-23T22:46:59Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "cloudwatch:GetMetricData", 
+                        "autoscaling:DescribeAutoScalingGroups", 
+                        "autoscaling:DescribeScheduledActions", 
+                        "autoscaling:BatchPutScheduledUpdateGroupAction", 
+                        "autoscaling:BatchDeleteScheduledAction"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

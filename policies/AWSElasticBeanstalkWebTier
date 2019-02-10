@@ -1,0 +1,47 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2017-12-19T21:52:56Z", 
+        "VersionId": "v5", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "s3:Get*", 
+                        "s3:List*", 
+                        "s3:PutObject"
+                    ], 
+                    "Resource": [
+                        "arn:aws:s3:::elasticbeanstalk-*", 
+                        "arn:aws:s3:::elasticbeanstalk-*/*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "BucketAccess"
+                }, 
+                {
+                    "Action": [
+                        "xray:PutTraceSegments", 
+                        "xray:PutTelemetryRecords"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "XRayAccess"
+                }, 
+                {
+                    "Action": [
+                        "logs:PutLogEvents", 
+                        "logs:CreateLogStream", 
+                        "logs:DescribeLogStreams", 
+                        "logs:DescribeLogGroups"
+                    ], 
+                    "Resource": [
+                        "arn:aws:logs:*:*:log-group:/aws/elasticbeanstalk*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "CloudWatchLogsAccess"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

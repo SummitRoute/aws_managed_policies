@@ -1,0 +1,49 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2017-08-09T20:49:14Z", 
+        "VersionId": "v2", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "ssm:GetAutomationExecution", 
+                        "ssm:GetParameters", 
+                        "ssm:ListCommands", 
+                        "ssm:SendCommand", 
+                        "ssm:StartAutomationExecution"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "Stmt1477803259000"
+                }, 
+                {
+                    "Action": [
+                        "lambda:InvokeFunction"
+                    ], 
+                    "Resource": [
+                        "arn:aws:lambda:*:*:function:SSM*", 
+                        "arn:aws:lambda:*:*:function:*:SSM*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "Stmt1477803259001"
+                }, 
+                {
+                    "Action": [
+                        "states:DescribeExecution", 
+                        "states:StartExecution"
+                    ], 
+                    "Resource": [
+                        "arn:aws:states:*:*:stateMachine:SSM*", 
+                        "arn:aws:states:*:*:execution:SSM*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "Stmt1477803259002"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

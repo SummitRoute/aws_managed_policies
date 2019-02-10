@@ -1,0 +1,24 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2016-02-11T23:15:26Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "logs:CreateLogGroup", 
+                        "logs:CreateLogStream", 
+                        "logs:PutLogEvents", 
+                        "ec2:CreateNetworkInterface", 
+                        "ec2:DescribeNetworkInterfaces", 
+                        "ec2:DeleteNetworkInterface"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

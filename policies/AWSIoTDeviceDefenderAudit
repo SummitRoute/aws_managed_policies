@@ -1,0 +1,35 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-07-18T21:17:40Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "iot:GetLoggingOptions", 
+                        "iot:GetV2LoggingOptions", 
+                        "iot:ListCACertificates", 
+                        "iot:ListCertificates", 
+                        "iot:DescribeCACertificate", 
+                        "iot:DescribeCertificate", 
+                        "iot:ListPolicies", 
+                        "iot:GetPolicy", 
+                        "iot:GetEffectivePolicies", 
+                        "cognito-identity:GetIdentityPoolRoles", 
+                        "iam:ListRolePolicies", 
+                        "iam:ListAttachedRolePolicies", 
+                        "iam:GetPolicy", 
+                        "iam:GetPolicyVersion", 
+                        "iam:GetRolePolicy"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

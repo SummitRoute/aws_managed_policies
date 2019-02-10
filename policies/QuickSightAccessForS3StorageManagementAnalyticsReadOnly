@@ -1,0 +1,31 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2017-07-21T00:02:14Z", 
+        "VersionId": "v3", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "s3:GetObject", 
+                        "s3:GetObjectMetadata"
+                    ], 
+                    "Resource": [
+                        "arn:aws:s3:::s3-analytics-export-shared-*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "s3:GetAnalyticsConfiguration", 
+                        "s3:ListAllMyBuckets", 
+                        "s3:GetBucketLocation"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

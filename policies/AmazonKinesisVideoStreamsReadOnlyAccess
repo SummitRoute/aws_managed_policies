@@ -1,0 +1,21 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2017-12-01T23:14:32Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "kinesisvideo:Describe*", 
+                        "kinesisvideo:Get*", 
+                        "kinesisvideo:List*"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

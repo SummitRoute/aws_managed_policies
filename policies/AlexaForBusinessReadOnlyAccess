@@ -1,0 +1,22 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-06-25T23:52:33Z", 
+        "VersionId": "v2", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "a4b:Get*", 
+                        "a4b:List*", 
+                        "a4b:Describe*", 
+                        "a4b:Search*"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

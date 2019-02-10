@@ -1,0 +1,22 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-08-24T18:40:55Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "firehose:PutRecord", 
+                        "firehose:PutRecordBatch"
+                    ], 
+                    "Resource": [
+                        "arn:aws:firehose:*:*:deliverystream/aws-waf-logs-*"
+                    ], 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

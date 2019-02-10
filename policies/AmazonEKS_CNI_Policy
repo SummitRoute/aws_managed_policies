@@ -1,0 +1,35 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-05-31T22:16:00Z", 
+        "VersionId": "v2", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "ec2:AssignPrivateIpAddresses", 
+                        "ec2:AttachNetworkInterface", 
+                        "ec2:CreateNetworkInterface", 
+                        "ec2:DeleteNetworkInterface", 
+                        "ec2:DescribeInstances", 
+                        "ec2:DescribeNetworkInterfaces", 
+                        "ec2:DetachNetworkInterface", 
+                        "ec2:ModifyNetworkInterfaceAttribute"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "ec2:CreateTags"
+                    ], 
+                    "Resource": [
+                        "arn:aws:ec2:*:*:network-interface/*"
+                    ], 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

@@ -1,0 +1,81 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2016-12-21T02:01:55Z", 
+        "VersionId": "v4", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "cloudwatch:PutMetricData"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "MetricsAccess"
+                }, 
+                {
+                    "Action": [
+                        "xray:PutTraceSegments", 
+                        "xray:PutTelemetryRecords"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "XRayAccess"
+                }, 
+                {
+                    "Action": [
+                        "sqs:ChangeMessageVisibility", 
+                        "sqs:DeleteMessage", 
+                        "sqs:ReceiveMessage", 
+                        "sqs:SendMessage"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "QueueAccess"
+                }, 
+                {
+                    "Action": [
+                        "s3:Get*", 
+                        "s3:List*", 
+                        "s3:PutObject"
+                    ], 
+                    "Resource": [
+                        "arn:aws:s3:::elasticbeanstalk-*", 
+                        "arn:aws:s3:::elasticbeanstalk-*/*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "BucketAccess"
+                }, 
+                {
+                    "Action": [
+                        "dynamodb:BatchGetItem", 
+                        "dynamodb:BatchWriteItem", 
+                        "dynamodb:DeleteItem", 
+                        "dynamodb:GetItem", 
+                        "dynamodb:PutItem", 
+                        "dynamodb:Query", 
+                        "dynamodb:Scan", 
+                        "dynamodb:UpdateItem"
+                    ], 
+                    "Resource": [
+                        "arn:aws:dynamodb:*:*:table/*-stack-AWSEBWorkerCronLeaderRegistry*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "DynamoPeriodicTasks"
+                }, 
+                {
+                    "Action": [
+                        "logs:PutLogEvents", 
+                        "logs:CreateLogStream"
+                    ], 
+                    "Resource": [
+                        "arn:aws:logs:*:*:log-group:/aws/elasticbeanstalk*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "CloudWatchLogsAccess"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

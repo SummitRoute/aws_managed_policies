@@ -1,0 +1,60 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-04-09T22:06:23Z", 
+        "VersionId": "v5", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "cloudformation:DescribeStackResource", 
+                        "cloudformation:DescribeStackResources", 
+                        "cloudformation:DescribeStacks"
+                    ], 
+                    "Resource": [
+                        "arn:aws:cloudformation:*:*:stack/awseb-*", 
+                        "arn:aws:cloudformation:*:*:stack/eb-*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "AllowCloudformationReadOperationsOnElasticBeanstalkStacks"
+                }, 
+                {
+                    "Action": [
+                        "autoscaling:DescribeAutoScalingGroups", 
+                        "autoscaling:DescribeAutoScalingInstances", 
+                        "autoscaling:DescribeNotificationConfigurations", 
+                        "autoscaling:DescribeScalingActivities", 
+                        "autoscaling:PutNotificationConfiguration", 
+                        "ec2:DescribeInstanceStatus", 
+                        "ec2:AssociateAddress", 
+                        "ec2:DescribeAddresses", 
+                        "ec2:DescribeInstances", 
+                        "ec2:DescribeSecurityGroups", 
+                        "elasticloadbalancing:DescribeInstanceHealth", 
+                        "elasticloadbalancing:DescribeLoadBalancers", 
+                        "elasticloadbalancing:DescribeTargetHealth", 
+                        "elasticloadbalancing:DescribeTargetGroups", 
+                        "sqs:GetQueueAttributes", 
+                        "sqs:GetQueueUrl", 
+                        "sns:Publish"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "AllowOperations"
+                }, 
+                {
+                    "Action": [
+                        "logs:DescribeLogStreams", 
+                        "logs:CreateLogStream", 
+                        "logs:PutLogEvents"
+                    ], 
+                    "Resource": "arn:aws:logs:*:*:log-group:/aws/elasticbeanstalk/*:log-stream:*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

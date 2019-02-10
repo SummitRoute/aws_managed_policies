@@ -1,0 +1,193 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-10-04T19:28:06Z", 
+        "VersionId": "v8", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "events:PutTargets", 
+                        "events:RemoveTargets", 
+                        "events:PutRule", 
+                        "events:DeleteRule", 
+                        "events:DescribeRule"
+                    ], 
+                    "Resource": [
+                        "arn:aws:events:*:*:rule/awscodestar-*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "ProjectEventRules"
+                }, 
+                {
+                    "Action": [
+                        "cloudformation:*Stack*", 
+                        "cloudformation:CreateChangeSet", 
+                        "cloudformation:ExecuteChangeSet", 
+                        "cloudformation:DeleteChangeSet", 
+                        "cloudformation:GetTemplate"
+                    ], 
+                    "Resource": [
+                        "arn:aws:cloudformation:*:*:stack/awscodestar-*", 
+                        "arn:aws:cloudformation:*:*:stack/awseb-*", 
+                        "arn:aws:cloudformation:*:*:stack/aws-cloud9-*", 
+                        "arn:aws:cloudformation:*:aws:transform/CodeStar*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "ProjectStack"
+                }, 
+                {
+                    "Action": [
+                        "cloudformation:GetTemplateSummary", 
+                        "cloudformation:DescribeChangeSet"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "ProjectStackTemplate"
+                }, 
+                {
+                    "Action": [
+                        "s3:GetObject"
+                    ], 
+                    "Resource": [
+                        "arn:aws:s3:::awscodestar-*/*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "ProjectQuickstarts"
+                }, 
+                {
+                    "Action": [
+                        "s3:*"
+                    ], 
+                    "Resource": [
+                        "arn:aws:s3:::aws-codestar-*", 
+                        "arn:aws:s3:::aws-codestar-*/*", 
+                        "arn:aws:s3:::elasticbeanstalk-*", 
+                        "arn:aws:s3:::elasticbeanstalk-*/*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "ProjectS3Buckets"
+                }, 
+                {
+                    "Action": [
+                        "codestar:*", 
+                        "codecommit:*", 
+                        "codepipeline:*", 
+                        "codedeploy:*", 
+                        "codebuild:*", 
+                        "ec2:RunInstances", 
+                        "autoscaling:*", 
+                        "cloudwatch:Put*", 
+                        "ec2:*", 
+                        "elasticbeanstalk:*", 
+                        "elasticloadbalancing:*", 
+                        "iam:ListRoles", 
+                        "logs:*", 
+                        "sns:*", 
+                        "cloud9:CreateEnvironmentEC2", 
+                        "cloud9:DeleteEnvironment", 
+                        "cloud9:DescribeEnvironment*", 
+                        "cloud9:ListEnvironments"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "ProjectServices"
+                }, 
+                {
+                    "Action": [
+                        "iam:AttachRolePolicy", 
+                        "iam:CreateRole", 
+                        "iam:DeleteRole", 
+                        "iam:DeleteRolePolicy", 
+                        "iam:DetachRolePolicy", 
+                        "iam:GetRole", 
+                        "iam:PassRole", 
+                        "iam:PutRolePolicy", 
+                        "iam:SetDefaultPolicyVersion", 
+                        "iam:CreatePolicy", 
+                        "iam:DeletePolicy", 
+                        "iam:AddRoleToInstanceProfile", 
+                        "iam:CreateInstanceProfile", 
+                        "iam:DeleteInstanceProfile", 
+                        "iam:RemoveRoleFromInstanceProfile"
+                    ], 
+                    "Resource": [
+                        "arn:aws:iam::*:role/CodeStarWorker*", 
+                        "arn:aws:iam::*:policy/CodeStarWorker*", 
+                        "arn:aws:iam::*:instance-profile/awscodestar-*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "ProjectWorkerRoles"
+                }, 
+                {
+                    "Action": [
+                        "iam:AttachUserPolicy", 
+                        "iam:DetachUserPolicy"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Condition": {
+                        "ArnEquals": {
+                            "iam:PolicyArn": [
+                                "arn:aws:iam::*:policy/CodeStar_*"
+                            ]
+                        }
+                    }, 
+                    "Sid": "ProjectTeamMembers"
+                }, 
+                {
+                    "Action": [
+                        "iam:CreatePolicy", 
+                        "iam:DeletePolicy", 
+                        "iam:CreatePolicyVersion", 
+                        "iam:DeletePolicyVersion", 
+                        "iam:ListEntitiesForPolicy", 
+                        "iam:ListPolicyVersions", 
+                        "iam:GetPolicy", 
+                        "iam:GetPolicyVersion"
+                    ], 
+                    "Resource": [
+                        "arn:aws:iam::*:policy/CodeStar_*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "ProjectRoles"
+                }, 
+                {
+                    "Action": [
+                        "iam:ListAttachedRolePolicies"
+                    ], 
+                    "Resource": [
+                        "arn:aws:iam::*:role/aws-codestar-service-role", 
+                        "arn:aws:iam::*:role/service-role/aws-codestar-service-role"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "InspectServiceRole"
+                }, 
+                {
+                    "Action": [
+                        "iam:CreateServiceLinkedRole"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:AWSServiceName": "cloud9.amazonaws.com"
+                        }
+                    }, 
+                    "Sid": "IAMLinkRole"
+                }, 
+                {
+                    "Action": [
+                        "config:DescribeConfigRules"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "DescribeConfigRuleForARN"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

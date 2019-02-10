@@ -1,0 +1,76 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2019-02-05T18:20:34Z", 
+        "VersionId": "v5", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "iam:AttachRolePolicy", 
+                        "iam:CreateRole", 
+                        "iam:DeleteRole", 
+                        "iam:DeleteRolePolicy", 
+                        "iam:DetachRolePolicy", 
+                        "iam:GetRole", 
+                        "iam:ListRolePolicies", 
+                        "iam:PutRolePolicy", 
+                        "iam:ListAttachedRolePolicies", 
+                        "iam:UpdateRole"
+                    ], 
+                    "Resource": [
+                        "arn:aws:iam::*:role/aws-reserved/sso.amazonaws.com/*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "iam:ListRoles"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "ListRolesInTheAccount"
+                }, 
+                {
+                    "Action": [
+                        "iam:DeleteServiceLinkedRole", 
+                        "iam:GetServiceLinkedRoleDeletionStatus", 
+                        "iam:DeleteRole", 
+                        "iam:GetRole"
+                    ], 
+                    "Resource": [
+                        "arn:aws:iam::*:role/aws-service-role/sso.amazonaws.com/AWSServiceRoleForSSO"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "AllowDeletionOfServiceLinkedRoleForSSO"
+                }, 
+                {
+                    "Action": [
+                        "iam:CreateSAMLProvider", 
+                        "iam:GetSAMLProvider", 
+                        "iam:UpdateSAMLProvider", 
+                        "iam:DeleteSAMLProvider"
+                    ], 
+                    "Resource": [
+                        "arn:aws:iam::*:saml-provider/AWSSSO_*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "organizations:DescribeAccount", 
+                        "organizations:DescribeOrganization", 
+                        "organizations:ListAccounts"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

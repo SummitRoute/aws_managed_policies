@@ -1,0 +1,40 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2017-08-08T18:58:57Z", 
+        "VersionId": "v4", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "catalog-user:*", 
+                        "s3:GetObject", 
+                        "servicecatalog:DescribeProduct", 
+                        "servicecatalog:DescribeProductView", 
+                        "servicecatalog:DescribeProvisioningParameters", 
+                        "servicecatalog:ListLaunchPaths", 
+                        "servicecatalog:SearchProducts"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "servicecatalog:ListRecordHistory", 
+                        "servicecatalog:DescribeProvisionedProduct", 
+                        "servicecatalog:DescribeRecord", 
+                        "servicecatalog:ScanProvisionedProducts"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Condition": {
+                        "StringEquals": {
+                            "servicecatalog:userLevel": "self"
+                        }
+                    }
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

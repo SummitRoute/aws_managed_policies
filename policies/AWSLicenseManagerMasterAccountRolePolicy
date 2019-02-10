@@ -1,0 +1,137 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-11-26T19:03:51Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "s3:GetBucketLocation", 
+                        "s3:ListBucket", 
+                        "s3:GetLifecycleConfiguration", 
+                        "s3:PutLifecycleConfiguration", 
+                        "s3:GetBucketPolicy", 
+                        "s3:PutBucketPolicy"
+                    ], 
+                    "Resource": [
+                        "arn:aws:s3:::aws-license-manager-service-*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "S3BucketPermissions"
+                }, 
+                {
+                    "Action": [
+                        "s3:AbortMultipartUpload", 
+                        "s3:PutObject", 
+                        "s3:GetObject", 
+                        "s3:ListBucketMultipartUploads", 
+                        "s3:ListMultipartUploadParts"
+                    ], 
+                    "Resource": [
+                        "arn:aws:s3:::aws-license-manager-service-*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "S3ObjectPermissions1"
+                }, 
+                {
+                    "Action": [
+                        "s3:DeleteObject"
+                    ], 
+                    "Resource": [
+                        "arn:aws:s3:::aws-license-manager-service-*/resource_sync/*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "S3ObjectPermissions2"
+                }, 
+                {
+                    "Action": [
+                        "athena:GetQueryExecution", 
+                        "athena:GetQueryResults", 
+                        "athena:StartQueryExecution"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "AthenaPermissions"
+                }, 
+                {
+                    "Action": [
+                        "glue:GetTable", 
+                        "glue:GetPartition", 
+                        "glue:GetPartitions"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "GluePermissions"
+                }, 
+                {
+                    "Action": [
+                        "organizations:DescribeOrganization", 
+                        "organizations:ListAccounts", 
+                        "organizations:DescribeAccount", 
+                        "organizations:ListChildren", 
+                        "organizations:ListParents", 
+                        "organizations:ListAccountsForParent", 
+                        "organizations:ListRoots", 
+                        "organizations:ListAWSServiceAccessForOrganization"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "OrganizationPermissions"
+                }, 
+                {
+                    "Action": [
+                        "ram:GetResourceShares", 
+                        "ram:GetResourceShareAssociations", 
+                        "ram:TagResource"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "RAMPermissions1"
+                }, 
+                {
+                    "Action": [
+                        "ram:CreateResourceShare"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Condition": {
+                        "StringEquals": {
+                            "aws:RequestTag/Service": "LicenseManager"
+                        }
+                    }, 
+                    "Sid": "RAMPermissions2"
+                }, 
+                {
+                    "Action": [
+                        "ram:AssociateResourceShare", 
+                        "ram:DisassociateResourceShare", 
+                        "ram:UpdateResourceShare", 
+                        "ram:DeleteResourceShare"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Condition": {
+                        "StringEquals": {
+                            "ram:ResourceTag/Service": "LicenseManager"
+                        }
+                    }, 
+                    "Sid": "RAMPermissions3"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

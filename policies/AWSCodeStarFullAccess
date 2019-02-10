@@ -1,0 +1,36 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-01-10T21:54:06Z", 
+        "VersionId": "v2", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "codestar:*", 
+                        "ec2:DescribeKeyPairs", 
+                        "ec2:DescribeVpcs", 
+                        "ec2:DescribeSubnets", 
+                        "cloud9:DescribeEnvironment*", 
+                        "cloud9:ValidateEnvironmentName"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "CodeStarEC2"
+                }, 
+                {
+                    "Action": [
+                        "cloudformation:DescribeStack*", 
+                        "cloudformation:GetTemplateSummary"
+                    ], 
+                    "Resource": [
+                        "arn:aws:cloudformation:*:*:stack/awscodestar-*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "CodeStarCF"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

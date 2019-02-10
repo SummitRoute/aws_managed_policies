@@ -1,0 +1,32 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2017-05-17T23:09:13Z", 
+        "VersionId": "v5", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "ecs:CreateCluster", 
+                        "ecs:DeregisterContainerInstance", 
+                        "ecs:DiscoverPollEndpoint", 
+                        "ecs:Poll", 
+                        "ecs:RegisterContainerInstance", 
+                        "ecs:StartTelemetrySession", 
+                        "ecs:UpdateContainerInstancesState", 
+                        "ecs:Submit*", 
+                        "ecr:GetAuthorizationToken", 
+                        "ecr:BatchCheckLayerAvailability", 
+                        "ecr:GetDownloadUrlForLayer", 
+                        "ecr:BatchGetImage", 
+                        "logs:CreateLogStream", 
+                        "logs:PutLogEvents"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

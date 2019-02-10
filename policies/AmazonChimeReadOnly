@@ -1,0 +1,35 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-03-30T16:24:43Z", 
+        "VersionId": "v4", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "chime:ListAccounts", 
+                        "chime:GetAccount", 
+                        "chime:GetAccountSettings", 
+                        "chime:ListUsers", 
+                        "chime:GetUser", 
+                        "chime:GetUserByEmail", 
+                        "chime:ListDomains", 
+                        "chime:GetDomain", 
+                        "chime:ListGroups", 
+                        "chime:ListDirectories", 
+                        "chime:ListCDRBucket", 
+                        "chime:GetCDRBucket", 
+                        "chime:ListDelegates", 
+                        "chime:GetAccountResource", 
+                        "chime:ValidateDelegate", 
+                        "chime:ListAccountUsageReportData", 
+                        "chime:GetUserActivityReportData"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

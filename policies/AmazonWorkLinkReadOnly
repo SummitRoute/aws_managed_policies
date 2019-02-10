@@ -1,0 +1,20 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2019-01-23T19:07:10Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "worklink:Describe*", 
+                        "worklink:List*"
+                    ], 
+                    "Resource": "arn:aws:worklink:*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

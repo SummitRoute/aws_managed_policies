@@ -1,0 +1,26 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-07-17T16:41:07Z", 
+        "VersionId": "v2", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "polly:DescribeVoices", 
+                        "polly:GetLexicon", 
+                        "polly:GetSpeechSynthesisTask", 
+                        "polly:ListLexicons", 
+                        "polly:ListSpeechSynthesisTasks", 
+                        "polly:SynthesizeSpeech"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

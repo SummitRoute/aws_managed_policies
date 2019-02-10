@@ -1,0 +1,58 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2019-01-10T18:52:26Z", 
+        "VersionId": "v5", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "ds:AuthorizeApplication", 
+                        "ds:CheckAlias", 
+                        "ds:CreateAlias", 
+                        "ds:CreateDirectory", 
+                        "ds:CreateIdentityPoolDirectory", 
+                        "ds:CreateDomain", 
+                        "ds:DeleteAlias", 
+                        "ds:DeleteDirectory", 
+                        "ds:DescribeDirectories", 
+                        "ds:ExtendDirectory", 
+                        "ds:GetDirectoryLimits", 
+                        "ds:ListAuthorizedApplications", 
+                        "ds:UnauthorizeApplication", 
+                        "ec2:AuthorizeSecurityGroupEgress", 
+                        "ec2:AuthorizeSecurityGroupIngress", 
+                        "ec2:CreateNetworkInterface", 
+                        "ec2:CreateSecurityGroup", 
+                        "ec2:CreateSubnet", 
+                        "ec2:CreateTags", 
+                        "ec2:CreateVpc", 
+                        "ec2:DeleteSecurityGroup", 
+                        "ec2:DeleteSubnet", 
+                        "ec2:DeleteVpc", 
+                        "ec2:DescribeAvailabilityZones", 
+                        "ec2:DescribeDomains", 
+                        "ec2:DescribeRouteTables", 
+                        "ec2:DescribeSubnets", 
+                        "ec2:DescribeVpcs", 
+                        "ec2:RevokeSecurityGroupEgress", 
+                        "ec2:RevokeSecurityGroupIngress", 
+                        "kms:DescribeKey", 
+                        "kms:ListAliases", 
+                        "lambda:ListFunctions", 
+                        "route53:ChangeResourceRecordSets", 
+                        "route53:ListHostedZones", 
+                        "route53:ListResourceRecordSets", 
+                        "route53domains:CheckDomainAvailability", 
+                        "route53domains:ListDomains", 
+                        "ses:*", 
+                        "workmail:*"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

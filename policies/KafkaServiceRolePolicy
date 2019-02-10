@@ -1,0 +1,24 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-11-15T23:31:48Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "ec2:CreateNetworkInterface", 
+                        "ec2:DescribeNetworkInterfaces", 
+                        "ec2:CreateNetworkInterfacePermission", 
+                        "ec2:AttachNetworkInterface", 
+                        "ec2:DeleteNetworkInterface", 
+                        "ec2:DetachNetworkInterface"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

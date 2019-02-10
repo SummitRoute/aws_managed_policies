@@ -1,0 +1,25 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2019-02-06T22:16:02Z", 
+        "VersionId": "v3", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "cloudformation:Describe*", 
+                        "cloudformation:EstimateTemplateCost", 
+                        "cloudformation:Get*", 
+                        "cloudformation:List*", 
+                        "cloudformation:ValidateTemplate", 
+                        "cloudformation:DetectStackDrift", 
+                        "cloudformation:DetectStackResourceDrift"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

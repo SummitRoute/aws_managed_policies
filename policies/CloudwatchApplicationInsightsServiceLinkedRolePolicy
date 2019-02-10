@@ -1,0 +1,98 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-12-01T16:22:12Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "cloudwatch:DescribeAlarmHistory", 
+                        "cloudwatch:DescribeAlarms", 
+                        "cloudwatch:GetMetricData", 
+                        "cloudwatch:ListMetrics", 
+                        "cloudwatch:PutMetricAlarm", 
+                        "cloudwatch:DeleteAlarms"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "logs:GetLogEvents", 
+                        "logs:DescribeLogStreams", 
+                        "logs:DescribeLogGroups"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "events:DescribeRule"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "cloudFormation:CreateStack", 
+                        "cloudFormation:UpdateStack", 
+                        "cloudFormation:DeleteStack", 
+                        "cloudFormation:DescribeStacks", 
+                        "cloudFormation:ListStackResources"
+                    ], 
+                    "Resource": [
+                        "arn:aws:cloudformation:*:*:stack/ApplicationInsights-*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "tag:GetResources"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "resource-groups:ListGroupResources", 
+                        "resource-groups:GetGroupQuery"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "elasticloadbalancing:DescribeLoadBalancers", 
+                        "elasticloadbalancing:DescribeTargetGroups", 
+                        "elasticloadbalancing:DescribeTargetHealth"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "autoscaling:DescribeAutoScalingGroups"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

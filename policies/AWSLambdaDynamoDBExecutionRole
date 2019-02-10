@@ -1,0 +1,25 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2015-04-09T15:09:29Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "dynamodb:DescribeStream", 
+                        "dynamodb:GetRecords", 
+                        "dynamodb:GetShardIterator", 
+                        "dynamodb:ListStreams", 
+                        "logs:CreateLogGroup", 
+                        "logs:CreateLogStream", 
+                        "logs:PutLogEvents"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

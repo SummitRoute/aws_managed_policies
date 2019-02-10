@@ -1,0 +1,22 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2017-10-05T18:10:56Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "crowd:GetTask"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "CrowdApiReadOnlyAccess"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

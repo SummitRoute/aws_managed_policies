@@ -1,0 +1,23 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2016-06-03T14:23:15Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "opsworks:DescribeStackProvisioningParameters", 
+                        "opsworks:DescribeStacks", 
+                        "opsworks:RegisterInstance"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

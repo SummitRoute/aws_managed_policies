@@ -1,0 +1,21 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-11-28T10:40:24Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "iam:DeleteServiceLinkedRole", 
+                        "iam:GetServiceLinkedRoleDeletionStatus", 
+                        "iam:GetRole"
+                    ], 
+                    "Resource": "arn:*:iam::*:role/aws-service-role/s3.data-source.lustre.fsx.amazonaws.com/AWSServiceRoleForFSxS3Access_*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

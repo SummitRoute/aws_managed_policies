@@ -1,0 +1,116 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2017-11-20T20:02:27Z", 
+        "VersionId": "v4", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "codecommit:BatchGet*", 
+                        "codecommit:Get*", 
+                        "codecommit:List*", 
+                        "codecommit:Create*", 
+                        "codecommit:DeleteBranch", 
+                        "codecommit:Describe*", 
+                        "codecommit:Put*", 
+                        "codecommit:Post*", 
+                        "codecommit:Merge*", 
+                        "codecommit:Test*", 
+                        "codecommit:Update*", 
+                        "codecommit:GitPull", 
+                        "codecommit:GitPush"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "events:DeleteRule", 
+                        "events:DescribeRule", 
+                        "events:DisableRule", 
+                        "events:EnableRule", 
+                        "events:PutRule", 
+                        "events:PutTargets", 
+                        "events:RemoveTargets", 
+                        "events:ListTargetsByRule"
+                    ], 
+                    "Resource": "arn:aws:events:*:*:rule/codecommit*", 
+                    "Effect": "Allow", 
+                    "Sid": "CloudWatchEventsCodeCommitRulesAccess"
+                }, 
+                {
+                    "Action": [
+                        "sns:Subscribe", 
+                        "sns:Unsubscribe"
+                    ], 
+                    "Resource": "arn:aws:sns:*:*:codecommit*", 
+                    "Effect": "Allow", 
+                    "Sid": "SNSTopicAndSubscriptionAccess"
+                }, 
+                {
+                    "Action": [
+                        "sns:ListTopics", 
+                        "sns:ListSubscriptionsByTopic", 
+                        "sns:GetTopicAttributes"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "SNSTopicAndSubscriptionReadAccess"
+                }, 
+                {
+                    "Action": [
+                        "lambda:ListFunctions"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "LambdaReadOnlyListAccess"
+                }, 
+                {
+                    "Action": [
+                        "iam:ListUsers"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "IAMReadOnlyListAccess"
+                }, 
+                {
+                    "Action": [
+                        "iam:ListAccessKeys", 
+                        "iam:ListSSHPublicKeys", 
+                        "iam:ListServiceSpecificCredentials", 
+                        "iam:ListAccessKeys", 
+                        "iam:GetSSHPublicKey"
+                    ], 
+                    "Resource": "arn:aws:iam::*:user/${aws:username}", 
+                    "Effect": "Allow", 
+                    "Sid": "IAMReadOnlyConsoleAccess"
+                }, 
+                {
+                    "Action": [
+                        "iam:DeleteSSHPublicKey", 
+                        "iam:GetSSHPublicKey", 
+                        "iam:ListSSHPublicKeys", 
+                        "iam:UpdateSSHPublicKey", 
+                        "iam:UploadSSHPublicKey"
+                    ], 
+                    "Resource": "arn:aws:iam::*:user/${aws:username}", 
+                    "Effect": "Allow", 
+                    "Sid": "IAMUserSSHKeys"
+                }, 
+                {
+                    "Action": [
+                        "iam:CreateServiceSpecificCredential", 
+                        "iam:UpdateServiceSpecificCredential", 
+                        "iam:DeleteServiceSpecificCredential", 
+                        "iam:ResetServiceSpecificCredential"
+                    ], 
+                    "Resource": "arn:aws:iam::*:user/${aws:username}", 
+                    "Effect": "Allow", 
+                    "Sid": "IAMSelfManageServiceSpecificCredentials"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

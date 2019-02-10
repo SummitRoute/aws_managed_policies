@@ -1,0 +1,46 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-07-02T21:48:12Z", 
+        "VersionId": "v3", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "dynamodb:GetItem", 
+                        "dynamodb:PutItem", 
+                        "dynamodb:UpdateItem", 
+                        "dynamodb:DeleteItem", 
+                        "dynamodb:DescribeTable", 
+                        "dynamodb:Scan", 
+                        "dynamodb:DescribeStream", 
+                        "dynamodb:GetRecords", 
+                        "dynamodb:GetShardIterator", 
+                        "dynamodb:DescribeTimeToLive", 
+                        "application-autoscaling:RegisterScalableTarget", 
+                        "application-autoscaling:DescribeScalableTargets", 
+                        "application-autoscaling:PutScalingPolicy", 
+                        "application-autoscaling:DescribeScalingPolicies"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "iam:CreateServiceLinkedRole"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:AWSServiceName": [
+                                "dynamodb.application-autoscaling.amazonaws.com"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

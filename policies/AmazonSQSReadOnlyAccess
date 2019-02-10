@@ -1,0 +1,22 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-08-20T23:35:49Z", 
+        "VersionId": "v2", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "sqs:GetQueueAttributes", 
+                        "sqs:GetQueueUrl", 
+                        "sqs:ListDeadLetterSourceQueues", 
+                        "sqs:ListQueues"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

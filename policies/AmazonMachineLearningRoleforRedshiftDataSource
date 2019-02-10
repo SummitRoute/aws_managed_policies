@@ -1,0 +1,34 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2015-04-09T17:05:26Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "ec2:AuthorizeSecurityGroupIngress", 
+                        "ec2:CreateSecurityGroup", 
+                        "ec2:DescribeInternetGateways", 
+                        "ec2:DescribeSecurityGroups", 
+                        "ec2:RevokeSecurityGroupIngress", 
+                        "redshift:AuthorizeClusterSecurityGroupIngress", 
+                        "redshift:CreateClusterSecurityGroup", 
+                        "redshift:DescribeClusters", 
+                        "redshift:DescribeClusterSecurityGroups", 
+                        "redshift:ModifyCluster", 
+                        "redshift:RevokeClusterSecurityGroupIngress", 
+                        "s3:GetBucketLocation", 
+                        "s3:GetBucketPolicy", 
+                        "s3:GetObject", 
+                        "s3:PutBucketPolicy", 
+                        "s3:PutObject"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

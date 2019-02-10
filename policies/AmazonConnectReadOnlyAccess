@@ -1,0 +1,27 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-10-17T21:00:44Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "connect:Get*", 
+                        "connect:Describe*", 
+                        "connect:List*", 
+                        "ds:DescribeDirectories"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": "connect:GetFederationTokens", 
+                    "Resource": "*", 
+                    "Effect": "Deny"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

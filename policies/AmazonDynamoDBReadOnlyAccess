@@ -1,0 +1,63 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-01-09T19:46:57Z", 
+        "VersionId": "v7", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "application-autoscaling:DescribeScalableTargets", 
+                        "application-autoscaling:DescribeScalingActivities", 
+                        "application-autoscaling:DescribeScalingPolicies", 
+                        "cloudwatch:DescribeAlarmHistory", 
+                        "cloudwatch:DescribeAlarms", 
+                        "cloudwatch:DescribeAlarmsForMetric", 
+                        "cloudwatch:GetMetricStatistics", 
+                        "cloudwatch:ListMetrics", 
+                        "datapipeline:DescribeObjects", 
+                        "datapipeline:DescribePipelines", 
+                        "datapipeline:GetPipelineDefinition", 
+                        "datapipeline:ListPipelines", 
+                        "datapipeline:QueryObjects", 
+                        "dynamodb:BatchGetItem", 
+                        "dynamodb:DescribeTable", 
+                        "dynamodb:GetItem", 
+                        "dynamodb:ListTables", 
+                        "dynamodb:Query", 
+                        "dynamodb:Scan", 
+                        "dynamodb:DescribeReservedCapacity", 
+                        "dynamodb:DescribeReservedCapacityOfferings", 
+                        "dynamodb:ListTagsOfResource", 
+                        "dynamodb:DescribeTimeToLive", 
+                        "dynamodb:DescribeLimits", 
+                        "dynamodb:ListGlobalTables", 
+                        "dynamodb:DescribeGlobalTable", 
+                        "dynamodb:DescribeBackup", 
+                        "dynamodb:ListBackups", 
+                        "dynamodb:DescribeContinuousBackups", 
+                        "dax:Describe*", 
+                        "dax:List*", 
+                        "dax:GetItem", 
+                        "dax:BatchGetItem", 
+                        "dax:Query", 
+                        "dax:Scan", 
+                        "ec2:DescribeVpcs", 
+                        "ec2:DescribeSubnets", 
+                        "ec2:DescribeSecurityGroups", 
+                        "iam:GetRole", 
+                        "iam:ListRoles", 
+                        "sns:ListSubscriptionsByTopic", 
+                        "sns:ListTopics", 
+                        "lambda:ListFunctions", 
+                        "lambda:ListEventSourceMappings", 
+                        "lambda:GetFunctionConfiguration"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

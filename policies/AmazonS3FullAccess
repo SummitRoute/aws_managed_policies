@@ -1,0 +1,17 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2015-02-06T18:40:58Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": "s3:*", 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

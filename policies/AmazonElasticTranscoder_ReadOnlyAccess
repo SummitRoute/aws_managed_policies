@@ -1,0 +1,25 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-06-07T21:09:56Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "elastictranscoder:Read*", 
+                        "elastictranscoder:List*", 
+                        "s3:ListAllMyBuckets", 
+                        "s3:ListBucket", 
+                        "s3:ListObjects", 
+                        "iam:ListRoles", 
+                        "sns:ListTopics"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

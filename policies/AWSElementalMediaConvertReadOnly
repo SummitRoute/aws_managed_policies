@@ -1,0 +1,24 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-06-25T19:25:14Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "mediaconvert:Get*", 
+                        "mediaconvert:List*", 
+                        "mediaconvert:DescribeEndpoints", 
+                        "s3:ListAllMyBuckets", 
+                        "s3:ListBucket", 
+                        "s3:ListObjects"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

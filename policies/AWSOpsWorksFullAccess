@@ -1,0 +1,34 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2015-02-06T18:40:48Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "opsworks:*", 
+                        "ec2:DescribeAvailabilityZones", 
+                        "ec2:DescribeKeyPairs", 
+                        "ec2:DescribeSecurityGroups", 
+                        "ec2:DescribeAccountAttributes", 
+                        "ec2:DescribeAvailabilityZones", 
+                        "ec2:DescribeSecurityGroups", 
+                        "ec2:DescribeSubnets", 
+                        "ec2:DescribeVpcs", 
+                        "elasticloadbalancing:DescribeInstanceHealth", 
+                        "elasticloadbalancing:DescribeLoadBalancers", 
+                        "iam:GetRolePolicy", 
+                        "iam:ListInstanceProfiles", 
+                        "iam:ListRoles", 
+                        "iam:ListUsers", 
+                        "iam:PassRole"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

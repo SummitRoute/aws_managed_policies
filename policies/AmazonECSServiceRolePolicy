@@ -1,0 +1,50 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-10-18T23:18:18Z", 
+        "VersionId": "v5", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "ec2:AttachNetworkInterface", 
+                        "ec2:CreateNetworkInterface", 
+                        "ec2:CreateNetworkInterfacePermission", 
+                        "ec2:DeleteNetworkInterface", 
+                        "ec2:DeleteNetworkInterfacePermission", 
+                        "ec2:Describe*", 
+                        "ec2:DetachNetworkInterface", 
+                        "elasticloadbalancing:DeregisterInstancesFromLoadBalancer", 
+                        "elasticloadbalancing:DeregisterTargets", 
+                        "elasticloadbalancing:Describe*", 
+                        "elasticloadbalancing:RegisterInstancesWithLoadBalancer", 
+                        "elasticloadbalancing:RegisterTargets", 
+                        "route53:ChangeResourceRecordSets", 
+                        "route53:CreateHealthCheck", 
+                        "route53:DeleteHealthCheck", 
+                        "route53:Get*", 
+                        "route53:List*", 
+                        "route53:UpdateHealthCheck", 
+                        "servicediscovery:DeregisterInstance", 
+                        "servicediscovery:Get*", 
+                        "servicediscovery:List*", 
+                        "servicediscovery:RegisterInstance", 
+                        "servicediscovery:UpdateInstanceCustomHealthStatus"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "ECSTaskManagement"
+                }, 
+                {
+                    "Action": [
+                        "ec2:CreateTags"
+                    ], 
+                    "Resource": "arn:aws:ec2:*:*:network-interface/*", 
+                    "Effect": "Allow", 
+                    "Sid": "ECSTagging"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-08-24T19:22:44Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "organizations:ListAccounts", 
+                        "organizations:ListAccountsForParent", 
+                        "organizations:ListChildren", 
+                        "organizations:DescribeAccount", 
+                        "organizations:DescribeOrganization", 
+                        "organizations:ListRoots", 
+                        "organizations:ListParents"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "organizations:EnableAWSServiceAccess", 
+                        "organizations:DisableAWSServiceAccess"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Condition": {
+                        "ForAllValues:StringLike": {
+                            "organizations:ServicePrincipal": [
+                                "tag.amazonaws.com"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

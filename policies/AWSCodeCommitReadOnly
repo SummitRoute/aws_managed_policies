@@ -1,0 +1,70 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2017-11-20T20:01:56Z", 
+        "VersionId": "v2", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "codecommit:BatchGet*", 
+                        "codecommit:Get*", 
+                        "codecommit:Describe*", 
+                        "codecommit:List*", 
+                        "codecommit:GitPull"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "events:DescribeRule", 
+                        "events:ListTargetsByRule"
+                    ], 
+                    "Resource": "arn:aws:events:*:*:rule/codecommit*", 
+                    "Effect": "Allow", 
+                    "Sid": "CloudWatchEventsCodeCommitRulesReadOnlyAccess"
+                }, 
+                {
+                    "Action": [
+                        "sns:ListTopics", 
+                        "sns:ListSubscriptionsByTopic", 
+                        "sns:GetTopicAttributes"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "SNSSubscriptionAccess"
+                }, 
+                {
+                    "Action": [
+                        "lambda:ListFunctions"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "LambdaReadOnlyListAccess"
+                }, 
+                {
+                    "Action": [
+                        "iam:ListUsers"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "IAMReadOnlyListAccess"
+                }, 
+                {
+                    "Action": [
+                        "iam:ListAccessKeys", 
+                        "iam:ListSSHPublicKeys", 
+                        "iam:ListServiceSpecificCredentials", 
+                        "iam:ListAccessKeys", 
+                        "iam:GetSSHPublicKey"
+                    ], 
+                    "Resource": "arn:aws:iam::*:user/${aws:username}", 
+                    "Effect": "Allow", 
+                    "Sid": "IAMReadOnlyConsoleAccess"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

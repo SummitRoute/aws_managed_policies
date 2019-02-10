@@ -1,0 +1,21 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2017-11-30T16:47:16Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "a4b:RegisterDevice", 
+                        "a4b:CompleteRegistration", 
+                        "a4b:SearchDevices"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

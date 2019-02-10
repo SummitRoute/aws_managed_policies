@@ -1,0 +1,24 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2016-01-14T18:37:08Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": "events:*", 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "CloudWatchEventsFullAccess"
+                }, 
+                {
+                    "Action": "iam:PassRole", 
+                    "Resource": "arn:aws:iam::*:role/AWS_Events_Invoke_Targets", 
+                    "Effect": "Allow", 
+                    "Sid": "IAMPassRoleForCloudWatchEvents"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

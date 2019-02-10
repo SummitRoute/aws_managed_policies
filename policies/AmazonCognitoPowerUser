@@ -1,0 +1,24 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2016-06-02T16:57:56Z", 
+        "VersionId": "v2", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "cognito-identity:*", 
+                        "cognito-idp:*", 
+                        "cognito-sync:*", 
+                        "iam:ListRoles", 
+                        "iam:ListOpenIdConnectProviders", 
+                        "sns:ListPlatformApplications"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

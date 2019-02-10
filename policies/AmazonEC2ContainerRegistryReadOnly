@@ -1,0 +1,26 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2016-10-11T22:08:43Z", 
+        "VersionId": "v2", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "ecr:GetAuthorizationToken", 
+                        "ecr:BatchCheckLayerAvailability", 
+                        "ecr:GetDownloadUrlForLayer", 
+                        "ecr:GetRepositoryPolicy", 
+                        "ecr:DescribeRepositories", 
+                        "ecr:ListImages", 
+                        "ecr:DescribeImages", 
+                        "ecr:BatchGetImage"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

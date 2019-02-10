@@ -1,0 +1,133 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-09-25T08:05:37Z", 
+        "VersionId": "v7", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "s3:CreateBucket", 
+                        "s3:DeleteObject", 
+                        "s3:DeleteBucket", 
+                        "s3:GetObject", 
+                        "s3:HeadBucket", 
+                        "s3:ListBucket", 
+                        "s3:ListObjects", 
+                        "s3:PutBucketPolicy", 
+                        "s3:PutObject"
+                    ], 
+                    "Resource": [
+                        "arn:aws:s3:::aws-opsworks-cm-*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "ssm:DescribeInstanceInformation", 
+                        "ssm:GetCommandInvocation", 
+                        "ssm:ListCommandInvocations", 
+                        "ssm:ListCommands"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "ssm:SendCommand"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Condition": {
+                        "StringLike": {
+                            "ssm:resourceTag/aws:cloudformation:stack-name": "aws-opsworks-cm-*"
+                        }
+                    }
+                }, 
+                {
+                    "Action": [
+                        "ssm:SendCommand"
+                    ], 
+                    "Resource": [
+                        "arn:aws:ssm:*::document/*", 
+                        "arn:aws:s3:::aws-opsworks-cm-*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "ec2:AllocateAddress", 
+                        "ec2:AssociateAddress", 
+                        "ec2:AuthorizeSecurityGroupIngress", 
+                        "ec2:CreateImage", 
+                        "ec2:CreateSecurityGroup", 
+                        "ec2:CreateSnapshot", 
+                        "ec2:CreateTags", 
+                        "ec2:DeleteSecurityGroup", 
+                        "ec2:DeleteSnapshot", 
+                        "ec2:DeregisterImage", 
+                        "ec2:DescribeAccountAttributes", 
+                        "ec2:DescribeAddresses", 
+                        "ec2:DescribeImages", 
+                        "ec2:DescribeInstanceStatus", 
+                        "ec2:DescribeInstances", 
+                        "ec2:DescribeSecurityGroups", 
+                        "ec2:DescribeSnapshots", 
+                        "ec2:DescribeSubnets", 
+                        "ec2:DisassociateAddress", 
+                        "ec2:ReleaseAddress", 
+                        "ec2:RunInstances", 
+                        "ec2:StopInstances"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "ec2:TerminateInstances"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Condition": {
+                        "StringLike": {
+                            "ec2:ResourceTag/aws:cloudformation:stack-name": "aws-opsworks-cm-*"
+                        }
+                    }
+                }, 
+                {
+                    "Action": [
+                        "cloudformation:CreateStack", 
+                        "cloudformation:DeleteStack", 
+                        "cloudformation:DescribeStackEvents", 
+                        "cloudformation:DescribeStackResources", 
+                        "cloudformation:DescribeStacks", 
+                        "cloudformation:UpdateStack"
+                    ], 
+                    "Resource": [
+                        "arn:aws:cloudformation:*:*:stack/aws-opsworks-cm-*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "iam:PassRole"
+                    ], 
+                    "Resource": [
+                        "arn:aws:iam::*:role/aws-opsworks-cm-*", 
+                        "arn:aws:iam::*:role/service-role/aws-opsworks-cm-*"
+                    ], 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

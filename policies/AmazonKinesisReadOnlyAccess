@@ -1,0 +1,21 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2015-02-06T18:40:30Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "kinesis:Get*", 
+                        "kinesis:List*", 
+                        "kinesis:Describe*"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

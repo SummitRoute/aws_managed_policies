@@ -1,0 +1,62 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2016-01-07T23:44:53Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "logs:DescribeLogGroups"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "AllowDescribeOnAllLogGroups"
+                }, 
+                {
+                    "Action": [
+                        "logs:DescribeLogStreams"
+                    ], 
+                    "Resource": [
+                        "arn:aws:logs:*:*:log-group:dms-tasks-*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "AllowDescribeOfAllLogStreamsOnDmsTasksLogGroup"
+                }, 
+                {
+                    "Action": [
+                        "logs:CreateLogGroup"
+                    ], 
+                    "Resource": [
+                        "arn:aws:logs:*:*:log-group:dms-tasks-*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "AllowCreationOfDmsTasksLogGroups"
+                }, 
+                {
+                    "Action": [
+                        "logs:CreateLogStream"
+                    ], 
+                    "Resource": [
+                        "arn:aws:logs:*:*:log-group:dms-tasks-*:log-stream:dms-task-*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "AllowCreationOfDmsTaskLogStream"
+                }, 
+                {
+                    "Action": [
+                        "logs:PutLogEvents"
+                    ], 
+                    "Resource": [
+                        "arn:aws:logs:*:*:log-group:dms-tasks-*:log-stream:dms-task-*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "AllowUploadOfLogEventsToDmsTaskLogStream"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

@@ -1,0 +1,75 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2017-12-11T19:51:27Z", 
+        "VersionId": "v5", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "sns:AddPermission", 
+                        "sns:CreateTopic", 
+                        "sns:DeleteTopic", 
+                        "sns:ListTopics", 
+                        "sns:SetTopicAttributes", 
+                        "sns:GetTopicAttributes"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "s3:CreateBucket", 
+                        "s3:DeleteBucket", 
+                        "s3:ListAllMyBuckets", 
+                        "s3:PutBucketPolicy", 
+                        "s3:ListBucket", 
+                        "s3:GetObject", 
+                        "s3:GetBucketLocation", 
+                        "s3:GetBucketPolicy"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": "cloudtrail:*", 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "logs:CreateLogGroup"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "iam:PassRole", 
+                        "iam:ListRoles", 
+                        "iam:GetRolePolicy", 
+                        "iam:GetUser"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "kms:ListKeys", 
+                        "kms:ListAliases"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "lambda:ListFunctions"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

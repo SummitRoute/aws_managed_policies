@@ -1,0 +1,56 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-11-27T04:25:17Z", 
+        "VersionId": "v2", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "cloudfront:List*", 
+                        "elasticloadbalancing:List*", 
+                        "route53:List*", 
+                        "cloudfront:Describe*", 
+                        "elasticloadbalancing:Describe*", 
+                        "route53:Describe*", 
+                        "cloudwatch:Describe*", 
+                        "cloudwatch:Get*", 
+                        "cloudwatch:List*", 
+                        "cloudfront:GetDistribution*", 
+                        "globalaccelerator:ListAccelerators", 
+                        "globalaccelerator:DescribeAccelerator"
+                    ], 
+                    "Resource": [
+                        "arn:aws:elasticloadbalancing:*:*:*", 
+                        "arn:aws:cloudfront::*:*", 
+                        "arn:aws:route53:::hostedzone/*", 
+                        "arn:aws:cloudwatch:*:*:*:*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "DRTAccessProtectedResources"
+                }, 
+                {
+                    "Action": [
+                        "waf:*", 
+                        "waf-regional:*"
+                    ], 
+                    "Resource": [
+                        "arn:aws:waf:*", 
+                        "arn:aws:waf-regional:*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "DRTManageMitigations"
+                }, 
+                {
+                    "Action": [
+                        "shield:*"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "DRTManageProtections"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2015-02-06T18:40:46Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "logs:*"
+                    ], 
+                    "Resource": "arn:aws:logs:*:*:*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "s3:GetObject", 
+                        "s3:PutObject"
+                    ], 
+                    "Resource": "arn:aws:s3:::*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

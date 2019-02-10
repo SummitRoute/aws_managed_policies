@@ -1,0 +1,29 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-05-10T21:40:42Z", 
+        "VersionId": "v3", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "autoscaling:Describe*", 
+                        "cloudwatch:Describe*", 
+                        "cloudwatch:Get*", 
+                        "cloudwatch:List*", 
+                        "logs:Get*", 
+                        "logs:List*", 
+                        "logs:Describe*", 
+                        "logs:TestMetricFilter", 
+                        "logs:FilterLogEvents", 
+                        "sns:Get*", 
+                        "sns:List*"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

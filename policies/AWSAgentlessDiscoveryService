@@ -1,0 +1,75 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2016-08-02T01:35:11Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "awsconnector:RegisterConnector", 
+                        "awsconnector:GetConnectorHealth"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": "iam:GetUser", 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "s3:GetObject", 
+                        "s3:ListBucket"
+                    ], 
+                    "Resource": [
+                        "arn:aws:s3:::connector-platform-upgrade-info/*", 
+                        "arn:aws:s3:::connector-platform-upgrade-info", 
+                        "arn:aws:s3:::connector-platform-upgrade-bundles/*", 
+                        "arn:aws:s3:::connector-platform-upgrade-bundles", 
+                        "arn:aws:s3:::connector-platform-release-notes/*", 
+                        "arn:aws:s3:::connector-platform-release-notes", 
+                        "arn:aws:s3:::prod.agentless.discovery.connector.upgrade/*", 
+                        "arn:aws:s3:::prod.agentless.discovery.connector.upgrade"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "s3:PutObject", 
+                        "s3:PutObjectAcl"
+                    ], 
+                    "Resource": [
+                        "arn:aws:s3:::import-to-ec2-connector-debug-logs/*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "SNS:Publish"
+                    ], 
+                    "Resource": "arn:aws:sns:*:*:metrics-sns-topic-for-*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "Discovery:*"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "Discovery"
+                }, 
+                {
+                    "Action": [
+                        "arsenal:RegisterOnPremisesAgent"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "arsenal"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

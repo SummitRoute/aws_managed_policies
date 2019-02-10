@@ -1,0 +1,35 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2017-11-29T16:52:13Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "sns:Publish"
+                    ], 
+                    "Resource": "arn:aws:sns:*:*:AmazonRekognition*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "kinesis:PutRecord", 
+                        "kinesis:PutRecords"
+                    ], 
+                    "Resource": "arn:aws:kinesis:*:*:stream/AmazonRekognition*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "kinesisvideo:GetDataEndpoint", 
+                        "kinesisvideo:GetMedia"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

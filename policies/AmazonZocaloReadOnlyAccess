@@ -1,0 +1,22 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2015-02-06T18:41:14Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "zocalo:Describe*", 
+                        "ds:DescribeDirectories", 
+                        "ec2:DescribeVpcs", 
+                        "ec2:DescribeSubnets"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

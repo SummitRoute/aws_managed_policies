@@ -1,0 +1,22 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2015-03-24T17:22:23Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "cognito-identity:GetOpenIdTokenForDeveloperIdentity", 
+                        "cognito-identity:LookupDeveloperIdentity", 
+                        "cognito-identity:MergeDeveloperIdentities", 
+                        "cognito-identity:UnlinkDeveloperIdentity"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

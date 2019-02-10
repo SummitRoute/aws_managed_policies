@@ -1,0 +1,52 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2015-02-06T18:40:49Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "opsworks:AssignInstance", 
+                        "opsworks:CreateStack", 
+                        "opsworks:CreateLayer", 
+                        "opsworks:DeregisterInstance", 
+                        "opsworks:DescribeInstances", 
+                        "opsworks:DescribeStackProvisioningParameters", 
+                        "opsworks:DescribeStacks", 
+                        "opsworks:UnassignInstance"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "ec2:DescribeInstances"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "iam:AddUserToGroup", 
+                        "iam:CreateAccessKey", 
+                        "iam:CreateGroup", 
+                        "iam:CreateUser", 
+                        "iam:ListInstanceProfiles", 
+                        "iam:PassRole", 
+                        "iam:PutUserPolicy"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

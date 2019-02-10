@@ -1,0 +1,32 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-03-07T01:06:44Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "cloudwatch:PutMetricData", 
+                        "ec2:DescribeTags", 
+                        "logs:PutLogEvents", 
+                        "logs:DescribeLogStreams", 
+                        "logs:DescribeLogGroups", 
+                        "logs:CreateLogStream", 
+                        "logs:CreateLogGroup"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "ssm:GetParameter"
+                    ], 
+                    "Resource": "arn:aws:ssm:*:*:parameter/AmazonCloudWatch-*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2019-01-04T22:22:07Z", 
+        "VersionId": "v5", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "application-autoscaling:DescribeScalableTargets", 
+                        "application-autoscaling:DescribeScalingActivities", 
+                        "application-autoscaling:DescribeScalingPolicies", 
+                        "application-autoscaling:DescribeScheduledActions", 
+                        "aws-marketplace:ViewSubscriptions", 
+                        "aws-marketplace:ViewSubscriptions", 
+                        "cloudwatch:DescribeAlarms", 
+                        "cognito-idp:DescribeUserPool", 
+                        "cognito-idp:DescribeUserPoolClient", 
+                        "cognito-idp:ListGroups", 
+                        "cognito-idp:ListIdentityProviders", 
+                        "cognito-idp:ListUserPoolClients", 
+                        "cognito-idp:ListUserPools", 
+                        "cognito-idp:ListUsers", 
+                        "cognito-idp:ListUsersInGroup", 
+                        "ecr:Describe*", 
+                        "sagemaker:Describe*", 
+                        "sagemaker:GetSearchSuggestions", 
+                        "sagemaker:List*", 
+                        "sagemaker:Search"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

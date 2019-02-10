@@ -1,0 +1,42 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2016-11-01T19:59:46Z", 
+        "VersionId": "v5", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "codepipeline:*", 
+                        "iam:ListRoles", 
+                        "iam:PassRole", 
+                        "s3:CreateBucket", 
+                        "s3:GetBucketPolicy", 
+                        "s3:GetObject", 
+                        "s3:ListAllMyBuckets", 
+                        "s3:ListBucket", 
+                        "s3:PutBucketPolicy", 
+                        "codecommit:ListBranches", 
+                        "codecommit:ListRepositories", 
+                        "codedeploy:GetApplication", 
+                        "codedeploy:GetDeploymentGroup", 
+                        "codedeploy:ListApplications", 
+                        "codedeploy:ListDeploymentGroups", 
+                        "elasticbeanstalk:DescribeApplications", 
+                        "elasticbeanstalk:DescribeEnvironments", 
+                        "lambda:GetFunctionConfiguration", 
+                        "lambda:ListFunctions", 
+                        "opsworks:DescribeApps", 
+                        "opsworks:DescribeLayers", 
+                        "opsworks:DescribeStacks", 
+                        "cloudformation:DescribeStacks", 
+                        "cloudformation:ListChangeSets"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

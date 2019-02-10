@@ -1,0 +1,35 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2016-02-22T17:24:05Z", 
+        "VersionId": "v3", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "cloudwatch:*", 
+                        "datapipeline:*", 
+                        "dynamodb:*", 
+                        "ec2:Describe*", 
+                        "elasticmapreduce:AddJobFlowSteps", 
+                        "elasticmapreduce:Describe*", 
+                        "elasticmapreduce:ListInstance*", 
+                        "elasticmapreduce:ModifyInstanceGroups", 
+                        "rds:Describe*", 
+                        "redshift:DescribeClusters", 
+                        "redshift:DescribeClusterSecurityGroups", 
+                        "s3:*", 
+                        "sdb:*", 
+                        "sns:*", 
+                        "sqs:*"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

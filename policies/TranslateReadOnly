@@ -1,0 +1,24 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-11-27T23:29:08Z", 
+        "VersionId": "v4", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "translate:TranslateText", 
+                        "translate:GetTerminology", 
+                        "translate:ListTerminologies", 
+                        "comprehend:DetectDominantLanguage", 
+                        "cloudwatch:GetMetricStatistics", 
+                        "cloudwatch:ListMetrics"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

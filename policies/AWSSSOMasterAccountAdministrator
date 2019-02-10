@@ -1,0 +1,47 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-10-17T20:41:20Z", 
+        "VersionId": "v3", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": "iam:PassRole", 
+                    "Resource": "arn:aws:iam::*:role/aws-service-role/sso.amazonaws.com/AWSServiceRoleForSSO", 
+                    "Effect": "Allow", 
+                    "Condition": {
+                        "StringLike": {
+                            "iam:PassedToService": "sso.amazonaws.com"
+                        }
+                    }, 
+                    "Sid": "AWSSSOMasterAccountAdministrator"
+                }, 
+                {
+                    "Action": [
+                        "ds:DescribeTrusts", 
+                        "ds:UnauthorizeApplication", 
+                        "ds:DescribeDirectories", 
+                        "ds:AuthorizeApplication", 
+                        "iam:ListPolicies", 
+                        "organizations:EnableAWSServiceAccess", 
+                        "organizations:ListRoots", 
+                        "organizations:ListAccounts", 
+                        "organizations:ListOrganizationalUnitsForParent", 
+                        "organizations:ListAccountsForParent", 
+                        "organizations:DescribeOrganization", 
+                        "organizations:ListChildren", 
+                        "organizations:DescribeAccount", 
+                        "organizations:ListParents", 
+                        "sso:*", 
+                        "sso-directory:DescribeDirectory", 
+                        "ds:CreateAlias"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "AWSSSOMemberAccountAdministrator"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

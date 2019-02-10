@@ -1,0 +1,79 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-12-19T18:06:16Z", 
+        "VersionId": "v2", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "ecs:DescribeServices", 
+                        "ecs:CreateTaskSet", 
+                        "ecs:UpdateServicePrimaryTaskSet", 
+                        "ecs:DeleteTaskSet", 
+                        "cloudwatch:DescribeAlarms"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "sns:Publish"
+                    ], 
+                    "Resource": "arn:aws:sns:*:*:CodeDeployTopic_*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "elasticloadbalancing:DescribeTargetGroups", 
+                        "elasticloadbalancing:DescribeListeners", 
+                        "elasticloadbalancing:ModifyListener", 
+                        "elasticloadbalancing:DescribeRules", 
+                        "elasticloadbalancing:ModifyRule"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "lambda:InvokeFunction"
+                    ], 
+                    "Resource": "arn:aws:lambda:*:*:function:CodeDeployHook_*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "s3:GetObject", 
+                        "s3:GetObjectMetadata", 
+                        "s3:GetObjectVersion"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Condition": {
+                        "StringEquals": {
+                            "s3:ExistingObjectTag/UseWithCodeDeploy": "true"
+                        }
+                    }
+                }, 
+                {
+                    "Action": [
+                        "iam:PassRole"
+                    ], 
+                    "Resource": [
+                        "arn:aws:iam::*:role/ecsTaskExecutionRole", 
+                        "arn:aws:iam::*:role/ECSTaskExecution*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Condition": {
+                        "StringLike": {
+                            "iam:PassedToService": [
+                                "ecs-tasks.amazonaws.com"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

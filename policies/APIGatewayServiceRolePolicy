@@ -1,0 +1,27 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2018-08-10T17:57:44Z", 
+        "VersionId": "v3", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "elasticloadbalancing:AddListenerCertificates", 
+                        "elasticloadbalancing:RemoveListenerCertificates", 
+                        "elasticloadbalancing:ModifyListener", 
+                        "xray:PutTraceSegments", 
+                        "xray:PutTelemetryRecords", 
+                        "xray:GetSamplingTargets", 
+                        "xray:GetSamplingRules"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

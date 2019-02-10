@@ -1,0 +1,26 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2015-02-06T18:41:29Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "cloudhsm:CreateLunaClient", 
+                        "cloudhsm:GetClientConfiguration", 
+                        "cloudhsm:DeleteLunaClient", 
+                        "cloudhsm:DescribeLunaClient", 
+                        "cloudhsm:ModifyLunaClient", 
+                        "cloudhsm:DescribeHapg", 
+                        "cloudhsm:ModifyHapg", 
+                        "cloudhsm:GetConfig"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}
