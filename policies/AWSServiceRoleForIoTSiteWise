@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-11-19T23:28:15Z", 
-        "VersionId": "v2", 
+        "CreateDate": "2019-02-11T20:49:09Z", 
+        "VersionId": "v3", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -46,9 +46,11 @@
                     "Action": [
                         "lambda:CreateAlias", 
                         "lambda:CreateFunction", 
+                        "lambda:GetFunction", 
+                        "lambda:ListVersionsByFunction", 
                         "lambda:UpdateFunctionCode", 
                         "lambda:PublishVersion", 
-                        "lambda:ListVersionsByFunction"
+                        "lambda:UpdateAlias"
                     ], 
                     "Resource": "arn:aws:lambda:*:*:function:AWSIoTSiteWise*", 
                     "Effect": "Allow"

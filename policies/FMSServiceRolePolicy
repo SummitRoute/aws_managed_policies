@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-01-21T21:12:11Z", 
-        "VersionId": "v5", 
+        "CreateDate": "2019-02-18T19:12:31Z", 
+        "VersionId": "v6", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -20,14 +20,16 @@
                         "waf-regional:ListResourcesForWebACL", 
                         "waf-regional:AssociateWebACL", 
                         "waf-regional:DisassociateWebACL", 
-                        "elasticloadbalancing:SetWebACL"
+                        "elasticloadbalancing:SetWebACL", 
+                        "apigateway:SetWebACL"
                     ], 
                     "Resource": [
                         "arn:aws:waf:*:*:webacl/*", 
                         "arn:aws:waf-regional:*:*:webacl/*", 
                         "arn:aws:waf:*:*:rulegroup/*", 
                         "arn:aws:waf-regional:*:*:rulegroup/*", 
-                        "arn:aws:elasticloadbalancing:*:*:loadbalancer/app/*"
+                        "arn:aws:elasticloadbalancing:*:*:loadbalancer/app/*", 
+                        "arn:aws:apigateway:*::/restapis/*/stages/*"
                     ], 
                     "Effect": "Allow"
                 }, 
@@ -117,6 +119,23 @@
                     "Resource": [
                         "*"
                     ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "shield:CreateProtection", 
+                        "shield:DeleteProtection", 
+                        "shield:DescribeProtection", 
+                        "shield:ListProtections", 
+                        "shield:ListAttacks", 
+                        "shield:CreateSubscription", 
+                        "shield:DescribeSubscription", 
+                        "shield:GetSubscriptionState", 
+                        "shield:DescribeDRTAccess", 
+                        "shield:DescribeEmergencyContactSettings", 
+                        "shield:UpdateEmergencyContactSettings"
+                    ], 
+                    "Resource": "*", 
                     "Effect": "Allow"
                 }
             ]

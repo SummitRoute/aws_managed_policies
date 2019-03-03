@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-11-27T04:25:17Z", 
-        "VersionId": "v2", 
+        "CreateDate": "2019-02-11T17:08:57Z", 
+        "VersionId": "v3", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -24,7 +24,8 @@
                         "arn:aws:elasticloadbalancing:*:*:*", 
                         "arn:aws:cloudfront::*:*", 
                         "arn:aws:route53:::hostedzone/*", 
-                        "arn:aws:cloudwatch:*:*:*:*"
+                        "arn:aws:cloudwatch:*:*:*:*", 
+                        "arn:aws:globalaccelerator::*:*"
                     ], 
                     "Effect": "Allow", 
                     "Sid": "DRTAccessProtectedResources"

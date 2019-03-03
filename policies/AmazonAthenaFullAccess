@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-05-21T18:47:32Z", 
-        "VersionId": "v4", 
+        "CreateDate": "2019-02-19T00:13:03Z", 
+        "VersionId": "v5", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -64,6 +64,38 @@
                     ], 
                     "Resource": [
                         "arn:aws:s3:::athena-examples*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "s3:ListBucket", 
+                        "s3:GetBucketLocation", 
+                        "s3:ListAllMyBuckets"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "sns:ListTopics", 
+                        "sns:GetTopicAttributes"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "cloudwatch:PutMetricAlarm", 
+                        "cloudwatch:DescribeAlarms", 
+                        "cloudwatch:DeleteAlarms"
+                    ], 
+                    "Resource": [
+                        "*"
                     ], 
                     "Effect": "Allow"
                 }

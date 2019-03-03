@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-09-25T08:05:37Z", 
-        "VersionId": "v7", 
+        "CreateDate": "2019-02-21T15:15:07Z", 
+        "VersionId": "v8", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -90,7 +90,8 @@
                 }, 
                 {
                     "Action": [
-                        "ec2:TerminateInstances"
+                        "ec2:TerminateInstances", 
+                        "ec2:RebootInstances"
                     ], 
                     "Resource": [
                         "*"
@@ -101,6 +102,16 @@
                             "ec2:ResourceTag/aws:cloudformation:stack-name": "aws-opsworks-cm-*"
                         }
                     }
+                }, 
+                {
+                    "Action": [
+                        "opsworks-cm:DeleteServer", 
+                        "opsworks-cm:StartMaintenance"
+                    ], 
+                    "Resource": [
+                        "arn:aws:opsworks-cm:*:*:server/*"
+                    ], 
+                    "Effect": "Allow"
                 }, 
                 {
                     "Action": [

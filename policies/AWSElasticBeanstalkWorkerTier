@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2016-12-21T02:01:55Z", 
-        "VersionId": "v4", 
+        "CreateDate": "2019-03-01T00:07:00Z", 
+        "VersionId": "v5", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -16,7 +16,10 @@
                 {
                     "Action": [
                         "xray:PutTraceSegments", 
-                        "xray:PutTelemetryRecords"
+                        "xray:PutTelemetryRecords", 
+                        "xray:GetSamplingRules", 
+                        "xray:GetSamplingTargets", 
+                        "xray:GetSamplingStatisticSummaries"
                     ], 
                     "Resource": "*", 
                     "Effect": "Allow", 
