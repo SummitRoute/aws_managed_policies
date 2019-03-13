@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-01-19T02:31:55Z", 
-        "VersionId": "v1", 
+        "CreateDate": "2019-03-11T22:18:12Z", 
+        "VersionId": "v2", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -101,7 +101,10 @@
                 }, 
                 {
                     "Action": "iam:PassRole", 
-                    "Resource": "arn:aws:iam::*:role/*AwsBackup*", 
+                    "Resource": [
+                        "arn:aws:iam::*:role/*AwsBackup*", 
+                        "arn:aws:iam::*:role/*AWSBackup*"
+                    ], 
                     "Effect": "Allow", 
                     "Condition": {
                         "StringLike": {

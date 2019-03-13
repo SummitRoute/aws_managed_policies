@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-02-05T23:47:52Z", 
-        "VersionId": "v8", 
+        "CreateDate": "2019-03-12T18:10:21Z", 
+        "VersionId": "v10", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -73,6 +73,7 @@
                         "s3:ListBucket", 
                         "s3:GetEncryptionConfiguration", 
                         "s3:GetBucketPublicAccessBlock", 
+                        "s3:GetAccountPublicAccessBlock", 
                         "redshift:DescribeClusterParameterGroups", 
                         "redshift:DescribeClusterParameters", 
                         "redshift:DescribeClusterSecurityGroups", 
@@ -114,7 +115,8 @@
                         "ssm:DescribeDocument", 
                         "ssm:GetDocument", 
                         "ssm:DescribeAutomationExecutions", 
-                        "ssm:GetAutomationExecution"
+                        "ssm:GetAutomationExecution", 
+                        "shield:DescribeProtection"
                     ], 
                     "Resource": "*", 
                     "Effect": "Allow"

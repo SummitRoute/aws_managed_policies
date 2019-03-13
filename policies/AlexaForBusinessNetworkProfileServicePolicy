@@ -1,0 +1,27 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2019-03-13T00:53:40Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "acm-pca:GetCertificate", 
+                        "acm-pca:IssueCertificate", 
+                        "acm-pca:RevokeCertificate"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Condition": {
+                        "StringEquals": {
+                            "aws:ResourceTag/a4b": "enabled"
+                        }
+                    }, 
+                    "Sid": "A4bPcaTagAccess"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

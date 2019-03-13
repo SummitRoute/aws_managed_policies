@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2015-02-06T18:39:54Z", 
-        "VersionId": "v1", 
+        "CreateDate": "2019-03-07T19:43:17Z", 
+        "VersionId": "v2", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -9,7 +9,12 @@
                     "Action": [
                         "tag:getResources", 
                         "tag:getTagKeys", 
-                        "tag:getTagValues"
+                        "tag:getTagValues", 
+                        "resource-groups:Get*", 
+                        "resource-groups:List*", 
+                        "resource-groups:Search*", 
+                        "cloudformation:DescribeStacks", 
+                        "cloudformation:ListStackResources"
                     ], 
                     "Resource": "*", 
                     "Effect": "Allow"
