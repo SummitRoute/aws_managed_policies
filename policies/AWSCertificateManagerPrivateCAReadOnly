@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-10-23T16:57:04Z", 
-        "VersionId": "v1", 
+        "CreateDate": "2019-03-14T17:17:21Z", 
+        "VersionId": "v2", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": {
@@ -12,6 +12,7 @@
                     "acm-pca:GetCertificateAuthorityCsr", 
                     "acm-pca:GetCertificateAuthorityCertificate", 
                     "acm-pca:GetCertificate", 
+                    "acm-pca:ListPermissions", 
                     "acm-pca:ListTags"
                 ], 
                 "Resource": "*", 
