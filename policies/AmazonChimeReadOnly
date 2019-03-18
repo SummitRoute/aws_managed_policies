@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-03-30T16:24:43Z", 
-        "VersionId": "v4", 
+        "CreateDate": "2019-03-18T12:11:44Z", 
+        "VersionId": "v5", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -23,7 +23,22 @@
                         "chime:GetAccountResource", 
                         "chime:ValidateDelegate", 
                         "chime:ListAccountUsageReportData", 
-                        "chime:GetUserActivityReportData"
+                        "chime:GetUserActivityReportData", 
+                        "chime:GetGlobalSettings", 
+                        "chime:GetPhoneNumber", 
+                        "chime:GetPhoneNumberOrder", 
+                        "chime:GetUserSettings", 
+                        "chime:GetVoiceConnector", 
+                        "chime:GetVoiceConnectorOrigination", 
+                        "chime:GetVoiceConnectorTermination", 
+                        "chime:GetVoiceConnectorTerminationHealth", 
+                        "chime:ListPhoneNumberOrders", 
+                        "chime:ListPhoneNumbers", 
+                        "chime:ListVoiceConnectorTerminationCredentials", 
+                        "chime:ListVoiceConnectors", 
+                        "chime:SearchAvailablePhoneNumbers", 
+                        "chime:GetTelephonyLimits", 
+                        "chime:ListCallingRegions"
                     ], 
                     "Resource": "*", 
                     "Effect": "Allow"

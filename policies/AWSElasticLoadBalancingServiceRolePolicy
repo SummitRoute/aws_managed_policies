@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-05-14T21:18:07Z", 
-        "VersionId": "v2", 
+        "CreateDate": "2019-03-18T21:51:14Z", 
+        "VersionId": "v3", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -9,6 +9,7 @@
                     "Action": [
                         "ec2:DescribeAddresses", 
                         "ec2:DescribeInstances", 
+                        "ec2:DescribeNetworkInterfaces", 
                         "ec2:DescribeSubnets", 
                         "ec2:DescribeSecurityGroups", 
                         "ec2:DescribeVpcs", 

@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-03-04T23:53:09Z", 
-        "VersionId": "v46", 
+        "CreateDate": "2019-03-18T22:06:07Z", 
+        "VersionId": "v47", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -15,6 +15,14 @@
                         "acm:Get*", 
                         "acm:List*", 
                         "apigateway:GET", 
+                        "amplify:GetApp", 
+                        "amplify:GetBranch", 
+                        "amplify:GetJob", 
+                        "amplify:GetDomainAssociation", 
+                        "amplify:ListApps", 
+                        "amplify:ListBranches", 
+                        "amplify:ListDomainAssociations", 
+                        "amplify:ListJobs", 
                         "application-autoscaling:Describe*", 
                         "autoscaling-plans:Describe*", 
                         "autoscaling-plans:GetScalingPlanResourceForecastData", 
@@ -128,7 +136,7 @@
                         "dynamodb:Scan", 
                         "ec2:Describe*", 
                         "ec2:Get*", 
-                        "ec2:SearchTransitGateway", 
+                        "ec2:SearchTransitGatewayRoutes", 
                         "ec2messages:Get*", 
                         "ecr:BatchCheck*", 
                         "ecr:BatchGet*", 
@@ -138,7 +146,9 @@
                         "ecs:Describe*", 
                         "ecs:List*", 
                         "eks:DescribeCluster", 
+                        "eks:DescribeUpdates", 
                         "eks:ListClusters", 
+                        "eks:ListUpdates", 
                         "elasticache:Describe*", 
                         "elasticache:List*", 
                         "elasticbeanstalk:Check*", 
