@@ -1,14 +1,15 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2017-11-14T22:39:11Z", 
-        "VersionId": "v3", 
+        "CreateDate": "2019-03-20T22:19:03Z", 
+        "VersionId": "v4", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
                 {
                     "NotAction": [
                         "iam:*", 
-                        "organizations:*"
+                        "organizations:*", 
+                        "account:*"
                     ], 
                     "Resource": "*", 
                     "Effect": "Allow"
@@ -18,7 +19,8 @@
                         "iam:CreateServiceLinkedRole", 
                         "iam:DeleteServiceLinkedRole", 
                         "iam:ListRoles", 
-                        "organizations:DescribeOrganization"
+                        "organizations:DescribeOrganization", 
+                        "account:ListRegions"
                     ], 
                     "Resource": "*", 
                     "Effect": "Allow"
