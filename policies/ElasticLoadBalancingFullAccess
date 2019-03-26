@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-12-12T18:49:21Z", 
-        "VersionId": "v3", 
+        "CreateDate": "2019-03-25T21:33:12Z", 
+        "VersionId": "v4", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -20,6 +20,7 @@
                         "ec2:DescribeVpcs", 
                         "ec2:DescribeVpcClassicLink", 
                         "ec2:DescribeInstances", 
+                        "ec2:DescribeNetworkInterfaces", 
                         "ec2:DescribeClassicLinkInstances", 
                         "ec2:DescribeRouteTables", 
                         "cognito-idp:DescribeUserPoolClient"
