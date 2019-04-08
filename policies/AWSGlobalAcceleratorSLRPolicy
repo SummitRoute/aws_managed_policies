@@ -1,0 +1,53 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2019-04-05T19:39:13Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "ec2:CreateNetworkInterface", 
+                        "ec2:DescribeNetworkInterfaces", 
+                        "ec2:ModifyNetworkInterfaceAttribute", 
+                        "ec2:DeleteNetworkInterface"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": "ec2:DeleteSecurityGroup", 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Condition": {
+                        "StringEquals": {
+                            "ec2:ResourceTag/AWSServiceName": "GlobalAccelerator"
+                        }
+                    }
+                }, 
+                {
+                    "Action": [
+                        "ec2:CreateSecurityGroup", 
+                        "ec2:DescribeSecurityGroups"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": "elasticloadbalancing:DescribeLoadBalancers", 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": "ec2:CreateTags", 
+                    "Resource": [
+                        "arn:aws:ec2:*:*:security-group/*", 
+                        "arn:aws:ec2:*:*:network-interface/*"
+                    ], 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

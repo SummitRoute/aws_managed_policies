@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-02-28T21:58:09Z", 
-        "VersionId": "v1", 
+        "CreateDate": "2019-04-06T04:08:05Z", 
+        "VersionId": "v2", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -14,14 +14,26 @@
                 }, 
                 {
                     "Action": [
-                        "cloudformation:ListStackResources", 
-                        "cloudformation:DescribeStacks", 
-                        "cloudformation:CreateStack", 
-                        "cloudformation:DeleteStack", 
                         "robomaker:*", 
                         "sagemaker:*", 
                         "sts:*", 
                         "s3:ListAllMyBuckets"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "cloudformation:ListStackResources", 
+                        "cloudformation:DescribeStacks", 
+                        "cloudformation:CreateStack", 
+                        "cloudformation:DeleteStack", 
+                        "cloudformation:DescribeStackResource", 
+                        "cloudformation:DescribeStackResources", 
+                        "cloudformation:DescribeStackEvents", 
+                        "cloudformation:DetectStackDrift", 
+                        "cloudformation:DescribeStackDriftDetectionStatus", 
+                        "cloudformation:DescribeStackResourceDrifts"
                     ], 
                     "Resource": "*", 
                     "Effect": "Allow"
@@ -52,7 +64,8 @@
                         "logs:CreateLogGroup", 
                         "logs:CreateLogStream", 
                         "logs:DescribeLogStreams", 
-                        "logs:GetLogEvents"
+                        "logs:GetLogEvents", 
+                        "logs:PutLogEvents"
                     ], 
                     "Resource": "*", 
                     "Effect": "Allow"
@@ -109,6 +122,8 @@
                         "kinesisvideo:DeleteStream", 
                         "kinesisvideo:DescribeStream", 
                         "kinesisvideo:GetDataEndpoint", 
+                        "kinesisvideo:GetHLSStreamingSessionURL", 
+                        "kinesisvideo:GetMedia", 
                         "kinesisvideo:PutMedia", 
                         "kinesisvideo:TagStream"
                     ], 
