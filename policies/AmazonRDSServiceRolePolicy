@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-02-04T18:16:17Z", 
-        "VersionId": "v5", 
+        "CreateDate": "2019-04-16T20:12:27Z", 
+        "VersionId": "v6", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -43,7 +43,8 @@
                     ], 
                     "Resource": [
                         "arn:aws:logs:*:*:log-group:/aws/rds/*", 
-                        "arn:aws:logs:*:*:log-group:/aws/docdb/*"
+                        "arn:aws:logs:*:*:log-group:/aws/docdb/*", 
+                        "arn:aws:logs:*:*:log-group:/aws/neptune/*"
                     ], 
                     "Effect": "Allow"
                 }, 
@@ -55,7 +56,8 @@
                     ], 
                     "Resource": [
                         "arn:aws:logs:*:*:log-group:/aws/rds/*:log-stream:*", 
-                        "arn:aws:logs:*:*:log-group:/aws/docdb/*:log-stream:*"
+                        "arn:aws:logs:*:*:log-group:/aws/docdb/*:log-stream:*", 
+                        "arn:aws:logs:*:*:log-group:/aws/neptune/*:log-stream:*"
                     ], 
                     "Effect": "Allow"
                 }, 
