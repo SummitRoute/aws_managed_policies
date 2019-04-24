@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-12-01T16:22:12Z", 
-        "VersionId": "v1", 
+        "CreateDate": "2019-04-24T17:25:29Z", 
+        "VersionId": "v2", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -43,12 +43,20 @@
                     "Action": [
                         "cloudFormation:CreateStack", 
                         "cloudFormation:UpdateStack", 
-                        "cloudFormation:DeleteStack", 
+                        "cloudFormation:DeleteStack"
+                    ], 
+                    "Resource": [
+                        "arn:aws:cloudformation:*:*:stack/ApplicationInsights-*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
                         "cloudFormation:DescribeStacks", 
                         "cloudFormation:ListStackResources"
                     ], 
                     "Resource": [
-                        "arn:aws:cloudformation:*:*:stack/ApplicationInsights-*"
+                        "*"
                     ], 
                     "Effect": "Allow"
                 }, 
@@ -85,6 +93,41 @@
                 {
                     "Action": [
                         "autoscaling:DescribeAutoScalingGroups"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "ssm:PutParameter", 
+                        "ssm:DeleteParameter"
+                    ], 
+                    "Resource": "arn:aws:ssm:*:*:parameter/AmazonCloudWatch-ApplicationInsights-*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "ssm:CreateAssociation", 
+                        "ssm:UpdateAssociation", 
+                        "ssm:DeleteAssociation", 
+                        "ssm:DescribeAssociation"
+                    ], 
+                    "Resource": [
+                        "arn:aws:ec2:*:*:instance/*", 
+                        "arn:aws:ssm:*:*:association/*", 
+                        "arn:aws:ssm:*:*:managed-instance/*", 
+                        "arn:aws:ssm:*:*:document/AWSEC2-ApplicationInsightsCloudwatchAgentInstallAndConfigure"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "ssm:GetOpsItem", 
+                        "ssm:CreateOpsItem", 
+                        "ssm:DescribeOpsItems", 
+                        "ssm:UpdateOpsItem"
                     ], 
                     "Resource": [
                         "*"
