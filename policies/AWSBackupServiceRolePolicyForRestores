@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-01-14T19:37:08Z", 
-        "VersionId": "v2", 
+        "CreateDate": "2019-04-25T19:17:26Z", 
+        "VersionId": "v3", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -13,7 +13,8 @@
                         "dynamodb:PutItem", 
                         "dynamodb:GetItem", 
                         "dynamodb:DeleteItem", 
-                        "dynamodb:BatchWriteItem"
+                        "dynamodb:BatchWriteItem", 
+                        "dynamodb:DescribeTable"
                     ], 
                     "Resource": "arn:aws:dynamodb:*:*:table/*", 
                     "Effect": "Allow"
@@ -90,6 +91,21 @@
                     ], 
                     "Resource": "arn:aws:elasticfilesystem:*:*:file-system/*", 
                     "Effect": "Allow"
+                }, 
+                {
+                    "Action": "kms:DescribeKey", 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": "kms:CreateGrant", 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Condition": {
+                        "Bool": {
+                            "kms:GrantIsForAWSResource": "true"
+                        }
+                    }
                 }
             ]
         }, 
