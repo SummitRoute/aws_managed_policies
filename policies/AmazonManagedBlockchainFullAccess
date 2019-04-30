@@ -1,0 +1,21 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2019-04-29T21:39:29Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "managedblockchain:*"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}
