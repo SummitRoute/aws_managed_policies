@@ -1,17 +1,18 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-04-30T15:29:29Z", 
-        "VersionId": "v3", 
+        "CreateDate": "2019-04-30T18:17:31Z", 
+        "VersionId": "v1", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
                 {
                     "Action": [
-                        "directconnect:*", 
-                        "ec2:DescribeVpnGateways", 
-                        "ec2:DescribeTransitGateways"
+                        "managedblockchain:Get*", 
+                        "managedblockchain:List*"
                     ], 
-                    "Resource": "*", 
+                    "Resource": [
+                        "*"
+                    ], 
                     "Effect": "Allow"
                 }
             ]

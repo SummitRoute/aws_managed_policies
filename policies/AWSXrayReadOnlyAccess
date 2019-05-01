@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-11-20T23:06:16Z", 
-        "VersionId": "v3", 
+        "CreateDate": "2019-04-30T18:11:46Z", 
+        "VersionId": "v4", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -15,7 +15,8 @@
                         "xray:GetTraceGraph", 
                         "xray:GetTraceSummaries", 
                         "xray:GetGroups", 
-                        "xray:GetGroup"
+                        "xray:GetGroup", 
+                        "xray:GetTimeSeriesServiceStatistics"
                     ], 
                     "Resource": [
                         "*"
