@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-01-04T22:07:11Z", 
-        "VersionId": "v9", 
+        "CreateDate": "2019-05-06T23:20:57Z", 
+        "VersionId": "v10", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -94,7 +94,8 @@
                         "logs:CreateLogStream", 
                         "logs:DescribeLogStreams", 
                         "logs:GetLogEvents", 
-                        "logs:PutLogEvents"
+                        "logs:PutLogEvents", 
+                        "sns:ListTopics"
                     ], 
                     "Resource": "*", 
                     "Effect": "Allow"
@@ -236,6 +237,18 @@
                             "iam:AWSServiceName": "robomaker.amazonaws.com"
                         }
                     }
+                }, 
+                {
+                    "Action": [
+                        "sns:Subscribe", 
+                        "sns:CreateTopic"
+                    ], 
+                    "Resource": [
+                        "arn:aws:sns:*:*:*SageMaker*", 
+                        "arn:aws:sns:*:*:*Sagemaker*", 
+                        "arn:aws:sns:*:*:*sagemaker*"
+                    ], 
+                    "Effect": "Allow"
                 }, 
                 {
                     "Action": [
