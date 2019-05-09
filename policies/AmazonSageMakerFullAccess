@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-05-06T23:20:57Z", 
-        "VersionId": "v10", 
+        "CreateDate": "2019-05-09T04:44:05Z", 
+        "VersionId": "v11", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -128,16 +128,25 @@
                 }, 
                 {
                     "Action": [
-                        "secretsmanager:CreateSecret", 
-                        "secretsmanager:DescribeSecret", 
-                        "secretsmanager:ListSecrets", 
-                        "secretsmanager:TagResource"
+                        "secretsmanager:ListSecrets"
                     ], 
                     "Resource": "*", 
                     "Effect": "Allow"
                 }, 
                 {
                     "Action": [
+                        "secretsmanager:DescribeSecret", 
+                        "secretsmanager:GetSecretValue", 
+                        "secretsmanager:CreateSecret"
+                    ], 
+                    "Resource": [
+                        "arn:aws:secretsmanager:*:*:secret:AmazonSageMaker-*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "secretsmanager:DescribeSecret", 
                         "secretsmanager:GetSecretValue"
                     ], 
                     "Resource": "*", 
