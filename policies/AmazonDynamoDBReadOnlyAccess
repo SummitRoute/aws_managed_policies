@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-01-09T19:46:57Z", 
-        "VersionId": "v7", 
+        "CreateDate": "2019-05-08T21:15:48Z", 
+        "VersionId": "v8", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -21,21 +21,11 @@
                         "datapipeline:ListPipelines", 
                         "datapipeline:QueryObjects", 
                         "dynamodb:BatchGetItem", 
-                        "dynamodb:DescribeTable", 
+                        "dynamodb:Describe*", 
+                        "dynamodb:List*", 
                         "dynamodb:GetItem", 
-                        "dynamodb:ListTables", 
                         "dynamodb:Query", 
                         "dynamodb:Scan", 
-                        "dynamodb:DescribeReservedCapacity", 
-                        "dynamodb:DescribeReservedCapacityOfferings", 
-                        "dynamodb:ListTagsOfResource", 
-                        "dynamodb:DescribeTimeToLive", 
-                        "dynamodb:DescribeLimits", 
-                        "dynamodb:ListGlobalTables", 
-                        "dynamodb:DescribeGlobalTable", 
-                        "dynamodb:DescribeBackup", 
-                        "dynamodb:ListBackups", 
-                        "dynamodb:DescribeContinuousBackups", 
                         "dax:Describe*", 
                         "dax:List*", 
                         "dax:GetItem", 
@@ -51,7 +41,12 @@
                         "sns:ListTopics", 
                         "lambda:ListFunctions", 
                         "lambda:ListEventSourceMappings", 
-                        "lambda:GetFunctionConfiguration"
+                        "lambda:GetFunctionConfiguration", 
+                        "resource-groups:ListGroups", 
+                        "resource-groups:ListGroupResources", 
+                        "resource-groups:GetGroup", 
+                        "resource-groups:GetGroupQuery", 
+                        "tag:GetResources"
                     ], 
                     "Resource": "*", 
                     "Effect": "Allow"

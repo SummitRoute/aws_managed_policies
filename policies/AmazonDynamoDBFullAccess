@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-02-06T22:17:46Z", 
-        "VersionId": "v8", 
+        "CreateDate": "2019-05-08T21:20:48Z", 
+        "VersionId": "v9", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -51,7 +51,14 @@
                         "lambda:CreateEventSourceMapping", 
                         "lambda:DeleteEventSourceMapping", 
                         "lambda:GetFunctionConfiguration", 
-                        "lambda:DeleteFunction"
+                        "lambda:DeleteFunction", 
+                        "resource-groups:ListGroups", 
+                        "resource-groups:ListGroupResources", 
+                        "resource-groups:GetGroup", 
+                        "resource-groups:GetGroupQuery", 
+                        "resource-groups:DeleteGroup", 
+                        "resource-groups:CreateGroup", 
+                        "tag:GetResources"
                     ], 
                     "Resource": "*", 
                     "Effect": "Allow"
