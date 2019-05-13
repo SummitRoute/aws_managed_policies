@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-12-04T13:40:28Z", 
-        "VersionId": "v2", 
+        "CreateDate": "2019-05-13T15:12:46Z", 
+        "VersionId": "v3", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -13,7 +13,9 @@
                         "workmail:Get*", 
                         "workmail:List*", 
                         "workmail:Search*", 
-                        "lambda:ListFunctions"
+                        "lambda:ListFunctions", 
+                        "iam:ListRoles", 
+                        "logs:DescribeLogGroups"
                     ], 
                     "Resource": "*", 
                     "Effect": "Allow"
