@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-03-12T18:03:12Z", 
-        "VersionId": "v24", 
+        "CreateDate": "2019-05-13T21:29:39Z", 
+        "VersionId": "v25", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -14,6 +14,7 @@
                         "config:List*", 
                         "config:Describe*", 
                         "config:BatchGet*", 
+                        "config:Select*", 
                         "cloudtrail:GetEventSelectors", 
                         "cloudtrail:GetTrailStatus", 
                         "cloudtrail:ListTags", 

@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-12-20T22:16:14Z", 
-        "VersionId": "v2", 
+        "CreateDate": "2019-05-13T21:33:30Z", 
+        "VersionId": "v3", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -18,7 +18,8 @@
                         "config:Get*", 
                         "config:List*", 
                         "config:Describe*", 
-                        "config:BatchGet*"
+                        "config:BatchGet*", 
+                        "config:Select*"
                     ], 
                     "Resource": "*", 
                     "Effect": "Allow"

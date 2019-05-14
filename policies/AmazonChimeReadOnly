@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-03-18T12:11:44Z", 
-        "VersionId": "v5", 
+        "CreateDate": "2019-05-13T20:34:08Z", 
+        "VersionId": "v6", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -38,7 +38,10 @@
                         "chime:ListVoiceConnectors", 
                         "chime:SearchAvailablePhoneNumbers", 
                         "chime:GetTelephonyLimits", 
-                        "chime:ListCallingRegions"
+                        "chime:ListCallingRegions", 
+                        "chime:GetBot", 
+                        "chime:ListBots", 
+                        "chime:GetEventsConfiguration"
                     ], 
                     "Resource": "*", 
                     "Effect": "Allow"

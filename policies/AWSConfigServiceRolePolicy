@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-03-12T18:10:21Z", 
-        "VersionId": "v10", 
+        "CreateDate": "2019-05-13T21:18:44Z", 
+        "VersionId": "v11", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -15,6 +15,7 @@
                         "config:List*", 
                         "config:Describe*", 
                         "config:BatchGet*", 
+                        "config:Select*", 
                         "cloudtrail:GetTrailStatus", 
                         "cloudtrail:ListTags", 
                         "iam:GenerateCredentialReport", 
