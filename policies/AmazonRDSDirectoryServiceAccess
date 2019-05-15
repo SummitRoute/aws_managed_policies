@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2016-02-26T02:02:05Z", 
-        "VersionId": "v1", 
+        "CreateDate": "2019-05-15T16:51:50Z", 
+        "VersionId": "v2", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -9,7 +9,8 @@
                     "Action": [
                         "ds:DescribeDirectories", 
                         "ds:AuthorizeApplication", 
-                        "ds:UnauthorizeApplication"
+                        "ds:UnauthorizeApplication", 
+                        "ds:GetAuthorizedApplicationDetails"
                     ], 
                     "Resource": "*", 
                     "Effect": "Allow"
