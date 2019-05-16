@@ -1,17 +1,18 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2017-11-20T20:02:27Z", 
-        "VersionId": "v4", 
+        "CreateDate": "2019-05-15T23:18:26Z", 
+        "VersionId": "v5", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
                 {
                     "Action": [
-                        "codecommit:BatchGet*", 
+                        "codecommit:Batch*", 
                         "codecommit:Get*", 
                         "codecommit:List*", 
                         "codecommit:Create*", 
                         "codecommit:DeleteBranch", 
+                        "codecommit:DeleteFile", 
                         "codecommit:Describe*", 
                         "codecommit:Put*", 
                         "codecommit:Post*", 
