@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-08-10T17:57:44Z", 
-        "VersionId": "v3", 
+        "CreateDate": "2019-05-20T18:22:18Z", 
+        "VersionId": "v4", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -18,6 +18,15 @@
                     "Resource": [
                         "*"
                     ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "firehose:DescribeDeliveryStream", 
+                        "firehose:PutRecord", 
+                        "firehose:PutRecordBatch"
+                    ], 
+                    "Resource": "arn:aws:firehose:*:*:deliverystream/amazon-apigateway-*", 
                     "Effect": "Allow"
                 }
             ]
