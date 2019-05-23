@@ -1,0 +1,21 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2019-05-22T20:44:17Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "support:CreateCase", 
+                        "support:DescribeCases"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "Stmt1555536735573"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}
