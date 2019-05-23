@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-05-03T18:19:11Z", 
-        "VersionId": "v1", 
+        "CreateDate": "2019-05-23T19:14:24Z", 
+        "VersionId": "v2", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -10,6 +10,7 @@
                         "cloudformation:CreateStack", 
                         "cloudformation:CreateStackInstances", 
                         "cloudformation:CreateStackSet", 
+                        "cloudformation:DeleteStack", 
                         "cloudformation:DeleteStackInstances", 
                         "cloudformation:DeleteStackSet", 
                         "cloudformation:DescribeStackInstance", 
@@ -95,6 +96,7 @@
                 {
                     "Action": [
                         "iam:GetRole", 
+                        "iam:GetUser", 
                         "iam:ListAttachedRolePolicies", 
                         "iam:GetRolePolicy"
                     ], 
