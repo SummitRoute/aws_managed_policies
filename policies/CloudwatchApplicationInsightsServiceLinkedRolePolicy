@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-04-24T17:25:29Z", 
-        "VersionId": "v2", 
+        "CreateDate": "2019-05-24T18:26:41Z", 
+        "VersionId": "v3", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -72,7 +72,8 @@
                 {
                     "Action": [
                         "resource-groups:ListGroupResources", 
-                        "resource-groups:GetGroupQuery"
+                        "resource-groups:GetGroupQuery", 
+                        "resource-groups:GetGroup"
                     ], 
                     "Resource": [
                         "*"
@@ -102,7 +103,8 @@
                 {
                     "Action": [
                         "ssm:PutParameter", 
-                        "ssm:DeleteParameter"
+                        "ssm:DeleteParameter", 
+                        "ssm:AddTagsToResource"
                     ], 
                     "Resource": "arn:aws:ssm:*:*:parameter/AmazonCloudWatch-ApplicationInsights-*", 
                     "Effect": "Allow"
@@ -118,7 +120,9 @@
                         "arn:aws:ec2:*:*:instance/*", 
                         "arn:aws:ssm:*:*:association/*", 
                         "arn:aws:ssm:*:*:managed-instance/*", 
-                        "arn:aws:ssm:*:*:document/AWSEC2-ApplicationInsightsCloudwatchAgentInstallAndConfigure"
+                        "arn:aws:ssm:*:*:document/AWSEC2-ApplicationInsightsCloudwatchAgentInstallAndConfigure", 
+                        "arn:aws:ssm:*:*:document/AWS-ConfigureAWSPackage", 
+                        "arn:aws:ssm:*:*:document/AmazonCloudWatch-ManageAgent"
                     ], 
                     "Effect": "Allow"
                 }, 
@@ -127,7 +131,17 @@
                         "ssm:GetOpsItem", 
                         "ssm:CreateOpsItem", 
                         "ssm:DescribeOpsItems", 
-                        "ssm:UpdateOpsItem"
+                        "ssm:UpdateOpsItem", 
+                        "ssm:DescribeInstanceInformation"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "ec2:DescribeInstances"
                     ], 
                     "Resource": [
                         "*"
