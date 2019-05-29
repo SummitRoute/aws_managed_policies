@@ -1,14 +1,16 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-07-06T19:34:16Z", 
-        "VersionId": "v1", 
+        "CreateDate": "2019-05-29T16:44:12Z", 
+        "VersionId": "v2", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
                 {
                     "Action": [
                         "ec2:CreateSnapshot", 
+                        "ec2:CreateSnapshots", 
                         "ec2:DeleteSnapshot", 
+                        "ec2:DescribeInstances", 
                         "ec2:DescribeVolumes", 
                         "ec2:DescribeSnapshots"
                     ], 
