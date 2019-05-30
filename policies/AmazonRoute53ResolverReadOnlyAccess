@@ -1,0 +1,26 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2019-05-30T18:11:31Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "route53resolver:Get*", 
+                        "route53resolver:List*", 
+                        "ec2:DescribeNetworkInterface", 
+                        "ec2:DescribeSecurityGroups", 
+                        "ec2:DescribeVpcs", 
+                        "ec2:DescribeSubnets"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

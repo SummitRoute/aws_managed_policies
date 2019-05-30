@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-11-20T21:29:36Z", 
-        "VersionId": "v1", 
+        "CreateDate": "2019-05-30T17:11:26Z", 
+        "VersionId": "v2", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -31,6 +31,11 @@
                         "dbqms:DeleteQueryHistory", 
                         "dbqms:DescribeQueryHistory", 
                         "rds-data:ExecuteSql", 
+                        "rds-data:ExecuteStatement", 
+                        "rds-data:BatchExecuteStatement", 
+                        "rds-data:BeginTransaction", 
+                        "rds-data:CommitTransaction", 
+                        "rds-data:RollbackTransaction", 
                         "secretsmanager:CreateSecret", 
                         "secretsmanager:ListSecrets", 
                         "secretsmanager:GetRandomPassword", 
