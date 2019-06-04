@@ -1,25 +1,33 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-01-11T23:22:52Z", 
-        "VersionId": "v1", 
+        "CreateDate": "2019-06-04T17:48:27Z", 
+        "VersionId": "v2", 
         "Document": {
             "Version": "2012-10-17", 
-            "Statement": {
-                "Action": [
-                    "cloudformation:CreateChangeSet", 
-                    "cloudformation:DescribeChangeSet", 
-                    "cloudformation:ExecuteChangeSet", 
-                    "cloudformation:DeleteChangeSet", 
-                    "cloudformation:ListChangeSets", 
-                    "cloudformation:DescribeStacks"
-                ], 
-                "Resource": [
-                    "arn:aws:cloudformation:*:*:stack/awseb-*", 
-                    "arn:aws:cloudformation:*:*:stack/eb-*"
-                ], 
-                "Effect": "Allow", 
-                "Sid": "AllowCloudformationChangeSetOperationsOnElasticBeanstalkStacks"
-            }
+            "Statement": [
+                {
+                    "Action": [
+                        "cloudformation:CreateChangeSet", 
+                        "cloudformation:DescribeChangeSet", 
+                        "cloudformation:ExecuteChangeSet", 
+                        "cloudformation:DeleteChangeSet", 
+                        "cloudformation:ListChangeSets", 
+                        "cloudformation:DescribeStacks"
+                    ], 
+                    "Resource": [
+                        "arn:aws:cloudformation:*:*:stack/awseb-*", 
+                        "arn:aws:cloudformation:*:*:stack/eb-*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "AllowCloudformationChangeSetOperationsOnElasticBeanstalkStacks"
+                }, 
+                {
+                    "Action": "elasticloadbalancing:DescribeLoadBalancers", 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "AllowElasticBeanstalkStacksUpdateExecuteSuccessfully"
+                }
+            ]
         }, 
         "IsDefaultVersion": true
     }
