@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-04-16T17:50:40Z", 
-        "VersionId": "v1", 
+        "CreateDate": "2019-06-05T18:47:32Z", 
+        "VersionId": "v2", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -11,6 +11,20 @@
                     ], 
                     "Resource": "*", 
                     "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "iam:CreateServiceLinkedRole"
+                    ], 
+                    "Resource": "arn:aws:iam::*:role/aws-service-role/appmesh.amazonaws.com/AWSServiceRoleForAppMesh", 
+                    "Effect": "Allow", 
+                    "Condition": {
+                        "StringLike": {
+                            "iam:AWSServiceName": [
+                                "appmesh.amazonaws.com"
+                            ]
+                        }
+                    }
                 }
             ]
         }, 
