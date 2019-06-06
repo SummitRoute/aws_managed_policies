@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-04-29T18:33:52Z", 
-        "VersionId": "v27", 
+        "CreateDate": "2019-06-06T18:09:18Z", 
+        "VersionId": "v28", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -149,6 +149,7 @@
                         "lambda:List*", 
                         "license-manager:List*", 
                         "lightsail:GetInstances", 
+                        "lightsail:GetLoadBalancers", 
                         "logs:Describe*", 
                         "logs:ListTagsLogGroup", 
                         "machinelearning:DescribeMLModels", 
@@ -189,7 +190,6 @@
                         "s3:GetMetricsConfiguration", 
                         "s3:GetObjectAcl", 
                         "s3:GetObjectVersionAcl", 
-                        "s3:GetPublicAccessBlock", 
                         "s3:GetReplicationConfiguration", 
                         "s3:ListAllMyBuckets", 
                         "sagemaker:Describe*", 
@@ -253,9 +253,7 @@
                 }, 
                 {
                     "Action": [
-                        "apigateway:HEAD", 
-                        "apigateway:GET", 
-                        "apigateway:OPTIONS"
+                        "apigateway:GET"
                     ], 
                     "Resource": [
                         "arn:aws:apigateway:*::/restapis", 
