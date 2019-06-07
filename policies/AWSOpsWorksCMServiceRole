@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-02-21T15:15:07Z", 
-        "VersionId": "v8", 
+        "CreateDate": "2019-06-07T19:39:20Z", 
+        "VersionId": "v9", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -13,7 +13,6 @@
                         "s3:GetObject", 
                         "s3:HeadBucket", 
                         "s3:ListBucket", 
-                        "s3:ListObjects", 
                         "s3:PutBucketPolicy", 
                         "s3:PutObject"
                     ], 
