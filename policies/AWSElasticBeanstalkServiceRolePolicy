@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-04-09T22:06:23Z", 
-        "VersionId": "v5", 
+        "CreateDate": "2019-06-06T21:59:51Z", 
+        "VersionId": "v6", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -34,6 +34,7 @@
                         "elasticloadbalancing:DescribeLoadBalancers", 
                         "elasticloadbalancing:DescribeTargetHealth", 
                         "elasticloadbalancing:DescribeTargetGroups", 
+                        "lambda:GetFunction", 
                         "sqs:GetQueueAttributes", 
                         "sqs:GetQueueUrl", 
                         "sns:Publish"
@@ -46,12 +47,15 @@
                 }, 
                 {
                     "Action": [
-                        "logs:DescribeLogStreams", 
                         "logs:CreateLogStream", 
+                        "logs:DescribeLogGroups", 
+                        "logs:DescribeLogStreams", 
+                        "logs:DeleteLogGroup", 
                         "logs:PutLogEvents"
                     ], 
-                    "Resource": "arn:aws:logs:*:*:log-group:/aws/elasticbeanstalk/*:log-stream:*", 
-                    "Effect": "Allow"
+                    "Resource": "arn:aws:logs:*:*:log-group:/aws/elasticbeanstalk/*", 
+                    "Effect": "Allow", 
+                    "Sid": "AllowOperationsOnHealthStreamingLogs"
                 }
             ]
         }, 
