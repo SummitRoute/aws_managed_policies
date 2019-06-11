@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2016-11-01T19:59:46Z", 
-        "VersionId": "v5", 
+        "CreateDate": "2019-06-10T23:43:50Z", 
+        "VersionId": "v6", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -10,12 +10,10 @@
                         "codepipeline:*", 
                         "iam:ListRoles", 
                         "iam:PassRole", 
-                        "s3:CreateBucket", 
                         "s3:GetBucketPolicy", 
                         "s3:GetObject", 
                         "s3:ListAllMyBuckets", 
                         "s3:ListBucket", 
-                        "s3:PutBucketPolicy", 
                         "codecommit:ListBranches", 
                         "codecommit:ListRepositories", 
                         "codedeploy:GetApplication", 
@@ -33,6 +31,14 @@
                         "cloudformation:ListChangeSets"
                     ], 
                     "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "s3:CreateBucket", 
+                        "s3:PutBucketPolicy"
+                    ], 
+                    "Resource": "arn:aws:s3:::codepipeline-*", 
                     "Effect": "Allow"
                 }
             ]
