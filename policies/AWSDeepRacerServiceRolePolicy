@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-04-06T04:08:05Z", 
-        "VersionId": "v2", 
+        "CreateDate": "2019-06-12T20:55:34Z", 
+        "VersionId": "v3", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -16,7 +16,6 @@
                     "Action": [
                         "robomaker:*", 
                         "sagemaker:*", 
-                        "sts:*", 
                         "s3:ListAllMyBuckets"
                     ], 
                     "Resource": "*", 

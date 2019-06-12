@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-01-22T19:58:36Z", 
-        "VersionId": "v5", 
+        "CreateDate": "2019-06-12T21:21:39Z", 
+        "VersionId": "v6", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -79,11 +79,11 @@
                         "s3:GetBucketVersioning", 
                         "s3:GetBucketPublicAccessBlock", 
                         "s3:ListBucket", 
-                        "s3:ListObjects", 
                         "s3:ListAllMyBuckets", 
                         "ses:GetSendQuota", 
                         "sqs:ListQueues", 
-                        "cloudwatch:GetMetricStatistics"
+                        "cloudwatch:GetMetricStatistics", 
+                        "ce:GetReservationPurchaseRecommendation"
                     ], 
                     "Resource": "*", 
                     "Effect": "Allow"
