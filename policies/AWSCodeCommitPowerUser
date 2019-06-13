@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-05-30T19:37:08Z", 
-        "VersionId": "v6", 
+        "CreateDate": "2019-06-12T22:47:04Z", 
+        "VersionId": "v7", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -82,9 +82,7 @@
                     "Action": [
                         "iam:ListAccessKeys", 
                         "iam:ListSSHPublicKeys", 
-                        "iam:ListServiceSpecificCredentials", 
-                        "iam:ListAccessKeys", 
-                        "iam:GetSSHPublicKey"
+                        "iam:ListServiceSpecificCredentials"
                     ], 
                     "Resource": "arn:aws:iam::*:user/${aws:username}", 
                     "Effect": "Allow", 
