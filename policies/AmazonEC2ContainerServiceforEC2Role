@@ -1,12 +1,13 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2017-05-17T23:09:13Z", 
-        "VersionId": "v5", 
+        "CreateDate": "2019-06-13T19:11:37Z", 
+        "VersionId": "v6", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
                 {
                     "Action": [
+                        "ec2:DescribeTags", 
                         "ecs:CreateCluster", 
                         "ecs:DeregisterContainerInstance", 
                         "ecs:DiscoverPollEndpoint", 
