@@ -1,0 +1,49 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2019-06-13T22:54:21Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "cloudwatch:PutMetricData"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "secretsmanager:GetSecretValue"
+                    ], 
+                    "Resource": [
+                        "arn:aws:secretsmanager:*:*:secret:everest-*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "s3:GetObject", 
+                        "s3:PutObject"
+                    ], 
+                    "Resource": [
+                        "arn:aws:s3:::aws-sixthsense-*/*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "logs:*"
+                    ], 
+                    "Resource": [
+                        "arn:aws:logs:*:*:/aws-sixthsense/*"
+                    ], 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

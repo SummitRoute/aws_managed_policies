@@ -1,15 +1,16 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2015-02-06T18:41:26Z", 
-        "VersionId": "v1", 
+        "CreateDate": "2019-06-13T22:48:22Z", 
+        "VersionId": "v2", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
                 {
                     "Action": [
                         "s3:ListBucket", 
-                        "s3:Put*", 
                         "s3:Get*", 
+                        "s3:PutObject", 
+                        "s3:PutObjectAcl", 
                         "s3:*MultipartUpload*"
                     ], 
                     "Resource": [
@@ -27,20 +28,6 @@
                     ], 
                     "Effect": "Allow", 
                     "Sid": "2"
-                }, 
-                {
-                    "Action": [
-                        "s3:*Policy*", 
-                        "sns:*Permission*", 
-                        "sns:*Delete*", 
-                        "s3:*Delete*", 
-                        "sns:*Remove*"
-                    ], 
-                    "Resource": [
-                        "*"
-                    ], 
-                    "Effect": "Deny", 
-                    "Sid": "3"
                 }
             ]
         }, 
