@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-02-28T21:59:49Z", 
-        "VersionId": "v1", 
+        "CreateDate": "2019-06-14T17:02:04Z", 
+        "VersionId": "v2", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -29,6 +29,7 @@
                         "ec2:CreateSubnet", 
                         "ec2:CreateTags", 
                         "ec2:CreateVpc", 
+                        "ec2:CreateVpcEndpoint", 
                         "ec2:DeleteInternetGateway", 
                         "ec2:DeleteNatGateway", 
                         "ec2:DeleteNetworkAcl", 
@@ -39,6 +40,7 @@
                         "ec2:DeleteSubnet", 
                         "ec2:DeleteTags", 
                         "ec2:DeleteVpc", 
+                        "ec2:DeleteVpcEndpoints", 
                         "ec2:DescribeAddresses", 
                         "ec2:DescribeInternetGateways", 
                         "ec2:DescribeNatGateways", 
@@ -47,9 +49,11 @@
                         "ec2:DescribeSecurityGroups", 
                         "ec2:DescribeSubnets", 
                         "ec2:DescribeTags", 
+                        "ec2:DescribeVpcEndpoints", 
                         "ec2:DescribeVpcs", 
                         "ec2:DetachInternetGateway", 
                         "ec2:DisassociateRouteTable", 
+                        "ec2:ModifySubnetAttribute", 
                         "ec2:ModifyVpcAttribute", 
                         "ec2:ReleaseAddress", 
                         "ec2:ReplaceNetworkAclAssociation", 
@@ -57,6 +61,64 @@
                         "ec2:RevokeSecurityGroupIngress"
                     ], 
                     "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "iam:PassRole"
+                    ], 
+                    "Resource": "arn:aws:iam::*:role/service-role/AWSDeepRacerLambdaAccessRole", 
+                    "Effect": "Allow", 
+                    "Condition": {
+                        "StringLikeIfExists": {
+                            "iam:PassedToService": "lambda.amazonaws.com"
+                        }
+                    }
+                }, 
+                {
+                    "Action": [
+                        "lambda:CreateFunction", 
+                        "lambda:GetFunction", 
+                        "lambda:DeleteFunction", 
+                        "lambda:TagResource", 
+                        "lambda:UpdateFunctionCode"
+                    ], 
+                    "Resource": [
+                        "arn:aws:lambda:*:*:function:*DeepRacer*", 
+                        "arn:aws:lambda:*:*:function:*Deepracer*", 
+                        "arn:aws:lambda:*:*:function:*deepracer*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "s3:PutBucketPolicy", 
+                        "s3:CreateBucket", 
+                        "s3:ListBucket", 
+                        "s3:GetBucketAcl", 
+                        "s3:DeleteBucket"
+                    ], 
+                    "Resource": [
+                        "arn:aws:s3:::*DeepRacer*", 
+                        "arn:aws:s3:::*Deepracer*", 
+                        "arn:aws:s3:::*deepracer*"
+                    ], 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "robomaker:CreateSimulationApplication", 
+                        "robomaker:CreateSimulationApplicationVersion", 
+                        "robomaker:DeleteSimulationApplication", 
+                        "robomaker:DescribeSimulationApplication", 
+                        "robomaker:ListSimulationApplications", 
+                        "robomaker:TagResource", 
+                        "robomaker:UpdateSimulationApplication"
+                    ], 
+                    "Resource": [
+                        "arn:aws:robomaker:*:*:/createSimulationApplication", 
+                        "arn:aws:robomaker:*:*:simulation-application/deepracer*"
+                    ], 
                     "Effect": "Allow"
                 }
             ]
