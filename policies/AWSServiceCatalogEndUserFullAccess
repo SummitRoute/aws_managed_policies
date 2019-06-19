@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-02-06T02:00:22Z", 
-        "VersionId": "v5", 
+        "CreateDate": "2019-06-18T22:04:55Z", 
+        "VersionId": "v6", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -64,6 +64,7 @@
                         "servicecatalog:DescribeProvisionedProduct", 
                         "servicecatalog:DescribeRecord", 
                         "servicecatalog:ListRecordHistory", 
+                        "servicecatalog:ListStackInstancesForProvisionedProduct", 
                         "servicecatalog:ScanProvisionedProducts", 
                         "servicecatalog:TerminateProvisionedProduct", 
                         "servicecatalog:UpdateProvisionedProduct", 

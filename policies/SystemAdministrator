@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-10-08T21:33:45Z", 
-        "VersionId": "v4", 
+        "CreateDate": "2019-06-18T23:13:44Z", 
+        "VersionId": "v5", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -248,7 +248,6 @@
                         "arn:aws:iam::*:role/rds-monitoring-role", 
                         "arn:aws:iam::*:role/ec2-sysadmin-*", 
                         "arn:aws:iam::*:role/ecr-sysadmin-*", 
-                        "arn:aws:iam::*:role/lamdba-sysadmin-*", 
                         "arn:aws:iam::*:role/lambda-sysadmin-*"
                     ], 
                     "Effect": "Allow"
