@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-02-04T18:44:48Z", 
-        "VersionId": "v15", 
+        "CreateDate": "2019-06-20T17:53:43Z", 
+        "VersionId": "v16", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -14,6 +14,9 @@
                         "application-autoscaling:DescribeScalingPolicies", 
                         "application-autoscaling:PutScalingPolicy", 
                         "application-autoscaling:RegisterScalableTarget", 
+                        "appmesh:ListMeshes", 
+                        "appmesh:ListVirtualNodes", 
+                        "appmesh:DescribeVirtualNode", 
                         "autoscaling:UpdateAutoScalingGroup", 
                         "autoscaling:CreateAutoScalingGroup", 
                         "autoscaling:CreateLaunchConfiguration", 

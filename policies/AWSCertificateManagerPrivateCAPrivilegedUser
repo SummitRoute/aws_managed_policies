@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-06-20T17:42:37Z", 
-        "VersionId": "v4", 
+        "CreateDate": "2019-06-20T17:43:13Z", 
+        "VersionId": "v1", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -14,7 +14,7 @@
                     "Condition": {
                         "StringLike": {
                             "acm-pca:TemplateArn": [
-                                "arn:aws:acm-pca:::template/EndEntityCertificate/V*"
+                                "arn:aws:acm-pca:::template/*CACertificate*/V*"
                             ]
                         }
                     }
@@ -28,7 +28,7 @@
                     "Condition": {
                         "StringNotLike": {
                             "acm-pca:TemplateArn": [
-                                "arn:aws:acm-pca:::template/EndEntityCertificate/V*"
+                                "arn:aws:acm-pca:::template/*CACertificate*/V*"
                             ]
                         }
                     }
