@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-08-16T16:02:27Z", 
-        "VersionId": "v3", 
+        "CreateDate": "2019-06-19T21:21:26Z", 
+        "VersionId": "v4", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -37,6 +37,20 @@
                     ], 
                     "Resource": "arn:aws:iam::*:role/aws-service-role/continuousexport.discovery.amazonaws.com/AWSServiceRoleForApplicationDiscoveryServiceContinuousExport*", 
                     "Effect": "Allow"
+                }, 
+                {
+                    "Action": "iam:CreateServiceLinkedRole", 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:AWSServiceName": [
+                                "migrationhub.amazonaws.com", 
+                                "dmsintegration.migrationhub.amazonaws.com", 
+                                "smsintegration.migrationhub.amazonaws.com"
+                            ]
+                        }
+                    }
                 }
             ]
         }, 
