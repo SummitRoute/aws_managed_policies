@@ -1,0 +1,53 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2019-06-20T23:32:21Z", 
+        "VersionId": "v4", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "lambda:CreateFunction", 
+                        "lambda:DeleteFunction", 
+                        "lambda:DisableReplication"
+                    ], 
+                    "Resource": [
+                        "arn:aws:lambda:*:*:function:*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "LambdaCreateDeletePermission"
+                }, 
+                {
+                    "Action": [
+                        "iam:PassRole"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Condition": {
+                        "StringLikeIfExists": {
+                            "iam:PassedToService": [
+                                "lambda.amazonaws.com", 
+                                "lambda.beta.amazonaws.com", 
+                                "lambda.preprod.amazonaws.com"
+                            ]
+                        }
+                    }, 
+                    "Sid": "IamPassRolePermission"
+                }, 
+                {
+                    "Action": [
+                        "cloudfront:ListDistributionsByLambdaFunction"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "CloudFrontListDistributions"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}
