@@ -1,0 +1,24 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2019-06-25T13:07:47Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "aws-marketplace:PutProcurementSystemConfiguration", 
+                        "aws-marketplace:DescribeProcurementSystemConfiguration", 
+                        "organizations:Describe*", 
+                        "organizations:List*"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}
