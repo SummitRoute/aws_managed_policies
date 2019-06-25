@@ -1,0 +1,72 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2019-06-24T15:44:35Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "autoscaling:DescribeAccountLimits", 
+                        "cloudformation:DescribeAccountLimits", 
+                        "cloudwatch:DescribeAlarmsForMetric", 
+                        "cloudwatch:GetMetricData", 
+                        "cloudwatch:GetMetricStatistics", 
+                        "cloudwatch:PutMetricAlarm", 
+                        "dynamodb:DescribeLimits", 
+                        "elasticloadbalancing:DescribeAccountLimits", 
+                        "iam:GetAccountSummary", 
+                        "kinesis:DescribeLimits", 
+                        "organizations:DescribeAccount", 
+                        "organizations:DescribeOrganization", 
+                        "organizations:ListAWSServiceAccessForOrganization", 
+                        "rds:DescribeAccountAttributes", 
+                        "route53:GetAccountLimit", 
+                        "servicequotas:*"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "cloudwatch:DeleteAlarms"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Condition": {
+                        "Null": {
+                            "cloudwatch:ResourceTag/ServiceQuotaMonitor": "false"
+                        }
+                    }
+                }, 
+                {
+                    "Action": [
+                        "organizations:EnableAWSServiceAccess"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Condition": {
+                        "ForAllValues:StringLike": {
+                            "organizations:ServicePrincipal": [
+                                "servicequotas.amazonaws.com"
+                            ]
+                        }
+                    }
+                }, 
+                {
+                    "Action": [
+                        "iam:CreateServiceLinkedRole"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:AWSServiceName": "servicequotas.amazonaws.com"
+                        }
+                    }
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}

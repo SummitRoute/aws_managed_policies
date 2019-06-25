@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-06-05T01:47:36Z", 
-        "VersionId": "v4", 
+        "CreateDate": "2019-06-24T18:54:53Z", 
+        "VersionId": "v5", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -105,7 +105,8 @@
                         "ssm:PutParameter", 
                         "ssm:DeleteParameter", 
                         "ssm:AddTagsToResource", 
-                        "ssm:RemoveTagsFromResource"
+                        "ssm:RemoveTagsFromResource", 
+                        "ssm:GetParameters"
                     ], 
                     "Resource": "arn:aws:ssm:*:*:parameter/AmazonCloudWatch-ApplicationInsights-*", 
                     "Effect": "Allow"
