@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-04-25T19:15:48Z", 
-        "VersionId": "v2", 
+        "CreateDate": "2019-06-25T20:26:08Z", 
+        "VersionId": "v3", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -44,7 +44,8 @@
                 }, 
                 {
                     "Action": [
-                        "storagegateway:CreateSnapshot"
+                        "storagegateway:CreateSnapshot", 
+                        "storagegateway:ListTagsForResource"
                     ], 
                     "Resource": "arn:aws:storagegateway:*:*:gateway/*/volume/*", 
                     "Effect": "Allow"
@@ -59,14 +60,16 @@
                 }, 
                 {
                     "Action": [
-                        "ec2:DescribeSnapshots"
+                        "ec2:DescribeSnapshots", 
+                        "ec2:DescribeTags"
                     ], 
                     "Resource": "*", 
                     "Effect": "Allow"
                 }, 
                 {
                     "Action": [
-                        "elasticfilesystem:Backup"
+                        "elasticfilesystem:Backup", 
+                        "elasticfilesystem:DescribeTags"
                     ], 
                     "Resource": "arn:aws:elasticfilesystem:*:*:file-system/*", 
                     "Effect": "Allow"

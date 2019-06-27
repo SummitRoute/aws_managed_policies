@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-06-03T20:01:28Z", 
-        "VersionId": "v50", 
+        "CreateDate": "2019-06-26T21:54:17Z", 
+        "VersionId": "v51", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -371,6 +371,8 @@
                         "route53domains:Get*", 
                         "route53domains:List*", 
                         "route53domains:View*", 
+                        "route53resolver:Get*", 
+                        "route53resolver:List*", 
                         "s3:Get*", 
                         "s3:List*", 
                         "s3:Head*", 
@@ -393,6 +395,17 @@
                         "servicecatalog:Describe*", 
                         "servicediscovery:Get*", 
                         "servicediscovery:List*", 
+                        "servicequotas:GetAssociationForServiceQuotaTemplate", 
+                        "servicequotas:GetAWSDefaultServiceQuota", 
+                        "servicequotas:GetRequestedServiceQuotaChange", 
+                        "servicequotas:GetServiceQuota", 
+                        "servicequotas:GetServiceQuotaIncreaseRequestFromTemplate", 
+                        "servicequotas:ListAWSDefaultServiceQuotas", 
+                        "servicequotas:ListRequestedServiceQuotaChangeHistory", 
+                        "servicequotas:ListRequestedServiceQuotaChangeHistoryByQuota", 
+                        "servicequotas:ListServices", 
+                        "servicequotas:ListServiceQuotas", 
+                        "servicequotas:ListServiceQuotaIncreaseRequestsInTemplate", 
                         "ses:Get*", 
                         "ses:List*", 
                         "ses:Describe*", 

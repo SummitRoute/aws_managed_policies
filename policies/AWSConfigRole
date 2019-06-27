@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-06-10T22:53:30Z", 
-        "VersionId": "v26", 
+        "CreateDate": "2019-06-25T23:23:52Z", 
+        "VersionId": "v27", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -86,6 +86,7 @@
                         "redshift:DescribeEventSubscriptions", 
                         "redshift:DescribeLoggingStatus", 
                         "dynamodb:DescribeLimits", 
+                        "dynamodb:DescribeContinuousBackups", 
                         "dynamodb:DescribeTable", 
                         "dynamodb:ListTables", 
                         "dynamodb:ListTagsOfResource", 
