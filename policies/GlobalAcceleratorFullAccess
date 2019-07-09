@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-11-27T02:44:44Z", 
-        "VersionId": "v1", 
+        "CreateDate": "2019-07-08T22:15:16Z", 
+        "VersionId": "v2", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -9,6 +9,16 @@
                     "Action": [
                         "globalaccelerator:*"
                     ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": "elasticloadbalancing:DescribeLoadBalancers", 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": "ec2:DescribeAddresses", 
                     "Resource": "*", 
                     "Effect": "Allow"
                 }
