@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-02-23T19:36:01Z", 
-        "VersionId": "v7", 
+        "CreateDate": "2019-07-10T19:27:59Z", 
+        "VersionId": "v8", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -81,9 +81,23 @@
                 }, 
                 {
                     "Action": [
+                        "iam:CreateServiceLinkedRole"
+                    ], 
+                    "Resource": [
+                        "arn:aws:iam::*:role/aws-service-role/elasticloadbalancing.amazonaws.com/AWSServiceRoleForElasticLoadBalancing*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Condition": {
+                        "StringLike": {
+                            "iam:AWSServiceName": "elasticloadbalancing.amazonaws.com"
+                        }
+                    }
+                }, 
+                {
+                    "Action": [
                         "iam:AttachRolePolicy"
                     ], 
-                    "Resource": "*", 
+                    "Resource": "arn:aws:iam::*:role/aws-elasticbeanstalk*", 
                     "Effect": "Allow", 
                     "Condition": {
                         "StringLike": {
