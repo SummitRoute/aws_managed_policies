@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-06-18T22:04:55Z", 
-        "VersionId": "v6", 
+        "CreateDate": "2019-07-10T20:30:52Z", 
+        "VersionId": "v7", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -75,7 +75,8 @@
                         "servicecatalog:DeleteProvisionedProductPlan", 
                         "servicecatalog:ListProvisionedProductPlans", 
                         "servicecatalog:ListServiceActionsForProvisioningArtifact", 
-                        "servicecatalog:ExecuteProvisionedProductServiceAction"
+                        "servicecatalog:ExecuteProvisionedProductServiceAction", 
+                        "servicecatalog:DescribeServiceActionExecutionParameters"
                     ], 
                     "Resource": "*", 
                     "Effect": "Allow", 
