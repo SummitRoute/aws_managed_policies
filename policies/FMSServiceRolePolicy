@@ -1,147 +1,147 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-03-08T18:02:51Z", 
-        "VersionId": "v7", 
         "Document": {
-            "Version": "2012-10-17", 
+            "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "waf:UpdateWebACL", 
-                        "waf:DeleteWebACL", 
-                        "waf:GetWebACL", 
-                        "waf:GetRuleGroup", 
-                        "waf:ListSubscribedRuleGroups", 
-                        "waf-regional:UpdateWebACL", 
-                        "waf-regional:DeleteWebACL", 
-                        "waf-regional:GetWebACL", 
-                        "waf-regional:GetRuleGroup", 
-                        "waf-regional:ListSubscribedRuleGroups", 
-                        "waf-regional:ListResourcesForWebACL", 
-                        "waf-regional:AssociateWebACL", 
-                        "waf-regional:DisassociateWebACL", 
-                        "elasticloadbalancing:SetWebACL", 
+                        "waf:UpdateWebACL",
+                        "waf:DeleteWebACL",
+                        "waf:GetWebACL",
+                        "waf:GetRuleGroup",
+                        "waf:ListSubscribedRuleGroups",
+                        "waf-regional:UpdateWebACL",
+                        "waf-regional:DeleteWebACL",
+                        "waf-regional:GetWebACL",
+                        "waf-regional:GetRuleGroup",
+                        "waf-regional:ListSubscribedRuleGroups",
+                        "waf-regional:ListResourcesForWebACL",
+                        "waf-regional:AssociateWebACL",
+                        "waf-regional:DisassociateWebACL",
+                        "elasticloadbalancing:SetWebACL",
                         "apigateway:SetWebACL"
-                    ], 
+                    ],
                     "Resource": [
-                        "arn:aws:waf:*:*:webacl/*", 
-                        "arn:aws:waf-regional:*:*:webacl/*", 
-                        "arn:aws:waf:*:*:rulegroup/*", 
-                        "arn:aws:waf-regional:*:*:rulegroup/*", 
-                        "arn:aws:elasticloadbalancing:*:*:loadbalancer/app/*", 
+                        "arn:aws:waf:*:*:webacl/*",
+                        "arn:aws:waf-regional:*:*:webacl/*",
+                        "arn:aws:waf:*:*:rulegroup/*",
+                        "arn:aws:waf-regional:*:*:rulegroup/*",
+                        "arn:aws:elasticloadbalancing:*:*:loadbalancer/app/*",
                         "arn:aws:apigateway:*::/restapis/*/stages/*"
-                    ], 
-                    "Effect": "Allow"
-                }, 
+                    ]
+                },
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "waf:CreateWebACL", 
-                        "waf-regional:CreateWebACL", 
-                        "waf:GetChangeToken", 
+                        "waf:CreateWebACL",
+                        "waf-regional:CreateWebACL",
+                        "waf:GetChangeToken",
                         "waf-regional:GetChangeToken"
-                    ], 
+                    ],
                     "Resource": [
-                        "arn:aws:waf:*", 
+                        "arn:aws:waf:*",
                         "arn:aws:waf-regional:*"
-                    ], 
-                    "Effect": "Allow"
-                }, 
+                    ]
+                },
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "waf:PutPermissionPolicy", 
-                        "waf:GetPermissionPolicy", 
-                        "waf:DeletePermissionPolicy", 
-                        "waf-regional:PutPermissionPolicy", 
-                        "waf-regional:GetPermissionPolicy", 
+                        "waf:PutPermissionPolicy",
+                        "waf:GetPermissionPolicy",
+                        "waf:DeletePermissionPolicy",
+                        "waf-regional:PutPermissionPolicy",
+                        "waf-regional:GetPermissionPolicy",
                         "waf-regional:DeletePermissionPolicy"
-                    ], 
+                    ],
                     "Resource": [
-                        "arn:aws:waf:*:*:webacl/*", 
-                        "arn:aws:waf:*:*:rulegroup/*", 
-                        "arn:aws:waf-regional:*:*:webacl/*", 
+                        "arn:aws:waf:*:*:webacl/*",
+                        "arn:aws:waf:*:*:rulegroup/*",
+                        "arn:aws:waf-regional:*:*:webacl/*",
                         "arn:aws:waf-regional:*:*:rulegroup/*"
-                    ], 
-                    "Effect": "Allow"
-                }, 
+                    ]
+                },
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "cloudfront:GetDistribution", 
-                        "cloudfront:UpdateDistribution", 
+                        "cloudfront:GetDistribution",
+                        "cloudfront:UpdateDistribution",
                         "cloudfront:ListDistributionsByWebACLId"
-                    ], 
-                    "Resource": "*", 
-                    "Effect": "Allow"
-                }, 
+                    ],
+                    "Resource": "*"
+                },
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "config:DeleteConfigRule", 
-                        "config:DescribeComplianceByConfigRule", 
-                        "config:DescribeConfigRuleEvaluationStatus", 
-                        "config:DescribeConfigRules", 
-                        "config:GetComplianceDetailsByConfigRule", 
-                        "config:PutConfigRule", 
+                        "config:DeleteConfigRule",
+                        "config:DescribeComplianceByConfigRule",
+                        "config:DescribeConfigRuleEvaluationStatus",
+                        "config:DescribeConfigRules",
+                        "config:GetComplianceDetailsByConfigRule",
+                        "config:PutConfigRule",
                         "config:StartConfigRulesEvaluation"
-                    ], 
-                    "Resource": "arn:aws:config:*:*:config-rule/aws-service-rule/fms.amazonaws.com/*", 
-                    "Effect": "Allow"
-                }, 
+                    ],
+                    "Resource": "arn:aws:config:*:*:config-rule/aws-service-rule/fms.amazonaws.com/*"
+                },
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "config:DescribeConfigurationRecorders", 
-                        "config:DescribeConfigurationRecorderStatus", 
-                        "config:PutConfigurationRecorder", 
-                        "config:StartConfigurationRecorder", 
-                        "config:PutDeliveryChannel", 
-                        "config:DescribeDeliveryChannels", 
-                        "config:DescribeDeliveryChannelStatus", 
-                        "config:GetComplianceSummaryByConfigRule", 
+                        "config:DescribeConfigurationRecorders",
+                        "config:DescribeConfigurationRecorderStatus",
+                        "config:PutConfigurationRecorder",
+                        "config:StartConfigurationRecorder",
+                        "config:PutDeliveryChannel",
+                        "config:DescribeDeliveryChannels",
+                        "config:DescribeDeliveryChannelStatus",
+                        "config:GetComplianceSummaryByConfigRule",
                         "config:GetDiscoveredResourceCounts"
-                    ], 
-                    "Resource": "*", 
-                    "Effect": "Allow"
-                }, 
+                    ],
+                    "Resource": "*"
+                },
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "iam:DeleteServiceLinkedRole", 
+                        "iam:DeleteServiceLinkedRole",
                         "iam:GetServiceLinkedRoleDeletionStatus"
-                    ], 
+                    ],
                     "Resource": [
                         "arn:aws:iam::*:role/aws-service-role/fms.amazonaws.com/AWSServiceRoleForFMS"
-                    ], 
-                    "Effect": "Allow"
-                }, 
+                    ]
+                },
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "organizations:DescribeAccount", 
-                        "organizations:DescribeOrganization", 
+                        "organizations:DescribeAccount",
+                        "organizations:DescribeOrganization",
                         "organizations:ListAccounts"
-                    ], 
+                    ],
                     "Resource": [
                         "*"
-                    ], 
-                    "Effect": "Allow"
-                }, 
+                    ]
+                },
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "shield:CreateProtection", 
-                        "shield:DeleteProtection", 
-                        "shield:DescribeProtection", 
-                        "shield:ListProtections", 
-                        "shield:ListAttacks", 
-                        "shield:CreateSubscription", 
-                        "shield:DescribeSubscription", 
-                        "shield:GetSubscriptionState", 
-                        "shield:DescribeDRTAccess", 
-                        "shield:DescribeEmergencyContactSettings", 
-                        "shield:UpdateEmergencyContactSettings", 
-                        "elasticloadbalancing:DescribeLoadBalancers", 
+                        "shield:CreateProtection",
+                        "shield:DeleteProtection",
+                        "shield:DescribeProtection",
+                        "shield:ListProtections",
+                        "shield:ListAttacks",
+                        "shield:CreateSubscription",
+                        "shield:DescribeSubscription",
+                        "shield:GetSubscriptionState",
+                        "shield:DescribeDRTAccess",
+                        "shield:DescribeEmergencyContactSettings",
+                        "shield:UpdateEmergencyContactSettings",
+                        "elasticloadbalancing:DescribeLoadBalancers",
                         "ec2:DescribeAddresses"
-                    ], 
-                    "Resource": "*", 
-                    "Effect": "Allow"
+                    ],
+                    "Resource": "*"
                 }
             ]
-        }, 
-        "IsDefaultVersion": true
+        },
+        "VersionId": "v7",
+        "IsDefaultVersion": true,
+        "CreateDate": "2019-03-08T18:02:51Z"
     }
 }

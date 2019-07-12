@@ -1,20 +1,20 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-04-25T21:07:17Z", 
-        "VersionId": "v2", 
         "Document": {
-            "Version": "2012-10-17", 
+            "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "guardduty:Get*", 
+                        "guardduty:Get*",
                         "guardduty:List*"
-                    ], 
-                    "Resource": "*", 
-                    "Effect": "Allow"
+                    ],
+                    "Resource": "*"
                 }
             ]
-        }, 
-        "IsDefaultVersion": true
+        },
+        "VersionId": "v2",
+        "IsDefaultVersion": true,
+        "CreateDate": "2018-04-25T21:07:17Z"
     }
 }

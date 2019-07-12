@@ -1,25 +1,25 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2017-08-10T17:25:34Z", 
-        "VersionId": "v2", 
         "Document": {
-            "Version": "2012-10-17", 
+            "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Sid": "CloudWatchEventsReadOnlyAccess",
+                    "Effect": "Allow",
                     "Action": [
-                        "events:DescribeRule", 
-                        "events:ListRuleNamesByTarget", 
-                        "events:ListRules", 
-                        "events:ListTargetsByRule", 
-                        "events:TestEventPattern", 
+                        "events:DescribeRule",
+                        "events:ListRuleNamesByTarget",
+                        "events:ListRules",
+                        "events:ListTargetsByRule",
+                        "events:TestEventPattern",
                         "events:DescribeEventBus"
-                    ], 
-                    "Resource": "*", 
-                    "Effect": "Allow", 
-                    "Sid": "CloudWatchEventsReadOnlyAccess"
+                    ],
+                    "Resource": "*"
                 }
             ]
-        }, 
-        "IsDefaultVersion": true
+        },
+        "VersionId": "v2",
+        "IsDefaultVersion": true,
+        "CreateDate": "2017-08-10T17:25:34Z"
     }
 }

@@ -1,37 +1,35 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2017-09-19T18:27:44Z", 
-        "VersionId": "v2", 
         "Document": {
-            "Version": "2012-10-17", 
+            "Version": "2012-10-17",
             "Statement": [
                 {
                     "Action": [
-                        "redshift:*", 
-                        "ec2:DescribeAccountAttributes", 
-                        "ec2:DescribeAddresses", 
-                        "ec2:DescribeAvailabilityZones", 
-                        "ec2:DescribeSecurityGroups", 
-                        "ec2:DescribeSubnets", 
-                        "ec2:DescribeVpcs", 
-                        "ec2:DescribeInternetGateways", 
-                        "sns:CreateTopic", 
-                        "sns:Get*", 
-                        "sns:List*", 
-                        "cloudwatch:Describe*", 
-                        "cloudwatch:Get*", 
-                        "cloudwatch:List*", 
-                        "cloudwatch:PutMetricAlarm", 
-                        "cloudwatch:EnableAlarmActions", 
+                        "redshift:*",
+                        "ec2:DescribeAccountAttributes",
+                        "ec2:DescribeAddresses",
+                        "ec2:DescribeAvailabilityZones",
+                        "ec2:DescribeSecurityGroups",
+                        "ec2:DescribeSubnets",
+                        "ec2:DescribeVpcs",
+                        "ec2:DescribeInternetGateways",
+                        "sns:CreateTopic",
+                        "sns:Get*",
+                        "sns:List*",
+                        "cloudwatch:Describe*",
+                        "cloudwatch:Get*",
+                        "cloudwatch:List*",
+                        "cloudwatch:PutMetricAlarm",
+                        "cloudwatch:EnableAlarmActions",
                         "cloudwatch:DisableAlarmActions"
-                    ], 
-                    "Resource": "*", 
-                    "Effect": "Allow"
-                }, 
+                    ],
+                    "Effect": "Allow",
+                    "Resource": "*"
+                },
                 {
-                    "Action": "iam:CreateServiceLinkedRole", 
-                    "Resource": "arn:aws:iam::*:role/aws-service-role/redshift.amazonaws.com/AWSServiceRoleForRedshift", 
-                    "Effect": "Allow", 
+                    "Effect": "Allow",
+                    "Action": "iam:CreateServiceLinkedRole",
+                    "Resource": "arn:aws:iam::*:role/aws-service-role/redshift.amazonaws.com/AWSServiceRoleForRedshift",
                     "Condition": {
                         "StringLike": {
                             "iam:AWSServiceName": "redshift.amazonaws.com"
@@ -39,7 +37,9 @@
                     }
                 }
             ]
-        }, 
-        "IsDefaultVersion": true
+        },
+        "VersionId": "v2",
+        "IsDefaultVersion": true,
+        "CreateDate": "2017-09-19T18:27:44Z"
     }
 }

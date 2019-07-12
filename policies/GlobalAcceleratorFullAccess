@@ -1,29 +1,29 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-07-08T22:15:16Z", 
-        "VersionId": "v2", 
         "Document": {
-            "Version": "2012-10-17", 
+            "Version": "2012-10-17",
             "Statement": [
                 {
                     "Action": [
                         "globalaccelerator:*"
-                    ], 
-                    "Resource": "*", 
-                    "Effect": "Allow"
-                }, 
+                    ],
+                    "Effect": "Allow",
+                    "Resource": "*"
+                },
                 {
-                    "Action": "elasticloadbalancing:DescribeLoadBalancers", 
-                    "Resource": "*", 
-                    "Effect": "Allow"
-                }, 
+                    "Action": "elasticloadbalancing:DescribeLoadBalancers",
+                    "Effect": "Allow",
+                    "Resource": "*"
+                },
                 {
-                    "Action": "ec2:DescribeAddresses", 
-                    "Resource": "*", 
-                    "Effect": "Allow"
+                    "Action": "ec2:DescribeAddresses",
+                    "Effect": "Allow",
+                    "Resource": "*"
                 }
             ]
-        }, 
-        "IsDefaultVersion": true
+        },
+        "VersionId": "v2",
+        "IsDefaultVersion": true,
+        "CreateDate": "2019-07-08T22:15:16Z"
     }
 }

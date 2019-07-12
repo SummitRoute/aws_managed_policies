@@ -1,31 +1,31 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-02-16T00:18:11Z", 
-        "VersionId": "v3", 
         "Document": {
-            "Version": "2012-10-17", 
+            "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "cognito-identity:Describe*", 
-                        "cognito-identity:Get*", 
-                        "cognito-identity:List*", 
-                        "cognito-idp:Describe*", 
-                        "cognito-idp:AdminGetUser", 
-                        "cognito-idp:AdminList*", 
-                        "cognito-idp:List*", 
-                        "cognito-sync:Describe*", 
-                        "cognito-sync:Get*", 
-                        "cognito-sync:List*", 
-                        "iam:ListOpenIdConnectProviders", 
-                        "iam:ListRoles", 
+                        "cognito-identity:Describe*",
+                        "cognito-identity:Get*",
+                        "cognito-identity:List*",
+                        "cognito-idp:Describe*",
+                        "cognito-idp:AdminGetUser",
+                        "cognito-idp:AdminList*",
+                        "cognito-idp:List*",
+                        "cognito-sync:Describe*",
+                        "cognito-sync:Get*",
+                        "cognito-sync:List*",
+                        "iam:ListOpenIdConnectProviders",
+                        "iam:ListRoles",
                         "sns:ListPlatformApplications"
-                    ], 
-                    "Resource": "*", 
-                    "Effect": "Allow"
+                    ],
+                    "Resource": "*"
                 }
             ]
-        }, 
-        "IsDefaultVersion": true
+        },
+        "VersionId": "v3",
+        "IsDefaultVersion": true,
+        "CreateDate": "2019-02-16T00:18:11Z"
     }
 }

@@ -1,28 +1,26 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-11-28T16:36:05Z", 
-        "VersionId": "v1", 
         "Document": {
-            "Version": "2012-10-17", 
+            "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "ds:DescribeDirectories", 
-                        "ec2:DescribeNetworkInterfaceAttribute", 
-                        "ec2:DescribeSecurityGroups", 
-                        "ec2:DescribeSubnets", 
-                        "ec2:DescribeVpcs", 
-                        "fsx:*", 
-                        "kms:ListAliases", 
+                        "ds:DescribeDirectories",
+                        "ec2:DescribeNetworkInterfaceAttribute",
+                        "ec2:DescribeSecurityGroups",
+                        "ec2:DescribeSubnets",
+                        "ec2:DescribeVpcs",
+                        "fsx:*",
+                        "kms:ListAliases",
                         "s3:HeadBucket"
-                    ], 
-                    "Resource": "*", 
-                    "Effect": "Allow"
-                }, 
+                    ],
+                    "Resource": "*"
+                },
                 {
-                    "Action": "iam:CreateServiceLinkedRole", 
-                    "Resource": "*", 
-                    "Effect": "Allow", 
+                    "Action": "iam:CreateServiceLinkedRole",
+                    "Effect": "Allow",
+                    "Resource": "*",
                     "Condition": {
                         "StringLike": {
                             "iam:AWSServiceName": [
@@ -30,11 +28,11 @@
                             ]
                         }
                     }
-                }, 
+                },
                 {
-                    "Action": "iam:CreateServiceLinkedRole", 
-                    "Resource": "*", 
-                    "Effect": "Allow", 
+                    "Action": "iam:CreateServiceLinkedRole",
+                    "Effect": "Allow",
+                    "Resource": "*",
                     "Condition": {
                         "StringLike": {
                             "iam:AWSServiceName": [
@@ -44,7 +42,9 @@
                     }
                 }
             ]
-        }, 
-        "IsDefaultVersion": true
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2018-11-28T16:36:05Z"
     }
 }

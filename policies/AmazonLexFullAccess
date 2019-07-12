@@ -1,122 +1,120 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2017-11-15T23:55:07Z", 
-        "VersionId": "v4", 
         "Document": {
-            "Version": "2012-10-17", 
+            "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "cloudwatch:GetMetricStatistics", 
-                        "cloudwatch:DescribeAlarms", 
-                        "cloudwatch:DescribeAlarmsForMetric", 
-                        "kms:DescribeKey", 
-                        "kms:ListAliases", 
-                        "lambda:GetPolicy", 
-                        "lambda:ListFunctions", 
-                        "lex:*", 
-                        "polly:DescribeVoices", 
+                        "cloudwatch:GetMetricStatistics",
+                        "cloudwatch:DescribeAlarms",
+                        "cloudwatch:DescribeAlarmsForMetric",
+                        "kms:DescribeKey",
+                        "kms:ListAliases",
+                        "lambda:GetPolicy",
+                        "lambda:ListFunctions",
+                        "lex:*",
+                        "polly:DescribeVoices",
                         "polly:SynthesizeSpeech"
-                    ], 
+                    ],
                     "Resource": [
                         "*"
-                    ], 
-                    "Effect": "Allow"
-                }, 
+                    ]
+                },
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "lambda:AddPermission", 
+                        "lambda:AddPermission",
                         "lambda:RemovePermission"
-                    ], 
-                    "Resource": "arn:aws:lambda:*:*:function:AmazonLex*", 
-                    "Effect": "Allow", 
+                    ],
+                    "Resource": "arn:aws:lambda:*:*:function:AmazonLex*",
                     "Condition": {
                         "StringLike": {
                             "lambda:Principal": "lex.amazonaws.com"
                         }
                     }
-                }, 
+                },
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "iam:GetRole", 
+                        "iam:GetRole",
                         "iam:DeleteRole"
-                    ], 
+                    ],
                     "Resource": [
-                        "arn:aws:iam::*:role/aws-service-role/lex.amazonaws.com/AWSServiceRoleForLexBots", 
+                        "arn:aws:iam::*:role/aws-service-role/lex.amazonaws.com/AWSServiceRoleForLexBots",
                         "arn:aws:iam::*:role/aws-service-role/channels.lex.amazonaws.com/AWSServiceRoleForLexChannels"
-                    ], 
-                    "Effect": "Allow"
-                }, 
+                    ]
+                },
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "iam:CreateServiceLinkedRole"
-                    ], 
+                    ],
                     "Resource": [
                         "arn:aws:iam::*:role/aws-service-role/lex.amazonaws.com/AWSServiceRoleForLexBots"
-                    ], 
-                    "Effect": "Allow", 
+                    ],
                     "Condition": {
                         "StringLike": {
                             "iam:AWSServiceName": "lex.amazonaws.com"
                         }
                     }
-                }, 
+                },
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "iam:DeleteServiceLinkedRole", 
+                        "iam:DeleteServiceLinkedRole",
                         "iam:GetServiceLinkedRoleDeletionStatus"
-                    ], 
+                    ],
                     "Resource": [
                         "arn:aws:iam::*:role/aws-service-role/lex.amazonaws.com/AWSServiceRoleForLexBots"
-                    ], 
-                    "Effect": "Allow"
-                }, 
+                    ]
+                },
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "iam:DetachRolePolicy"
-                    ], 
+                    ],
                     "Resource": [
                         "arn:aws:iam::*:role/aws-service-role/lex.amazonaws.com/AWSServiceRoleForLexBots"
-                    ], 
-                    "Effect": "Allow", 
+                    ],
                     "Condition": {
                         "StringLike": {
                             "iam:PolicyArn": "arn:aws:iam::aws:policy/aws-service-role/AmazonLexBotPolicy"
                         }
                     }
-                }, 
+                },
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "iam:CreateServiceLinkedRole"
-                    ], 
+                    ],
                     "Resource": [
                         "arn:aws:iam::*:role/aws-service-role/channels.lex.amazonaws.com/AWSServiceRoleForLexChannels"
-                    ], 
-                    "Effect": "Allow", 
+                    ],
                     "Condition": {
                         "StringLike": {
                             "iam:AWSServiceName": "channels.lex.amazonaws.com"
                         }
                     }
-                }, 
+                },
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "iam:DeleteServiceLinkedRole", 
+                        "iam:DeleteServiceLinkedRole",
                         "iam:GetServiceLinkedRoleDeletionStatus"
-                    ], 
+                    ],
                     "Resource": [
                         "arn:aws:iam::*:role/aws-service-role/channels.lex.amazonaws.com/AWSServiceRoleForLexChannels"
-                    ], 
-                    "Effect": "Allow"
-                }, 
+                    ]
+                },
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "iam:DetachRolePolicy"
-                    ], 
+                    ],
                     "Resource": [
                         "arn:aws:iam::*:role/aws-service-role/channels.lex.amazonaws.com/AWSServiceRoleForLexChannels"
-                    ], 
-                    "Effect": "Allow", 
+                    ],
                     "Condition": {
                         "StringLike": {
                             "iam:PolicyArn": "arn:aws:iam::aws:policy/aws-service-role/LexChannelPolicy"
@@ -124,7 +122,9 @@
                     }
                 }
             ]
-        }, 
-        "IsDefaultVersion": true
+        },
+        "VersionId": "v4",
+        "IsDefaultVersion": true,
+        "CreateDate": "2017-11-15T23:55:07Z"
     }
 }
