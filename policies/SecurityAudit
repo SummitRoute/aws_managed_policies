@@ -180,6 +180,7 @@
                         "route53domains:ListOperations",
                         "route53domains:ListTagsForDomain",
                         "route53resolver:List*",
+                        "route53resolver:Get*",
                         "s3:GetAccelerateConfiguration",
                         "s3:GetAccountPublicAccessBlock",
                         "s3:GetAnalyticsConfiguration",
@@ -266,8 +267,8 @@
                 }
             ]
         },
-        "VersionId": "v28",
+        "VersionId": "v29",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-06-06T18:09:18Z"
+        "CreateDate": "2019-07-18T20:16:48Z"
     }
 }
