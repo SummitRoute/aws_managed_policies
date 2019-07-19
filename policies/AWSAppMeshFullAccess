@@ -23,11 +23,21 @@
                             ]
                         }
                     }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "cloudformation:CreateStack",
+                        "cloudformation:DeleteStack",
+                        "cloudformation:DescribeStack*",
+                        "cloudformation:UpdateStack"
+                    ],
+                    "Resource": "arn:aws:cloudformation:*:*:stack/AWSAppMesh-GettingStarted-*"
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-06-05T18:47:32Z"
+        "CreateDate": "2019-07-18T21:18:35Z"
     }
 }
