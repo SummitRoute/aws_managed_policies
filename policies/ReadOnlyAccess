@@ -321,6 +321,9 @@
                         "logs:TestMetricFilter",
                         "machinelearning:Describe*",
                         "machinelearning:Get*",
+                        "mediaconvert:DescribeEndpoints",
+                        "mediaconvert:Get*",
+                        "mediaconvert:List*",
                         "mgh:Describe*",
                         "mgh:List*",
                         "mobileanalytics:Get*",
@@ -339,6 +342,9 @@
                         "opsworks-cm:Describe*",
                         "organizations:Describe*",
                         "organizations:List*",
+                        "personalize:Describe*",
+                        "personalize:Get*",
+                        "personalize:List*",
                         "pi:DescribeDimensionKeys",
                         "pi:GetResourceMetrics",
                         "polly:Describe*",
@@ -375,13 +381,16 @@
                         "s3:List*",
                         "s3:Head*",
                         "sagemaker:Describe*",
+                        "sagemaker:GetSearchSuggestions",
                         "sagemaker:List*",
+                        "sagemaker:Search",
                         "sdb:Get*",
                         "sdb:List*",
                         "sdb:Select*",
                         "secretsmanager:List*",
                         "secretsmanager:Describe*",
                         "secretsmanager:GetResourcePolicy",
+                        "securityhub:Describe*",
                         "securityhub:Get*",
                         "securityhub:List*",
                         "serverlessrepo:List*",
@@ -461,8 +470,8 @@
                 }
             ]
         },
-        "VersionId": "v51",
+        "VersionId": "v52",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-06-26T21:54:17Z"
+        "CreateDate": "2019-07-23T18:41:14Z"
     }
 }
