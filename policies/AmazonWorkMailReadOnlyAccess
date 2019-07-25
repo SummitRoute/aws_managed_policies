@@ -14,14 +14,15 @@
                         "workmail:Search*",
                         "lambda:ListFunctions",
                         "iam:ListRoles",
-                        "logs:DescribeLogGroups"
+                        "logs:DescribeLogGroups",
+                        "cloudwatch:GetMetricData"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-05-13T15:12:46Z"
+        "CreateDate": "2019-07-25T08:24:50Z"
     }
 }
