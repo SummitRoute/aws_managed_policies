@@ -26,11 +26,18 @@
                         "firehose:PutRecordBatch"
                     ],
                     "Resource": "arn:aws:firehose:*:*:deliverystream/amazon-apigateway-*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "acm:DescribeCertificate"
+                    ],
+                    "Resource": "arn:aws:acm:*:*:certificate/*"
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-05-20T18:22:18Z"
+        "CreateDate": "2019-07-25T20:03:52Z"
     }
 }
