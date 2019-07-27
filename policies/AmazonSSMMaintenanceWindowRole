@@ -4,7 +4,6 @@
             "Version": "2012-10-17",
             "Statement": [
                 {
-                    "Sid": "Stmt1477803259000",
                     "Effect": "Allow",
                     "Action": [
                         "ssm:GetAutomationExecution",
@@ -18,7 +17,6 @@
                     ]
                 },
                 {
-                    "Sid": "Stmt1477803259001",
                     "Effect": "Allow",
                     "Action": [
                         "lambda:InvokeFunction"
@@ -29,7 +27,6 @@
                     ]
                 },
                 {
-                    "Sid": "Stmt1477803259002",
                     "Effect": "Allow",
                     "Action": [
                         "states:DescribeExecution",
@@ -39,11 +36,30 @@
                         "arn:aws:states:*:*:stateMachine:SSM*",
                         "arn:aws:states:*:*:execution:SSM*"
                     ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "resource-groups:ListGroups",
+                        "resource-groups:ListGroupResources"
+                    ],
+                    "Resource": [
+                        "*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "tag:GetResources"
+                    ],
+                    "Resource": [
+                        "*"
+                    ]
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2017-08-09T20:49:14Z"
+        "CreateDate": "2019-07-27T00:16:05Z"
     }
 }
