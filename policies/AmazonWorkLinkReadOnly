@@ -7,14 +7,15 @@
                     "Effect": "Allow",
                     "Action": [
                         "worklink:Describe*",
-                        "worklink:List*"
+                        "worklink:List*",
+                        "worklink:Search*"
                     ],
                     "Resource": "arn:aws:worklink:*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-01-23T19:07:10Z"
+        "CreateDate": "2019-08-01T21:35:07Z"
     }
 }

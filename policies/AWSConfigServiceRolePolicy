@@ -38,11 +38,14 @@
                         "dynamodb:ListTables",
                         "dynamodb:ListTagsOfResource",
                         "ec2:Describe*",
-                        "ec2:DescribeSnapshots",
+                        "elasticache:DescribeCacheClusters",
+                        "elasticache:DescribeReplicationGroups",
                         "elasticfilesystem:DescribeFileSystems",
+                        "elasticloadbalancing:DescribeListeners",
                         "elasticloadbalancing:DescribeLoadBalancerAttributes",
                         "elasticloadbalancing:DescribeLoadBalancerPolicies",
                         "elasticloadbalancing:DescribeLoadBalancers",
+                        "elasticloadbalancing:DescribeRules",
                         "elasticloadbalancing:DescribeTags",
                         "elasticmapreduce:DescribeCluster",
                         "elasticmapreduce:DescribeSecurityConfiguration",
@@ -86,6 +89,8 @@
                         "lambda:ListFunctions",
                         "logs:DescribeLogGroups",
                         "rds:DescribeDBClusters",
+                        "rds:DescribeDBClusterSnapshotAttributes",
+                        "rds:DescribeDBClusterSnapshots",
                         "rds:DescribeDBInstances",
                         "rds:DescribeDBSecurityGroups",
                         "rds:DescribeDBSnapshotAttributes",
@@ -135,8 +140,8 @@
                 }
             ]
         },
-        "VersionId": "v14",
+        "VersionId": "v15",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-07-23T19:18:04Z"
+        "CreateDate": "2019-08-01T23:10:02Z"
     }
 }
