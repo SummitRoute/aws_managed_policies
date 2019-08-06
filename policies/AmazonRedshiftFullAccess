@@ -21,7 +21,15 @@
                         "cloudwatch:List*",
                         "cloudwatch:PutMetricAlarm",
                         "cloudwatch:EnableAlarmActions",
-                        "cloudwatch:DisableAlarmActions"
+                        "cloudwatch:DisableAlarmActions",
+                        "cloudwatch:ListMetrics",
+                        "cloudwatch:GetMetricWidgetImage",
+                        "cloudwatch:GetMetricData",
+                        "tag:GetResources",
+                        "tag:UntagResources",
+                        "tag:GetTagValues",
+                        "tag:GetTagKeys",
+                        "tag:TagResources"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
@@ -38,8 +46,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2017-09-19T18:27:44Z"
+        "CreateDate": "2019-08-06T00:05:05Z"
     }
 }
