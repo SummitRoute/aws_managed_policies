@@ -17,6 +17,7 @@
                         "ec2:DisassociateAddress",
                         "ec2:DescribeRouteTables",
                         "ec2:DescribeSecurityGroups",
+                        "ec2:DescribeVpcEndpoints",
                         "s3:ListAllMyBuckets"
                     ],
                     "Resource": "*"
@@ -42,8 +43,8 @@
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-01-17T20:22:45Z"
+        "CreateDate": "2019-08-07T18:29:52Z"
     }
 }
