@@ -96,11 +96,20 @@
                     "Resource": [
                         "*"
                     ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "lakeformation:GetDataAccess"
+                    ],
+                    "Resource": [
+                        "*"
+                    ]
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-02-19T00:13:03Z"
+        "CreateDate": "2019-08-08T17:52:27Z"
     }
 }

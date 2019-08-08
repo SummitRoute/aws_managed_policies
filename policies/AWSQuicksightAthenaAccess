@@ -70,11 +70,20 @@
                     "Resource": [
                         "arn:aws:s3:::aws-athena-query-results-*"
                     ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "lakeformation:GetDataAccess"
+                    ],
+                    "Resource": [
+                        "*"
+                    ]
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-08-07T20:24:55Z"
+        "CreateDate": "2019-08-08T17:51:51Z"
     }
 }
