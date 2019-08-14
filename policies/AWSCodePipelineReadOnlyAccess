@@ -8,8 +8,10 @@
                         "codepipeline:GetPipelineState",
                         "codepipeline:GetPipelineExecution",
                         "codepipeline:ListPipelineExecutions",
+                        "codepipeline:ListActionExecutions",
                         "codepipeline:ListActionTypes",
                         "codepipeline:ListPipelines",
+                        "codepipeline:ListTagsForResource",
                         "iam:ListRoles",
                         "s3:GetBucketPolicy",
                         "s3:GetObject",
@@ -35,8 +37,8 @@
             ],
             "Version": "2012-10-17"
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2017-08-02T17:25:18Z"
+        "CreateDate": "2019-08-13T22:18:42Z"
     }
 }
