@@ -94,7 +94,9 @@
                         "config:DescribeDeliveryChannels",
                         "config:DescribeDeliveryChannelStatus",
                         "config:GetComplianceSummaryByConfigRule",
-                        "config:GetDiscoveredResourceCounts"
+                        "config:GetDiscoveredResourceCounts",
+                        "config:PutEvaluations",
+                        "config:SelectResourceConfig"
                     ],
                     "Resource": "*"
                 },
@@ -137,11 +139,52 @@
                         "ec2:DescribeAddresses"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ec2:AuthorizeSecurityGroupEgress",
+                        "ec2:AuthorizeSecurityGroupIngress",
+                        "ec2:DeleteSecurityGroup",
+                        "ec2:RevokeSecurityGroupEgress",
+                        "ec2:RevokeSecurityGroupIngress",
+                        "ec2:UpdateSecurityGroupRuleDescriptionsEgress",
+                        "ec2:UpdateSecurityGroupRuleDescriptionsIngress",
+                        "ec2:DescribeNetworkInterfaceAttribute"
+                    ],
+                    "Resource": [
+                        "arn:aws:ec2:*:*:network-interface/*",
+                        "arn:aws:ec2:*:*:security-group/*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ec2:CreateTags"
+                    ],
+                    "Resource": [
+                        "arn:aws:ec2:*:*:security-group/*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ec2:CreateSecurityGroup",
+                        "ec2:DescribeSecurityGroupReferences",
+                        "ec2:DescribeSecurityGroups",
+                        "ec2:DescribeStaleSecurityGroups",
+                        "ec2:DescribeNetworkInterfaces",
+                        "ec2:ModifyNetworkInterfaceAttribute",
+                        "ec2:DescribeVpcs"
+                    ],
+                    "Resource": [
+                        "*"
+                    ]
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-03-08T18:02:51Z"
+        "CreateDate": "2019-08-14T21:35:01Z"
     }
 }
