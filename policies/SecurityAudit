@@ -200,6 +200,7 @@
                         "secretsmanager:GetResourcePolicy",
                         "secretsmanager:ListSecrets",
                         "secretsmanager:ListSecretVersionIds",
+                        "securityhub:Describe*",
                         "securityhub:Get*",
                         "securityhub:List*",
                         "serverlessrepo:GetApplicationPolicy",
@@ -267,8 +268,8 @@
                 }
             ]
         },
-        "VersionId": "v29",
+        "VersionId": "v30",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-07-18T20:16:48Z"
+        "CreateDate": "2019-08-16T10:06:35Z"
     }
 }
