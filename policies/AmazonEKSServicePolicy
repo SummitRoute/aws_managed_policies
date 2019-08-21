@@ -15,7 +15,8 @@
                         "ec2:DescribeSubnets",
                         "ec2:DescribeVpcs",
                         "ec2:ModifyNetworkInterfaceAttribute",
-                        "iam:ListAttachedRolePolicies"
+                        "iam:ListAttachedRolePolicies",
+                        "eks:UpdateClusterVersion"
                     ],
                     "Resource": "*"
                 },
@@ -55,8 +56,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-02-26T21:01:48Z"
+        "CreateDate": "2019-08-21T16:17:56Z"
     }
 }
