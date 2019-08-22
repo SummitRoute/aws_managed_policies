@@ -71,10 +71,13 @@
                         "ecr:BatchCheckLayerAvailability",
                         "ecr:BatchGetImage",
                         "ecr:CreateRepository",
+                        "ecr:Describe*",
                         "ecr:GetAuthorizationToken",
                         "ecr:GetDownloadUrlForLayer",
-                        "ecr:Describe*",
                         "elastic-inference:Connect",
+                        "elasticfilesystem:DescribeFileSystems",
+                        "elasticfilesystem:DescribeMountTargets",
+                        "fsx:DescribeFileSystems",
                         "glue:CreateJob",
                         "glue:DeleteJob",
                         "glue:GetJob",
@@ -275,8 +278,8 @@
                 }
             ]
         },
-        "VersionId": "v11",
+        "VersionId": "v12",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-05-09T04:44:05Z"
+        "CreateDate": "2019-08-21T22:56:23Z"
     }
 }

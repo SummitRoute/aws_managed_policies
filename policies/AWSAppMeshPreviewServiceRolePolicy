@@ -15,14 +15,14 @@
                     "Sid": "ACMCertificateVerification",
                     "Effect": "Allow",
                     "Action": [
-                        "acm:GetCertificate"
+                        "acm:DescribeCertificate"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-08-06T16:08:50Z"
+        "CreateDate": "2019-08-21T21:06:29Z"
     }
 }

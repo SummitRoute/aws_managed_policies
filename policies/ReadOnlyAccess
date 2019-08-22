@@ -15,6 +15,7 @@
                         "acm-pca:Describe*",
                         "acm-pca:Get*",
                         "acm-pca:List*",
+                        "aesop:Get*",
                         "amplify:GetApp",
                         "amplify:GetBranch",
                         "amplify:GetJob",
@@ -149,7 +150,7 @@
                         "ecs:Describe*",
                         "ecs:List*",
                         "eks:DescribeCluster",
-                        "eks:DescribeUpdates",
+                        "eks:DescribeUpdate",
                         "eks:ListClusters",
                         "eks:ListUpdates",
                         "elasticache:Describe*",
@@ -470,8 +471,8 @@
                 }
             ]
         },
-        "VersionId": "v52",
+        "VersionId": "v54",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-07-23T18:41:14Z"
+        "CreateDate": "2019-08-21T23:33:06Z"
     }
 }

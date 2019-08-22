@@ -28,6 +28,7 @@
                         "elasticmapreduce:*",
                         "es:*",
                         "firehose:*",
+                        "fsx:DescribeFileSystems",
                         "iam:GetInstanceProfile",
                         "iam:GetRole",
                         "iam:GetPolicy",
@@ -115,8 +116,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-01-18T19:26:23Z"
+        "CreateDate": "2019-08-21T23:13:03Z"
     }
 }
