@@ -127,11 +127,60 @@
                             "ram:ResourceTag/Service": "LicenseManager"
                         }
                     }
+                },
+                {
+                    "Sid": "IamPermission",
+                    "Effect": "Allow",
+                    "Action": [
+                        "iam:GetRole",
+                        "iam:PassRole"
+                    ],
+                    "Resource": [
+                        "arn:aws:iam::*:role/*"
+                    ],
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:PassedToService": "byol.amazonaws.com"
+                        }
+                    }
+                },
+                {
+                    "Sid": "CloudformationPermission",
+                    "Effect": "Allow",
+                    "Action": [
+                        "cloudformation:UpdateStack",
+                        "cloudformation:CreateStack",
+                        "cloudformation:DeleteStack",
+                        "cloudformation:DescribeStacks"
+                    ],
+                    "Resource": [
+                        "arn:aws:cloudformation:*:*:stack/LicenseManagerCrossAccountCloudDiscoveryStack/*"
+                    ]
+                },
+                {
+                    "Sid": "GlueUpdatePermissions",
+                    "Effect": "Allow",
+                    "Action": [
+                        "glue:CreateTable",
+                        "glue:UpdateTable",
+                        "glue:DeleteTable",
+                        "glue:UpdateJob",
+                        "glue:UpdateCrawler"
+                    ],
+                    "Resource": [
+                        "arn:aws:glue:*:*:catalog",
+                        "arn:aws:glue:*:*:crawler/LicenseManagerResourceSynDataCrawler",
+                        "arn:aws:glue:*:*:job/LicenseManagerResourceSynDataProcessJob",
+                        "arn:aws:glue:*:*:table/license_manager_resource_inventory_db/*",
+                        "arn:aws:glue:*:*:table/license_manager_resource_sync/*",
+                        "arn:aws:glue:*:*:database/license_manager_resource_inventory_db",
+                        "arn:aws:glue:*:*:database/license_manager_resource_sync"
+                    ]
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-11-26T19:03:51Z"
+        "CreateDate": "2019-08-22T20:05:35Z"
     }
 }
