@@ -19,11 +19,21 @@
                     "Action": "ec2:DescribeAddresses",
                     "Effect": "Allow",
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "iam:CreateServiceLinkedRole",
+                    "Resource": "arn:aws:iam::*:role/aws-service-role/globalaccelerator.amazonaws.com/AWSServiceRoleForGlobalAccelerator*",
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:AWSServiceName": "globalaccelerator.amazonaws.com"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-07-08T22:15:16Z"
+        "CreateDate": "2019-08-28T19:04:16Z"
     }
 }
