@@ -1,25 +1,27 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2018-08-09T19:10:43Z", 
+        "VersionId": "v3", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
                     "Action": [
-                        "autoscaling:Describe*",
-                        "cloudwatch:*",
-                        "logs:*",
-                        "sns:*",
-                        "iam:GetPolicy",
-                        "iam:GetPolicyVersion",
+                        "autoscaling:Describe*", 
+                        "cloudwatch:*", 
+                        "logs:*", 
+                        "sns:*", 
+                        "iam:GetPolicy", 
+                        "iam:GetPolicyVersion", 
                         "iam:GetRole"
-                    ],
-                    "Effect": "Allow",
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
-                    "Action": "iam:CreateServiceLinkedRole",
-                    "Resource": "arn:aws:iam::*:role/aws-service-role/events.amazonaws.com/AWSServiceRoleForCloudWatchEvents*",
+                    "Action": "iam:CreateServiceLinkedRole", 
+                    "Resource": "arn:aws:iam::*:role/aws-service-role/events.amazonaws.com/AWSServiceRoleForCloudWatchEvents*", 
+                    "Effect": "Allow", 
                     "Condition": {
                         "StringLike": {
                             "iam:AWSServiceName": "events.amazonaws.com"
@@ -27,9 +29,7 @@
                     }
                 }
             ]
-        },
-        "VersionId": "v3",
-        "IsDefaultVersion": true,
-        "CreateDate": "2018-08-09T19:10:43Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

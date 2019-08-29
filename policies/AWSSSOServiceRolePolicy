@@ -1,86 +1,86 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2019-05-15T20:45:42Z", 
+        "VersionId": "v6", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "iam:AttachRolePolicy",
-                        "iam:CreateRole",
-                        "iam:DeleteRole",
-                        "iam:DeleteRolePolicy",
-                        "iam:DetachRolePolicy",
-                        "iam:GetRole",
-                        "iam:ListRolePolicies",
-                        "iam:PutRolePolicy",
-                        "iam:ListAttachedRolePolicies",
+                        "iam:AttachRolePolicy", 
+                        "iam:CreateRole", 
+                        "iam:DeleteRole", 
+                        "iam:DeleteRolePolicy", 
+                        "iam:DetachRolePolicy", 
+                        "iam:GetRole", 
+                        "iam:ListRolePolicies", 
+                        "iam:PutRolePolicy", 
+                        "iam:ListAttachedRolePolicies", 
                         "iam:UpdateRole"
-                    ],
+                    ], 
                     "Resource": [
                         "arn:aws:iam::*:role/aws-reserved/sso.amazonaws.com/*"
-                    ]
-                },
+                    ], 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Sid": "ListRolesInTheAccount",
-                    "Effect": "Allow",
                     "Action": [
                         "iam:ListRoles"
-                    ],
+                    ], 
                     "Resource": [
                         "*"
-                    ]
-                },
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "ListRolesInTheAccount"
+                }, 
                 {
-                    "Sid": "AllowDeletionOfServiceLinkedRoleForSSO",
-                    "Effect": "Allow",
                     "Action": [
-                        "iam:DeleteServiceLinkedRole",
-                        "iam:GetServiceLinkedRoleDeletionStatus",
-                        "iam:DeleteRole",
+                        "iam:DeleteServiceLinkedRole", 
+                        "iam:GetServiceLinkedRoleDeletionStatus", 
+                        "iam:DeleteRole", 
                         "iam:GetRole"
-                    ],
+                    ], 
                     "Resource": [
                         "arn:aws:iam::*:role/aws-service-role/sso.amazonaws.com/AWSServiceRoleForSSO"
-                    ]
-                },
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "AllowDeletionOfServiceLinkedRoleForSSO"
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "iam:CreateSAMLProvider",
-                        "iam:GetSAMLProvider",
-                        "iam:UpdateSAMLProvider",
+                        "iam:CreateSAMLProvider", 
+                        "iam:GetSAMLProvider", 
+                        "iam:UpdateSAMLProvider", 
                         "iam:DeleteSAMLProvider"
-                    ],
+                    ], 
                     "Resource": [
                         "arn:aws:iam::*:saml-provider/AWSSSO_*"
-                    ]
-                },
+                    ], 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "organizations:DescribeAccount",
-                        "organizations:DescribeOrganization",
+                        "organizations:DescribeAccount", 
+                        "organizations:DescribeOrganization", 
                         "organizations:ListAccounts"
-                    ],
+                    ], 
                     "Resource": [
                         "*"
-                    ]
-                },
+                    ], 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Sid": "AllowUnauthAppForDirectory",
-                    "Effect": "Allow",
                     "Action": [
                         "ds:UnauthorizeApplication"
-                    ],
+                    ], 
                     "Resource": [
                         "*"
-                    ]
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "AllowUnauthAppForDirectory"
                 }
             ]
-        },
-        "VersionId": "v6",
-        "IsDefaultVersion": true,
-        "CreateDate": "2019-05-15T20:45:42Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

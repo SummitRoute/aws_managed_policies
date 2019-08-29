@@ -1,70 +1,72 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2019-02-11T20:49:09Z", 
+        "VersionId": "v3", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Action": "iotanalytics:ExecuteQuery",
-                    "Effect": "Allow",
-                    "Resource": "arn:aws:iotanalytics:*:*:datastore-index/*"
-                },
+                    "Action": "iotanalytics:ExecuteQuery", 
+                    "Resource": "arn:aws:iotanalytics:*:*:datastore-index/*", 
+                    "Effect": "Allow"
+                }, 
                 {
                     "Action": [
-                        "greengrass:CreateCoreDefinitionVersion",
-                        "greengrass:CreateDeployment",
-                        "greengrass:CreateFunctionDefinition",
-                        "greengrass:CreateFunctionDefinitionVersion",
-                        "greengrass:CreateGroupVersion",
-                        "greengrass:CreateLoggerDefinition",
-                        "greengrass:CreateLoggerDefinitionVersion",
-                        "greengrass:CreateResourceDefinition",
-                        "greengrass:CreateResourceDefinitionVersion",
-                        "greengrass:GetAssociatedRole",
-                        "greengrass:GetCoreDefinition",
-                        "greengrass:GetCoreDefinitionVersion",
-                        "greengrass:GetDeploymentStatus",
-                        "greengrass:GetFunctionDefinition",
-                        "greengrass:GetFunctionDefinitionVersion",
-                        "greengrass:GetGroup",
-                        "greengrass:GetGroupVersion",
-                        "greengrass:GetLoggerDefinition",
-                        "greengrass:GetLoggerDefinitionVersion",
-                        "greengrass:GetResourceDefinition",
-                        "greengrass:GetResourceDefinitionVersion",
-                        "greengrass:ListCoreDefinitions",
-                        "greengrass:UpdateCoreDefinition",
-                        "greengrass:UpdateFunctionDefinition",
-                        "greengrass:UpdateLoggerDefinition",
+                        "greengrass:CreateCoreDefinitionVersion", 
+                        "greengrass:CreateDeployment", 
+                        "greengrass:CreateFunctionDefinition", 
+                        "greengrass:CreateFunctionDefinitionVersion", 
+                        "greengrass:CreateGroupVersion", 
+                        "greengrass:CreateLoggerDefinition", 
+                        "greengrass:CreateLoggerDefinitionVersion", 
+                        "greengrass:CreateResourceDefinition", 
+                        "greengrass:CreateResourceDefinitionVersion", 
+                        "greengrass:GetAssociatedRole", 
+                        "greengrass:GetCoreDefinition", 
+                        "greengrass:GetCoreDefinitionVersion", 
+                        "greengrass:GetDeploymentStatus", 
+                        "greengrass:GetFunctionDefinition", 
+                        "greengrass:GetFunctionDefinitionVersion", 
+                        "greengrass:GetGroup", 
+                        "greengrass:GetGroupVersion", 
+                        "greengrass:GetLoggerDefinition", 
+                        "greengrass:GetLoggerDefinitionVersion", 
+                        "greengrass:GetResourceDefinition", 
+                        "greengrass:GetResourceDefinitionVersion", 
+                        "greengrass:ListCoreDefinitions", 
+                        "greengrass:UpdateCoreDefinition", 
+                        "greengrass:UpdateFunctionDefinition", 
+                        "greengrass:UpdateLoggerDefinition", 
                         "greengrass:UpdateResourceDefinition"
-                    ],
-                    "Effect": "Allow",
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
                     "Action": [
-                        "lambda:CreateAlias",
-                        "lambda:CreateFunction",
-                        "lambda:GetFunction",
-                        "lambda:ListVersionsByFunction",
-                        "lambda:UpdateFunctionCode",
-                        "lambda:PublishVersion",
+                        "lambda:CreateAlias", 
+                        "lambda:CreateFunction", 
+                        "lambda:GetFunction", 
+                        "lambda:ListVersionsByFunction", 
+                        "lambda:UpdateFunctionCode", 
+                        "lambda:PublishVersion", 
                         "lambda:UpdateAlias"
-                    ],
-                    "Effect": "Allow",
-                    "Resource": "arn:aws:lambda:*:*:function:AWSIoTSiteWise*"
-                },
+                    ], 
+                    "Resource": "arn:aws:lambda:*:*:function:AWSIoTSiteWise*", 
+                    "Effect": "Allow"
+                }, 
                 {
                     "Action": [
-                        "iot:GetThingShadow",
+                        "iot:GetThingShadow", 
                         "iot:UpdateThingShadow"
-                    ],
-                    "Effect": "Allow",
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Action": "iam:PassRole",
-                    "Effect": "Allow",
-                    "Resource": "*",
+                    "Action": "iam:PassRole", 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
                     "Condition": {
                         "StringLikeIfExists": {
                             "iam:PassedToService": "lambda.amazonaws.com"
@@ -72,9 +74,7 @@
                     }
                 }
             ]
-        },
-        "VersionId": "v3",
-        "IsDefaultVersion": true,
-        "CreateDate": "2019-02-11T20:49:09Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

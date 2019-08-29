@@ -1,44 +1,44 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2018-11-20T01:54:51Z", 
+        "VersionId": "v5", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
                     "Action": [
-                        "comprehend:DetectDominantLanguage",
-                        "comprehend:BatchDetectDominantLanguage",
-                        "comprehend:DetectEntities",
-                        "comprehend:BatchDetectEntities",
-                        "comprehend:DetectKeyPhrases",
-                        "comprehend:BatchDetectKeyPhrases",
-                        "comprehend:DetectSentiment",
-                        "comprehend:BatchDetectSentiment",
-                        "comprehend:DetectSyntax",
-                        "comprehend:BatchDetectSyntax",
-                        "comprehend:DescribeTopicsDetectionJob",
-                        "comprehend:ListTopicsDetectionJobs",
-                        "comprehend:DescribeDominantLanguageDetectionJob",
-                        "comprehend:ListDominantLanguageDetectionJobs",
-                        "comprehend:DescribeEntitiesDetectionJob",
-                        "comprehend:ListEntitiesDetectionJobs",
-                        "comprehend:DescribeKeyPhrasesDetectionJob",
-                        "comprehend:ListKeyPhrasesDetectionJobs",
-                        "comprehend:DescribeSentimentDetectionJob",
-                        "comprehend:ListSentimentDetectionJobs",
-                        "comprehend:DescribeDocumentClassifier",
-                        "comprehend:ListDocumentClassifiers",
-                        "comprehend:DescribeDocumentClassificationJob",
-                        "comprehend:ListDocumentClassificationJobs",
-                        "comprehend:DescribeEntityRecognizer",
+                        "comprehend:DetectDominantLanguage", 
+                        "comprehend:BatchDetectDominantLanguage", 
+                        "comprehend:DetectEntities", 
+                        "comprehend:BatchDetectEntities", 
+                        "comprehend:DetectKeyPhrases", 
+                        "comprehend:BatchDetectKeyPhrases", 
+                        "comprehend:DetectSentiment", 
+                        "comprehend:BatchDetectSentiment", 
+                        "comprehend:DetectSyntax", 
+                        "comprehend:BatchDetectSyntax", 
+                        "comprehend:DescribeTopicsDetectionJob", 
+                        "comprehend:ListTopicsDetectionJobs", 
+                        "comprehend:DescribeDominantLanguageDetectionJob", 
+                        "comprehend:ListDominantLanguageDetectionJobs", 
+                        "comprehend:DescribeEntitiesDetectionJob", 
+                        "comprehend:ListEntitiesDetectionJobs", 
+                        "comprehend:DescribeKeyPhrasesDetectionJob", 
+                        "comprehend:ListKeyPhrasesDetectionJobs", 
+                        "comprehend:DescribeSentimentDetectionJob", 
+                        "comprehend:ListSentimentDetectionJobs", 
+                        "comprehend:DescribeDocumentClassifier", 
+                        "comprehend:ListDocumentClassifiers", 
+                        "comprehend:DescribeDocumentClassificationJob", 
+                        "comprehend:ListDocumentClassificationJobs", 
+                        "comprehend:DescribeEntityRecognizer", 
                         "comprehend:ListEntityRecognizers"
-                    ],
-                    "Effect": "Allow",
-                    "Resource": "*"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v5",
-        "IsDefaultVersion": true,
-        "CreateDate": "2018-11-20T01:54:51Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

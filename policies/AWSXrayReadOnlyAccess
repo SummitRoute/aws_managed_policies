@@ -1,30 +1,30 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2019-04-30T18:11:46Z", 
+        "VersionId": "v4", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "xray:GetSamplingRules",
-                        "xray:GetSamplingTargets",
-                        "xray:GetSamplingStatisticSummaries",
-                        "xray:BatchGetTraces",
-                        "xray:GetServiceGraph",
-                        "xray:GetTraceGraph",
-                        "xray:GetTraceSummaries",
-                        "xray:GetGroups",
-                        "xray:GetGroup",
+                        "xray:GetSamplingRules", 
+                        "xray:GetSamplingTargets", 
+                        "xray:GetSamplingStatisticSummaries", 
+                        "xray:BatchGetTraces", 
+                        "xray:GetServiceGraph", 
+                        "xray:GetTraceGraph", 
+                        "xray:GetTraceSummaries", 
+                        "xray:GetGroups", 
+                        "xray:GetGroup", 
                         "xray:GetTimeSeriesServiceStatistics"
-                    ],
+                    ], 
                     "Resource": [
                         "*"
-                    ]
+                    ], 
+                    "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v4",
-        "IsDefaultVersion": true,
-        "CreateDate": "2019-04-30T18:11:46Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

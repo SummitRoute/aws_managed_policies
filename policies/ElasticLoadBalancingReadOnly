@@ -1,26 +1,26 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2018-09-20T20:17:09Z", 
+        "VersionId": "v1", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
-                    "Action": "elasticloadbalancing:Describe*",
-                    "Resource": "*"
-                },
+                    "Action": "elasticloadbalancing:Describe*", 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "ec2:DescribeInstances",
-                        "ec2:DescribeClassicLinkInstances",
+                        "ec2:DescribeInstances", 
+                        "ec2:DescribeClassicLinkInstances", 
                         "ec2:DescribeSecurityGroups"
-                    ],
-                    "Resource": "*"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v1",
-        "IsDefaultVersion": true,
-        "CreateDate": "2018-09-20T20:17:09Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

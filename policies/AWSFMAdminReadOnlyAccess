@@ -1,25 +1,25 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2018-05-09T20:07:39Z", 
+        "VersionId": "v1", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
                     "Action": [
-                        "fms:Get*",
-                        "fms:List*",
-                        "waf:Get*",
-                        "waf:List*",
-                        "waf-regional:Get*",
-                        "waf-regional:List*",
+                        "fms:Get*", 
+                        "fms:List*", 
+                        "waf:Get*", 
+                        "waf:List*", 
+                        "waf-regional:Get*", 
+                        "waf-regional:List*", 
                         "organizations:DescribeOrganization"
-                    ],
-                    "Effect": "Allow",
-                    "Resource": "*"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v1",
-        "IsDefaultVersion": true,
-        "CreateDate": "2018-05-09T20:07:39Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

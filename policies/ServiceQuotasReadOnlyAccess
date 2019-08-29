@@ -1,43 +1,43 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2019-06-24T15:31:06Z", 
+        "VersionId": "v1", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "autoscaling:DescribeAccountLimits",
-                        "cloudformation:DescribeAccountLimits",
-                        "cloudwatch:DescribeAlarmsForMetric",
-                        "cloudwatch:GetMetricData",
-                        "cloudwatch:GetMetricStatistics",
-                        "dynamodb:DescribeLimits",
-                        "elasticloadbalancing:DescribeAccountLimits",
-                        "iam:GetAccountSummary",
-                        "kinesis:DescribeLimits",
-                        "organizations:DescribeAccount",
-                        "organizations:DescribeOrganization",
-                        "organizations:ListAWSServiceAccessForOrganization",
-                        "rds:DescribeAccountAttributes",
-                        "route53:GetAccountLimit",
-                        "servicequotas:GetAssociationForServiceQuotaTemplate",
-                        "servicequotas:GetAWSDefaultServiceQuota",
-                        "servicequotas:GetRequestedServiceQuotaChange",
-                        "servicequotas:GetServiceQuota",
-                        "servicequotas:GetServiceQuotaIncreaseRequestFromTemplate",
-                        "servicequotas:ListAWSDefaultServiceQuotas",
-                        "servicequotas:ListRequestedServiceQuotaChangeHistory",
-                        "servicequotas:ListRequestedServiceQuotaChangeHistoryByQuota",
-                        "servicequotas:ListServices",
-                        "servicequotas:ListServiceQuotas",
+                        "autoscaling:DescribeAccountLimits", 
+                        "cloudformation:DescribeAccountLimits", 
+                        "cloudwatch:DescribeAlarmsForMetric", 
+                        "cloudwatch:GetMetricData", 
+                        "cloudwatch:GetMetricStatistics", 
+                        "dynamodb:DescribeLimits", 
+                        "elasticloadbalancing:DescribeAccountLimits", 
+                        "iam:GetAccountSummary", 
+                        "kinesis:DescribeLimits", 
+                        "organizations:DescribeAccount", 
+                        "organizations:DescribeOrganization", 
+                        "organizations:ListAWSServiceAccessForOrganization", 
+                        "rds:DescribeAccountAttributes", 
+                        "route53:GetAccountLimit", 
+                        "servicequotas:GetAssociationForServiceQuotaTemplate", 
+                        "servicequotas:GetAWSDefaultServiceQuota", 
+                        "servicequotas:GetRequestedServiceQuotaChange", 
+                        "servicequotas:GetServiceQuota", 
+                        "servicequotas:GetServiceQuotaIncreaseRequestFromTemplate", 
+                        "servicequotas:ListAWSDefaultServiceQuotas", 
+                        "servicequotas:ListRequestedServiceQuotaChangeHistory", 
+                        "servicequotas:ListRequestedServiceQuotaChangeHistoryByQuota", 
+                        "servicequotas:ListServices", 
+                        "servicequotas:ListServiceQuotas", 
                         "servicequotas:ListServiceQuotaIncreaseRequestsInTemplate"
-                    ],
-                    "Resource": "*"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v1",
-        "IsDefaultVersion": true,
-        "CreateDate": "2019-06-24T15:31:06Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

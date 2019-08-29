@@ -1,75 +1,75 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2019-05-21T23:39:06Z", 
+        "VersionId": "v7", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "sns:AddPermission",
-                        "sns:CreateTopic",
-                        "sns:DeleteTopic",
-                        "sns:ListTopics",
-                        "sns:SetTopicAttributes",
+                        "sns:AddPermission", 
+                        "sns:CreateTopic", 
+                        "sns:DeleteTopic", 
+                        "sns:ListTopics", 
+                        "sns:SetTopicAttributes", 
                         "sns:GetTopicAttributes"
-                    ],
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "s3:CreateBucket",
-                        "s3:DeleteBucket",
-                        "s3:ListAllMyBuckets",
-                        "s3:PutBucketPolicy",
-                        "s3:ListBucket",
-                        "s3:GetObject",
-                        "s3:GetBucketLocation",
+                        "s3:CreateBucket", 
+                        "s3:DeleteBucket", 
+                        "s3:ListAllMyBuckets", 
+                        "s3:PutBucketPolicy", 
+                        "s3:ListBucket", 
+                        "s3:GetObject", 
+                        "s3:GetBucketLocation", 
                         "s3:GetBucketPolicy"
-                    ],
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
-                    "Action": "cloudtrail:*",
-                    "Resource": "*"
-                },
+                    "Action": "cloudtrail:*", 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
                         "logs:CreateLogGroup"
-                    ],
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "iam:PassRole",
-                        "iam:ListRoles",
-                        "iam:GetRolePolicy",
+                        "iam:PassRole", 
+                        "iam:ListRoles", 
+                        "iam:GetRolePolicy", 
                         "iam:GetUser"
-                    ],
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "kms:ListKeys",
+                        "kms:ListKeys", 
                         "kms:ListAliases"
-                    ],
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
                         "lambda:ListFunctions"
-                    ],
-                    "Resource": "*"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v7",
-        "IsDefaultVersion": true,
-        "CreateDate": "2019-05-21T23:39:06Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

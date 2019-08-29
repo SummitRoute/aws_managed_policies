@@ -1,49 +1,49 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2018-11-26T19:04:32Z", 
+        "VersionId": "v1", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Sid": "LicenseManagerPermissions",
-                    "Effect": "Allow",
                     "Action": [
                         "license-manager:UpdateLicenseSpecificationsForResource"
-                    ],
+                    ], 
                     "Resource": [
                         "*"
-                    ]
-                },
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "LicenseManagerPermissions"
+                }, 
                 {
-                    "Sid": "SSMPermissions",
-                    "Effect": "Allow",
                     "Action": [
-                        "ssm:ListInventoryEntries",
-                        "ssm:GetInventory",
-                        "ssm:CreateAssociation",
-                        "ssm:CreateResourceDataSync",
-                        "ssm:DeleteResourceDataSync",
-                        "ssm:ListResourceDataSync",
+                        "ssm:ListInventoryEntries", 
+                        "ssm:GetInventory", 
+                        "ssm:CreateAssociation", 
+                        "ssm:CreateResourceDataSync", 
+                        "ssm:DeleteResourceDataSync", 
+                        "ssm:ListResourceDataSync", 
                         "ssm:ListAssociations"
-                    ],
+                    ], 
                     "Resource": [
                         "*"
-                    ]
-                },
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "SSMPermissions"
+                }, 
                 {
-                    "Sid": "RAMPermissions",
-                    "Effect": "Allow",
                     "Action": [
-                        "ram:AcceptResourceShareInvitation",
+                        "ram:AcceptResourceShareInvitation", 
                         "ram:GetResourceShareInvitations"
-                    ],
+                    ], 
                     "Resource": [
                         "*"
-                    ]
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "RAMPermissions"
                 }
             ]
-        },
-        "VersionId": "v1",
-        "IsDefaultVersion": true,
-        "CreateDate": "2018-11-26T19:04:32Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

@@ -1,116 +1,116 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2019-06-25T20:26:08Z", 
+        "VersionId": "v3", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
                     "Action": [
-                        "dynamodb:DescribeTable",
+                        "dynamodb:DescribeTable", 
                         "dynamodb:CreateBackup"
-                    ],
-                    "Resource": "arn:aws:dynamodb:*:*:table/*",
+                    ], 
+                    "Resource": "arn:aws:dynamodb:*:*:table/*", 
                     "Effect": "Allow"
-                },
+                }, 
                 {
                     "Action": [
-                        "dynamodb:DescribeBackup",
+                        "dynamodb:DescribeBackup", 
                         "dynamodb:DeleteBackup"
-                    ],
-                    "Resource": "arn:aws:dynamodb:*:*:table/*/backup/*",
+                    ], 
+                    "Resource": "arn:aws:dynamodb:*:*:table/*/backup/*", 
                     "Effect": "Allow"
-                },
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "rds:AddTagsToResource",
-                        "rds:ListTagsForResource",
-                        "rds:DescribeDBSnapshots",
-                        "rds:CreateDBSnapshot",
-                        "rds:CopyDBSnapshot",
+                        "rds:AddTagsToResource", 
+                        "rds:ListTagsForResource", 
+                        "rds:DescribeDBSnapshots", 
+                        "rds:CreateDBSnapshot", 
+                        "rds:CopyDBSnapshot", 
                         "rds:DescribeDBInstances"
-                    ],
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
                         "rds:DeleteDBSnapshot"
-                    ],
+                    ], 
                     "Resource": [
                         "arn:aws:rds:*:*:snapshot:awsbackup:*"
-                    ]
-                },
-                {
-                    "Effect": "Allow",
-                    "Action": [
-                        "storagegateway:CreateSnapshot",
-                        "storagegateway:ListTagsForResource"
-                    ],
-                    "Resource": "arn:aws:storagegateway:*:*:gateway/*/volume/*"
-                },
-                {
-                    "Effect": "Allow",
-                    "Action": [
-                        "ec2:CreateTags",
-                        "ec2:DeleteSnapshot"
-                    ],
-                    "Resource": "arn:aws:ec2:*::snapshot/*"
-                },
-                {
-                    "Effect": "Allow",
-                    "Action": [
-                        "ec2:DescribeSnapshots",
-                        "ec2:DescribeTags"
-                    ],
-                    "Resource": "*"
-                },
-                {
-                    "Action": [
-                        "elasticfilesystem:Backup",
-                        "elasticfilesystem:DescribeTags"
-                    ],
-                    "Resource": "arn:aws:elasticfilesystem:*:*:file-system/*",
+                    ], 
                     "Effect": "Allow"
-                },
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "ec2:CreateSnapshot",
-                        "ec2:DeleteSnapshot",
-                        "ec2:DescribeVolumes",
+                        "storagegateway:CreateSnapshot", 
+                        "storagegateway:ListTagsForResource"
+                    ], 
+                    "Resource": "arn:aws:storagegateway:*:*:gateway/*/volume/*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "ec2:CreateTags", 
+                        "ec2:DeleteSnapshot"
+                    ], 
+                    "Resource": "arn:aws:ec2:*::snapshot/*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "ec2:DescribeSnapshots", 
+                        "ec2:DescribeTags"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "elasticfilesystem:Backup", 
+                        "elasticfilesystem:DescribeTags"
+                    ], 
+                    "Resource": "arn:aws:elasticfilesystem:*:*:file-system/*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "ec2:CreateSnapshot", 
+                        "ec2:DeleteSnapshot", 
+                        "ec2:DescribeVolumes", 
                         "ec2:DescribeSnapshots"
-                    ],
+                    ], 
                     "Resource": [
-                        "arn:aws:ec2:*::snapshot/*",
+                        "arn:aws:ec2:*::snapshot/*", 
                         "arn:aws:ec2:*:*:volume/*"
-                    ]
-                },
+                    ], 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Action": "kms:DescribeKey",
-                    "Effect": "Allow",
-                    "Resource": "*"
-                },
+                    "Action": "kms:DescribeKey", 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Action": "kms:CreateGrant",
-                    "Effect": "Allow",
-                    "Resource": "*",
+                    "Action": "kms:CreateGrant", 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
                     "Condition": {
                         "Bool": {
                             "kms:GrantIsForAWSResource": "true"
                         }
                     }
-                },
+                }, 
                 {
                     "Action": [
                         "tag:GetResources"
-                    ],
-                    "Resource": "*",
+                    ], 
+                    "Resource": "*", 
                     "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v3",
-        "IsDefaultVersion": true,
-        "CreateDate": "2019-06-25T20:26:08Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

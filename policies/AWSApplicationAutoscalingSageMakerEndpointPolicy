@@ -1,26 +1,26 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2018-02-06T19:58:21Z", 
+        "VersionId": "v1", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "sagemaker:DescribeEndpoint",
-                        "sagemaker:DescribeEndpointConfig",
-                        "sagemaker:UpdateEndpointWeightsAndCapacities",
-                        "cloudwatch:PutMetricAlarm",
-                        "cloudwatch:DescribeAlarms",
+                        "sagemaker:DescribeEndpoint", 
+                        "sagemaker:DescribeEndpointConfig", 
+                        "sagemaker:UpdateEndpointWeightsAndCapacities", 
+                        "cloudwatch:PutMetricAlarm", 
+                        "cloudwatch:DescribeAlarms", 
                         "cloudwatch:DeleteAlarms"
-                    ],
+                    ], 
                     "Resource": [
                         "*"
-                    ]
+                    ], 
+                    "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v1",
-        "IsDefaultVersion": true,
-        "CreateDate": "2018-02-06T19:58:21Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

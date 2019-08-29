@@ -1,20 +1,22 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2018-11-28T16:34:43Z", 
+        "VersionId": "v1", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "ds:DescribeDirectories",
+                        "ds:DescribeDirectories", 
                         "fsx:*"
-                    ],
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Action": "iam:CreateServiceLinkedRole",
-                    "Effect": "Allow",
-                    "Resource": "*",
+                    "Action": "iam:CreateServiceLinkedRole", 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
                     "Condition": {
                         "StringLike": {
                             "iam:AWSServiceName": [
@@ -22,11 +24,11 @@
                             ]
                         }
                     }
-                },
+                }, 
                 {
-                    "Action": "iam:CreateServiceLinkedRole",
-                    "Effect": "Allow",
-                    "Resource": "*",
+                    "Action": "iam:CreateServiceLinkedRole", 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
                     "Condition": {
                         "StringLike": {
                             "iam:AWSServiceName": [
@@ -36,9 +38,7 @@
                     }
                 }
             ]
-        },
-        "VersionId": "v1",
-        "IsDefaultVersion": true,
-        "CreateDate": "2018-11-28T16:34:43Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

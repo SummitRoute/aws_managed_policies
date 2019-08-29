@@ -1,54 +1,56 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2018-03-28T19:04:33Z", 
+        "VersionId": "v3", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "ec2:DescribeImages",
-                        "ec2:DescribeSubnets",
-                        "ec2:RequestSpotInstances",
-                        "ec2:DescribeInstanceStatus",
+                        "ec2:DescribeImages", 
+                        "ec2:DescribeSubnets", 
+                        "ec2:RequestSpotInstances", 
+                        "ec2:DescribeInstanceStatus", 
                         "ec2:RunInstances"
-                    ],
+                    ], 
                     "Resource": [
                         "*"
-                    ]
-                },
+                    ], 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
                         "iam:PassRole"
-                    ],
+                    ], 
                     "Resource": [
                         "*"
-                    ],
+                    ], 
+                    "Effect": "Allow", 
                     "Condition": {
                         "StringEquals": {
                             "iam:PassedToService": [
-                                "ec2.amazonaws.com",
+                                "ec2.amazonaws.com", 
                                 "ec2.amazonaws.com.cn"
                             ]
                         }
                     }
-                },
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
                         "ec2:CreateTags"
-                    ],
+                    ], 
                     "Resource": [
-                        "arn:aws:ec2:*:*:instance/*",
+                        "arn:aws:ec2:*:*:instance/*", 
                         "arn:aws:ec2:*:*:spot-instances-request/*"
-                    ]
-                },
+                    ], 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
                         "ec2:TerminateInstances"
-                    ],
-                    "Resource": "*",
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
                     "Condition": {
                         "StringLike": {
                             "ec2:ResourceTag/aws:ec2spot:fleet-request-id": "*"
@@ -56,9 +58,7 @@
                     }
                 }
             ]
-        },
-        "VersionId": "v3",
-        "IsDefaultVersion": true,
-        "CreateDate": "2018-03-28T19:04:33Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

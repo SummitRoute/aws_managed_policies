@@ -1,34 +1,34 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2019-06-04T17:48:27Z", 
+        "VersionId": "v2", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Sid": "AllowCloudformationChangeSetOperationsOnElasticBeanstalkStacks",
-                    "Effect": "Allow",
                     "Action": [
-                        "cloudformation:CreateChangeSet",
-                        "cloudformation:DescribeChangeSet",
-                        "cloudformation:ExecuteChangeSet",
-                        "cloudformation:DeleteChangeSet",
-                        "cloudformation:ListChangeSets",
+                        "cloudformation:CreateChangeSet", 
+                        "cloudformation:DescribeChangeSet", 
+                        "cloudformation:ExecuteChangeSet", 
+                        "cloudformation:DeleteChangeSet", 
+                        "cloudformation:ListChangeSets", 
                         "cloudformation:DescribeStacks"
-                    ],
+                    ], 
                     "Resource": [
-                        "arn:aws:cloudformation:*:*:stack/awseb-*",
+                        "arn:aws:cloudformation:*:*:stack/awseb-*", 
                         "arn:aws:cloudformation:*:*:stack/eb-*"
-                    ]
-                },
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "AllowCloudformationChangeSetOperationsOnElasticBeanstalkStacks"
+                }, 
                 {
-                    "Sid": "AllowElasticBeanstalkStacksUpdateExecuteSuccessfully",
-                    "Effect": "Allow",
-                    "Action": "elasticloadbalancing:DescribeLoadBalancers",
-                    "Resource": "*"
+                    "Action": "elasticloadbalancing:DescribeLoadBalancers", 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "AllowElasticBeanstalkStacksUpdateExecuteSuccessfully"
                 }
             ]
-        },
-        "VersionId": "v2",
-        "IsDefaultVersion": true,
-        "CreateDate": "2019-06-04T17:48:27Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

@@ -1,118 +1,118 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2019-06-12T22:47:04Z", 
+        "VersionId": "v7", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "codecommit:BatchGet*",
-                        "codecommit:BatchDescribe*",
-                        "codecommit:Get*",
-                        "codecommit:List*",
-                        "codecommit:Create*",
-                        "codecommit:DeleteBranch",
-                        "codecommit:DeleteFile",
-                        "codecommit:Describe*",
-                        "codecommit:Put*",
-                        "codecommit:Post*",
-                        "codecommit:Merge*",
-                        "codecommit:TagResource",
-                        "codecommit:Test*",
-                        "codecommit:UntagResource",
-                        "codecommit:Update*",
-                        "codecommit:GitPull",
+                        "codecommit:BatchGet*", 
+                        "codecommit:BatchDescribe*", 
+                        "codecommit:Get*", 
+                        "codecommit:List*", 
+                        "codecommit:Create*", 
+                        "codecommit:DeleteBranch", 
+                        "codecommit:DeleteFile", 
+                        "codecommit:Describe*", 
+                        "codecommit:Put*", 
+                        "codecommit:Post*", 
+                        "codecommit:Merge*", 
+                        "codecommit:TagResource", 
+                        "codecommit:Test*", 
+                        "codecommit:UntagResource", 
+                        "codecommit:Update*", 
+                        "codecommit:GitPull", 
                         "codecommit:GitPush"
-                    ],
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Sid": "CloudWatchEventsCodeCommitRulesAccess",
-                    "Effect": "Allow",
                     "Action": [
-                        "events:DeleteRule",
-                        "events:DescribeRule",
-                        "events:DisableRule",
-                        "events:EnableRule",
-                        "events:PutRule",
-                        "events:PutTargets",
-                        "events:RemoveTargets",
+                        "events:DeleteRule", 
+                        "events:DescribeRule", 
+                        "events:DisableRule", 
+                        "events:EnableRule", 
+                        "events:PutRule", 
+                        "events:PutTargets", 
+                        "events:RemoveTargets", 
                         "events:ListTargetsByRule"
-                    ],
-                    "Resource": "arn:aws:events:*:*:rule/codecommit*"
-                },
+                    ], 
+                    "Resource": "arn:aws:events:*:*:rule/codecommit*", 
+                    "Effect": "Allow", 
+                    "Sid": "CloudWatchEventsCodeCommitRulesAccess"
+                }, 
                 {
-                    "Sid": "SNSTopicAndSubscriptionAccess",
-                    "Effect": "Allow",
                     "Action": [
-                        "sns:Subscribe",
+                        "sns:Subscribe", 
                         "sns:Unsubscribe"
-                    ],
-                    "Resource": "arn:aws:sns:*:*:codecommit*"
-                },
+                    ], 
+                    "Resource": "arn:aws:sns:*:*:codecommit*", 
+                    "Effect": "Allow", 
+                    "Sid": "SNSTopicAndSubscriptionAccess"
+                }, 
                 {
-                    "Sid": "SNSTopicAndSubscriptionReadAccess",
-                    "Effect": "Allow",
                     "Action": [
-                        "sns:ListTopics",
-                        "sns:ListSubscriptionsByTopic",
+                        "sns:ListTopics", 
+                        "sns:ListSubscriptionsByTopic", 
                         "sns:GetTopicAttributes"
-                    ],
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "SNSTopicAndSubscriptionReadAccess"
+                }, 
                 {
-                    "Sid": "LambdaReadOnlyListAccess",
-                    "Effect": "Allow",
                     "Action": [
                         "lambda:ListFunctions"
-                    ],
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "LambdaReadOnlyListAccess"
+                }, 
                 {
-                    "Sid": "IAMReadOnlyListAccess",
-                    "Effect": "Allow",
                     "Action": [
                         "iam:ListUsers"
-                    ],
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "IAMReadOnlyListAccess"
+                }, 
                 {
-                    "Sid": "IAMReadOnlyConsoleAccess",
-                    "Effect": "Allow",
                     "Action": [
-                        "iam:ListAccessKeys",
-                        "iam:ListSSHPublicKeys",
+                        "iam:ListAccessKeys", 
+                        "iam:ListSSHPublicKeys", 
                         "iam:ListServiceSpecificCredentials"
-                    ],
-                    "Resource": "arn:aws:iam::*:user/${aws:username}"
-                },
+                    ], 
+                    "Resource": "arn:aws:iam::*:user/${aws:username}", 
+                    "Effect": "Allow", 
+                    "Sid": "IAMReadOnlyConsoleAccess"
+                }, 
                 {
-                    "Sid": "IAMUserSSHKeys",
-                    "Effect": "Allow",
                     "Action": [
-                        "iam:DeleteSSHPublicKey",
-                        "iam:GetSSHPublicKey",
-                        "iam:ListSSHPublicKeys",
-                        "iam:UpdateSSHPublicKey",
+                        "iam:DeleteSSHPublicKey", 
+                        "iam:GetSSHPublicKey", 
+                        "iam:ListSSHPublicKeys", 
+                        "iam:UpdateSSHPublicKey", 
                         "iam:UploadSSHPublicKey"
-                    ],
-                    "Resource": "arn:aws:iam::*:user/${aws:username}"
-                },
+                    ], 
+                    "Resource": "arn:aws:iam::*:user/${aws:username}", 
+                    "Effect": "Allow", 
+                    "Sid": "IAMUserSSHKeys"
+                }, 
                 {
-                    "Sid": "IAMSelfManageServiceSpecificCredentials",
-                    "Effect": "Allow",
                     "Action": [
-                        "iam:CreateServiceSpecificCredential",
-                        "iam:UpdateServiceSpecificCredential",
-                        "iam:DeleteServiceSpecificCredential",
+                        "iam:CreateServiceSpecificCredential", 
+                        "iam:UpdateServiceSpecificCredential", 
+                        "iam:DeleteServiceSpecificCredential", 
                         "iam:ResetServiceSpecificCredential"
-                    ],
-                    "Resource": "arn:aws:iam::*:user/${aws:username}"
+                    ], 
+                    "Resource": "arn:aws:iam::*:user/${aws:username}", 
+                    "Effect": "Allow", 
+                    "Sid": "IAMSelfManageServiceSpecificCredentials"
                 }
             ]
-        },
-        "VersionId": "v7",
-        "IsDefaultVersion": true,
-        "CreateDate": "2019-06-12T22:47:04Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

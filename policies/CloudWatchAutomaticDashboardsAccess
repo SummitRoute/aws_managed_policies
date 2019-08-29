@@ -1,59 +1,59 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2019-07-23T10:01:08Z", 
+        "VersionId": "v1", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
                     "Action": [
-                        "autoscaling:DescribeAutoScalingGroups",
-                        "cloudfront:GetDistribution",
-                        "cloudfront:ListDistributions",
-                        "dynamodb:DescribeTable",
-                        "dynamodb:ListTables",
-                        "ec2:DescribeInstances",
-                        "ec2:DescribeVolumes",
-                        "ecs:DescribeClusters",
-                        "ecs:DescribeContainerInstances",
-                        "ecs:ListClusters",
-                        "ecs:ListContainerInstances",
-                        "ecs:ListServices",
-                        "elasticache:DescribeCacheClusters",
-                        "elasticbeanstalk:DescribeEnvironments",
-                        "elasticfilesystem:DescribeFileSystems",
-                        "elasticloadbalancing:DescribeLoadBalancers",
-                        "kinesis:DescribeStream",
-                        "kinesis:ListStreams",
-                        "lambda:GetFunction",
-                        "lambda:ListFunctions",
-                        "rds:DescribeDBClusters",
-                        "rds:DescribeDBInstances",
-                        "resource-groups:ListGroupResources",
-                        "resource-groups:ListGroups",
-                        "route53:GetHealthCheck",
-                        "route53:ListHealthChecks",
-                        "s3:ListAllMyBuckets",
-                        "s3:ListBucket",
-                        "sns:ListTopics",
-                        "sqs:GetQueueAttributes",
-                        "sqs:GetQueueUrl",
+                        "autoscaling:DescribeAutoScalingGroups", 
+                        "cloudfront:GetDistribution", 
+                        "cloudfront:ListDistributions", 
+                        "dynamodb:DescribeTable", 
+                        "dynamodb:ListTables", 
+                        "ec2:DescribeInstances", 
+                        "ec2:DescribeVolumes", 
+                        "ecs:DescribeClusters", 
+                        "ecs:DescribeContainerInstances", 
+                        "ecs:ListClusters", 
+                        "ecs:ListContainerInstances", 
+                        "ecs:ListServices", 
+                        "elasticache:DescribeCacheClusters", 
+                        "elasticbeanstalk:DescribeEnvironments", 
+                        "elasticfilesystem:DescribeFileSystems", 
+                        "elasticloadbalancing:DescribeLoadBalancers", 
+                        "kinesis:DescribeStream", 
+                        "kinesis:ListStreams", 
+                        "lambda:GetFunction", 
+                        "lambda:ListFunctions", 
+                        "rds:DescribeDBClusters", 
+                        "rds:DescribeDBInstances", 
+                        "resource-groups:ListGroupResources", 
+                        "resource-groups:ListGroups", 
+                        "route53:GetHealthCheck", 
+                        "route53:ListHealthChecks", 
+                        "s3:ListAllMyBuckets", 
+                        "s3:ListBucket", 
+                        "sns:ListTopics", 
+                        "sqs:GetQueueAttributes", 
+                        "sqs:GetQueueUrl", 
                         "sqs:ListQueues"
-                    ],
-                    "Effect": "Allow",
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
                     "Action": [
                         "apigateway:GET"
-                    ],
-                    "Effect": "Allow",
+                    ], 
                     "Resource": [
                         "arn:aws:apigateway:us-east-1::/restapis/*"
-                    ]
+                    ], 
+                    "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v1",
-        "IsDefaultVersion": true,
-        "CreateDate": "2019-07-23T10:01:08Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }
