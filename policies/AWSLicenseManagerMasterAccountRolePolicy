@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-08-22T20:05:35Z", 
-        "VersionId": "v2", 
+        "CreateDate": "2019-08-29T22:56:41Z", 
+        "VersionId": "v3", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -132,19 +132,31 @@
                 }, 
                 {
                     "Action": [
-                        "iam:GetRole", 
+                        "iam:GetRole"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "IAMGetRoles"
+                }, 
+                {
+                    "Action": [
                         "iam:PassRole"
                     ], 
                     "Resource": [
-                        "arn:aws:iam::*:role/*"
+                        "arn:aws:iam::*:role/LicenseManagerServiceResourceDataSyncRole*"
                     ], 
                     "Effect": "Allow", 
                     "Condition": {
                         "StringEquals": {
-                            "iam:PassedToService": "byol.amazonaws.com"
+                            "iam:PassedToService": [
+                                "cloudformation.amazonaws.com", 
+                                "glue.amazonaws.com"
+                            ]
                         }
                     }, 
-                    "Sid": "IamPermission"
+                    "Sid": "IAMPassRoles"
                 }, 
                 {
                     "Action": [
