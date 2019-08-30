@@ -1,66 +1,68 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2019-08-07T19:27:59Z", 
+        "VersionId": "v4", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
                     "Action": [
                         "appstream:*"
-                    ],
-                    "Effect": "Allow",
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
                     "Action": [
-                        "application-autoscaling:DeleteScalingPolicy",
-                        "application-autoscaling:DescribeScalableTargets",
-                        "application-autoscaling:DescribeScalingPolicies",
-                        "application-autoscaling:PutScalingPolicy",
+                        "application-autoscaling:DeleteScalingPolicy", 
+                        "application-autoscaling:DescribeScalableTargets", 
+                        "application-autoscaling:DescribeScalingPolicies", 
+                        "application-autoscaling:PutScalingPolicy", 
                         "application-autoscaling:RegisterScalableTarget"
-                    ],
-                    "Effect": "Allow",
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
                     "Action": [
-                        "cloudwatch:DeleteAlarms",
-                        "cloudwatch:DescribeAlarms",
-                        "cloudwatch:GetMetricStatistics",
+                        "cloudwatch:DeleteAlarms", 
+                        "cloudwatch:DescribeAlarms", 
+                        "cloudwatch:GetMetricStatistics", 
                         "cloudwatch:PutMetricAlarm"
-                    ],
-                    "Effect": "Allow",
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
                     "Action": [
-                        "ec2:DescribeRouteTables",
-                        "ec2:DescribeSecurityGroups",
-                        "ec2:DescribeSubnets",
-                        "ec2:DescribeVpcs",
+                        "ec2:DescribeRouteTables", 
+                        "ec2:DescribeSecurityGroups", 
+                        "ec2:DescribeSubnets", 
+                        "ec2:DescribeVpcs", 
                         "ec2:DescribeVpcEndpoints"
-                    ],
-                    "Effect": "Allow",
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Action": "iam:ListRoles",
-                    "Effect": "Allow",
-                    "Resource": "*"
-                },
+                    "Action": "iam:ListRoles", 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Action": "iam:PassRole",
-                    "Effect": "Allow",
-                    "Resource": "arn:aws:iam::*:role/service-role/ApplicationAutoScalingForAmazonAppStreamAccess",
+                    "Action": "iam:PassRole", 
+                    "Resource": "arn:aws:iam::*:role/service-role/ApplicationAutoScalingForAmazonAppStreamAccess", 
+                    "Effect": "Allow", 
                     "Condition": {
                         "StringLike": {
                             "iam:PassedToService": "application-autoscaling.amazonaws.com"
                         }
                     }
-                },
+                }, 
                 {
-                    "Action": "iam:CreateServiceLinkedRole",
-                    "Effect": "Allow",
-                    "Resource": "arn:aws:iam::*:role/aws-service-role/appstream.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling_AppStreamFleet",
+                    "Action": "iam:CreateServiceLinkedRole", 
+                    "Resource": "arn:aws:iam::*:role/aws-service-role/appstream.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling_AppStreamFleet", 
+                    "Effect": "Allow", 
                     "Condition": {
                         "StringLike": {
                             "iam:AWSServiceName": "appstream.application-autoscaling.amazonaws.com"
@@ -68,9 +70,7 @@
                     }
                 }
             ]
-        },
-        "VersionId": "v4",
-        "IsDefaultVersion": true,
-        "CreateDate": "2019-08-07T19:27:59Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

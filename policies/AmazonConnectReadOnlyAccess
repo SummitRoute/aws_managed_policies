@@ -1,27 +1,27 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2018-10-17T21:00:44Z", 
+        "VersionId": "v1", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "connect:Get*",
-                        "connect:Describe*",
-                        "connect:List*",
+                        "connect:Get*", 
+                        "connect:Describe*", 
+                        "connect:List*", 
                         "ds:DescribeDirectories"
-                    ],
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Deny",
-                    "Action": "connect:GetFederationTokens",
-                    "Resource": "*"
+                    "Action": "connect:GetFederationTokens", 
+                    "Resource": "*", 
+                    "Effect": "Deny"
                 }
             ]
-        },
-        "VersionId": "v1",
-        "IsDefaultVersion": true,
-        "CreateDate": "2018-10-17T21:00:44Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

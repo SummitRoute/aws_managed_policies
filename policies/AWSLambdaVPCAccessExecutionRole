@@ -1,24 +1,24 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2016-02-11T23:15:26Z", 
+        "VersionId": "v1", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "logs:CreateLogGroup",
-                        "logs:CreateLogStream",
-                        "logs:PutLogEvents",
-                        "ec2:CreateNetworkInterface",
-                        "ec2:DescribeNetworkInterfaces",
+                        "logs:CreateLogGroup", 
+                        "logs:CreateLogStream", 
+                        "logs:PutLogEvents", 
+                        "ec2:CreateNetworkInterface", 
+                        "ec2:DescribeNetworkInterfaces", 
                         "ec2:DeleteNetworkInterface"
-                    ],
-                    "Resource": "*"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v1",
-        "IsDefaultVersion": true,
-        "CreateDate": "2016-02-11T23:15:26Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

@@ -1,24 +1,26 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2018-09-28T21:08:53Z", 
+        "VersionId": "v2", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Sid": "CrowdApiFullAccess",
-                    "Effect": "Allow",
                     "Action": [
                         "crowd:*"
-                    ],
+                    ], 
                     "Resource": [
                         "*"
-                    ]
-                },
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "CrowdApiFullAccess"
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
                         "iam:PassRole"
-                    ],
-                    "Resource": "*",
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
                     "Condition": {
                         "StringEquals": {
                             "iam:PassedToService": "crowd.amazonaws.com"
@@ -26,9 +28,7 @@
                     }
                 }
             ]
-        },
-        "VersionId": "v2",
-        "IsDefaultVersion": true,
-        "CreateDate": "2018-09-28T21:08:53Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

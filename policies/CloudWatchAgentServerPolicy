@@ -1,32 +1,32 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2018-03-07T01:06:44Z", 
+        "VersionId": "v1", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "cloudwatch:PutMetricData",
-                        "ec2:DescribeTags",
-                        "logs:PutLogEvents",
-                        "logs:DescribeLogStreams",
-                        "logs:DescribeLogGroups",
-                        "logs:CreateLogStream",
+                        "cloudwatch:PutMetricData", 
+                        "ec2:DescribeTags", 
+                        "logs:PutLogEvents", 
+                        "logs:DescribeLogStreams", 
+                        "logs:DescribeLogGroups", 
+                        "logs:CreateLogStream", 
                         "logs:CreateLogGroup"
-                    ],
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
                         "ssm:GetParameter"
-                    ],
-                    "Resource": "arn:aws:ssm:*:*:parameter/AmazonCloudWatch-*"
+                    ], 
+                    "Resource": "arn:aws:ssm:*:*:parameter/AmazonCloudWatch-*", 
+                    "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v1",
-        "IsDefaultVersion": true,
-        "CreateDate": "2018-03-07T01:06:44Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

@@ -1,20 +1,20 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2016-04-21T15:08:16Z", 
+        "VersionId": "v2", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": {
-                "Effect": "Allow",
                 "Action": [
-                    "acm:DescribeCertificate",
-                    "acm:ListCertificates",
-                    "acm:GetCertificate",
+                    "acm:DescribeCertificate", 
+                    "acm:ListCertificates", 
+                    "acm:GetCertificate", 
                     "acm:ListTagsForCertificate"
-                ],
-                "Resource": "*"
+                ], 
+                "Resource": "*", 
+                "Effect": "Allow"
             }
-        },
-        "VersionId": "v2",
-        "IsDefaultVersion": true,
-        "CreateDate": "2016-04-21T15:08:16Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

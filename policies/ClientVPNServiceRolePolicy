@@ -1,38 +1,38 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2019-01-16T22:22:28Z", 
+        "VersionId": "v2", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "ec2:CreateNetworkInterface",
-                        "ec2:CreateNetworkInterfacePermission",
-                        "ec2:DescribeSecurityGroups",
-                        "ec2:DescribeVpcs",
-                        "ec2:DescribeSubnets",
-                        "ec2:DescribeInternetGateways",
-                        "ec2:ModifyNetworkInterfaceAttribute",
-                        "ec2:DeleteNetworkInterface",
-                        "ec2:DescribeAccountAttributes",
-                        "ds:AuthorizeApplication",
-                        "ds:DescribeDirectories",
-                        "ds:GetDirectoryLimits",
-                        "ds:ListAuthorizedApplications",
-                        "ds:UnauthorizeApplication",
-                        "logs:DescribeLogStreams",
-                        "logs:CreateLogStream",
-                        "logs:PutLogEvents",
-                        "logs:DescribeLogGroups",
-                        "acm:GetCertificate",
+                        "ec2:CreateNetworkInterface", 
+                        "ec2:CreateNetworkInterfacePermission", 
+                        "ec2:DescribeSecurityGroups", 
+                        "ec2:DescribeVpcs", 
+                        "ec2:DescribeSubnets", 
+                        "ec2:DescribeInternetGateways", 
+                        "ec2:ModifyNetworkInterfaceAttribute", 
+                        "ec2:DeleteNetworkInterface", 
+                        "ec2:DescribeAccountAttributes", 
+                        "ds:AuthorizeApplication", 
+                        "ds:DescribeDirectories", 
+                        "ds:GetDirectoryLimits", 
+                        "ds:ListAuthorizedApplications", 
+                        "ds:UnauthorizeApplication", 
+                        "logs:DescribeLogStreams", 
+                        "logs:CreateLogStream", 
+                        "logs:PutLogEvents", 
+                        "logs:DescribeLogGroups", 
+                        "acm:GetCertificate", 
                         "acm:DescribeCertificate"
-                    ],
-                    "Resource": "*"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v2",
-        "IsDefaultVersion": true,
-        "CreateDate": "2019-01-16T22:22:28Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

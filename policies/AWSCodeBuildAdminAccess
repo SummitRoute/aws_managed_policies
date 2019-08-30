@@ -1,56 +1,56 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2018-11-15T21:21:56Z", 
+        "VersionId": "v6", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
                     "Action": [
-                        "codebuild:*",
-                        "codecommit:GetBranch",
-                        "codecommit:GetCommit",
-                        "codecommit:GetRepository",
-                        "codecommit:ListBranches",
-                        "codecommit:ListRepositories",
-                        "cloudwatch:GetMetricStatistics",
-                        "ec2:DescribeVpcs",
-                        "ec2:DescribeSecurityGroups",
-                        "ec2:DescribeSubnets",
-                        "ecr:DescribeRepositories",
-                        "ecr:ListImages",
-                        "events:DeleteRule",
-                        "events:DescribeRule",
-                        "events:DisableRule",
-                        "events:EnableRule",
-                        "events:ListTargetsByRule",
-                        "events:ListRuleNamesByTarget",
-                        "events:PutRule",
-                        "events:PutTargets",
-                        "events:RemoveTargets",
-                        "logs:GetLogEvents",
-                        "s3:GetBucketLocation",
+                        "codebuild:*", 
+                        "codecommit:GetBranch", 
+                        "codecommit:GetCommit", 
+                        "codecommit:GetRepository", 
+                        "codecommit:ListBranches", 
+                        "codecommit:ListRepositories", 
+                        "cloudwatch:GetMetricStatistics", 
+                        "ec2:DescribeVpcs", 
+                        "ec2:DescribeSecurityGroups", 
+                        "ec2:DescribeSubnets", 
+                        "ecr:DescribeRepositories", 
+                        "ecr:ListImages", 
+                        "events:DeleteRule", 
+                        "events:DescribeRule", 
+                        "events:DisableRule", 
+                        "events:EnableRule", 
+                        "events:ListTargetsByRule", 
+                        "events:ListRuleNamesByTarget", 
+                        "events:PutRule", 
+                        "events:PutTargets", 
+                        "events:RemoveTargets", 
+                        "logs:GetLogEvents", 
+                        "s3:GetBucketLocation", 
                         "s3:ListAllMyBuckets"
-                    ],
-                    "Effect": "Allow",
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
                     "Action": [
                         "logs:DeleteLogGroup"
-                    ],
-                    "Effect": "Allow",
-                    "Resource": "arn:aws:logs:*:*:log-group:/aws/codebuild/*:log-stream:*"
-                },
+                    ], 
+                    "Resource": "arn:aws:logs:*:*:log-group:/aws/codebuild/*:log-stream:*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
                         "ssm:PutParameter"
-                    ],
-                    "Resource": "arn:aws:ssm:*:*:parameter/CodeBuild/*"
+                    ], 
+                    "Resource": "arn:aws:ssm:*:*:parameter/CodeBuild/*", 
+                    "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v6",
-        "IsDefaultVersion": true,
-        "CreateDate": "2018-11-15T21:21:56Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

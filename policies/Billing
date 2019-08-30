@@ -1,27 +1,27 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2018-02-06T23:46:37Z", 
+        "VersionId": "v2", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "aws-portal:*Billing",
-                        "awsbillingconsole:*Billing",
-                        "aws-portal:*Usage",
-                        "awsbillingconsole:*Usage",
-                        "aws-portal:*PaymentMethods",
-                        "awsbillingconsole:*PaymentMethods",
-                        "budgets:ViewBudget",
-                        "budgets:ModifyBudget",
+                        "aws-portal:*Billing", 
+                        "awsbillingconsole:*Billing", 
+                        "aws-portal:*Usage", 
+                        "awsbillingconsole:*Usage", 
+                        "aws-portal:*PaymentMethods", 
+                        "awsbillingconsole:*PaymentMethods", 
+                        "budgets:ViewBudget", 
+                        "budgets:ModifyBudget", 
                         "cur:*"
-                    ],
-                    "Resource": "*"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v2",
-        "IsDefaultVersion": true,
-        "CreateDate": "2018-02-06T23:46:37Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

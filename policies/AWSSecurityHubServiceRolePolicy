@@ -1,38 +1,38 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2019-07-12T21:11:13Z", 
+        "VersionId": "v2", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "cloudtrail:DescribeTrails",
-                        "cloudtrail:GetTrailStatus",
-                        "cloudtrail:GetEventSelectors",
-                        "cloudwatch:DescribeAlarms",
-                        "logs:DescribeMetricFilters",
-                        "sns:ListSubscriptionsByTopic",
-                        "config:DescribeConfigurationRecorders",
-                        "config:DescribeConfigurationRecorderStatus",
-                        "config:DescribeConfigRules",
-                        "config:BatchGetResourceConfig",
+                        "cloudtrail:DescribeTrails", 
+                        "cloudtrail:GetTrailStatus", 
+                        "cloudtrail:GetEventSelectors", 
+                        "cloudwatch:DescribeAlarms", 
+                        "logs:DescribeMetricFilters", 
+                        "sns:ListSubscriptionsByTopic", 
+                        "config:DescribeConfigurationRecorders", 
+                        "config:DescribeConfigurationRecorderStatus", 
+                        "config:DescribeConfigRules", 
+                        "config:BatchGetResourceConfig", 
                         "config:SelectResourceConfig"
-                    ],
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "config:PutConfigRule",
-                        "config:DeleteConfigRule",
+                        "config:PutConfigRule", 
+                        "config:DeleteConfigRule", 
                         "config:GetComplianceDetailsByConfigRule"
-                    ],
-                    "Resource": "arn:aws:config:*:*:config-rule/aws-service-rule/*securityhub*"
+                    ], 
+                    "Resource": "arn:aws:config:*:*:config-rule/aws-service-rule/*securityhub*", 
+                    "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v2",
-        "IsDefaultVersion": true,
-        "CreateDate": "2019-07-12T21:11:13Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

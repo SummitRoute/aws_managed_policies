@@ -1,23 +1,23 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2017-02-27T21:45:50Z", 
+        "VersionId": "v2", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "mechanicalturk:Get*",
-                        "mechanicalturk:Search*",
+                        "mechanicalturk:Get*", 
+                        "mechanicalturk:Search*", 
                         "mechanicalturk:List*"
-                    ],
+                    ], 
                     "Resource": [
                         "*"
-                    ]
+                    ], 
+                    "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v2",
-        "IsDefaultVersion": true,
-        "CreateDate": "2017-02-27T21:45:50Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

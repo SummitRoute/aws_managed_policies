@@ -1,102 +1,102 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2018-08-08T21:11:59Z", 
+        "VersionId": "v2", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "aws-marketplace:ListBuilds",
-                        "aws-marketplace:StartBuild",
+                        "aws-marketplace:ListBuilds", 
+                        "aws-marketplace:StartBuild", 
                         "aws-marketplace:DescribeBuilds"
-                    ],
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
-                    "Action": "ec2:TerminateInstances",
-                    "Resource": "*",
+                    "Action": "ec2:TerminateInstances", 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
                     "Condition": {
                         "StringLike": {
                             "ec2:ResourceTag/marketplace-image-build:build-id": "*"
                         }
                     }
-                },
+                }, 
                 {
-                    "Effect": "Allow",
-                    "Action": "iam:PassRole",
+                    "Action": "iam:PassRole", 
                     "Resource": [
-                        "arn:aws:iam::*:role/*Automation*",
+                        "arn:aws:iam::*:role/*Automation*", 
                         "arn:aws:iam::*:role/*Instance*"
-                    ],
+                    ], 
+                    "Effect": "Allow", 
                     "Condition": {
                         "StringEquals": {
                             "iam:PassedToService": [
-                                "ec2.amazonaws.com",
+                                "ec2.amazonaws.com", 
                                 "ssm.amazonaws.com"
                             ]
                         }
                     }
-                },
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "ssm:GetAutomationExecution",
-                        "ssm:CreateDocument",
-                        "ssm:StartAutomationExecution",
-                        "ssm:ListDocuments",
-                        "ssm:UpdateDocument",
-                        "ssm:UpdateDocumentDefaultVersion",
-                        "ssm:DescribeDocument",
-                        "ec2:DeregisterImage",
-                        "ec2:CopyImage",
-                        "ec2:DescribeSnapshots",
-                        "ec2:DescribeSecurityGroups",
-                        "ec2:DescribeImages",
-                        "ec2:DescribeSubnets",
-                        "ec2:DeleteSnapshot",
-                        "ec2:CreateImage",
-                        "ec2:RunInstances",
-                        "ec2:DescribeInstanceStatus",
-                        "sns:GetTopicAttributes",
-                        "iam:GetRole",
+                        "ssm:GetAutomationExecution", 
+                        "ssm:CreateDocument", 
+                        "ssm:StartAutomationExecution", 
+                        "ssm:ListDocuments", 
+                        "ssm:UpdateDocument", 
+                        "ssm:UpdateDocumentDefaultVersion", 
+                        "ssm:DescribeDocument", 
+                        "ec2:DeregisterImage", 
+                        "ec2:CopyImage", 
+                        "ec2:DescribeSnapshots", 
+                        "ec2:DescribeSecurityGroups", 
+                        "ec2:DescribeImages", 
+                        "ec2:DescribeSubnets", 
+                        "ec2:DeleteSnapshot", 
+                        "ec2:CreateImage", 
+                        "ec2:RunInstances", 
+                        "ec2:DescribeInstanceStatus", 
+                        "sns:GetTopicAttributes", 
+                        "iam:GetRole", 
                         "iam:GetInstanceProfile"
-                    ],
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "s3:GetObject",
+                        "s3:GetObject", 
                         "s3:ListBucket"
-                    ],
+                    ], 
                     "Resource": [
                         "arn:aws:s3:::*image-build*"
-                    ]
-                },
+                    ], 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
                         "ec2:CreateTags"
-                    ],
+                    ], 
                     "Resource": [
-                        "arn:aws:ec2:*::image/*",
+                        "arn:aws:ec2:*::image/*", 
                         "arn:aws:ec2:*:*:instance/*"
-                    ]
-                },
+                    ], 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
                         "sns:Publish"
-                    ],
+                    ], 
                     "Resource": [
                         "arn:aws:sns:*:*:*image-build*"
-                    ]
+                    ], 
+                    "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v2",
-        "IsDefaultVersion": true,
-        "CreateDate": "2018-08-08T21:11:59Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

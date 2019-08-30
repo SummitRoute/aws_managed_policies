@@ -1,30 +1,30 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2019-06-18T13:25:32Z", 
+        "VersionId": "v2", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "cloudwatch:PutMetricData",
-                        "ds:AuthorizeApplication",
-                        "ds:GetAuthorizedApplicationDetails",
-                        "ds:UnauthorizeApplication",
-                        "ec2:CreateNetworkInterface",
-                        "ec2:CreateNetworkInterfacePermission",
-                        "ec2:DeleteNetworkInterface",
-                        "ec2:DescribeNetworkInterfaces",
-                        "ec2:DescribeSecurityGroups",
-                        "ec2:DescribeSubnets",
-                        "ec2:DescribeVpcs",
+                        "cloudwatch:PutMetricData", 
+                        "ds:AuthorizeApplication", 
+                        "ds:GetAuthorizedApplicationDetails", 
+                        "ds:UnauthorizeApplication", 
+                        "ec2:CreateNetworkInterface", 
+                        "ec2:CreateNetworkInterfacePermission", 
+                        "ec2:DeleteNetworkInterface", 
+                        "ec2:DescribeNetworkInterfaces", 
+                        "ec2:DescribeSecurityGroups", 
+                        "ec2:DescribeSubnets", 
+                        "ec2:DescribeVpcs", 
                         "route53:AssociateVPCWithHostedZone"
-                    ],
-                    "Resource": "*"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v2",
-        "IsDefaultVersion": true,
-        "CreateDate": "2019-06-18T13:25:32Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

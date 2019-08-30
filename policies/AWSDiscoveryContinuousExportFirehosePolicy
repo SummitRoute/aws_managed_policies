@@ -1,43 +1,43 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2018-08-09T18:29:39Z", 
+        "VersionId": "v1", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
                     "Action": [
                         "glue:GetTableVersions"
-                    ],
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "s3:AbortMultipartUpload",
-                        "s3:GetBucketLocation",
-                        "s3:GetObject",
-                        "s3:ListBucket",
-                        "s3:ListBucketMultipartUploads",
+                        "s3:AbortMultipartUpload", 
+                        "s3:GetBucketLocation", 
+                        "s3:GetObject", 
+                        "s3:ListBucket", 
+                        "s3:ListBucketMultipartUploads", 
                         "s3:PutObject"
-                    ],
+                    ], 
                     "Resource": [
-                        "arn:aws:s3:::aws-application-discovery-service-*",
+                        "arn:aws:s3:::aws-application-discovery-service-*", 
                         "arn:aws:s3:::aws-application-discovery-service-*/*"
-                    ]
-                },
+                    ], 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
                         "logs:PutLogEvents"
-                    ],
+                    ], 
                     "Resource": [
                         "arn:aws:logs:*:*:log-group:/aws/application-discovery-service/firehose:log-stream:*"
-                    ]
+                    ], 
+                    "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v1",
-        "IsDefaultVersion": true,
-        "CreateDate": "2018-08-09T18:29:39Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

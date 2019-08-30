@@ -1,31 +1,31 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2019-05-29T16:44:12Z", 
+        "VersionId": "v2", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "ec2:CreateSnapshot",
-                        "ec2:CreateSnapshots",
-                        "ec2:DeleteSnapshot",
-                        "ec2:DescribeInstances",
-                        "ec2:DescribeVolumes",
+                        "ec2:CreateSnapshot", 
+                        "ec2:CreateSnapshots", 
+                        "ec2:DeleteSnapshot", 
+                        "ec2:DescribeInstances", 
+                        "ec2:DescribeVolumes", 
                         "ec2:DescribeSnapshots"
-                    ],
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
                         "ec2:CreateTags"
-                    ],
-                    "Resource": "arn:aws:ec2:*::snapshot/*"
+                    ], 
+                    "Resource": "arn:aws:ec2:*::snapshot/*", 
+                    "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v2",
-        "IsDefaultVersion": true,
-        "CreateDate": "2019-05-29T16:44:12Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

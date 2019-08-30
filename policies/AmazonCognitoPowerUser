@@ -1,42 +1,42 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2019-03-29T22:06:46Z", 
+        "VersionId": "v3", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "cognito-identity:*",
-                        "cognito-idp:*",
-                        "cognito-sync:*",
-                        "iam:ListRoles",
-                        "iam:ListOpenIdConnectProviders",
+                        "cognito-identity:*", 
+                        "cognito-idp:*", 
+                        "cognito-sync:*", 
+                        "iam:ListRoles", 
+                        "iam:ListOpenIdConnectProviders", 
                         "sns:ListPlatformApplications"
-                    ],
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
-                    "Action": "iam:CreateServiceLinkedRole",
-                    "Resource": "*",
+                    "Action": "iam:CreateServiceLinkedRole", 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
                     "Condition": {
                         "StringEquals": {
                             "iam:AWSServiceName": "email.cognito-idp.amazonaws.com"
                         }
                     }
-                },
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "iam:DeleteServiceLinkedRole",
+                        "iam:DeleteServiceLinkedRole", 
                         "iam:GetServiceLinkedRoleDeletionStatus"
-                    ],
-                    "Resource": "arn:aws:iam::*:role/aws-service-role/email.cognito-idp.amazonaws.com/AWSServiceRoleForAmazonCognitoIdpEmail*"
+                    ], 
+                    "Resource": "arn:aws:iam::*:role/aws-service-role/email.cognito-idp.amazonaws.com/AWSServiceRoleForAmazonCognitoIdpEmail*", 
+                    "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v3",
-        "IsDefaultVersion": true,
-        "CreateDate": "2019-03-29T22:06:46Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

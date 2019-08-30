@@ -1,83 +1,86 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2019-08-13T19:41:05Z", 
+        "VersionId": "v7", 
         "Document": {
+            "Version": "2012-10-17", 
             "Statement": [
                 {
                     "Action": [
-                        "codepipeline:*",
-                        "cloudformation:DescribeStacks",
-                        "cloudformation:ListChangeSets",
-                        "cloudtrail:CreateTrail",
-                        "cloudtrail:DescribeTrails",
-                        "cloudtrail:GetEventSelectors",
-                        "cloudtrail:PutEventSelectors",
-                        "cloudtrail:StartLogging",
-                        "codebuild:BatchGetProjects",
-                        "codebuild:CreateProject",
-                        "codebuild:ListCuratedEnvironmentImages",
-                        "codebuild:ListProjects",
-                        "codecommit:GetBranch",
-                        "codecommit:GetRepositoryTriggers",
-                        "codecommit:ListBranches",
-                        "codecommit:ListRepositories",
-                        "codecommit:PutRepositoryTriggers",
-                        "codecommit:GetReferences",
-                        "codedeploy:GetApplication",
-                        "codedeploy:BatchGetApplications",
-                        "codedeploy:GetDeploymentGroup",
-                        "codedeploy:BatchGetDeploymentGroups",
-                        "codedeploy:ListApplications",
-                        "codedeploy:ListDeploymentGroups",
-                        "devicefarm:GetDevicePool",
-                        "devicefarm:GetProject",
-                        "devicefarm:ListDevicePools",
-                        "devicefarm:ListProjects",
-                        "ec2:DescribeSecurityGroups",
-                        "ec2:DescribeSubnets",
-                        "ec2:DescribeVpcs",
-                        "ecr:DescribeRepositories",
-                        "ecr:ListImages",
-                        "ecs:ListClusters",
-                        "ecs:ListServices",
-                        "elasticbeanstalk:DescribeApplications",
-                        "elasticbeanstalk:DescribeEnvironments",
-                        "iam:ListRoles",
-                        "iam:GetRole",
-                        "lambda:GetFunctionConfiguration",
-                        "lambda:ListFunctions",
-                        "events:ListRules",
-                        "events:ListTargetsByRule",
-                        "events:DescribeRule",
-                        "opsworks:DescribeApps",
-                        "opsworks:DescribeLayers",
-                        "opsworks:DescribeStacks",
-                        "s3:GetBucketPolicy",
-                        "s3:GetBucketVersioning",
-                        "s3:GetObjectVersion",
-                        "s3:ListAllMyBuckets",
-                        "s3:ListBucket",
+                        "codepipeline:*", 
+                        "cloudformation:DescribeStacks", 
+                        "cloudformation:ListChangeSets", 
+                        "cloudtrail:CreateTrail", 
+                        "cloudtrail:DescribeTrails", 
+                        "cloudtrail:GetEventSelectors", 
+                        "cloudtrail:PutEventSelectors", 
+                        "cloudtrail:StartLogging", 
+                        "codebuild:BatchGetProjects", 
+                        "codebuild:CreateProject", 
+                        "codebuild:ListCuratedEnvironmentImages", 
+                        "codebuild:ListProjects", 
+                        "codecommit:GetBranch", 
+                        "codecommit:GetRepositoryTriggers", 
+                        "codecommit:ListBranches", 
+                        "codecommit:ListRepositories", 
+                        "codecommit:PutRepositoryTriggers", 
+                        "codecommit:GetReferences", 
+                        "codedeploy:GetApplication", 
+                        "codedeploy:BatchGetApplications", 
+                        "codedeploy:GetDeploymentGroup", 
+                        "codedeploy:BatchGetDeploymentGroups", 
+                        "codedeploy:ListApplications", 
+                        "codedeploy:ListDeploymentGroups", 
+                        "devicefarm:GetDevicePool", 
+                        "devicefarm:GetProject", 
+                        "devicefarm:ListDevicePools", 
+                        "devicefarm:ListProjects", 
+                        "ec2:DescribeSecurityGroups", 
+                        "ec2:DescribeSubnets", 
+                        "ec2:DescribeVpcs", 
+                        "ecr:DescribeRepositories", 
+                        "ecr:ListImages", 
+                        "ecs:ListClusters", 
+                        "ecs:ListServices", 
+                        "elasticbeanstalk:DescribeApplications", 
+                        "elasticbeanstalk:DescribeEnvironments", 
+                        "iam:ListRoles", 
+                        "iam:GetRole", 
+                        "lambda:GetFunctionConfiguration", 
+                        "lambda:ListFunctions", 
+                        "events:ListRules", 
+                        "events:ListTargetsByRule", 
+                        "events:DescribeRule", 
+                        "opsworks:DescribeApps", 
+                        "opsworks:DescribeLayers", 
+                        "opsworks:DescribeStacks", 
+                        "s3:GetBucketPolicy", 
+                        "s3:GetBucketVersioning", 
+                        "s3:GetObjectVersion", 
+                        "s3:ListAllMyBuckets", 
+                        "s3:ListBucket", 
                         "sns:ListTopics"
-                    ],
-                    "Effect": "Allow",
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
                     "Action": [
-                        "s3:GetObject",
-                        "s3:CreateBucket",
+                        "s3:GetObject", 
+                        "s3:CreateBucket", 
                         "s3:PutBucketPolicy"
-                    ],
-                    "Effect": "Allow",
-                    "Resource": "arn:aws:s3::*:codepipeline-*"
-                },
+                    ], 
+                    "Resource": "arn:aws:s3::*:codepipeline-*", 
+                    "Effect": "Allow"
+                }, 
                 {
                     "Action": [
                         "iam:PassRole"
-                    ],
-                    "Effect": "Allow",
+                    ], 
                     "Resource": [
                         "arn:aws:iam::*:role/service-role/cwe-role-*"
-                    ],
+                    ], 
+                    "Effect": "Allow", 
                     "Condition": {
                         "StringEquals": {
                             "iam:PassedToService": [
@@ -85,13 +88,13 @@
                             ]
                         }
                     }
-                },
+                }, 
                 {
                     "Action": [
                         "iam:PassRole"
-                    ],
-                    "Effect": "Allow",
-                    "Resource": "*",
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
                     "Condition": {
                         "StringEquals": {
                             "iam:PassedToService": [
@@ -99,25 +102,22 @@
                             ]
                         }
                     }
-                },
+                }, 
                 {
                     "Action": [
-                        "events:PutRule",
-                        "events:PutTargets",
-                        "events:DeleteRule",
-                        "events:DisableRule",
+                        "events:PutRule", 
+                        "events:PutTargets", 
+                        "events:DeleteRule", 
+                        "events:DisableRule", 
                         "events:RemoveTargets"
-                    ],
-                    "Effect": "Allow",
+                    ], 
                     "Resource": [
                         "arn:aws:events:*:*:rule/codepipeline-*"
-                    ]
+                    ], 
+                    "Effect": "Allow"
                 }
-            ],
-            "Version": "2012-10-17"
-        },
-        "VersionId": "v7",
-        "IsDefaultVersion": true,
-        "CreateDate": "2019-08-13T19:41:05Z"
+            ]
+        }, 
+        "IsDefaultVersion": true
     }
 }

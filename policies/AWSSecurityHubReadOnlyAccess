@@ -1,21 +1,21 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2019-06-25T22:45:52Z", 
+        "VersionId": "v2", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "securityhub:Get*",
-                        "securityhub:List*",
+                        "securityhub:Get*", 
+                        "securityhub:List*", 
                         "securityhub:Describe*"
-                    ],
-                    "Resource": "*"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v2",
-        "IsDefaultVersion": true,
-        "CreateDate": "2019-06-25T22:45:52Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

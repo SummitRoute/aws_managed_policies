@@ -1,37 +1,37 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2019-06-27T18:10:37Z", 
+        "VersionId": "v3", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "ec2:AssignPrivateIpAddresses",
-                        "ec2:AttachNetworkInterface",
-                        "ec2:CreateNetworkInterface",
-                        "ec2:DeleteNetworkInterface",
-                        "ec2:DescribeInstances",
-                        "ec2:DescribeTags",
-                        "ec2:DescribeNetworkInterfaces",
-                        "ec2:DetachNetworkInterface",
-                        "ec2:ModifyNetworkInterfaceAttribute",
+                        "ec2:AssignPrivateIpAddresses", 
+                        "ec2:AttachNetworkInterface", 
+                        "ec2:CreateNetworkInterface", 
+                        "ec2:DeleteNetworkInterface", 
+                        "ec2:DescribeInstances", 
+                        "ec2:DescribeTags", 
+                        "ec2:DescribeNetworkInterfaces", 
+                        "ec2:DetachNetworkInterface", 
+                        "ec2:ModifyNetworkInterfaceAttribute", 
                         "ec2:UnassignPrivateIpAddresses"
-                    ],
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
                         "ec2:CreateTags"
-                    ],
+                    ], 
                     "Resource": [
                         "arn:aws:ec2:*:*:network-interface/*"
-                    ]
+                    ], 
+                    "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v3",
-        "IsDefaultVersion": true,
-        "CreateDate": "2019-06-27T18:10:37Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

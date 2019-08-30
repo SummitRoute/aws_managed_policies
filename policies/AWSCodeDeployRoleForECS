@@ -1,35 +1,37 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2018-12-19T17:57:04Z", 
+        "VersionId": "v2", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
                     "Action": [
-                        "ecs:DescribeServices",
-                        "ecs:CreateTaskSet",
-                        "ecs:UpdateServicePrimaryTaskSet",
-                        "ecs:DeleteTaskSet",
-                        "elasticloadbalancing:DescribeTargetGroups",
-                        "elasticloadbalancing:DescribeListeners",
-                        "elasticloadbalancing:ModifyListener",
-                        "elasticloadbalancing:DescribeRules",
-                        "elasticloadbalancing:ModifyRule",
-                        "lambda:InvokeFunction",
-                        "cloudwatch:DescribeAlarms",
-                        "sns:Publish",
-                        "s3:GetObject",
-                        "s3:GetObjectMetadata",
+                        "ecs:DescribeServices", 
+                        "ecs:CreateTaskSet", 
+                        "ecs:UpdateServicePrimaryTaskSet", 
+                        "ecs:DeleteTaskSet", 
+                        "elasticloadbalancing:DescribeTargetGroups", 
+                        "elasticloadbalancing:DescribeListeners", 
+                        "elasticloadbalancing:ModifyListener", 
+                        "elasticloadbalancing:DescribeRules", 
+                        "elasticloadbalancing:ModifyRule", 
+                        "lambda:InvokeFunction", 
+                        "cloudwatch:DescribeAlarms", 
+                        "sns:Publish", 
+                        "s3:GetObject", 
+                        "s3:GetObjectMetadata", 
                         "s3:GetObjectVersion"
-                    ],
-                    "Resource": "*",
+                    ], 
+                    "Resource": "*", 
                     "Effect": "Allow"
-                },
+                }, 
                 {
                     "Action": [
                         "iam:PassRole"
-                    ],
-                    "Effect": "Allow",
-                    "Resource": "*",
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
                     "Condition": {
                         "StringLike": {
                             "iam:PassedToService": [
@@ -39,9 +41,7 @@
                     }
                 }
             ]
-        },
-        "VersionId": "v2",
-        "IsDefaultVersion": true,
-        "CreateDate": "2018-12-19T17:57:04Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

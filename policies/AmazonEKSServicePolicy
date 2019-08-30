@@ -1,63 +1,63 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2019-08-21T16:17:56Z", 
+        "VersionId": "v4", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "ec2:CreateNetworkInterface",
-                        "ec2:CreateNetworkInterfacePermission",
-                        "ec2:DeleteNetworkInterface",
-                        "ec2:DescribeInstances",
-                        "ec2:DescribeNetworkInterfaces",
-                        "ec2:DescribeSecurityGroups",
-                        "ec2:DescribeSubnets",
-                        "ec2:DescribeVpcs",
-                        "ec2:ModifyNetworkInterfaceAttribute",
-                        "iam:ListAttachedRolePolicies",
+                        "ec2:CreateNetworkInterface", 
+                        "ec2:CreateNetworkInterfacePermission", 
+                        "ec2:DeleteNetworkInterface", 
+                        "ec2:DescribeInstances", 
+                        "ec2:DescribeNetworkInterfaces", 
+                        "ec2:DescribeSecurityGroups", 
+                        "ec2:DescribeSubnets", 
+                        "ec2:DescribeVpcs", 
+                        "ec2:ModifyNetworkInterfaceAttribute", 
+                        "iam:ListAttachedRolePolicies", 
                         "eks:UpdateClusterVersion"
-                    ],
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "ec2:CreateTags",
+                        "ec2:CreateTags", 
                         "ec2:DeleteTags"
-                    ],
+                    ], 
                     "Resource": [
-                        "arn:aws:ec2:*:*:vpc/*",
+                        "arn:aws:ec2:*:*:vpc/*", 
                         "arn:aws:ec2:*:*:subnet/*"
-                    ]
-                },
+                    ], 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
-                    "Action": "route53:AssociateVPCWithHostedZone",
-                    "Resource": "*"
-                },
+                    "Action": "route53:AssociateVPCWithHostedZone", 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
-                    "Action": "logs:CreateLogGroup",
-                    "Resource": "*"
-                },
+                    "Action": "logs:CreateLogGroup", 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "logs:CreateLogStream",
+                        "logs:CreateLogStream", 
                         "logs:DescribeLogStreams"
-                    ],
-                    "Resource": "arn:aws:logs:*:*:log-group:/aws/eks/*:*"
-                },
+                    ], 
+                    "Resource": "arn:aws:logs:*:*:log-group:/aws/eks/*:*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
-                    "Action": "logs:PutLogEvents",
-                    "Resource": "arn:aws:logs:*:*:log-group:/aws/eks/*:*:*"
+                    "Action": "logs:PutLogEvents", 
+                    "Resource": "arn:aws:logs:*:*:log-group:/aws/eks/*:*:*", 
+                    "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v4",
-        "IsDefaultVersion": true,
-        "CreateDate": "2019-08-21T16:17:56Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }
