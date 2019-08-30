@@ -129,18 +129,30 @@
                     }
                 },
                 {
-                    "Sid": "IamPermission",
+                    "Sid": "IAMGetRoles",
                     "Effect": "Allow",
                     "Action": [
-                        "iam:GetRole",
+                        "iam:GetRole"
+                    ],
+                    "Resource": [
+                        "*"
+                    ]
+                },
+                {
+                    "Sid": "IAMPassRoles",
+                    "Effect": "Allow",
+                    "Action": [
                         "iam:PassRole"
                     ],
                     "Resource": [
-                        "arn:aws:iam::*:role/*"
+                        "arn:aws:iam::*:role/LicenseManagerServiceResourceDataSyncRole*"
                     ],
                     "Condition": {
                         "StringEquals": {
-                            "iam:PassedToService": "byol.amazonaws.com"
+                            "iam:PassedToService": [
+                                "cloudformation.amazonaws.com",
+                                "glue.amazonaws.com"
+                            ]
                         }
                     }
                 },
@@ -179,8 +191,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-08-22T20:05:35Z"
+        "CreateDate": "2019-08-29T22:56:41Z"
     }
 }
