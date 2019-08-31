@@ -76,11 +76,22 @@
                     "Resource": [
                         "*"
                     ]
+                },
+                {
+                    "Sid": "AllowDescribeForDirectory",
+                    "Effect": "Allow",
+                    "Action": [
+                        "ds:DescribeDirectories",
+                        "ds:DescribeTrusts"
+                    ],
+                    "Resource": [
+                        "*"
+                    ]
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-05-15T20:45:42Z"
+        "CreateDate": "2019-08-30T19:55:59Z"
     }
 }
