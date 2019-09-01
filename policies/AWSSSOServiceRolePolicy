@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-05-15T20:45:42Z", 
-        "VersionId": "v6", 
+        "CreateDate": "2019-08-30T19:55:59Z", 
+        "VersionId": "v7", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -78,6 +78,17 @@
                     ], 
                     "Effect": "Allow", 
                     "Sid": "AllowUnauthAppForDirectory"
+                }, 
+                {
+                    "Action": [
+                        "ds:DescribeDirectories", 
+                        "ds:DescribeTrusts"
+                    ], 
+                    "Resource": [
+                        "*"
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "AllowDescribeForDirectory"
                 }
             ]
         }, 
