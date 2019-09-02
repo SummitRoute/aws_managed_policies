@@ -1,0 +1,27 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2019-03-21T21:32:25Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "ses:SendEmail", 
+                        "ses:SendRawEmail"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "ses:List*"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Deny"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}
