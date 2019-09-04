@@ -1,7 +1,7 @@
 Collection of the AWS Managed IAM policies.  These are acquired by the `get_aws_managed_policies.py` script.
 
 ```
-python3 get_aws_managed_policies.py
+python3 auto_update_lambda/get_aws_managed_policies.py
 ```
 
 This script does the following:

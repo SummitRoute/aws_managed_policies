@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 
 """
-Get all AWS Managed Policies and output the current version
+Get all AWS Managed Policies, output to files and commit to git repo.
 """
 
 import datetime
 import json
+import os
 
 import boto3
 
@@ -46,6 +47,9 @@ def get_all_aws_iam_policies(max_items=100):
 
 
 def update_policy_version_doc(policy):
+    """
+    Write out each AWS Managed Policy a JSON File.
+    """
     with open("policies/" + policy["PolicyName"], "w") as fw:
         response = IAM_CLIENT.get_policy_version(
             PolicyArn=policy["Arn"], VersionId=policy["DefaultVersionId"]
@@ -57,9 +61,13 @@ def update_policy_version_doc(policy):
         fw.write("\n")  # Old process included a newline
 
 
-def main():
+def get_all_aws_managed_policies():
     for policy in get_all_aws_iam_policies():
         update_policy_version_doc(policy)
+
+
+def main():
+    get_all_aws_managed_policies()
 
 
 if __name__ == "__main__":

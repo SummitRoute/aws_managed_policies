@@ -1,0 +1,9 @@
+aws-cdk.aws-events
+aws-cdk.aws-events-targets
+aws-cdk.aws-lambda
+aws-cdk.aws_events
+aws-cdk.aws_iam
+aws-cdk.aws_lambda
+aws-cdk.aws_logs
+aws-cdk.aws_secretsmanager
+aws-cdk.core
