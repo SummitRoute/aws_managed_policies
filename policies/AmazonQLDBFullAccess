@@ -1,0 +1,35 @@
+{
+    "PolicyVersion": {
+        "CreateDate": "2019-09-05T18:23:32Z", 
+        "VersionId": "v1", 
+        "Document": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": [
+                        "qldb:CreateLedger", 
+                        "qldb:UpdateLedger", 
+                        "qldb:DeleteLedger", 
+                        "qldb:ListLedgers", 
+                        "qldb:DescribeLedger", 
+                        "qldb:ExportJournalToS3", 
+                        "qldb:ListJournalS3Exports", 
+                        "qldb:ListJournalS3ExportsForLedger", 
+                        "qldb:DescribeJournalS3Export", 
+                        "qldb:GetBlock", 
+                        "qldb:GetDigest", 
+                        "qldb:GetRevision", 
+                        "qldb:GetBlock", 
+                        "qldb:TagResource", 
+                        "qldb:UntagResource", 
+                        "qldb:ListTagsForResource", 
+                        "qldb:SendCommand"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }
+            ]
+        }, 
+        "IsDefaultVersion": true
+    }
+}
