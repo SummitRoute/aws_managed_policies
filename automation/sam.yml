@@ -13,7 +13,7 @@ Resources:
   MamipFunction:
     Type: 'AWS::Serverless::Function'
     Properties:
-      FunctionName: !Sub Mamip-${env}
+      FunctionName: !Sub mamip-${env}
       Description: MAMIP - Monitor AWS Managed IAM Policies Changes
       Handler: fireup.lambda_handler
       Runtime: python3.7

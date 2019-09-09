@@ -30,6 +30,7 @@ then
     git tag $DATE
     git push --tags
     echo "Push the changes to master"
+    git add ./policies
     git commit -am "Update detected"
     git push origin master
 else
