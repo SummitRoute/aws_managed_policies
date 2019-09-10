@@ -22,7 +22,9 @@
                         "athena:ListQueryExecutions",
                         "athena:RunQuery",
                         "athena:StartQueryExecution",
-                        "athena:StopQueryExecution"
+                        "athena:StopQueryExecution",
+                        "athena:ListWorkGroups",
+                        "athena:GetWorkGroup"
                     ],
                     "Resource": [
                         "*"
@@ -82,8 +84,8 @@
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-08-08T17:51:51Z"
+        "CreateDate": "2019-09-10T17:59:46Z"
     }
 }
