@@ -19,7 +19,6 @@
                         "chime:GetCDRBucket",
                         "chime:ListDelegates",
                         "chime:GetAccountResource",
-                        "chime:ValidateDelegate",
                         "chime:ListAccountUsageReportData",
                         "chime:GetUserActivityReportData",
                         "chime:GetGlobalSettings",
@@ -46,8 +45,8 @@
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-05-13T20:34:08Z"
+        "CreateDate": "2019-09-10T19:31:11Z"
     }
 }
