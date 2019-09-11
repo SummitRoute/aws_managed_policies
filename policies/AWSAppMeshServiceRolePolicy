@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-06-03T18:30:51Z", 
-        "VersionId": "v1", 
+        "CreateDate": "2019-09-10T22:44:43Z", 
+        "VersionId": "v2", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -12,6 +12,14 @@
                     "Resource": "*", 
                     "Effect": "Allow", 
                     "Sid": "CloudMapServiceDiscovery"
+                }, 
+                {
+                    "Action": [
+                        "acm:DescribeCertificate"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "ACMCertificateVerification"
                 }
             ]
         }, 

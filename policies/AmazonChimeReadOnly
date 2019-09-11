@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-05-13T20:34:08Z", 
-        "VersionId": "v6", 
+        "CreateDate": "2019-09-10T19:31:11Z", 
+        "VersionId": "v7", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -21,7 +21,6 @@
                         "chime:GetCDRBucket", 
                         "chime:ListDelegates", 
                         "chime:GetAccountResource", 
-                        "chime:ValidateDelegate", 
                         "chime:ListAccountUsageReportData", 
                         "chime:GetUserActivityReportData", 
                         "chime:GetGlobalSettings", 
