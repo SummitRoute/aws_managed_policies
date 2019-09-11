@@ -10,11 +10,19 @@
                         "servicediscovery:DiscoverInstances"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Sid": "ACMCertificateVerification",
+                    "Effect": "Allow",
+                    "Action": [
+                        "acm:DescribeCertificate"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-06-03T18:30:51Z"
+        "CreateDate": "2019-09-10T22:44:43Z"
     }
 }
