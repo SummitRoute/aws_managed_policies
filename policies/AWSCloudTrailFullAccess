@@ -1,7 +1,7 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-05-21T23:39:06Z", 
-        "VersionId": "v7", 
+        "CreateDate": "2019-09-12T23:08:46Z", 
+        "VersionId": "v8", 
         "Document": {
             "Version": "2012-10-17", 
             "Statement": [
@@ -45,13 +45,24 @@
                 }, 
                 {
                     "Action": [
-                        "iam:PassRole", 
                         "iam:ListRoles", 
                         "iam:GetRolePolicy", 
                         "iam:GetUser"
                     ], 
                     "Resource": "*", 
                     "Effect": "Allow"
+                }, 
+                {
+                    "Action": [
+                        "iam:PassRole"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:PassedToService": "cloudtrail.amazonaws.com"
+                        }
+                    }
                 }, 
                 {
                     "Action": [
