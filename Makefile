@@ -23,7 +23,7 @@ package: clean
 
 	@echo "zipping python code, uploading to S3 bucket, and transforming template"
 	aws cloudformation package \
-			--template-file automation/sam.yml \
+			--template-file automation/cfn-ec2/sam.yml \
 			--s3-bucket ${S3_BUCKET} \
 			--output-template-file automation/build/template-lambda.yml
 
@@ -83,4 +83,4 @@ deploy:
 			--no-fail-on-empty-changeset
 
 all: package update-script deploy
-	@echo "Installation successfull"
+	@echo "Installation Successfull"

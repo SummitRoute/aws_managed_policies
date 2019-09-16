@@ -2,6 +2,8 @@
 
 Thanks to [@0xdabbad00](https://github.com/0xdabbad00) from [SummitRoute](https://summitroute.com/) for the original idea, this repo only automate the retrieval of new AWS Managed IAM Policies make it easier to monitor and get alerted when changes occurs using "Watch" feature of Github.
 
+I'm using this excuse for learning and experiment new stuff: Automation, Terraform, Containers with AWS Fargate.
+
 ## Usage
 
 ### Two options
@@ -30,17 +32,22 @@ This does the following:
 
 ### Automation Steps
 
-- Update the EC2 system
+- Update the Operating System
 - Install requirements: `git`, `jq`, `SSH private key`
-- Clone the repository
-- Run the magic (previous command)
-- Commit changes if any
+- Clone this repository
+- Run the magic (previous mentioned command)
+- Commit changes (if any)
 - Push (with tags)
 
 #### Schedule
 
-- Once a day - Seattle timezone (PDT/PST). (where the magic happens :smile:)
+- EC2: Once a day using Spot Instance
+- Fargate: Every 6 hours (Current active version)
 
-### Schema
+### EC2 Schema
+
+![schema](assets/schema.png)
+
+### Fargate Schema
 
 ![schema](assets/schema.png)

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# EC2 version of this script
+# EC2 version of the script
 
 DATE=`date +%Y-%m-%d-%H-%M`
 
@@ -26,20 +26,19 @@ then
     echo "Run the magic"
     aws iam list-policies > /tmp/aws_managed_policies/list-policies.json
     cat /tmp/aws_managed_policies/list-policies.json | jq -cr '.Policies[] | select(.Arn | contains("iam::aws"))|.Arn +" "+ .DefaultVersionId+" "+.PolicyName' | xargs -n3 sh -c 'aws iam get-policy-version --policy-arn $1 --version-id $2 > "policies/$3"' sh
-fi
-
-# push the changes if any
-if [[ -n $(git status -s) ]];
-then
-    echo "Tagging"
-    git tag $DATE
-    git push --tags
-    echo "Push the changes to master"
-    git add ./policies
-    git commit -am "Update detected"
-    git push origin master
-else
-    echo "No changes detected"
+    # push the changes if any
+    if [[ -n $(git status -s) ]];
+    then
+        echo "Tagging"
+        git tag $DATE
+        git push --tags
+        echo "Push the changes to master"
+        git add ./policies
+        git commit -am "Update detected"
+        git push origin master
+    else
+        echo "No changes detected"
+    fi
 fi
 
 # cleaning
