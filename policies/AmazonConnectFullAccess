@@ -1,55 +1,55 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-10-17T22:28:01Z", 
-        "VersionId": "v2", 
         "Document": {
-            "Version": "2012-10-17", 
+            "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "connect:*", 
-                        "ds:CreateAlias", 
-                        "ds:AuthorizeApplication", 
-                        "ds:CreateIdentityPoolDirectory", 
-                        "ds:DeleteDirectory", 
-                        "ds:DescribeDirectories", 
-                        "ds:UnauthorizeApplication", 
-                        "firehose:DescribeDeliveryStream", 
-                        "firehose:ListDeliveryStreams", 
-                        "kinesis:DescribeStream", 
-                        "kinesis:ListStreams", 
-                        "kms:DescribeKey", 
-                        "kms:CreateGrant", 
-                        "kms:ListAliases", 
-                        "lex:GetBots", 
-                        "logs:CreateLogGroup", 
-                        "s3:CreateBucket", 
-                        "s3:GetBucketLocation", 
+                        "connect:*",
+                        "ds:CreateAlias",
+                        "ds:AuthorizeApplication",
+                        "ds:CreateIdentityPoolDirectory",
+                        "ds:DeleteDirectory",
+                        "ds:DescribeDirectories",
+                        "ds:UnauthorizeApplication",
+                        "firehose:DescribeDeliveryStream",
+                        "firehose:ListDeliveryStreams",
+                        "kinesis:DescribeStream",
+                        "kinesis:ListStreams",
+                        "kms:DescribeKey",
+                        "kms:CreateGrant",
+                        "kms:ListAliases",
+                        "lex:GetBots",
+                        "logs:CreateLogGroup",
+                        "s3:CreateBucket",
+                        "s3:GetBucketLocation",
                         "s3:ListAllMyBuckets"
-                    ], 
-                    "Resource": "*", 
-                    "Effect": "Allow"
-                }, 
+                    ],
+                    "Resource": "*"
+                },
                 {
-                    "Action": "iam:CreateServiceLinkedRole", 
-                    "Resource": "*", 
-                    "Effect": "Allow", 
+                    "Effect": "Allow",
+                    "Action": "iam:CreateServiceLinkedRole",
+                    "Resource": "*",
                     "Condition": {
                         "StringEquals": {
                             "iam:AWSServiceName": "connect.amazonaws.com"
                         }
                     }
-                }, 
+                },
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "iam:DeleteServiceLinkedRole", 
+                        "iam:DeleteServiceLinkedRole",
                         "iam:PutRolePolicy"
-                    ], 
-                    "Resource": "arn:aws:iam::*:role/aws-service-role/connect.amazonaws.com/AWSServiceRoleForAmazonConnect*", 
-                    "Effect": "Allow"
+                    ],
+                    "Resource": "arn:aws:iam::*:role/aws-service-role/connect.amazonaws.com/AWSServiceRoleForAmazonConnect*"
                 }
             ]
-        }, 
-        "IsDefaultVersion": true
+        },
+        "VersionId": "v2",
+        "IsDefaultVersion": true,
+        "CreateDate": "2018-10-17T22:28:01Z"
     }
 }

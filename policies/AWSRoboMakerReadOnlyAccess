@@ -1,32 +1,32 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-11-26T05:30:50Z", 
-        "VersionId": "v1", 
         "Document": {
-            "Version": "2012-10-17", 
+            "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Sid": "VisualEditor0",
+                    "Effect": "Allow",
                     "Action": [
-                        "robomaker:ListDeploymentJobs", 
-                        "robomaker:BatchDescribeSimulationJob", 
-                        "robomaker:DescribeFleet", 
-                        "robomaker:DescribeSimulationApplication", 
-                        "robomaker:DescribeRobotApplication", 
-                        "robomaker:ListFleets", 
-                        "robomaker:ListSimulationJobs", 
-                        "robomaker:DescribeDeploymentJob", 
-                        "robomaker:DescribeSimulationJob", 
-                        "robomaker:DescribeRobot", 
-                        "robomaker:ListRobots", 
-                        "robomaker:ListRobotApplications", 
+                        "robomaker:ListDeploymentJobs",
+                        "robomaker:BatchDescribeSimulationJob",
+                        "robomaker:DescribeFleet",
+                        "robomaker:DescribeSimulationApplication",
+                        "robomaker:DescribeRobotApplication",
+                        "robomaker:ListFleets",
+                        "robomaker:ListSimulationJobs",
+                        "robomaker:DescribeDeploymentJob",
+                        "robomaker:DescribeSimulationJob",
+                        "robomaker:DescribeRobot",
+                        "robomaker:ListRobots",
+                        "robomaker:ListRobotApplications",
                         "robomaker:ListSimulationApplications"
-                    ], 
-                    "Resource": "*", 
-                    "Effect": "Allow", 
-                    "Sid": "VisualEditor0"
+                    ],
+                    "Resource": "*"
                 }
             ]
-        }, 
-        "IsDefaultVersion": true
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2018-11-26T05:30:50Z"
     }
 }

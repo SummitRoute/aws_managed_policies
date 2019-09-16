@@ -1,23 +1,23 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2015-05-19T18:18:43Z", 
-        "VersionId": "v1", 
         "Document": {
-            "Version": "2012-10-17", 
+            "Version": "2012-10-17",
             "Statement": [
                 {
                     "Action": [
-                        "codedeploy:Batch*", 
-                        "codedeploy:CreateDeployment", 
-                        "codedeploy:Get*", 
-                        "codedeploy:List*", 
+                        "codedeploy:Batch*",
+                        "codedeploy:CreateDeployment",
+                        "codedeploy:Get*",
+                        "codedeploy:List*",
                         "codedeploy:RegisterApplicationRevision"
-                    ], 
-                    "Resource": "*", 
-                    "Effect": "Allow"
+                    ],
+                    "Effect": "Allow",
+                    "Resource": "*"
                 }
             ]
-        }, 
-        "IsDefaultVersion": true
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2015-05-19T18:18:43Z"
     }
 }

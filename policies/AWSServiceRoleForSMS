@@ -1,19 +1,17 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-08-06T18:39:29Z", 
-        "VersionId": "v1", 
         "Document": {
-            "Version": "2012-10-17", 
+            "Version": "2012-10-17",
             "Statement": [
                 {
                     "Action": [
-                        "cloudformation:CreateChangeSet", 
-                        "cloudformation:CreateStack", 
-                        "cloudformation:DeleteStack", 
+                        "cloudformation:CreateChangeSet",
+                        "cloudformation:CreateStack",
+                        "cloudformation:DeleteStack",
                         "cloudformation:ExecuteChangeSet"
-                    ], 
-                    "Resource": "arn:aws:cloudformation:*:*:stack/sms-app-*/*", 
-                    "Effect": "Allow", 
+                    ],
+                    "Resource": "arn:aws:cloudformation:*:*:stack/sms-app-*/*",
+                    "Effect": "Allow",
                     "Condition": {
                         "ForAllValues:StringLikeIfExists": {
                             "cloudformation:ResourceTypes": [
@@ -21,103 +19,103 @@
                             ]
                         }
                     }
-                }, 
+                },
                 {
                     "Action": [
-                        "cloudformation:DeleteChangeSet", 
-                        "cloudformation:DescribeChangeSet", 
-                        "cloudformation:DescribeStackEvents", 
-                        "cloudformation:DescribeStackResources", 
+                        "cloudformation:DeleteChangeSet",
+                        "cloudformation:DescribeChangeSet",
+                        "cloudformation:DescribeStackEvents",
+                        "cloudformation:DescribeStackResources",
                         "cloudformation:GetTemplate"
-                    ], 
-                    "Resource": "arn:aws:cloudformation:*:*:stack/sms-app-*/*", 
+                    ],
+                    "Resource": "arn:aws:cloudformation:*:*:stack/sms-app-*/*",
                     "Effect": "Allow"
-                }, 
+                },
                 {
                     "Action": [
-                        "cloudformation:DescribeStacks", 
-                        "cloudformation:ValidateTemplate", 
-                        "cloudformation:DescribeStackResource", 
+                        "cloudformation:DescribeStacks",
+                        "cloudformation:ValidateTemplate",
+                        "cloudformation:DescribeStackResource",
                         "s3:ListAllMyBuckets"
-                    ], 
-                    "Resource": "*", 
+                    ],
+                    "Resource": "*",
                     "Effect": "Allow"
-                }, 
+                },
                 {
                     "Action": [
-                        "s3:CreateBucket", 
-                        "s3:DeleteBucket", 
-                        "s3:DeleteObject", 
-                        "s3:GetBucketAcl", 
-                        "s3:GetBucketLocation", 
-                        "s3:GetObject", 
-                        "s3:ListBucket", 
-                        "s3:PutObject", 
-                        "s3:PutObjectAcl", 
+                        "s3:CreateBucket",
+                        "s3:DeleteBucket",
+                        "s3:DeleteObject",
+                        "s3:GetBucketAcl",
+                        "s3:GetBucketLocation",
+                        "s3:GetObject",
+                        "s3:ListBucket",
+                        "s3:PutObject",
+                        "s3:PutObjectAcl",
                         "s3:PutLifecycleConfiguration"
-                    ], 
-                    "Resource": "arn:aws:s3:::sms-app-*", 
+                    ],
+                    "Resource": "arn:aws:s3:::sms-app-*",
                     "Effect": "Allow"
-                }, 
+                },
                 {
                     "Action": [
-                        "sms:CreateReplicationJob", 
-                        "sms:DeleteReplicationJob", 
-                        "sms:GetReplicationJobs", 
-                        "sms:GetReplicationRuns", 
-                        "sms:GetServers", 
-                        "sms:ImportServerCatalog", 
-                        "sms:StartOnDemandReplicationRun", 
+                        "sms:CreateReplicationJob",
+                        "sms:DeleteReplicationJob",
+                        "sms:GetReplicationJobs",
+                        "sms:GetReplicationRuns",
+                        "sms:GetServers",
+                        "sms:ImportServerCatalog",
+                        "sms:StartOnDemandReplicationRun",
                         "sms:UpdateReplicationJob"
-                    ], 
-                    "Resource": "*", 
+                    ],
+                    "Resource": "*",
                     "Effect": "Allow"
-                }, 
+                },
                 {
                     "Action": [
-                        "ec2:ModifySnapshotAttribute", 
-                        "ec2:CopySnapshot", 
-                        "ec2:CopyImage", 
-                        "ec2:Describe*", 
-                        "ec2:DeleteSnapshot", 
-                        "ec2:DeregisterImage", 
+                        "ec2:ModifySnapshotAttribute",
+                        "ec2:CopySnapshot",
+                        "ec2:CopyImage",
+                        "ec2:Describe*",
+                        "ec2:DeleteSnapshot",
+                        "ec2:DeregisterImage",
                         "ec2:RunInstances"
-                    ], 
-                    "Resource": "*", 
+                    ],
+                    "Resource": "*",
                     "Effect": "Allow"
-                }, 
+                },
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "ec2:CreateTags", 
+                        "ec2:CreateTags",
                         "ec2:DeleteTags"
-                    ], 
-                    "Resource": "arn:aws:ec2:*:*:instance/*", 
-                    "Effect": "Allow"
-                }, 
+                    ],
+                    "Resource": "arn:aws:ec2:*:*:instance/*"
+                },
                 {
-                    "Action": "iam:GetRole", 
-                    "Resource": "*", 
+                    "Action": "iam:GetRole",
+                    "Resource": "*",
                     "Effect": "Allow"
-                }, 
+                },
                 {
-                    "Action": "iam:PassRole", 
-                    "Resource": "*", 
-                    "Effect": "Allow", 
+                    "Action": "iam:PassRole",
+                    "Resource": "*",
+                    "Effect": "Allow",
                     "Condition": {
                         "StringLike": {
                             "iam:AssociatedResourceArn": "arn:aws:cloudformation:*:*:stack/sms-app-*/*"
                         }
                     }
-                }, 
+                },
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "ec2:ModifyInstanceAttribute", 
-                        "ec2:StopInstances", 
-                        "ec2:StartInstances", 
+                        "ec2:ModifyInstanceAttribute",
+                        "ec2:StopInstances",
+                        "ec2:StartInstances",
                         "ec2:TerminateInstances"
-                    ], 
-                    "Resource": "*", 
-                    "Effect": "Allow", 
+                    ],
+                    "Resource": "*",
                     "Condition": {
                         "ForAllValues:StringLike": {
                             "ec2:ResourceTag/aws:cloudformation:stack-id": "arn:aws:cloudformation:*:*:stack/sms-app-*/*"
@@ -125,7 +123,9 @@
                     }
                 }
             ]
-        }, 
-        "IsDefaultVersion": true
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2019-08-06T18:39:29Z"
     }
 }

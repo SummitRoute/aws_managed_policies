@@ -1,25 +1,25 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2016-01-21T17:03:28Z", 
-        "VersionId": "v3", 
         "Document": {
-            "Version": "2012-10-17", 
+            "Version": "2012-10-17",
             "Statement": [
                 {
                     "Action": [
-                        "acm:ListCertificates", 
-                        "cloudfront:Get*", 
-                        "cloudfront:List*", 
-                        "iam:ListServerCertificates", 
-                        "route53:List*", 
-                        "waf:ListWebACLs", 
+                        "acm:ListCertificates",
+                        "cloudfront:Get*",
+                        "cloudfront:List*",
+                        "iam:ListServerCertificates",
+                        "route53:List*",
+                        "waf:ListWebACLs",
                         "waf:GetWebACL"
-                    ], 
-                    "Resource": "*", 
-                    "Effect": "Allow"
+                    ],
+                    "Effect": "Allow",
+                    "Resource": "*"
                 }
             ]
-        }, 
-        "IsDefaultVersion": true
+        },
+        "VersionId": "v3",
+        "IsDefaultVersion": true,
+        "CreateDate": "2016-01-21T17:03:28Z"
     }
 }

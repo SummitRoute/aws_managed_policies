@@ -1,35 +1,35 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2017-12-11T19:51:37Z", 
-        "VersionId": "v7", 
         "Document": {
-            "Version": "2012-10-17", 
+            "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "s3:GetObject", 
+                        "s3:GetObject",
                         "s3:GetBucketLocation"
-                    ], 
-                    "Resource": "*", 
-                    "Effect": "Allow"
-                }, 
+                    ],
+                    "Resource": "*"
+                },
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "cloudtrail:GetTrailStatus", 
-                        "cloudtrail:DescribeTrails", 
-                        "cloudtrail:LookupEvents", 
-                        "cloudtrail:ListTags", 
-                        "cloudtrail:ListPublicKeys", 
-                        "cloudtrail:GetEventSelectors", 
-                        "s3:ListAllMyBuckets", 
-                        "kms:ListAliases", 
+                        "cloudtrail:GetTrailStatus",
+                        "cloudtrail:DescribeTrails",
+                        "cloudtrail:LookupEvents",
+                        "cloudtrail:ListTags",
+                        "cloudtrail:ListPublicKeys",
+                        "cloudtrail:GetEventSelectors",
+                        "s3:ListAllMyBuckets",
+                        "kms:ListAliases",
                         "lambda:ListFunctions"
-                    ], 
-                    "Resource": "*", 
-                    "Effect": "Allow"
+                    ],
+                    "Resource": "*"
                 }
             ]
-        }, 
-        "IsDefaultVersion": true
+        },
+        "VersionId": "v7",
+        "IsDefaultVersion": true,
+        "CreateDate": "2017-12-11T19:51:37Z"
     }
 }
