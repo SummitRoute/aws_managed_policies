@@ -1,22 +1,22 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2017-08-14T13:30:51Z", 
-        "VersionId": "v1", 
         "Document": {
-            "Version": "2012-10-17", 
+            "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "discovery:ListConfigurations", 
+                        "discovery:ListConfigurations",
                         "discovery:DescribeConfigurations"
-                    ], 
+                    ],
                     "Resource": [
                         "*"
-                    ], 
-                    "Effect": "Allow"
+                    ]
                 }
             ]
-        }, 
-        "IsDefaultVersion": true
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2017-08-14T13:30:51Z"
     }
 }

@@ -1,36 +1,34 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-07-02T21:48:12Z", 
-        "VersionId": "v3", 
         "Document": {
-            "Version": "2012-10-17", 
+            "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "dynamodb:GetItem", 
-                        "dynamodb:PutItem", 
-                        "dynamodb:UpdateItem", 
-                        "dynamodb:DeleteItem", 
-                        "dynamodb:DescribeTable", 
-                        "dynamodb:Scan", 
-                        "dynamodb:DescribeStream", 
-                        "dynamodb:GetRecords", 
-                        "dynamodb:GetShardIterator", 
-                        "dynamodb:DescribeTimeToLive", 
-                        "application-autoscaling:RegisterScalableTarget", 
-                        "application-autoscaling:DescribeScalableTargets", 
-                        "application-autoscaling:PutScalingPolicy", 
+                        "dynamodb:GetItem",
+                        "dynamodb:PutItem",
+                        "dynamodb:UpdateItem",
+                        "dynamodb:DeleteItem",
+                        "dynamodb:DescribeTable",
+                        "dynamodb:Scan",
+                        "dynamodb:DescribeStream",
+                        "dynamodb:GetRecords",
+                        "dynamodb:GetShardIterator",
+                        "dynamodb:DescribeTimeToLive",
+                        "application-autoscaling:RegisterScalableTarget",
+                        "application-autoscaling:DescribeScalableTargets",
+                        "application-autoscaling:PutScalingPolicy",
                         "application-autoscaling:DescribeScalingPolicies"
-                    ], 
-                    "Resource": "*", 
-                    "Effect": "Allow"
-                }, 
+                    ],
+                    "Resource": "*"
+                },
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "iam:CreateServiceLinkedRole"
-                    ], 
-                    "Resource": "*", 
-                    "Effect": "Allow", 
+                    ],
+                    "Resource": "*",
                     "Condition": {
                         "StringEquals": {
                             "iam:AWSServiceName": [
@@ -40,7 +38,9 @@
                     }
                 }
             ]
-        }, 
-        "IsDefaultVersion": true
+        },
+        "VersionId": "v3",
+        "IsDefaultVersion": true,
+        "CreateDate": "2018-07-02T21:48:12Z"
     }
 }

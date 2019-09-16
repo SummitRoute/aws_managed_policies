@@ -1,23 +1,21 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-11-26T05:28:10Z", 
-        "VersionId": "v1", 
         "Document": {
-            "Version": "2012-10-17", 
+            "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Sid": "VisualEditor0",
+                    "Effect": "Allow",
                     "Action": [
-                        "s3:GetObject", 
+                        "s3:GetObject",
                         "robomaker:*"
-                    ], 
-                    "Resource": "*", 
-                    "Effect": "Allow", 
-                    "Sid": "VisualEditor0"
-                }, 
+                    ],
+                    "Resource": "*"
+                },
                 {
-                    "Action": "iam:CreateServiceLinkedRole", 
-                    "Resource": "*", 
-                    "Effect": "Allow", 
+                    "Effect": "Allow",
+                    "Action": "iam:CreateServiceLinkedRole",
+                    "Resource": "*",
                     "Condition": {
                         "StringEquals": {
                             "iam:AWSServiceName": "robomaker.amazonaws.com"
@@ -25,7 +23,9 @@
                     }
                 }
             ]
-        }, 
-        "IsDefaultVersion": true
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2018-11-26T05:28:10Z"
     }
 }

@@ -1,43 +1,43 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-07-25T20:03:52Z", 
-        "VersionId": "v5", 
         "Document": {
-            "Version": "2012-10-17", 
+            "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "elasticloadbalancing:AddListenerCertificates", 
-                        "elasticloadbalancing:RemoveListenerCertificates", 
-                        "elasticloadbalancing:ModifyListener", 
-                        "xray:PutTraceSegments", 
-                        "xray:PutTelemetryRecords", 
-                        "xray:GetSamplingTargets", 
+                        "elasticloadbalancing:AddListenerCertificates",
+                        "elasticloadbalancing:RemoveListenerCertificates",
+                        "elasticloadbalancing:ModifyListener",
+                        "xray:PutTraceSegments",
+                        "xray:PutTelemetryRecords",
+                        "xray:GetSamplingTargets",
                         "xray:GetSamplingRules"
-                    ], 
+                    ],
                     "Resource": [
                         "*"
-                    ], 
-                    "Effect": "Allow"
-                }, 
+                    ]
+                },
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "firehose:DescribeDeliveryStream", 
-                        "firehose:PutRecord", 
+                        "firehose:DescribeDeliveryStream",
+                        "firehose:PutRecord",
                         "firehose:PutRecordBatch"
-                    ], 
-                    "Resource": "arn:aws:firehose:*:*:deliverystream/amazon-apigateway-*", 
-                    "Effect": "Allow"
-                }, 
+                    ],
+                    "Resource": "arn:aws:firehose:*:*:deliverystream/amazon-apigateway-*"
+                },
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "acm:DescribeCertificate"
-                    ], 
-                    "Resource": "arn:aws:acm:*:*:certificate/*", 
-                    "Effect": "Allow"
+                    ],
+                    "Resource": "arn:aws:acm:*:*:certificate/*"
                 }
             ]
-        }, 
-        "IsDefaultVersion": true
+        },
+        "VersionId": "v5",
+        "IsDefaultVersion": true,
+        "CreateDate": "2019-07-25T20:03:52Z"
     }
 }

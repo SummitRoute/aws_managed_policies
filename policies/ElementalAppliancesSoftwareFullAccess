@@ -1,17 +1,17 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2019-07-31T16:28:53Z", 
-        "VersionId": "v1", 
         "Document": {
-            "Version": "2012-10-17", 
+            "Version": "2012-10-17",
             "Statement": [
                 {
-                    "Action": "aesop:*", 
-                    "Resource": "*", 
-                    "Effect": "Allow"
+                    "Effect": "Allow",
+                    "Action": "aesop:*",
+                    "Resource": "*"
                 }
             ]
-        }, 
-        "IsDefaultVersion": true
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2019-07-31T16:28:53Z"
     }
 }

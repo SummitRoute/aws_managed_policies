@@ -1,37 +1,37 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2017-12-06T23:28:39Z", 
-        "VersionId": "v2", 
         "Document": {
-            "Version": "2012-10-17", 
+            "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "rekognition:CompareFaces", 
-                        "rekognition:DetectFaces", 
-                        "rekognition:DetectLabels", 
-                        "rekognition:ListCollections", 
-                        "rekognition:ListFaces", 
-                        "rekognition:SearchFaces", 
-                        "rekognition:SearchFacesByImage", 
-                        "rekognition:DetectText", 
-                        "rekognition:GetCelebrityInfo", 
-                        "rekognition:RecognizeCelebrities", 
-                        "rekognition:DetectModerationLabels", 
-                        "rekognition:GetLabelDetection", 
-                        "rekognition:GetFaceDetection", 
-                        "rekognition:GetContentModeration", 
-                        "rekognition:GetPersonTracking", 
-                        "rekognition:GetCelebrityRecognition", 
-                        "rekognition:GetFaceSearch", 
-                        "rekognition:DescribeStreamProcessor", 
+                        "rekognition:CompareFaces",
+                        "rekognition:DetectFaces",
+                        "rekognition:DetectLabels",
+                        "rekognition:ListCollections",
+                        "rekognition:ListFaces",
+                        "rekognition:SearchFaces",
+                        "rekognition:SearchFacesByImage",
+                        "rekognition:DetectText",
+                        "rekognition:GetCelebrityInfo",
+                        "rekognition:RecognizeCelebrities",
+                        "rekognition:DetectModerationLabels",
+                        "rekognition:GetLabelDetection",
+                        "rekognition:GetFaceDetection",
+                        "rekognition:GetContentModeration",
+                        "rekognition:GetPersonTracking",
+                        "rekognition:GetCelebrityRecognition",
+                        "rekognition:GetFaceSearch",
+                        "rekognition:DescribeStreamProcessor",
                         "rekognition:ListStreamProcessors"
-                    ], 
-                    "Resource": "*", 
-                    "Effect": "Allow"
+                    ],
+                    "Resource": "*"
                 }
             ]
-        }, 
-        "IsDefaultVersion": true
+        },
+        "VersionId": "v2",
+        "IsDefaultVersion": true,
+        "CreateDate": "2017-12-06T23:28:39Z"
     }
 }

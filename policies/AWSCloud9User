@@ -1,69 +1,67 @@
 {
     "PolicyVersion": {
-        "CreateDate": "2018-07-02T08:46:37Z", 
-        "VersionId": "v3", 
         "Document": {
-            "Version": "2012-10-17", 
+            "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "cloud9:ValidateEnvironmentName", 
-                        "cloud9:UpdateUserSettings", 
-                        "cloud9:GetUserSettings", 
-                        "iam:GetUser", 
-                        "iam:ListUsers", 
-                        "ec2:DescribeVpcs", 
+                        "cloud9:ValidateEnvironmentName",
+                        "cloud9:UpdateUserSettings",
+                        "cloud9:GetUserSettings",
+                        "iam:GetUser",
+                        "iam:ListUsers",
+                        "ec2:DescribeVpcs",
                         "ec2:DescribeSubnets"
-                    ], 
-                    "Resource": "*", 
-                    "Effect": "Allow"
-                }, 
+                    ],
+                    "Resource": "*"
+                },
                 {
+                    "Effect": "Allow",
                     "Action": [
-                        "cloud9:CreateEnvironmentEC2", 
+                        "cloud9:CreateEnvironmentEC2",
                         "cloud9:CreateEnvironmentSSH"
-                    ], 
-                    "Resource": "*", 
-                    "Effect": "Allow", 
+                    ],
+                    "Resource": "*",
                     "Condition": {
                         "Null": {
                             "cloud9:OwnerArn": "true"
                         }
                     }
-                }, 
+                },
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "cloud9:GetUserPublicKey"
-                    ], 
-                    "Resource": "*", 
-                    "Effect": "Allow", 
+                    ],
+                    "Resource": "*",
                     "Condition": {
                         "Null": {
                             "cloud9:UserArn": "true"
                         }
                     }
-                }, 
+                },
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "cloud9:DescribeEnvironmentMemberships"
-                    ], 
+                    ],
                     "Resource": [
                         "*"
-                    ], 
-                    "Effect": "Allow", 
+                    ],
                     "Condition": {
                         "Null": {
-                            "cloud9:EnvironmentId": "true", 
-                            "cloud9:UserArn": "true"
+                            "cloud9:UserArn": "true",
+                            "cloud9:EnvironmentId": "true"
                         }
                     }
-                }, 
+                },
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "iam:CreateServiceLinkedRole"
-                    ], 
-                    "Resource": "*", 
-                    "Effect": "Allow", 
+                    ],
+                    "Resource": "*",
                     "Condition": {
                         "StringLike": {
                             "iam:AWSServiceName": "cloud9.amazonaws.com"
@@ -71,7 +69,9 @@
                     }
                 }
             ]
-        }, 
-        "IsDefaultVersion": true
+        },
+        "VersionId": "v3",
+        "IsDefaultVersion": true,
+        "CreateDate": "2018-07-02T08:46:37Z"
     }
 }
