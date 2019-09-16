@@ -1,37 +1,37 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2015-02-06T18:41:27Z", 
+        "VersionId": "v1", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "cloudwatch:GetMetricStatistics",
-                        "ec2:DescribeAccountAttributes",
-                        "ec2:DescribeAvailabilityZones",
-                        "ec2:DescribeInstances",
-                        "ec2:DescribeKeyPairs",
-                        "ec2:DescribeSecurityGroups",
-                        "ec2:DescribeSubnets",
-                        "ec2:DescribeVpcs",
-                        "elasticloadbalancing:DescribeInstanceHealth",
-                        "elasticloadbalancing:DescribeLoadBalancers",
-                        "iam:GetRolePolicy",
-                        "iam:ListInstanceProfiles",
-                        "iam:ListRoles",
-                        "iam:ListUsers",
-                        "iam:PassRole",
-                        "opsworks:*",
+                        "cloudwatch:GetMetricStatistics", 
+                        "ec2:DescribeAccountAttributes", 
+                        "ec2:DescribeAvailabilityZones", 
+                        "ec2:DescribeInstances", 
+                        "ec2:DescribeKeyPairs", 
+                        "ec2:DescribeSecurityGroups", 
+                        "ec2:DescribeSubnets", 
+                        "ec2:DescribeVpcs", 
+                        "elasticloadbalancing:DescribeInstanceHealth", 
+                        "elasticloadbalancing:DescribeLoadBalancers", 
+                        "iam:GetRolePolicy", 
+                        "iam:ListInstanceProfiles", 
+                        "iam:ListRoles", 
+                        "iam:ListUsers", 
+                        "iam:PassRole", 
+                        "opsworks:*", 
                         "rds:*"
-                    ],
+                    ], 
                     "Resource": [
                         "*"
-                    ]
+                    ], 
+                    "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v1",
-        "IsDefaultVersion": true,
-        "CreateDate": "2015-02-06T18:41:27Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

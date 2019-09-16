@@ -1,22 +1,22 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2018-11-27T23:36:20Z", 
+        "VersionId": "v1", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
                     "Action": [
-                        "translate:*",
-                        "comprehend:DetectDominantLanguage",
-                        "cloudwatch:GetMetricStatistics",
+                        "translate:*", 
+                        "comprehend:DetectDominantLanguage", 
+                        "cloudwatch:GetMetricStatistics", 
                         "cloudwatch:ListMetrics"
-                    ],
-                    "Effect": "Allow",
-                    "Resource": "*"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v1",
-        "IsDefaultVersion": true,
-        "CreateDate": "2018-11-27T23:36:20Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

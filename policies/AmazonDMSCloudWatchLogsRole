@@ -1,62 +1,62 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2016-01-07T23:44:53Z", 
+        "VersionId": "v1", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Sid": "AllowDescribeOnAllLogGroups",
-                    "Effect": "Allow",
                     "Action": [
                         "logs:DescribeLogGroups"
-                    ],
+                    ], 
                     "Resource": [
                         "*"
-                    ]
-                },
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "AllowDescribeOnAllLogGroups"
+                }, 
                 {
-                    "Sid": "AllowDescribeOfAllLogStreamsOnDmsTasksLogGroup",
-                    "Effect": "Allow",
                     "Action": [
                         "logs:DescribeLogStreams"
-                    ],
+                    ], 
                     "Resource": [
                         "arn:aws:logs:*:*:log-group:dms-tasks-*"
-                    ]
-                },
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "AllowDescribeOfAllLogStreamsOnDmsTasksLogGroup"
+                }, 
                 {
-                    "Sid": "AllowCreationOfDmsTasksLogGroups",
-                    "Effect": "Allow",
                     "Action": [
                         "logs:CreateLogGroup"
-                    ],
+                    ], 
                     "Resource": [
                         "arn:aws:logs:*:*:log-group:dms-tasks-*"
-                    ]
-                },
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "AllowCreationOfDmsTasksLogGroups"
+                }, 
                 {
-                    "Sid": "AllowCreationOfDmsTaskLogStream",
-                    "Effect": "Allow",
                     "Action": [
                         "logs:CreateLogStream"
-                    ],
+                    ], 
                     "Resource": [
                         "arn:aws:logs:*:*:log-group:dms-tasks-*:log-stream:dms-task-*"
-                    ]
-                },
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "AllowCreationOfDmsTaskLogStream"
+                }, 
                 {
-                    "Sid": "AllowUploadOfLogEventsToDmsTaskLogStream",
-                    "Effect": "Allow",
                     "Action": [
                         "logs:PutLogEvents"
-                    ],
+                    ], 
                     "Resource": [
                         "arn:aws:logs:*:*:log-group:dms-tasks-*:log-stream:dms-task-*"
-                    ]
+                    ], 
+                    "Effect": "Allow", 
+                    "Sid": "AllowUploadOfLogEventsToDmsTaskLogStream"
                 }
             ]
-        },
-        "VersionId": "v1",
-        "IsDefaultVersion": true,
-        "CreateDate": "2016-01-07T23:44:53Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

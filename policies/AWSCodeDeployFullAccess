@@ -1,17 +1,17 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2015-05-19T18:13:23Z", 
+        "VersionId": "v1", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Action": "codedeploy:*",
-                    "Effect": "Allow",
-                    "Resource": "*"
+                    "Action": "codedeploy:*", 
+                    "Resource": "*", 
+                    "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v1",
-        "IsDefaultVersion": true,
-        "CreateDate": "2015-05-19T18:13:23Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

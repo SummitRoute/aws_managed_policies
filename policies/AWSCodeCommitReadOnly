@@ -1,71 +1,71 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2019-05-15T17:26:42Z", 
+        "VersionId": "v3", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "codecommit:BatchGet*",
-                        "codecommit:BatchDescribe*",
-                        "codecommit:Get*",
-                        "codecommit:Describe*",
-                        "codecommit:List*",
+                        "codecommit:BatchGet*", 
+                        "codecommit:BatchDescribe*", 
+                        "codecommit:Get*", 
+                        "codecommit:Describe*", 
+                        "codecommit:List*", 
                         "codecommit:GitPull"
-                    ],
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Sid": "CloudWatchEventsCodeCommitRulesReadOnlyAccess",
-                    "Effect": "Allow",
                     "Action": [
-                        "events:DescribeRule",
+                        "events:DescribeRule", 
                         "events:ListTargetsByRule"
-                    ],
-                    "Resource": "arn:aws:events:*:*:rule/codecommit*"
-                },
+                    ], 
+                    "Resource": "arn:aws:events:*:*:rule/codecommit*", 
+                    "Effect": "Allow", 
+                    "Sid": "CloudWatchEventsCodeCommitRulesReadOnlyAccess"
+                }, 
                 {
-                    "Sid": "SNSSubscriptionAccess",
-                    "Effect": "Allow",
                     "Action": [
-                        "sns:ListTopics",
-                        "sns:ListSubscriptionsByTopic",
+                        "sns:ListTopics", 
+                        "sns:ListSubscriptionsByTopic", 
                         "sns:GetTopicAttributes"
-                    ],
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "SNSSubscriptionAccess"
+                }, 
                 {
-                    "Sid": "LambdaReadOnlyListAccess",
-                    "Effect": "Allow",
                     "Action": [
                         "lambda:ListFunctions"
-                    ],
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "LambdaReadOnlyListAccess"
+                }, 
                 {
-                    "Sid": "IAMReadOnlyListAccess",
-                    "Effect": "Allow",
                     "Action": [
                         "iam:ListUsers"
-                    ],
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow", 
+                    "Sid": "IAMReadOnlyListAccess"
+                }, 
                 {
-                    "Sid": "IAMReadOnlyConsoleAccess",
-                    "Effect": "Allow",
                     "Action": [
-                        "iam:ListAccessKeys",
-                        "iam:ListSSHPublicKeys",
-                        "iam:ListServiceSpecificCredentials",
-                        "iam:ListAccessKeys",
+                        "iam:ListAccessKeys", 
+                        "iam:ListSSHPublicKeys", 
+                        "iam:ListServiceSpecificCredentials", 
+                        "iam:ListAccessKeys", 
                         "iam:GetSSHPublicKey"
-                    ],
-                    "Resource": "arn:aws:iam::*:user/${aws:username}"
+                    ], 
+                    "Resource": "arn:aws:iam::*:user/${aws:username}", 
+                    "Effect": "Allow", 
+                    "Sid": "IAMReadOnlyConsoleAccess"
                 }
             ]
-        },
-        "VersionId": "v3",
-        "IsDefaultVersion": true,
-        "CreateDate": "2019-05-15T17:26:42Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

@@ -1,128 +1,128 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2019-03-11T22:14:30Z", 
+        "VersionId": "v2", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
-                    "Action": "backup:*",
-                    "Resource": "*"
-                },
+                    "Action": "backup:*", 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
-                    "Action": "backup-storage:*",
-                    "Resource": "*"
-                },
+                    "Action": "backup-storage:*", 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
                     "Action": [
-                        "rds:DescribeDBSnapshots",
-                        "rds:ListTagsForResource",
-                        "rds:DescribeDBInstances",
-                        "rds:describeDBSnapshots",
-                        "rds:describeDBEngineVersions",
-                        "rds:describeOptionGroups",
-                        "rds:describeOrderableDBInstanceOptions",
+                        "rds:DescribeDBSnapshots", 
+                        "rds:ListTagsForResource", 
+                        "rds:DescribeDBInstances", 
+                        "rds:describeDBSnapshots", 
+                        "rds:describeDBEngineVersions", 
+                        "rds:describeOptionGroups", 
+                        "rds:describeOrderableDBInstanceOptions", 
                         "rds:describeDBSubnetGroups"
-                    ],
-                    "Effect": "Allow",
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
                     "Action": [
-                        "dynamodb:ListBackups",
+                        "dynamodb:ListBackups", 
                         "dynamodb:ListTables"
-                    ],
-                    "Effect": "Allow",
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
                     "Action": [
                         "elasticfilesystem:DescribeFilesystems"
-                    ],
-                    "Resource": "arn:aws:elasticfilesystem:*:*:file-system/*",
+                    ], 
+                    "Resource": "arn:aws:elasticfilesystem:*:*:file-system/*", 
                     "Effect": "Allow"
-                },
+                }, 
                 {
                     "Action": [
-                        "ec2:DescribeSnapshots",
-                        "ec2:DescribeVolumes",
+                        "ec2:DescribeSnapshots", 
+                        "ec2:DescribeVolumes", 
                         "ec2:describeAvailabilityZones"
-                    ],
-                    "Effect": "Allow",
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
                     "Action": [
-                        "tag:GetTagKeys",
-                        "tag:GetTagValues",
+                        "tag:GetTagKeys", 
+                        "tag:GetTagValues", 
                         "tag:GetResources"
-                    ],
-                    "Effect": "Allow",
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "storagegateway:DescribeCachediSCSIVolumes",
+                        "storagegateway:DescribeCachediSCSIVolumes", 
                         "storagegateway:DescribeStorediSCSIVolumes"
-                    ],
-                    "Resource": "arn:aws:storagegateway:*:*:gateway/*/volume/*"
-                },
+                    ], 
+                    "Resource": "arn:aws:storagegateway:*:*:gateway/*/volume/*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
                         "storagegateway:ListGateways"
-                    ],
-                    "Resource": "arn:aws:storagegateway:*:*:*"
-                },
+                    ], 
+                    "Resource": "arn:aws:storagegateway:*:*:*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "storagegateway:DescribeGatewayInformation",
-                        "storagegateway:ListVolumes",
+                        "storagegateway:DescribeGatewayInformation", 
+                        "storagegateway:ListVolumes", 
                         "storagegateway:ListLocalDisks"
-                    ],
-                    "Resource": "arn:aws:storagegateway:*:*:gateway/*"
-                },
+                    ], 
+                    "Resource": "arn:aws:storagegateway:*:*:gateway/*", 
+                    "Effect": "Allow"
+                }, 
                 {
                     "Action": [
-                        "iam:ListRoles",
-                        "iam:GetRole",
+                        "iam:ListRoles", 
+                        "iam:GetRole", 
                         "iam:GetUser"
-                    ],
-                    "Effect": "Allow",
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
-                    "Action": "iam:PassRole",
+                    "Action": "iam:PassRole", 
                     "Resource": [
-                        "arn:aws:iam::*:role/*AwsBackup*",
+                        "arn:aws:iam::*:role/*AwsBackup*", 
                         "arn:aws:iam::*:role/*AWSBackup*"
-                    ],
+                    ], 
+                    "Effect": "Allow", 
                     "Condition": {
                         "StringLike": {
                             "iam:PassedToService": "backup.amazonaws.com"
                         }
                     }
-                },
+                }, 
                 {
                     "Action": [
-                        "kms:ListKeys",
-                        "kms:DescribeKey",
-                        "kms:GenerateDataKey",
-                        "kms:RetireGrant",
-                        "kms:CreateGrant",
-                        "kms:ListAliases",
+                        "kms:ListKeys", 
+                        "kms:DescribeKey", 
+                        "kms:GenerateDataKey", 
+                        "kms:RetireGrant", 
+                        "kms:CreateGrant", 
+                        "kms:ListAliases", 
                         "kms:Decrypt"
-                    ],
-                    "Effect": "Allow",
-                    "Resource": "*"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v2",
-        "IsDefaultVersion": true,
-        "CreateDate": "2019-03-11T22:14:30Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

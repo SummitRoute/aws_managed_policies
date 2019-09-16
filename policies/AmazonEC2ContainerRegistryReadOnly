@@ -1,26 +1,26 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2016-10-11T22:08:43Z", 
+        "VersionId": "v2", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "ecr:GetAuthorizationToken",
-                        "ecr:BatchCheckLayerAvailability",
-                        "ecr:GetDownloadUrlForLayer",
-                        "ecr:GetRepositoryPolicy",
-                        "ecr:DescribeRepositories",
-                        "ecr:ListImages",
-                        "ecr:DescribeImages",
+                        "ecr:GetAuthorizationToken", 
+                        "ecr:BatchCheckLayerAvailability", 
+                        "ecr:GetDownloadUrlForLayer", 
+                        "ecr:GetRepositoryPolicy", 
+                        "ecr:DescribeRepositories", 
+                        "ecr:ListImages", 
+                        "ecr:DescribeImages", 
                         "ecr:BatchGetImage"
-                    ],
-                    "Resource": "*"
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
                 }
             ]
-        },
-        "VersionId": "v2",
-        "IsDefaultVersion": true,
-        "CreateDate": "2016-10-11T22:08:43Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }

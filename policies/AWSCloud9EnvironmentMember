@@ -1,37 +1,37 @@
 {
     "PolicyVersion": {
+        "CreateDate": "2017-11-30T16:18:28Z", 
+        "VersionId": "v1", 
         "Document": {
-            "Version": "2012-10-17",
+            "Version": "2012-10-17", 
             "Statement": [
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "cloud9:GetUserSettings",
-                        "cloud9:UpdateUserSettings",
-                        "iam:GetUser",
+                        "cloud9:GetUserSettings", 
+                        "cloud9:UpdateUserSettings", 
+                        "iam:GetUser", 
                         "iam:ListUsers"
-                    ],
-                    "Resource": "*"
-                },
+                    ], 
+                    "Resource": "*", 
+                    "Effect": "Allow"
+                }, 
                 {
-                    "Effect": "Allow",
                     "Action": [
                         "cloud9:DescribeEnvironmentMemberships"
-                    ],
+                    ], 
                     "Resource": [
                         "*"
-                    ],
+                    ], 
+                    "Effect": "Allow", 
                     "Condition": {
                         "Null": {
-                            "cloud9:UserArn": "true",
-                            "cloud9:EnvironmentId": "true"
+                            "cloud9:EnvironmentId": "true", 
+                            "cloud9:UserArn": "true"
                         }
                     }
                 }
             ]
-        },
-        "VersionId": "v1",
-        "IsDefaultVersion": true,
-        "CreateDate": "2017-11-30T16:18:28Z"
+        }, 
+        "IsDefaultVersion": true
     }
 }
