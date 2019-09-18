@@ -1,6 +1,6 @@
 [
     {
-      "name": "web",
+      "name": "mamip-task",
       "image": "${image}",
       "portMappings": [
         {
@@ -17,33 +17,6 @@
           "awslogs-region": "us-east-1",
           "awslogs-stream-prefix": "web"
         }
-      },
-      "environment": [
-        {
-          "name": "RAILS_ENV",
-          "value": "production"
-        },
-        {
-          "name": "DATABASE_URL",
-          "value": "${database_url}"
-        },
-        {
-          "name": "SECRET_KEY_BASE",
-          "value": "${secret_key_base}"
-        },
-        {
-          "name": "PORT",
-          "value": "80"
-        },
-        {
-          "name": "RAILS_LOG_TO_STDOUT",
-          "value": "true"
-        },
-        {
-          "name": "RAILS_SERVE_STATIC_FILES",
-          "value": "true"
-        }
-      ]
+      }
     }
   ]
-  

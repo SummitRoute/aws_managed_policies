@@ -5,11 +5,6 @@ resource "aws_ecs_cluster" "ecs_cluster" {
 
 data "template_file" "mamip_task" {
   template = "${file("./tasks/task_definition.json")}"
-
-  vars {
-    image           = "${aws_ecr_repository.openjobs_app.repository_url}"
-    secret_key_base = "${var.secret_key_base}"
-  }
 }
 
 resource "aws_ecs_task_definition" "web" {
