@@ -1,4 +1,8 @@
 
+resource "aws_iam_role" "ecs_role" {
+  name               = "mamip_ecs_role"
+  assume_role_policy = "${data.aws_iam_policy_document.ecs_service_assume_role_policy.json}"
+}
 
 data "aws_iam_policy_document" "ecs_service_policy" {
   statement {
@@ -13,28 +17,24 @@ data "aws_iam_policy_document" "ecs_service_policy" {
     ]
   }
   statement {
-      effect = "Allow"
+    effect = "Allow"
     resources = ["*"]
     actions = [
         "iam:ListPolicies",
         "iam:GetPolicyVersion"
     ]
   }
+}
 
 data "aws_iam_policy_document" "ecs_service_assume_role_policy" {
   statement {
-    effect = "Allow"
-    principals = {
-        type = "Service"
-        identifiers = ["ec2.amazonaws.com"]
-    }
     actions = ["sts:AssumeRole"]
+    
+    principals {
+      type = "Service"
+      identifiers = ["ec2.amazonaws.com"]
+    }
   }
-}
-
-resource "aws_iam_role" "ecs_role" {
-  name               = "mamip_ecs_role"
-  assume_role_policy = "${data.aws_iam_policy_document.ecs_service_assume_role_policy.json}"
 }
 
 /* ecs service scheduler role */

@@ -1,22 +1,48 @@
 [
     {
-      "name": "mamip-task",
-      "image": "${image}",
-      "portMappings": [
-        {
-          "containerPort": 80,
-          "hostPort": 80
-        }
-      ],
-      "memory": 300,
-      "networkMode": "awsvpc",
+      "dnsSearchDomains": null,
       "logConfiguration": {
         "logDriver": "awslogs",
+        "secretOptions": null,
         "options": {
-          "awslogs-group": "${log_group}",
-          "awslogs-region": "us-east-1",
-          "awslogs-stream-prefix": "web"
+          "awslogs-group": "/ecs/fargate-task-definition",
+          "awslogs-region": "eu-west-1",
+          "awslogs-stream-prefix": "ecs"
         }
-      }
+      },
+      "entryPoint": null,
+      "portMappings": [],
+      "command": null,
+      "linuxParameters": null,
+      "cpu": 0,
+      "environment": [],
+      "resourceRequirements": null,
+      "ulimits": null,
+      "dnsServers": null,
+      "mountPoints": [],
+      "workingDirectory": null,
+      "secrets": null,
+      "dockerSecurityOptions": null,
+      "memory": null,
+      "memoryReservation": null,
+      "volumesFrom": [],
+      "stopTimeout": null,
+      "image": "567589703415.dkr.ecr.eu-west-1.amazonaws.com/mamip:lastone",
+      "startTimeout": null,
+      "dependsOn": null,
+      "disableNetworking": null,
+      "interactive": null,
+      "healthCheck": null,
+      "essential": true,
+      "links": null,
+      "hostname": null,
+      "extraHosts": null,
+      "pseudoTerminal": null,
+      "user": null,
+      "readonlyRootFilesystem": null,
+      "dockerLabels": null,
+      "systemControls": null,
+      "privileged": null,
+      "name": "mamip-container"
     }
-  ]
+]

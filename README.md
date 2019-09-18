@@ -32,22 +32,23 @@ This does the following:
 
 ### Automation Steps
 
-- Update the Operating System
-- Install requirements: `git`, `jq`, `SSH private key`
+- Update the Operating System (OS)
+- Install requirements: `git`, `jq`, `add SSH private key`
 - Clone this repository
 - Run the magic (previous mentioned command)
-- Commit changes (if any)
-- Push (with tags)
+- If changes detected:
+  - Commit changes
+  - Push (with tags for GH release)
 
 #### Schedule
 
-- EC2: Once a day using Spot Instance
+- EC2 Instance: Once a day using Spot Instance
 - Fargate: Every 6 hours (Current active version)
 
-### EC2 Schema
+### EC2 Version Schema
 
 ![schema ec2](assets/schema-ec2.png)
 
-### Fargate Schema
+### Fargate Version Schema
 
 ![schema fargate](assets/schema-fargate.png)
