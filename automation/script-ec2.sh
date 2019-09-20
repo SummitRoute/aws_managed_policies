@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# EC2 version of the script
+
 DATE=`date +%Y-%m-%d-%H-%M`
 
 # job preparation
@@ -18,23 +20,25 @@ ssh-keyscan github.com >> ~/.ssh/known_hosts
 echo "Git Clone"
 cd /tmp/
 git clone git@github.com:z0ph/aws_managed_policies.git -q
-cd /tmp/aws_managed_policies
-echo "Run the magic"
-aws iam list-policies > /tmp/aws_managed_policies/list-policies.json
-cat /tmp/aws_managed_policies/list-policies.json | jq -cr '.Policies[] | select(.Arn | contains("iam::aws"))|.Arn +" "+ .DefaultVersionId+" "+.PolicyName' | xargs -n3 sh -c 'aws iam get-policy-version --policy-arn $1 --version-id $2 > "policies/$3"' sh
-
-# push the changes if any
-if [[ -n $(git status -s) ]];
+if [ -d /tmp/aws_managed_policies ]
 then
-    echo "Tagging"
-    git tag $DATE
-    git push --tags
-    echo "Push the changes to master"
-    git add ./policies
-    git commit -am "Update detected"
-    git push origin master
-else
-    echo "No changes detected"
+    cd /tmp/aws_managed_policies
+    echo "Run the magic"
+    aws iam list-policies > /tmp/aws_managed_policies/list-policies.json
+    cat /tmp/aws_managed_policies/list-policies.json | jq -cr '.Policies[] | select(.Arn | contains("iam::aws"))|.Arn +" "+ .DefaultVersionId+" "+.PolicyName' | xargs -n3 sh -c 'aws iam get-policy-version --policy-arn $1 --version-id $2 > "policies/$3"' sh
+    # push the changes if any
+    if [[ -n $(git status -s) ]];
+    then
+        echo "Tagging"
+        git tag $DATE
+        git push --tags
+        echo "Push the changes to master"
+        git add ./policies
+        git commit -am "Update detected"
+        git push origin master
+    else
+        echo "No changes detected"
+    fi
 fi
 
 # cleaning
