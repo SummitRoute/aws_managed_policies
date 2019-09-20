@@ -325,6 +325,8 @@
                         "mediaconvert:DescribeEndpoints",
                         "mediaconvert:Get*",
                         "mediaconvert:List*",
+                        "mediapackage:List*",
+                        "mediapackage:Describe*",
                         "mgh:Describe*",
                         "mgh:List*",
                         "mobileanalytics:Get*",
@@ -471,8 +473,8 @@
                 }
             ]
         },
-        "VersionId": "v54",
+        "VersionId": "v55",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-08-21T23:33:06Z"
+        "CreateDate": "2019-09-20T18:28:06Z"
     }
 }
