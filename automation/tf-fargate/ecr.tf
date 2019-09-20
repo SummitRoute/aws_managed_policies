@@ -1,3 +1,7 @@
-resource "aws_ecr_repository" "mamip-repo" {
-  name = "mamip-repository"
+resource "aws_ecr_repository" "ecr" {
+  name = "${var.project}-ecr-${var.env}"
+  
+  tags = {
+    Project = "${var.project}"
+  }
 }

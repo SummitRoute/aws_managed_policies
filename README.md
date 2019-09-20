@@ -32,6 +32,9 @@ This does the following:
 
 ### Automation Steps
 
+- Infrastructure is deployed using:
+  - EC2: CloudFormation
+  - Fargate: Terraform
 - Update the Operating System (OS)
 - Install requirements: `git`, `jq`, `add SSH private key`
 - Clone this repository
@@ -45,10 +48,10 @@ This does the following:
 - EC2 Instance: Once a day using Spot Instance
 - Fargate: Every 6 hours (Current active version)
 
-### EC2 Version Schema
+### EC2 Version Schema (CloudFormation)
 
 ![schema ec2](assets/schema-ec2.png)
 
-### Fargate Version Schema
+### Fargate Version Schema (Terraform)
 
 ![schema fargate](assets/schema-fargate.png)

@@ -1,6 +1,6 @@
 
 resource "aws_iam_role" "ecs_role" {
-  name               = "mamip_ecs_role"
+  name               = "${var.project}_ecs_role_${var.env}"
   assume_role_policy = "${data.aws_iam_policy_document.ecs_service_assume_role_policy.json}"
 }
 
@@ -29,17 +29,16 @@ data "aws_iam_policy_document" "ecs_service_policy" {
 data "aws_iam_policy_document" "ecs_service_assume_role_policy" {
   statement {
     actions = ["sts:AssumeRole"]
-    
     principals {
       type = "Service"
-      identifiers = ["ec2.amazonaws.com"]
+      identifiers = ["ecs-tasks.amazonaws.com"]
     }
   }
 }
 
 /* ecs service scheduler role */
 resource "aws_iam_role_policy" "ecs_service_role_policy" {
-  name   = "ecs_service_role_policy"
+  name   = "${var.project}_ecs_service_role_policy_${var.env}"
   policy = "${data.aws_iam_policy_document.ecs_service_policy.json}"
   role   = "${aws_iam_role.ecs_role.id}"
 }
