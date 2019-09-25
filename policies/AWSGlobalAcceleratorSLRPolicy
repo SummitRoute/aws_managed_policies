@@ -9,6 +9,7 @@
                         "ec2:CreateNetworkInterface",
                         "ec2:DescribeNetworkInterfaces",
                         "ec2:DescribeInstances",
+                        "ec2:DescribeSubnets",
                         "ec2:ModifyNetworkInterfaceAttribute",
                         "ec2:DeleteNetworkInterface"
                     ],
@@ -47,8 +48,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-09-06T17:50:26Z"
+        "CreateDate": "2019-09-24T20:55:42Z"
     }
 }

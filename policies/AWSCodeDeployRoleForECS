@@ -18,7 +18,6 @@
                         "cloudwatch:DescribeAlarms",
                         "sns:Publish",
                         "s3:GetObject",
-                        "s3:GetObjectMetadata",
                         "s3:GetObjectVersion"
                     ],
                     "Resource": "*",
@@ -40,8 +39,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-12-19T17:57:04Z"
+        "CreateDate": "2019-09-23T22:37:46Z"
     }
 }
