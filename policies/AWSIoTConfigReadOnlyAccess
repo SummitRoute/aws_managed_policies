@@ -9,7 +9,6 @@
                         "iot:DescribeAuthorizer",
                         "iot:DescribeCACertificate",
                         "iot:DescribeCertificate",
-                        "iot:DescribeCertificateTag",
                         "iot:DescribeDefaultAuthorizer",
                         "iot:DescribeEndpoint",
                         "iot:DescribeEventConfigurations",
@@ -82,8 +81,8 @@
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-07-18T21:22:11Z"
+        "CreateDate": "2019-09-27T20:52:40Z"
     }
 }
