@@ -41,7 +41,6 @@
                         "kms:ListAliases",
                         "kms:DescribeKey",
                         "sagemaker:ListNotebookInstances",
-                        "sagemaker:ListNotebookInstanceLifecycleConfigs",
                         "cloudformation:ListStacks",
                         "cloudwatch:GetMetricData",
                         "cloudwatch:ListDashboards"
@@ -95,15 +94,22 @@
                         "sagemaker:CreateNotebookInstance",
                         "sagemaker:DeleteNotebookInstance",
                         "sagemaker:DescribeNotebookInstance",
-                        "sagemaker:DescribeNotebookInstanceLifecycleConfig",
-                        "sagemaker:DeleteNotebookInstanceLifecycleConfig",
                         "sagemaker:StartNotebookInstance",
-                        "sagemaker:CreateNotebookInstanceLifecycleConfig",
                         "sagemaker:StopNotebookInstance",
                         "sagemaker:UpdateNotebookInstance",
                         "sagemaker:ListTags"
                     ],
                     "Resource": "arn:aws:sagemaker:*:*:notebook-instance/aws-glue-*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "sagemaker:DescribeNotebookInstanceLifecycleConfig",
+                        "sagemaker:CreateNotebookInstanceLifecycleConfig",
+                        "sagemaker:DeleteNotebookInstanceLifecycleConfig",
+                        "sagemaker:ListNotebookInstanceLifecycleConfigs"
+                    ],
+                    "Resource": "arn:aws:sagemaker:*:*:notebook-instance-lifecycle-config/aws-glue-*"
                 },
                 {
                     "Effect": "Allow",
@@ -213,8 +219,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-10-05T17:52:35Z"
+        "CreateDate": "2019-09-26T17:14:11Z"
     }
 }

@@ -32,7 +32,6 @@
                         "ec2:DescribeInstances",
                         "ec2:DescribeInstanceStatus",
                         "ec2:TerminateInstances",
-                        "tag:GetTags",
                         "tag:GetResources",
                         "sns:Publish",
                         "cloudwatch:DescribeAlarms",
@@ -50,8 +49,8 @@
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2017-09-11T19:09:51Z"
+        "CreateDate": "2019-09-23T21:47:54Z"
     }
 }

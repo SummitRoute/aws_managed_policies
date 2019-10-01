@@ -10,12 +10,12 @@
                         "worklink:List*",
                         "worklink:Search*"
                     ],
-                    "Resource": "arn:aws:worklink:*"
+                    "Resource": "arn:aws:worklink:*:*:*"
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-08-01T21:35:07Z"
+        "CreateDate": "2019-09-23T18:37:21Z"
     }
 }

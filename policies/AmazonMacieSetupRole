@@ -46,14 +46,13 @@
                         "s3:DeleteObjectTagging",
                         "s3:DeleteObjectVersion",
                         "s3:DeleteObjectVersionTagging",
-                        "s3:DeleteReplicationConfiguration",
                         "s3:PutBucketPolicy"
                     ]
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2017-08-14T14:53:34Z"
+        "CreateDate": "2019-09-27T18:41:21Z"
     }
 }

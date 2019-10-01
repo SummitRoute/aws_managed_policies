@@ -8,12 +8,12 @@
                     "Action": [
                         "worklink:*"
                     ],
-                    "Resource": "arn:aws:worklink:*"
+                    "Resource": "arn:aws:worklink:*:*:*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-01-23T18:52:09Z"
+        "CreateDate": "2019-09-23T18:37:42Z"
     }
 }
