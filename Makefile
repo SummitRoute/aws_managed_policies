@@ -4,6 +4,7 @@ help:
 	@echo "${PROJECT}"
 	@echo "${DESCRIPTION}"
 	@echo ""
+	@echo "	build-docker - build docker image"
 	@echo "	tf-plan - init, validate and plan (dryrun) IaC using Terraform"
 	@echo "	tf-deploy - deploy the IaC using Terraform"
 	@echo "	tf-destroy - delete all previously created infrastructure using Terraform"
@@ -29,9 +30,10 @@ ECR ?= 567589703415.dkr.ecr.eu-west-1.amazonaws.com/mamip-ecr-dev
 ################################################
 
 build-docker:
-	docker build -t mamip-image ./automation/
-	docker tag mamip-image:latest $(ECR)
-	docker push $(ECR)
+	@echo "run aws ecr get-login --region $(AWS_REGION) first"
+	@docker build -t mamip-image ./automation/
+	@docker tag mamip-image $(ECR)
+	@docker push $(ECR)
 
 ################ Terraform #####################
 tf-plan:

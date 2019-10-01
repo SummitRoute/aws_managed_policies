@@ -27,7 +27,7 @@
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "567589703415.dkr.ecr.eu-west-1.amazonaws.com/mamip:lastone",
+      "image": "567589703415.dkr.ecr.eu-west-1.amazonaws.com/mamip-ecr-dev:latest",
       "startTimeout": null,
       "dependsOn": null,
       "disableNetworking": null,
