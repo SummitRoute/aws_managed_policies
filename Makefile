@@ -25,12 +25,13 @@ DESCRIPTION ?= Monitor AWS Managed IAM Policies Changes
 S3_BUCKET ?= zoph-lab-terraform-tfstate
 AWS_REGION ?= eu-west-1
 ENV ?= dev
+ECR ?= 567589703415.dkr.ecr.eu-west-1.amazonaws.com/mamip-ecr-dev
 ################################################
 
 build-docker:
 	docker build -t mamip-image ./automation/
-	docker tag mamip-image:latest 567589703415.dkr.ecr.eu-west-1.amazonaws.com/mamip
-	docker push 567589703415.dkr.ecr.eu-west-1.amazonaws.com/mamip
+	docker tag mamip-image:latest $(ECR)
+	docker push $(ECR)
 
 ################ Terraform #####################
 tf-plan:
