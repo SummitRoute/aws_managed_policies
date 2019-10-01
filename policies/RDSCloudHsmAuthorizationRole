@@ -7,20 +7,19 @@
                     "Effect": "Allow",
                     "Action": [
                         "cloudhsm:CreateLunaClient",
-                        "cloudhsm:GetClientConfiguration",
                         "cloudhsm:DeleteLunaClient",
-                        "cloudhsm:DescribeLunaClient",
-                        "cloudhsm:ModifyLunaClient",
                         "cloudhsm:DescribeHapg",
+                        "cloudhsm:DescribeLunaClient",
+                        "cloudhsm:GetConfig",
                         "cloudhsm:ModifyHapg",
-                        "cloudhsm:GetConfig"
+                        "cloudhsm:ModifyLunaClient"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2015-02-06T18:41:29Z"
+        "CreateDate": "2019-09-26T22:14:29Z"
     }
 }

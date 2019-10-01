@@ -282,22 +282,22 @@
                     ]
                 },
                 {
-                    "Sid": "DeepLensAcuityStreamAccess",
+                    "Sid": "DeepLensKinesisVideoStreamAccess",
                     "Effect": "Allow",
                     "Action": [
-                        "acuity:CreateStream",
-                        "acuity:DescribeStream",
-                        "acuity:DeleteStream"
+                        "kinesisvideo:CreateStream",
+                        "kinesisvideo:DescribeStream",
+                        "kinesisvideo:DeleteStream"
                     ],
                     "Resource": [
-                        "arn:aws:acuity:*:*:stream/deeplens*/*"
+                        "arn:aws:kinesisvideo:*:*:stream/deeplens*/*"
                     ]
                 },
                 {
-                    "Sid": "DeepLensAcuityEndpointAccess",
+                    "Sid": "DeepLensKinesisVideoEndpointAccess",
                     "Effect": "Allow",
                     "Action": [
-                        "acuity:GetDataEndpoint"
+                        "kinesisvideo:GetDataEndpoint"
                     ],
                     "Resource": [
                         "*"
@@ -305,8 +305,8 @@
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-06-07T21:25:01Z"
+        "CreateDate": "2019-09-25T19:25:06Z"
     }
 }

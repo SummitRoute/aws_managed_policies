@@ -6,8 +6,7 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "mechanicalturk:Get*",
-                        "mechanicalturk:List*"
+                        "chime:GetVoiceConnector*"
                     ],
                     "Resource": [
                         "*"
@@ -15,8 +14,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v1",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-09-25T21:06:26Z"
+        "CreateDate": "2019-09-30T22:16:42Z"
     }
 }
