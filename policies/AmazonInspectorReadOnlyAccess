@@ -9,7 +9,6 @@
                         "inspector:Describe*",
                         "inspector:Get*",
                         "inspector:List*",
-                        "inspector:LocalizeText",
                         "inspector:Preview*",
                         "ec2:DescribeInstances",
                         "ec2:DescribeTags",
@@ -21,8 +20,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2017-09-12T16:53:06Z"
+        "CreateDate": "2019-10-01T15:17:54Z"
     }
 }

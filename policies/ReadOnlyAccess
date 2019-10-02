@@ -39,6 +39,9 @@
                         "athena:List*",
                         "athena:Batch*",
                         "athena:Get*",
+                        "backup:Describe*",
+                        "backup:Get*",
+                        "backup:List*",
                         "batch:List*",
                         "batch:Describe*",
                         "cloud9:Describe*",
@@ -307,11 +310,8 @@
                         "lightsail:GetRelationalDatabases",
                         "lightsail:GetRelationalDatabaseSnapshot",
                         "lightsail:GetRelationalDatabaseSnapshots",
-                        "lightsail:GetResources",
                         "lightsail:GetStaticIp",
                         "lightsail:GetStaticIps",
-                        "lightsail:GetTagKeys",
-                        "lightsail:GetTagValues",
                         "lightsail:Is*",
                         "lightsail:List*",
                         "logs:Describe*",
@@ -473,8 +473,8 @@
                 }
             ]
         },
-        "VersionId": "v55",
+        "VersionId": "v56",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-09-20T18:28:06Z"
+        "CreateDate": "2019-10-01T18:46:09Z"
     }
 }
