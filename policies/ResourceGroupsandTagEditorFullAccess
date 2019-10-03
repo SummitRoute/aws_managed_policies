@@ -11,8 +11,6 @@
                         "tag:getTagValues",
                         "tag:TagResources",
                         "tag:UntagResources",
-                        "tag:AddResourceTags",
-                        "tag:RemoveResourceTags",
                         "resource-groups:*",
                         "cloudformation:DescribeStacks",
                         "cloudformation:ListStackResources"
@@ -21,8 +19,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-03-07T21:54:03Z"
+        "CreateDate": "2019-10-02T23:57:57Z"
     }
 }
