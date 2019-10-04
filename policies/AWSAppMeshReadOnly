@@ -17,11 +17,19 @@
                         "cloudformation:DescribeStack*"
                     ],
                     "Resource": "arn:aws:cloudformation:*:*:stack/AWSAppMesh-GettingStarted-*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "acm:ListCertificates",
+                        "acm:DescribeCertificate"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-07-18T21:18:41Z"
+        "CreateDate": "2019-10-03T22:25:42Z"
     }
 }
