@@ -30,15 +30,16 @@
                 },
                 {
                     "Action": [
-                        "mgh:ListMigrationTasks"
+                        "mgh:ListMigrationTasks",
+                        "mgh:GetHomeRegion"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2017-08-14T13:57:54Z"
+        "CreateDate": "2019-10-07T18:01:22Z"
     }
 }

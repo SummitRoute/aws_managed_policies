@@ -22,11 +22,6 @@
                         "glue:UpdateDatabase",
                         "glue:UpdatePartition",
                         "glue:UpdateTable",
-                        "glue:CreateBookmark",
-                        "glue:GetBookmark",
-                        "glue:UpdateBookmark",
-                        "glue:GetMetric",
-                        "glue:PutMetric",
                         "glue:CreateConnection",
                         "glue:CreateJob",
                         "glue:DeleteConnection",
@@ -100,8 +95,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2017-08-17T18:08:29Z"
+        "CreateDate": "2019-10-07T18:05:54Z"
     }
 }

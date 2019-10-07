@@ -29,14 +29,15 @@
                     "Action": [
                         "mgh:ListMigrationTasks",
                         "mgh:NotifyApplicationState",
-                        "mgh:DescribeApplicationState"
+                        "mgh:DescribeApplicationState",
+                        "mgh:GetHomeRegion"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-06-12T18:30:28Z"
+        "CreateDate": "2019-10-07T18:02:22Z"
     }
 }
