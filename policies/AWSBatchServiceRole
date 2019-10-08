@@ -78,6 +78,7 @@
                         "StringEquals": {
                             "iam:PassedToService": [
                                 "ec2.amazonaws.com",
+                                "ec2.amazonaws.com.cn",
                                 "ecs-tasks.amazonaws.com"
                             ]
                         }
@@ -114,8 +115,8 @@
                 }
             ]
         },
-        "VersionId": "v9",
+        "VersionId": "v10",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-10-30T19:00:56Z"
+        "CreateDate": "2019-10-08T19:31:12Z"
     }
 }
