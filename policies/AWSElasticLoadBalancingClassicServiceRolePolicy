@@ -18,7 +18,6 @@
                         "ec2:CreateSecurityGroup",
                         "ec2:CreateNetworkInterface",
                         "ec2:DeleteNetworkInterface",
-                        "ec2:ModifyNetworkInterface",
                         "ec2:ModifyNetworkInterfaceAttribute",
                         "ec2:AuthorizeSecurityGroupIngress",
                         "ec2:AssociateAddress",
@@ -33,8 +32,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2017-09-19T22:36:18Z"
+        "CreateDate": "2019-10-07T23:04:27Z"
     }
 }

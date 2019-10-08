@@ -25,6 +25,7 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "s3:ListBucketVersions",
                         "s3:ListBucket",
                         "s3:ListAllMyBuckets",
                         "s3:GetBucketLocation"
@@ -55,8 +56,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-08-27T22:43:07Z"
+        "CreateDate": "2019-10-07T20:11:30Z"
     }
 }
