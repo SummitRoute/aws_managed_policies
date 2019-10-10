@@ -1,0 +1,67 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Sid": "VisualEditor0",
+                    "Effect": "Allow",
+                    "Action": [
+                        "ec2:AttachVolume",
+                        "ec2:ModifyVolume",
+                        "ec2:DescribeInstances",
+                        "ec2:DescribeVolumes",
+                        "ec2:CreateVolume"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "ForAllValues:StringLike": {
+                            "aws:TagKeys": "ApplicationWizardResourceGroupID"
+                        }
+                    }
+                },
+                {
+                    "Sid": "VisualEditor1",
+                    "Effect": "Allow",
+                    "Action": "ec2:CreateTags",
+                    "Resource": "*",
+                    "Condition": {
+                        "ForAllValues:StringEquals": {
+                            "aws:TagKeys": "ApplicationWizardResourceGroupID"
+                        }
+                    }
+                },
+                {
+                    "Sid": "VisualEditor2",
+                    "Effect": "Allow",
+                    "Action": [
+                        "s3:GetObject",
+                        "logs:PutLogEvents"
+                    ],
+                    "Resource": [
+                        "arn:aws:logs:*:*:*",
+                        "arn:aws:s3:::appwizard*/*"
+                    ]
+                },
+                {
+                    "Sid": "VisualEditor3",
+                    "Effect": "Allow",
+                    "Action": [
+                        "ec2:DescribeAddresses",
+                        "ec2:AssociateAddress"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Sid": "VisualEditor4",
+                    "Effect": "Allow",
+                    "Action": "logs:Create*",
+                    "Resource": "arn:aws:logs:*:*:*"
+                }
+            ]
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2019-10-10T20:56:45Z"
+    }
+}
