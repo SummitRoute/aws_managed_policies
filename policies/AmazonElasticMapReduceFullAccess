@@ -44,10 +44,7 @@
                         "iam:PassRole",
                         "kms:List*",
                         "s3:*",
-                        "sdb:*",
-                        "support:CreateCase",
-                        "support:DescribeServices",
-                        "support:DescribeSeverityLevels"
+                        "sdb:*"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
@@ -67,8 +64,8 @@
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-01-23T19:40:00Z"
+        "CreateDate": "2019-10-11T15:19:30Z"
     }
 }
