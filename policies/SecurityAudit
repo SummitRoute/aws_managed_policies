@@ -206,8 +206,10 @@
                         "serverlessrepo:GetApplicationPolicy",
                         "serverlessrepo:List*",
                         "ses:GetIdentityDkimAttributes",
+                        "ses:GetIdentityPolicies",
                         "ses:GetIdentityVerificationAttributes",
                         "ses:ListIdentities",
+                        "ses:ListIdentityPolicies",
                         "ses:ListVerifiedEmailAddresses",
                         "shield:Describe*",
                         "shield:List*",
@@ -221,6 +223,7 @@
                         "sqs:ListQueues",
                         "sqs:ListQueueTags",
                         "ssm:Describe*",
+                        "ssm:GetAutomationExecution",
                         "ssm:ListDocuments",
                         "sso:DescribePermissionsPolicies",
                         "sso:List*",
@@ -257,19 +260,26 @@
                         "apigateway:GET"
                     ],
                     "Resource": [
+                        "arn:aws:apigateway:*::/apis",
+                        "arn:aws:apigateway:*::/apis/*/stages",
+                        "arn:aws:apigateway:*::/apis/*/stages/*",
+                        "arn:aws:apigateway:*::/apis/*/routes",
                         "arn:aws:apigateway:*::/restapis",
                         "arn:aws:apigateway:*::/restapis/*/authorizers",
                         "arn:aws:apigateway:*::/restapis/*/authorizers/*",
+                        "arn:aws:apigateway:*::/restapis/*/documentation/versions",
                         "arn:aws:apigateway:*::/restapis/*/resources",
                         "arn:aws:apigateway:*::/restapis/*/resources/*",
                         "arn:aws:apigateway:*::/restapis/*/resources/*/methods/*",
+                        "arn:aws:apigateway:*::/restapis/*/stages",
+                        "arn:aws:apigateway:*::/restapis/*/stages/*",
                         "arn:aws:apigateway:*::/vpclinks"
                     ]
                 }
             ]
         },
-        "VersionId": "v30",
+        "VersionId": "v31",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-08-16T10:06:35Z"
+        "CreateDate": "2019-10-15T21:02:23Z"
     }
 }
