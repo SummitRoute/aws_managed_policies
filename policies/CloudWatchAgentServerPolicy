@@ -7,6 +7,7 @@
                     "Effect": "Allow",
                     "Action": [
                         "cloudwatch:PutMetricData",
+                        "ec2:DescribeVolumes",
                         "ec2:DescribeTags",
                         "logs:PutLogEvents",
                         "logs:DescribeLogStreams",
@@ -25,8 +26,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-03-07T01:06:44Z"
+        "CreateDate": "2019-10-17T23:08:51Z"
     }
 }
