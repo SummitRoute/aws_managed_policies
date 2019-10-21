@@ -126,7 +126,6 @@
                         "kms:ListAliases",
                         "kms:ListKeyPolicies",
                         "kms:ListKeys",
-                        "kms:ListKeysForService",
                         "kms:ListRetirableGrants",
                         "logs:DescribeLogStreams",
                         "logs:GetLogEvents",
@@ -151,8 +150,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-01-09T20:37:28Z"
+        "CreateDate": "2019-10-21T18:57:02Z"
     }
 }
