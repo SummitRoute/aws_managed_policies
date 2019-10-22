@@ -67,6 +67,7 @@
                     "Effect": "Allow",
                     "Action": [
                         "s3:PutObject",
+                        "s3:PutObjectAcl",
                         "s3:GetObject"
                     ],
                     "Resource": "arn:aws:s3:::awsconfigconforms*"
@@ -91,8 +92,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-10-02T00:31:15Z"
+        "CreateDate": "2019-10-17T22:16:14Z"
     }
 }

@@ -12,7 +12,12 @@
                         "xray:PutTraceSegments",
                         "xray:PutTelemetryRecords",
                         "xray:GetSamplingTargets",
-                        "xray:GetSamplingRules"
+                        "xray:GetSamplingRules",
+                        "logs:CreateLogDelivery",
+                        "logs:GetLogDelivery",
+                        "logs:UpdateLogDelivery",
+                        "logs:DeleteLogDelivery",
+                        "logs:ListLogDeliveries"
                     ],
                     "Resource": [
                         "*"
@@ -36,8 +41,8 @@
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-07-25T20:03:52Z"
+        "CreateDate": "2019-10-22T18:22:01Z"
     }
 }

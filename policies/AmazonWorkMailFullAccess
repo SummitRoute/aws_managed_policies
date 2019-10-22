@@ -11,11 +11,9 @@
                         "ds:CreateAlias",
                         "ds:CreateDirectory",
                         "ds:CreateIdentityPoolDirectory",
-                        "ds:CreateDomain",
                         "ds:DeleteAlias",
                         "ds:DeleteDirectory",
                         "ds:DescribeDirectories",
-                        "ds:ExtendDirectory",
                         "ds:GetDirectoryLimits",
                         "ds:ListAuthorizedApplications",
                         "ds:UnauthorizeApplication",
@@ -30,7 +28,6 @@
                         "ec2:DeleteSubnet",
                         "ec2:DeleteVpc",
                         "ec2:DescribeAvailabilityZones",
-                        "ec2:DescribeDomains",
                         "ec2:DescribeRouteTables",
                         "ec2:DescribeSubnets",
                         "ec2:DescribeVpcs",
@@ -83,8 +80,8 @@
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-05-13T15:21:29Z"
+        "CreateDate": "2019-10-21T13:12:13Z"
     }
 }

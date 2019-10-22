@@ -1,0 +1,72 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Action": "elasticfilesystem:CreateFileSystem",
+                    "Resource": "*",
+                    "Condition": {
+                        "StringLike": {
+                            "aws:RequestTag/ManagedByAmazonSageMakerResource": "*"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "elasticfilesystem:CreateMountTarget",
+                        "elasticfilesystem:DescribeFileSystems",
+                        "elasticfilesystem:DescribeMountTargets"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringLike": {
+                            "aws:ResourceTag/ManagedByAmazonSageMakerResource": "*"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "ec2:CreateTags",
+                    "Resource": [
+                        "arn:aws:ec2:*:*:network-interface/*",
+                        "arn:aws:ec2:*:*:security-group/*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ec2:CreateNetworkInterface",
+                        "ec2:CreateSecurityGroup",
+                        "ec2:DeleteNetworkInterface",
+                        "ec2:DescribeNetworkInterfaces",
+                        "ec2:DescribeSecurityGroups",
+                        "ec2:DescribeSubnets",
+                        "ec2:ModifyNetworkInterfaceAttribute"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ec2:AuthorizeSecurityGroupEgress",
+                        "ec2:AuthorizeSecurityGroupIngress",
+                        "ec2:CreateNetworkInterfacePermission",
+                        "ec2:RevokeSecurityGroupEgress"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringLike": {
+                            "ec2:ResourceTag/ManagedByAmazonSageMakerResource": "*"
+                        }
+                    }
+                }
+            ]
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2019-10-18T20:27:37Z"
+    }
+}

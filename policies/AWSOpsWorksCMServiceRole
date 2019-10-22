@@ -133,11 +133,19 @@
                     "Action": [
                         "iam:PassRole"
                     ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Resource": "*",
+                    "Action": [
+                        "acm:DeleteCertificate",
+                        "acm:ImportCertificate"
+                    ]
                 }
             ]
         },
-        "VersionId": "v9",
+        "VersionId": "v10",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-06-07T19:39:20Z"
+        "CreateDate": "2019-10-22T07:40:35Z"
     }
 }

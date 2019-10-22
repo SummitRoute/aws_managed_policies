@@ -25,11 +25,16 @@
                     ],
                     "Resource": "arn:aws:s3:::aws-opsworks-cm-*",
                     "Effect": "Allow"
+                },
+                {
+                    "Action": "acm:GetCertificate",
+                    "Resource": "*",
+                    "Effect": "Allow"
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2017-11-03T12:01:32Z"
+        "CreateDate": "2019-10-22T07:40:17Z"
     }
 }
