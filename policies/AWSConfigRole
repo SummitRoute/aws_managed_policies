@@ -51,14 +51,16 @@
                         "elasticmapreduce:DescribeCluster",
                         "elasticmapreduce:DescribeSecurityConfiguration",
                         "elasticmapreduce:ListClusters",
-                        "emr:ListClusters",
-                        "emr:ListInstances",
+                        "elasticmapreduce:ListInstances",
+                        "es:DescribeElasticsearchDomain",
                         "es:DescribeElasticsearchDomains",
                         "es:ListDomainNames",
+                        "es:ListTags",
                         "guardduty:GetDetector",
                         "guardduty:GetFindings",
                         "guardduty:GetMasterAccount",
                         "guardduty:ListDetectors",
+                        "guardduty:ListFindings",
                         "iam:GenerateCredentialReport",
                         "iam:GetAccountAuthorizationDetails",
                         "iam:GetAccountPasswordPolicy",
@@ -134,7 +136,10 @@
                         "s3:ListBucket",
                         "sagemaker:DescribeEndpointConfig",
                         "sagemaker:DescribeNotebookInstance",
+                        "sagemaker:ListEndpointConfigs",
                         "sagemaker:ListNotebookInstances",
+                        "secretsmanager:ListSecrets",
+                        "secretsmanager:ListSecretVersionIds",
                         "shield:DescribeDRTAccess",
                         "shield:DescribeProtection",
                         "shield:DescribeSubscription",
@@ -157,8 +162,8 @@
                 }
             ]
         },
-        "VersionId": "v30",
+        "VersionId": "v31",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-09-17T17:40:42Z"
+        "CreateDate": "2019-10-21T21:58:25Z"
     }
 }
