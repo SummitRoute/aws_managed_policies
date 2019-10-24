@@ -36,14 +36,15 @@
                         "sso:ListApplications",
                         "sso:ListProfileAssociations",
                         "sso:Search*",
+                        "sso:GetMfaDeviceManagementForDirectory",
                         "sso-directory:DescribeDirectory"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-12-19T20:17:58Z"
+        "CreateDate": "2019-10-24T15:45:14Z"
     }
 }
