@@ -24,15 +24,20 @@
                         "chime:GetGlobalSettings",
                         "chime:GetPhoneNumber",
                         "chime:GetPhoneNumberOrder",
+                        "chime:GetPhoneNumberSettings",
                         "chime:GetUserSettings",
                         "chime:GetVoiceConnector",
                         "chime:GetVoiceConnectorOrigination",
                         "chime:GetVoiceConnectorTermination",
                         "chime:GetVoiceConnectorTerminationHealth",
+                        "chime:GetVoiceConnectorStreamingConfiguration",
+                        "chime:GetVoiceConnectorLoggingConfiguration",
+                        "chime:GetVoiceConnectorGroup",
                         "chime:ListPhoneNumberOrders",
                         "chime:ListPhoneNumbers",
                         "chime:ListVoiceConnectorTerminationCredentials",
                         "chime:ListVoiceConnectors",
+                        "chime:ListVoiceConnectorGroups",
                         "chime:SearchAvailablePhoneNumbers",
                         "chime:GetTelephonyLimits",
                         "chime:ListCallingRegions",
@@ -45,8 +50,8 @@
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-09-10T19:31:11Z"
+        "CreateDate": "2019-10-24T16:36:23Z"
     }
 }
