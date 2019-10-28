@@ -46,7 +46,8 @@
                         "iam:ListRoles",
                         "logs:DescribeLogGroups",
                         "logs:CreateLogGroup",
-                        "logs:PutRetentionPolicy"
+                        "logs:PutRetentionPolicy",
+                        "cloudwatch:GetMetricData"
                     ],
                     "Resource": "*"
                 },
@@ -80,8 +81,8 @@
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-10-21T13:12:13Z"
+        "CreateDate": "2019-10-28T15:41:18Z"
     }
 }
