@@ -29,11 +29,19 @@
                         "sns:GetTopicAttributes",
                         "sns:ListTopics"
                     ]
+                },
+                {
+                    "Resource": "*",
+                    "Effect": "Allow",
+                    "Action": [
+                        "aws-marketplace:ListPrivateMarketplaceRequests",
+                        "aws-marketplace:DescribePrivateMarketplaceRequests"
+                    ]
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-07-31T23:24:24Z"
+        "CreateDate": "2019-10-28T21:51:31Z"
     }
 }

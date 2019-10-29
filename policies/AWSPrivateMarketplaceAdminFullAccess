@@ -7,16 +7,20 @@
                     "Effect": "Allow",
                     "Action": [
                         "aws-marketplace:CreatePrivateMarketplace",
-                        "aws-marketplace:CreatePrivateMarketplaceProfile",
-                        "aws-marketplace:UpdatePrivateMarketplaceProfile",
                         "aws-marketplace:StartPrivateMarketplace",
                         "aws-marketplace:StopPrivateMarketplace",
+                        "aws-marketplace:DescribePrivateMarketplaceStatus",
                         "aws-marketplace:AssociateProductsWithPrivateMarketplace",
                         "aws-marketplace:DisassociateProductsFromPrivateMarketplace",
-                        "aws-marketplace:DescribePrivateMarketplaceProfile",
-                        "aws-marketplace:DescribePrivateMarketplaceStatus",
                         "aws-marketplace:ListPrivateMarketplaceProducts",
-                        "aws-marketplace:DescribePrivateMarketplaceProducts"
+                        "aws-marketplace:DescribePrivateMarketplaceProducts",
+                        "aws-marketplace:ListPrivateMarketplaceRequests",
+                        "aws-marketplace:DescribePrivateMarketplaceRequests",
+                        "aws-marketplace:UpdatePrivateMarketplaceSettings",
+                        "aws-marketplace:DescribePrivateMarketplaceSettings",
+                        "aws-marketplace:CreatePrivateMarketplaceProfile",
+                        "aws-marketplace:UpdatePrivateMarketplaceProfile",
+                        "aws-marketplace:DescribePrivateMarketplaceProfile"
                     ],
                     "Resource": [
                         "*"
@@ -24,8 +28,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-11-27T16:32:32Z"
+        "CreateDate": "2019-10-28T21:48:03Z"
     }
 }
