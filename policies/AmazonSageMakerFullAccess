@@ -94,10 +94,24 @@
                         "lambda:ListFunctions",
                         "logs:CreateLogGroup",
                         "logs:CreateLogStream",
+                        "logs:DescribeLogGroups",
                         "logs:DescribeLogStreams",
                         "logs:GetLogEvents",
                         "logs:PutLogEvents",
                         "sns:ListTopics"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "logs:CreateLogDelivery",
+                        "logs:DeleteLogDelivery",
+                        "logs:DescribeResourcePolicies",
+                        "logs:GetLogDelivery",
+                        "logs:ListLogDeliveries",
+                        "logs:PutResourcePolicy",
+                        "logs:UpdateLogDelivery"
                     ],
                     "Resource": "*"
                 },
@@ -265,21 +279,22 @@
                     "Action": [
                         "iam:PassRole"
                     ],
-                    "Resource": "*",
+                    "Resource": "arn:aws:iam::*:role/*",
                     "Condition": {
                         "StringEquals": {
                             "iam:PassedToService": [
                                 "sagemaker.amazonaws.com",
                                 "glue.amazonaws.com",
-                                "robomaker.amazonaws.com"
+                                "robomaker.amazonaws.com",
+                                "states.amazonaws.com"
                             ]
                         }
                     }
                 }
             ]
         },
-        "VersionId": "v12",
+        "VersionId": "v14",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-08-21T22:56:23Z"
+        "CreateDate": "2019-10-29T22:22:26Z"
     }
 }
