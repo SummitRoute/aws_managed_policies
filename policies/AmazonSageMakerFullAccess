@@ -285,15 +285,16 @@
                             "iam:PassedToService": [
                                 "sagemaker.amazonaws.com",
                                 "glue.amazonaws.com",
-                                "robomaker.amazonaws.com"
+                                "robomaker.amazonaws.com",
+                                "states.amazonaws.com"
                             ]
                         }
                     }
                 }
             ]
         },
-        "VersionId": "v13",
+        "VersionId": "v14",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-10-25T21:00:08Z"
+        "CreateDate": "2019-10-29T22:22:26Z"
     }
 }
