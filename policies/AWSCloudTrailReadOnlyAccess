@@ -14,8 +14,10 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "cloudtrail:GetTrail",
                         "cloudtrail:GetTrailStatus",
                         "cloudtrail:DescribeTrails",
+                        "cloudtrail:ListTrails",
                         "cloudtrail:LookupEvents",
                         "cloudtrail:ListTags",
                         "cloudtrail:ListPublicKeys",
@@ -28,8 +30,8 @@
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2017-12-11T19:51:37Z"
+        "CreateDate": "2019-10-31T22:42:54Z"
     }
 }
