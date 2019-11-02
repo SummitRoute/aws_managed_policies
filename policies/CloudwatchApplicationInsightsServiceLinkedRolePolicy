@@ -142,6 +142,23 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "ssm:ListCommandInvocations"
+                    ],
+                    "Resource": [
+                        "*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "ssm:SendCommand",
+                    "Resource": [
+                        "arn:aws:ec2:*:*:instance/*",
+                        "arn:aws:ssm:*:*:document/AWSEC2-CheckPerformanceCounterSets"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
                         "ec2:DescribeInstances"
                     ],
                     "Resource": [
@@ -159,8 +176,8 @@
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-06-24T18:54:53Z"
+        "CreateDate": "2019-11-01T01:06:25Z"
     }
 }
