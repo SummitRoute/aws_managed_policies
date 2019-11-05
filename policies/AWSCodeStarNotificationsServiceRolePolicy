@@ -1,0 +1,41 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Action": [
+                        "events:PutTargets",
+                        "events:PutRule",
+                        "events:DescribeRule"
+                    ],
+                    "Resource": "arn:aws:events:*:*:rule/awscodestarnotifications-*",
+                    "Effect": "Allow"
+                },
+                {
+                    "Action": [
+                        "codecommit:GetCommentsForPullRequest",
+                        "codecommit:GetCommentsForComparedCommit"
+                    ],
+                    "Resource": "*",
+                    "Effect": "Allow"
+                },
+                {
+                    "Action": [
+                        "codecommit:GetFile"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringNotEquals": {
+                            "aws:ResourceTag/ExcludeFileContentFromNotifications": "true"
+                        }
+                    },
+                    "Effect": "Allow"
+                }
+            ]
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2019-11-05T16:10:21Z"
+    }
+}

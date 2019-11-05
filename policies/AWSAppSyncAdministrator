@@ -23,11 +23,29 @@
                             ]
                         }
                     }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "iam:CreateServiceLinkedRole",
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:AWSServiceName": "appsync.amazonaws.com"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "iam:DeleteServiceLinkedRole",
+                        "iam:GetServiceLinkedRoleDeletionStatus"
+                    ],
+                    "Resource": "arn:aws:iam::*:role/aws-service-role/appsync.amazonaws.com/AWSServiceRoleForAppSync*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-03-20T21:20:28Z"
+        "CreateDate": "2019-11-04T19:23:49Z"
     }
 }
