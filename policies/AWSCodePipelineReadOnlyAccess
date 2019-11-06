@@ -29,16 +29,31 @@
                         "lambda:ListFunctions",
                         "opsworks:DescribeApps",
                         "opsworks:DescribeLayers",
-                        "opsworks:DescribeStacks"
+                        "opsworks:DescribeStacks",
+                        "codestar-notifications:ListNotificationRules",
+                        "codestar-notifications:ListEventTypes"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
+                },
+                {
+                    "Sid": "CodeStarNotificationsPowerUserAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "codestar-notifications:DescribeNotificationRule"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringLike": {
+                            "codestar-notifications:NotificationsForResource": "arn:aws:codepipeline:*"
+                        }
+                    }
                 }
             ],
             "Version": "2012-10-17"
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-08-13T22:18:42Z"
+        "CreateDate": "2019-11-05T23:01:50Z"
     }
 }

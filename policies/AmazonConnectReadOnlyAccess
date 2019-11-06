@@ -15,13 +15,16 @@
                 },
                 {
                     "Effect": "Deny",
-                    "Action": "connect:GetFederationTokens",
+                    "Action": [
+                        "connect:GetFederationToken",
+                        "connect:GetFederationTokens"
+                    ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-10-17T21:00:44Z"
+        "CreateDate": "2019-11-06T01:34:37Z"
     }
 }

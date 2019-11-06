@@ -95,11 +95,49 @@
                         "iam:ResetServiceSpecificCredential"
                     ],
                     "Resource": "arn:aws:iam::*:user/${aws:username}"
+                },
+                {
+                    "Sid": "CodeStarNotificationsReadWriteAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "codestar-notifications:CreateNotificationRule",
+                        "codestar-notifications:DescribeNotificationRule",
+                        "codestar-notifications:UpdateNotificationRule",
+                        "codestar-notifications:DeleteNotificationRule",
+                        "codestar-notifications:Subscribe",
+                        "codestar-notifications:Unsubscribe"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringLike": {
+                            "codestar-notifications:NotificationsForResource": "arn:aws:codecommit:*"
+                        }
+                    }
+                },
+                {
+                    "Sid": "CodeStarNotificationsListAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "codestar-notifications:ListNotificationRules",
+                        "codestar-notifications:ListTargets",
+                        "codestar-notifications:ListTagsforResource",
+                        "codestar-notifications:ListEventTypes"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Sid": "CodeStarNotificationsSNSTopicCreateAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "sns:CreateTopic",
+                        "sns:SetTopicAttributes"
+                    ],
+                    "Resource": "arn:aws:sns:*:*:codestar-notifications*"
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-06-12T21:27:53Z"
+        "CreateDate": "2019-11-05T23:00:26Z"
     }
 }
