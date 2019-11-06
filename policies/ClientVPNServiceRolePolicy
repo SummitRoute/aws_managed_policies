@@ -18,7 +18,6 @@
                         "ds:AuthorizeApplication",
                         "ds:DescribeDirectories",
                         "ds:GetDirectoryLimits",
-                        "ds:ListAuthorizedApplications",
                         "ds:UnauthorizeApplication",
                         "logs:DescribeLogStreams",
                         "logs:CreateLogStream",
@@ -31,8 +30,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-01-16T22:22:28Z"
+        "CreateDate": "2019-11-06T18:51:50Z"
     }
 }
