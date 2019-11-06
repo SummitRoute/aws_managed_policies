@@ -108,11 +108,39 @@
                         "iam:ResetServiceSpecificCredential"
                     ],
                     "Resource": "arn:aws:iam::*:user/${aws:username}"
+                },
+                {
+                    "Sid": "CodeStarNotificationsReadWriteAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "codestar-notifications:CreateNotificationRule",
+                        "codestar-notifications:DescribeNotificationRule",
+                        "codestar-notifications:UpdateNotificationRule",
+                        "codestar-notifications:Subscribe",
+                        "codestar-notifications:Unsubscribe"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringLike": {
+                            "codestar-notifications:NotificationsForResource": "arn:aws:codecommit:*"
+                        }
+                    }
+                },
+                {
+                    "Sid": "CodeStarNotificationsListAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "codestar-notifications:ListNotificationRules",
+                        "codestar-notifications:ListTargets",
+                        "codestar-notifications:ListTagsforResource",
+                        "codestar-notifications:ListEventTypes"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v9",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-06-12T22:47:04Z"
+        "CreateDate": "2019-11-05T22:52:28Z"
     }
 }

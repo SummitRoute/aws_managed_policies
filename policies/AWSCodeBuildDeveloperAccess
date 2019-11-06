@@ -29,12 +29,49 @@
                         "ssm:PutParameter"
                     ],
                     "Resource": "arn:aws:ssm:*:*:parameter/CodeBuild/*"
+                },
+                {
+                    "Sid": "CodeStarNotificationsReadWriteAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "codestar-notifications:CreateNotificationRule",
+                        "codestar-notifications:DescribeNotificationRule",
+                        "codestar-notifications:UpdateNotificationRule",
+                        "codestar-notifications:Subscribe",
+                        "codestar-notifications:Unsubscribe"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringLike": {
+                            "codestar-notifications:NotificationsForResource": "arn:aws:codebuild:*"
+                        }
+                    }
+                },
+                {
+                    "Sid": "CodeStarNotificationsListAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "codestar-notifications:ListNotificationRules",
+                        "codestar-notifications:ListEventTypes",
+                        "codestar-notifications:ListTargets",
+                        "codestar-notifications:ListTagsforResource"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Sid": "SNSTopicListAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "sns:ListTopics",
+                        "sns:GetTopicAttributes"
+                    ],
+                    "Resource": "*"
                 }
             ],
             "Version": "2012-10-17"
         },
-        "VersionId": "v5",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-10-08T20:23:39Z"
+        "CreateDate": "2019-11-05T22:12:45Z"
     }
 }
