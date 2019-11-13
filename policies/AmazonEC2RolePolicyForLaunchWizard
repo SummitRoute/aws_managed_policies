@@ -1,0 +1,62 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ec2:AttachVolume",
+                        "ec2:ModifyVolume",
+                        "ec2:DescribeInstances",
+                        "ec2:DescribeVolumes",
+                        "ec2:CreateVolume"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "ForAllValues:StringLike": {
+                            "aws:TagKeys": "LaunchWizardResourceGroupID"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "ec2:CreateTags",
+                    "Resource": "*",
+                    "Condition": {
+                        "ForAllValues:StringEquals": {
+                            "aws:TagKeys": "LaunchWizardResourceGroupID"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "s3:GetObject",
+                        "logs:PutLogEvents"
+                    ],
+                    "Resource": [
+                        "arn:aws:logs:*:*:*",
+                        "arn:aws:s3:::launchwizard*/*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ec2:DescribeAddresses",
+                        "ec2:AssociateAddress"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "logs:Create*",
+                    "Resource": "arn:aws:logs:*:*:*"
+                }
+            ]
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2019-11-13T08:05:53Z"
+    }
+}
