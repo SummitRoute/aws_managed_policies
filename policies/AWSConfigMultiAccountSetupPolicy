@@ -19,11 +19,49 @@
                         "organizations:ListAWSServiceAccessForOrganization"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "config:PutConformancePack",
+                        "config:DeleteConformancePack",
+                        "config:DescribeConformancePackStatus"
+                    ],
+                    "Resource": "arn:aws:config:*:*:conformance-pack/aws-service-conformance-pack/config-multiaccountsetup.amazonaws.com/*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "iam:GetRole"
+                    ],
+                    "Resource": "arn:aws:iam::*:role/aws-service-role/config-conforms.amazonaws.com/AWSServiceRoleForConfigConforms"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "iam:CreateServiceLinkedRole"
+                    ],
+                    "Resource": "arn:aws:iam::*:role/aws-service-role/config-conforms.amazonaws.com/AWSServiceRoleForConfigConforms",
+                    "Condition": {
+                        "StringLike": {
+                            "iam:AWSServiceName": "config-conforms.amazonaws.com"
+                        }
+                    }
+                },
+                {
+                    "Action": "iam:PassRole",
+                    "Resource": "*",
+                    "Effect": "Allow",
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:PassedToService": "ssm.amazonaws.com"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-06-17T18:03:16Z"
+        "CreateDate": "2019-11-13T18:22:26Z"
     }
 }
