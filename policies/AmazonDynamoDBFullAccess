@@ -87,15 +87,16 @@
                             "iam:AWSServiceName": [
                                 "replication.dynamodb.amazonaws.com",
                                 "dax.amazonaws.com",
-                                "dynamodb.application-autoscaling.amazonaws.com"
+                                "dynamodb.application-autoscaling.amazonaws.com",
+                                "contributorinsights.dynamodb.amazonaws.com"
                             ]
                         }
                     }
                 }
             ]
         },
-        "VersionId": "v9",
+        "VersionId": "v10",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-05-08T21:20:48Z"
+        "CreateDate": "2019-11-15T18:20:39Z"
     }
 }
