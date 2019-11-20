@@ -62,6 +62,11 @@
                     "Resource": "*"
                 },
                 {
+                    "Action": "cloudwatch:GetInsightRuleReport",
+                    "Effect": "Allow",
+                    "Resource": "arn:aws:cloudwatch:*:*:insight-rule/DynamoDBContributorInsights*"
+                },
+                {
                     "Action": [
                         "iam:PassRole"
                     ],
@@ -95,8 +100,8 @@
                 }
             ]
         },
-        "VersionId": "v10",
+        "VersionId": "v11",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-15T18:20:39Z"
+        "CreateDate": "2019-11-20T01:24:05Z"
     }
 }

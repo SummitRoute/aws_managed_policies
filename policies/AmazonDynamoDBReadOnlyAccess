@@ -48,11 +48,16 @@
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
+                },
+                {
+                    "Action": "cloudwatch:GetInsightRuleReport",
+                    "Effect": "Allow",
+                    "Resource": "arn:aws:cloudwatch:*:*:insight-rule/DynamoDBContributorInsights*"
                 }
             ]
         },
-        "VersionId": "v8",
+        "VersionId": "v9",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-05-08T21:15:48Z"
+        "CreateDate": "2019-11-20T01:18:15Z"
     }
 }
