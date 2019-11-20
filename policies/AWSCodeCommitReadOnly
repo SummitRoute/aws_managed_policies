@@ -8,8 +8,9 @@
                     "Action": [
                         "codecommit:BatchGet*",
                         "codecommit:BatchDescribe*",
-                        "codecommit:Get*",
                         "codecommit:Describe*",
+                        "codecommit:EvaluatePullRequestApprovalRules",
+                        "codecommit:Get*",
                         "codecommit:List*",
                         "codecommit:GitPull"
                     ],
@@ -86,8 +87,8 @@
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-05T22:56:54Z"
+        "CreateDate": "2019-11-20T17:12:40Z"
     }
 }
