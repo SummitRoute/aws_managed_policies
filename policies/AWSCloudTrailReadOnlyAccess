@@ -22,6 +22,7 @@
                         "cloudtrail:ListTags",
                         "cloudtrail:ListPublicKeys",
                         "cloudtrail:GetEventSelectors",
+                        "cloudtrail:GetInsightSelectors",
                         "s3:ListAllMyBuckets",
                         "kms:ListAliases",
                         "lambda:ListFunctions"
@@ -30,8 +31,8 @@
                 }
             ]
         },
-        "VersionId": "v8",
+        "VersionId": "v9",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-10-31T22:42:54Z"
+        "CreateDate": "2019-11-20T21:06:49Z"
     }
 }

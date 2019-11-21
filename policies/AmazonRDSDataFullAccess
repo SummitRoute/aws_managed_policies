@@ -29,7 +29,6 @@
                         "dbqms:DescribeQueryHistory",
                         "dbqms:UpdateQueryHistory",
                         "dbqms:DeleteQueryHistory",
-                        "dbqms:DescribeQueryHistory",
                         "rds-data:ExecuteSql",
                         "rds-data:ExecuteStatement",
                         "rds-data:BatchExecuteStatement",
@@ -45,8 +44,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-05-30T17:11:26Z"
+        "CreateDate": "2019-11-20T21:58:46Z"
     }
 }
