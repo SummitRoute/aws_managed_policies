@@ -10,12 +10,12 @@
                         "logs:CreateLogStream",
                         "logs:PutLogEvents"
                     ],
-                    "Resource": "arn:aws:logs:*:*:/aws/cloudfront/*"
+                    "Resource": "arn:aws:logs:*:*:log-group:/aws/cloudfront/*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-06-12T20:15:23Z"
+        "CreateDate": "2019-11-22T19:33:51Z"
     }
 }
