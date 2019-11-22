@@ -20,6 +20,8 @@
                         "greengrass:CreateResourceDefinition",
                         "greengrass:CreateResourceDefinitionVersion",
                         "greengrass:GetAssociatedRole",
+                        "greengrass:GetConnectorDefinition",
+                        "greengrass:GetConnectorDefinitionVersion",
                         "greengrass:GetCoreDefinition",
                         "greengrass:GetCoreDefinitionVersion",
                         "greengrass:GetDeploymentStatus",
@@ -90,8 +92,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-06T21:34:32Z"
+        "CreateDate": "2019-11-21T21:52:26Z"
     }
 }

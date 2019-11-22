@@ -106,6 +106,8 @@
                         "connect:List*",
                         "connect:Describe*",
                         "connect:GetFederationToken",
+                        "dataexchange:Get*",
+                        "dataexchange:List*",
                         "datasync:Describe*",
                         "datasync:List*",
                         "datapipeline:Describe*",
@@ -473,8 +475,8 @@
                 }
             ]
         },
-        "VersionId": "v56",
+        "VersionId": "v57",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-10-01T18:46:09Z"
+        "CreateDate": "2019-11-22T01:10:29Z"
     }
 }
