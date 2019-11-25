@@ -11,7 +11,11 @@
                         "dataexchange:Get*",
                         "dataexchange:Update*",
                         "dataexchange:List*",
-                        "dataexchange:Delete*"
+                        "dataexchange:Delete*",
+                        "dataexchange:TagResource",
+                        "dataexchange:UntagResource",
+                        "tag:GetTagKeys",
+                        "tag:GetTagValues"
                     ],
                     "Resource": "*"
                 },
@@ -85,8 +89,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-13T19:27:55Z"
+        "CreateDate": "2019-11-25T16:25:47Z"
     }
 }

@@ -35,6 +35,8 @@
                         "ec2:DescribeSecurityGroups",
                         "iam:GetRole",
                         "iam:ListRoles",
+                        "kms:DescribeKey",
+                        "kms:ListAliases",
                         "sns:CreateTopic",
                         "sns:DeleteTopic",
                         "sns:ListSubscriptions",
@@ -100,8 +102,8 @@
                 }
             ]
         },
-        "VersionId": "v11",
+        "VersionId": "v12",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-20T01:24:05Z"
+        "CreateDate": "2019-11-25T18:58:22Z"
     }
 }
