@@ -33,7 +33,9 @@
                     "Effect": "Allow",
                     "Action": [
                         "s3:GetObject",
-                        "logs:PutLogEvents"
+                        "logs:PutLogEvents",
+                        "logs:DescribeLogGroups",
+                        "logs:DescribeLogStreams"
                     ],
                     "Resource": [
                         "arn:aws:logs:*:*:*",
@@ -52,11 +54,60 @@
                     "Effect": "Allow",
                     "Action": "logs:Create*",
                     "Resource": "arn:aws:logs:*:*:*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ec2:Describe*",
+                        "ec2:ModifyInstanceAttribute",
+                        "cloudformation:DescribeStackResources",
+                        "cloudformation:SignalResource",
+                        "cloudformation:DescribeStackResource",
+                        "cloudformation:DescribeStacks"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "ForAllValues:StringEquals": {
+                            "aws:TagKeys": "LaunchWizardResourceGroupID"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "dynamodb:BatchGetItem",
+                        "dynamodb:PutItem",
+                        "sqs:ReceiveMessage",
+                        "sqs:SendMessage",
+                        "dynamodb:Scan",
+                        "s3:ListBucket",
+                        "dynamodb:Query",
+                        "dynamodb:UpdateItem",
+                        "dynamodb:DeleteTable",
+                        "dynamodb:CreateTable",
+                        "s3:GetObject",
+                        "dynamodb:DescribeTable",
+                        "s3:GetBucketLocation",
+                        "dynamodb:UpdateTable"
+                    ],
+                    "Resource": [
+                        "arn:aws:s3:::launchwizard*",
+                        "arn:aws:dynamodb:*:*:table/LaunchWizard*",
+                        "arn:aws:sqs:*:*:LaunchWizard*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ec2:DescribeImages",
+                        "ec2:DescribeRegions"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-13T08:05:53Z"
+        "CreateDate": "2019-11-24T21:48:01Z"
     }
 }

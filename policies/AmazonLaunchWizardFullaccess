@@ -6,7 +6,6 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "cloudformation:CreateStack",
                         "cloudformation:DeleteStack",
                         "cloudformation:DescribeStack*",
                         "cloudformation:Get*",
@@ -141,12 +140,7 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "autoscaling:DescribeAutoScaling*",
-                        "autoscaling:DescribeLaunchConfigurations",
-                        "autoscaling:DescribeNotificationConfigurations",
-                        "autoscaling:DescribePolicies",
-                        "autoscaling:DescribeScaling*",
-                        "autoscaling:DescribeScheduledActions",
+                        "autoscaling:Describe*",
                         "cloudformation:DescribeAccountLimits",
                         "cloudformation:DescribeStackDriftDetectionStatus",
                         "cloudformation:List*",
@@ -172,26 +166,7 @@
                         "ec2:DeleteRouteTable",
                         "ec2:DeleteSubnet",
                         "ec2:DeleteTags",
-                        "ec2:DescribeAccountAttributes",
-                        "ec2:DescribeAddresses",
-                        "ec2:DescribeAvailabilityZones",
-                        "ec2:DescribeDhcpOptions",
-                        "ec2:DescribeEgressOnlyInternetGateways",
-                        "ec2:DescribeImage*",
-                        "ec2:DescribeInstanceStatus",
-                        "ec2:DescribeInstances",
-                        "ec2:DescribeInternetGateways",
-                        "ec2:DescribeKeyPairs",
-                        "ec2:DescribeNatGateways",
-                        "ec2:DescribeNetwork*",
-                        "ec2:DescribeRegions",
-                        "ec2:DescribeRouteTables",
-                        "ec2:DescribeSecurityGroups",
-                        "ec2:DescribeSnapshot*",
-                        "ec2:DescribeSubnets",
-                        "ec2:DescribeTags",
-                        "ec2:DescribeVolume*",
-                        "ec2:DescribeVpc*",
+                        "ec2:Describe*",
                         "ec2:DetachNetworkInterface",
                         "ec2:DisassociateAddress",
                         "ec2:DisassociateVpcCidrBlock",
@@ -257,11 +232,60 @@
                     "Effect": "Allow",
                     "Action": "launchwizard:*",
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "sqs:TagQueue",
+                        "sqs:GetQueueUrl",
+                        "sqs:AddPermission",
+                        "sqs:ListQueues",
+                        "sqs:DeleteQueue",
+                        "sqs:GetQueueAttributes",
+                        "sqs:ListQueueTags",
+                        "sqs:CreateQueue",
+                        "sqs:SetQueueAttributes"
+                    ],
+                    "Resource": "arn:aws:sqs:*:*:LaunchWizard*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "cloudwatch:PutMetricAlarm",
+                        "iam:GetInstanceProfile",
+                        "cloudwatch:DeleteAlarms",
+                        "cloudwatch:DescribeAlarms"
+                    ],
+                    "Resource": [
+                        "arn:aws:cloudwatch:*:*:alarm:LaunchWizard*",
+                        "arn:aws:iam::*:instance-profile/LaunchWizard*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "s3:GetObject",
+                        "cloudformation:CreateStack",
+                        "route53:ListHostedZones",
+                        "elasticfilesystem:DescribeFileSystems",
+                        "elasticfilesystem:CreateFileSystem"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "cloudformation:TagResource",
+                    "Resource": "*",
+                    "Condition": {
+                        "ForAllValues:StringEquals": {
+                            "aws:TagKeys": "LaunchWizardResourceGroupID"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-13T17:08:13Z"
+        "CreateDate": "2019-11-24T21:55:08Z"
     }
 }
