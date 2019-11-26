@@ -72,11 +72,28 @@
                             "ec2:ResourceTag/ManagedByAmazonSageMakerResource": "*"
                         }
                     }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "sso:CreateManagedApplicationInstance",
+                        "sso:DeleteManagedApplicationInstance",
+                        "sso:GetManagedApplicationInstance"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "sagemaker:CreateUserProfile",
+                        "sagemaker:DescribeUserProfile"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-14T22:43:23Z"
+        "CreateDate": "2019-11-26T18:58:12Z"
     }
 }
