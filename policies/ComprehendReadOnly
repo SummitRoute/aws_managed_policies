@@ -15,6 +15,7 @@
                         "comprehend:BatchDetectSentiment",
                         "comprehend:DetectSyntax",
                         "comprehend:BatchDetectSyntax",
+                        "comprehend:ClassifyDocument",
                         "comprehend:DescribeTopicsDetectionJob",
                         "comprehend:ListTopicsDetectionJobs",
                         "comprehend:DescribeDominantLanguageDetectionJob",
@@ -30,15 +31,18 @@
                         "comprehend:DescribeDocumentClassificationJob",
                         "comprehend:ListDocumentClassificationJobs",
                         "comprehend:DescribeEntityRecognizer",
-                        "comprehend:ListEntityRecognizers"
+                        "comprehend:ListEntityRecognizers",
+                        "comprehend:ListTagsForResource",
+                        "comprehend:DescribeEndpoint",
+                        "comprehend:ListEndpoints"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v5",
-        "IsDefaultVersion": false,
-        "CreateDate": "2018-11-20T01:54:51Z"
+        "VersionId": "v6",
+        "IsDefaultVersion": true,
+        "CreateDate": "2019-11-25T19:35:48Z"
     }
 }

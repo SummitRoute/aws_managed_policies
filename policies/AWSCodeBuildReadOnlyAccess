@@ -6,6 +6,7 @@
                     "Action": [
                         "codebuild:BatchGet*",
                         "codebuild:List*",
+                        "codebuild:DescribeTestCases",
                         "codecommit:GetBranch",
                         "codecommit:GetCommit",
                         "codecommit:GetRepository",
@@ -43,8 +44,8 @@
             ],
             "Version": "2012-10-17"
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-05T22:11:42Z"
+        "CreateDate": "2019-11-25T20:37:05Z"
     }
 }
