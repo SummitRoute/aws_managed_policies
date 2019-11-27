@@ -9,14 +9,15 @@
                     "Action": [
                         "sso-directory:Search*",
                         "sso-directory:Describe*",
-                        "sso-directory:List*"
+                        "sso-directory:List*",
+                        "sso-directory:Get*"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-10-31T23:49:32Z"
+        "CreateDate": "2019-11-26T22:37:16Z"
     }
 }
