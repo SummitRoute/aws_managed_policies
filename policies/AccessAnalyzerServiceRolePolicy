@@ -1,0 +1,54 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "s3:GetBucketPublicAccessBlock",
+                        "s3:GetBucketPolicyStatus",
+                        "s3:GetAccountPublicAccessBlock",
+                        "s3:ListAllMyBuckets",
+                        "s3:GetBucketAcl",
+                        "s3:GetBucketLocation",
+                        "s3:GetBucketPolicy",
+                        "iam:GetRole",
+                        "iam:ListRoles",
+                        "kms:DescribeKey",
+                        "kms:GetKeyPolicy",
+                        "kms:ListGrants",
+                        "kms:ListKeyPolicies",
+                        "kms:ListKeys",
+                        "ec2:DescribeVpcs",
+                        "ec2:DescribeVpcEndpoints",
+                        "ec2:DescribeByoipCidrs",
+                        "ec2:DescribeAddresses",
+                        "lambda:ListFunctions",
+                        "lambda:GetPolicy",
+                        "lambda:ListLayers",
+                        "lambda:ListLayerVersions",
+                        "lambda:GetLayerVersionPolicy",
+                        "sqs:GetQueueAttributes",
+                        "sqs:ListQueues",
+                        "organizations:ListAWSServiceAccessForOrganization",
+                        "organizations:ListDelegatedAdministrators",
+                        "organizations:ListRoots",
+                        "organizations:ListParents",
+                        "organizations:ListChildren",
+                        "organizations:ListOrganizationalUnitsForParent",
+                        "organizations:ListAccountsForParent",
+                        "organizations:ListAccounts",
+                        "organizations:DescribeAccount",
+                        "organizations:DescribeOrganization",
+                        "organizations:DescribeOrganizationalUnit"
+                    ],
+                    "Resource": "*"
+                }
+            ]
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2019-12-02T17:13:10Z"
+    }
+}

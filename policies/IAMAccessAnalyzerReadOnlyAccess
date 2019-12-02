@@ -6,14 +6,15 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "elemental-appliances-software:*"
+                        "access-analyzer:Get*",
+                        "access-analyzer:List*"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v1",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-12-02T18:50:28Z"
+        "CreateDate": "2019-12-02T17:12:53Z"
     }
 }
