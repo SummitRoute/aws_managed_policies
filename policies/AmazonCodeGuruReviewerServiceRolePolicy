@@ -1,0 +1,47 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Sid": "AccessCodeGuruReviewerEnabledRepositories",
+                    "Effect": "Allow",
+                    "Action": [
+                        "codecommit:GetRepository",
+                        "codecommit:DescribePullRequestEvents",
+                        "codecommit:GetCommentsForPullRequest",
+                        "codecommit:GetDifferences",
+                        "codecommit:GetPullRequest",
+                        "codecommit:ListPullRequests",
+                        "codecommit:PostCommentForPullRequest",
+                        "codecommit:GitPull",
+                        "codecommit:UntagResource"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringLike": {
+                            "aws:ResourceTag/codeguru-reviewer": "enabled"
+                        }
+                    }
+                },
+                {
+                    "Sid": "CloudWatchEventsResourceCleanup",
+                    "Effect": "Allow",
+                    "Action": [
+                        "events:DeleteRule",
+                        "events:RemoveTargets"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEquals": {
+                            "events:ManagedBy": "codeguru-reviewer.amazonaws.com"
+                        }
+                    }
+                }
+            ]
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2019-12-03T05:31:12Z"
+    }
+}
