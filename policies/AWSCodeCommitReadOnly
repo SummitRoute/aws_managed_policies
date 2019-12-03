@@ -84,11 +84,20 @@
                         "codestar-notifications:ListEventTypes"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Sid": "AmazonCodeGuruReviewerReadOnlyAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "codeguru-reviewer:DescribeRepositoryAssociation",
+                        "codeguru-reviewer:ListRepositoryAssociations"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-20T17:12:40Z"
+        "CreateDate": "2019-12-03T08:08:37Z"
     }
 }
