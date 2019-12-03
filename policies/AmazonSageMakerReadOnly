@@ -6,6 +6,17 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "sagemaker:Describe*",
+                        "sagemaker:List*",
+                        "sagemaker:BatchGetMetrics",
+                        "sagemaker:GetSearchSuggestions",
+                        "sagemaker:Search"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
                         "application-autoscaling:DescribeScalableTargets",
                         "application-autoscaling:DescribeScalingActivities",
                         "application-autoscaling:DescribeScalingPolicies",
@@ -20,18 +31,14 @@
                         "cognito-idp:ListUserPools",
                         "cognito-idp:ListUsers",
                         "cognito-idp:ListUsersInGroup",
-                        "ecr:Describe*",
-                        "sagemaker:Describe*",
-                        "sagemaker:GetSearchSuggestions",
-                        "sagemaker:List*",
-                        "sagemaker:Search"
+                        "ecr:Describe*"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-06-10T20:38:21Z"
+        "CreateDate": "2019-12-03T16:40:33Z"
     }
 }

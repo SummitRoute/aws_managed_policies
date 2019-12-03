@@ -54,8 +54,7 @@
                         "s3:CreateBucket",
                         "sns:CreateTopic",
                         "sns:Get*",
-                        "sns:List*",
-                        "sagemaker:*"
+                        "sns:List*"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
@@ -68,6 +67,7 @@
                         "s3:Get*",
                         "s3:List*",
                         "s3:PutAccelerateConfiguration",
+                        "s3:PutBucketCors",
                         "s3:PutBucketLogging",
                         "s3:PutBucketNotification",
                         "s3:PutBucketTagging",
@@ -113,11 +113,52 @@
                             "iam:PassedToService": "sagemaker.amazonaws.com"
                         }
                     }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "sagemaker:*"
+                    ],
+                    "NotResource": [
+                        "arn:aws:sagemaker:*:*:domain/*",
+                        "arn:aws:sagemaker:*:*:user-profile/*",
+                        "arn:aws:sagemaker:*:*:app/*",
+                        "arn:aws:sagemaker:*:*:flow-definition/*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "sagemaker:CreatePresignedDomainUrl",
+                        "sagemaker:DescribeDomain",
+                        "sagemaker:ListDomains",
+                        "sagemaker:DescribeUserProfile",
+                        "sagemaker:ListUserProfiles",
+                        "sagemaker:*App",
+                        "sagemaker:ListApps"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "sagemaker:*FlowDefinition",
+                        "sagemaker:*FlowDefinitions"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEqualsIfExists": {
+                            "sagemaker:WorkteamType": [
+                                "private-crowd",
+                                "vendor-crowd"
+                            ]
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-08-21T23:13:03Z"
+        "CreateDate": "2019-12-03T16:48:34Z"
     }
 }

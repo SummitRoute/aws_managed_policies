@@ -8,7 +8,41 @@
                     "Action": [
                         "sagemaker:*"
                     ],
+                    "NotResource": [
+                        "arn:aws:sagemaker:*:*:domain/*",
+                        "arn:aws:sagemaker:*:*:user-profile/*",
+                        "arn:aws:sagemaker:*:*:app/*",
+                        "arn:aws:sagemaker:*:*:flow-definition/*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "sagemaker:CreatePresignedDomainUrl",
+                        "sagemaker:DescribeDomain",
+                        "sagemaker:ListDomains",
+                        "sagemaker:DescribeUserProfile",
+                        "sagemaker:ListUserProfiles",
+                        "sagemaker:*App",
+                        "sagemaker:ListApps"
+                    ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "sagemaker:*FlowDefinition",
+                        "sagemaker:*FlowDefinitions"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEqualsIfExists": {
+                            "sagemaker:WorkteamType": [
+                                "private-crowd",
+                                "vendor-crowd"
+                            ]
+                        }
+                    }
                 },
                 {
                     "Effect": "Allow",
@@ -34,8 +68,7 @@
                         "codecommit:BatchGetRepositories",
                         "codecommit:CreateRepository",
                         "codecommit:GetRepository",
-                        "codecommit:ListBranches",
-                        "codecommit:ListRepositories",
+                        "codecommit:List*",
                         "cognito-idp:AdminAddUserToGroup",
                         "cognito-idp:AdminCreateUser",
                         "cognito-idp:AdminDeleteUser",
@@ -48,12 +81,7 @@
                         "cognito-idp:CreateUserPoolDomain",
                         "cognito-idp:DescribeUserPool",
                         "cognito-idp:DescribeUserPoolClient",
-                        "cognito-idp:ListGroups",
-                        "cognito-idp:ListIdentityProviders",
-                        "cognito-idp:ListUserPoolClients",
-                        "cognito-idp:ListUserPools",
-                        "cognito-idp:ListUsers",
-                        "cognito-idp:ListUsersInGroup",
+                        "cognito-idp:List*",
                         "cognito-idp:UpdateUserPool",
                         "cognito-idp:UpdateUserPoolClient",
                         "ec2:CreateNetworkInterface",
@@ -92,26 +120,25 @@
                         "kms:DescribeKey",
                         "kms:ListAliases",
                         "lambda:ListFunctions",
+                        "logs:CreateLogDelivery",
                         "logs:CreateLogGroup",
                         "logs:CreateLogStream",
-                        "logs:DescribeLogGroups",
-                        "logs:DescribeLogStreams",
-                        "logs:GetLogEvents",
-                        "logs:PutLogEvents",
-                        "sns:ListTopics"
-                    ],
-                    "Resource": "*"
-                },
-                {
-                    "Effect": "Allow",
-                    "Action": [
-                        "logs:CreateLogDelivery",
                         "logs:DeleteLogDelivery",
-                        "logs:DescribeResourcePolicies",
+                        "logs:Describe*",
                         "logs:GetLogDelivery",
+                        "logs:GetLogEvents",
                         "logs:ListLogDeliveries",
+                        "logs:PutLogEvents",
                         "logs:PutResourcePolicy",
-                        "logs:UpdateLogDelivery"
+                        "logs:UpdateLogDelivery",
+                        "robomaker:CreateSimulationApplication",
+                        "robomaker:DescribeSimulationApplication",
+                        "robomaker:DeleteSimulationApplication",
+                        "robomaker:CreateSimulationJob",
+                        "robomaker:DescribeSimulationJob",
+                        "robomaker:CancelSimulationJob",
+                        "secretsmanager:ListSecrets",
+                        "sns:ListTopics"
                     ],
                     "Resource": "*"
                 },
@@ -144,13 +171,6 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "secretsmanager:ListSecrets"
-                    ],
-                    "Resource": "*"
-                },
-                {
-                    "Effect": "Allow",
-                    "Action": [
                         "secretsmanager:DescribeSecret",
                         "secretsmanager:GetSecretValue",
                         "secretsmanager:CreateSecret"
@@ -175,31 +195,10 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "robomaker:CreateSimulationApplication",
-                        "robomaker:DescribeSimulationApplication",
-                        "robomaker:DeleteSimulationApplication"
-                    ],
-                    "Resource": [
-                        "*"
-                    ]
-                },
-                {
-                    "Effect": "Allow",
-                    "Action": [
-                        "robomaker:CreateSimulationJob",
-                        "robomaker:DescribeSimulationJob",
-                        "robomaker:CancelSimulationJob"
-                    ],
-                    "Resource": [
-                        "*"
-                    ]
-                },
-                {
-                    "Effect": "Allow",
-                    "Action": [
                         "s3:GetObject",
                         "s3:PutObject",
-                        "s3:DeleteObject"
+                        "s3:DeleteObject",
+                        "s3:AbortMultipartUpload"
                     ],
                     "Resource": [
                         "arn:aws:s3:::*SageMaker*",
@@ -207,16 +206,6 @@
                         "arn:aws:s3:::*sagemaker*",
                         "arn:aws:s3:::*aws-glue*"
                     ]
-                },
-                {
-                    "Effect": "Allow",
-                    "Action": [
-                        "s3:CreateBucket",
-                        "s3:GetBucketLocation",
-                        "s3:ListBucket",
-                        "s3:ListAllMyBuckets"
-                    ],
-                    "Resource": "*"
                 },
                 {
                     "Effect": "Allow",
@@ -229,6 +218,18 @@
                             "s3:ExistingObjectTag/SageMaker": "true"
                         }
                     }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "s3:CreateBucket",
+                        "s3:GetBucketLocation",
+                        "s3:ListBucket",
+                        "s3:ListAllMyBuckets",
+                        "s3:GetBucketCors",
+                        "s3:PutBucketCors"
+                    ],
+                    "Resource": "*"
                 },
                 {
                     "Effect": "Allow",
@@ -293,8 +294,8 @@
                 }
             ]
         },
-        "VersionId": "v14",
+        "VersionId": "v15",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-10-29T22:22:26Z"
+        "CreateDate": "2019-12-03T16:32:12Z"
     }
 }
