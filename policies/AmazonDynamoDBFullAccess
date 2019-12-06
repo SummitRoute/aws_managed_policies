@@ -35,6 +35,8 @@
                         "ec2:DescribeSecurityGroups",
                         "iam:GetRole",
                         "iam:ListRoles",
+                        "kms:DescribeKey",
+                        "kms:ListAliases",
                         "sns:CreateTopic",
                         "sns:DeleteTopic",
                         "sns:ListSubscriptions",
@@ -62,6 +64,11 @@
                     "Resource": "*"
                 },
                 {
+                    "Action": "cloudwatch:GetInsightRuleReport",
+                    "Effect": "Allow",
+                    "Resource": "arn:aws:cloudwatch:*:*:insight-rule/DynamoDBContributorInsights*"
+                },
+                {
                     "Action": [
                         "iam:PassRole"
                     ],
@@ -87,15 +94,16 @@
                             "iam:AWSServiceName": [
                                 "replication.dynamodb.amazonaws.com",
                                 "dax.amazonaws.com",
-                                "dynamodb.application-autoscaling.amazonaws.com"
+                                "dynamodb.application-autoscaling.amazonaws.com",
+                                "contributorinsights.dynamodb.amazonaws.com"
                             ]
                         }
                     }
                 }
             ]
         },
-        "VersionId": "v9",
+        "VersionId": "v12",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-05-08T21:20:48Z"
+        "CreateDate": "2019-11-25T18:58:22Z"
     }
 }

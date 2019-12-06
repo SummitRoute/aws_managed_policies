@@ -79,7 +79,9 @@
                         "ec2:Describe*",
                         "ec2:DeleteSnapshot",
                         "ec2:DeregisterImage",
-                        "ec2:RunInstances"
+                        "ec2:RunInstances",
+                        "ec2:ImportImage",
+                        "ec2:DescribeImportImageTasks"
                     ],
                     "Resource": "*",
                     "Effect": "Allow"
@@ -124,8 +126,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-08-06T18:39:29Z"
+        "CreateDate": "2019-11-21T00:14:49Z"
     }
 }

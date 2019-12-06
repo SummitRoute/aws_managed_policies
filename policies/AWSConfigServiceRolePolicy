@@ -18,6 +18,8 @@
                         "autoscaling:DescribeScheduledActions",
                         "autoscaling:DescribeTags",
                         "cloudfront:ListTagsForResource",
+                        "cloudformation:describeType",
+                        "cloudformation:listTypes",
                         "cloudtrail:DescribeTrails",
                         "cloudtrail:GetEventSelectors",
                         "cloudtrail:GetTrailStatus",
@@ -161,8 +163,8 @@
                 }
             ]
         },
-        "VersionId": "v17",
+        "VersionId": "v18",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-10-21T21:54:04Z"
+        "CreateDate": "2019-11-18T22:33:22Z"
     }
 }

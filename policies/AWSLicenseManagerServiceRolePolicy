@@ -88,11 +88,24 @@
                     "Resource": [
                         "*"
                     ]
+                },
+                {
+                    "Sid": "LicenseManagerPermissions",
+                    "Effect": "Allow",
+                    "Action": [
+                        "license-manager:GetServiceSettings",
+                        "license-manager:GetLicenseConfiguration",
+                        "license-manager:UpdateLicenseSpecificationsForResource",
+                        "license-manager:ListUsageForLicenseConfiguration"
+                    ],
+                    "Resource": [
+                        "*"
+                    ]
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-11-26T19:02:53Z"
+        "CreateDate": "2019-11-15T22:10:12Z"
     }
 }

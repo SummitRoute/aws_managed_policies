@@ -1,0 +1,35 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "dataexchange:Get*",
+                        "dataexchange:List*"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "aws-marketplace:ViewSubscriptions",
+                        "aws-marketplace:GetAgreementRequest",
+                        "aws-marketplace:ListAgreementRequests",
+                        "aws-marketplace:GetAgreementApprovalRequest",
+                        "aws-marketplace:ListAgreementApprovalRequests",
+                        "aws-marketplace:DescribeEntity",
+                        "aws-marketplace:ListEntities",
+                        "aws-marketplace:DescribeChangeSet",
+                        "aws-marketplace:ListChangeSets"
+                    ],
+                    "Resource": "*"
+                }
+            ]
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2019-11-13T19:27:37Z"
+    }
+}

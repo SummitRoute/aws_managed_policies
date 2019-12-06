@@ -5,13 +5,15 @@
             "Statement": [
                 {
                     "Effect": "Allow",
-                    "Action": "aesop:*",
+                    "Action": [
+                        "elemental-appliances-software:*"
+                    ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-07-31T16:28:53Z"
+        "CreateDate": "2019-12-02T18:50:28Z"
     }
 }

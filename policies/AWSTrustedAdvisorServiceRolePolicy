@@ -30,6 +30,7 @@
                         "ec2:DescribeVpnConnections",
                         "ec2:DescribeVpnGateways",
                         "ec2:DescribeLaunchTemplateVersions",
+                        "elasticloadbalancing:DescribeAccountLimits",
                         "elasticloadbalancing:DescribeInstanceHealth",
                         "elasticloadbalancing:DescribeLoadBalancerAttributes",
                         "elasticloadbalancing:DescribeLoadBalancerPolicies",
@@ -88,8 +89,8 @@
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-06-12T21:21:39Z"
+        "CreateDate": "2019-11-15T22:11:48Z"
     }
 }

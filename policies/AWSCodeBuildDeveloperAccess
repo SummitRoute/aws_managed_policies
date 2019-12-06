@@ -7,6 +7,7 @@
                         "codebuild:StartBuild",
                         "codebuild:StopBuild",
                         "codebuild:BatchGet*",
+                        "codebuild:DescribeTestCases",
                         "codebuild:List*",
                         "codecommit:GetBranch",
                         "codecommit:GetCommit",
@@ -70,8 +71,8 @@
             ],
             "Version": "2012-10-17"
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-05T22:12:45Z"
+        "CreateDate": "2019-11-25T20:36:49Z"
     }
 }

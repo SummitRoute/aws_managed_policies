@@ -34,6 +34,50 @@
                     "Resource": "*"
                 },
                 {
+                    "Sid": "AutoScaling",
+                    "Effect": "Allow",
+                    "Action": [
+                        "autoscaling:Describe*"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Sid": "AutoScalingManagement",
+                    "Effect": "Allow",
+                    "Action": [
+                        "autoscaling:DeletePolicy",
+                        "autoscaling:PutScalingPolicy",
+                        "autoscaling:SetInstanceProtection",
+                        "autoscaling:UpdateAutoScalingGroup"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "Null": {
+                            "autoscaling:ResourceTag/AmazonECSManaged": "false"
+                        }
+                    }
+                },
+                {
+                    "Sid": "AutoScalingPlanManagement",
+                    "Effect": "Allow",
+                    "Action": [
+                        "autoscaling-plans:CreateScalingPlan",
+                        "autoscaling-plans:DeleteScalingPlan",
+                        "autoscaling-plans:DescribeScalingPlans"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Sid": "CWAlarmManagement",
+                    "Effect": "Allow",
+                    "Action": [
+                        "cloudwatch:DeleteAlarms",
+                        "cloudwatch:DescribeAlarms",
+                        "cloudwatch:PutMetricAlarm"
+                    ],
+                    "Resource": "arn:aws:cloudwatch:*:*:alarm:*"
+                },
+                {
                     "Sid": "ECSTagging",
                     "Effect": "Allow",
                     "Action": [
@@ -63,8 +107,8 @@
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-06-24T23:16:41Z"
+        "CreateDate": "2019-11-21T19:49:23Z"
     }
 }

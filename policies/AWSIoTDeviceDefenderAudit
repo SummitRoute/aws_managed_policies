@@ -15,12 +15,17 @@
                         "iot:ListPolicies",
                         "iot:GetPolicy",
                         "iot:GetEffectivePolicies",
+                        "iot:ListRoleAliases",
+                        "iot:DescribeRoleAlias",
                         "cognito-identity:GetIdentityPoolRoles",
                         "iam:ListRolePolicies",
                         "iam:ListAttachedRolePolicies",
+                        "iam:GetRole",
                         "iam:GetPolicy",
                         "iam:GetPolicyVersion",
-                        "iam:GetRolePolicy"
+                        "iam:GetRolePolicy",
+                        "iam:GenerateServiceLastAccessedDetails",
+                        "iam:GetServiceLastAccessedDetails"
                     ],
                     "Resource": [
                         "*"
@@ -28,8 +33,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-07-18T21:17:40Z"
+        "CreateDate": "2019-11-25T23:52:43Z"
     }
 }

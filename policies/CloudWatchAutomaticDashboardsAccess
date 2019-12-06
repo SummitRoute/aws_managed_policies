@@ -36,7 +36,8 @@
                         "sns:ListTopics",
                         "sqs:GetQueueAttributes",
                         "sqs:GetQueueUrl",
-                        "sqs:ListQueues"
+                        "sqs:ListQueues",
+                        "tag:GetResources"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
@@ -52,8 +53,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-07-23T10:01:08Z"
+        "CreateDate": "2019-11-20T12:58:09Z"
     }
 }

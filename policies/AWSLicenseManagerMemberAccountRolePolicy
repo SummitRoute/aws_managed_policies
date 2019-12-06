@@ -7,7 +7,8 @@
                     "Sid": "LicenseManagerPermissions",
                     "Effect": "Allow",
                     "Action": [
-                        "license-manager:UpdateLicenseSpecificationsForResource"
+                        "license-manager:UpdateLicenseSpecificationsForResource",
+                        "license-manager:GetLicenseConfiguration"
                     ],
                     "Resource": [
                         "*"
@@ -42,8 +43,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-11-26T19:04:32Z"
+        "CreateDate": "2019-11-15T22:09:32Z"
     }
 }

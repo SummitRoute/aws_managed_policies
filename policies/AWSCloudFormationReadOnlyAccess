@@ -11,15 +11,14 @@
                         "cloudformation:Get*",
                         "cloudformation:List*",
                         "cloudformation:ValidateTemplate",
-                        "cloudformation:DetectStackDrift",
-                        "cloudformation:DetectStackResourceDrift"
+                        "cloudformation:Detect*"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-02-06T22:16:02Z"
+        "CreateDate": "2019-11-13T17:40:07Z"
     }
 }

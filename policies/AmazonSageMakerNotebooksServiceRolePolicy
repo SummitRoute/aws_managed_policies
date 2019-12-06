@@ -17,8 +17,8 @@
                     "Effect": "Allow",
                     "Action": [
                         "elasticfilesystem:CreateMountTarget",
-                        "elasticfilesystem:DescribeFileSystems",
-                        "elasticfilesystem:DescribeMountTargets"
+                        "elasticfilesystem:DeleteFileSystem",
+                        "elasticfilesystem:DeleteMountTarget"
                     ],
                     "Resource": "*",
                     "Condition": {
@@ -26,6 +26,14 @@
                             "aws:ResourceTag/ManagedByAmazonSageMakerResource": "*"
                         }
                     }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "elasticfilesystem:DescribeFileSystems",
+                        "elasticfilesystem:DescribeMountTargets"
+                    ],
+                    "Resource": "*"
                 },
                 {
                     "Effect": "Allow",
@@ -54,7 +62,9 @@
                         "ec2:AuthorizeSecurityGroupEgress",
                         "ec2:AuthorizeSecurityGroupIngress",
                         "ec2:CreateNetworkInterfacePermission",
-                        "ec2:RevokeSecurityGroupEgress"
+                        "ec2:DeleteSecurityGroup",
+                        "ec2:RevokeSecurityGroupEgress",
+                        "ec2:RevokeSecurityGroupIngress"
                     ],
                     "Resource": "*",
                     "Condition": {
@@ -62,11 +72,28 @@
                             "ec2:ResourceTag/ManagedByAmazonSageMakerResource": "*"
                         }
                     }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "sso:CreateManagedApplicationInstance",
+                        "sso:DeleteManagedApplicationInstance",
+                        "sso:GetManagedApplicationInstance"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "sagemaker:CreateUserProfile",
+                        "sagemaker:DescribeUserProfile"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-10-18T20:27:37Z"
+        "CreateDate": "2019-11-26T18:58:12Z"
     }
 }

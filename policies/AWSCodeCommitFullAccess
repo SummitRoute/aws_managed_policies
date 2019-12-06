@@ -133,11 +133,49 @@
                         "sns:SetTopicAttributes"
                     ],
                     "Resource": "arn:aws:sns:*:*:codestar-notifications*"
+                },
+                {
+                    "Sid": "AmazonCodeGuruReviewerFullAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "codeguru-reviewer:AssociateRepository",
+                        "codeguru-reviewer:DescribeRepositoryAssociation",
+                        "codeguru-reviewer:ListRepositoryAssociations",
+                        "codeguru-reviewer:DisassociateRepository"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Sid": "AmazonCodeGuruReviewerSLRCreation",
+                    "Action": "iam:CreateServiceLinkedRole",
+                    "Effect": "Allow",
+                    "Resource": "arn:aws:iam::*:role/aws-service-role/codeguru-reviewer.amazonaws.com/AWSServiceRoleForAmazonCodeGuruReviewer",
+                    "Condition": {
+                        "StringLike": {
+                            "iam:AWSServiceName": "codeguru-reviewer.amazonaws.com"
+                        }
+                    }
+                },
+                {
+                    "Sid": "CloudWatchEventsManagedRules",
+                    "Effect": "Allow",
+                    "Action": [
+                        "events:PutRule",
+                        "events:PutTargets",
+                        "events:DeleteRule",
+                        "events:RemoveTargets"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEquals": {
+                            "events:ManagedBy": "codeguru-reviewer.amazonaws.com"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-05T23:00:26Z"
+        "CreateDate": "2019-12-03T07:56:31Z"
     }
 }

@@ -15,7 +15,6 @@
                         "acm-pca:Describe*",
                         "acm-pca:Get*",
                         "acm-pca:List*",
-                        "aesop:Get*",
                         "amplify:GetApp",
                         "amplify:GetBranch",
                         "amplify:GetJob",
@@ -87,7 +86,10 @@
                         "codestar:Get*",
                         "codestar:Verify*",
                         "cognito-identity:Describe*",
-                        "cognito-identity:Get*",
+                        "cognito-identity:GetCredentialsForIdentity",
+                        "cognito-identity:GetIdentityPoolRoles",
+                        "cognito-identity:GetOpenIdToken",
+                        "cognito-identity:GetOpenIdTokenForDeveloperIdentity",
                         "cognito-identity:List*",
                         "cognito-identity:Lookup*",
                         "cognito-sync:List*",
@@ -106,6 +108,8 @@
                         "connect:List*",
                         "connect:Describe*",
                         "connect:GetFederationToken",
+                        "dataexchange:Get*",
+                        "dataexchange:List*",
                         "datasync:Describe*",
                         "datasync:List*",
                         "datapipeline:Describe*",
@@ -211,7 +215,6 @@
                         "glue:GetJobs",
                         "glue:GetJobRun",
                         "glue:GetJobRuns",
-                        "glue:GetMapping",
                         "glue:GetPartition",
                         "glue:GetPartitions",
                         "glue:GetPlan",
@@ -473,8 +476,8 @@
                 }
             ]
         },
-        "VersionId": "v56",
+        "VersionId": "v58",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-10-01T18:46:09Z"
+        "CreateDate": "2019-11-26T01:37:01Z"
     }
 }

@@ -8,15 +8,14 @@
                     "Action": [
                         "a4b:Get*",
                         "a4b:List*",
-                        "a4b:Describe*",
                         "a4b:Search*"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-06-25T23:52:33Z"
+        "CreateDate": "2019-11-20T00:25:33Z"
     }
 }
