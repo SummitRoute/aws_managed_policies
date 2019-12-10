@@ -13,6 +13,7 @@
                         "chime:GetUser",
                         "chime:GetUserByEmail",
                         "chime:InviteUsers",
+                        "chime:InviteUsersFromProvider",
                         "chime:SuspendUsers",
                         "chime:ActivateUsers",
                         "chime:UpdateUserLicenses",
@@ -45,8 +46,8 @@
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-03-18T12:17:58Z"
+        "CreateDate": "2019-12-10T19:30:07Z"
     }
 }
