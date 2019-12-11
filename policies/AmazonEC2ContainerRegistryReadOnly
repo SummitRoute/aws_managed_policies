@@ -13,14 +13,18 @@
                         "ecr:DescribeRepositories",
                         "ecr:ListImages",
                         "ecr:DescribeImages",
-                        "ecr:BatchGetImage"
+                        "ecr:BatchGetImage",
+                        "ecr:GetLifecyclePolicy",
+                        "ecr:GetLifecyclePolicyPreview",
+                        "ecr:ListTagsForResource",
+                        "ecr:DescribeImageScanFindings"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2016-10-11T22:08:43Z"
+        "CreateDate": "2019-12-10T20:56:32Z"
     }
 }
