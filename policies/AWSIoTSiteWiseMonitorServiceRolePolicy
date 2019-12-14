@@ -31,15 +31,14 @@
                         "iotsitewise:GetAssetPropertyValue",
                         "iotsitewise:GetAssetPropertyValueHistory",
                         "iotsitewise:GetAssetPropertyAggregates",
-                        "sso-directory:DescribeUser",
                         "sso-directory:DescribeUsers"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-14T00:59:10Z"
+        "CreateDate": "2019-12-13T22:19:25Z"
     }
 }
