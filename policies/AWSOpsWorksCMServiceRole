@@ -15,7 +15,19 @@
                         "s3:GetObject",
                         "s3:ListBucket",
                         "s3:PutBucketPolicy",
-                        "s3:PutObject"
+                        "s3:PutObject",
+                        "s3:GetBucketTagging",
+                        "s3:PutBucketTagging"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Resource": [
+                        "*"
+                    ],
+                    "Action": [
+                        "tag:UntagResources",
+                        "tag:TagResources"
                     ]
                 },
                 {
@@ -140,11 +152,20 @@
                         "acm:DeleteCertificate",
                         "acm:ImportCertificate"
                     ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "ec2:DeleteTags",
+                    "Resource": [
+                        "arn:aws:ec2:*:*:instance/*",
+                        "arn:aws:ec2:*:*:elastic-ip/*",
+                        "arn:aws:ec2:*:*:security-group/*"
+                    ]
                 }
             ]
         },
-        "VersionId": "v11",
+        "VersionId": "v12",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-07T13:03:31Z"
+        "CreateDate": "2019-12-16T13:45:19Z"
     }
 }
