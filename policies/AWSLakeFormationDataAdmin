@@ -30,7 +30,6 @@
                         "glue:GetWorkflowRuns",
                         "glue:StartWorkflowRun",
                         "glue:GetWorkflow",
-                        "s3:ListObjects",
                         "s3:ListBucket",
                         "s3:GetBucketLocation",
                         "s3:ListAllMyBuckets",
@@ -51,8 +50,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-08-08T17:33:44Z"
+        "CreateDate": "2019-12-16T22:41:40Z"
     }
 }
