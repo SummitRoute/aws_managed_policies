@@ -14,7 +14,8 @@
                         "ec2:DescribeSnapshots",
                         "ec2:EnableFastSnapshotRestores",
                         "ec2:DescribeFastSnapshotRestores",
-                        "ec2:DisableFastSnapshotRestores"
+                        "ec2:DisableFastSnapshotRestores",
+                        "ec2:CopySnapshot"
                     ],
                     "Resource": "*"
                 },
@@ -27,8 +28,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-20T19:27:44Z"
+        "CreateDate": "2019-12-19T19:42:29Z"
     }
 }
