@@ -6,14 +6,38 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "health:*"
+                        "organizations:EnableAWSServiceAccess",
+                        "organizations:DisableAWSServiceAccess"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEquals": {
+                            "organizations:ServicePrincipal": "health.amazonaws.com"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "health:*",
+                        "organizations:ListAccounts"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "iam:CreateServiceLinkedRole",
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:AWSServiceName": "health.amazonaws.com"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2016-12-06T12:30:31Z"
+        "CreateDate": "2019-12-22T14:25:03Z"
     }
 }
