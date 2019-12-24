@@ -73,6 +73,26 @@
                     "Effect": "Allow"
                 },
                 {
+                    "Action": "ssm:SendCommand",
+                    "Resource": [
+                        "arn:aws:ssm:*:*:document/AWS-RunRemoteScript",
+                        "arn:aws:ssm:*:*:document/AWS-RunPowerShellScript",
+                        "arn:aws:ssm:*:*:document/AWS-RunShellScript",
+                        "arn:aws:ec2:*:*:instance/*",
+                        "arn:aws:ssm:*:*:managed-instance/*",
+                        "arn:aws:s3:::*"
+                    ],
+                    "Effect": "Allow"
+                },
+                {
+                    "Action": [
+                        "ssm:CancelCommand",
+                        "ssm:GetCommandInvocation"
+                    ],
+                    "Resource": "*",
+                    "Effect": "Allow"
+                },
+                {
                     "Action": [
                         "ec2:ModifySnapshotAttribute",
                         "ec2:CopySnapshot",
@@ -105,8 +125,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-26T00:48:45Z"
+        "CreateDate": "2019-12-23T23:27:42Z"
     }
 }
