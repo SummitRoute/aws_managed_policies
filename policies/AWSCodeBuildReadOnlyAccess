@@ -5,6 +5,7 @@
                 {
                     "Action": [
                         "codebuild:BatchGet*",
+                        "codebuild:GetResourcePolicy",
                         "codebuild:List*",
                         "codebuild:DescribeTestCases",
                         "codecommit:GetBranch",
@@ -44,8 +45,8 @@
             ],
             "Version": "2012-10-17"
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-25T20:37:05Z"
+        "CreateDate": "2020-01-02T20:06:42Z"
     }
 }
