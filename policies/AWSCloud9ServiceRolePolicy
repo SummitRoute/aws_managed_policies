@@ -40,7 +40,10 @@
                     "Action": [
                         "ec2:CreateTags"
                     ],
-                    "Resource": "arn:aws:ec2:*:*:instance/*",
+                    "Resource": [
+                        "arn:aws:ec2:*:*:instance/*",
+                        "arn:aws:ec2:*:*:security-group/*"
+                    ],
                     "Condition": {
                         "StringLike": {
                             "aws:RequestTag/Name": "aws-cloud9-*"
@@ -62,8 +65,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-02-27T10:20:24Z"
+        "CreateDate": "2020-01-08T12:35:15Z"
     }
 }
