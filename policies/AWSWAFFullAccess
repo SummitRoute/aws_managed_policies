@@ -7,6 +7,7 @@
                     "Action": [
                         "waf:*",
                         "waf-regional:*",
+                        "wafv2:*",
                         "elasticloadbalancing:SetWebACL"
                     ],
                     "Effect": "Allow",
@@ -14,8 +15,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2016-12-07T21:33:25Z"
+        "CreateDate": "2020-01-07T20:50:25Z"
     }
 }
