@@ -24,14 +24,17 @@
                         "rekognition:GetCelebrityRecognition",
                         "rekognition:GetFaceSearch",
                         "rekognition:DescribeStreamProcessor",
-                        "rekognition:ListStreamProcessors"
+                        "rekognition:ListStreamProcessors",
+                        "rekognition:DescribeProjects",
+                        "rekognition:DescribeProjectVersions",
+                        "rekognition:DetectCustomLabels"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2017-12-06T23:28:39Z"
+        "CreateDate": "2020-01-08T20:02:40Z"
     }
 }

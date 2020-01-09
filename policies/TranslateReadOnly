@@ -8,6 +8,8 @@
                         "translate:TranslateText",
                         "translate:GetTerminology",
                         "translate:ListTerminologies",
+                        "translate:ListTextTranslationJobs",
+                        "translate:DescribeTextTranslationJob",
                         "comprehend:DetectDominantLanguage",
                         "cloudwatch:GetMetricStatistics",
                         "cloudwatch:ListMetrics"
@@ -17,8 +19,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-11-27T23:29:08Z"
+        "CreateDate": "2020-01-08T21:13:43Z"
     }
 }
