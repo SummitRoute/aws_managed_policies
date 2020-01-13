@@ -15,7 +15,31 @@
                         "ec2:DescribeVpcAttribute",
                         "ec2:DescribeVpcs",
                         "ec2:ModifyNetworkInterfaceAttribute",
-                        "elasticfilesystem:*",
+                        "elasticfilesystem:CreateFileSystem",
+                        "elasticfilesystem:CreateMountTarget",
+                        "elasticfilesystem:CreateTags",
+                        "elasticfilesystem:CreateAccessPoint",
+                        "elasticfilesystem:DeleteFileSystem",
+                        "elasticfilesystem:DeleteMountTarget",
+                        "elasticfilesystem:DeleteTags",
+                        "elasticfilesystem:DeleteAccessPoint",
+                        "elasticfilesystem:DeleteFileSystemPolicy",
+                        "elasticfilesystem:DescribeFileSystems",
+                        "elasticfilesystem:DescribeFileSystemPolicy",
+                        "elasticfilesystem:DescribeLifecycleConfiguration",
+                        "elasticfilesystem:DescribeMountTargets",
+                        "elasticfilesystem:DescribeMountTargetSecurityGroups",
+                        "elasticfilesystem:DescribeTags",
+                        "elasticfilesystem:DescribeAccessPoints",
+                        "elasticfilesystem:ModifyMountTargetSecurityGroups",
+                        "elasticfilesystem:PutLifecycleConfiguration",
+                        "elasticfilesystem:PutFileSystemPolicy",
+                        "elasticfilesystem:UpdateFileSystem",
+                        "elasticfilesystem:TagResource",
+                        "elasticfilesystem:UntagResource",
+                        "elasticfilesystem:ListTagsForResource",
+                        "elasticfilesystem:Backup",
+                        "elasticfilesystem:Restore",
                         "kms:DescribeKey",
                         "kms:ListAliases"
                     ],
@@ -36,8 +60,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-05T17:10:26Z"
+        "CreateDate": "2020-01-13T16:15:01Z"
     }
 }

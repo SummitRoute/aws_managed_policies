@@ -46,7 +46,15 @@
                     "Action": [
                         "ec2:DescribeSnapshots",
                         "ec2:DescribeVolumes",
-                        "ec2:describeAvailabilityZones"
+                        "ec2:describeAvailabilityZones",
+                        "ec2:DescribeVpcs",
+                        "ec2:DescribeAccountAttributes",
+                        "ec2:DescribeSecurityGroups",
+                        "ec2:DescribeImages",
+                        "ec2:DescribeSubnets",
+                        "ec2:DescribePlacementGroups",
+                        "ec2:DescribeInstances",
+                        "ec2:DescribeInstanceTypes"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
@@ -130,8 +138,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-18T22:21:52Z"
+        "CreateDate": "2020-01-13T18:40:45Z"
     }
 }

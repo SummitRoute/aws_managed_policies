@@ -125,11 +125,25 @@
                             "kms:GrantIsForAWSResource": "true"
                         }
                     }
+                },
+                {
+                    "Action": [
+                        "ec2:RunInstances"
+                    ],
+                    "Effect": "Allow",
+                    "Resource": "*"
+                },
+                {
+                    "Action": [
+                        "ec2:TerminateInstances"
+                    ],
+                    "Effect": "Allow",
+                    "Resource": "arn:aws:ec2:*:*:instance/*"
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-10-03T19:10:42Z"
+        "CreateDate": "2020-01-13T16:04:56Z"
     }
 }
