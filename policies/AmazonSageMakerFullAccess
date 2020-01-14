@@ -30,11 +30,10 @@
                 },
                 {
                     "Effect": "Allow",
-                    "Action": [
-                        "sagemaker:*FlowDefinition",
-                        "sagemaker:*FlowDefinitions"
+                    "Action": "sagemaker:*",
+                    "Resource": [
+                        "arn:aws:sagemaker:*:*:flow-definition/*"
                     ],
-                    "Resource": "*",
                     "Condition": {
                         "StringEqualsIfExists": {
                             "sagemaker:WorkteamType": [
@@ -294,8 +293,8 @@
                 }
             ]
         },
-        "VersionId": "v15",
+        "VersionId": "v16",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-12-03T16:32:12Z"
+        "CreateDate": "2020-01-13T20:47:34Z"
     }
 }
