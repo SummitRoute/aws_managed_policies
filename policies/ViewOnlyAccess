@@ -51,8 +51,6 @@
                         "dax:DescribeParameterGroups",
                         "dax:DescribeParameters",
                         "dax:DescribeSubnetGroups",
-                        "dax:DescribeTable",
-                        "dax:ListTables",
                         "dax:ListTags",
                         "devicefarm:List*",
                         "directconnect:Describe*",
@@ -183,6 +181,8 @@
                         "route53:List*",
                         "route53:Get*",
                         "route53domains:List*",
+                        "route53resolver:Get*",
+                        "route53resolver:List*",
                         "s3:ListAllMyBuckets",
                         "s3:ListBucket",
                         "sagemaker:Describe*",
@@ -215,8 +215,8 @@
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-10-15T18:34:54Z"
+        "CreateDate": "2020-01-16T17:42:09Z"
     }
 }
