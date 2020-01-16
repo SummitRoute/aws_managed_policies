@@ -9,6 +9,8 @@
                         "elasticloadbalancing:AddListenerCertificates",
                         "elasticloadbalancing:RemoveListenerCertificates",
                         "elasticloadbalancing:ModifyListener",
+                        "elasticloadbalancing:DescribeListeners",
+                        "elasticloadbalancing:DescribeLoadBalancers",
                         "xray:PutTraceSegments",
                         "xray:PutTelemetryRecords",
                         "xray:GetSamplingTargets",
@@ -17,7 +19,8 @@
                         "logs:GetLogDelivery",
                         "logs:UpdateLogDelivery",
                         "logs:DeleteLogDelivery",
-                        "logs:ListLogDeliveries"
+                        "logs:ListLogDeliveries",
+                        "servicediscovery:DiscoverInstances"
                     ],
                     "Resource": [
                         "*"
@@ -38,11 +41,45 @@
                         "acm:DescribeCertificate"
                     ],
                     "Resource": "arn:aws:acm:*:*:certificate/*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "ec2:CreateNetworkInterfacePermission",
+                    "Resource": "arn:aws:ec2:*:*:network-interface/*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ec2:ModifyNetworkInterfaceAttribute",
+                        "ec2:DeleteNetworkInterface",
+                        "ec2:AssignPrivateIpAddresses",
+                        "ec2:CreateNetworkInterface",
+                        "ec2:DeleteNetworkInterfacePermission",
+                        "ec2:DescribeNetworkInterfaces",
+                        "ec2:DescribeAvailabilityZones",
+                        "ec2:DescribeNetworkInterfaceAttribute",
+                        "ec2:DescribeVpcs",
+                        "ec2:DescribeNetworkInterfacePermissions",
+                        "ec2:UnassignPrivateIpAddresses",
+                        "ec2:DescribeSubnets",
+                        "ec2:DescribeRouteTables"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "servicediscovery:GetNamespace",
+                    "Resource": "arn:aws:servicediscovery:*:*:namespace/*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "servicediscovery:GetService",
+                    "Resource": "arn:aws:servicediscovery:*:*:service/*"
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-10-22T18:22:01Z"
+        "CreateDate": "2020-01-15T20:18:59Z"
     }
 }

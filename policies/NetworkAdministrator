@@ -187,7 +187,7 @@
                     "Action": [
                         "s3:ListBucket",
                         "s3:GetBucketLocation",
-                        "s3:GetBucketWebsiteConfiguration"
+                        "s3:GetBucketWebsite"
                     ],
                     "Resource": [
                         "*"
@@ -235,8 +235,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-07-11T18:08:00Z"
+        "CreateDate": "2020-01-16T00:49:18Z"
     }
 }

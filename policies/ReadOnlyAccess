@@ -469,15 +469,23 @@
                         "workmail:Search*",
                         "workspaces:Describe*",
                         "xray:BatchGet*",
-                        "xray:Get*"
+                        "xray:Get*",
+                        "ram:Get*",
+                        "ram:List*",
+                        "eks:List*",
+                        "eks:Describe*",
+                        "config:select-resource-config",
+                        "mgh:GetHomeRegion",
+                        "elemental-appliances-software:List*",
+                        "elemental-appliances-software:Get*"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v58",
+        "VersionId": "v59",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-26T01:37:01Z"
+        "CreateDate": "2020-01-15T22:48:37Z"
     }
 }
