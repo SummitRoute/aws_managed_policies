@@ -179,8 +179,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v1",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-01-16T21:53:23Z"
+        "CreateDate": "2020-01-16T21:47:47Z"
     }
 }
