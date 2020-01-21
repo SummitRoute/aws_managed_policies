@@ -7,7 +7,6 @@
                     "Sid": "Permissions1",
                     "Effect": "Allow",
                     "Action": [
-                        "s3:HeadBucket",
                         "polly:SynthesizeSpeech",
                         "polly:DescribeVoices",
                         "translate:TranslateText"
@@ -52,6 +51,7 @@
                     "Sid": "Permissions4",
                     "Effect": "Allow",
                     "Action": [
+                        "acm:DeleteCertificate",
                         "cloudformation:DeleteStack",
                         "cloudformation:DescribeStackEvents",
                         "cloudformation:DescribeStackResources",
@@ -73,8 +73,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-10-30T00:27:46Z"
+        "CreateDate": "2020-01-20T23:20:47Z"
     }
 }
