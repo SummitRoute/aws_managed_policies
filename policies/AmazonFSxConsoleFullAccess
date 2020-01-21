@@ -14,7 +14,7 @@
                         "ec2:DescribeVpcs",
                         "fsx:*",
                         "kms:ListAliases",
-                        "s3:HeadBucket"
+                        "s3:ListBucket"
                     ],
                     "Resource": "*"
                 },
@@ -44,8 +44,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-09-10T13:11:13Z"
+        "CreateDate": "2020-01-21T16:42:58Z"
     }
 }
