@@ -56,7 +56,17 @@
                     "Effect": "Allow",
                     "Action": [
                         "resource-groups:ListGroups",
-                        "resource-groups:ListGroupResources"
+                        "resource-groups:ListGroupResources",
+                        "resource-groups:GetGroupQuery"
+                    ],
+                    "Resource": [
+                        "*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "cloudformation:DescribeStacks"
                     ],
                     "Resource": [
                         "*"
@@ -94,8 +104,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-10-24T23:36:39Z"
+        "CreateDate": "2020-01-22T21:46:17Z"
     }
 }

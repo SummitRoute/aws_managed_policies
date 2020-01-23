@@ -11,6 +11,7 @@
                         "dynamodb:UpdateItem",
                         "dynamodb:DeleteItem",
                         "dynamodb:DescribeTable",
+                        "dynamodb:UpdateTable",
                         "dynamodb:Scan",
                         "dynamodb:DescribeStream",
                         "dynamodb:GetRecords",
@@ -39,8 +40,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-07-02T21:48:12Z"
+        "CreateDate": "2020-01-22T22:55:38Z"
     }
 }

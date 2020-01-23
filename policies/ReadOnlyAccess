@@ -7,7 +7,6 @@
                     "Action": [
                         "a4b:Get*",
                         "a4b:List*",
-                        "a4b:Describe*",
                         "a4b:Search*",
                         "acm:Describe*",
                         "acm:Get*",
@@ -54,7 +53,6 @@
                         "cloudformation:Get*",
                         "cloudformation:List*",
                         "cloudformation:Estimate*",
-                        "cloudformation:Preview*",
                         "cloudfront:Get*",
                         "cloudfront:List*",
                         "cloudhsm:List*",
@@ -235,7 +233,6 @@
                         "guardduty:Get*",
                         "guardduty:List*",
                         "health:Describe*",
-                        "health:Get*",
                         "health:List*",
                         "iam:Generate*",
                         "iam:Get*",
@@ -247,7 +244,6 @@
                         "inspector:Get*",
                         "inspector:List*",
                         "inspector:Preview*",
-                        "inspector:LocalizeText",
                         "iot:Describe*",
                         "iot:Get*",
                         "iot:List*",
@@ -316,7 +312,6 @@
                         "lightsail:GetStaticIp",
                         "lightsail:GetStaticIps",
                         "lightsail:Is*",
-                        "lightsail:List*",
                         "logs:Describe*",
                         "logs:Get*",
                         "logs:FilterLogEvents",
@@ -367,7 +362,6 @@
                         "redshift:Describe*",
                         "redshift:GetReservedNodeExchangeOfferings",
                         "redshift:View*",
-                        "resource-groups:Describe*",
                         "resource-groups:Get*",
                         "resource-groups:List*",
                         "resource-groups:Search*",
@@ -385,7 +379,6 @@
                         "route53resolver:List*",
                         "s3:Get*",
                         "s3:List*",
-                        "s3:Head*",
                         "sagemaker:Describe*",
                         "sagemaker:GetSearchSuggestions",
                         "sagemaker:List*",
@@ -484,8 +477,8 @@
                 }
             ]
         },
-        "VersionId": "v59",
+        "VersionId": "v60",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-01-15T22:48:37Z"
+        "CreateDate": "2020-01-22T23:52:54Z"
     }
 }
