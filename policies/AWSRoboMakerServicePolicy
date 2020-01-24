@@ -21,7 +21,9 @@
                         "greengrass:GetCoreDefinitionVersion",
                         "greengrass:GetFunctionDefinitionVersion",
                         "greengrass:GetAssociatedRole",
-                        "lambda:CreateFunction"
+                        "lambda:CreateFunction",
+                        "robomaker:CreateSimulationJob",
+                        "robomaker:CancelSimulationJob"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
@@ -46,15 +48,18 @@
                     "Action": "iam:PassRole",
                     "Resource": "*",
                     "Condition": {
-                        "StringEqualsIfExists": {
-                            "iam:PassedToService": "lambda.amazonaws.com"
+                        "StringEquals": {
+                            "iam:PassedToService": [
+                                "lambda.amazonaws.com",
+                                "robomaker.amazonaws.com"
+                            ]
                         }
                     }
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-04-04T22:15:35Z"
+        "CreateDate": "2020-01-23T20:44:52Z"
     }
 }
