@@ -12,6 +12,7 @@
                         "ec2:DescribeSubnets",
                         "elasticfilesystem:DescribeFileSystems",
                         "elasticfilesystem:DescribeMountTargets",
+                        "fsx:DescribeFileSystems",
                         "iam:GetRole",
                         "iam:ListRoles",
                         "logs:DescribeLogGroups",
@@ -22,8 +23,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-01-18T19:18:44Z"
+        "CreateDate": "2020-01-24T17:59:11Z"
     }
 }
