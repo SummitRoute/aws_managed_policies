@@ -25,18 +25,15 @@ cat list-policies.json | jq -cr '.Policies[] | select(.Arn | contains("iam::aws"
 
 This does the following:
 
-- Gets the list of all policies in the account
+- Gets the list of all IAM Policies in the AWS account
 - Finds the ones with an ARN containing `iam::aws`, so that only the AWS managed policies are grabbed.
 - Gets the ARN, current version id, and policy name (needed so we don't have a slash like the ARN does for writing a file)
 - Calls `aws iam get-policy-version` with those values, and writes the output to a file using the policy name.
 
-### Automation Steps
+### Automation Details
 
 - Infrastructure is deployed using:
-  - EC2: CloudFormation
   - Fargate: Terraform
-- Update the Operating System (OS)
-- Install requirements: `git`, `jq`, `add SSH private key`
 - Clone this repository
 - Run the magic (previous mentioned command)
 - If changes detected:
@@ -45,13 +42,8 @@ This does the following:
 
 #### Schedule
 
-- EC2 Instance: Once a day using Spot Instance
-- Fargate: Every 6 hours (Current active version)
+- Fargate (Spot): Every 4 hours (Current active version)
 
-### EC2 Version Schema (CloudFormation)
-
-![schema ec2](assets/schema-ec2.png)
-
-### Fargate Version Schema (Terraform)
+### Fargate Version (Terraform)
 
 ![schema fargate](assets/schema-fargate.png)

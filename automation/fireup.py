@@ -22,4 +22,4 @@ def lambda_handler(event, context):
             },
             'SecurityGroupIds': ['sg-00b1e08a72cdc96d8']
         }
- )
+)

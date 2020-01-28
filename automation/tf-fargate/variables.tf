@@ -46,7 +46,7 @@ variable "security_groups" {
 }
 
 variable "schedule" {
-  default     = "rate(6 hours)"
+  default     = "rate(4 hours)"
   description = "Schedule for your job"
 }
 

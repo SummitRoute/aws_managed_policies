@@ -1,6 +1,17 @@
 
 resource "aws_ecs_cluster" "ecs_cluster" {
   name = "${var.project}_ecs_cluster_${var.env}"
+  capacity_providers = ["FARGATE_SPOT"]
+  
+  setting {
+      name  = "containerInsights"
+      value = "enabled"
+  }
+
+  default_capacity_provider_strategy {
+    capacity_provider = "FARGATE_SPOT"
+    weight            = "100"
+  }
   
   tags = {
     Project = "${var.project}"
