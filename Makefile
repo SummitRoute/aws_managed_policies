@@ -5,9 +5,11 @@ help:
 	@echo "${DESCRIPTION}"
 	@echo ""
 	@echo "	build-docker - build docker image"
-	@echo "	tf-plan - init, validate and plan (dryrun) IaC using Terraform"
-	@echo "	tf-deploy - deploy the IaC using Terraform"
-	@echo "	tf-destroy - delete all previously created infrastructure using Terraform"
+	@echo "	init - init IaC using Terraform"
+	@echo "	validate - validate the IaC using Terraform"
+	@echo "	plan - plan (dryrun) IaC using Terraform"
+	@echo "	apply - deploy the IaC using Terraform"
+	@echo "	destroy - delete all previously created infrastructure using Terraform"
 	@echo "	all - package + update-script + deploy"
 	@echo "	clean - clean the build folder"
 	@echo "	clean-layer - clean the layer folder"
@@ -36,32 +38,34 @@ build-docker:
 	@docker push $(ECR)
 
 ################ Terraform #####################
-tf-plan:
+init:
 	@terraform init \
 		-backend-config="bucket=$(S3_BUCKET)" \
 		-backend-config="key=$(PROJECT)/terraform.tfstate" \
 		./automation/tf-fargate/
 
+validate:
 	@terraform validate ./automation/tf-fargate/
 
-	terraform plan \
+plan:
+	@terraform plan \
 		-var="env=$(ENV)" \
 		-var="project=$(PROJECT)" \
 		-var="description=$(DESCRIPTION)" \
 		-var="aws_region=$(AWS_REGION)" \
 		-var="artifacts_bucket=$(S3_BUCKET)" \
-		-state="$(PROJECT)-$(ENV)-$(AWS_REGION).tfstate" \
-		-out="$(PROJECT)-$(ENV)-$(AWS_REGION).tfplan" \
 		./automation/tf-fargate/
 
-tf-deploy:
-	terraform apply \
-		-state="$(PROJECT)-$(ENV)-$(AWS_REGION).tfstate" \
-			$(PROJECT)-$(ENV)-$(AWS_REGION).tfplan
+apply:
+	@terraform apply \
+		-var="env=$(ENV)" \
+		-var="project=$(PROJECT)" \
+		-var="description=$(DESCRIPTION)" \
+		-compact-warnings ./automation/tf-fargate/
 
-tf-destroy:
+destroy:
 	@read -p "Are you sure that you want to destroy: '$(PROJECT)-$(ENV)-$(AWS_REGION)'? [yes/N]: " sure && [ $${sure:-N} = 'yes' ]
-	terraform destroy ./automation/tf-fargate/
+	@terraform destroy ./automation/tf-fargate/
 
 ################################################
 
@@ -127,7 +131,7 @@ clean:
 cleaning: clean clean-layer
 
 deploy:
-	aws cloudformation deploy \
+	@aws cloudformation deploy \
 			--template-file automation/build/template-lambda.yml \
 			--region ${AWS_REGION} \
 			--stack-name "${PROJECT}-${ENV}" \
