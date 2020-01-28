@@ -35,7 +35,7 @@ variable "ecs_taskexec_role" {
 
 variable "subnets" {
   type        = list(string)
-  default     = ["subnet-0877cf6c"]
+  default     = ["subnet-0877cf6c", "subnet-b3e648c5", "subnet-40738a18"]
   description = "Subnets used for Fargate Containers"
 }
 
@@ -51,7 +51,7 @@ variable "schedule" {
 }
 
 variable "assign_public_ip" {
-  default     = "false"
+  default     = "true"
   description = "Set public IP on Fargate Container"
 }
 

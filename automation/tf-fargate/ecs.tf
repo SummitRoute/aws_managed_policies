@@ -14,7 +14,8 @@ resource "aws_ecs_cluster" "ecs_cluster" {
   }
   
   tags = {
-    Project = "${var.project}"
+    Project     = "${var.project}"
+    Environment = "${var.env}"
   }
 }
 
