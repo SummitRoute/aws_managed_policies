@@ -5,8 +5,8 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/fargate-task-definition",
-          "awslogs-region": "eu-west-1",
+          "awslogs-group": "/ecs/${project}",
+          "awslogs-region": "${aws_region}",
           "awslogs-stream-prefix": "ecs"
         }
       },
@@ -27,7 +27,7 @@
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "567589703415.dkr.ecr.eu-west-1.amazonaws.com/mamip-ecr-dev:latest",
+      "image": "${container_image}",
       "startTimeout": null,
       "dependsOn": null,
       "disableNetworking": null,
@@ -43,6 +43,6 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "mamip-container"
+      "name": "${project}-container"
     }
 ]

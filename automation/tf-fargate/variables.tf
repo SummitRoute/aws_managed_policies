@@ -13,6 +13,11 @@ variable "project" {
   description = "Project Name"
 }
 
+variable "container_image" {
+  default     = "567589703415.dkr.ecr.eu-west-1.amazonaws.com/mamip-ecr-dev:latest"
+}
+
+
 variable "description" {
   default     = "empty-project-description"
   description = "Project Description"

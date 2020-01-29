@@ -1,6 +1,6 @@
 
 resource "aws_ecs_cluster" "ecs_cluster" {
-  name = "${var.project}_ecs_cluster_${var.env}"
+  name               = "${var.project}_ecs_cluster_${var.env}"
   capacity_providers = ["FARGATE_SPOT"]
   
   setting {
@@ -20,7 +20,12 @@ resource "aws_ecs_cluster" "ecs_cluster" {
 }
 
 data "template_file" "mamip_task" {
-  template = "${file("./automation/tf-fargate/tasks/task_definition.json")}"
+  template = "${file("./automation/tf-fargate/tasks/task_definition.tpl")}"
+  vars = {
+    container_image  = "${var.container_image}"
+    project          = "${var.project}"
+    aws_region       = "${var.aws_region}"
+  }
 }
 
 resource "aws_ecs_task_definition" "mamip_td" {
@@ -34,7 +39,8 @@ resource "aws_ecs_task_definition" "mamip_td" {
   task_role_arn            = "${aws_iam_role.ecs_role.arn}"
   
   tags = {
-    Project = "${var.project}"
+    Project     = "${var.project}"
+    Environment = "${var.env}"
   }
 }
 
