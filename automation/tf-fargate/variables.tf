@@ -17,6 +17,9 @@ variable "container_image" {
   default     = "567589703415.dkr.ecr.eu-west-1.amazonaws.com/mamip-ecr-dev:latest"
 }
 
+variable "log_group_retention" {
+  default     = "90"
+}
 
 variable "description" {
   default     = "empty-project-description"

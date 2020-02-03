@@ -44,3 +44,12 @@ resource "aws_ecs_task_definition" "mamip_td" {
   }
 }
 
+resource "aws_cloudwatch_log_group" "log_group" {
+  name              = "/ecs/${var.project}"
+  retention_in_days = "${var.log_group_retention}"
+
+  tags = {
+    Project     = "${var.project}"
+    Environment = "${var.env}"
+  }
+}
