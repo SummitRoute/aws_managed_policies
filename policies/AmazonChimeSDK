@@ -1,0 +1,27 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Action": [
+                        "chime:CreateMeeting",
+                        "chime:DeleteMeeting",
+                        "chime:GetMeeting",
+                        "chime:ListMeetings",
+                        "chime:CreateAttendee",
+                        "chime:BatchCreateAttendee",
+                        "chime:DeleteAttendee",
+                        "chime:GetAttendee",
+                        "chime:ListAttendees"
+                    ],
+                    "Effect": "Allow",
+                    "Resource": "*"
+                }
+            ]
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2020-02-04T21:53:37Z"
+    }
+}
