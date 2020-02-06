@@ -17,6 +17,7 @@
                         "ec2:DescribeSubnets",
                         "ecr:DescribeRepositories",
                         "ecr:ListImages",
+                        "elasticfilesystem:DescribeFileSystems",
                         "events:DeleteRule",
                         "events:DescribeRule",
                         "events:DisableRule",
@@ -96,8 +97,8 @@
                 }
             ]
         },
-        "VersionId": "v8",
+        "VersionId": "v9",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-05T22:12:30Z"
+        "CreateDate": "2020-02-06T20:26:30Z"
     }
 }
