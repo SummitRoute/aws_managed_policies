@@ -18,14 +18,18 @@
                         "ec2:DescribeVpcs",
                         "ec2:ModifyNetworkInterfaceAttribute",
                         "ec2:RevokeSecurityGroupIngress",
-                        "cloudwatch:PutMetricData"
+                        "cloudwatch:PutMetricData",
+                        "outposts:GetOutpost",
+                        "outposts:GetOutpostInstanceTypes",
+                        "outposts:ListOutposts",
+                        "outposts:ListSites"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-09-25T23:09:07Z"
+        "CreateDate": "2020-02-06T21:27:13Z"
     }
 }
