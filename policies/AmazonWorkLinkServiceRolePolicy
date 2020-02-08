@@ -21,11 +21,20 @@
                         "kinesis:PutRecords"
                     ],
                     "Resource": "arn:aws:kinesis:*:*:stream/AmazonWorkLink-*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "elasticloadbalancing:ModifyListener",
+                        "elasticloadbalancing:AddListenerCertificates",
+                        "elasticloadbalancing:RemoveListenerCertificates"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-03-18T18:00:16Z"
+        "CreateDate": "2020-02-07T20:48:49Z"
     }
 }
