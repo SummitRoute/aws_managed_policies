@@ -16,7 +16,9 @@
                     "Action": [
                         "codecommit:GetCommentsForPullRequest",
                         "codecommit:GetCommentsForComparedCommit",
-                        "codepipeline:GetPipeline"
+                        "codecommit:GetDifferences",
+                        "codepipeline:GetPipeline",
+                        "codepipeline:ListActionExecutions"
                     ],
                     "Resource": "*",
                     "Effect": "Allow"
@@ -35,8 +37,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-12-12T23:00:09Z"
+        "CreateDate": "2020-02-12T17:52:12Z"
     }
 }
