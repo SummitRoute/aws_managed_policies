@@ -10,7 +10,7 @@
                         "rds:CreateDBInstance"
                     ],
                     "Resource": [
-                        "arn:aws:rds:*"
+                        "arn:aws:rds:*:*:*"
                     ],
                     "Condition": {
                         "StringEquals": {
@@ -97,7 +97,6 @@
                         "ec2:DescribeSubnets",
                         "ec2:DescribeVpcAttribute",
                         "ec2:DescribeVpcs",
-                        "iam:PassRole",
                         "kms:ListAliases",
                         "kms:ListKeyPolicies",
                         "kms:ListKeys",
@@ -114,6 +113,16 @@
                     ]
                 },
                 {
+                    "Action": "iam:PassRole",
+                    "Effect": "Allow",
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:passedToService": "rds.amazonaws.com"
+                        }
+                    }
+                },
+                {
                     "Action": "iam:CreateServiceLinkedRole",
                     "Effect": "Allow",
                     "Resource": "arn:aws:iam::*:role/aws-service-role/rds.amazonaws.com/AWSServiceRoleForRDS",
@@ -125,8 +134,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-11-06T21:21:19Z"
+        "CreateDate": "2020-02-12T23:28:19Z"
     }
 }
