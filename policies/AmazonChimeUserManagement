@@ -39,15 +39,18 @@
                         "chime:GetPhoneNumber",
                         "chime:ListPhoneNumbers",
                         "chime:GetUserSettings",
-                        "chime:UpdateUserSettings"
+                        "chime:UpdateUserSettings",
+                        "chime:CreateUser",
+                        "chime:AssociateSigninDelegateGroupsWithAccount",
+                        "chime:DisassociateSigninDelegateGroupsFromAccount"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-12-10T19:30:07Z"
+        "CreateDate": "2020-02-18T19:26:10Z"
     }
 }

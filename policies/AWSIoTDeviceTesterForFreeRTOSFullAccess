@@ -42,7 +42,8 @@
                         "iot:DeleteCACertificate",
                         "signer:PutSigningProfile",
                         "s3:ListAllMyBuckets",
-                        "signer:ListSigningPlatforms"
+                        "signer:ListSigningPlatforms",
+                        "iot-device-tester:SendMetrics"
                     ],
                     "Resource": "*"
                 },
@@ -62,8 +63,8 @@
                     ],
                     "Resource": [
                         "arn:aws:execute-api:us-east-1:098862408343:9xpmnvs5h4/prod/POST/metrics",
-                        "arn:aws:signer:*:*:/signing-profiles/idt*",
-                        "arn:aws:signer:*::/signing-jobs/*",
+                        "arn:aws:signer:*:*:/signing-profiles/*",
+                        "arn:aws:signer:*:*:/signing-jobs/*",
                         "arn:aws:iam::*:role/idt-*",
                         "arn:aws:acm:*:*:certificate/*",
                         "arn:aws:s3:::idt-*",
@@ -136,8 +137,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-02-12T20:33:53Z"
+        "CreateDate": "2020-02-18T18:05:37Z"
     }
 }
