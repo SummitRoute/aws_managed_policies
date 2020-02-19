@@ -9,7 +9,6 @@ ENV AWS_REGION=eu-west-1
 
 WORKDIR /app
 
-# Handle the bash job
 COPY script-fargate.sh /app/script.sh
 RUN chmod +x /app/script.sh
 

@@ -17,7 +17,7 @@ help:
 	@echo "	deploy - deploy the lambda function"
 	@echo "	layer - prepare the layer"
 	@echo "	package - prepare the package"
-	@echo "	update-script - update the bash script on S3 bucket"
+	@echo "	update-runbook - update the runbook script on S3 artifacts bucket"
 
 ################ Project #######################
 PROJECT ?= mamip
@@ -26,15 +26,16 @@ DESCRIPTION ?= Monitor AWS Managed IAM Policies Changes
 
 ################ Config ########################
 S3_BUCKET ?= zoph-lab-terraform-tfstate
+ARTIFACTS_BUCKET ?= mamip-artifacts
 AWS_REGION ?= eu-west-1
 ENV ?= dev
 ECR ?= 567589703415.dkr.ecr.eu-west-1.amazonaws.com/mamip-ecr-dev
 ################################################
 
 build-docker:
-	@echo "run aws ecr get-login --region $(AWS_REGION) first"
 	@docker build -t mamip-image ./automation/
 	@docker tag mamip-image $(ECR)
+	# aws-vault exec zoph -- aws ecr get-login-password | docker login --username AWS --password-stdin 567589703415.dkr.ecr.eu-west-1.amazonaws.com/mamip-ecr-dev
 	@docker push $(ECR)
 
 ################ Terraform #####################
@@ -85,9 +86,9 @@ package: clean
 	@echo "Copying updated cloud template to S3 bucket"
 	aws s3 cp automation/build/template-lambda.yml 's3://${S3_BUCKET}/template-lambda.yml'
 
-update-script:
-	@echo "Copying update script.sh in artifacts s3 bucket"
-	aws s3 cp automation/script-ec2.sh 's3://${S3_BUCKET}/script.sh'
+update-runbook:
+	@echo "Copying runbook scripts in artifacts s3 bucket"
+	aws s3 cp automation/runbook.sh 's3://${ARTIFACTS_BUCKET}/runbook.sh'
 
 layer: clean-layer
 	pip3 install \

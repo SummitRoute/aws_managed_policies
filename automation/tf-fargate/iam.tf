@@ -24,6 +24,13 @@ data "aws_iam_policy_document" "ecs_service_policy" {
         "iam:GetPolicyVersion"
     ]
   }
+  statement {
+    effect = "Allow"
+    resources = ["arn:aws:sqs:eu-west-1:567589703415:qtweet-sqs-queue.fifo"]
+    actions = [
+        "sqs:SendMessage"
+    ]
+  }
 }
 
 data "aws_iam_policy_document" "ecs_service_assume_role_policy" {
