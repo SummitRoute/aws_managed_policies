@@ -16,15 +16,17 @@
                         "cloudfront:*",
                         "iam:ListServerCertificates",
                         "waf:ListWebACLs",
-                        "waf:GetWebACL"
+                        "waf:GetWebACL",
+                        "wafv2:ListWebACLs",
+                        "wafv2:GetWebACL"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2016-01-21T17:03:57Z"
+        "CreateDate": "2020-02-19T19:52:00Z"
     }
 }
