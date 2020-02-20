@@ -12,11 +12,36 @@
                     "Resource": [
                         "*"
                     ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "ec2:CreateTags",
+                    "Resource": [
+                        "arn:aws:ec2:*:*:instance/*",
+                        "arn:aws:ec2:*:*:image/*"
+                    ],
+                    "Condition": {
+                        "ForAllValues:StringEquals": {
+                            "aws:TagKeys": "aws:migrationhub:source-id"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "dms:AddTagsToResource",
+                    "Resource": [
+                        "arn:aws:dms:*:*:endpoint:*"
+                    ],
+                    "Condition": {
+                        "ForAllValues:StringEquals": {
+                            "aws:TagKeys": "aws:migrationhub:source-id"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-06-12T17:22:16Z"
+        "CreateDate": "2020-02-20T16:59:36Z"
     }
 }
