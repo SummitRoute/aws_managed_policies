@@ -13,6 +13,10 @@ variable "project" {
   description = "Project Name"
 }
 
+variable "qtweeter_sqs_arn" {
+  default     = "arn:aws:sqs:eu-west-1:567589703415:qtweet-mamip-sqs-queue.fifo"
+}
+
 variable "container_image" {
   default     = "567589703415.dkr.ecr.eu-west-1.amazonaws.com/mamip-ecr-dev:latest"
 }

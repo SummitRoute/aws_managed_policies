@@ -26,7 +26,7 @@ data "aws_iam_policy_document" "ecs_service_policy" {
   }
   statement {
     effect = "Allow"
-    resources = ["arn:aws:sqs:eu-west-1:567589703415:qtweet-sqs-queue.fifo"]
+    resources = ["${var.qtweeter_sqs_arn}"]
     actions = [
         "sqs:SendMessage"
     ]
