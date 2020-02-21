@@ -25,6 +25,7 @@
                         "ec2:DescribeVolumesModifications",
                         "ec2:DescribeVpcs",
                         "ec2:DescribeDhcpOptions",
+                        "ec2:DescribeNetworkInterfaces",
                         "ec2:DetachVolume",
                         "ec2:ModifyInstanceAttribute",
                         "ec2:ModifyVolume",
@@ -76,8 +77,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-05-22T22:04:46Z"
+        "CreateDate": "2020-02-21T20:10:11Z"
     }
 }
