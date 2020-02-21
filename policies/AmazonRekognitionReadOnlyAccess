@@ -23,6 +23,7 @@
                         "rekognition:GetPersonTracking",
                         "rekognition:GetCelebrityRecognition",
                         "rekognition:GetFaceSearch",
+                        "rekognition:GetTextDetection",
                         "rekognition:DescribeStreamProcessor",
                         "rekognition:ListStreamProcessors",
                         "rekognition:DescribeProjects",
@@ -33,8 +34,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-01-08T20:02:40Z"
+        "CreateDate": "2020-02-20T21:26:20Z"
     }
 }
