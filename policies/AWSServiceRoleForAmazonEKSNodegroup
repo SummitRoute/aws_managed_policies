@@ -124,7 +124,10 @@
                     "Resource": "*",
                     "Condition": {
                         "StringEqualsIfExists": {
-                            "iam:PassedToService": "ec2.amazonaws.com"
+                            "iam:PassedToService": [
+                                "ec2.amazonaws.com",
+                                "ec2.amazonaws.com.cn"
+                            ]
                         }
                     }
                 },
@@ -179,8 +182,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
-        "IsDefaultVersion": false,
-        "CreateDate": "2020-01-16T21:53:23Z"
+        "VersionId": "v3",
+        "IsDefaultVersion": true,
+        "CreateDate": "2020-02-21T20:40:41Z"
     }
 }
