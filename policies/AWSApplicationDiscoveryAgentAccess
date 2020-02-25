@@ -9,11 +9,18 @@
                         "arsenal:RegisterOnPremisesAgent"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "mgh:GetHomeRegion"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2016-05-11T21:38:47Z"
+        "CreateDate": "2020-02-24T22:26:45Z"
     }
 }
