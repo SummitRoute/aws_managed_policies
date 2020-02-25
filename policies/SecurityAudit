@@ -7,12 +7,22 @@
                     "Effect": "Allow",
                     "Resource": "*",
                     "Action": [
+                        "access-analyzer:GetAnalyzedResource",
+                        "access-analyzer:GetAnalyzer",
+                        "access-analyzer:GetArchiveRule",
+                        "access-analyzer:GetFinding",
+                        "access-analyzer:ListAnalyzedResources",
+                        "access-analyzer:ListAnalyzers",
+                        "access-analyzer:ListArchiveRules",
+                        "access-analyzer:ListFindings",
+                        "access-analyzer:ListTagsForResource",
                         "acm:Describe*",
                         "acm:List*",
                         "application-autoscaling:Describe*",
                         "appmesh:Describe*",
                         "appmesh:List*",
                         "appsync:List*",
+                        "athena:GetWorkGroup",
                         "athena:List*",
                         "autoscaling:Describe*",
                         "batch:DescribeComputeEnvironments",
@@ -182,6 +192,9 @@
                         "route53resolver:List*",
                         "route53resolver:Get*",
                         "s3:GetAccelerateConfiguration",
+                        "s3:GetAccessPoint",
+                        "s3:GetAccessPointPolicy",
+                        "s3:GetAccessPointPolicyStatus",
                         "s3:GetAccountPublicAccessBlock",
                         "s3:GetAnalyticsConfiguration",
                         "s3:GetBucket*",
@@ -192,6 +205,7 @@
                         "s3:GetObjectAcl",
                         "s3:GetObjectVersionAcl",
                         "s3:GetReplicationConfiguration",
+                        "s3:ListAccessPoints",
                         "s3:ListAllMyBuckets",
                         "sagemaker:Describe*",
                         "sagemaker:List*",
@@ -278,8 +292,8 @@
                 }
             ]
         },
-        "VersionId": "v31",
+        "VersionId": "v32",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-10-15T21:02:23Z"
+        "CreateDate": "2020-02-25T16:08:50Z"
     }
 }
