@@ -85,7 +85,8 @@
                         "iot:CreateKeysAndCertificate",
                         "iot:ListThings",
                         "iot:UpdateThingShadow",
-                        "iot:CreateCertificateFromCsr"
+                        "iot:CreateCertificateFromCsr",
+                        "iot-device-tester:SendMetrics"
                     ],
                     "Resource": "*"
                 },
@@ -103,8 +104,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-02-20T21:21:27Z"
+        "CreateDate": "2020-02-26T18:26:52Z"
     }
 }
