@@ -28,7 +28,10 @@
                         "iot:RemoveThingFromThingGroup",
                         "iot:UpdateCertificate",
                         "iot:UpdateThing",
-                        "iot:UpdateThingGroupsForThing"
+                        "iot:UpdateThingGroupsForThing",
+                        "iot:AddThingToBillingGroup",
+                        "iot:DescribeBillingGroup",
+                        "iot:RemoveThingFromBillingGroup"
                     ],
                     "Resource": [
                         "*"
@@ -36,8 +39,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2017-12-01T20:21:52Z"
+        "CreateDate": "2020-02-27T23:27:23Z"
     }
 }
