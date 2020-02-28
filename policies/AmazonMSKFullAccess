@@ -11,7 +11,12 @@
                         "ec2:DescribeVpcs",
                         "ec2:DescribeSecurityGroups",
                         "kms:DescribeKey",
-                        "kms:CreateGrant"
+                        "kms:CreateGrant",
+                        "logs:CreateLogDelivery",
+                        "logs:GetLogDelivery",
+                        "logs:UpdateLogDelivery",
+                        "logs:DeleteLogDelivery",
+                        "logs:ListLogDeliveries"
                     ],
                     "Resource": "*"
                 },
@@ -35,8 +40,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-01-14T22:07:52Z"
+        "CreateDate": "2020-02-28T01:16:55Z"
     }
 }
