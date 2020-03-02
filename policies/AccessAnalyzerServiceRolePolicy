@@ -13,6 +13,10 @@
                         "s3:GetBucketAcl",
                         "s3:GetBucketLocation",
                         "s3:GetBucketPolicy",
+                        "s3:ListAccessPoints",
+                        "s3:GetAccessPoint",
+                        "s3:GetAccessPointPolicy",
+                        "s3:GetAccessPointPolicyStatus",
                         "iam:GetRole",
                         "iam:ListRoles",
                         "kms:DescribeKey",
@@ -47,8 +51,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-12-02T17:13:10Z"
+        "CreateDate": "2020-03-02T15:55:03Z"
     }
 }
