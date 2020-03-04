@@ -16,7 +16,8 @@
                     "Action": [
                         "organizations:ListAccounts",
                         "organizations:DescribeOrganization",
-                        "organizations:ListAWSServiceAccessForOrganization"
+                        "organizations:ListAWSServiceAccessForOrganization",
+                        "organizations:DescribeAccount"
                     ],
                     "Resource": "*"
                 },
@@ -60,8 +61,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-13T18:22:26Z"
+        "CreateDate": "2020-03-04T16:51:40Z"
     }
 }
