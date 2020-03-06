@@ -12,6 +12,10 @@
                         "aws-marketplace:CancelChangeSet",
                         "aws-marketplace:ListEntities",
                         "aws-marketplace:DescribeEntity",
+                        "aws-marketplace:ListTasks",
+                        "aws-marketplace:DescribeTask",
+                        "aws-marketplace:UpdateTask",
+                        "aws-marketplace:CompleteTask",
                         "ec2:DescribeImages",
                         "ec2:DescribeSnapshots",
                         "ec2:ModifyImageAttribute",
@@ -21,8 +25,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-07-02T21:06:25Z"
+        "CreateDate": "2020-03-05T23:11:44Z"
     }
 }

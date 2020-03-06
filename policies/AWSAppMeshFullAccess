@@ -38,14 +38,16 @@
                     "Effect": "Allow",
                     "Action": [
                         "acm:ListCertificates",
-                        "acm:DescribeCertificate"
+                        "acm:DescribeCertificate",
+                        "acm-pca:DescribeCertificateAuthority",
+                        "acm-pca:ListCertificateAuthorities"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-10-03T22:28:34Z"
+        "CreateDate": "2020-03-05T23:36:53Z"
     }
 }
