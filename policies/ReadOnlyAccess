@@ -127,6 +127,7 @@
                         "config:Describe*",
                         "config:Get*",
                         "config:List*",
+                        "config:SelectResourceConfig",
                         "connect:List*",
                         "connect:Describe*",
                         "connect:GetFederationToken",
@@ -182,8 +183,10 @@
                         "ecs:List*",
                         "eks:DescribeCluster",
                         "eks:DescribeUpdate",
+                        "eks:Describe*",
                         "eks:ListClusters",
                         "eks:ListUpdates",
+                        "eks:List*",
                         "elasticache:Describe*",
                         "elasticache:List*",
                         "elasticbeanstalk:Check*",
@@ -199,6 +202,8 @@
                         "elasticmapreduce:View*",
                         "elastictranscoder:List*",
                         "elastictranscoder:Read*",
+                        "elemental-appliances-software:Get*",
+                        "elemental-appliances-software:List*",
                         "es:Describe*",
                         "es:List*",
                         "es:Get*",
@@ -354,6 +359,7 @@
                         "mediapackage:List*",
                         "mediapackage:Describe*",
                         "mgh:Describe*",
+                        "mgh:GetHomeRegion",
                         "mgh:List*",
                         "mobileanalytics:Get*",
                         "mobilehub:Describe*",
@@ -392,6 +398,8 @@
                         "qldb:GetRevision",
                         "qldb:GetBlock",
                         "qldb:ListTagsForResource",
+                        "ram:Get*",
+                        "ram:List*",
                         "rekognition:CompareFaces",
                         "rekognition:Detect*",
                         "rekognition:List*",
@@ -511,23 +519,15 @@
                         "workmail:Search*",
                         "workspaces:Describe*",
                         "xray:BatchGet*",
-                        "xray:Get*",
-                        "ram:Get*",
-                        "ram:List*",
-                        "eks:List*",
-                        "eks:Describe*",
-                        "config:select-resource-config",
-                        "mgh:GetHomeRegion",
-                        "elemental-appliances-software:List*",
-                        "elemental-appliances-software:Get*"
+                        "xray:Get*"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v61",
+        "VersionId": "v62",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-02-06T23:35:13Z"
+        "CreateDate": "2020-03-06T19:30:29Z"
     }
 }

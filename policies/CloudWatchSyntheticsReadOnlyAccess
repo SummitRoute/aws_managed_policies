@@ -7,14 +7,15 @@
                     "Effect": "Allow",
                     "Action": [
                         "synthetics:Describe*",
-                        "synthetics:Get*"
+                        "synthetics:Get*",
+                        "synthetics:List*"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-25T17:45:40Z"
+        "CreateDate": "2020-03-06T19:26:01Z"
     }
 }
