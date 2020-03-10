@@ -205,6 +205,7 @@
                         "trustedadvisor:Describe*",
                         "waf:List*",
                         "waf-regional:List*",
+                        "wafv2:List*",
                         "workdocs:DescribeAvailableDirectories",
                         "workdocs:DescribeInstances",
                         "workmail:Describe*",
@@ -215,8 +216,8 @@
                 }
             ]
         },
-        "VersionId": "v8",
+        "VersionId": "v9",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-01-16T17:42:09Z"
+        "CreateDate": "2020-03-09T23:53:28Z"
     }
 }

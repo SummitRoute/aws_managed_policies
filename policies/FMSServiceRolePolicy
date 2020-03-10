@@ -180,11 +180,74 @@
                     "Resource": [
                         "*"
                     ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "wafv2:TagResource",
+                        "wafv2:ListResourcesForWebACL",
+                        "wafv2:AssociateWebACL",
+                        "wafv2:ListTagsForResource",
+                        "wafv2:UntagResource",
+                        "wafv2:GetWebACL",
+                        "wafv2:DisassociateFirewallManager",
+                        "wafv2:DeleteWebACL",
+                        "wafv2:DisassociateWebACL"
+                    ],
+                    "Resource": [
+                        "arn:aws:wafv2:*:*:global/webacl/*",
+                        "arn:aws:wafv2:*:*:regional/webacl/*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "wafv2:UpdateWebACL",
+                        "wafv2:CreateWebACL",
+                        "wafv2:DeleteFirewallManagerRuleGroups",
+                        "wafv2:PutFirewallManagerRuleGroups"
+                    ],
+                    "Resource": [
+                        "arn:aws:wafv2:*:*:global/webacl/*",
+                        "arn:aws:wafv2:*:*:regional/webacl/*",
+                        "arn:aws:wafv2:*:*:global/rulegroup/*",
+                        "arn:aws:wafv2:*:*:regional/rulegroup/*",
+                        "arn:aws:wafv2:*:*:global/managedruleset/*",
+                        "arn:aws:wafv2:*:*:regional/managedruleset/*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "wafv2:PutPermissionPolicy",
+                        "wafv2:GetPermissionPolicy",
+                        "wafv2:DeletePermissionPolicy"
+                    ],
+                    "Resource": [
+                        "arn:aws:wafv2:*:*:global/rulegroup/*",
+                        "arn:aws:wafv2:*:*:regional/rulegroup/*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "cloudfront:ListTagsForResource"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "wafv2:GetWebACLForResource"
+                    ],
+                    "Resource": [
+                        "arn:aws:wafv2:*:*:regional/webacl/*"
+                    ]
                 }
             ]
         },
-        "VersionId": "v8",
+        "VersionId": "v9",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-08-14T21:35:01Z"
+        "CreateDate": "2020-03-09T22:10:00Z"
     }
 }
