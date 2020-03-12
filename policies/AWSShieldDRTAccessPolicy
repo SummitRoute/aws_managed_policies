@@ -33,10 +33,12 @@
                     "Effect": "Allow",
                     "Action": [
                         "waf:*",
+                        "wafv2:*",
                         "waf-regional:*"
                     ],
                     "Resource": [
                         "arn:aws:waf:*",
+                        "arn:aws:wafv2:*:*:*:*",
                         "arn:aws:waf-regional:*"
                     ]
                 },
@@ -50,8 +52,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-02-11T17:08:57Z"
+        "CreateDate": "2020-03-12T19:11:00Z"
     }
 }

@@ -11,7 +11,6 @@
                         "iam:DeleteRole",
                         "iam:DeleteRolePolicy",
                         "iam:DetachRolePolicy",
-                        "iam:GetRole",
                         "iam:ListRolePolicies",
                         "iam:PutRolePolicy",
                         "iam:ListAttachedRolePolicies",
@@ -25,6 +24,7 @@
                     "Sid": "ListRolesInTheAccount",
                     "Effect": "Allow",
                     "Action": [
+                        "iam:GetRole",
                         "iam:ListRoles"
                     ],
                     "Resource": [
@@ -90,8 +90,8 @@
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-08-30T19:55:59Z"
+        "CreateDate": "2020-03-12T20:36:59Z"
     }
 }
