@@ -20,6 +20,7 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "logs:FilterLogEvents",
                         "logs:GetLogEvents",
                         "logs:DescribeLogStreams",
                         "logs:DescribeLogGroups"
@@ -173,11 +174,45 @@
                     "Resource": [
                         "*"
                     ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "lambda:GetFunctionConfiguration",
+                        "lambda:ListEventSourceMappings"
+                    ],
+                    "Resource": [
+                        "*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "events:PutRule",
+                        "events:PutTargets",
+                        "events:RemoveTargets",
+                        "events:DeleteRule"
+                    ],
+                    "Resource": [
+                        "arn:aws:events:*:*:rule/AmazonCloudWatch-ApplicationInsights-*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "xray:GetServiceGraph",
+                        "xray:GetTraceSummaries",
+                        "xray:GetTimeSeriesServiceStatistics",
+                        "xray:GetTraceGraph"
+                    ],
+                    "Resource": [
+                        "*"
+                    ]
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-01T01:06:25Z"
+        "CreateDate": "2020-03-13T19:39:57Z"
     }
 }
