@@ -12,6 +12,7 @@
                         "ec2:DescribeSubnets",
                         "ec2:DescribeSecurityGroups",
                         "ec2:DescribeInstances",
+                        "ec2:DescribeInstanceStatus",
                         "cloudformation:CreateStack",
                         "cloudformation:DescribeStacks",
                         "cloudformation:DescribeStackEvents",
@@ -65,8 +66,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-01-08T12:35:15Z"
+        "CreateDate": "2020-03-16T10:20:54Z"
     }
 }
