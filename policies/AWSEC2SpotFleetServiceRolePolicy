@@ -40,7 +40,9 @@
                     ],
                     "Resource": [
                         "arn:aws:ec2:*:*:instance/*",
-                        "arn:aws:ec2:*:*:spot-instances-request/*"
+                        "arn:aws:ec2:*:*:spot-instances-request/*",
+                        "arn:aws:ec2:*:*:spot-fleet-request/*",
+                        "arn:aws:ec2:*:*:volume/*"
                     ]
                 },
                 {
@@ -54,11 +56,29 @@
                             "ec2:ResourceTag/aws:ec2spot:fleet-request-id": "*"
                         }
                     }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "elasticloadbalancing:RegisterInstancesWithLoadBalancer"
+                    ],
+                    "Resource": [
+                        "arn:aws:elasticloadbalancing:*:*:loadbalancer/*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "elasticloadbalancing:RegisterTargets"
+                    ],
+                    "Resource": [
+                        "arn:aws:elasticloadbalancing:*:*:*/*"
+                    ]
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-03-28T19:04:33Z"
+        "CreateDate": "2020-03-16T19:16:21Z"
     }
 }
