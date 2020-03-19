@@ -14,10 +14,18 @@
                 },
                 {
                     "Action": [
+                        "sns:CreateTopic"
+                    ],
+                    "Resource": "arn:aws:sns:*:*:CodeStarNotifications-*",
+                    "Effect": "Allow"
+                },
+                {
+                    "Action": [
                         "codecommit:GetCommentsForPullRequest",
                         "codecommit:GetCommentsForComparedCommit",
+                        "chatbot:DescribeSlackChannelConfigurations",
+                        "chatbot:UpdateSlackChannelConfiguration",
                         "codecommit:GetDifferences",
-                        "codepipeline:GetPipeline",
                         "codepipeline:ListActionExecutions"
                     ],
                     "Resource": "*",
@@ -37,8 +45,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-02-12T17:52:12Z"
+        "CreateDate": "2020-03-19T16:01:55Z"
     }
 }
