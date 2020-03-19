@@ -1,0 +1,31 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Action": "cassandra:Select",
+                    "Resource": [
+                        "arn:*:cassandra:*:*:/keyspace/system/table/*",
+                        "arn:*:cassandra:*:*:/keyspace/system_schema/table/*",
+                        "arn:*:cassandra:*:*:/keyspace/system_schema_mcs/table/*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "cassandra:Alter",
+                        "cloudwatch:PutMetricAlarm",
+                        "cloudwatch:DescribeAlarms",
+                        "cloudwatch:DeleteAlarms"
+                    ],
+                    "Resource": "*"
+                }
+            ]
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2020-03-18T22:49:23Z"
+    }
+}

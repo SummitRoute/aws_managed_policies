@@ -7,16 +7,15 @@
                     "Action": [
                         "ec2:CreateNetworkInterface",
                         "ec2:DeleteNetworkInterface",
-                        "ec2:DescribeNetworkInterfaces",
-                        "galaxy:DescribeDomains"
+                        "ec2:DescribeNetworkInterfaces"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-06-27T19:19:09Z"
+        "CreateDate": "2020-03-18T23:32:10Z"
     }
 }
