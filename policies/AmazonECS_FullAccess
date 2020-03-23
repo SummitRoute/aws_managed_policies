@@ -75,6 +75,8 @@
                         "ec2:ModifyVpcAttribute",
                         "ec2:RunInstances",
                         "ec2:RequestSpotFleet",
+                        "elasticfilesystem:DescribeFileSystems",
+                        "elasticfilesystem:DescribeAccessPoints",
                         "elasticloadbalancing:CreateListener",
                         "elasticloadbalancing:CreateLoadBalancer",
                         "elasticloadbalancing:CreateRule",
@@ -206,8 +208,8 @@
                 }
             ]
         },
-        "VersionId": "v16",
+        "VersionId": "v17",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-06-20T17:53:43Z"
+        "CreateDate": "2020-03-23T19:56:42Z"
     }
 }

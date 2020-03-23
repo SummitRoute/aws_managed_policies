@@ -43,7 +43,11 @@
                         "signer:PutSigningProfile",
                         "s3:ListAllMyBuckets",
                         "signer:ListSigningPlatforms",
-                        "iot-device-tester:SendMetrics"
+                        "iot-device-tester:SendMetrics",
+                        "iot-device-tester:SupportedVersion",
+                        "iot-device-tester:LatestIdt",
+                        "iot-device-tester:CheckVersion",
+                        "iot-device-tester:DownloadTestSuite"
                     ],
                     "Resource": "*"
                 },
@@ -137,8 +141,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-02-18T18:05:37Z"
+        "CreateDate": "2020-03-23T19:49:50Z"
     }
 }
