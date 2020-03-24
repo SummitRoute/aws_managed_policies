@@ -1,18 +1,20 @@
 # [MAMIP] Monitor AWS Managed IAM Policies :loudspeaker:
 
-Thanks to [@0xdabbad00](https://github.com/0xdabbad00) from [SummitRoute](https://summitroute.com/) for the original idea, this repo only automate the retrieval of new AWS Managed IAM Policies make it easier to monitor and get alerted when changes occurs using "Watch" feature of Github.
+Thanks to [@0xdabbad00](https://github.com/0xdabbad00) from [SummitRoute](https://summitroute.com/) for the original idea, this repo only automate the retrieval of new AWS Managed IAM Policies make it easier to monitor and get alerted when changes occur using "Watch" feature of Github.
 
-I'm using this excuse for learning and experiment new stuff: Automation, Terraform, and Containers with AWS Fargate.
+I'm using this excuse for learning and experiment new stuff: Automation, Terraform, and Containers with AWS Fargate (SPOT).
 
 ## Usage
 
-### Two options
+### Three options
 
-1. Activate `Releases Only` feature of Github
+1. Follow the [dedicated Twitter Account](https://twitter.com/mamip_aws).
+
+2. Activate `Releases Only` feature of Github
 
 ![setup](assets/watching.gif)
 
-2. Subscribe to the Github [RSS Feed](https://github.com/z0ph/aws_managed_policies/commits/master.atom) (master branch)
+3. Subscribe to the Github [RSS Feed](https://github.com/z0ph/aws_managed_policies/commits/master.atom) (master branch)
 
 ## How it works behind the scene
 
@@ -35,7 +37,7 @@ This does the following:
 - Infrastructure is deployed using:
   - Fargate: Terraform
 - Clone this repository
-- Run the magic (previous mentioned command)
+- Run the magic (previously mentioned command)
 - If changes detected:
   - Commit changes
   - Push (with tags for GH release)
