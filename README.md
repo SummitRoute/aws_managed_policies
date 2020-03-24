@@ -41,6 +41,7 @@ This does the following:
 - If changes detected:
   - Commit changes
   - Push (with tags for GH release)
+  - Push to [qTweet](https://github.com/z0ph/qtweet)
 
 #### Schedule
 
