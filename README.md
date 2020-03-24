@@ -48,4 +48,4 @@ This does the following:
 
 ### Fargate Version (Terraform)
 
-![schema fargate](assets/schema-fargate.png)
+![schema fargate](assets/schemav2.png)
