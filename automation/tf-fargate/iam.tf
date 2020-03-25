@@ -8,27 +8,27 @@ data "aws_iam_policy_document" "ecs_service_policy" {
   statement {
     effect = "Allow"
     resources = [
-        "arn:aws:s3:::mamip-artifacts/mamip",
-        "arn:aws:s3:::mamip-artifacts/*"
+      "arn:aws:s3:::mamip-artifacts/mamip",
+      "arn:aws:s3:::mamip-artifacts/*"
     ]
     actions = [
-        "s3:PutObject",
-        "s3:GetObject"
+      "s3:PutObject",
+      "s3:GetObject"
     ]
   }
   statement {
-    effect = "Allow"
+    effect    = "Allow"
     resources = ["*"]
     actions = [
-        "iam:ListPolicies",
-        "iam:GetPolicyVersion"
+      "iam:ListPolicies",
+      "iam:GetPolicyVersion"
     ]
   }
   statement {
-    effect = "Allow"
+    effect    = "Allow"
     resources = ["${var.qtweeter_sqs_arn}"]
     actions = [
-        "sqs:SendMessage"
+      "sqs:SendMessage"
     ]
   }
 }
@@ -37,7 +37,7 @@ data "aws_iam_policy_document" "ecs_service_assume_role_policy" {
   statement {
     actions = ["sts:AssumeRole"]
     principals {
-      type = "Service"
+      type        = "Service"
       identifiers = ["ecs-tasks.amazonaws.com"]
     }
   }

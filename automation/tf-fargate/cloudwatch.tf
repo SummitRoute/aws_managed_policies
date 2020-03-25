@@ -6,17 +6,17 @@ resource "aws_cloudwatch_event_rule" "cw_run_task" {
 
 resource "aws_cloudwatch_event_target" "cw_event_target" {
   target_id = "${var.project}_event_target_${var.env}"
-  arn = "${aws_ecs_cluster.ecs_cluster.arn}"
-  rule = "${aws_cloudwatch_event_rule.cw_run_task.name}"
-  role_arn = "${var.ecs_event_role}"
+  arn       = "${aws_ecs_cluster.ecs_cluster.arn}"
+  rule      = "${aws_cloudwatch_event_rule.cw_run_task.name}"
+  role_arn  = "${var.ecs_event_role}"
   ecs_target {
-      launch_type           = "FARGATE"
-      platform_version      = "LATEST"
-      task_definition_arn   = "${aws_ecs_task_definition.mamip_td.arn}"
-      network_configuration {
-        subnets             = "${var.subnets}"
-        security_groups     = "${var.security_groups}"
-        assign_public_ip    = "${var.assign_public_ip}"
-      }
+    launch_type         = "FARGATE"
+    platform_version    = "LATEST"
+    task_definition_arn = "${aws_ecs_task_definition.mamip_td.arn}"
+    network_configuration {
+      subnets          = "${var.subnets}"
+      security_groups  = "${var.security_groups}"
+      assign_public_ip = "${var.assign_public_ip}"
+    }
   }
 }

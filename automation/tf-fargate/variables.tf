@@ -1,5 +1,5 @@
 variable "aws_region" {
-  default = "eu-west-1"
+  default     = "eu-west-1"
   description = "AWS Region"
 }
 
@@ -14,15 +14,15 @@ variable "project" {
 }
 
 variable "qtweeter_sqs_arn" {
-  default     = "arn:aws:sqs:eu-west-1:567589703415:qtweet-mamip-sqs-queue.fifo"
+  default = "arn:aws:sqs:eu-west-1:567589703415:qtweet-mamip-sqs-queue.fifo"
 }
 
 variable "container_image" {
-  default     = "567589703415.dkr.ecr.eu-west-1.amazonaws.com/mamip-ecr-dev:latest"
+  default = "567589703415.dkr.ecr.eu-west-1.amazonaws.com/mamip-ecr-dev:latest"
 }
 
 variable "log_group_retention" {
-  default     = "90"
+  default = "90"
 }
 
 variable "description" {
