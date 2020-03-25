@@ -45,6 +45,7 @@ jobs:
           IMAGE_TAG: ${{ github.sha }}
         run: |
           docker build -t mamip-image ./automation/
+          docker tag mamip-image $ECR_REGISTRY/$ECR_REPOSITORY
           docker push $ECR_REGISTRY/$ECR_REPOSITORY
 
       - name: Logout of Amazon ECR
