@@ -21,6 +21,9 @@ jobs:
       - name: 'Checkout'
         uses: actions/checkout@master
 
+      - name: Update runbook artifact
+        run: aws s3 cp ./automation/runbook.sh 's3://${{ env.project }}-artifacts/'
+
       - name: AWS IAM Assume Role
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -38,7 +41,7 @@ jobs:
           tf_actions_subcommand: 'init'
           tf_actions_working_dir: ${{ env.tf_working_dir }}
           tf_actions_comment: false
-          args: '-backend-config="bucket=${{secrets.TF_STATE_S3_BUCKET}}" -backend-config="key=mamip/terraform.tfstate"'
+          args: '-backend-config="bucket=${{ secrets.TF_STATE_S3_BUCKET }}" -backend-config="key=mamip/terraform.tfstate"'
 
       - name: 'Terraform Validate'
         uses: hashicorp/terraform-github-actions@master
