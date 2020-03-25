@@ -20,7 +20,7 @@ resource "aws_ecs_cluster" "ecs_cluster" {
 }
 
 data "template_file" "mamip_task" {
-  template = "${file("./automation/tf-fargate/tasks/task_definition.tpl")}"
+  template = "${file("./tasks/task_definition.tpl")}"
   vars = {
     container_image = "${var.container_image}"
     project         = "${var.project}"
