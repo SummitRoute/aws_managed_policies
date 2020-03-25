@@ -9,7 +9,7 @@ variable "env" {
 }
 
 variable "project" {
-  default     = "no-project-name"
+  default     = "mamip"
   description = "Project Name"
 }
 
@@ -26,7 +26,7 @@ variable "log_group_retention" {
 }
 
 variable "description" {
-  default     = "empty-project-description"
+  default     = "Monitor AWS Managed IAM Policies Changes"
   description = "Project Description"
 }
 

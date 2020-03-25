@@ -1,5 +1,7 @@
 # [MAMIP] Monitor AWS Managed IAM Policies :loudspeaker:
 
+![Terraform GitHub Actions](https://github.com/z0ph/aws_managed_policies/workflows/Terraform%20GitHub%20Actions/badge.svg)
+
 Thanks to [@0xdabbad00](https://github.com/0xdabbad00) from [SummitRoute](https://summitroute.com/) for the original idea, this repo only automate the retrieval of new AWS Managed IAM Policies make it easier to monitor and get alerted when changes occur using "Watch" feature of Github.
 
 I'm using this excuse for learning and experiment new stuff: Automation, Terraform, and Containers with AWS Fargate (SPOT).

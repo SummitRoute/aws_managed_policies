@@ -8,6 +8,10 @@ on:
 env:
   tf_version: 'latest'
   tf_working_dir: './automation/tf-fargate'
+  env: 'dev'
+  project: 'mamip'
+  aws_region: 'eu-west-1'
+  artifacts_bucket: 'mamip-artifacts'
 
 jobs:
   terraform:
@@ -25,7 +29,7 @@ jobs:
           aws-region: ${{ secrets.REGION }}
           role-to-assume: ${{ secrets.ROLE_TO_ASSUME }}
           role-duration-seconds: 1200
-          role-session-name: GH-Actions-MAMIP
+          role-session-name: GH-Actions-${{ env.project }}
 
       - name: 'Terraform Init'
         uses: hashicorp/terraform-github-actions@master
@@ -34,6 +38,7 @@ jobs:
           tf_actions_subcommand: 'init'
           tf_actions_working_dir: ${{ env.tf_working_dir }}
           tf_actions_comment: false
+          args: '-backend-config="bucket=${{secret.TF_STATE_S3_BUCKET}}" -backend-config="key=mamip/terraform.tfstate"'
 
       - name: 'Terraform Validate'
         uses: hashicorp/terraform-github-actions@master
@@ -50,3 +55,4 @@ jobs:
           tf_actions_subcommand: 'plan'
           tf_actions_working_dir: ${{ env.tf_working_dir }}
           tf_actions_comment: false
+          args: '-var="env=dev" -var="artifacts_bucket=${{ env.artifacts_bucket }}"'
