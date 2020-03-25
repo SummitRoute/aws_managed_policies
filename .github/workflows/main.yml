@@ -21,9 +21,6 @@ jobs:
       - name: 'Checkout'
         uses: actions/checkout@master
 
-      - name: Update runbook artifact
-        run: aws s3 cp ./automation/runbook.sh 's3://${{ env.project }}-artifacts/'
-
       - name: AWS IAM Assume Role
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -33,6 +30,9 @@ jobs:
           role-to-assume: ${{ secrets.ROLE_TO_ASSUME }}
           role-duration-seconds: 1200
           role-session-name: GH-Actions-${{ env.project }}
+
+      - name: Update runbook artifact
+        run: aws s3 cp ./automation/runbook.sh 's3://${{ env.project }}-artifacts/'
 
       - name: 'Terraform Init'
         uses: hashicorp/terraform-github-actions@master
