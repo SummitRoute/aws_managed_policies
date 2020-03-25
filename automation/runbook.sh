@@ -30,7 +30,7 @@ then
         git tag $DATE
         git push --tags
         echo "Push the changes to master"
-        diff=$(git diff --name-only)
+        diff="$(git diff --name-only) $(git ls-files --others --exclude-standard)"
         git add ./policies
         git commit -am "Update detected"
         commit_id=$(git log --format="%H" -n 1)
