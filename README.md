@@ -4,7 +4,7 @@
 
 Thanks to [@0xdabbad00](https://github.com/0xdabbad00) from [SummitRoute](https://summitroute.com/) for the original idea, this repo only automate the retrieval of new AWS Managed IAM Policies make it easier to monitor and get alerted when changes occur using "Watch" feature of Github.
 
-I'm using this excuse for learning and experiment new stuff: Automation, Terraform, and Containers with AWS Fargate (SPOT).
+I'm using this excuse for learning and experiment with new stuff: Automation, Terraform, and Containers with AWS Fargate (SPOT).
 
 ## Usage
 
@@ -31,7 +31,7 @@ This does the following:
 
 - Gets the list of all IAM Policies in the AWS account
 - Finds the ones with an ARN containing `iam::aws`, so that only the AWS managed policies are grabbed.
-- Gets the ARN, current version id, and policy name (needed so we don't have a slash like the ARN does for writing a file)
+- Gets the ARN, current version id, and policy name (needed so we don't have a slash as the ARN does for writing a file)
 - Calls `aws iam get-policy-version` with those values, and writes the output to a file using the policy name.
 
 ### Automation Details
