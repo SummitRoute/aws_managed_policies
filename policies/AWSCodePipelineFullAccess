@@ -143,12 +143,20 @@
                         "sns:SetTopicAttributes"
                     ],
                     "Resource": "arn:aws:sns:*:*:codestar-notifications*"
+                },
+                {
+                    "Sid": "CodeStarNotificationsChatbotAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "chatbot:DescribeSlackChannelConfigurations"
+                    ],
+                    "Resource": "*"
                 }
             ],
             "Version": "2012-10-17"
         },
-        "VersionId": "v8",
+        "VersionId": "v9",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-05T23:04:28Z"
+        "CreateDate": "2020-03-26T16:06:34Z"
     }
 }

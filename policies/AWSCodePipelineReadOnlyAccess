@@ -31,13 +31,14 @@
                         "opsworks:DescribeLayers",
                         "opsworks:DescribeStacks",
                         "codestar-notifications:ListNotificationRules",
-                        "codestar-notifications:ListEventTypes"
+                        "codestar-notifications:ListEventTypes",
+                        "codestar-notifications:ListTargets"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
                 },
                 {
-                    "Sid": "CodeStarNotificationsPowerUserAccess",
+                    "Sid": "CodeStarNotificationsReadOnlyAccess",
                     "Effect": "Allow",
                     "Action": [
                         "codestar-notifications:DescribeNotificationRule"
@@ -52,8 +53,8 @@
             ],
             "Version": "2012-10-17"
         },
-        "VersionId": "v8",
+        "VersionId": "v9",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-05T23:01:50Z"
+        "CreateDate": "2020-03-26T16:07:17Z"
     }
 }

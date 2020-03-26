@@ -171,11 +171,19 @@
                             "events:ManagedBy": "codeguru-reviewer.amazonaws.com"
                         }
                     }
+                },
+                {
+                    "Sid": "CodeStarNotificationsChatbotAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "chatbot:DescribeSlackChannelConfigurations"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-12-03T07:56:31Z"
+        "CreateDate": "2020-03-26T16:23:20Z"
     }
 }
