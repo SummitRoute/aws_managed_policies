@@ -4,11 +4,7 @@
             "Version": "2012-10-17",
             "Statement": [
                 {
-                    "Action": "iotanalytics:ExecuteQuery",
                     "Effect": "Allow",
-                    "Resource": "arn:aws:iotanalytics:*:*:datastore-index/*"
-                },
-                {
                     "Action": [
                         "greengrass:CreateCoreDefinitionVersion",
                         "greengrass:CreateDeployment",
@@ -39,10 +35,10 @@
                         "greengrass:UpdateLoggerDefinition",
                         "greengrass:UpdateResourceDefinition"
                     ],
-                    "Effect": "Allow",
                     "Resource": "*"
                 },
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "lambda:CreateAlias",
                         "lambda:CreateFunction",
@@ -52,20 +48,19 @@
                         "lambda:PublishVersion",
                         "lambda:UpdateAlias"
                     ],
-                    "Effect": "Allow",
                     "Resource": "arn:aws:lambda:*:*:function:AWSIoTSiteWise*"
                 },
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "iot:GetThingShadow",
                         "iot:UpdateThingShadow"
                     ],
-                    "Effect": "Allow",
                     "Resource": "*"
                 },
                 {
-                    "Action": "iam:PassRole",
                     "Effect": "Allow",
+                    "Action": "iam:PassRole",
                     "Resource": "*",
                     "Condition": {
                         "StringLikeIfExists": {
@@ -92,8 +87,8 @@
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-21T21:52:26Z"
+        "CreateDate": "2020-03-26T21:02:43Z"
     }
 }
