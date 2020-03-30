@@ -1,0 +1,83 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ec2:DescribeRouteTables",
+                        "ec2:CreateRoute",
+                        "ec2:DeleteRoute"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "ForAllValues:StringEquals": {
+                            "aws:TagKeys": "LaunchWizardApplicationType"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ec2:DescribeVpcs",
+                        "ssm:ListCommands"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ssm:GetDocument"
+                    ],
+                    "Resource": [
+                        "arn:aws:ssm:::document/AWS-RunShellScript"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ssm:sendCommand",
+                        "ssm:GetParameter",
+                        "ec2:CreateTags",
+                        "ec2:DescribeTags",
+                        "ec2:DescribeInstanceAttribute",
+                        "ec2:ModifyInstanceAttribute",
+                        "ec2:DescribeInstances"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "ForAllValues:StringLike": {
+                            "aws:TagKeys": "LaunchWizard*"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "s3:ListBucket",
+                        "s3:ListBucketVersions",
+                        "s3:ListObjects",
+                        "s3:ListObjectsV2",
+                        "s3:ListObjectVersions",
+                        "s3:GetObject",
+                        "s3:GetObjectVersion",
+                        "s3:GetObjectVersionAcl",
+                        "s3:PutObject",
+                        "s3:PutObjectTagging",
+                        "s3:DeleteObject",
+                        "s3:DeleteObjectVersion",
+                        "s3:DeleteBucket"
+                    ],
+                    "Resource": [
+                        "arn:aws:s3:::launchwizard*",
+                        "arn:aws:s3:::launchwizard*/*"
+                    ]
+                }
+            ]
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2020-03-30T20:25:12Z"
+    }
+}
