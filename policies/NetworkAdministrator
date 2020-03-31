@@ -205,6 +205,13 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "networkmanager:*"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
                         "ec2:AcceptTransitGatewayVpcAttachment",
                         "ec2:AssociateTransitGatewayRouteTable",
                         "ec2:CreateTransitGateway",
@@ -235,8 +242,8 @@
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-01-16T00:49:18Z"
+        "CreateDate": "2020-03-31T16:34:49Z"
     }
 }
