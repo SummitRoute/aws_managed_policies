@@ -53,11 +53,21 @@
                     "Effect": "Allow",
                     "Action": "logs:PutLogEvents",
                     "Resource": "arn:aws:logs:*:*:log-group:/aws/eks/*:*:*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "iam:CreateServiceLinkedRole",
+                    "Resource": "*",
+                    "Condition": {
+                        "StringLike": {
+                            "iam:AWSServiceName": "eks.amazonaws.com"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-08-21T16:17:56Z"
+        "CreateDate": "2020-03-30T23:43:02Z"
     }
 }
