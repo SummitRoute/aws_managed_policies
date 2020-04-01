@@ -25,7 +25,10 @@
                     "Resource": "*",
                     "Condition": {
                         "ForAllValues:StringEquals": {
-                            "aws:TagKeys": "LaunchWizardResourceGroupID"
+                            "aws:TagKeys": [
+                                "LaunchWizardResourceGroupID",
+                                "LaunchWizardApplicationType"
+                            ]
                         }
                     }
                 },
@@ -33,20 +36,29 @@
                     "Effect": "Allow",
                     "Action": [
                         "s3:GetObject",
+                        "s3:ListBucket",
+                        "s3:PutObject",
+                        "s3:PutObjectTagging",
+                        "s3:GetBucketLocation",
                         "logs:PutLogEvents",
                         "logs:DescribeLogGroups",
                         "logs:DescribeLogStreams"
                     ],
                     "Resource": [
                         "arn:aws:logs:*:*:*",
-                        "arn:aws:s3:::launchwizard*/*"
+                        "arn:aws:s3:::launchwizard*",
+                        "arn:aws:s3:::launchwizard*/*",
+                        "arn:aws:s3:::aws-sap-data-provider/config.properties"
                     ]
                 },
                 {
                     "Effect": "Allow",
                     "Action": [
                         "ec2:DescribeAddresses",
-                        "ec2:AssociateAddress"
+                        "ec2:AssociateAddress",
+                        "ec2:DescribeImages",
+                        "ec2:DescribeRegions",
+                        "cloudwatch:GetMetricStatistics"
                     ],
                     "Resource": "*"
                 },
@@ -59,6 +71,9 @@
                     "Effect": "Allow",
                     "Action": [
                         "ec2:Describe*",
+                        "ec2:RebootInstances",
+                        "ec2:StartInstances",
+                        "ec2:StopInstances",
                         "ec2:ModifyInstanceAttribute",
                         "cloudformation:DescribeStackResources",
                         "cloudformation:SignalResource",
@@ -103,11 +118,24 @@
                         "ec2:DescribeRegions"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ec2:DescribeRouteTables",
+                        "ec2:ReplaceRoute"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "ForAllValues:StringEquals": {
+                            "aws:TagKeys": "LaunchWizardApplicationType"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-24T21:48:01Z"
+        "CreateDate": "2020-03-31T22:01:02Z"
     }
 }
