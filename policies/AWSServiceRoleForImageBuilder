@@ -139,7 +139,10 @@
                         "ssm:AddTagsToResource",
                         "ssm:DescribeInstanceInformation",
                         "ssm:GetAutomationExecution",
-                        "ssm:StopAutomationExecution"
+                        "ssm:StopAutomationExecution",
+                        "ssm:ListInventoryEntries",
+                        "ssm:SendAutomationSignal",
+                        "ssm:DescribeInstanceAssociationsStatus"
                     ],
                     "Resource": "*"
                 },
@@ -173,11 +176,22 @@
                     "Effect": "Allow",
                     "Action": "ssm:StartAutomationExecution",
                     "Resource": "arn:aws:ssm:*:*:automation-definition/ImageBuilder*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ssm:CreateAssociation",
+                        "ssm:DeleteAssociation"
+                    ],
+                    "Resource": [
+                        "arn:aws:ssm:*:*:document/AWS-GatherSoftwareInventory",
+                        "arn:aws:ec2:*:*:instance/*"
+                    ]
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-02-28T19:03:21Z"
+        "CreateDate": "2020-04-01T19:42:50Z"
     }
 }
