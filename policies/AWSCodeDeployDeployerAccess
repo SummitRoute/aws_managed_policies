@@ -43,6 +43,14 @@
                     "Resource": "*"
                 },
                 {
+                    "Sid": "CodeStarNotificationsChatbotAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "chatbot:DescribeSlackChannelConfigurations"
+                    ],
+                    "Resource": "*"
+                },
+                {
                     "Sid": "SNSTopicListAccess",
                     "Effect": "Allow",
                     "Action": [
@@ -52,8 +60,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-05T22:59:06Z"
+        "CreateDate": "2020-04-02T16:16:11Z"
     }
 }

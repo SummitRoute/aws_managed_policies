@@ -30,14 +30,15 @@
                     "Effect": "Allow",
                     "Action": [
                         "codestar-notifications:ListNotificationRules",
-                        "codestar-notifications:ListEventTypes"
+                        "codestar-notifications:ListEventTypes",
+                        "codestar-notifications:ListTargets"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-05T23:01:32Z"
+        "CreateDate": "2020-04-02T16:20:09Z"
     }
 }
