@@ -94,11 +94,19 @@
                         "sns:GetTopicAttributes"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Sid": "CodeStarNotificationsChatbotAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "chatbot:DescribeSlackChannelConfigurations"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v9",
+        "VersionId": "v10",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-02-06T20:26:30Z"
+        "CreateDate": "2020-04-02T17:21:40Z"
     }
 }

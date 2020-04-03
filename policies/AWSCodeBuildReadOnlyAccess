@@ -38,15 +38,16 @@
                     "Effect": "Allow",
                     "Action": [
                         "codestar-notifications:ListNotificationRules",
-                        "codestar-notifications:ListEventTypes"
+                        "codestar-notifications:ListEventTypes",
+                        "codestar-notifications:ListTargets"
                     ],
                     "Resource": "*"
                 }
             ],
             "Version": "2012-10-17"
         },
-        "VersionId": "v8",
+        "VersionId": "v9",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-01-02T20:06:42Z"
+        "CreateDate": "2020-04-02T16:49:01Z"
     }
 }
