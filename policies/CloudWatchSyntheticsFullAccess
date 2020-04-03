@@ -104,7 +104,8 @@
                         "lambda:CreateFunction",
                         "lambda:AddPermission",
                         "lambda:PublishVersion",
-                        "lambda:UpdateFunctionConfiguration"
+                        "lambda:UpdateFunctionConfiguration",
+                        "lambda:GetFunctionConfiguration"
                     ],
                     "Resource": [
                         "arn:aws:lambda:*:*:function:cwsyn-*"
@@ -121,11 +122,22 @@
                         "arn:aws:lambda:*:*:layer:cwsyn-*",
                         "arn:aws:lambda:*:*:layer:Synthetics:*"
                     ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ec2:DescribeVpcs",
+                        "ec2:DescribeSubnets",
+                        "ec2:DescribeSecurityGroups"
+                    ],
+                    "Resource": [
+                        "*"
+                    ]
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-25T17:39:46Z"
+        "CreateDate": "2020-04-03T17:53:31Z"
     }
 }
