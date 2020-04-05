@@ -21,13 +21,11 @@
                         "ec2:AttachNetworkInterface",
                         "ec2:AttachVolume",
                         "ec2:AuthorizeSecurityGroupEgress",
-                        "ec2:AuthorizeSecurityGroupIngress",
                         "ec2:CreateDhcpOptions",
                         "ec2:CreateEgressOnlyInternetGateway",
                         "ec2:CreateInternetGateway",
                         "ec2:CreateNatGateway",
                         "ec2:CreateNetworkInterface",
-                        "ec2:CreateSecurityGroup",
                         "ec2:CreateVolume",
                         "ec2:CreateVpc",
                         "ec2:CreateVpcEndpoint",
@@ -59,17 +57,18 @@
                         "ec2:StartInstances",
                         "ec2:StopInstances",
                         "ec2:TerminateInstances",
-                        "ssm:SendCommand"
+                        "ssm:SendCommand",
+                        "elasticfilesystem:DeleteFileSystem",
+                        "elasticfilesystem:DeleteMountTarget"
                     ],
                     "Resource": "*",
                     "Condition": {
                         "ForAllValues:StringLike": {
-                            "aws:TagKeys": "LaunchWizardResourceGroupID"
+                            "aws:TagKeys": "LaunchWizard*"
                         }
                     }
                 },
                 {
-                    "Sid": "VisualEditor0",
                     "Effect": "Allow",
                     "Action": [
                         "iam:CreateInstanceProfile",
@@ -81,6 +80,15 @@
                     "Resource": [
                         "arn:aws:iam::*:role/service-role/AmazonEC2RoleForLaunchWizard*",
                         "arn:aws:iam::*:instance-profile/LaunchWizard*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "iam:PassRole"
+                    ],
+                    "Resource": [
+                        "arn:aws:iam::*:role/service-role/AmazonLambdaRoleForLaunchWizard*"
                     ]
                 },
                 {
@@ -267,8 +275,12 @@
                         "s3:GetObject",
                         "cloudformation:CreateStack",
                         "route53:ListHostedZones",
+                        "ec2:CreateSecurityGroup",
+                        "ec2:AuthorizeSecurityGroupIngress",
                         "elasticfilesystem:DescribeFileSystems",
-                        "elasticfilesystem:CreateFileSystem"
+                        "elasticfilesystem:CreateFileSystem",
+                        "elasticfilesystem:CreateMountTarget",
+                        "elasticfilesystem:DescribeMountTargets"
                     ],
                     "Resource": "*"
                 },
@@ -277,15 +289,33 @@
                     "Action": "cloudformation:TagResource",
                     "Resource": "*",
                     "Condition": {
-                        "ForAllValues:StringEquals": {
-                            "aws:TagKeys": "LaunchWizardResourceGroupID"
+                        "ForAllValues:StringLike": {
+                            "aws:TagKeys": "LaunchWizard*"
                         }
                     }
+                },
+                {
+                    "Sid": "VisualEditorS3",
+                    "Effect": "Allow",
+                    "Action": [
+                        "s3:CreateBucket",
+                        "s3:PutBucketVersioning",
+                        "s3:DeleteBucket",
+                        "lambda:CreateFunction",
+                        "lambda:DeleteFunction",
+                        "lambda:GetFunction",
+                        "lambda:GetFunctionConfiguration",
+                        "lambda:InvokeFunction"
+                    ],
+                    "Resource": [
+                        "arn:aws:lambda:*:*:function:LaunchWizard*",
+                        "arn:aws:s3:::launchwizard*"
+                    ]
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-24T21:55:08Z"
+        "CreateDate": "2020-04-05T18:35:58Z"
     }
 }
