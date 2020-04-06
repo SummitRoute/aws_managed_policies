@@ -7,15 +7,18 @@
                     "Action": [
                         "codeguru-profiler:Get*",
                         "codeguru-profiler:Describe*",
-                        "codeguru-profiler:List*"
+                        "codeguru-profiler:List*",
+                        "iam:ListRoles",
+                        "iam:ListUsers",
+                        "codeguru:Get*"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-12-03T10:30:15Z"
+        "CreateDate": "2020-04-06T20:34:53Z"
     }
 }

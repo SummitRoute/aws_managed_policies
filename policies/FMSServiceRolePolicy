@@ -116,7 +116,12 @@
                     "Action": [
                         "organizations:DescribeAccount",
                         "organizations:DescribeOrganization",
-                        "organizations:ListAccounts"
+                        "organizations:ListAccounts",
+                        "organizations:DescribeOrganizationalUnit",
+                        "organizations:ListChildren",
+                        "organizations:ListRoots",
+                        "organizations:ListParents",
+                        "organizations:ListOrganizationalUnitsForParent"
                     ],
                     "Resource": [
                         "*"
@@ -247,8 +252,8 @@
                 }
             ]
         },
-        "VersionId": "v10",
+        "VersionId": "v11",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-03-10T20:10:50Z"
+        "CreateDate": "2020-04-06T18:55:16Z"
     }
 }

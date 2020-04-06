@@ -1,0 +1,33 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Action": [
+                        "apigateway:GET",
+                        "cloudfront:ListDistributions",
+                        "cloudfront:ListDistributionsByWebACLId",
+                        "cloudwatch:GetMetricData",
+                        "cloudwatch:GetMetricStatistics",
+                        "cloudwatch:ListMetrics",
+                        "ec2:DescribeRegions",
+                        "elasticloadbalancing:DescribeLoadBalancers",
+                        "waf-regional:Get*",
+                        "waf-regional:List*",
+                        "waf:Get*",
+                        "waf:List*",
+                        "wafv2:Describe*",
+                        "wafv2:Get*",
+                        "wafv2:List*"
+                    ],
+                    "Effect": "Allow",
+                    "Resource": "*"
+                }
+            ]
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2020-04-06T18:43:24Z"
+    }
+}
