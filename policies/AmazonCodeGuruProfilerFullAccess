@@ -4,14 +4,19 @@
             "Version": "2012-10-17",
             "Statement": [
                 {
-                    "Action": "codeguru-profiler:*",
+                    "Action": [
+                        "codeguru-profiler:*",
+                        "iam:ListRoles",
+                        "iam:ListUsers",
+                        "codeguru:*"
+                    ],
                     "Effect": "Allow",
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-12-03T10:13:27Z"
+        "CreateDate": "2020-04-06T21:16:38Z"
     }
 }

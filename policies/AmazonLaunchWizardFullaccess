@@ -280,7 +280,8 @@
                         "elasticfilesystem:DescribeFileSystems",
                         "elasticfilesystem:CreateFileSystem",
                         "elasticfilesystem:CreateMountTarget",
-                        "elasticfilesystem:DescribeMountTargets"
+                        "elasticfilesystem:DescribeMountTargets",
+                        "elasticfilesystem:DescribeMountTargetSecurityGroups"
                     ],
                     "Resource": "*"
                 },
@@ -314,8 +315,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-05T18:35:58Z"
+        "CreateDate": "2020-04-06T21:51:50Z"
     }
 }
