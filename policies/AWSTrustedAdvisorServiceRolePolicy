@@ -4,6 +4,7 @@
             "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "autoscaling:DescribeAccountLimits",
                         "autoscaling:DescribeAutoScalingGroups",
@@ -82,15 +83,15 @@
                         "ses:GetSendQuota",
                         "sqs:ListQueues",
                         "cloudwatch:GetMetricStatistics",
-                        "ce:GetReservationPurchaseRecommendation"
+                        "ce:GetReservationPurchaseRecommendation",
+                        "ce:GetSavingsPlansPurchaseRecommendation"
                     ],
-                    "Effect": "Allow",
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-15T22:11:48Z"
+        "CreateDate": "2020-04-08T16:15:31Z"
     }
 }

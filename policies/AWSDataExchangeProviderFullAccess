@@ -8,6 +8,7 @@
                     "Action": [
                         "dataexchange:CreateDataSet",
                         "dataexchange:CreateRevision",
+                        "dataexchange:CreateAsset",
                         "dataexchange:Get*",
                         "dataexchange:Update*",
                         "dataexchange:List*",
@@ -89,8 +90,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-25T16:25:47Z"
+        "CreateDate": "2020-04-08T15:27:08Z"
     }
 }
