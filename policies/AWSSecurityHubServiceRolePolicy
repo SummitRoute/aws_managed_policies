@@ -16,7 +16,9 @@
                         "config:DescribeConfigurationRecorderStatus",
                         "config:DescribeConfigRules",
                         "config:BatchGetResourceConfig",
-                        "config:SelectResourceConfig"
+                        "config:SelectResourceConfig",
+                        "iam:GenerateCredentialReport",
+                        "iam:GetCredentialReport"
                     ],
                     "Resource": "*"
                 },
@@ -32,8 +34,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-02-05T21:38:52Z"
+        "CreateDate": "2020-04-08T20:26:47Z"
     }
 }
