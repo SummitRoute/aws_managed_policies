@@ -13,15 +13,24 @@
                         "chime:BatchCreateAttendee",
                         "chime:DeleteAttendee",
                         "chime:GetAttendee",
-                        "chime:ListAttendees"
+                        "chime:ListAttendees",
+                        "chime:ListAttendeeTags",
+                        "chime:ListMeetingTags",
+                        "chime:ListTagsForResource",
+                        "chime:TagAttendee",
+                        "chime:TagMeeting",
+                        "chime:TagResource",
+                        "chime:UntagAttendee",
+                        "chime:UntagMeeting",
+                        "chime:UntagResource"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-02-04T21:53:37Z"
+        "CreateDate": "2020-04-08T21:18:31Z"
     }
 }
