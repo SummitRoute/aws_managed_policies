@@ -25,6 +25,35 @@
                     }
                 },
                 {
+                    "Sid": "AccessCodeGuruReviewerEnabledConnections",
+                    "Effect": "Allow",
+                    "Action": [
+                        "codestar-connections:UseConnection"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "ForAllValues:StringEquals": {
+                            "codestar-connections:ProviderAction": [
+                                "ListBranches",
+                                "GetBranch",
+                                "ListRepositories",
+                                "ListOwners",
+                                "ListPullRequests",
+                                "GetPullRequest",
+                                "ListPullRequestComments",
+                                "ListPullRequestCommits",
+                                "ListCommitFiles",
+                                "ListBranchCommits",
+                                "CreatePullRequestDiffComment",
+                                "GitPull"
+                            ]
+                        },
+                        "Null": {
+                            "aws:ResourceTag/codeguru-reviewer": "false"
+                        }
+                    }
+                },
+                {
                     "Sid": "CloudWatchEventsResourceCleanup",
                     "Effect": "Allow",
                     "Action": [
@@ -40,8 +69,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-12-03T05:31:12Z"
+        "CreateDate": "2020-04-09T07:33:48Z"
     }
 }
