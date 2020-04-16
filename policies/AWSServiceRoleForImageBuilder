@@ -185,13 +185,14 @@
                     ],
                     "Resource": [
                         "arn:aws:ssm:*:*:document/AWS-GatherSoftwareInventory",
+                        "arn:aws:ssm:*:*:association/*",
                         "arn:aws:ec2:*:*:instance/*"
                     ]
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-01T19:42:50Z"
+        "CreateDate": "2020-04-16T19:45:25Z"
     }
 }

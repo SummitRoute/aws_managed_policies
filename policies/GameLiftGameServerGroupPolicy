@@ -45,14 +45,26 @@
                     "Effect": "Allow",
                     "Action": "sns:Publish",
                     "Resource": [
-                        "arn:aws:sns:*:*:ActivatingLifecycleHookTopic-*",
-                        "arn:aws:sns:*:*:TerminatingLifecycleHookTopic-*"
+                        "arn:*:sns:*:*:ActivatingLifecycleHookTopic-*",
+                        "arn:*:sns:*:*:TerminatingLifecycleHookTopic-*"
                     ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "cloudwatch:PutMetricData"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEquals": {
+                            "cloudwatch:namespace": "AWS/GameLift"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-03T23:12:19Z"
+        "CreateDate": "2020-04-16T17:13:11Z"
     }
 }
