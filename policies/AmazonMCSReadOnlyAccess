@@ -9,11 +9,22 @@
                         "cassandra:Select"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "application-autoscaling:DescribeScalableTargets",
+                        "application-autoscaling:DescribeScalingActivities",
+                        "application-autoscaling:DescribeScalingPolicies",
+                        "application-autoscaling:DescribeScheduledActions",
+                        "cloudwatch:DescribeAlarms"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-12-03T13:46:21Z"
+        "CreateDate": "2020-04-17T19:21:34Z"
     }
 }

@@ -27,14 +27,16 @@
                         "rekognition:StopProjectVersion",
                         "rekognition:DescribeProjects",
                         "rekognition:DescribeProjectVersions",
-                        "rekognition:DetectCustomLabels"
+                        "rekognition:DetectCustomLabels",
+                        "rekognition:DeleteProject",
+                        "rekognition:DeleteProjectVersion"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-01-08T19:18:34Z"
+        "CreateDate": "2020-04-17T17:26:10Z"
     }
 }
