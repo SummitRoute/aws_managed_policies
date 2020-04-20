@@ -7,14 +7,16 @@
                     "Effect": "Allow",
                     "Action": [
                         "ec2:DescribeInstances",
-                        "ec2:DescribeImages"
+                        "ec2:DescribeImages",
+                        "organizations:ListAccounts",
+                        "organizations:DescribeAccount"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2017-11-28T20:12:59Z"
+        "CreateDate": "2020-04-20T16:01:34Z"
     }
 }
