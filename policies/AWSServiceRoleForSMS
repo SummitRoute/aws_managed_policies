@@ -101,7 +101,8 @@
                         "ec2:DeregisterImage",
                         "ec2:RunInstances",
                         "ec2:ImportImage",
-                        "ec2:DescribeImportImageTasks"
+                        "ec2:DescribeImportImageTasks",
+                        "ec2:GetEbsEncryptionByDefault"
                     ],
                     "Resource": "*",
                     "Effect": "Allow"
@@ -146,8 +147,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-12-23T23:18:29Z"
+        "CreateDate": "2020-04-20T17:55:26Z"
     }
 }

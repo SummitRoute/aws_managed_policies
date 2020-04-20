@@ -103,7 +103,8 @@
                         "ec2:CreateTags",
                         "ec2:DeleteTags",
                         "ec2:ImportImage",
-                        "ec2:DescribeImportImageTasks"
+                        "ec2:DescribeImportImageTasks",
+                        "ec2:GetEbsEncryptionByDefault"
                     ],
                     "Resource": "*",
                     "Effect": "Allow"
@@ -125,8 +126,8 @@
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-12-23T23:27:42Z"
+        "CreateDate": "2020-04-20T19:05:50Z"
     }
 }
