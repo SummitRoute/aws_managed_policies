@@ -92,6 +92,26 @@
                 },
                 {
                     "Effect": "Allow",
+                    "Action": [
+                        "compute-optimizer:GetEC2InstanceRecommendations"
+                    ],
+                    "Resource": [
+                        "*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "support:DescribeTrustedAdvisorChecks",
+                        "support:DescribeTrustedAdvisorCheckSummaries",
+                        "support:DescribeTrustedAdvisorCheckResult"
+                    ],
+                    "Resource": [
+                        "*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
                     "Action": "iam:PassRole",
                     "Resource": "*",
                     "Condition": {
@@ -104,8 +124,8 @@
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-01-22T21:46:17Z"
+        "CreateDate": "2020-04-20T21:01:22Z"
     }
 }
