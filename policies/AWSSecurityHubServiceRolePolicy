@@ -10,6 +10,7 @@
                         "cloudtrail:GetTrailStatus",
                         "cloudtrail:GetEventSelectors",
                         "cloudwatch:DescribeAlarms",
+                        "cloudwatch:DescribeAlarmsForMetric",
                         "logs:DescribeMetricFilters",
                         "sns:ListSubscriptionsByTopic",
                         "config:DescribeConfigurationRecorders",
@@ -34,8 +35,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-08T20:26:47Z"
+        "CreateDate": "2020-04-21T19:59:17Z"
     }
 }
