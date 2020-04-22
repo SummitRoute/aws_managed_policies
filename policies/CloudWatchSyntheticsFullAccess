@@ -133,11 +133,31 @@
                     "Resource": [
                         "*"
                     ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "sns:ListTopics"
+                    ],
+                    "Resource": [
+                        "*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "sns:CreateTopic",
+                        "sns:Subscribe",
+                        "sns:ListSubscriptionsByTopic"
+                    ],
+                    "Resource": [
+                        "arn:*:sns:*:*:Synthetics-*"
+                    ]
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-03T17:53:31Z"
+        "CreateDate": "2020-04-22T18:37:11Z"
     }
 }
