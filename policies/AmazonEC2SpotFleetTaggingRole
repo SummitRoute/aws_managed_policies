@@ -11,7 +11,8 @@
                         "ec2:RequestSpotInstances",
                         "ec2:TerminateInstances",
                         "ec2:DescribeInstanceStatus",
-                        "ec2:CreateTags"
+                        "ec2:CreateTags",
+                        "ec2:RunInstances"
                     ],
                     "Resource": [
                         "*"
@@ -47,13 +48,13 @@
                         "elasticloadbalancing:RegisterTargets"
                     ],
                     "Resource": [
-                        "*"
+                        "arn:aws:elasticloadbalancing:*:*:*/*"
                     ]
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2017-11-17T22:51:17Z"
+        "CreateDate": "2020-04-23T19:30:49Z"
     }
 }
