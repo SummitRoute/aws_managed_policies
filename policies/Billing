@@ -14,14 +14,15 @@
                         "awsbillingconsole:*PaymentMethods",
                         "budgets:ViewBudget",
                         "budgets:ModifyBudget",
-                        "cur:*"
+                        "cur:*",
+                        "purchase-orders:*PurchaseOrders"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-02-06T23:46:37Z"
+        "CreateDate": "2020-04-24T18:12:01Z"
     }
 }
