@@ -4,91 +4,37 @@
             "Version": "2012-10-17",
             "Statement": [
                 {
-                    "Effect": "Allow",
                     "Action": [
-                        "greengrass:CreateCoreDefinitionVersion",
-                        "greengrass:CreateDeployment",
-                        "greengrass:CreateFunctionDefinition",
-                        "greengrass:CreateFunctionDefinitionVersion",
-                        "greengrass:CreateGroupVersion",
-                        "greengrass:CreateLoggerDefinition",
-                        "greengrass:CreateLoggerDefinitionVersion",
-                        "greengrass:CreateResourceDefinition",
-                        "greengrass:CreateResourceDefinitionVersion",
                         "greengrass:GetAssociatedRole",
-                        "greengrass:GetConnectorDefinition",
-                        "greengrass:GetConnectorDefinitionVersion",
                         "greengrass:GetCoreDefinition",
                         "greengrass:GetCoreDefinitionVersion",
-                        "greengrass:GetDeploymentStatus",
-                        "greengrass:GetFunctionDefinition",
-                        "greengrass:GetFunctionDefinitionVersion",
                         "greengrass:GetGroup",
-                        "greengrass:GetGroupVersion",
-                        "greengrass:GetLoggerDefinition",
-                        "greengrass:GetLoggerDefinitionVersion",
-                        "greengrass:GetResourceDefinition",
-                        "greengrass:GetResourceDefinitionVersion",
-                        "greengrass:ListCoreDefinitions",
-                        "greengrass:UpdateCoreDefinition",
-                        "greengrass:UpdateFunctionDefinition",
-                        "greengrass:UpdateLoggerDefinition",
-                        "greengrass:UpdateResourceDefinition"
+                        "greengrass:GetGroupVersion"
                     ],
-                    "Resource": "*"
-                },
-                {
-                    "Effect": "Allow",
-                    "Action": [
-                        "lambda:CreateAlias",
-                        "lambda:CreateFunction",
-                        "lambda:GetFunction",
-                        "lambda:ListVersionsByFunction",
-                        "lambda:UpdateFunctionCode",
-                        "lambda:PublishVersion",
-                        "lambda:UpdateAlias"
-                    ],
-                    "Resource": "arn:aws:lambda:*:*:function:AWSIoTSiteWise*"
-                },
-                {
-                    "Effect": "Allow",
-                    "Action": [
-                        "iot:GetThingShadow",
-                        "iot:UpdateThingShadow"
-                    ],
-                    "Resource": "*"
-                },
-                {
-                    "Effect": "Allow",
-                    "Action": "iam:PassRole",
                     "Resource": "*",
-                    "Condition": {
-                        "StringLikeIfExists": {
-                            "iam:PassedToService": "lambda.amazonaws.com"
-                        }
-                    }
+                    "Effect": "Allow"
                 },
                 {
-                    "Effect": "Allow",
                     "Action": [
                         "logs:CreateLogGroup",
                         "logs:DescribeLogGroups"
                     ],
-                    "Resource": "arn:aws:logs:*:*:log-group:/aws/iotsitewise*"
+                    "Resource": "arn:aws:logs:*:*:log-group:/aws/iotsitewise*",
+                    "Effect": "Allow"
                 },
                 {
-                    "Effect": "Allow",
                     "Action": [
                         "logs:CreateLogStream",
                         "logs:DescribeLogStreams",
                         "logs:PutLogEvents"
                     ],
-                    "Resource": "arn:aws:logs:*:*:log-group:/aws/iotsitewise*:log-stream:*"
+                    "Resource": "arn:aws:logs:*:*:log-group:/aws/iotsitewise*:log-stream:*",
+                    "Effect": "Allow"
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-03-26T21:02:43Z"
+        "CreateDate": "2020-04-25T02:15:01Z"
     }
 }
