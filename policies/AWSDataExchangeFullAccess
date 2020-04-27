@@ -70,11 +70,20 @@
                         "aws-marketplace:CancelAgreementRequest"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "kms:DescribeKey",
+                        "kms:ListAliases",
+                        "kms:ListKeys"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-13T19:27:59Z"
+        "CreateDate": "2020-04-27T14:22:05Z"
     }
 }
