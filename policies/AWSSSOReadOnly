@@ -19,6 +19,7 @@
                         "organizations:ListAccountsForParent",
                         "organizations:ListOrganizationalUnitsForParent",
                         "sso:DescribePermissionsPolicies",
+                        "sso:DescribeRegisteredRegions",
                         "sso:GetApplicationTemplate",
                         "sso:GetApplicationInstance",
                         "sso:GetPermissionSet",
@@ -26,6 +27,8 @@
                         "sso:GetPermissionsPolicy",
                         "sso:GetSSOStatus",
                         "sso:GetSSOConfiguration",
+                        "sso:GetSharedSsoConfiguration",
+                        "sso:GetManagedApplicationInstance",
                         "sso:GetTrust",
                         "sso:ListPermissionSets",
                         "sso:ListDirectoryAssociations",
@@ -43,8 +46,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-10-24T15:45:14Z"
+        "CreateDate": "2020-04-28T21:17:21Z"
     }
 }
