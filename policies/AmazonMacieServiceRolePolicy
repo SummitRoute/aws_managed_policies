@@ -14,7 +14,9 @@
                         "cloudtrail:LookupEvents",
                         "iam:ListAccountAliases",
                         "s3:Get*",
-                        "s3:List*"
+                        "s3:List*",
+                        "organizations:DescribeAccount",
+                        "organizations:ListAccounts"
                     ]
                 },
                 {
@@ -50,8 +52,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-09-27T21:50:33Z"
+        "CreateDate": "2020-04-30T17:41:57Z"
     }
 }

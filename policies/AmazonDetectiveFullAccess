@@ -1,0 +1,28 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "detective:*",
+                        "organizations:DescribeOrganization",
+                        "organizations:ListAccounts"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "guardduty:ArchiveFindings"
+                    ],
+                    "Resource": "arn:aws:guardduty:*:*:detector/*"
+                }
+            ]
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2020-04-30T17:57:15Z"
+    }
+}
