@@ -17,14 +17,16 @@
                         "schemas:DescribeSchema",
                         "schemas:GetDiscoveredSchema",
                         "schemas:DescribeCodeBinding",
-                        "schemas:GetCodeBindingSource"
+                        "schemas:GetCodeBindingSource",
+                        "schemas:ListTagsForResource",
+                        "schemas:GetResourcePolicy"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-28T23:05:57Z"
+        "CreateDate": "2020-05-01T00:50:53Z"
     }
 }
