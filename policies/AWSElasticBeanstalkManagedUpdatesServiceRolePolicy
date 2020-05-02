@@ -92,6 +92,7 @@
                     "Effect": "Allow",
                     "Action": [
                         "cloudformation:CreateStack",
+                        "cloudformation:CancelUpdateStack",
                         "cloudformation:DeleteStack",
                         "cloudformation:GetTemplate",
                         "cloudformation:UpdateStack"
@@ -163,8 +164,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-21T22:35:06Z"
+        "CreateDate": "2020-05-01T21:54:12Z"
     }
 }
