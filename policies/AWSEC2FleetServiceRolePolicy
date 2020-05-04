@@ -59,6 +59,20 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "ec2:CreateTags"
+                    ],
+                    "Resource": [
+                        "arn:aws:ec2:*:*:volume/*"
+                    ],
+                    "Condition": {
+                        "StringEquals": {
+                            "ec2:CreateAction": "RunInstances"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
                         "ec2:TerminateInstances"
                     ],
                     "Resource": "*",
@@ -70,8 +84,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-04-19T21:37:07Z"
+        "CreateDate": "2020-05-04T20:10:31Z"
     }
 }
