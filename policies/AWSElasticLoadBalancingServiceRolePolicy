@@ -7,6 +7,7 @@
                     "Effect": "Allow",
                     "Action": [
                         "ec2:DescribeAddresses",
+                        "ec2:DescribeCoipPools",
                         "ec2:DescribeInstances",
                         "ec2:DescribeNetworkInterfaces",
                         "ec2:DescribeSubnets",
@@ -19,7 +20,9 @@
                         "ec2:CreateSecurityGroup",
                         "ec2:CreateNetworkInterface",
                         "ec2:DeleteNetworkInterface",
+                        "ec2:GetCoipPoolUsage",
                         "ec2:ModifyNetworkInterfaceAttribute",
+                        "ec2:AllocateAddress",
                         "ec2:AuthorizeSecurityGroupIngress",
                         "ec2:AssociateAddress",
                         "ec2:DisassociateAddress",
@@ -32,14 +35,15 @@
                         "logs:GetLogDelivery",
                         "logs:UpdateLogDelivery",
                         "logs:DeleteLogDelivery",
-                        "logs:ListLogDeliveries"
+                        "logs:ListLogDeliveries",
+                        "outposts:GetOutpostInstanceTypes"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-10-07T22:55:16Z"
+        "CreateDate": "2020-05-05T19:32:02Z"
     }
 }
