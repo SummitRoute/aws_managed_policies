@@ -54,6 +54,39 @@
                     }
                 },
                 {
+                    "Sid": "CodeConnectTagManagement",
+                    "Effect": "Allow",
+                    "Action": [
+                        "codestar-connections:TagResource",
+                        "codestar-connections:UntagResource",
+                        "codestar-connections:ListTagsForResource"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "ForAllValues:StringEquals": {
+                            "aws:TagKeys": "codeguru-reviewer"
+                        }
+                    }
+                },
+                {
+                    "Sid": "CodeConnectManagedRules",
+                    "Effect": "Allow",
+                    "Action": [
+                        "codestar-connections:UseConnection",
+                        "codestar-connections:ListConnections",
+                        "codestar-connections:PassConnection"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "ForAllValues:StringEquals": {
+                            "codestar-connections:ProviderAction": [
+                                "ListRepositories",
+                                "ListOwners"
+                            ]
+                        }
+                    }
+                },
+                {
                     "Sid": "CloudWatchEventsManagedRules",
                     "Effect": "Allow",
                     "Action": [
@@ -71,8 +104,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
-        "IsDefaultVersion": false,
-        "CreateDate": "2019-12-03T08:33:47Z"
+        "VersionId": "v2",
+        "IsDefaultVersion": true,
+        "CreateDate": "2020-05-07T00:43:09Z"
     }
 }
