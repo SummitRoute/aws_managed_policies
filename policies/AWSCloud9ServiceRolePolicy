@@ -63,11 +63,59 @@
                             "ec2:ResourceTag/aws:cloudformation:stack-name": "aws-cloud9-*"
                         }
                     }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ssm:StartSession"
+                    ],
+                    "Resource": [
+                        "arn:aws:ssm:*:*:document/AWS-StartSSHSession"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ssm:StartSession"
+                    ],
+                    "Resource": [
+                        "arn:aws:ec2:*:*:instance/*"
+                    ],
+                    "Condition": {
+                        "StringLike": {
+                            "ssm:resourceTag/aws:cloudformation:stack-name": [
+                                "aws-cloud9-*"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "iam:ListInstanceProfiles"
+                    ],
+                    "Resource": [
+                        "arn:aws:iam::*:instance-profile/cloud9/*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "iam:PassRole"
+                    ],
+                    "Resource": [
+                        "arn:aws:iam::*:role/AWSCloud9SSMAccessRole"
+                    ],
+                    "Condition": {
+                        "StringLike": {
+                            "iam:PassedToService": "ec2.amazonaws.com"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-03-16T10:20:54Z"
+        "CreateDate": "2020-05-07T09:15:24Z"
     }
 }
