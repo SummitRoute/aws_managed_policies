@@ -7,7 +7,8 @@
                     "Effect": "Allow",
                     "Resource": "*",
                     "Action": [
-                        "macie:*"
+                        "macie:*",
+                        "macie2:*"
                     ]
                 },
                 {
@@ -22,8 +23,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-06-28T15:54:57Z"
+        "CreateDate": "2020-05-13T19:05:16Z"
     }
 }
