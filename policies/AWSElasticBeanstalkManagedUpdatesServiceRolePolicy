@@ -84,7 +84,9 @@
                     ],
                     "Resource": [
                         "arn:aws:autoscaling:*:*:launchConfiguration:*:launchConfigurationName/awseb-e-*",
-                        "arn:aws:autoscaling:*:*:autoScalingGroup:*:autoScalingGroupName/awseb-e-*"
+                        "arn:aws:autoscaling:*:*:autoScalingGroup:*:autoScalingGroupName/awseb-e-*",
+                        "arn:aws:autoscaling:*:*:launchConfiguration:*:launchConfigurationName/eb-*",
+                        "arn:aws:autoscaling:*:*:autoScalingGroup:*:autoScalingGroupName/eb-*"
                     ]
                 },
                 {
@@ -97,7 +99,10 @@
                         "cloudformation:GetTemplate",
                         "cloudformation:UpdateStack"
                     ],
-                    "Resource": "arn:aws:cloudformation:*:*:stack/awseb-e-*"
+                    "Resource": [
+                        "arn:aws:cloudformation:*:*:stack/awseb-e-*",
+                        "arn:aws:cloudformation:*:*:stack/eb-*"
+                    ]
                 },
                 {
                     "Sid": "EC2",
@@ -108,7 +113,10 @@
                     "Resource": "arn:aws:ec2:*:*:instance/*",
                     "Condition": {
                         "StringLike": {
-                            "ec2:ResourceTag/aws:cloudformation:stack-id": "arn:aws:cloudformation:*:*:stack/awseb-e-*"
+                            "ec2:ResourceTag/aws:cloudformation:stack-id": [
+                                "arn:aws:cloudformation:*:*:stack/awseb-e-*",
+                                "arn:aws:cloudformation:*:*:stack/eb-*"
+                            ]
                         }
                     }
                 },
@@ -159,13 +167,15 @@
                     ],
                     "Resource": [
                         "arn:aws:elasticloadbalancing:*:*:targetgroup/awseb-*",
-                        "arn:aws:elasticloadbalancing:*:*:loadbalancer/awseb-e-*"
+                        "arn:aws:elasticloadbalancing:*:*:loadbalancer/awseb-e-*",
+                        "arn:aws:elasticloadbalancing:*:*:targetgroup/eb-*",
+                        "arn:aws:elasticloadbalancing:*:*:loadbalancer/eb-*"
                     ]
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-05-01T21:54:12Z"
+        "CreateDate": "2020-05-18T22:51:38Z"
     }
 }
