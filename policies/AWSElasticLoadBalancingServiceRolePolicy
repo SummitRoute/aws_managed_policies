@@ -43,7 +43,7 @@
             ]
         },
         "VersionId": "v5",
-        "IsDefaultVersion": true,
+        "IsDefaultVersion": false,
         "CreateDate": "2020-05-05T19:32:02Z"
     }
 }
