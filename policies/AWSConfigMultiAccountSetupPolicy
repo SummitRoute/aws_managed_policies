@@ -14,6 +14,13 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "config:DescribeConfigurationRecorders"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
                         "organizations:ListAccounts",
                         "organizations:DescribeOrganization",
                         "organizations:ListAWSServiceAccessForOrganization",
@@ -61,8 +68,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-03-04T16:51:40Z"
+        "CreateDate": "2020-05-21T22:59:26Z"
     }
 }

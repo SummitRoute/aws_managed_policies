@@ -60,7 +60,8 @@
                         "codestar-notifications:ListNotificationRules",
                         "codestar-notifications:ListTargets",
                         "codestar-notifications:ListTagsforResource",
-                        "codestar-notifications:ListEventTypes"
+                        "codestar-notifications:ListEventTypes",
+                        "states:ListStateMachines"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
@@ -155,8 +156,8 @@
             ],
             "Version": "2012-10-17"
         },
-        "VersionId": "v9",
+        "VersionId": "v10",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-03-26T16:06:34Z"
+        "CreateDate": "2020-05-21T22:03:13Z"
     }
 }
