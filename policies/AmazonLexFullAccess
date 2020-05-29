@@ -113,6 +113,22 @@
                     ]
                 },
                 {
+                    "Action": [
+                        "iam:PassRole"
+                    ],
+                    "Effect": "Allow",
+                    "Resource": [
+                        "arn:aws:iam::*:role/aws-service-role/lex.amazonaws.com/AWSServiceRoleForLexBots"
+                    ],
+                    "Condition": {
+                        "StringLike": {
+                            "iam:PassedToService": [
+                                "lex.amazonaws.com"
+                            ]
+                        }
+                    }
+                },
+                {
                     "Effect": "Allow",
                     "Action": [
                         "iam:DetachRolePolicy"
@@ -128,8 +144,8 @@
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-05-15T16:34:50Z"
+        "CreateDate": "2020-05-29T15:21:00Z"
     }
 }
