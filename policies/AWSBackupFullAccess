@@ -29,11 +29,40 @@
                 },
                 {
                     "Action": [
+                        "rds:DeleteDBSnapshot",
+                        "rds:DeleteDBClusterSnapshot"
+                    ],
+                    "Effect": "Allow",
+                    "Resource": "*",
+                    "Condition": {
+                        "ForAnyValue:StringEquals": {
+                            "aws:CalledVia": [
+                                "backup.amazonaws.com"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "Action": [
                         "dynamodb:ListBackups",
                         "dynamodb:ListTables"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
+                },
+                {
+                    "Action": [
+                        "dynamodb:DeleteBackup"
+                    ],
+                    "Effect": "Allow",
+                    "Resource": "*",
+                    "Condition": {
+                        "ForAnyValue:StringEquals": {
+                            "aws:CalledVia": [
+                                "backup.amazonaws.com"
+                            ]
+                        }
+                    }
                 },
                 {
                     "Action": [
@@ -58,6 +87,21 @@
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
+                },
+                {
+                    "Action": [
+                        "ec2:DeleteSnapshot",
+                        "ec2:DeregisterImage"
+                    ],
+                    "Effect": "Allow",
+                    "Resource": "*",
+                    "Condition": {
+                        "ForAnyValue:StringEquals": {
+                            "aws:CalledVia": [
+                                "backup.amazonaws.com"
+                            ]
+                        }
+                    }
                 },
                 {
                     "Action": [
@@ -138,8 +182,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-01-13T18:40:45Z"
+        "CreateDate": "2020-05-29T23:46:51Z"
     }
 }
