@@ -1,6 +1,7 @@
 #!/bin/bash
 
 DATE=`date +%Y-%m-%d-%H-%M`
+WORDTOREMOVE="policies/"
 
 # job preparation (SSH + Git)
 echo "Job preparation"
@@ -31,6 +32,7 @@ then
         git push --tags
         echo "Push the changes to master"
         diff="$(git diff --name-only) $(git ls-files --others --exclude-standard)"
+        diff=${diff//$WORDTOREMOVE/}
         git add ./policies
         git commit -am "Update detected"
         commit_id=$(git log --format="%H" -n 1)
