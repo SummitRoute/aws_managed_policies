@@ -17,6 +17,9 @@
                         "autoscaling:DescribePolicies",
                         "autoscaling:DescribeScheduledActions",
                         "autoscaling:DescribeTags",
+                        "backup:ListBackupPlans",
+                        "backup:ListBackupSelections",
+                        "backup:GetBackupSelection",
                         "cloudfront:ListTagsForResource",
                         "cloudformation:describeType",
                         "cloudformation:listTypes",
@@ -41,6 +44,9 @@
                         "dynamodb:ListTables",
                         "dynamodb:ListTagsOfResource",
                         "ec2:Describe*",
+                        "ec2:GetEbsEncryptionByDefault",
+                        "eks:DescribeCluster",
+                        "eks:ListClusters",
                         "elasticache:DescribeCacheClusters",
                         "elasticache:DescribeReplicationGroups",
                         "elasticfilesystem:DescribeFileSystems",
@@ -52,6 +58,7 @@
                         "elasticloadbalancing:DescribeTags",
                         "elasticmapreduce:DescribeCluster",
                         "elasticmapreduce:DescribeSecurityConfiguration",
+                        "elasticmapreduce:GetBlockPublicAccessConfiguration",
                         "elasticmapreduce:ListClusters",
                         "elasticmapreduce:ListInstances",
                         "es:DescribeElasticsearchDomain",
@@ -141,6 +148,7 @@
                         "sagemaker:ListNotebookInstances",
                         "secretsmanager:ListSecrets",
                         "secretsmanager:ListSecretVersionIds",
+                        "securityhub:describeHub",
                         "shield:DescribeDRTAccess",
                         "shield:DescribeProtection",
                         "shield:DescribeSubscription",
@@ -163,8 +171,8 @@
                 }
             ]
         },
-        "VersionId": "v18",
+        "VersionId": "v19",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-18T22:33:22Z"
+        "CreateDate": "2020-05-15T18:39:10Z"
     }
 }

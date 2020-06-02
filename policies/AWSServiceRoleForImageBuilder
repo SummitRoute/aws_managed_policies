@@ -49,6 +49,34 @@
                 },
                 {
                     "Effect": "Allow",
+                    "Action": [
+                        "ec2:RunInstances"
+                    ],
+                    "Resource": [
+                        "arn:aws:ec2:*::image/*",
+                        "arn:aws:ec2:*:*:subnet/*",
+                        "arn:aws:ec2:*:*:network-interface/*",
+                        "arn:aws:ec2:*:*:security-group/*",
+                        "arn:aws:ec2:*:*:key-pair/*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ec2:RunInstances"
+                    ],
+                    "Resource": [
+                        "arn:aws:ec2:*:*:volume/*",
+                        "arn:aws:ec2:*:*:instance/*"
+                    ],
+                    "Condition": {
+                        "StringEquals": {
+                            "aws:RequestTag/CreatedBy": "EC2 Image Builder"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
                     "Action": "iam:PassRole",
                     "Resource": "*",
                     "Condition": {
@@ -82,6 +110,8 @@
                         "ec2:DescribeInstanceAttribute",
                         "ec2:DescribeInstanceStatus",
                         "ec2:DescribeInstances",
+                        "ec2:DescribeInstanceTypeOfferings",
+                        "ec2:DescribeInstanceTypes",
                         "ec2:DescribeSubnets",
                         "ec2:DescribeTags",
                         "ec2:ModifyImageAttribute"
@@ -191,8 +221,8 @@
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-16T19:45:25Z"
+        "CreateDate": "2020-06-01T17:40:18Z"
     }
 }

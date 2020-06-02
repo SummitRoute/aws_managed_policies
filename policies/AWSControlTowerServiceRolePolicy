@@ -109,13 +109,38 @@
                     ],
                     "Resource": [
                         "arn:aws:iam::*:role/service-role/AWSControlTowerStackSetRole",
-                        "arn:aws:iam::*:role/service-role/AWSControlTowerCloudTrailRole"
+                        "arn:aws:iam::*:role/service-role/AWSControlTowerCloudTrailRole",
+                        "arn:aws:iam::*:role/service-role/AWSControlTowerConfigAggregatorRoleForOrganizations"
                     ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "config:DeleteConfigurationAggregator",
+                        "config:PutConfigurationAggregator",
+                        "config:TagResource"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEquals": {
+                            "aws:ResourceTag/aws-control-tower": "managed-by-control-tower"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "organizations:EnableAWSServiceAccess",
+                    "Resource": "*",
+                    "Condition": {
+                        "ForAllValues:StringLike": {
+                            "organizations:ServicePrincipal": "config.amazonaws.com"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-06-13T16:36:30Z"
+        "CreateDate": "2020-05-11T23:04:15Z"
     }
 }

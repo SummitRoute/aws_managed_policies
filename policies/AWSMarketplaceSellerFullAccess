@@ -27,11 +27,30 @@
                         "ec2:ModifySnapshotAttribute"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Action": [
+                        "aws-marketplace:SearchAgreements",
+                        "aws-marketplace:DescribeAgreement",
+                        "aws-marketplace:GetAgreementTerms"
+                    ],
+                    "Effect": "Allow",
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEquals": {
+                            "aws-marketplace:PartyType": "Proposer"
+                        },
+                        "ForAllValues:StringEquals": {
+                            "aws-marketplace:AgreementType": [
+                                "PurchaseAgreement"
+                            ]
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-03-05T23:10:50Z"
+        "CreateDate": "2020-05-28T21:07:22Z"
     }
 }

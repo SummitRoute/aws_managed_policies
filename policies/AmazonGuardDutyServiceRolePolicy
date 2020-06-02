@@ -9,14 +9,22 @@
                         "ec2:DescribeInstances",
                         "ec2:DescribeImages",
                         "organizations:ListAccounts",
-                        "organizations:DescribeAccount"
+                        "organizations:DescribeAccount",
+                        "s3:GetBucketPublicAccessBlock",
+                        "s3:GetEncryptionConfiguration",
+                        "s3:GetBucketTagging",
+                        "s3:GetAccountPublicAccessBlock",
+                        "s3:ListAllMyBuckets",
+                        "s3:GetBucketAcl",
+                        "s3:GetBucketPolicy",
+                        "s3:GetBucketPolicyStatus"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-20T16:01:34Z"
+        "CreateDate": "2020-05-14T20:25:50Z"
     }
 }

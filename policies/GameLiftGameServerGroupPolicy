@@ -37,7 +37,8 @@
                         "ec2:DescribeImages",
                         "ec2:DescribeInstances",
                         "autoscaling:DescribeAutoScalingGroups",
-                        "ec2:DescribeLaunchTemplateVersions"
+                        "ec2:DescribeLaunchTemplateVersions",
+                        "ec2:DescribeSubnets"
                     ],
                     "Resource": "*"
                 },
@@ -63,8 +64,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-16T17:13:11Z"
+        "CreateDate": "2020-05-13T17:27:43Z"
     }
 }

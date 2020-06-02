@@ -1,0 +1,54 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "s3:GetObject",
+                        "s3:PutObject",
+                        "s3:ListBucket"
+                    ],
+                    "Resource": [
+                        "arn:aws:s3:::aws-portal-cache*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "logs:CreateLogStream",
+                        "logs:PutLogEvents",
+                        "logs:DescribeLogStreams",
+                        "logs:DescribeLogGroups"
+                    ],
+                    "Resource": [
+                        "arn:aws:logs:*:*:log-group:/thinkbox*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "logs:CreateLogGroup"
+                    ],
+                    "Resource": [
+                        "*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "sqs:SendMessage",
+                        "sqs:GetQueueUrl"
+                    ],
+                    "Resource": [
+                        "arn:aws:sqs:*:*:DeadlineAWS*"
+                    ]
+                }
+            ]
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2020-05-27T19:15:05Z"
+    }
+}

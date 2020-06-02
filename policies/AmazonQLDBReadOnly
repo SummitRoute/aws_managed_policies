@@ -10,6 +10,8 @@
                         "qldb:ListJournalS3Exports",
                         "qldb:ListJournalS3ExportsForLedger",
                         "qldb:DescribeJournalS3Export",
+                        "qldb:DescribeJournalKinesisStream",
+                        "qldb:ListJournalKinesisStreamsForLedger",
                         "qldb:GetBlock",
                         "qldb:GetDigest",
                         "qldb:GetRevision",
@@ -21,8 +23,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-09-05T18:19:24Z"
+        "CreateDate": "2020-05-19T17:47:55Z"
     }
 }

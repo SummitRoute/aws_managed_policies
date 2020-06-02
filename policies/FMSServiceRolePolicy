@@ -219,7 +219,11 @@
                         "arn:aws:wafv2:*:*:global/rulegroup/*",
                         "arn:aws:wafv2:*:*:regional/rulegroup/*",
                         "arn:aws:wafv2:*:*:global/managedruleset/*",
-                        "arn:aws:wafv2:*:*:regional/managedruleset/*"
+                        "arn:aws:wafv2:*:*:regional/managedruleset/*",
+                        "arn:aws:wafv2:*:*:global/ipset/*",
+                        "arn:aws:wafv2:*:*:regional/ipset/*",
+                        "arn:aws:wafv2:*:*:global/regexpatternset/*",
+                        "arn:aws:wafv2:*:*:regional/regexpatternset/*"
                     ]
                 },
                 {
@@ -252,8 +256,8 @@
                 }
             ]
         },
-        "VersionId": "v11",
+        "VersionId": "v12",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-06T18:55:16Z"
+        "CreateDate": "2020-05-12T21:02:44Z"
     }
 }

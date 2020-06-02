@@ -6,15 +6,18 @@
                 {
                     "Action": [
                         "lex:PostContent",
-                        "lex:PostText"
+                        "lex:PostText",
+                        "lex:PutSession",
+                        "lex:GetSession",
+                        "lex:DeleteSession"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2017-04-11T23:06:24Z"
+        "CreateDate": "2020-05-12T19:26:15Z"
     }
 }

@@ -11,14 +11,16 @@
                         "organizations:ListAccounts",
                         "organizations:ListAWSServiceAccessForOrganization",
                         "organizations:ListChildren",
-                        "organizations:ListParents"
+                        "organizations:ListParents",
+                        "organizations:ListDelegatedServicesForAccount",
+                        "organizations:ListDelegatedAdministrators"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-10-24T17:21:05Z"
+        "CreateDate": "2020-05-27T18:04:51Z"
     }
 }

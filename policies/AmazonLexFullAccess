@@ -23,6 +23,11 @@
                 },
                 {
                     "Effect": "Allow",
+                    "Action": "kendra:ListIndices",
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
                     "Action": [
                         "lambda:AddPermission",
                         "lambda:RemovePermission"
@@ -108,6 +113,22 @@
                     ]
                 },
                 {
+                    "Action": [
+                        "iam:PassRole"
+                    ],
+                    "Effect": "Allow",
+                    "Resource": [
+                        "arn:aws:iam::*:role/aws-service-role/lex.amazonaws.com/AWSServiceRoleForLexBots"
+                    ],
+                    "Condition": {
+                        "StringLike": {
+                            "iam:PassedToService": [
+                                "lex.amazonaws.com"
+                            ]
+                        }
+                    }
+                },
+                {
                     "Effect": "Allow",
                     "Action": [
                         "iam:DetachRolePolicy"
@@ -123,8 +144,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2017-11-15T23:55:07Z"
+        "CreateDate": "2020-05-29T15:21:00Z"
     }
 }
