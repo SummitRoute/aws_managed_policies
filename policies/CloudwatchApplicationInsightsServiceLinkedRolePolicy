@@ -160,7 +160,9 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "ec2:DescribeInstances"
+                        "ec2:DescribeInstances",
+                        "ec2:DescribeVolumes",
+                        "ec2:DescribeVolumeStatus"
                     ],
                     "Resource": [
                         "*"
@@ -169,7 +171,8 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "rds:DescribeDBInstances"
+                        "rds:DescribeDBInstances",
+                        "rds:DescribeDBClusters"
                     ],
                     "Resource": [
                         "*"
@@ -208,11 +211,50 @@
                     "Resource": [
                         "*"
                     ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "dynamodb:DescribeTable",
+                        "dynamodb:DescribeContributorInsights",
+                        "dynamodb:DescribeTimeToLive"
+                    ],
+                    "Resource": [
+                        "*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "application-autoscaling:DescribeScalableTargets"
+                    ],
+                    "Resource": [
+                        "*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "s3:GetMetricsConfiguration",
+                        "s3:GetReplicationConfiguration"
+                    ],
+                    "Resource": [
+                        "*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "states:DescribeStateMachine"
+                    ],
+                    "Resource": [
+                        "*"
+                    ]
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-03-13T19:39:57Z"
+        "CreateDate": "2020-06-02T19:50:03Z"
     }
 }
