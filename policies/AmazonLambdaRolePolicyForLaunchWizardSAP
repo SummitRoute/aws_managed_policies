@@ -47,8 +47,8 @@
                     ],
                     "Resource": "*",
                     "Condition": {
-                        "ForAllValues:StringLike": {
-                            "aws:TagKeys": "LaunchWizard*"
+                        "StringLike": {
+                            "ec2:ResourceTag/aws:cloudformation:stack-id": "arn:aws:cloudformation:*:*:stack/LaunchWizard-*/*"
                         }
                     }
                 },
@@ -76,8 +76,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-03-30T20:25:12Z"
+        "CreateDate": "2020-06-03T16:20:46Z"
     }
 }
