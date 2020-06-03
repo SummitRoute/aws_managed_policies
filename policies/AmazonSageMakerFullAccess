@@ -101,6 +101,7 @@
                         "ecr:Describe*",
                         "ecr:GetAuthorizationToken",
                         "ecr:GetDownloadUrlForLayer",
+                        "ecr:StartImageScan",
                         "elastic-inference:Connect",
                         "elasticfilesystem:DescribeFileSystems",
                         "elasticfilesystem:DescribeMountTargets",
@@ -293,8 +294,8 @@
                 }
             ]
         },
-        "VersionId": "v16",
+        "VersionId": "v17",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-01-13T20:47:34Z"
+        "CreateDate": "2020-06-03T17:26:13Z"
     }
 }
