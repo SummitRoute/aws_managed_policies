@@ -10,16 +10,12 @@
                         "ec2:ModifyVolume",
                         "ec2:DescribeInstances",
                         "ec2:DescribeVolumes",
-                        "ec2:CreateVolume",
-                        "ec2:RebootInstances",
-                        "ec2:StartInstances",
-                        "ec2:StopInstances",
-                        "ec2:ModifyInstanceAttribute"
+                        "ec2:CreateVolume"
                     ],
                     "Resource": "*",
                     "Condition": {
-                        "Null": {
-                            "ec2:ResourceTag/LaunchWizardResourceGroupID": "false"
+                        "ForAllValues:StringLike": {
+                            "aws:TagKeys": "LaunchWizardResourceGroupID"
                         }
                     }
                 },
@@ -75,6 +71,10 @@
                     "Effect": "Allow",
                     "Action": [
                         "ec2:Describe*",
+                        "ec2:RebootInstances",
+                        "ec2:StartInstances",
+                        "ec2:StopInstances",
+                        "ec2:ModifyInstanceAttribute",
                         "cloudformation:DescribeStackResources",
                         "cloudformation:SignalResource",
                         "cloudformation:DescribeStackResource",
@@ -134,8 +134,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-06-03T18:30:04Z"
+        "CreateDate": "2020-06-03T23:17:35Z"
     }
 }
