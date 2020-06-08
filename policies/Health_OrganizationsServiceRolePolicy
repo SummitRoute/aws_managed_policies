@@ -7,11 +7,17 @@
                     "Effect": "Allow",
                     "Action": "organizations:ListAccounts",
                     "Resource": "*"
+                },
+                {
+                    "Sid": "ListAWSServiceAccessForOrganization0",
+                    "Effect": "Allow",
+                    "Action": "organizations:ListAWSServiceAccessForOrganization",
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-12-16T13:28:21Z"
+        "CreateDate": "2020-06-08T12:48:44Z"
     }
 }
