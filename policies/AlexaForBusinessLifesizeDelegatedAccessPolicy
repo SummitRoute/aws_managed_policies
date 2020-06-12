@@ -89,12 +89,12 @@
                         "kms:DescribeKey"
                     ],
                     "Effect": "Allow",
-                    "Resource": "arn:aws:kms:::key/*"
+                    "Resource": "arn:aws:kms:*:*:key/*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-06-04T19:46:56Z"
+        "CreateDate": "2020-06-12T20:31:59Z"
     }
 }
