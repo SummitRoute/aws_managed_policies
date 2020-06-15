@@ -28,11 +28,20 @@
                         "s3:GetObject"
                     ],
                     "Resource": "arn:aws:s3:::ec2imagebuilder*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "logs:CreateLogStream",
+                        "logs:CreateLogGroup",
+                        "logs:PutLogEvents"
+                    ],
+                    "Resource": "arn:aws:logs:*:*:log-group:/aws/imagebuilder/*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-12-01T19:08:23Z"
+        "CreateDate": "2020-06-15T17:44:31Z"
     }
 }
