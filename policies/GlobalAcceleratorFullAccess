@@ -19,7 +19,8 @@
                     "Action": [
                         "ec2:DescribeAddresses",
                         "ec2:DescribeInstances",
-                        "ec2:DescribeInternetGateways"
+                        "ec2:DescribeInternetGateways",
+                        "ec2:DescribeRegions"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
@@ -36,8 +37,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-10-21T21:25:42Z"
+        "CreateDate": "2020-06-16T16:47:10Z"
     }
 }
