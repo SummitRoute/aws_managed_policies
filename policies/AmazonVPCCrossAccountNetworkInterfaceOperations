@@ -27,6 +27,7 @@
                         "ec2:ModifyNetworkInterfaceAttribute",
                         "ec2:DescribeNetworkInterfaceAttribute",
                         "ec2:DescribeAvailabilityZones",
+                        "ec2:DescribeRegions",
                         "ec2:DescribeVpcs",
                         "ec2:DescribeSubnets"
                     ],
@@ -46,8 +47,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-01-07T19:16:23Z"
+        "CreateDate": "2020-06-16T14:16:49Z"
     }
 }
