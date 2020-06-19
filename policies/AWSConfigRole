@@ -37,6 +37,7 @@
                         "config:List*",
                         "config:Put*",
                         "config:Select*",
+                        "dax:DescribeClusters",
                         "dms:DescribeReplicationInstances",
                         "dynamodb:DescribeContinuousBackups",
                         "dynamodb:DescribeLimits",
@@ -105,6 +106,7 @@
                         "lambda:ListAliases",
                         "lambda:ListFunctions",
                         "logs:DescribeLogGroups",
+                        "organizations:DescribeOrganization",
                         "rds:DescribeDBClusters",
                         "rds:DescribeDBClusterSnapshotAttributes",
                         "rds:DescribeDBClusterSnapshots",
@@ -164,7 +166,13 @@
                         "ssm:DescribeDocument",
                         "ssm:GetAutomationExecution",
                         "ssm:GetDocument",
+                        "storagegateway:ListGateways",
+                        "storagegateway:ListVolumes",
                         "support:DescribeCases",
+                        "waf:GetLoggingConfiguration",
+                        "waf:GetWebACL",
+                        "wafv2:GetLoggingConfiguration",
+                        "waf-regional:GetLoggingConfiguration",
                         "waf-regional:GetWebACL",
                         "waf-regional:GetWebACLForResource"
                     ],
@@ -172,8 +180,8 @@
                 }
             ]
         },
-        "VersionId": "v33",
+        "VersionId": "v34",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-05-15T18:25:47Z"
+        "CreateDate": "2020-06-19T15:59:30Z"
     }
 }
