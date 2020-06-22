@@ -8,6 +8,7 @@
                     "Effect": "Allow",
                     "Action": [
                         "codecommit:GetRepository",
+                        "codecommit:GetBranch",
                         "codecommit:DescribePullRequestEvents",
                         "codecommit:GetCommentsForPullRequest",
                         "codecommit:GetDifferences",
@@ -69,8 +70,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-09T07:33:48Z"
+        "CreateDate": "2020-06-22T05:41:49Z"
     }
 }
