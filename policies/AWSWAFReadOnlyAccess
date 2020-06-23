@@ -11,15 +11,16 @@
                         "waf-regional:List*",
                         "wafv2:Get*",
                         "wafv2:List*",
-                        "wafv2:Describe*"
+                        "wafv2:Describe*",
+                        "wafv2:CheckCapacity"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-01-07T19:27:38Z"
+        "CreateDate": "2020-06-22T22:38:54Z"
     }
 }
