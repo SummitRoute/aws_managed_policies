@@ -91,14 +91,16 @@
                     "Effect": "Allow",
                     "Action": [
                         "codeguru-reviewer:DescribeRepositoryAssociation",
-                        "codeguru-reviewer:ListRepositoryAssociations"
+                        "codeguru-reviewer:ListRepositoryAssociations",
+                        "codeguru-reviewer:DescribeCodeReview",
+                        "codeguru-reviewer:ListCodeReviews"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v8",
+        "VersionId": "v9",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-03-26T16:09:12Z"
+        "CreateDate": "2020-06-24T16:06:55Z"
     }
 }
