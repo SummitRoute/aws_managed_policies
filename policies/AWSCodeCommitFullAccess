@@ -141,7 +141,9 @@
                         "codeguru-reviewer:AssociateRepository",
                         "codeguru-reviewer:DescribeRepositoryAssociation",
                         "codeguru-reviewer:ListRepositoryAssociations",
-                        "codeguru-reviewer:DisassociateRepository"
+                        "codeguru-reviewer:DisassociateRepository",
+                        "codeguru-reviewer:DescribeCodeReview",
+                        "codeguru-reviewer:ListCodeReviews"
                     ],
                     "Resource": "*"
                 },
@@ -182,8 +184,8 @@
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-03-26T16:23:20Z"
+        "CreateDate": "2020-06-24T17:08:06Z"
     }
 }
