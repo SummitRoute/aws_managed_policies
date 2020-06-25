@@ -24,7 +24,10 @@
                         "athena:StartQueryExecution",
                         "athena:StopQueryExecution",
                         "athena:ListWorkGroups",
-                        "athena:GetWorkGroup"
+                        "athena:GetWorkGroup",
+                        "athena:GetDataCatalog",
+                        "athena:GetDatabase",
+                        "athena:GetTableMetadata"
                     ],
                     "Resource": [
                         "*"
@@ -84,8 +87,8 @@
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-09-10T17:59:46Z"
+        "CreateDate": "2020-06-25T16:24:58Z"
     }
 }
