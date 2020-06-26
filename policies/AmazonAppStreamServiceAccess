@@ -18,7 +18,8 @@
                         "ec2:DescribeRouteTables",
                         "ec2:DescribeSecurityGroups",
                         "ec2:DescribeVpcEndpoints",
-                        "s3:ListAllMyBuckets"
+                        "s3:ListAllMyBuckets",
+                        "ds:DescribeDirectories"
                     ],
                     "Resource": "*"
                 },
@@ -44,8 +45,8 @@
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-03-23T18:20:33Z"
+        "CreateDate": "2020-06-26T16:33:54Z"
     }
 }
