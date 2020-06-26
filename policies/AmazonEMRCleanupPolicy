@@ -8,7 +8,9 @@
                     "Resource": "*",
                     "Action": [
                         "ec2:DescribeInstances",
+                        "ec2:DescribeLaunchTemplates",
                         "ec2:DescribeSpotInstanceRequests",
+                        "ec2:DeleteLaunchTemplate",
                         "ec2:ModifyInstanceAttribute",
                         "ec2:TerminateInstances",
                         "ec2:CancelSpotInstanceRequests",
@@ -22,8 +24,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2017-09-26T23:54:19Z"
+        "CreateDate": "2020-06-25T20:40:52Z"
     }
 }
