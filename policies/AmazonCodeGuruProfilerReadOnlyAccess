@@ -5,20 +5,21 @@
             "Statement": [
                 {
                     "Action": [
-                        "codeguru-profiler:Get*",
+                        "codeguru:Get*",
+                        "codeguru-profiler:BatchGet*",
                         "codeguru-profiler:Describe*",
+                        "codeguru-profiler:Get*",
                         "codeguru-profiler:List*",
                         "iam:ListRoles",
-                        "iam:ListUsers",
-                        "codeguru:Get*"
+                        "iam:ListUsers"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-06T20:34:53Z"
+        "CreateDate": "2020-06-27T23:52:52Z"
     }
 }

@@ -12,11 +12,23 @@
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
+                },
+                {
+                    "Action": [
+                        "iam:CreateServiceLinkedRole"
+                    ],
+                    "Effect": "Allow",
+                    "Resource": "arn:aws:iam::*:role/*AWSServiceRoleForCodeGuruProfiler*",
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:AWSServiceName": "codeguru-profiler.amazonaws.com"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-06T21:16:38Z"
+        "CreateDate": "2020-06-28T00:04:51Z"
     }
 }
