@@ -55,6 +55,15 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "s3:PutObject"
+                    ],
+                    "Resource": [
+                        "arn:aws:s3:::stack*/gateway_certs/*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
                         "secretsmanager:GetSecretValue"
                     ],
                     "Resource": [
@@ -63,8 +72,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-05-27T19:05:00Z"
+        "CreateDate": "2020-06-30T16:02:07Z"
     }
 }

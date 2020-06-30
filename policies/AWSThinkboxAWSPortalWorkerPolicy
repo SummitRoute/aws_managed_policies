@@ -17,6 +17,15 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "s3:GetObject"
+                    ],
+                    "Resource": [
+                        "arn:aws:s3:::stack*/gateway_certs/*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
                         "logs:CreateLogStream",
                         "logs:PutLogEvents",
                         "logs:DescribeLogStreams",
@@ -47,8 +56,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-05-27T19:15:05Z"
+        "CreateDate": "2020-06-30T16:11:00Z"
     }
 }
