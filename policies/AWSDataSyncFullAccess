@@ -21,6 +21,7 @@
                         "iam:ListRoles",
                         "logs:CreateLogGroup",
                         "logs:DescribeLogGroups",
+                        "logs:DescribeResourcePolicies",
                         "s3:ListAllMyBuckets",
                         "s3:ListBucket"
                     ],
@@ -42,8 +43,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-01-24T17:59:16Z"
+        "CreateDate": "2020-06-30T17:58:58Z"
     }
 }
