@@ -6,51 +6,74 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "ec2:DescribeRouteTables",
                         "ec2:CreateRoute",
                         "ec2:DeleteRoute"
                     ],
-                    "Resource": "*",
+                    "Resource": "arn:aws:ec2:*:*:route-table/*",
                     "Condition": {
-                        "ForAllValues:StringEquals": {
-                            "aws:TagKeys": "LaunchWizardApplicationType"
+                        "StringLike": {
+                            "ec2:ResourceTag/LaunchWizardApplicationType": "*"
                         }
                     }
                 },
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "ec2:DescribeVpcs",
-                        "ssm:ListCommands"
+                        "ec2:CreateTags"
                     ],
-                    "Resource": "*"
+                    "Resource": "*",
+                    "Condition": {
+                        "StringLike": {
+                            "ec2:ResourceTag/LaunchWizardApplicationType": "*"
+                        },
+                        "ForAllValues:StringLike": {
+                            "aws:TagKeys": "LaunchWizard*"
+                        }
+                    }
                 },
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "ssm:GetDocument"
+                        "ssm:GetParameter"
+                    ],
+                    "Resource": "arn:aws:ssm:*:*:parameter/LaunchWizard*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ssm:GetDocument",
+                        "ssm:sendCommand"
                     ],
                     "Resource": [
-                        "arn:aws:ssm:::document/AWS-RunShellScript"
+                        "arn:aws:ssm:*:*:document/AWS-RunShellScript"
                     ]
                 },
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "ssm:sendCommand",
-                        "ssm:GetParameter",
-                        "ec2:CreateTags",
-                        "ec2:DescribeTags",
-                        "ec2:DescribeInstanceAttribute",
-                        "ec2:ModifyInstanceAttribute",
-                        "ec2:DescribeInstances"
+                        "ssm:SendCommand"
                     ],
-                    "Resource": "*",
+                    "Resource": [
+                        "arn:aws:ec2:*:*:instance/*"
+                    ],
                     "Condition": {
-                        "ForAllValues:StringLike": {
-                            "aws:TagKeys": "LaunchWizard*"
+                        "StringLike": {
+                            "ssm:resourceTag/LaunchWizardApplicationType": "*"
                         }
                     }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ssm:ListCommands",
+                        "ec2:DescribeVpcs",
+                        "ec2:DescribeRouteTables",
+                        "ec2:DescribeInstances",
+                        "ec2:DescribeTags",
+                        "ec2:DescribeInstanceAttribute",
+                        "ec2:ModifyInstanceAttribute"
+                    ],
+                    "Resource": "*"
                 },
                 {
                     "Effect": "Allow",
@@ -76,8 +99,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-06-03T19:36:41Z"
+        "CreateDate": "2020-07-01T19:49:27Z"
     }
 }

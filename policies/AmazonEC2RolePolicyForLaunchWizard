@@ -7,21 +7,56 @@
                     "Effect": "Allow",
                     "Action": [
                         "ec2:AttachVolume",
-                        "ec2:ModifyVolume",
-                        "ec2:DescribeInstances",
-                        "ec2:DescribeVolumes",
-                        "ec2:CreateVolume"
+                        "ec2:RebootInstances",
+                        "ec2:StartInstances",
+                        "ec2:StopInstances"
                     ],
-                    "Resource": "*",
+                    "Resource": [
+                        "arn:aws:ec2:*:*:volume/*",
+                        "arn:aws:ec2:*:*:instance/*"
+                    ],
                     "Condition": {
-                        "ForAllValues:StringLike": {
-                            "aws:TagKeys": "LaunchWizardResourceGroupID"
+                        "StringLike": {
+                            "ec2:ResourceTag/LaunchWizardResourceGroupID": "*"
                         }
                     }
                 },
                 {
                     "Effect": "Allow",
-                    "Action": "ec2:CreateTags",
+                    "Action": [
+                        "ec2:ReplaceRoute"
+                    ],
+                    "Resource": "arn:aws:ec2:*:*:route-table/*",
+                    "Condition": {
+                        "StringLike": {
+                            "ec2:ResourceTag/LaunchWizardApplicationType": "*"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ec2:DescribeAddresses",
+                        "ec2:AssociateAddress",
+                        "ec2:DescribeImages",
+                        "ec2:DescribeRegions",
+                        "ec2:DescribeInstances",
+                        "ec2:DescribeImages",
+                        "ec2:DescribeRegions",
+                        "ec2:DescribeVolumes",
+                        "ec2:DescribeRouteTables",
+                        "ec2:ModifyInstanceAttribute",
+                        "cloudwatch:GetMetricStatistics",
+                        "cloudwatch:PutMetricData"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ec2:CreateTags",
+                        "ec2:CreateVolume"
+                    ],
                     "Resource": "*",
                     "Condition": {
                         "ForAllValues:StringEquals": {
@@ -53,17 +88,6 @@
                 },
                 {
                     "Effect": "Allow",
-                    "Action": [
-                        "ec2:DescribeAddresses",
-                        "ec2:AssociateAddress",
-                        "ec2:DescribeImages",
-                        "ec2:DescribeRegions",
-                        "cloudwatch:GetMetricStatistics"
-                    ],
-                    "Resource": "*"
-                },
-                {
-                    "Effect": "Allow",
                     "Action": "logs:Create*",
                     "Resource": "arn:aws:logs:*:*:*"
                 },
@@ -71,10 +95,6 @@
                     "Effect": "Allow",
                     "Action": [
                         "ec2:Describe*",
-                        "ec2:RebootInstances",
-                        "ec2:StartInstances",
-                        "ec2:StopInstances",
-                        "ec2:ModifyInstanceAttribute",
                         "cloudformation:DescribeStackResources",
                         "cloudformation:SignalResource",
                         "cloudformation:DescribeStackResource",
@@ -110,32 +130,11 @@
                         "arn:aws:dynamodb:*:*:table/LaunchWizard*",
                         "arn:aws:sqs:*:*:LaunchWizard*"
                     ]
-                },
-                {
-                    "Effect": "Allow",
-                    "Action": [
-                        "ec2:DescribeImages",
-                        "ec2:DescribeRegions"
-                    ],
-                    "Resource": "*"
-                },
-                {
-                    "Effect": "Allow",
-                    "Action": [
-                        "ec2:DescribeRouteTables",
-                        "ec2:ReplaceRoute"
-                    ],
-                    "Resource": "*",
-                    "Condition": {
-                        "ForAllValues:StringEquals": {
-                            "aws:TagKeys": "LaunchWizardApplicationType"
-                        }
-                    }
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-06-03T23:17:35Z"
+        "CreateDate": "2020-07-01T19:04:48Z"
     }
 }
