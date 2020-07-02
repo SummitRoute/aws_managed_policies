@@ -40,7 +40,7 @@
                         "secretsmanager:DeleteSecret",
                         "secretsmanager:UpdateSecret"
                     ],
-                    "Resource": "arn:aws:secretsmanager:*:*:secret:A4BNetworkProfile*"
+                    "Resource": "arn:aws:secretsmanager:*:*:secret:A4B*"
                 },
                 {
                     "Effect": "Allow",
@@ -48,14 +48,14 @@
                     "Resource": "*",
                     "Condition": {
                         "StringLike": {
-                            "secretsmanager:Name": "A4BNetworkProfile*"
+                            "secretsmanager:Name": "A4B*"
                         }
                     }
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-05-20T21:32:33Z"
+        "CreateDate": "2020-07-01T21:01:55Z"
     }
 }
