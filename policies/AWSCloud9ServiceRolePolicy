@@ -104,7 +104,7 @@
                         "iam:PassRole"
                     ],
                     "Resource": [
-                        "arn:aws:iam::*:role/AWSCloud9SSMAccessRole"
+                        "arn:aws:iam::*:role/service-role/AWSCloud9SSMAccessRole"
                     ],
                     "Condition": {
                         "StringLike": {
@@ -114,8 +114,8 @@
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-05-07T09:15:24Z"
+        "CreateDate": "2020-07-02T17:06:14Z"
     }
 }

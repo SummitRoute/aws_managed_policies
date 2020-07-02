@@ -87,11 +87,24 @@
                     "Resource": [
                         "*"
                     ]
+                },
+                {
+                    "Sid": "AllowDescribeAndListOperationsOnIdentitySource",
+                    "Effect": "Allow",
+                    "Action": [
+                        "identitystore:DescribeUser",
+                        "identitystore:DescribeGroup",
+                        "identitystore:ListGroups",
+                        "identitystore:ListUsers"
+                    ],
+                    "Resource": [
+                        "*"
+                    ]
                 }
             ]
         },
-        "VersionId": "v8",
+        "VersionId": "v9",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-03-12T20:36:59Z"
+        "CreateDate": "2020-07-02T20:20:49Z"
     }
 }
