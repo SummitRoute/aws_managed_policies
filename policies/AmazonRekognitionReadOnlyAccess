@@ -24,6 +24,7 @@
                         "rekognition:GetCelebrityRecognition",
                         "rekognition:GetFaceSearch",
                         "rekognition:GetTextDetection",
+                        "rekognition:GetSegmentDetection",
                         "rekognition:DescribeStreamProcessor",
                         "rekognition:ListStreamProcessors",
                         "rekognition:DescribeProjects",
@@ -34,8 +35,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-02-20T21:26:20Z"
+        "CreateDate": "2020-07-06T20:21:19Z"
     }
 }
