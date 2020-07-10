@@ -1144,6 +1144,7 @@
                         "redshift:describeReservedNodes",
                         "redshift:describeResize",
                         "redshift:describeSnapshotCopyGrants",
+                        "redshift:describeStorage",
                         "redshift:describeTableRestoreStatus",
                         "redshift:describeTags",
                         "rekognition:listCollections",
@@ -1522,8 +1523,8 @@
             ],
             "Version": "2012-10-17"
         },
-        "VersionId": "v10",
+        "VersionId": "v11",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-29T18:42:38Z"
+        "CreateDate": "2020-07-09T23:29:32Z"
     }
 }
