@@ -11,7 +11,10 @@
                         "cloudwatch:GetMetricData",
                         "cloudwatch:ListMetrics",
                         "cloudwatch:PutMetricAlarm",
-                        "cloudwatch:DeleteAlarms"
+                        "cloudwatch:DeleteAlarms",
+                        "cloudwatch:PutAnomalyDetector",
+                        "cloudwatch:DeleteAnomalyDetector",
+                        "cloudwatch:DescribeAnomalyDetectors"
                     ],
                     "Resource": [
                         "*"
@@ -43,7 +46,8 @@
                     "Action": [
                         "cloudFormation:CreateStack",
                         "cloudFormation:UpdateStack",
-                        "cloudFormation:DeleteStack"
+                        "cloudFormation:DeleteStack",
+                        "cloudFormation:DescribeStackResources"
                     ],
                     "Resource": [
                         "arn:aws:cloudformation:*:*:stack/ApplicationInsights-*"
@@ -245,7 +249,9 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "states:DescribeStateMachine"
+                        "states:DescribeExecution",
+                        "states:DescribeStateMachine",
+                        "states:GetExecutionHistory"
                     ],
                     "Resource": [
                         "*"
@@ -253,8 +259,8 @@
                 }
             ]
         },
-        "VersionId": "v8",
+        "VersionId": "v9",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-06-02T19:50:03Z"
+        "CreateDate": "2020-07-13T17:19:09Z"
     }
 }
