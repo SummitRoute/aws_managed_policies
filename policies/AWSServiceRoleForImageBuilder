@@ -81,7 +81,10 @@
                     "Resource": "*",
                     "Condition": {
                         "StringEquals": {
-                            "iam:PassedToService": "ec2.amazonaws.com"
+                            "iam:PassedToService": [
+                                "ec2.amazonaws.com",
+                                "ec2.amazonaws.com.cn"
+                            ]
                         }
                     }
                 },
@@ -221,8 +224,8 @@
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-06-01T17:40:18Z"
+        "CreateDate": "2020-07-15T21:23:31Z"
     }
 }
