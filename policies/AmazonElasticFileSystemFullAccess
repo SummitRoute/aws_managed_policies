@@ -5,6 +5,8 @@
             "Statement": [
                 {
                     "Action": [
+                        "cloudwatch:DescribeAlarmsForMetric",
+                        "cloudwatch:GetMetricData",
                         "ec2:CreateNetworkInterface",
                         "ec2:DeleteNetworkInterface",
                         "ec2:DescribeAvailabilityZones",
@@ -24,6 +26,7 @@
                         "elasticfilesystem:DeleteTags",
                         "elasticfilesystem:DeleteAccessPoint",
                         "elasticfilesystem:DeleteFileSystemPolicy",
+                        "elasticfilesystem:DescribeBackupPolicy",
                         "elasticfilesystem:DescribeFileSystems",
                         "elasticfilesystem:DescribeFileSystemPolicy",
                         "elasticfilesystem:DescribeLifecycleConfiguration",
@@ -32,6 +35,7 @@
                         "elasticfilesystem:DescribeTags",
                         "elasticfilesystem:DescribeAccessPoints",
                         "elasticfilesystem:ModifyMountTargetSecurityGroups",
+                        "elasticfilesystem:PutBackupPolicy",
                         "elasticfilesystem:PutLifecycleConfiguration",
                         "elasticfilesystem:PutFileSystemPolicy",
                         "elasticfilesystem:UpdateFileSystem",
@@ -60,8 +64,8 @@
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-01-13T16:15:01Z"
+        "CreateDate": "2020-07-16T16:46:23Z"
     }
 }

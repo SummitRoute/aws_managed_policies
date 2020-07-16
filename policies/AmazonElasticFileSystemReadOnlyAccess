@@ -5,6 +5,8 @@
             "Statement": [
                 {
                     "Action": [
+                        "cloudwatch:DescribeAlarmsForMetric",
+                        "cloudwatch:GetMetricData",
                         "ec2:DescribeAvailabilityZones",
                         "ec2:DescribeNetworkInterfaceAttribute",
                         "ec2:DescribeNetworkInterfaces",
@@ -12,6 +14,7 @@
                         "ec2:DescribeSubnets",
                         "ec2:DescribeVpcAttribute",
                         "ec2:DescribeVpcs",
+                        "elasticfilesystem:DescribeBackupPolicy",
                         "elasticfilesystem:DescribeFileSystems",
                         "elasticfilesystem:DescribeFileSystemPolicy",
                         "elasticfilesystem:DescribeLifecycleConfiguration",
@@ -27,8 +30,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-01-13T16:16:12Z"
+        "CreateDate": "2020-07-16T16:46:50Z"
     }
 }
