@@ -14,7 +14,8 @@
                         "ec2:DescribeNetworkInterfaces",
                         "ec2:CreateNetworkInterfacePermission",
                         "ec2:DescribeSecurityGroups",
-                        "ec2:DescribeVpcs"
+                        "ec2:DescribeVpcs",
+                        "ec2:DescribeAvailabilityZones"
                     ],
                     "Resource": [
                         "*"
@@ -22,8 +23,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-05-30T18:10:50Z"
+        "CreateDate": "2020-07-17T19:03:27Z"
     }
 }

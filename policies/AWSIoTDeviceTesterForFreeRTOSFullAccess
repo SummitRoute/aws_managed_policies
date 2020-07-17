@@ -138,11 +138,22 @@
                         "arn:aws:s3:::afr-ota*/*",
                         "arn:aws:s3:::idt-*/*"
                     ]
+                },
+                {
+                    "Sid": "VisualEditor6",
+                    "Effect": "Allow",
+                    "Action": [
+                        "iot:CancelJobExecution"
+                    ],
+                    "Resource": [
+                        "arn:aws:iot:*:*:job/*",
+                        "arn:aws:iot:*:*:thing/idt*"
+                    ]
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-03-23T19:49:50Z"
+        "CreateDate": "2020-07-17T17:09:58Z"
     }
 }
