@@ -13,10 +13,26 @@
                         "cloudtrail:ListTags",
                         "cloudtrail:LookupEvents",
                         "iam:ListAccountAliases",
-                        "s3:Get*",
-                        "s3:List*",
                         "organizations:DescribeAccount",
-                        "organizations:ListAccounts"
+                        "organizations:ListAccounts",
+                        "s3:GetAccountPublicAccessBlock",
+                        "s3:ListAllMyBuckets",
+                        "s3:GetBucketAcl",
+                        "s3:GetBucketLocation",
+                        "s3:GetBucketLogging",
+                        "s3:GetBucketPolicy",
+                        "s3:GetBucketPolicyStatus",
+                        "s3:GetBucketPublicAccessBlock",
+                        "s3:GetBucketTagging",
+                        "s3:GetBucketVersioning",
+                        "s3:GetBucketWebsite",
+                        "s3:GetEncryptionConfiguration",
+                        "s3:GetLifecycleConfiguration",
+                        "s3:GetReplicationConfiguration",
+                        "s3:ListBucket",
+                        "s3:GetObject",
+                        "s3:GetObjectAcl",
+                        "s3:GetObjectTagging"
                     ]
                 },
                 {
@@ -52,8 +68,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-30T17:41:57Z"
+        "CreateDate": "2020-07-17T21:31:07Z"
     }
 }
