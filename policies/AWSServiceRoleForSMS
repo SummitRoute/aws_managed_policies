@@ -133,6 +133,30 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "ec2:DisassociateIamInstanceProfile",
+                        "ec2:AssociateIamInstanceProfile",
+                        "ec2:ReplaceIamInstanceProfileAssociation"
+                    ],
+                    "Resource": "arn:aws:ec2:*:*:instance/*",
+                    "Condition": {
+                        "StringLike": {
+                            "ec2:ResourceTag/aws:cloudformation:stack-id": "arn:aws:cloudformation:*:*:stack/sms-app-*/*"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "iam:PassRole",
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:PassedToService": "ec2.amazonaws.com"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
                         "ec2:ModifyInstanceAttribute",
                         "ec2:StopInstances",
                         "ec2:StartInstances",
@@ -147,8 +171,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-20T17:55:26Z"
+        "CreateDate": "2020-07-20T18:48:59Z"
     }
 }
