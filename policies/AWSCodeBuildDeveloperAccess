@@ -33,6 +33,13 @@
                     "Resource": "arn:aws:ssm:*:*:parameter/CodeBuild/*"
                 },
                 {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ssm:StartSession"
+                    ],
+                    "Resource": "arn:aws:ecs:*:*:task/*/*"
+                },
+                {
                     "Sid": "CodeStarNotificationsReadWriteAccess",
                     "Effect": "Allow",
                     "Action": [
@@ -80,8 +87,8 @@
             ],
             "Version": "2012-10-17"
         },
-        "VersionId": "v10",
+        "VersionId": "v11",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-02T17:19:29Z"
+        "CreateDate": "2020-07-21T04:23:02Z"
     }
 }
