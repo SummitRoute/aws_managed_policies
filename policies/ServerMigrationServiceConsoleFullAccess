@@ -57,11 +57,16 @@
                     },
                     "Effect": "Allow",
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "iam:GetInstanceProfile",
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-05-09T17:18:57Z"
+        "CreateDate": "2020-07-20T22:00:37Z"
     }
 }

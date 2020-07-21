@@ -20,7 +20,8 @@
                         "waf-regional:AssociateWebACL",
                         "waf-regional:DisassociateWebACL",
                         "elasticloadbalancing:SetWebACL",
-                        "apigateway:SetWebACL"
+                        "apigateway:SetWebACL",
+                        "elasticloadbalancing:SetSecurityGroups"
                     ],
                     "Resource": [
                         "arn:aws:waf:*:*:webacl/*",
@@ -43,6 +44,13 @@
                         "arn:aws:waf:*",
                         "arn:aws:waf-regional:*"
                     ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "elasticloadbalancing:ApplySecurityGroupsToLoadBalancer"
+                    ],
+                    "Resource": "*"
                 },
                 {
                     "Effect": "Allow",
@@ -256,8 +264,8 @@
                 }
             ]
         },
-        "VersionId": "v12",
+        "VersionId": "v13",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-05-12T21:02:44Z"
+        "CreateDate": "2020-07-20T23:05:16Z"
     }
 }
