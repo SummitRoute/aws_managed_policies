@@ -12,11 +12,16 @@
                     "Resource": [
                         "arn:aws:firehose:*:*:deliverystream/aws-waf-logs-*"
                     ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "organizations:DescribeOrganization",
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-07T00:40:56Z"
+        "CreateDate": "2020-07-23T17:04:25Z"
     }
 }
