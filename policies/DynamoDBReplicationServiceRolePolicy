@@ -17,6 +17,7 @@
                         "dynamodb:GetRecords",
                         "dynamodb:GetShardIterator",
                         "dynamodb:DescribeTimeToLive",
+                        "dynamodb:UpdateTimeToLive",
                         "application-autoscaling:RegisterScalableTarget",
                         "application-autoscaling:DescribeScalableTargets",
                         "application-autoscaling:PutScalingPolicy",
@@ -40,8 +41,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-01-22T22:55:38Z"
+        "CreateDate": "2020-07-24T21:40:41Z"
     }
 }
