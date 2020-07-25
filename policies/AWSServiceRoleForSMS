@@ -116,6 +116,20 @@
                     "Resource": "arn:aws:ec2:*:*:instance/*"
                 },
                 {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ec2:CreateTags"
+                    ],
+                    "Resource": [
+                        "arn:aws:ec2:*:*:snapshot/*"
+                    ],
+                    "Condition": {
+                        "StringEquals": {
+                            "ec2:CreateAction": "CopySnapshot"
+                        }
+                    }
+                },
+                {
                     "Action": "iam:GetRole",
                     "Resource": "*",
                     "Effect": "Allow"
@@ -171,8 +185,8 @@
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-07-20T18:48:59Z"
+        "CreateDate": "2020-07-25T02:26:29Z"
     }
 }
