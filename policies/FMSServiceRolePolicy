@@ -35,6 +35,19 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "wafv2:PutLoggingConfiguration",
+                        "wafv2:GetLoggingConfiguration",
+                        "wafv2:ListLoggingConfigurations",
+                        "wafv2:DeleteLoggingConfiguration"
+                    ],
+                    "Resource": [
+                        "arn:aws:wafv2:*:*:regional/webacl/*",
+                        "arn:aws:wafv2:*:*:global/webacl/*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
                         "waf:CreateWebACL",
                         "waf-regional:CreateWebACL",
                         "waf:GetChangeToken",
@@ -264,8 +277,8 @@
                 }
             ]
         },
-        "VersionId": "v13",
+        "VersionId": "v14",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-07-20T23:05:16Z"
+        "CreateDate": "2020-07-28T16:30:44Z"
     }
 }
