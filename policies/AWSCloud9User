@@ -67,11 +67,33 @@
                             "iam:AWSServiceName": "cloud9.amazonaws.com"
                         }
                     }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "ssm:StartSession",
+                    "Resource": "arn:aws:ec2:*:*:instance/*",
+                    "Condition": {
+                        "StringLike": {
+                            "ssm:resourceTag/aws:cloud9:environment": "*"
+                        },
+                        "StringEquals": {
+                            "aws:CalledViaFirst": "cloud9.amazonaws.com"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ssm:StartSession"
+                    ],
+                    "Resource": [
+                        "arn:aws:ssm:*:*:document/*"
+                    ]
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-07-02T08:46:37Z"
+        "CreateDate": "2020-07-29T06:26:43Z"
     }
 }
