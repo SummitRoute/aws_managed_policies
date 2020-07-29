@@ -17,6 +17,7 @@
                         "route53:UpdateHealthCheck",
                         "ec2:DescribeVpcs",
                         "ec2:DescribeRegions",
+                        "ec2:DescribeInstances",
                         "servicediscovery:*"
                     ],
                     "Resource": [
@@ -25,8 +26,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-11-28T23:57:31Z"
+        "CreateDate": "2020-07-29T19:15:35Z"
     }
 }

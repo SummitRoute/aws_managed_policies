@@ -17,7 +17,8 @@
                         "servicediscovery:List*",
                         "servicediscovery:RegisterInstance",
                         "servicediscovery:DeregisterInstance",
-                        "servicediscovery:DiscoverInstances"
+                        "servicediscovery:DiscoverInstances",
+                        "ec2:DescribeInstances"
                     ],
                     "Resource": [
                         "*"
@@ -25,8 +26,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-11-29T00:04:57Z"
+        "CreateDate": "2020-07-29T17:57:24Z"
     }
 }
