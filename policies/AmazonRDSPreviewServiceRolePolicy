@@ -48,11 +48,23 @@
                     "Resource": [
                         "arn:aws:logs:*:*:log-group:/aws/rds/*:log-stream:*"
                     ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "cloudwatch:PutMetricData"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEquals": {
+                            "cloudwatch:namespace": "AWS/RDS"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-05-31T18:02:00Z"
+        "CreateDate": "2020-07-29T00:05:20Z"
     }
 }
