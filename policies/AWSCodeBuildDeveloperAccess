@@ -6,9 +6,14 @@
                     "Action": [
                         "codebuild:StartBuild",
                         "codebuild:StopBuild",
+                        "codebuild:StartBuildBatch",
+                        "codebuild:StopBuildBatch",
+                        "codebuild:RetryBuild",
+                        "codebuild:RetryBuildBatch",
                         "codebuild:BatchGet*",
                         "codebuild:GetResourcePolicy",
                         "codebuild:DescribeTestCases",
+                        "codebuild:DescribeCodeCoverages",
                         "codebuild:List*",
                         "codecommit:GetBranch",
                         "codecommit:GetCommit",
@@ -87,8 +92,8 @@
             ],
             "Version": "2012-10-17"
         },
-        "VersionId": "v11",
+        "VersionId": "v12",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-07-21T04:23:02Z"
+        "CreateDate": "2020-07-30T18:25:47Z"
     }
 }

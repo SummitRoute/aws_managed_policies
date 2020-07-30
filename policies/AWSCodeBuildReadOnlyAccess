@@ -8,6 +8,7 @@
                         "codebuild:GetResourcePolicy",
                         "codebuild:List*",
                         "codebuild:DescribeTestCases",
+                        "codebuild:DescribeCodeCoverages",
                         "codecommit:GetBranch",
                         "codecommit:GetCommit",
                         "codecommit:GetRepository",
@@ -46,8 +47,8 @@
             ],
             "Version": "2012-10-17"
         },
-        "VersionId": "v9",
+        "VersionId": "v10",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-02T16:49:01Z"
+        "CreateDate": "2020-07-30T18:28:43Z"
     }
 }
