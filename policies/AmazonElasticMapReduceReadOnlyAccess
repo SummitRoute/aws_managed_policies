@@ -7,6 +7,7 @@
                     "Action": [
                         "elasticmapreduce:Describe*",
                         "elasticmapreduce:List*",
+                        "elasticmapreduce:GetBlockPublicAccessConfiguration",
                         "elasticmapreduce:ViewEventsFromAllClustersInConsole",
                         "s3:GetObject",
                         "s3:ListAllMyBuckets",
@@ -19,8 +20,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2017-05-22T23:00:19Z"
+        "CreateDate": "2020-07-29T23:14:09Z"
     }
 }
