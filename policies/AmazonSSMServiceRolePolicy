@@ -105,7 +105,8 @@
                     "Action": [
                         "support:DescribeTrustedAdvisorChecks",
                         "support:DescribeTrustedAdvisorCheckSummaries",
-                        "support:DescribeTrustedAdvisorCheckResult"
+                        "support:DescribeTrustedAdvisorCheckResult",
+                        "support:DescribeCases"
                     ],
                     "Resource": [
                         "*"
@@ -125,8 +126,8 @@
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-06-04T18:02:45Z"
+        "CreateDate": "2020-07-31T19:21:40Z"
     }
 }
