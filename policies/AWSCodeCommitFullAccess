@@ -181,11 +181,20 @@
                         "chatbot:DescribeSlackChannelConfigurations"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Sid": "CodeStarConnectionsReadOnlyAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "codestar-connections:ListConnections",
+                        "codestar-connections:GetConnection"
+                    ],
+                    "Resource": "arn:aws:codestar-connections:*:*:connection/*"
                 }
             ]
         },
-        "VersionId": "v8",
+        "VersionId": "v9",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-06-24T17:08:06Z"
+        "CreateDate": "2020-07-30T23:17:35Z"
     }
 }

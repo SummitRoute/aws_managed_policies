@@ -6,50 +6,6 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "autoscaling:DescribeAutoScalingGroups",
-                        "autoscaling:DescribeAutoScalingInstances",
-                        "autoscaling:SuspendProcesses"
-                    ],
-                    "Resource": "*"
-                },
-                {
-                    "Effect": "Allow",
-                    "Action": [
-                        "autoscaling:DetachInstances",
-                        "autoscaling:DeleteAutoScalingGroup"
-                    ],
-                    "Resource": "*",
-                    "Condition": {
-                        "ForAnyValue:StringEquals": {
-                            "autoscaling:ResourceTag/CreatedBy": "EC2 Image Builder"
-                        }
-                    }
-                },
-                {
-                    "Effect": "Allow",
-                    "Action": [
-                        "autoscaling:CreateAutoScalingGroup"
-                    ],
-                    "Resource": "*",
-                    "Condition": {
-                        "ForAnyValue:StringEquals": {
-                            "aws:RequestTag/CreatedBy": "EC2 Image Builder"
-                        }
-                    }
-                },
-                {
-                    "Effect": "Allow",
-                    "Action": "ec2:RunInstances",
-                    "Resource": "*",
-                    "Condition": {
-                        "ArnLike": {
-                            "ec2:LaunchTemplate": "arn:aws:ec2:*:*:launch-template/*"
-                        }
-                    }
-                },
-                {
-                    "Effect": "Allow",
-                    "Action": [
                         "ec2:RunInstances"
                     ],
                     "Resource": [
@@ -91,7 +47,6 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "ec2:DeleteLaunchTemplate",
                         "ec2:StopInstances",
                         "ec2:TerminateInstances"
                     ],
@@ -137,16 +92,6 @@
                     "Condition": {
                         "ForAnyValue:StringEquals": {
                             "aws:RequestTag/CreatedBy": "EC2 Image Builder"
-                        }
-                    }
-                },
-                {
-                    "Effect": "Allow",
-                    "Action": "iam:CreateServiceLinkedRole",
-                    "Resource": "*",
-                    "Condition": {
-                        "StringEquals": {
-                            "iam:AWSServiceName": "autoscaling.amazonaws.com"
                         }
                     }
                 },
@@ -221,11 +166,50 @@
                         "arn:aws:ssm:*:*:association/*",
                         "arn:aws:ec2:*:*:instance/*"
                     ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "kms:Encrypt",
+                        "kms:Decrypt",
+                        "kms:ReEncryptFrom",
+                        "kms:ReEncryptTo",
+                        "kms:GenerateDataKeyWithoutPlaintext",
+                        "kms:DescribeKey"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "ForAllValues:StringEquals": {
+                            "kms:EncryptionContextKeys": [
+                                "aws:ebs:id"
+                            ]
+                        },
+                        "StringLike": {
+                            "kms:ViaService": [
+                                "ec2.*.amazonaws.com"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "kms:CreateGrant",
+                    "Resource": "*",
+                    "Condition": {
+                        "Bool": {
+                            "kms:GrantIsForAWSResource": true
+                        },
+                        "StringLike": {
+                            "kms:ViaService": [
+                                "ec2.*.amazonaws.com"
+                            ]
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v8",
+        "VersionId": "v9",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-07-15T21:23:31Z"
+        "CreateDate": "2020-07-30T21:37:31Z"
     }
 }

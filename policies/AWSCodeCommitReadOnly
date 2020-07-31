@@ -64,6 +64,15 @@
                     "Resource": "arn:aws:iam::*:user/${aws:username}"
                 },
                 {
+                    "Sid": "CodeStarConnectionsReadOnlyAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "codestar-connections:ListConnections",
+                        "codestar-connections:GetConnection"
+                    ],
+                    "Resource": "arn:aws:codestar-connections:*:*:connection/*"
+                },
+                {
                     "Sid": "CodeStarNotificationsReadOnlyAccess",
                     "Effect": "Allow",
                     "Action": [
@@ -99,8 +108,8 @@
                 }
             ]
         },
-        "VersionId": "v9",
+        "VersionId": "v10",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-06-24T16:06:55Z"
+        "CreateDate": "2020-07-30T23:08:05Z"
     }
 }
