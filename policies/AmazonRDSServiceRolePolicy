@@ -74,11 +74,23 @@
                     "Resource": [
                         "arn:aws:kinesis:*:*:stream/aws-rds-das-*"
                     ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "cloudwatch:PutMetricData"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEquals": {
+                            "cloudwatch:namespace": "AWS/RDS"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-04-16T20:12:27Z"
+        "CreateDate": "2020-07-31T01:14:11Z"
     }
 }
