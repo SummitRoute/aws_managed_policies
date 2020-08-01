@@ -182,11 +182,16 @@
                             "ec2:ResourceTag/aws:cloudformation:stack-id": "arn:aws:cloudformation:*:*:stack/sms-app-*/*"
                         }
                     }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "iam:GetInstanceProfile",
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-07-25T02:26:29Z"
+        "CreateDate": "2020-08-01T03:40:53Z"
     }
 }
