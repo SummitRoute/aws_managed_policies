@@ -142,7 +142,8 @@
                         "organizations:ListChildren",
                         "organizations:ListRoots",
                         "organizations:ListParents",
-                        "organizations:ListOrganizationalUnitsForParent"
+                        "organizations:ListOrganizationalUnitsForParent",
+                        "organizations:ListAWSServiceAccessForOrganization"
                     ],
                     "Resource": [
                         "*"
@@ -277,8 +278,8 @@
                 }
             ]
         },
-        "VersionId": "v14",
+        "VersionId": "v15",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-07-28T16:30:44Z"
+        "CreateDate": "2020-08-05T23:22:08Z"
     }
 }
