@@ -21,12 +21,12 @@
                         "logs:CreateLogGroup",
                         "logs:DescribeLogGroups"
                     ],
-                    "Resource": "arn:aws:logs:*:*:log-group:/aws/braket/*"
+                    "Resource": "arn:aws:logs:*:*:log-group:/aws/braket:*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-08-04T17:12:23Z"
+        "CreateDate": "2020-08-06T20:10:42Z"
     }
 }

@@ -18,7 +18,8 @@
                     "Action": "ec2:CreateTags",
                     "Resource": [
                         "arn:aws:ec2:*:*:instance/*",
-                        "arn:aws:ec2:*:*:image/*"
+                        "arn:aws:ec2:*:*:image/*",
+                        "arn:aws:ec2:*:*:volume/*"
                     ],
                     "Condition": {
                         "ForAllValues:StringEquals": {
@@ -37,11 +38,20 @@
                             "aws:TagKeys": "aws:migrationhub:source-id"
                         }
                     }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ec2:DescribeInstanceAttribute"
+                    ],
+                    "Resource": [
+                        "*"
+                    ]
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-02-20T16:59:36Z"
+        "CreateDate": "2020-08-06T18:08:46Z"
     }
 }
