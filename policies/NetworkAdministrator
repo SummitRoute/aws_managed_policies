@@ -239,11 +239,25 @@
                         "ec2:SearchTransitGatewayRoutes"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "iam:CreateServiceLinkedRole"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringLike": {
+                            "iam:AWSServiceName": [
+                                "transitgateway.amazonaws.com"
+                            ]
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-03-31T16:34:49Z"
+        "CreateDate": "2020-08-08T00:10:51Z"
     }
 }
