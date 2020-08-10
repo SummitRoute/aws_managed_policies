@@ -16,6 +16,28 @@
                         "cloudformation:DescribeStacks",
                         "cloudformation:DescribeStackSet",
                         "cloudformation:DescribeStackSetOperation",
+                        "cloudformation:ListStackInstances",
+                        "cloudformation:UpdateStack",
+                        "cloudformation:UpdateStackInstances",
+                        "cloudformation:UpdateStackSet"
+                    ],
+                    "Resource": [
+                        "arn:aws:cloudformation:*:*:type/resource/AWS-IAM-Role"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "cloudformation:CreateStack",
+                        "cloudformation:CreateStackInstances",
+                        "cloudformation:CreateStackSet",
+                        "cloudformation:DeleteStack",
+                        "cloudformation:DeleteStackInstances",
+                        "cloudformation:DeleteStackSet",
+                        "cloudformation:DescribeStackInstance",
+                        "cloudformation:DescribeStacks",
+                        "cloudformation:DescribeStackSet",
+                        "cloudformation:DescribeStackSetOperation",
                         "cloudformation:GetTemplate",
                         "cloudformation:ListStackInstances",
                         "cloudformation:UpdateStack",
@@ -25,7 +47,8 @@
                     "Resource": [
                         "arn:aws:cloudformation:*:*:stack/AWSControlTower*/*",
                         "arn:aws:cloudformation:*:*:stack/StackSet-AWSControlTower*/*",
-                        "arn:aws:cloudformation:*:*:stackset/AWSControlTower*:*"
+                        "arn:aws:cloudformation:*:*:stackset/AWSControlTower*:*",
+                        "arn:aws:cloudformation:*:*:stackset-target/AWSControlTower*/*"
                     ]
                 },
                 {
@@ -139,8 +162,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-05-11T23:04:15Z"
+        "CreateDate": "2020-08-10T19:17:12Z"
     }
 }
