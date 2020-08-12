@@ -198,41 +198,11 @@
                             "iam:AssociatedResourceArn": "arn:aws:cloudformation:*:*:stack/sms-app-*/*"
                         }
                     }
-                },
-                {
-                    "Effect": "Allow",
-                    "Action": [
-                        "ec2:RunInstances"
-                    ],
-                    "Resource": "*"
-                },
-                {
-                    "Effect": "Allow",
-                    "Action": [
-                        "ec2:CreateTags",
-                        "ec2:DeleteTags"
-                    ],
-                    "Resource": "arn:aws:ec2:*:*:instance/*"
-                },
-                {
-                    "Effect": "Allow",
-                    "Action": [
-                        "ec2:ModifyInstanceAttribute",
-                        "ec2:StopInstances",
-                        "ec2:StartInstances",
-                        "ec2:TerminateInstances"
-                    ],
-                    "Resource": "*",
-                    "Condition": {
-                        "ForAllValues:StringLike": {
-                            "ec2:ResourceTag/aws:cloudformation:stack-id": "arn:aws:cloudformation:*:*:stack/sms-app-*/*"
-                        }
-                    }
                 }
             ]
         },
-        "VersionId": "v8",
+        "VersionId": "v1",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-08-11T20:46:24Z"
+        "CreateDate": "2020-08-11T20:41:44Z"
     }
 }
