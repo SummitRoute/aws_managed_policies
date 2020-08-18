@@ -7,14 +7,15 @@
                     "Sid": "AWSSSODirectoryAdministrator",
                     "Effect": "Allow",
                     "Action": [
-                        "sso-directory:*"
+                        "sso-directory:*",
+                        "sso:ListDirectoryAssociations"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-10-31T23:54:00Z"
+        "CreateDate": "2020-08-18T17:17:40Z"
     }
 }
