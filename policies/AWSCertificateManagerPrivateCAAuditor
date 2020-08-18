@@ -12,6 +12,7 @@
                         "acm-pca:GetCertificateAuthorityCsr",
                         "acm-pca:GetCertificateAuthorityCertificate",
                         "acm-pca:GetCertificate",
+                        "acm-pca:GetPolicy",
                         "acm-pca:ListPermissions",
                         "acm-pca:ListTags"
                     ],
@@ -26,8 +27,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-03-14T17:17:38Z"
+        "CreateDate": "2020-08-17T22:54:12Z"
     }
 }

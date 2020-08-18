@@ -9,11 +9,30 @@
                         "acm:*"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "iam:CreateServiceLinkedRole",
+                    "Resource": "arn:aws:iam::*:role/aws-service-role/acm.amazonaws.com/AWSServiceRoleForCertificateManager*",
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:AWSServiceName": "acm.amazonaws.com"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "iam:DeleteServiceLinkedRole",
+                        "iam:GetServiceLinkedRoleDeletionStatus",
+                        "iam:GetRole"
+                    ],
+                    "Resource": "arn:aws:iam::*:role/aws-service-role/acm.amazonaws.com/AWSServiceRoleForCertificateManager*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2016-01-21T17:02:36Z"
+        "CreateDate": "2020-08-17T22:18:28Z"
     }
 }
