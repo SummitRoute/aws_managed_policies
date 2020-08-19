@@ -47,6 +47,7 @@
                         "cognito-identity:LookupDeveloperIdentity",
                         "cognito-identity:Describe*",
                         "cognito-idp:Describe*",
+                        "cognito-idp:List*",
                         "cognito-sync:Describe*",
                         "cognito-sync:GetBulkPublishDetails",
                         "cognito-sync:GetCognitoEvents",
@@ -209,8 +210,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-03-26T23:19:04Z"
+        "CreateDate": "2020-08-18T22:30:18Z"
     }
 }
