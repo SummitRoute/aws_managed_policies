@@ -19,7 +19,7 @@
             ]
         },
         "VersionId": "v2",
-        "IsDefaultVersion": true,
+        "IsDefaultVersion": false,
         "CreateDate": "2019-05-23T19:58:58Z"
     }
 }
