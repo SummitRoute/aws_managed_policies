@@ -7,11 +7,8 @@
                     "Effect": "Allow",
                     "Action": [
                         "aws-portal:*Billing",
-                        "awsbillingconsole:*Billing",
                         "aws-portal:*Usage",
-                        "awsbillingconsole:*Usage",
                         "aws-portal:*PaymentMethods",
-                        "awsbillingconsole:*PaymentMethods",
                         "budgets:ViewBudget",
                         "budgets:ModifyBudget",
                         "cur:*",
@@ -21,8 +18,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-24T18:12:01Z"
+        "CreateDate": "2020-08-27T20:09:10Z"
     }
 }

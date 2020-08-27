@@ -22,11 +22,26 @@
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
+                },
+                {
+                    "Action": [
+                        "kinesis:ListStreams",
+                        "kinesis:DescribeStream"
+                    ],
+                    "Effect": "Allow",
+                    "Resource": "arn:aws:kinesis:::*"
+                },
+                {
+                    "Action": [
+                        "iam:ListRoles"
+                    ],
+                    "Effect": "Allow",
+                    "Resource": "arn:aws:iam:::*"
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-02-19T19:52:00Z"
+        "CreateDate": "2020-08-27T17:09:55Z"
     }
 }

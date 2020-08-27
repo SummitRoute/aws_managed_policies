@@ -18,7 +18,10 @@
                     "Resource": "*",
                     "Condition": {
                         "ForAnyValue:StringEquals": {
-                            "kms:EncryptionContextKeys": "aws:imagebuilder:arn"
+                            "kms:EncryptionContextKeys": "aws:imagebuilder:arn",
+                            "aws:CalledVia": [
+                                "imagebuilder.amazonaws.com"
+                            ]
                         }
                     }
                 },
@@ -40,8 +43,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
-        "IsDefaultVersion": false,
-        "CreateDate": "2020-06-15T17:44:31Z"
+        "VersionId": "v3",
+        "IsDefaultVersion": true,
+        "CreateDate": "2020-08-27T16:40:50Z"
     }
 }
