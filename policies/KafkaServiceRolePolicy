@@ -12,14 +12,30 @@
                         "ec2:AttachNetworkInterface",
                         "ec2:DeleteNetworkInterface",
                         "ec2:DetachNetworkInterface",
-                        "acm-pca:GetCertificateAuthorityCertificate"
+                        "acm-pca:GetCertificateAuthorityCertificate",
+                        "secretsmanager:ListSecrets"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "secretsmanager:GetResourcePolicy",
+                        "secretsmanager:PutResourcePolicy",
+                        "secretsmanager:DeleteResourcePolicy",
+                        "secretsmanager:DescribeSecret"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "ArnLike": {
+                            "secretsmanager:SecretId": "arn:*:secretsmanager:*:*:secret:AmazonMSK_*"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v2",
-        "IsDefaultVersion": false,
-        "CreateDate": "2019-05-23T19:58:58Z"
+        "VersionId": "v3",
+        "IsDefaultVersion": true,
+        "CreateDate": "2020-08-26T20:40:53Z"
     }
 }
