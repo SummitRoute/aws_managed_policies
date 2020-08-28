@@ -28,7 +28,8 @@
                         "sns:ListTopics",
                         "sns:Publish",
                         "logs:DescribeLogStreams",
-                        "logs:GetLogEvents"
+                        "logs:GetLogEvents",
+                        "outposts:GetOutpostInstanceTypes"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
@@ -53,8 +54,8 @@
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-04-09T17:42:48Z"
+        "CreateDate": "2020-08-27T23:38:56Z"
     }
 }
