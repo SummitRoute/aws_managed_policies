@@ -17,7 +17,9 @@
                         "application-autoscaling:DescribeScalingPolicies",
                         "application-autoscaling:PutScalingPolicy",
                         "application-autoscaling:RegisterScalableTarget",
-                        "application-autoscaling:DescribeScheduledActions"
+                        "application-autoscaling:DescribeScheduledActions",
+                        "application-autoscaling:PutScheduledAction",
+                        "application-autoscaling:DeleteScheduledAction"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
@@ -70,8 +72,8 @@
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-07-09T21:54:51Z"
+        "CreateDate": "2020-08-28T17:24:35Z"
     }
 }
