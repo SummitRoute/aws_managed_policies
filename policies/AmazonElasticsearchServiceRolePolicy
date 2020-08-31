@@ -12,15 +12,17 @@
                         "ec2:ModifyNetworkInterfaceAttribute",
                         "ec2:DescribeSecurityGroups",
                         "ec2:DescribeSubnets",
-                        "ec2:DescribeVpcs"
+                        "ec2:DescribeVpcs",
+                        "elasticloadbalancing:AddListenerCertificates",
+                        "elasticloadbalancing:RemoveListenerCertificates"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-02-08T21:38:27Z"
+        "CreateDate": "2020-08-31T10:30:23Z"
     }
 }
