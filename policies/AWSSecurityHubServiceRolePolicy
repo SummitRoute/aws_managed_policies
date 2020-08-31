@@ -19,7 +19,9 @@
                         "config:BatchGetResourceConfig",
                         "config:SelectResourceConfig",
                         "iam:GenerateCredentialReport",
-                        "iam:GetCredentialReport"
+                        "iam:GetCredentialReport",
+                        "organizations:ListAccounts",
+                        "organizations:DescribeAccount"
                     ],
                     "Resource": "*"
                 },
@@ -35,8 +37,8 @@
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-21T19:59:17Z"
+        "CreateDate": "2020-08-31T20:29:25Z"
     }
 }

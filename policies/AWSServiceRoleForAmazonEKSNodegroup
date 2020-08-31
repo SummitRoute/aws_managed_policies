@@ -16,7 +16,7 @@
                     ],
                     "Resource": "*",
                     "Condition": {
-                        "ForAnyValue:StringLike": {
+                        "StringLike": {
                             "ec2:ResourceTag/eks": "*"
                         }
                     }
@@ -34,7 +34,7 @@
                     ],
                     "Resource": "*",
                     "Condition": {
-                        "ForAnyValue:StringLike": {
+                        "StringLike": {
                             "ec2:ResourceTag/eks:nodegroup-name": "*"
                         }
                     }
@@ -96,23 +96,12 @@
                     }
                 },
                 {
-                    "Sid": "AllowPassRoleToIAM",
-                    "Effect": "Allow",
-                    "Action": "iam:PassRole",
-                    "Resource": "*",
-                    "Condition": {
-                        "StringEqualsIfExists": {
-                            "iam:PassedToService": "iam.amazonaws.com"
-                        }
-                    }
-                },
-                {
                     "Sid": "AllowPassRoleToAutoscaling",
                     "Effect": "Allow",
                     "Action": "iam:PassRole",
                     "Resource": "*",
                     "Condition": {
-                        "StringEqualsIfExists": {
+                        "StringEquals": {
                             "iam:PassedToService": "autoscaling.amazonaws.com"
                         }
                     }
@@ -183,8 +172,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-03-06T22:14:53Z"
+        "CreateDate": "2020-08-31T19:07:38Z"
     }
 }
