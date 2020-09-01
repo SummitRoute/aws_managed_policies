@@ -27,7 +27,7 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "s3:ListBuckets",
+                        "s3:ListAllMyBuckets",
                         "s3:ListObjects",
                         "s3:ListObjectsV2"
                     ],
@@ -417,8 +417,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-08-06T17:47:30Z"
+        "CreateDate": "2020-09-01T20:02:51Z"
     }
 }
