@@ -14,7 +14,10 @@
                     ],
                     "Condition": {
                         "StringEquals": {
-                            "rds:DatabaseEngine": "graphdb"
+                            "rds:DatabaseEngine": [
+                                "graphdb",
+                                "neptune"
+                            ]
                         }
                     }
                 },
@@ -134,8 +137,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-02-12T23:28:19Z"
+        "CreateDate": "2020-09-02T17:24:56Z"
     }
 }
