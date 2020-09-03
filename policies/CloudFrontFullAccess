@@ -18,30 +18,30 @@
                         "waf:ListWebACLs",
                         "waf:GetWebACL",
                         "wafv2:ListWebACLs",
-                        "wafv2:GetWebACL"
+                        "wafv2:GetWebACL",
+                        "kinesis:ListStreams"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
                 },
                 {
                     "Action": [
-                        "kinesis:ListStreams",
                         "kinesis:DescribeStream"
                     ],
                     "Effect": "Allow",
-                    "Resource": "arn:aws:kinesis:::*"
+                    "Resource": "arn:aws:kinesis:*:*:*"
                 },
                 {
                     "Action": [
                         "iam:ListRoles"
                     ],
                     "Effect": "Allow",
-                    "Resource": "arn:aws:iam:::*"
+                    "Resource": "arn:aws:iam::*:*"
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-08-27T17:09:55Z"
+        "CreateDate": "2020-09-03T20:18:42Z"
     }
 }
