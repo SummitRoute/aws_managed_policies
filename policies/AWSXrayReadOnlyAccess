@@ -15,7 +15,12 @@
                         "xray:GetTraceSummaries",
                         "xray:GetGroups",
                         "xray:GetGroup",
-                        "xray:GetTimeSeriesServiceStatistics"
+                        "xray:ListTagsForResource",
+                        "xray:GetTimeSeriesServiceStatistics",
+                        "xray:GetInsightSummaries",
+                        "xray:GetInsight",
+                        "xray:GetInsightEvents",
+                        "xray:GetInsightImpactGraph"
                     ],
                     "Resource": [
                         "*"
@@ -23,8 +28,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-04-30T18:11:46Z"
+        "CreateDate": "2020-09-03T22:19:40Z"
     }
 }
