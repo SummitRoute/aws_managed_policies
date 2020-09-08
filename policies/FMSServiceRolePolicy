@@ -203,7 +203,8 @@
                         "ec2:DescribeStaleSecurityGroups",
                         "ec2:DescribeNetworkInterfaces",
                         "ec2:ModifyNetworkInterfaceAttribute",
-                        "ec2:DescribeVpcs"
+                        "ec2:DescribeVpcs",
+                        "ec2:DescribeVpcPeeringConnections"
                     ],
                     "Resource": [
                         "*"
@@ -278,8 +279,8 @@
                 }
             ]
         },
-        "VersionId": "v15",
+        "VersionId": "v16",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-08-05T23:22:08Z"
+        "CreateDate": "2020-09-08T18:03:00Z"
     }
 }
