@@ -74,11 +74,22 @@
                     "Resource": [
                         "arn:aws:logs:*:*:log-group:/aws/elasticbeanstalk*"
                     ]
+                },
+                {
+                    "Sid": "ElasticBeanstalkHealthAccess",
+                    "Action": [
+                        "elasticbeanstalk:PutInstanceStatistics"
+                    ],
+                    "Effect": "Allow",
+                    "Resource": [
+                        "arn:aws:elasticbeanstalk:*:*:application/*",
+                        "arn:aws:elasticbeanstalk:*:*:environment/*"
+                    ]
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-03-01T00:07:00Z"
+        "CreateDate": "2020-09-09T19:53:40Z"
     }
 }

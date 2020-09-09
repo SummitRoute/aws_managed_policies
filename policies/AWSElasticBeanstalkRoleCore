@@ -184,11 +184,29 @@
                         "acm:List*"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Sid": "AllowPassRole",
+                    "Effect": "Allow",
+                    "Action": "iam:PassRole",
+                    "Resource": "arn:aws:iam::*:role/aws-elasticbeanstalk-*",
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:PassedToService": [
+                                "elasticbeanstalk.amazonaws.com",
+                                "ec2.amazonaws.com",
+                                "autoscaling.amazonaws.com",
+                                "elasticloadbalancing.amazonaws.com",
+                                "ecs.amazonaws.com",
+                                "cloudformation.amazonaws.com"
+                            ]
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-06-05T21:48:24Z"
+        "CreateDate": "2020-09-09T20:31:14Z"
     }
 }
