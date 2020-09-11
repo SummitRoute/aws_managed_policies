@@ -18,36 +18,18 @@
                         "organizations:ListRoots",
                         "organizations:ListAccountsForParent",
                         "organizations:ListOrganizationalUnitsForParent",
-                        "sso:DescribePermissionsPolicies",
-                        "sso:DescribeRegisteredRegions",
-                        "sso:GetApplicationTemplate",
-                        "sso:GetApplicationInstance",
-                        "sso:GetPermissionSet",
-                        "sso:GetProfile",
-                        "sso:GetPermissionsPolicy",
-                        "sso:GetSSOStatus",
-                        "sso:GetSSOConfiguration",
-                        "sso:GetSharedSsoConfiguration",
-                        "sso:GetManagedApplicationInstance",
-                        "sso:GetTrust",
-                        "sso:ListPermissionSets",
-                        "sso:ListDirectoryAssociations",
-                        "sso:ListProfiles",
-                        "sso:ListApplicationInstances",
-                        "sso:ListApplicationInstanceCertificates",
-                        "sso:ListApplicationTemplates",
-                        "sso:ListApplications",
-                        "sso:ListProfileAssociations",
+                        "sso:Describe*",
+                        "sso:Get*",
+                        "sso:List*",
                         "sso:Search*",
-                        "sso:GetMfaDeviceManagementForDirectory",
                         "sso-directory:DescribeDirectory"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-28T21:17:21Z"
+        "CreateDate": "2020-09-10T21:26:29Z"
     }
 }
