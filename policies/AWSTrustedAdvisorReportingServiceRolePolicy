@@ -9,15 +9,19 @@
                         "organizations:ListAWSServiceAccessForOrganization",
                         "organizations:ListAccounts",
                         "organizations:ListAccountsForParent",
-                        "organizations:ListOrganizationalUnitsForParent"
+                        "organizations:ListOrganizationalUnitsForParent",
+                        "organizations:ListChildren",
+                        "organizations:ListParents",
+                        "organizations:DescribeOrganizationalUnit",
+                        "organizations:DescribeAccount"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-19T17:41:13Z"
+        "CreateDate": "2020-09-11T21:36:48Z"
     }
 }
