@@ -45,6 +45,15 @@
                     "Resource": "arn:aws:ecs:*:*:task/*/*"
                 },
                 {
+                    "Sid": "CodeStarConnectionsUserAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "codestar-connections:ListConnections",
+                        "codestar-connections:GetConnection"
+                    ],
+                    "Resource": "arn:aws:codestar-connections:*:*:connection/*"
+                },
+                {
                     "Sid": "CodeStarNotificationsReadWriteAccess",
                     "Effect": "Allow",
                     "Action": [
@@ -92,8 +101,8 @@
             ],
             "Version": "2012-10-17"
         },
-        "VersionId": "v12",
+        "VersionId": "v13",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-07-30T18:25:47Z"
+        "CreateDate": "2020-09-14T16:03:44Z"
     }
 }

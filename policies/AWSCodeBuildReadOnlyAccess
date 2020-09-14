@@ -22,6 +22,15 @@
                     "Resource": "*"
                 },
                 {
+                    "Sid": "CodeStarConnectionsUserAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "codestar-connections:ListConnections",
+                        "codestar-connections:GetConnection"
+                    ],
+                    "Resource": "arn:aws:codestar-connections:*:*:connection/*"
+                },
+                {
                     "Sid": "CodeStarNotificationsPowerUserAccess",
                     "Effect": "Allow",
                     "Action": [
@@ -47,8 +56,8 @@
             ],
             "Version": "2012-10-17"
         },
-        "VersionId": "v10",
+        "VersionId": "v11",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-07-30T18:28:43Z"
+        "CreateDate": "2020-09-14T16:04:04Z"
     }
 }

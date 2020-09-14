@@ -56,6 +56,27 @@
                     "Resource": "arn:aws:ecs:*:*:task/*/*"
                 },
                 {
+                    "Sid": "CodeStarConnectionsReadWriteAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "codestar-connections:CreateConnection",
+                        "codestar-connections:DeleteConnection",
+                        "codestar-connections:UpdateConnectionInstallation",
+                        "codestar-connections:TagResource",
+                        "codestar-connections:UntagResource",
+                        "codestar-connections:ListConnections",
+                        "codestar-connections:ListInstallationTargets",
+                        "codestar-connections:ListTagsForResource",
+                        "codestar-connections:GetConnection",
+                        "codestar-connections:GetIndividualAccessToken",
+                        "codestar-connections:GetInstallationUrl",
+                        "codestar-connections:PassConnection",
+                        "codestar-connections:StartOAuthHandshake",
+                        "codestar-connections:UseConnection"
+                    ],
+                    "Resource": "arn:aws:codestar-connections:*:*:connection/*"
+                },
+                {
                     "Sid": "CodeStarNotificationsReadWriteAccess",
                     "Effect": "Allow",
                     "Action": [
@@ -112,8 +133,8 @@
                 }
             ]
         },
-        "VersionId": "v11",
+        "VersionId": "v12",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-07-21T04:22:37Z"
+        "CreateDate": "2020-09-14T16:03:39Z"
     }
 }
