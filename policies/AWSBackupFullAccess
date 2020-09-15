@@ -178,21 +178,42 @@
                 },
                 {
                     "Action": [
-                        "kms:Decrypt",
                         "kms:CreateGrant"
                     ],
                     "Effect": "Allow",
                     "Resource": "*",
                     "Condition": {
-                        "StringEquals": {
+                        "ForAnyValue:StringEquals": {
                             "kms:EncryptionContextKeys": "aws:backup:backup-vault"
+                        },
+                        "Bool": {
+                            "kms:GrantIsForAWSResource": true
+                        },
+                        "StringLike": {
+                            "kms:ViaService": "backup.*.amazonaws.com"
                         }
                     }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ssm:CancelCommand",
+                        "ssm:GetCommandInvocation"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "ssm:SendCommand",
+                    "Resource": [
+                        "arn:aws:ssm:*:*:document/AWSEC2-CreateVssSnapshot",
+                        "arn:aws:ec2:*:*:instance/*"
+                    ]
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-06-06T00:06:57Z"
+        "CreateDate": "2020-09-14T22:35:25Z"
     }
 }

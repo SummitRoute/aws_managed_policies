@@ -126,11 +126,27 @@
                     "Effect": "Allow",
                     "Action": "organizations:DescribeOrganization",
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ssm:CancelCommand",
+                        "ssm:GetCommandInvocation"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "ssm:SendCommand",
+                    "Resource": [
+                        "arn:aws:ssm:*:*:document/AWSEC2-CreateVssSnapshot",
+                        "arn:aws:ec2:*:*:instance/*"
+                    ]
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-06-24T16:24:21Z"
+        "CreateDate": "2020-09-14T22:35:03Z"
     }
 }
