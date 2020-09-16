@@ -14,14 +14,18 @@
                         "ec2:DisassociateAddress",
                         "ec2:CreateNetworkInterface",
                         "ec2:DeleteNetworkInterface",
-                        "ec2:ModifyNetworkInterfaceAttribute"
+                        "ec2:ModifyNetworkInterfaceAttribute",
+                        "ec2:CreateVpcEndpoint",
+                        "ec2:DeleteVpcEndpoints",
+                        "ec2:DescribeVpcEndpoints",
+                        "ec2:ModifyVpcEndpoint"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v2",
-        "IsDefaultVersion": false,
-        "CreateDate": "2017-09-25T21:20:15Z"
+        "VersionId": "v3",
+        "IsDefaultVersion": true,
+        "CreateDate": "2020-09-15T20:44:31Z"
     }
 }
