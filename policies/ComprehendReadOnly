@@ -11,6 +11,7 @@
                         "comprehend:BatchDetectEntities",
                         "comprehend:DetectKeyPhrases",
                         "comprehend:BatchDetectKeyPhrases",
+                        "comprehend:DetectPiiEntities",
                         "comprehend:DetectSentiment",
                         "comprehend:BatchDetectSentiment",
                         "comprehend:DetectSyntax",
@@ -24,6 +25,8 @@
                         "comprehend:ListEntitiesDetectionJobs",
                         "comprehend:DescribeKeyPhrasesDetectionJob",
                         "comprehend:ListKeyPhrasesDetectionJobs",
+                        "comprehend:DescribePiiEntitiesDetectionJob",
+                        "comprehend:ListPiiEntitiesDetectionJobs",
                         "comprehend:DescribeSentimentDetectionJob",
                         "comprehend:ListSentimentDetectionJobs",
                         "comprehend:DescribeDocumentClassifier",
@@ -41,8 +44,8 @@
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-25T19:35:48Z"
+        "CreateDate": "2020-09-17T19:01:28Z"
     }
 }
