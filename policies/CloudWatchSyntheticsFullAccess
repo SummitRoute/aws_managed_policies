@@ -26,7 +26,9 @@
                     "Action": [
                         "iam:ListRoles",
                         "s3:ListAllMyBuckets",
-                        "s3:GetBucketLocation"
+                        "s3:GetBucketLocation",
+                        "xray:GetTraceSummaries",
+                        "xray:BatchGetTraces"
                     ],
                     "Resource": "*"
                 },
@@ -156,8 +158,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-22T18:37:11Z"
+        "CreateDate": "2020-09-18T16:39:53Z"
     }
 }
