@@ -6,6 +6,7 @@
                 {
                     "Action": [
                         "chime:CreateMeeting",
+                        "chime:CreateMeetingWithAttendees",
                         "chime:DeleteMeeting",
                         "chime:GetMeeting",
                         "chime:ListMeetings",
@@ -29,8 +30,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-08T21:18:31Z"
+        "CreateDate": "2020-09-18T21:07:30Z"
     }
 }
