@@ -48,11 +48,14 @@
                         "athena:List*",
                         "athena:Batch*",
                         "athena:Get*",
+                        "aws-portal:View*",
                         "backup:Describe*",
                         "backup:Get*",
                         "backup:List*",
                         "batch:List*",
                         "batch:Describe*",
+                        "budgets:Describe*",
+                        "budgets:View*",
                         "cassandra:Select",
                         "chatbot:Describe*",
                         "chatbot:Get*",
@@ -103,6 +106,7 @@
                         "codeartifact:ListRepositories",
                         "codeartifact:ListRepositoriesInDomain",
                         "codebuild:BatchGet*",
+                        "codebuild:DescribeCodeCoverages",
                         "codebuild:DescribeTestCases",
                         "codebuild:List*",
                         "codecommit:BatchGet*",
@@ -234,6 +238,7 @@
                         "elasticfilesystem:Describe*",
                         "elasticloadbalancing:Describe*",
                         "elasticmapreduce:Describe*",
+                        "elasticmapreduce:GetBlockPublicAccessConfiguration",
                         "elasticmapreduce:List*",
                         "elasticmapreduce:View*",
                         "elastictranscoder:List*",
@@ -340,6 +345,9 @@
                         "iotanalytics:List*",
                         "iotanalytics:Get*",
                         "iotanalytics:SampleChannelData",
+                        "iotsitewise:Describe*",
+                        "iotsitewise:Get*",
+                        "iotsitewise:List*",
                         "kafka:Describe*",
                         "kafka:List*",
                         "kafka:Get*",
@@ -408,6 +416,7 @@
                         "logs:FilterLogEvents",
                         "logs:ListTagsLogGroup",
                         "logs:StartQuery",
+                        "logs:StopQuery",
                         "logs:TestMetricFilter",
                         "machinelearning:Describe*",
                         "machinelearning:Get*",
@@ -597,8 +606,8 @@
                 }
             ]
         },
-        "VersionId": "v66",
+        "VersionId": "v67",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-08-13T21:10:04Z"
+        "CreateDate": "2020-09-23T20:35:11Z"
     }
 }
