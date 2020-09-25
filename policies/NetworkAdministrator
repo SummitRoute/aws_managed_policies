@@ -19,6 +19,9 @@
                         "ec2:AttachInternetGateway",
                         "ec2:AttachNetworkInterface",
                         "ec2:AttachVpnGateway",
+                        "ec2:CreateCarrierGateway",
+                        "ec2:DeleteCarrierGateway",
+                        "ec2:DescribeCarrierGateways",
                         "ec2:CreateCustomerGateway",
                         "ec2:CreateDefaultSubnet",
                         "ec2:CreateDefaultVpc",
@@ -256,8 +259,8 @@
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-08-08T00:10:51Z"
+        "CreateDate": "2020-09-24T23:55:10Z"
     }
 }
