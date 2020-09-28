@@ -265,7 +265,33 @@
                         "trustedadvisor:Describe*",
                         "waf:ListWebACLs",
                         "waf-regional:ListWebACLs",
-                        "workspaces:Describe*"
+                        "workspaces:Describe*",
+                        "cloudsearch:DescribeDomainEndpointOptions",
+                        "cloudwatch:ListTagsForResource",
+                        "detective:ListGraphs",
+                        "detective:ListMembers",
+                        "dynamodb:ListTagsOfResource",
+                        "ec2:DescribeTransitGatewayAttachments",
+                        "ec2:DescribeTransitGatewayMulticastDomains",
+                        "ec2:DescribeTransitGatewayPeeringAttachments",
+                        "ec2:DescribeTransitGatewayRouteTables",
+                        "ec2:DescribeTransitGateways",
+                        "ec2:DescribeTransitGatewayVpcAttachments",
+                        "eks:DescribeNodeGroup",
+                        "eks:ListNodeGroups",
+                        "elasticache:ListTagsForResource",
+                        "elasticbeanstalk:DescribeApplications",
+                        "elasticbeanstalk:ListTagsForResource",
+                        "elasticmapreduce:GetBlockPublicAccessConfiguration",
+                        "es:ListElasticsearchInstanceTypeDetails",
+                        "es:ListElasticsearchVersions",
+                        "es:ListTags",
+                        "events:TestEventPattern",
+                        "glue:GetDataCatalogEncryptionSettings",
+                        "glue:GetDevEndpoints",
+                        "guardduty:DescribePublishingDestination",
+                        "secretsmanager:DescribeSecret",
+                        "ssm:ListTagsForResource"
                     ]
                 },
                 {
@@ -292,8 +318,8 @@
                 }
             ]
         },
-        "VersionId": "v32",
+        "VersionId": "v33",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-02-25T16:08:50Z"
+        "CreateDate": "2020-09-28T18:51:23Z"
     }
 }
