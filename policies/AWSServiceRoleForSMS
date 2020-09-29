@@ -224,15 +224,15 @@
                     ],
                     "Resource": "*",
                     "Condition": {
-                        "ForAllValues:StringLike": {
+                        "StringLike": {
                             "ec2:ResourceTag/aws:cloudformation:stack-id": "arn:aws:cloudformation:*:*:stack/sms-app-*/*"
                         }
                     }
                 }
             ]
         },
-        "VersionId": "v8",
+        "VersionId": "v9",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-08-11T20:46:24Z"
+        "CreateDate": "2020-09-29T18:07:16Z"
     }
 }
