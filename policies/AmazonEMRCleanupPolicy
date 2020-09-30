@@ -19,13 +19,15 @@
                         "ec2:DescribeVolumeStatus",
                         "ec2:DescribeVolumes",
                         "ec2:DetachVolume",
-                        "ec2:DeleteVolume"
+                        "ec2:DeleteVolume",
+                        "ec2:DescribePlacementGroups",
+                        "ec2:DeletePlacementGroup"
                     ]
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-06-25T20:40:52Z"
+        "CreateDate": "2020-09-29T21:11:54Z"
     }
 }
