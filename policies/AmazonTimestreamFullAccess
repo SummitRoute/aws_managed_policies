@@ -1,0 +1,44 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "timestream:*"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "kms:DescribeKey"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "kms:CreateGrant"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "ForAnyValue:StringEquals": {
+                            "kms:EncryptionContextKeys": "aws:timestream:database-name"
+                        },
+                        "Bool": {
+                            "kms:GrantIsForAWSResource": true
+                        },
+                        "StringLike": {
+                            "kms:ViaService": "timestream.*.amazonaws.com"
+                        }
+                    }
+                }
+            ]
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2020-09-30T21:47:14Z"
+    }
+}
