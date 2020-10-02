@@ -16,6 +16,8 @@
                         "ec2:DescribeRegions",
                         "elasticloadbalancing:DescribeLoadBalancers",
                         "elasticloadbalancing:SetWebACL",
+                        "appsync:ListGraphqlApis",
+                        "appsync:SetWebACL",
                         "waf-regional:*",
                         "waf:*",
                         "wafv2:*"
@@ -25,8 +27,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-06T18:38:38Z"
+        "CreateDate": "2020-10-01T20:13:57Z"
     }
 }

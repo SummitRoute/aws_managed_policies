@@ -9,15 +9,16 @@
                         "waf-regional:*",
                         "wafv2:*",
                         "elasticloadbalancing:SetWebACL",
-                        "apigateway:SetWebACL"
+                        "apigateway:SetWebACL",
+                        "appsync:SetWebACL"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-08T00:21:06Z"
+        "CreateDate": "2020-10-01T20:13:54Z"
     }
 }

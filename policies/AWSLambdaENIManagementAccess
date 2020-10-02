@@ -8,14 +8,16 @@
                     "Action": [
                         "ec2:CreateNetworkInterface",
                         "ec2:DescribeNetworkInterfaces",
-                        "ec2:DeleteNetworkInterface"
+                        "ec2:DeleteNetworkInterface",
+                        "ec2:AssignPrivateIpAddresses",
+                        "ec2:UnassignPrivateIpAddresses"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2016-12-06T00:37:27Z"
+        "CreateDate": "2020-10-01T20:07:26Z"
     }
 }
