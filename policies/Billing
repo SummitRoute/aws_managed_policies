@@ -11,15 +11,25 @@
                         "aws-portal:*PaymentMethods",
                         "budgets:ViewBudget",
                         "budgets:ModifyBudget",
-                        "cur:*",
+                        "ce:UpdatePreferences",
+                        "ce:CreateReport",
+                        "ce:UpdateReport",
+                        "ce:DeleteReport",
+                        "ce:CreateNotificationSubscription",
+                        "ce:UpdateNotificationSubscription",
+                        "ce:DeleteNotificationSubscription",
+                        "cur:DescribeReportDefinitions",
+                        "cur:PutReportDefinition",
+                        "cur:ModifyReportDefinition",
+                        "cur:DeleteReportDefinition",
                         "purchase-orders:*PurchaseOrders"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-08-27T20:09:10Z"
+        "CreateDate": "2020-10-05T20:37:01Z"
     }
 }

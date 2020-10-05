@@ -7,6 +7,7 @@
                     "Effect": "Allow",
                     "Action": [
                         "iot:AddThingToThingGroup",
+                        "iot:AttachPolicy",
                         "iot:AttachPrincipalPolicy",
                         "iot:AttachThingPrincipal",
                         "iot:CreateCertificateFromCsr",
@@ -16,11 +17,14 @@
                         "iot:DescribeThing",
                         "iot:DescribeThingGroup",
                         "iot:DescribeThingType",
+                        "iot:DetachPolicy",
                         "iot:DetachThingPrincipal",
                         "iot:GetPolicy",
+                        "iot:ListAttachedPolicies",
                         "iot:ListPolicyPrincipals",
                         "iot:ListPrincipalPolicies",
                         "iot:ListPrincipalThings",
+                        "iot:ListTargetsForPolicy",
                         "iot:ListThingGroupsForThing",
                         "iot:ListThingPrincipals",
                         "iot:RegisterCertificate",
@@ -39,8 +43,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-02-27T23:27:23Z"
+        "CreateDate": "2020-10-05T19:20:12Z"
     }
 }
