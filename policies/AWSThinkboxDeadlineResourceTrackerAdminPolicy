@@ -31,6 +31,7 @@
                     "Action": [
                         "cloudformation:CreateStack",
                         "cloudformation:DeleteStack",
+                        "cloudformation:UpdateStack",
                         "cloudformation:DescribeStacks",
                         "cloudformation:UpdateTerminationProtection"
                     ],
@@ -224,8 +225,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-05-27T19:29:09Z"
+        "CreateDate": "2020-10-06T19:06:57Z"
     }
 }
