@@ -67,32 +67,8 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "ssm:StartSession"
-                    ],
-                    "Resource": [
-                        "arn:aws:ssm:*:*:document/AWS-StartSSHSession"
-                    ]
-                },
-                {
-                    "Effect": "Allow",
-                    "Action": [
-                        "ssm:StartSession"
-                    ],
-                    "Resource": [
-                        "arn:aws:ec2:*:*:instance/*"
-                    ],
-                    "Condition": {
-                        "StringLike": {
-                            "ssm:resourceTag/aws:cloudformation:stack-name": [
-                                "aws-cloud9-*"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "Effect": "Allow",
-                    "Action": [
-                        "iam:ListInstanceProfiles"
+                        "iam:ListInstanceProfiles",
+                        "iam:GetInstanceProfile"
                     ],
                     "Resource": [
                         "arn:aws:iam::*:instance-profile/cloud9/*"
@@ -114,8 +90,8 @@
                 }
             ]
         },
-        "VersionId": "v6",
-        "IsDefaultVersion": false,
-        "CreateDate": "2020-07-02T17:06:14Z"
+        "VersionId": "v7",
+        "IsDefaultVersion": true,
+        "CreateDate": "2020-10-06T12:43:49Z"
     }
 }
