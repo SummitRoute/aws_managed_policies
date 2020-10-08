@@ -10,12 +10,32 @@
                     ],
                     "Resource": "*",
                     "Condition": {
-                        "ForAllValues:StringEquals": {
-                            "ram:RequestedResourceType": [
-                                "glue:Table",
-                                "glue:Database",
-                                "glue:Catalog"
-                            ]
+                        "StringEquals": {
+                            "ram:RequestedResourceType": "glue:Table"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ram:CreateResourceShare"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEquals": {
+                            "ram:RequestedResourceType": "glue:Database"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ram:CreateResourceShare"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEquals": {
+                            "ram:RequestedResourceType": "glue:Catalog"
                         }
                     }
                 },
@@ -27,10 +47,8 @@
                     ],
                     "Resource": "*",
                     "Condition": {
-                        "ForAllValues:StringLike": {
-                            "ram:ResourceShareName": [
-                                "LakeFormation*"
-                            ]
+                        "StringLike": {
+                            "ram:ResourceShareName": "LakeFormation"
                         }
                     }
                 },
@@ -56,8 +74,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-08-04T20:59:46Z"
+        "CreateDate": "2020-10-07T22:39:34Z"
     }
 }

@@ -257,6 +257,8 @@
                         "firehose:List*",
                         "fsx:Describe*",
                         "fsx:List*",
+                        "freertos:Describe*",
+                        "freertos:List*",
                         "gamelift:List*",
                         "gamelift:Get*",
                         "gamelift:Describe*",
@@ -484,6 +486,7 @@
                         "resource-groups:Search*",
                         "robomaker:BatchDescribe*",
                         "robomaker:Describe*",
+                        "robomaker:Get*",
                         "robomaker:List*",
                         "route53:Get*",
                         "route53:List*",
@@ -539,6 +542,13 @@
                         "shield:Describe*",
                         "shield:Get*",
                         "shield:List*",
+                        "signer:DescribeSigningJob",
+                        "signer:GetSigningPlatform",
+                        "signer:GetSigningProfile",
+                        "signer:ListSigningJobs",
+                        "signer:ListSigningPlatforms",
+                        "signer:ListSigningProfiles",
+                        "signer:ListTagsForResource",
                         "snowball:Get*",
                         "snowball:Describe*",
                         "snowball:List*",
@@ -606,8 +616,8 @@
                 }
             ]
         },
-        "VersionId": "v67",
+        "VersionId": "v68",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-09-23T20:35:11Z"
+        "CreateDate": "2020-10-07T22:09:23Z"
     }
 }
