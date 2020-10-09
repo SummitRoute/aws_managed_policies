@@ -44,7 +44,7 @@
                     ],
                     "Resource": "*",
                     "Condition": {
-                        "ForAllValues:StringLike": {
+                        "StringLike": {
                             "organizations:ServicePrincipal": [
                                 "servicequotas.amazonaws.com"
                             ]
@@ -65,8 +65,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-06-24T15:44:35Z"
+        "CreateDate": "2020-10-08T22:17:35Z"
     }
 }
