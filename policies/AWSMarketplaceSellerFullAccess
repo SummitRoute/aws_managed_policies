@@ -46,11 +46,24 @@
                             ]
                         }
                     }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "iam:GetRole",
+                        "iam:PassRole"
+                    ],
+                    "Resource": "arn:aws:iam::*:role/*",
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:PassedToService": "assets.marketplace.amazonaws.com"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-05-28T21:07:22Z"
+        "CreateDate": "2020-10-09T22:23:38Z"
     }
 }

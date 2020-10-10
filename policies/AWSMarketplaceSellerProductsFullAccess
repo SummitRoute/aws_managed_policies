@@ -22,11 +22,24 @@
                         "ec2:ModifySnapshotAttribute"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "iam:GetRole",
+                        "iam:PassRole"
+                    ],
+                    "Resource": "arn:aws:iam::*:role/*",
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:PassedToService": "assets.marketplace.amazonaws.com"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-03-05T23:11:44Z"
+        "CreateDate": "2020-10-09T22:22:38Z"
     }
 }
