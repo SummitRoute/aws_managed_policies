@@ -97,6 +97,7 @@
                         "events:PutRule",
                         "events:PutTargets",
                         "events:RemoveTargets",
+                        "fsx:DescribeFileSystems",
                         "iam:ListAttachedRolePolicies",
                         "iam:ListInstanceProfiles",
                         "iam:ListRoles",
@@ -210,8 +211,8 @@
                 }
             ]
         },
-        "VersionId": "v18",
+        "VersionId": "v19",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-07-01T15:16:30Z"
+        "CreateDate": "2020-10-12T21:02:23Z"
     }
 }
