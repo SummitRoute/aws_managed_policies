@@ -10,6 +10,7 @@
                     ],
                     "Resource": [
                         "arn:aws:es:*:*:domain/*/",
+                        "arn:aws:es:*:*:domain/*/_cluster/settings",
                         "arn:aws:es:*:*:domain/*/_cat/indices"
                     ]
                 },
@@ -39,8 +40,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-09-09T17:27:19Z"
+        "CreateDate": "2020-10-15T17:09:55Z"
     }
 }

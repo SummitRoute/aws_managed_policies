@@ -54,11 +54,62 @@
                         "ec2:Describe*"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "applicationinsights:Describe*",
+                        "applicationinsights:List*",
+                        "cloudformation:ListStackResources",
+                        "cloudformation:DescribeStacks"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "applicationinsights:CreateApplication",
+                        "applicationinsights:CreateComponent",
+                        "applicationinsights:UpdateApplication",
+                        "applicationinsights:DeleteApplication",
+                        "applicationinsights:UpdateComponentConfiguration",
+                        "applicationinsights:DeleteComponent"
+                    ],
+                    "Resource": "arn:aws:applicationinsights:*:*:application/resource-group/sms-app-*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "resource-groups:CreateGroup",
+                        "resource-groups:GetGroup",
+                        "resource-groups:UpdateGroup",
+                        "resource-groups:DeleteGroup"
+                    ],
+                    "Resource": "arn:aws:resource-groups:*:*:group/sms-app-*",
+                    "Condition": {
+                        "StringLike": {
+                            "aws:ResourceTag/aws:cloudformation:stack-id": "arn:aws:cloudformation:*:*:stack/sms-app-*/*"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "iam:CreateServiceLinkedRole"
+                    ],
+                    "Resource": [
+                        "arn:aws:iam::*:role/aws-service-role/application-insights.amazonaws.com/AWSServiceRoleForApplicationInsights"
+                    ],
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:AWSServiceName": "application-insights.amazonaws.com"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-09-30T17:50:15Z"
+        "CreateDate": "2020-10-15T17:29:00Z"
     }
 }

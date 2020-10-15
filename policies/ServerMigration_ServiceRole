@@ -16,7 +16,9 @@
                         },
                         "ForAllValues:StringEquals": {
                             "cloudformation:ResourceTypes": [
-                                "AWS::EC2::Instance"
+                                "AWS::EC2::Instance",
+                                "AWS::ApplicationInsights::Application",
+                                "AWS::ResourceGroups::Group"
                             ]
                         }
                     }
@@ -201,8 +203,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-08-11T20:41:44Z"
+        "CreateDate": "2020-10-15T17:26:32Z"
     }
 }
