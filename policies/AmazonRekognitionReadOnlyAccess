@@ -29,14 +29,15 @@
                         "rekognition:ListStreamProcessors",
                         "rekognition:DescribeProjects",
                         "rekognition:DescribeProjectVersions",
-                        "rekognition:DetectCustomLabels"
+                        "rekognition:DetectCustomLabels",
+                        "rekognition:DetectProtectiveEquipment"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-07-06T20:21:19Z"
+        "CreateDate": "2020-10-15T22:07:44Z"
     }
 }
