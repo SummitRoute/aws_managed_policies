@@ -6,6 +6,13 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "rds:CrossRegionCommunication"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
                         "ec2:AuthorizeSecurityGroupIngress",
                         "ec2:CreateNetworkInterface",
                         "ec2:CreateSecurityGroup",
@@ -89,8 +96,8 @@
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-07-31T01:14:11Z"
+        "CreateDate": "2020-10-21T22:31:39Z"
     }
 }
