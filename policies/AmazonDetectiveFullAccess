@@ -18,11 +18,18 @@
                         "guardduty:ArchiveFindings"
                     ],
                     "Resource": "arn:aws:guardduty:*:*:detector/*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "guardduty:ListDetectors"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-30T17:57:15Z"
+        "CreateDate": "2020-10-21T22:07:28Z"
     }
 }

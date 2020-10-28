@@ -4,24 +4,26 @@
             "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Sid": "IAMRoleProvisioningActions",
                     "Effect": "Allow",
                     "Action": [
                         "iam:AttachRolePolicy",
                         "iam:CreateRole",
-                        "iam:DeleteRole",
-                        "iam:DeleteRolePolicy",
-                        "iam:DetachRolePolicy",
-                        "iam:ListRolePolicies",
                         "iam:PutRolePolicy",
-                        "iam:ListAttachedRolePolicies",
-                        "iam:UpdateRole"
+                        "iam:UpdateRole",
+                        "iam:UpdateRoleDescription"
                     ],
                     "Resource": [
                         "arn:aws:iam::*:role/aws-reserved/sso.amazonaws.com/*"
-                    ]
+                    ],
+                    "Condition": {
+                        "StringNotEquals": {
+                            "aws:PrincipalOrgMasterAccountId": "${aws:PrincipalAccount}"
+                        }
+                    }
                 },
                 {
-                    "Sid": "ListRolesInTheAccount",
+                    "Sid": "IAMRoleReadActions",
                     "Effect": "Allow",
                     "Action": [
                         "iam:GetRole",
@@ -32,7 +34,21 @@
                     ]
                 },
                 {
-                    "Sid": "AllowDeletionOfServiceLinkedRoleForSSO",
+                    "Sid": "IAMRoleCleanupActions",
+                    "Effect": "Allow",
+                    "Action": [
+                        "iam:DeleteRole",
+                        "iam:DeleteRolePolicy",
+                        "iam:DetachRolePolicy",
+                        "iam:ListRolePolicies",
+                        "iam:ListAttachedRolePolicies"
+                    ],
+                    "Resource": [
+                        "arn:aws:iam::*:role/aws-reserved/sso.amazonaws.com/*"
+                    ]
+                },
+                {
+                    "Sid": "IAMSLRCleanupActions",
                     "Effect": "Allow",
                     "Action": [
                         "iam:DeleteServiceLinkedRole",
@@ -45,12 +61,27 @@
                     ]
                 },
                 {
+                    "Sid": "IAMSAMLProviderProvisioningActions",
                     "Effect": "Allow",
                     "Action": [
                         "iam:CreateSAMLProvider",
-                        "iam:GetSAMLProvider",
-                        "iam:UpdateSAMLProvider",
-                        "iam:DeleteSAMLProvider"
+                        "iam:UpdateSAMLProvider"
+                    ],
+                    "Resource": [
+                        "arn:aws:iam::*:saml-provider/AWSSSO_*"
+                    ],
+                    "Condition": {
+                        "StringNotEquals": {
+                            "aws:PrincipalOrgMasterAccountId": "${aws:PrincipalAccount}"
+                        }
+                    }
+                },
+                {
+                    "Sid": "IAMSAMLProviderCleanupActions",
+                    "Effect": "Allow",
+                    "Action": [
+                        "iam:DeleteSAMLProvider",
+                        "iam:GetSAMLProvider"
                     ],
                     "Resource": [
                         "arn:aws:iam::*:saml-provider/AWSSSO_*"
@@ -103,8 +134,8 @@
                 }
             ]
         },
-        "VersionId": "v11",
+        "VersionId": "v12",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-08-26T17:46:14Z"
+        "CreateDate": "2020-10-21T20:27:38Z"
     }
 }
