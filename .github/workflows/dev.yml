@@ -1,9 +1,9 @@
-name: '[Prod] MAMIP - GitHub Actions'
+name: '[Dev] MAMIP - GitHub Actions'
 
 on:
   push:
     branches:
-    - master
+    - dev
 
 env:
   tf_version: 'latest'
