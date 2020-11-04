@@ -33,11 +33,21 @@
                     "Resource": [
                         "arn:aws:logs:*:*:log-group:/aws/amazonmq/*"
                     ]
+                },
+                {
+                    "Action": "iam:CreateServiceLinkedRole",
+                    "Effect": "Allow",
+                    "Resource": "*",
+                    "Condition": {
+                        "StringLike": {
+                            "iam:AWSServiceName": "mq.amazonaws.com"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-12-18T20:33:17Z"
+        "CreateDate": "2020-11-04T16:34:09Z"
     }
 }
