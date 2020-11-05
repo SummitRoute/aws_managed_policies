@@ -6,6 +6,7 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "compute-optimizer:DescribeRecommendationExportJobs",
                         "compute-optimizer:GetEnrollmentStatus",
                         "compute-optimizer:GetRecommendationSummaries",
                         "compute-optimizer:GetEC2InstanceRecommendations",
@@ -22,8 +23,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-03-07T00:11:02Z"
+        "CreateDate": "2020-11-04T20:57:54Z"
     }
 }
