@@ -6,7 +6,7 @@ on:
     - dev
 
 env:
-  tf_version: 'latest'
+  tf_version: '0.13.5'
   tf_working_dir: './automation/tf-fargate'
   env: 'dev'
   project: 'mamip'
