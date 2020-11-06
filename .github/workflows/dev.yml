@@ -15,7 +15,7 @@ env:
 
 jobs:
   terraform:
-    name: 'Terraform'
+    name: 'Build & Deploy'
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout'
@@ -30,27 +30,6 @@ jobs:
           role-to-assume: ${{ secrets.ROLE_TO_ASSUME }}
           role-duration-seconds: 1200
           role-session-name: GH-Actions-${{ env.project }}
-
-      - name: Update runbook artifact
-        run: aws s3 cp ./automation/runbook.sh 's3://${{ env.project }}-artifacts/'
-
-      - name: Login to Amazon ECR
-        id: login-ecr
-        uses: aws-actions/amazon-ecr-login@v1
-
-      - name: Build, tag, and push image to Amazon ECR
-        env:
-          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: mamip-ecr-dev
-          IMAGE_TAG: ${{ github.sha }}
-        run: |
-          docker build -t mamip-image ./automation/
-          docker tag mamip-image $ECR_REGISTRY/$ECR_REPOSITORY
-          docker push $ECR_REGISTRY/$ECR_REPOSITORY
-
-      - name: Logout of Amazon ECR
-        if: always()
-        run: docker logout ${{ steps.login-ecr.outputs.registry }}
 
       - name: 'Terraform Init'
         uses: hashicorp/terraform-github-actions@master
@@ -77,7 +56,7 @@ jobs:
           tf_actions_subcommand: 'plan'
           tf_actions_working_dir: ${{ env.tf_working_dir }}
           tf_actions_comment: false
-          args: '-var="env=dev" -var="artifacts_bucket=${{ env.artifacts_bucket }}"'
+          args: '-var="env=${{ env.env }}" -var="artifacts_bucket=${{ env.artifacts_bucket }}"'
 
       - name: 'Terraform Apply'
         if: steps.plan.outputs.tf_actions_plan_has_changes == 'true'
@@ -87,4 +66,25 @@ jobs:
           tf_actions_subcommand: 'apply'
           tf_actions_working_dir: ${{ env.tf_working_dir }}
           tf_actions_comment: false
-          args: '-var="env=dev"'
+          args: '-var="env=${{ env.env }}"'
+
+      - name: Update runbook artifact
+        run: aws s3 cp ./automation/runbook.sh 's3://${{ env.project }}-artifacts/'
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v1
+
+      - name: Build, tag, and push image to Amazon ECR
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: mamip-ecr-${{ env.env }}
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          docker build -t mamip-image ./automation/
+          docker tag mamip-image $ECR_REGISTRY/$ECR_REPOSITORY
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY
+
+      - name: Logout of Amazon ECR
+        if: always()
+        run: docker logout ${{ steps.login-ecr.outputs.registry }}
