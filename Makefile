@@ -29,7 +29,6 @@ ECR ?= 567589703415.dkr.ecr.eu-west-1.amazonaws.com/mamip-ecr-dev
 build-docker:
 	@docker build -t mamip-image ./automation/
 	@docker tag mamip-image $(ECR)
-	# aws-vault exec zoph -- aws ecr get-login-password | docker login --username AWS --password-stdin 567589703415.dkr.ecr.eu-west-1.amazonaws.com/mamip-ecr-dev
 	@docker push $(ECR)
 
 ################ Terraform #####################
