@@ -142,11 +142,26 @@
                         "arn:aws:ssm:*:*:document/AWSEC2-CreateVssSnapshot",
                         "arn:aws:ec2:*:*:instance/*"
                     ]
+                },
+                {
+                    "Action": "fsx:DescribeBackups",
+                    "Effect": "Allow",
+                    "Resource": "arn:aws:fsx:*:*:backup/*"
+                },
+                {
+                    "Action": "fsx:DescribeFileSystems",
+                    "Effect": "Allow",
+                    "Resource": "arn:aws:fsx:*:*:file-system/*"
+                },
+                {
+                    "Action": "ds:DescribeDirectories",
+                    "Effect": "Allow",
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-09-14T22:35:03Z"
+        "CreateDate": "2020-11-09T16:43:44Z"
     }
 }
