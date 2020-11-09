@@ -158,7 +158,8 @@
                     "Action": "ssm:SendCommand",
                     "Resource": [
                         "arn:aws:ec2:*:*:instance/*",
-                        "arn:aws:ssm:*:*:document/AWSEC2-CheckPerformanceCounterSets"
+                        "arn:aws:ssm:*:*:document/AWSEC2-CheckPerformanceCounterSets",
+                        "arn:aws:ssm:*:*:document/AWSEC2-DetectWorkload"
                     ]
                 },
                 {
@@ -268,8 +269,8 @@
                 }
             ]
         },
-        "VersionId": "v10",
+        "VersionId": "v11",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-10-16T17:53:38Z"
+        "CreateDate": "2020-11-09T22:39:19Z"
     }
 }
