@@ -114,6 +114,17 @@
                 },
                 {
                     "Effect": "Allow",
+                    "Action": [
+                        "config:DescribeComplianceByConfigRule",
+                        "config:DescribeComplianceByResource",
+                        "config:DescribeRemediationConfigurations"
+                    ],
+                    "Resource": [
+                        "*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
                     "Action": "iam:PassRole",
                     "Resource": "*",
                     "Condition": {
@@ -126,8 +137,8 @@
                 }
             ]
         },
-        "VersionId": "v8",
+        "VersionId": "v9",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-07-31T19:21:40Z"
+        "CreateDate": "2020-11-11T19:27:12Z"
     }
 }
