@@ -423,11 +423,20 @@
                         "arn:aws:lambda:*:*:function:LaunchWizard*",
                         "arn:aws:s3:::launchwizard*"
                     ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "dynamodb:CreateTable",
+                        "dynamodb:DescribeTable",
+                        "dynamodb:DeleteTable"
+                    ],
+                    "Resource": "arn:aws:dynamodb:*:*:table/LaunchWizard*"
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-11-11T20:26:48Z"
+        "CreateDate": "2020-11-14T02:27:14Z"
     }
 }
