@@ -58,7 +58,10 @@
                         "resource-groups:GetGroupQuery",
                         "resource-groups:DeleteGroup",
                         "resource-groups:CreateGroup",
-                        "tag:GetResources"
+                        "tag:GetResources",
+                        "kinesis:ListStreams",
+                        "kinesis:DescribeStream",
+                        "kinesis:DescribeStreamSummary"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
@@ -95,15 +98,16 @@
                                 "replication.dynamodb.amazonaws.com",
                                 "dax.amazonaws.com",
                                 "dynamodb.application-autoscaling.amazonaws.com",
-                                "contributorinsights.dynamodb.amazonaws.com"
+                                "contributorinsights.dynamodb.amazonaws.com",
+                                "kinesisreplication.dynamodb.amazonaws.com"
                             ]
                         }
                     }
                 }
             ]
         },
-        "VersionId": "v12",
+        "VersionId": "v13",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-25T18:58:22Z"
+        "CreateDate": "2020-11-16T18:19:47Z"
     }
 }
