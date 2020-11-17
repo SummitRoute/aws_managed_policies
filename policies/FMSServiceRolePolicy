@@ -276,11 +276,209 @@
                     "Resource": [
                         "arn:aws:wafv2:*:*:regional/webacl/*"
                     ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "ec2:CreateTags",
+                    "Resource": "arn:aws:ec2:*:*:route-table/*",
+                    "Condition": {
+                        "StringEquals": {
+                            "ec2:CreateAction": "CreateRouteTable"
+                        },
+                        "ForAllValues:StringEquals": {
+                            "aws:TagKeys": [
+                                "Name",
+                                "FMManaged"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "ec2:CreateTags",
+                    "Resource": [
+                        "arn:aws:ec2:*:*:subnet/*"
+                    ],
+                    "Condition": {
+                        "ForAllValues:StringEquals": {
+                            "aws:TagKeys": [
+                                "Name",
+                                "FMManaged"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "ec2:DeleteRouteTable",
+                    "Resource": "arn:aws:ec2:*:*:route-table/*",
+                    "Condition": {
+                        "StringEquals": {
+                            "ec2:ResourceTag/FMManaged": "true"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ec2:AssociateRouteTable",
+                        "ec2:CreateSubnet",
+                        "ec2:CreateRouteTable",
+                        "ec2:DeleteSubnet",
+                        "ec2:DisassociateRouteTable",
+                        "ec2:ReplaceRouteTableAssociation"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ec2:DescribeInternetGateways",
+                        "ec2:DescribeRouteTables",
+                        "ec2:DescribeSubnets",
+                        "ec2:DescribeTags",
+                        "ec2:DescribeVpcEndpoints"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ram:TagResource"
+                    ],
+                    "Resource": [
+                        "arn:aws:ram:*:*:resource-share/*"
+                    ],
+                    "Condition": {
+                        "ForAllValues:StringEquals": {
+                            "aws:TagKeys": [
+                                "Name",
+                                "FMManaged"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ram:AssociateResourceShare",
+                        "ram:UpdateResourceShare",
+                        "ram:DeleteResourceShare"
+                    ],
+                    "Resource": "arn:aws:ram:*:*:resource-share/*",
+                    "Condition": {
+                        "StringEquals": {
+                            "aws:ResourceTag/FMManaged": "true"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "ram:CreateResourceShare",
+                    "Resource": "*",
+                    "Condition": {
+                        "ForAllValues:StringEquals": {
+                            "aws:TagKeys": [
+                                "Name",
+                                "FMManaged"
+                            ]
+                        },
+                        "StringEquals": {
+                            "aws:RequestTag/FMManaged": [
+                                "true"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "Sid": "ram",
+                    "Effect": "Allow",
+                    "Action": [
+                        "ram:GetResourceShareAssociations",
+                        "ram:GetResourceShares"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "iam:CreateServiceLinkedRole",
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:AWSServiceName": [
+                                "network-firewall.amazonaws.com"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "iam:GetRole",
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "network-firewall:TagResource"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "ForAllValues:StringEquals": {
+                            "aws:TagKeys": [
+                                "Name",
+                                "FMManaged"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "network-firewall:AssociateSubnets",
+                        "network-firewall:CreateFirewall",
+                        "network-firewall:CreateFirewallPolicy",
+                        "network-firewall:DisassociateSubnets",
+                        "network-firewall:UpdateFirewallDeleteProtection",
+                        "network-firewall:UpdateFirewallPolicy",
+                        "network-firewall:UpdateFirewallPolicyChangeProtection",
+                        "network-firewall:UpdateSubnetChangeProtection",
+                        "network-firewall:AssociateFirewallPolicy",
+                        "network-firewall:DescribeFirewall",
+                        "network-firewall:DescribeFirewallPolicy",
+                        "network-firewall:DescribeRuleGroup",
+                        "network-firewall:ListFirewallPolicies",
+                        "network-firewall:ListFirewalls",
+                        "network-firewall:ListRuleGroups",
+                        "network-firewall:PutResourcePolicy",
+                        "network-firewall:DescribeResourcePolicy",
+                        "network-firewall:DeleteResourcePolicy"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "network-firewall:DeleteFirewallPolicy",
+                        "network-firewall:DeleteFirewall"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEquals": {
+                            "aws:ResourceTag/FMManaged": "true"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "logs:ListLogDeliveries"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v16",
+        "VersionId": "v17",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-09-08T18:03:00Z"
+        "CreateDate": "2020-11-17T17:35:16Z"
     }
 }
