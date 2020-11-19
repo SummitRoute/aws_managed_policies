@@ -132,10 +132,16 @@
                     "Effect": "Allow",
                     "Action": [
                         "backup:DescribeBackupVault",
-                        "backup:CopyIntoBackupVault",
-                        "backup:CopyFromBackupVault"
+                        "backup:CopyIntoBackupVault"
                     ],
                     "Resource": "arn:aws:backup:*:*:backup-vault:*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "backup:CopyFromBackupVault"
+                    ],
+                    "Resource": "*"
                 },
                 {
                     "Action": [
@@ -240,8 +246,8 @@
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-11-09T16:50:56Z"
+        "CreateDate": "2020-11-18T23:16:27Z"
     }
 }

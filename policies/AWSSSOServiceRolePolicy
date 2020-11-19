@@ -11,7 +11,8 @@
                         "iam:CreateRole",
                         "iam:PutRolePolicy",
                         "iam:UpdateRole",
-                        "iam:UpdateRoleDescription"
+                        "iam:UpdateRoleDescription",
+                        "iam:UpdateAssumeRolePolicy"
                     ],
                     "Resource": [
                         "arn:aws:iam::*:role/aws-reserved/sso.amazonaws.com/*"
@@ -134,8 +135,8 @@
                 }
             ]
         },
-        "VersionId": "v12",
+        "VersionId": "v13",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-10-21T20:27:38Z"
+        "CreateDate": "2020-11-19T00:02:00Z"
     }
 }
