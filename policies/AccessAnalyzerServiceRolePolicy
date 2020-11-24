@@ -48,6 +48,9 @@
                         "s3:ListAllMyBuckets",
                         "sns:GetTopicAttributes",
                         "sns:ListTopics",
+                        "secretsmanager:DescribeSecret",
+                        "secretsmanager:GetResourcePolicy",
+                        "secretsmanager:ListSecrets",
                         "sqs:GetQueueAttributes",
                         "sqs:ListQueues"
                     ],
@@ -55,8 +58,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
-        "IsDefaultVersion": false,
-        "CreateDate": "2020-05-19T19:10:16Z"
+        "VersionId": "v5",
+        "IsDefaultVersion": true,
+        "CreateDate": "2020-11-24T20:58:37Z"
     }
 }
