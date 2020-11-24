@@ -53,10 +53,8 @@
                     "Effect": "Allow",
                     "Resource": "*",
                     "Condition": {
-                        "ForAllValues:StringLike": {
-                            "organizations:ServicePrincipal": [
-                                "ds.amazonaws.com"
-                            ]
+                        "StringEquals": {
+                            "organizations:ServicePrincipal": "ds.amazonaws.com"
                         }
                     }
                 },
@@ -73,8 +71,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-02-05T20:29:43Z"
+        "CreateDate": "2020-11-24T23:24:10Z"
     }
 }
