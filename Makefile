@@ -63,7 +63,7 @@ destroy:
 
 update-runbook:
 	@echo "Copying runbook scripts in artifacts s3 bucket"
-	aws s3 cp automation/runbook.sh 's3://${ARTIFACTS_BUCKET}/runbook.sh'
+	@aws s3 cp automation/runbook.sh 's3://${ARTIFACTS_BUCKET}/runbook.sh'
 
 clean:
 	@rm -fr build/
