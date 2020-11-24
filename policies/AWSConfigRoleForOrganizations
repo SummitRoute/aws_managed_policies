@@ -8,14 +8,15 @@
                     "Action": [
                         "organizations:ListAccounts",
                         "organizations:DescribeOrganization",
-                        "organizations:ListAWSServiceAccessForOrganization"
+                        "organizations:ListAWSServiceAccessForOrganization",
+                        "organizations:ListDelegatedAdministrators"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-03-19T22:53:01Z"
+        "CreateDate": "2020-11-24T20:19:13Z"
     }
 }

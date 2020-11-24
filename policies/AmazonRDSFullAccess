@@ -19,11 +19,16 @@
                         "cloudwatch:DeleteAlarms",
                         "ec2:DescribeAccountAttributes",
                         "ec2:DescribeAvailabilityZones",
+                        "ec2:DescribeCoipPools",
                         "ec2:DescribeInternetGateways",
+                        "ec2:DescribeLocalGatewayRouteTables",
+                        "ec2:DescribeLocalGatewayRouteTableVpcAssociations",
+                        "ec2:DescribeLocalGateways",
                         "ec2:DescribeSecurityGroups",
                         "ec2:DescribeSubnets",
                         "ec2:DescribeVpcAttribute",
                         "ec2:DescribeVpcs",
+                        "ec2:GetCoipPoolUsage",
                         "sns:ListSubscriptions",
                         "sns:ListTopics",
                         "sns:Publish",
@@ -54,8 +59,8 @@
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-08-27T23:38:56Z"
+        "CreateDate": "2020-11-24T19:30:26Z"
     }
 }
