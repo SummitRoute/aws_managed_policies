@@ -46,7 +46,10 @@
                         "resource-groups:ListGroupResources",
                         "resource-groups:GetGroup",
                         "resource-groups:GetGroupQuery",
-                        "tag:GetResources"
+                        "tag:GetResources",
+                        "kinesis:ListStreams",
+                        "kinesis:DescribeStream",
+                        "kinesis:DescribeStreamSummary"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
@@ -58,8 +61,8 @@
                 }
             ]
         },
-        "VersionId": "v10",
+        "VersionId": "v11",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-25T19:08:05Z"
+        "CreateDate": "2020-11-16T18:49:40Z"
     }
 }

@@ -155,15 +155,15 @@
                     "Action": "organizations:EnableAWSServiceAccess",
                     "Resource": "*",
                     "Condition": {
-                        "ForAllValues:StringLike": {
+                        "StringLike": {
                             "organizations:ServicePrincipal": "config.amazonaws.com"
                         }
                     }
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-08-10T19:17:12Z"
+        "CreateDate": "2020-11-10T21:08:05Z"
     }
 }

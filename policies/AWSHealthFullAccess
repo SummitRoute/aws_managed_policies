@@ -20,7 +20,10 @@
                     "Effect": "Allow",
                     "Action": [
                         "health:*",
-                        "organizations:ListAccounts"
+                        "organizations:ListAccounts",
+                        "organizations:ListParents",
+                        "organizations:DescribeAccount",
+                        "organizations:ListDelegatedAdministrators"
                     ],
                     "Resource": "*"
                 },
@@ -36,8 +39,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-12-22T14:25:03Z"
+        "CreateDate": "2020-11-16T18:11:34Z"
     }
 }

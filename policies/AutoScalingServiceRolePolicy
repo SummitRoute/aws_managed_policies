@@ -74,11 +74,28 @@
                         "sns:Publish"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Sid": "EventBridgeRuleManagement",
+                    "Effect": "Allow",
+                    "Action": [
+                        "events:PutRule",
+                        "events:PutTargets",
+                        "events:RemoveTargets",
+                        "events:DeleteRule",
+                        "events:DescribeRule"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEquals": {
+                            "events:ManagedBy": "autoscaling.amazonaws.com"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-10-31T18:19:10Z"
+        "CreateDate": "2020-10-30T00:01:26Z"
     }
 }

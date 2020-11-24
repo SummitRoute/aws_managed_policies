@@ -6,17 +6,17 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "organizations:ListAccounts",
-                        "organizations:DescribeOrganization",
-                        "organizations:ListAWSServiceAccessForOrganization",
-                        "organizations:ListDelegatedAdministrators"
+                        "ec2:DescribeNetworkInterfaces",
+                        "ec2:DescribeSecurityGroups",
+                        "ec2:CreateNetworkInterface",
+                        "ec2:CreateSecurityGroup"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v1",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-11-24T20:19:13Z"
+        "CreateDate": "2020-11-09T22:55:56Z"
     }
 }

@@ -27,7 +27,10 @@
                         "athena:GetWorkGroup",
                         "athena:GetDataCatalog",
                         "athena:GetDatabase",
-                        "athena:GetTableMetadata"
+                        "athena:GetTableMetadata",
+                        "athena:ListDataCatalogs",
+                        "athena:ListDatabases",
+                        "athena:ListTableMetadata"
                     ],
                     "Resource": [
                         "*"
@@ -87,8 +90,8 @@
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-06-25T16:24:58Z"
+        "CreateDate": "2020-11-11T02:12:40Z"
     }
 }

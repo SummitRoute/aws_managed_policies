@@ -28,8 +28,6 @@
                     "Effect": "Allow",
                     "Action": [
                         "s3:ListAllMyBuckets",
-                        "s3:ListObjects",
-                        "s3:ListObjectsV2",
                         "s3:ListBucket",
                         "s3:GetBucketLocation"
                     ],
@@ -230,7 +228,7 @@
                         "arn:aws:ssm:*:*:parameter/LaunchWizard*",
                         "arn:aws:ssm:*:*:document/LaunchWizard*",
                         "arn:aws:logs:*:*:log-group:*:*:*",
-                        "arn:aws:logs:::log-group:LaunchWizard*"
+                        "arn:aws:logs:*:*:log-group:LaunchWizard*"
                     ]
                 },
                 {
@@ -257,7 +255,7 @@
                     ],
                     "Resource": [
                         "arn:aws:logs:*:*:log-group:*:*:*",
-                        "arn:aws:logs:::log-group:LaunchWizard*",
+                        "arn:aws:logs:*:*:log-group:LaunchWizard*",
                         "arn:aws:ssm:*:*:parameter/LaunchWizard*",
                         "arn:aws:ssm:*:*:document/LaunchWizard*"
                     ]
@@ -312,7 +310,7 @@
                     "Action": "logs:GetLog*",
                     "Resource": [
                         "arn:aws:logs:*:*:log-group:*:*:*",
-                        "arn:aws:logs:::log-group:LaunchWizard*"
+                        "arn:aws:logs:*:*:log-group:LaunchWizard*"
                     ]
                 },
                 {
@@ -321,7 +319,7 @@
                         "cloudformation:List*",
                         "cloudformation:Describe*"
                     ],
-                    "Resource": "arn:aws:cloudformation:::stack/LaunchWizard*/"
+                    "Resource": "arn:aws:cloudformation:*:*:stack/LaunchWizard*/"
                 },
                 {
                     "Effect": "Allow",
@@ -390,7 +388,8 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "s3:GetObject"
+                        "s3:GetObject",
+                        "s3:PutObject"
                     ],
                     "Resource": [
                         "arn:aws:s3:::launchwizard*",
@@ -424,11 +423,20 @@
                         "arn:aws:lambda:*:*:function:LaunchWizard*",
                         "arn:aws:s3:::launchwizard*"
                     ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "dynamodb:CreateTable",
+                        "dynamodb:DescribeTable",
+                        "dynamodb:DeleteTable"
+                    ],
+                    "Resource": "arn:aws:dynamodb:*:*:table/LaunchWizard*"
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-10-09T22:27:30Z"
+        "CreateDate": "2020-11-14T02:27:14Z"
     }
 }

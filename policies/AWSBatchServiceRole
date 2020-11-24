@@ -45,6 +45,7 @@
                         "ecs:DescribeContainerInstances",
                         "ecs:DescribeTaskDefinition",
                         "ecs:DescribeTasks",
+                        "ecs:ListAccountSettings",
                         "ecs:ListClusters",
                         "ecs:ListContainerInstances",
                         "ecs:ListTaskDefinitionFamilies",
@@ -67,6 +68,13 @@
                         "iam:GetRole"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "ecs:TagResource",
+                    "Resource": [
+                        "arn:aws:ecs:*:*:task/*_Batch_*"
+                    ]
                 },
                 {
                     "Effect": "Allow",
@@ -115,8 +123,8 @@
                 }
             ]
         },
-        "VersionId": "v10",
+        "VersionId": "v11",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-10-08T19:31:12Z"
+        "CreateDate": "2020-11-23T18:19:27Z"
     }
 }

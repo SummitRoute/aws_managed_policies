@@ -13,18 +13,20 @@
                         "ec2:CreateNetworkInterface",
                         "ec2:CreateNetworkInterfacePermission",
                         "ec2:DeleteNetworkInterface",
+                        "ec2:DescribeAddresses",
                         "ec2:DescribeNetworkInterfaces",
                         "ec2:DescribeSecurityGroups",
                         "ec2:DescribeSubnets",
                         "ec2:DescribeVpcs",
+                        "ec2:DisassociateAddress",
                         "route53:AssociateVPCWithHostedZone"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-06-18T13:25:32Z"
+        "CreateDate": "2020-11-12T20:19:45Z"
     }
 }

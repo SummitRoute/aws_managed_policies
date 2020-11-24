@@ -18,7 +18,6 @@
                         "rds:DescribeDBSnapshots",
                         "rds:ListTagsForResource",
                         "rds:DescribeDBInstances",
-                        "rds:describeDBSnapshots",
                         "rds:describeDBEngineVersions",
                         "rds:describeOptionGroups",
                         "rds:describeOrderableDBInstanceOptions",
@@ -209,11 +208,38 @@
                         "arn:aws:ssm:*:*:document/AWSEC2-CreateVssSnapshot",
                         "arn:aws:ec2:*:*:instance/*"
                     ]
+                },
+                {
+                    "Action": "fsx:DescribeFileSystems",
+                    "Effect": "Allow",
+                    "Resource": "*"
+                },
+                {
+                    "Action": "fsx:DescribeBackups",
+                    "Effect": "Allow",
+                    "Resource": "*"
+                },
+                {
+                    "Action": "fsx:DeleteBackup",
+                    "Effect": "Allow",
+                    "Resource": "arn:aws:fsx:*:*:backup/*",
+                    "Condition": {
+                        "ForAnyValue:StringEquals": {
+                            "aws:CalledVia": [
+                                "backup.amazonaws.com"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "Action": "ds:DescribeDirectories",
+                    "Effect": "Allow",
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-09-14T22:35:25Z"
+        "CreateDate": "2020-11-09T16:49:24Z"
     }
 }
