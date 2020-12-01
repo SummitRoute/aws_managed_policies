@@ -10,6 +10,7 @@
                         "sagemaker:List*",
                         "sagemaker:BatchGetMetrics",
                         "sagemaker:GetSearchSuggestions",
+                        "sagemaker:GetRecord",
                         "sagemaker:Search"
                     ],
                     "Resource": "*"
@@ -37,8 +38,8 @@
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-12-03T16:40:33Z"
+        "CreateDate": "2020-12-01T16:17:12Z"
     }
 }

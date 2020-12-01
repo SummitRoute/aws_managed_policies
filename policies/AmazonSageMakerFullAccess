@@ -57,6 +57,7 @@
                         "application-autoscaling:PutScheduledAction",
                         "application-autoscaling:RegisterScalableTarget",
                         "aws-marketplace:ViewSubscriptions",
+                        "cloudformation:GetTemplateSummary",
                         "cloudwatch:DeleteAlarms",
                         "cloudwatch:DescribeAlarms",
                         "cloudwatch:GetMetricData",
@@ -108,12 +109,12 @@
                         "fsx:DescribeFileSystems",
                         "glue:CreateJob",
                         "glue:DeleteJob",
-                        "glue:GetJob",
-                        "glue:GetJobRun",
-                        "glue:GetJobRuns",
-                        "glue:GetJobs",
+                        "glue:GetJob*",
+                        "glue:GetTable*",
+                        "glue:GetWorkflowRun",
                         "glue:ResetJobBookmark",
                         "glue:StartJobRun",
+                        "glue:StartWorkflowRun",
                         "glue:UpdateJob",
                         "groundtruthlabeling:*",
                         "iam:ListRoles",
@@ -138,7 +139,13 @@
                         "robomaker:DescribeSimulationJob",
                         "robomaker:CancelSimulationJob",
                         "secretsmanager:ListSecrets",
-                        "sns:ListTopics"
+                        "servicecatalog:Describe*",
+                        "servicecatalog:List*",
+                        "servicecatalog:ScanProvisionedProducts",
+                        "servicecatalog:SearchProducts",
+                        "servicecatalog:SearchProvisionedProducts",
+                        "sns:ListTopics",
+                        "tag:GetResources"
                     ],
                     "Resource": "*"
                 },
@@ -154,7 +161,9 @@
                         "ecr:DeleteRepository",
                         "ecr:PutImage"
                     ],
-                    "Resource": "arn:aws:ecr:*:*:repository/*sagemaker*"
+                    "Resource": [
+                        "arn:aws:ecr:*:*:repository/*sagemaker*"
+                    ]
                 },
                 {
                     "Effect": "Allow",
@@ -167,6 +176,31 @@
                         "arn:aws:codecommit:*:*:*SageMaker*",
                         "arn:aws:codecommit:*:*:*Sagemaker*"
                     ]
+                },
+                {
+                    "Action": [
+                        "codebuild:BatchGetBuilds",
+                        "codebuild:StartBuild"
+                    ],
+                    "Resource": [
+                        "arn:aws:codebuild:*:*:project/sagemaker*",
+                        "arn:aws:codebuild:*:*:build/*"
+                    ],
+                    "Effect": "Allow"
+                },
+                {
+                    "Action": [
+                        "states:DescribeExecution",
+                        "states:GetExecutionHistory",
+                        "states:StartExecution",
+                        "states:StopExecution",
+                        "states:UpdateStateMachine"
+                    ],
+                    "Resource": [
+                        "arn:aws:states:*:*:statemachine:*sagemaker*",
+                        "arn:aws:states:*:*:execution:*sagemaker*:*"
+                    ],
+                    "Effect": "Allow"
                 },
                 {
                     "Effect": "Allow",
@@ -195,6 +229,26 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "servicecatalog:ProvisionProduct"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "servicecatalog:TerminateProvisionedProduct",
+                        "servicecatalog:UpdateProvisionedProduct"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEquals": {
+                            "servicecatalog:userLevel": "self"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
                         "s3:GetObject",
                         "s3:PutObject",
                         "s3:DeleteObject",
@@ -216,6 +270,18 @@
                     "Condition": {
                         "StringEqualsIgnoreCase": {
                             "s3:ExistingObjectTag/SageMaker": "true"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "s3:GetObject"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEquals": {
+                            "s3:ExistingObjectTag/servicecatalog:provisioning": "true"
                         }
                     }
                 },
@@ -291,11 +357,100 @@
                             ]
                         }
                     }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "athena:ListDataCatalogs",
+                        "athena:ListDatabases",
+                        "athena:ListTableMetadata",
+                        "athena:GetQueryExecution",
+                        "athena:GetQueryResults",
+                        "athena:StartQueryExecution",
+                        "athena:StopQueryExecution"
+                    ],
+                    "Resource": [
+                        "*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "glue:CreateTable"
+                    ],
+                    "Resource": [
+                        "arn:aws:glue:*:*:table/*/sagemaker_tmp_*",
+                        "arn:aws:glue:*:*:table/sagemaker_featurestore/*",
+                        "arn:aws:glue:*:*:catalog",
+                        "arn:aws:glue:*:*:database/*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "glue:DeleteTable"
+                    ],
+                    "Resource": [
+                        "arn:aws:glue:*:*:table/*/sagemaker_tmp_*",
+                        "arn:aws:glue:*:*:catalog",
+                        "arn:aws:glue:*:*:database/*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "glue:GetDatabases",
+                        "glue:GetTable",
+                        "glue:GetTables"
+                    ],
+                    "Resource": [
+                        "arn:aws:glue:*:*:table/*",
+                        "arn:aws:glue:*:*:catalog",
+                        "arn:aws:glue:*:*:database/*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "glue:CreateDatabase",
+                        "glue:GetDatabase"
+                    ],
+                    "Resource": [
+                        "arn:aws:glue:*:*:catalog",
+                        "arn:aws:glue:*:*:database/sagemaker_featurestore",
+                        "arn:aws:glue:*:*:database/sagemaker_processing",
+                        "arn:aws:glue:*:*:database/default",
+                        "arn:aws:glue:*:*:database/sagemaker_data_wrangler"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "redshift-data:ExecuteStatement",
+                        "redshift-data:DescribeStatement",
+                        "redshift-data:CancelStatement",
+                        "redshift-data:GetStatementResult",
+                        "redshift-data:ListSchemas",
+                        "redshift-data:ListTables"
+                    ],
+                    "Resource": [
+                        "*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "redshift:GetClusterCredentials"
+                    ],
+                    "Resource": [
+                        "arn:aws:redshift:*:*:dbuser:*/sagemaker_access*",
+                        "arn:aws:redshift:*:*:dbname:*"
+                    ]
                 }
             ]
         },
-        "VersionId": "v17",
+        "VersionId": "v18",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-06-03T17:26:13Z"
+        "CreateDate": "2020-12-01T16:31:19Z"
     }
 }
