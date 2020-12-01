@@ -6,15 +6,25 @@
                 {
                     "Action": [
                         "honeycode:GetScreenData",
-                        "honeycode:InvokeScreenAutomation"
+                        "honeycode:InvokeScreenAutomation",
+                        "honeycode:BatchCreateTableRows",
+                        "honeycode:BatchDeleteTableRows",
+                        "honeycode:BatchUpdateTableRows",
+                        "honeycode:BatchUpsertTableRows",
+                        "honeycode:DescribeTableDataImportJob",
+                        "honeycode:ListTableColumns",
+                        "honeycode:ListTableRows",
+                        "honeycode:ListTables",
+                        "honeycode:QueryTableRows",
+                        "honeycode:StartTableDataImportJob"
                     ],
                     "Resource": "*",
                     "Effect": "Allow"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-06-24T20:28:46Z"
+        "CreateDate": "2020-12-01T17:30:06Z"
     }
 }
