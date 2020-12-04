@@ -432,11 +432,32 @@
                         "dynamodb:DeleteTable"
                     ],
                     "Resource": "arn:aws:dynamodb:*:*:table/LaunchWizard*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "secretsmanager:CreateSecret",
+                        "secretsmanager:DeleteSecret",
+                        "secretsmanager:TagResource",
+                        "secretsmanager:UntagResource",
+                        "secretsmanager:PutResourcePolicy",
+                        "secretsmanager:DeleteResourcePolicy",
+                        "secretsmanager:ListSecretVersionIds"
+                    ],
+                    "Resource": "arn:aws:secretsmanager:*:*:secret:LaunchWizard*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "secretsmanager:GetRandomPassword",
+                        "secretsmanager:ListSecrets"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-11-14T02:27:14Z"
+        "CreateDate": "2020-12-04T16:01:43Z"
     }
 }
