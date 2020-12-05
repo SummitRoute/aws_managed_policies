@@ -10,11 +10,25 @@
                         "cloudtrail:LookupEvents"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "iam:CreateServiceLinkedRole"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:AWSServiceName": [
+                                "replication.ecr.amazonaws.com"
+                            ]
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2017-11-10T17:54:49Z"
+        "CreateDate": "2020-12-05T00:04:19Z"
     }
 }
