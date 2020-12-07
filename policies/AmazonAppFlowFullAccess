@@ -75,7 +75,7 @@
             ]
         },
         "VersionId": "v1",
-        "IsDefaultVersion": true,
+        "IsDefaultVersion": false,
         "CreateDate": "2020-06-02T23:30:14Z"
     }
 }
