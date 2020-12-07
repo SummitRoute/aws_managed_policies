@@ -22,7 +22,7 @@
                     ],
                     "Condition": {
                         "StringEquals": {
-                            "aws:ARN": "${ec2:SourceInstanceARN}"
+                            "ec2:ResourceTag/DeadlineRole": "DeadlineRenderNode"
                         }
                     }
                 },
@@ -79,8 +79,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-08-20T21:18:56Z"
+        "CreateDate": "2020-12-07T23:27:47Z"
     }
 }
