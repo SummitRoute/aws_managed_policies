@@ -9,6 +9,8 @@
                         "sagemaker:Describe*",
                         "sagemaker:List*",
                         "sagemaker:BatchGetMetrics",
+                        "sagemaker:GetDeviceRegistration",
+                        "sagemaker:GetDeviceFleetReport",
                         "sagemaker:GetSearchSuggestions",
                         "sagemaker:GetRecord",
                         "sagemaker:Search"
@@ -38,8 +40,8 @@
                 }
             ]
         },
-        "VersionId": "v8",
+        "VersionId": "v9",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-12-01T16:17:12Z"
+        "CreateDate": "2020-12-08T16:17:08Z"
     }
 }
