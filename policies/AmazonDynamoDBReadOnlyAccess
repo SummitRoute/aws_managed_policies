@@ -13,6 +13,7 @@
                         "cloudwatch:DescribeAlarmsForMetric",
                         "cloudwatch:GetMetricStatistics",
                         "cloudwatch:ListMetrics",
+                        "cloudwatch:GetMetricData",
                         "datapipeline:DescribeObjects",
                         "datapipeline:DescribePipelines",
                         "datapipeline:GetPipelineDefinition",
@@ -61,8 +62,8 @@
                 }
             ]
         },
-        "VersionId": "v11",
+        "VersionId": "v12",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-11-16T18:49:40Z"
+        "CreateDate": "2020-12-11T20:17:37Z"
     }
 }
