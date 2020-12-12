@@ -453,11 +453,18 @@
                         "secretsmanager:ListSecrets"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ssm:CreateOpsMetadata"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-12-04T16:01:43Z"
+        "CreateDate": "2020-12-12T21:51:14Z"
     }
 }
