@@ -8,9 +8,24 @@ variable "env" {
   description = "Environment"
 }
 
+variable "tags" {
+  type    = map(string)
+  default = {
+    aws_region      = "eu-west-1"
+    Project         = "mamip"
+    Terraform       = "true"
+    Service-Owner   = "Victor GRENU"
+    }
+}
+
 variable "project" {
   default     = "mamip"
   description = "Project Name"
+}
+
+variable "description" {
+  default     = "Monitor AWS Managed IAM Policies Changes"
+  description = "Project Description"
 }
 
 variable "qtweeter_sqs_arn" {
@@ -23,11 +38,6 @@ variable "container_image" {
 
 variable "log_group_retention" {
   default = "90"
-}
-
-variable "description" {
-  default     = "Monitor AWS Managed IAM Policies Changes"
-  description = "Project Description"
 }
 
 variable "artifacts_bucket" {
@@ -74,5 +84,5 @@ variable "ecs_cpu_units" {
 
 variable "ecs_memory" {
   default     = "2048"
-  description = "Container: Memory in MB"
+  description = "Container: Memory Units"
 }
