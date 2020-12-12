@@ -33,10 +33,11 @@ then
         echo "Push the changes to master"
         diff="$(git diff --name-only) $(git ls-files --others --exclude-standard)"
         diff=${diff//$WORDTOREMOVE/}
+        diff="${diff:0:200}..."
         git add ./policies
         git commit -am "Update detected"
-        commit_id=$(git log --format="%H" -n 1)
-        aws sqs send-message --queue-url https://sqs.eu-west-1.amazonaws.com/567589703415/qtweet-mamip-sqs-queue.fifo --message-body "🔥 Update Detected on an #AWS IAM Managed Policy: $diff https://github.com/z0ph/aws_managed_policies/commit/$commit_id" --message-group-id 1
+        commit_id=$(git log --format="%h" -n 1)
+        aws sqs send-message --queue-url https://sqs.eu-west-1.amazonaws.com/567589703415/qtweet-mamip-sqs-queue.fifo --message-body "$diff https://github.com/z0ph/aws_managed_policies/commit/$commit_id" --message-group-id 1
         git push origin master
     else
         echo "No changes detected"
