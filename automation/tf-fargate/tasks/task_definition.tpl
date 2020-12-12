@@ -5,7 +5,7 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/${project}",
+          "awslogs-group": "/ecs/${project}-${env}",
           "awslogs-region": "${aws_region}",
           "awslogs-stream-prefix": "ecs"
         }

@@ -41,7 +41,7 @@ This does the following:
 ### Automation Details
 
 - Infrastructure is deployed using:
-  - Fargate: Terraform
+  - ECS/Fargate: Terraform
 - Clone this repository
 - Run the magic (previously mentioned command)
 - If changes detected:
@@ -51,8 +51,8 @@ This does the following:
 
 #### Schedule
 
-- Fargate (Spot): **Every 4 hours**
+- ECS/Fargate (Spot): **Every 4 hours**
 
 ### Architecture Design
 
-![schema fargate](assets/schemav2.png)
+![Schema ECS Fargate](assets/schemav2.png)

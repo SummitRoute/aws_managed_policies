@@ -29,7 +29,6 @@ ECR ?= 567589703415.dkr.ecr.eu-west-1.amazonaws.com/mamip-ecr-dev
 build-docker:
 	@docker build -t mamip-image ./automation/
 	@docker tag mamip-image $(ECR)
-	# aws-vault exec zoph -- aws ecr get-login-password | docker login --username AWS --password-stdin 567589703415.dkr.ecr.eu-west-1.amazonaws.com/mamip-ecr-dev
 	@docker push $(ECR)
 
 ################ Terraform #####################
@@ -64,7 +63,7 @@ destroy:
 
 update-runbook:
 	@echo "Copying runbook scripts in artifacts s3 bucket"
-	aws s3 cp automation/runbook.sh 's3://${ARTIFACTS_BUCKET}/runbook.sh'
+	@aws s3 cp automation/runbook.sh 's3://${ARTIFACTS_BUCKET}/runbook.sh'
 
 clean:
 	@rm -fr build/
