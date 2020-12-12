@@ -12,6 +12,8 @@ I'm using this excuse for learning and experiment with new stuff: Automation, Te
 
 1. Follow the [dedicated Twitter Account](https://twitter.com/mamip_aws).
 
+[![Mamip Twitter Screenshot](assets/mamip_twitter.png)](https://twitter.com/mamip_aws)
+
 2. Activate `Releases Only` feature of Github
 
 ![setup](assets/watching.gif)
