@@ -134,11 +134,39 @@
                             ]
                         }
                     }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "organizations:DescribeOrganization",
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "cloudformation:ListStackSets",
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "cloudformation:ListStackInstances",
+                        "cloudformation:DescribeStackSetOperation",
+                        "cloudformation:DeleteStackSet"
+                    ],
+                    "Resource": "arn:aws:cloudformation:*:*:stackset/AWS-QuickSetup-SSM*:*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "cloudformation:DeleteStackInstances",
+                    "Resource": [
+                        "arn:aws:cloudformation:*:*:stackset/AWS-QuickSetup-SSM*:*",
+                        "arn:aws:cloudformation:*:*:stackset-target/AWS-QuickSetup-SSM*:*",
+                        "arn:aws:cloudformation:*:*:type/resource/*"
+                    ]
                 }
             ]
         },
-        "VersionId": "v9",
+        "VersionId": "v10",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-11-11T19:27:12Z"
+        "CreateDate": "2020-12-11T17:30:16Z"
     }
 }

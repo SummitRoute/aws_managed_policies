@@ -11,7 +11,7 @@
                     ],
                     "Resource": "*",
                     "Condition": {
-                        "ForAllValues:StringLike": {
+                        "StringEquals": {
                             "organizations:ServicePrincipal": [
                                 "backup.amazonaws.com"
                             ]
@@ -61,8 +61,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-06-24T16:23:14Z"
+        "CreateDate": "2020-11-24T22:09:43Z"
     }
 }

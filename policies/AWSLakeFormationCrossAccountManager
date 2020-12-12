@@ -10,7 +10,7 @@
                     ],
                     "Resource": "*",
                     "Condition": {
-                        "ForAllValues:StringEquals": {
+                        "StringLikeIfExists": {
                             "ram:RequestedResourceType": [
                                 "glue:Table",
                                 "glue:Database",
@@ -27,7 +27,7 @@
                     ],
                     "Resource": "*",
                     "Condition": {
-                        "ForAllValues:StringLike": {
+                        "StringLike": {
                             "ram:ResourceShareName": [
                                 "LakeFormation*"
                             ]
@@ -38,6 +38,7 @@
                     "Effect": "Allow",
                     "Action": [
                         "glue:PutResourcePolicy",
+                        "glue:DeleteResourcePolicy",
                         "organizations:DescribeOrganization",
                         "organizations:DescribeAccount",
                         "ram:Get*",
@@ -56,8 +57,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-08-04T20:59:46Z"
+        "CreateDate": "2020-12-07T23:11:36Z"
     }
 }

@@ -94,9 +94,10 @@
                     "Effect": "Allow",
                     "Action": [
                         "license-manager:GetServiceSettings",
-                        "license-manager:GetLicenseConfiguration",
+                        "license-manager:GetLicense*",
                         "license-manager:UpdateLicenseSpecificationsForResource",
-                        "license-manager:ListUsageForLicenseConfiguration"
+                        "license-manager:ListUsageForLicenseConfiguration",
+                        "license-manager:ListDistributedGrants"
                     ],
                     "Resource": [
                         "*"
@@ -104,8 +105,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-15T22:10:12Z"
+        "CreateDate": "2020-12-03T08:38:18Z"
     }
 }

@@ -27,11 +27,25 @@
                         "ec2:CreateTags"
                     ],
                     "Resource": "arn:aws:ec2:*::snapshot/*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "events:PutRule",
+                        "events:DeleteRule",
+                        "events:DescribeRule",
+                        "events:EnableRule",
+                        "events:DisableRule",
+                        "events:ListTargetsByRule",
+                        "events:PutTargets",
+                        "events:RemoveTargets"
+                    ],
+                    "Resource": "arn:aws:events:*:*:rule/AwsDataLifecycleRule.managed-cwe.*"
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-09-09T18:52:08Z"
+        "CreateDate": "2020-12-11T18:15:06Z"
     }
 }

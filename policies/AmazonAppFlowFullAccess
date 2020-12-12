@@ -71,11 +71,45 @@
                         "s3:PutBucketPolicy"
                     ],
                     "Resource": "arn:aws:s3:::appflow-*"
+                },
+                {
+                    "Sid": "SecretsManagerCreateSecretAccess",
+                    "Effect": "Allow",
+                    "Action": "secretsmanager:CreateSecret",
+                    "Resource": "*",
+                    "Condition": {
+                        "StringLike": {
+                            "secretsmanager:Name": "appflow!*"
+                        },
+                        "ForAnyValue:StringEquals": {
+                            "aws:CalledVia": [
+                                "appflow.amazonaws.com"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "Sid": "SecretsManagerPutResourcePolicyAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "secretsmanager:PutResourcePolicy"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "ForAnyValue:StringEquals": {
+                            "aws:CalledVia": [
+                                "appflow.amazonaws.com"
+                            ]
+                        },
+                        "StringEqualsIgnoreCase": {
+                            "secretsmanager:ResourceTag/aws:secretsmanager:owningService": "appflow"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-06-02T23:30:14Z"
+        "CreateDate": "2020-12-07T22:49:15Z"
     }
 }

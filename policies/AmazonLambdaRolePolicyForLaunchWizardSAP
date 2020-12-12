@@ -80,9 +80,6 @@
                     "Action": [
                         "s3:ListBucket",
                         "s3:ListBucketVersions",
-                        "s3:ListObjects",
-                        "s3:ListObjectsV2",
-                        "s3:ListObjectVersions",
                         "s3:GetObject",
                         "s3:GetObjectVersion",
                         "s3:GetObjectVersionAcl",
@@ -93,14 +90,13 @@
                         "s3:DeleteBucket"
                     ],
                     "Resource": [
-                        "arn:aws:s3:::launchwizard*",
-                        "arn:aws:s3:::launchwizard*/*"
+                        "arn:aws:s3:::launchwizard*"
                     ]
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-07-01T19:49:27Z"
+        "CreateDate": "2020-12-04T16:00:56Z"
     }
 }

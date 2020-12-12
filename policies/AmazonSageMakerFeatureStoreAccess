@@ -1,0 +1,24 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "s3:PutObject",
+                        "s3:GetBucketAcl"
+                    ],
+                    "Resource": [
+                        "arn:aws:s3:::*SageMaker*",
+                        "arn:aws:s3:::*Sagemaker*",
+                        "arn:aws:s3:::*sagemaker*"
+                    ]
+                }
+            ]
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2020-12-01T16:24:05Z"
+    }
+}

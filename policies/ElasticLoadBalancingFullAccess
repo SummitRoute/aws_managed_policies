@@ -22,6 +22,8 @@
                         "ec2:DescribeNetworkInterfaces",
                         "ec2:DescribeClassicLinkInstances",
                         "ec2:DescribeRouteTables",
+                        "ec2:DescribeCoipPools",
+                        "ec2:GetCoipPoolUsage",
                         "cognito-idp:DescribeUserPoolClient"
                     ],
                     "Resource": "*"
@@ -38,8 +40,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-03-25T21:33:12Z"
+        "CreateDate": "2020-12-04T20:01:39Z"
     }
 }

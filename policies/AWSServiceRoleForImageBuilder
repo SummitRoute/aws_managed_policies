@@ -10,6 +10,7 @@
                     ],
                     "Resource": [
                         "arn:aws:ec2:*::image/*",
+                        "arn:aws:ec2:*::snapshot/*",
                         "arn:aws:ec2:*:*:subnet/*",
                         "arn:aws:ec2:*:*:network-interface/*",
                         "arn:aws:ec2:*:*:security-group/*",
@@ -231,11 +232,30 @@
                         "logs:PutLogEvents"
                     ],
                     "Resource": "arn:aws:logs:*:*:log-group:/aws/imagebuilder/*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ec2:CreateLaunchTemplateVersion",
+                        "ec2:DescribeLaunchTemplates",
+                        "ec2:ModifyLaunchTemplate"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "iam:CreateServiceLinkedRole",
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:AWSServiceName": "ssm.amazonaws.com"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v11",
+        "VersionId": "v12",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-09-28T18:13:06Z"
+        "CreateDate": "2020-12-04T23:27:05Z"
     }
 }

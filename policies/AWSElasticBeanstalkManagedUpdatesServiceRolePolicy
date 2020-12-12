@@ -59,7 +59,10 @@
                         "cloudformation:List*",
                         "ec2:Describe*",
                         "autoscaling:Describe*",
-                        "elasticloadbalancing:Describe*"
+                        "elasticloadbalancing:Describe*",
+                        "logs:DescribeLogGroups",
+                        "sns:GetTopicAttributes",
+                        "sns:ListSubscriptionsByTopic"
                     ],
                     "Resource": "*"
                 },
@@ -152,7 +155,6 @@
                     "Action": [
                         "logs:CreateLogGroup",
                         "logs:DeleteLogGroup",
-                        "logs:DescribeLogGroups",
                         "logs:PutRetentionPolicy"
                     ],
                     "Resource": "arn:aws:logs:*:*:log-group:/aws/elasticbeanstalk/*"
@@ -172,11 +174,19 @@
                         "arn:aws:elasticloadbalancing:*:*:targetgroup/eb-*",
                         "arn:aws:elasticloadbalancing:*:*:loadbalancer/eb-*"
                     ]
+                },
+                {
+                    "Sid": "SNS",
+                    "Effect": "Allow",
+                    "Action": [
+                        "sns:CreateTopic"
+                    ],
+                    "Resource": "arn:aws:sns:*:*:ElasticBeanstalkNotifications-Environment-*"
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-09-11T18:28:47Z"
+        "CreateDate": "2020-12-11T18:21:32Z"
     }
 }
