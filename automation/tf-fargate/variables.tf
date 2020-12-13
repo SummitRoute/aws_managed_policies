@@ -28,12 +28,8 @@ variable "description" {
   description = "Project Description"
 }
 
-variable "qtweeter_sqs_arn" {
-  default = "arn:aws:sqs:eu-west-1:567589703415:qtweet-mamip-sqs-queue.fifo"
-}
-
-variable "container_image" {
-  default = "567589703415.dkr.ecr.eu-west-1.amazonaws.com/mamip-ecr-dev:latest"
+variable "qtweeter_sqs_name" {
+  default = "qtweet-mamip-sqs-queue"
 }
 
 variable "log_group_retention" {
@@ -68,7 +64,7 @@ variable "security_groups" {
 }
 
 variable "schedule" {
-  default     = "rate(1 hour)"
+  default     = "cron(0 * * * ? *)"
   description = "Schedule for your job"
 }
 
