@@ -10,6 +10,8 @@
           "awslogs-stream-prefix": "ecs"
         }
       },
+      "image": "${container_image}",
+      "name": "${project}-${env}-container",
       "entryPoint": null,
       "portMappings": [],
       "command": null,
@@ -27,7 +29,6 @@
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "${container_image}",
       "startTimeout": null,
       "dependsOn": null,
       "disableNetworking": null,
@@ -42,7 +43,6 @@
       "readonlyRootFilesystem": null,
       "dockerLabels": null,
       "systemControls": null,
-      "privileged": null,
-      "name": "${project}-container"
+      "privileged": null
     }
 ]

@@ -26,7 +26,7 @@ data "aws_iam_policy_document" "ecs_service_policy" {
   }
   statement {
     effect    = "Allow"
-    resources = [var.qtweeter_sqs_arn]
+    resources = ["arn:aws:sqs:${var.aws_region}:${data.aws_caller_identity.current.account_id}:${var.qtweeter_sqs_name}.fifo"]
     actions = [
       "sqs:SendMessage"
     ]

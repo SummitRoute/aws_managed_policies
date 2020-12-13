@@ -19,7 +19,7 @@ data "template_file" "mamip_task" {
   template = file("./tasks/task_definition.tpl")
 
   vars = {
-    container_image = var.container_image
+    container_image = "${data.aws_caller_identity.current.account_id}.dkr.ecr.${var.aws_region}.amazonaws.com/mamip-ecr-${var.env}:latest"
     project         = var.project
     aws_region      = var.aws_region
     env             = var.env
@@ -35,6 +35,7 @@ resource "aws_ecs_task_definition" "mamip_td" {
   memory                   = var.ecs_memory
   execution_role_arn       = var.ecs_taskexec_role
   task_role_arn            = aws_iam_role.ecs_role.arn
+  
 
   tags = var.tags
 }
@@ -45,3 +46,6 @@ resource "aws_cloudwatch_log_group" "log_group" {
 
   tags = var.tags
 }
+
+# To retrieve info about current account / userid
+data "aws_caller_identity" "current" {}
