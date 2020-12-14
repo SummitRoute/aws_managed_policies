@@ -7,6 +7,7 @@
                     "Action": [
                         "chime:List*",
                         "chime:Get*",
+                        "chime:Describe*",
                         "chime:SearchAvailablePhoneNumbers"
                     ],
                     "Effect": "Allow",
@@ -14,8 +15,8 @@
                 }
             ]
         },
-        "VersionId": "v9",
+        "VersionId": "v10",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-18T18:49:37Z"
+        "CreateDate": "2020-12-14T20:53:57Z"
     }
 }
