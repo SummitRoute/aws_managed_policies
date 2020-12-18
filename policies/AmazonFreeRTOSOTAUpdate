@@ -35,7 +35,8 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "iot:DeleteJob"
+                        "iot:DeleteJob",
+                        "iot:DescribeJob"
                     ],
                     "Resource": "arn:aws:iot:*:*:job/AFR_OTA*"
                 },
@@ -56,8 +57,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-10-07T20:11:30Z"
+        "CreateDate": "2020-12-18T17:47:30Z"
     }
 }

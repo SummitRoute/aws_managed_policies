@@ -48,13 +48,13 @@
                     ],
                     "Effect": "Allow",
                     "Resource": [
-                        "arn:aws:apigateway:us-east-1::/restapis/*"
+                        "arn:aws:apigateway:*::/restapis*"
                     ]
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-20T12:58:09Z"
+        "CreateDate": "2020-12-18T17:48:20Z"
     }
 }
