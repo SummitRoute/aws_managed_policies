@@ -168,6 +168,7 @@
                         "storagegateway:ListGateways",
                         "storagegateway:ListVolumes",
                         "support:DescribeCases",
+                        "tag:GetResources",
                         "waf:GetLoggingConfiguration",
                         "waf:GetWebACL",
                         "wafv2:GetLoggingConfiguration",
@@ -179,8 +180,8 @@
                 }
             ]
         },
-        "VersionId": "v20",
-        "IsDefaultVersion": false,
-        "CreateDate": "2020-06-19T16:09:31Z"
+        "VersionId": "v21",
+        "IsDefaultVersion": true,
+        "CreateDate": "2020-12-18T22:02:34Z"
     }
 }
