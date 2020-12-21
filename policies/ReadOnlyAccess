@@ -221,11 +221,7 @@
                         "ecr:List*",
                         "ecs:Describe*",
                         "ecs:List*",
-                        "eks:DescribeCluster",
-                        "eks:DescribeUpdate",
                         "eks:Describe*",
-                        "eks:ListClusters",
-                        "eks:ListUpdates",
                         "eks:List*",
                         "elasticache:Describe*",
                         "elasticache:List*",
@@ -327,7 +323,6 @@
                         "guardduty:Get*",
                         "guardduty:List*",
                         "health:Describe*",
-                        "health:List*",
                         "iam:Generate*",
                         "iam:Get*",
                         "iam:List*",
@@ -467,7 +462,6 @@
                         "qldb:GetBlock",
                         "qldb:GetDigest",
                         "qldb:GetRevision",
-                        "qldb:GetBlock",
                         "qldb:ListTagsForResource",
                         "ram:Get*",
                         "ram:List*",
@@ -616,8 +610,8 @@
                 }
             ]
         },
-        "VersionId": "v68",
+        "VersionId": "v72",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-10-07T22:09:23Z"
+        "CreateDate": "2020-12-21T20:41:22Z"
     }
 }
