@@ -38,6 +38,7 @@
                         "route53:ChangeResourceRecordSets",
                         "route53:ListHostedZones",
                         "route53:ListResourceRecordSets",
+                        "route53:GetHostedZone",
                         "route53domains:CheckDomainAvailability",
                         "route53domains:ListDomains",
                         "ses:*",
@@ -80,8 +81,8 @@
                 }
             ]
         },
-        "VersionId": "v9",
+        "VersionId": "v10",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-12-09T11:52:56Z"
+        "CreateDate": "2020-12-21T14:13:40Z"
     }
 }
