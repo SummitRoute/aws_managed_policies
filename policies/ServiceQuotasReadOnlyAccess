@@ -9,6 +9,7 @@
                         "autoscaling:DescribeAccountLimits",
                         "cloudformation:DescribeAccountLimits",
                         "cloudwatch:DescribeAlarmsForMetric",
+                        "cloudwatch:DescribeAlarms",
                         "cloudwatch:GetMetricData",
                         "cloudwatch:GetMetricStatistics",
                         "dynamodb:DescribeLimits",
@@ -20,6 +21,8 @@
                         "organizations:ListAWSServiceAccessForOrganization",
                         "rds:DescribeAccountAttributes",
                         "route53:GetAccountLimit",
+                        "tag:GetTagKeys",
+                        "tag:GetTagValues",
                         "servicequotas:GetAssociationForServiceQuotaTemplate",
                         "servicequotas:GetAWSDefaultServiceQuota",
                         "servicequotas:GetRequestedServiceQuotaChange",
@@ -30,14 +33,15 @@
                         "servicequotas:ListRequestedServiceQuotaChangeHistoryByQuota",
                         "servicequotas:ListServices",
                         "servicequotas:ListServiceQuotas",
-                        "servicequotas:ListServiceQuotaIncreaseRequestsInTemplate"
+                        "servicequotas:ListServiceQuotaIncreaseRequestsInTemplate",
+                        "servicequotas:ListTagsForResource"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-06-24T15:31:06Z"
+        "CreateDate": "2020-12-21T18:11:57Z"
     }
 }

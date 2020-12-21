@@ -9,6 +9,7 @@
                         "autoscaling:DescribeAccountLimits",
                         "cloudformation:DescribeAccountLimits",
                         "cloudwatch:DescribeAlarmsForMetric",
+                        "cloudwatch:DescribeAlarms",
                         "cloudwatch:GetMetricData",
                         "cloudwatch:GetMetricStatistics",
                         "cloudwatch:PutMetricAlarm",
@@ -21,6 +22,8 @@
                         "organizations:ListAWSServiceAccessForOrganization",
                         "rds:DescribeAccountAttributes",
                         "route53:GetAccountLimit",
+                        "tag:GetTagKeys",
+                        "tag:GetTagValues",
                         "servicequotas:*"
                     ],
                     "Resource": "*"
@@ -65,8 +68,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-10-08T22:17:35Z"
+        "CreateDate": "2020-12-21T18:12:22Z"
     }
 }
