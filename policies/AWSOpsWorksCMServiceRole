@@ -155,6 +155,18 @@
                 },
                 {
                     "Effect": "Allow",
+                    "Resource": "arn:aws:secretsmanager:*:*:aws-opsworks-cm-secrets-*",
+                    "Action": [
+                        "secretsmanager:CreateSecret",
+                        "secretsmanager:GetSecretValue",
+                        "secretsmanager:UpdateSecret",
+                        "secretsmanager:DeleteSecret",
+                        "secretsmanager:TagResource",
+                        "secretsmanager:UntagResource"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
                     "Action": "ec2:DeleteTags",
                     "Resource": [
                         "arn:aws:ec2:*:*:instance/*",
@@ -164,8 +176,8 @@
                 }
             ]
         },
-        "VersionId": "v12",
+        "VersionId": "v13",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-12-16T13:45:19Z"
+        "CreateDate": "2021-01-06T15:08:35Z"
     }
 }
