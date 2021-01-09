@@ -51,7 +51,7 @@ This does the following:
 
 #### Schedule
 
-- ECS/Fargate (Spot): **Every 4 hours**
+- ECS/Fargate (Spot): [current setting](https://github.com/z0ph/aws_managed_policies/blob/master/automation/tf-fargate/variables.tf#L66-L69)
 
 ### Architecture Design
 
