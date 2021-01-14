@@ -31,7 +31,14 @@
                 {
                     "Action": "s3:GetObject",
                     "Effect": "Allow",
-                    "Resource": "arn:aws:s3:::*aws-data-exchange*"
+                    "Resource": "arn:aws:s3:::*aws-data-exchange*",
+                    "Condition": {
+                        "ForAnyValue:StringEquals": {
+                            "aws:CalledVia": [
+                                "dataexchange.amazonaws.com"
+                            ]
+                        }
+                    }
                 },
                 {
                     "Effect": "Allow",
@@ -65,8 +72,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-27T14:28:00Z"
+        "CreateDate": "2021-01-14T17:06:28Z"
     }
 }
