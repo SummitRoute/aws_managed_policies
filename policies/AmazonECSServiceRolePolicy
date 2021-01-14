@@ -104,11 +104,30 @@
                         "logs:PutLogEvents"
                     ],
                     "Resource": "arn:aws:logs:*:*:log-group:/aws/ecs/*:log-stream:*"
+                },
+                {
+                    "Sid": "ExecuteCommandSessionManagement",
+                    "Effect": "Allow",
+                    "Action": [
+                        "ssm:DescribeSessions"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Sid": "ExecuteCommand",
+                    "Effect": "Allow",
+                    "Action": [
+                        "ssm:StartSession"
+                    ],
+                    "Resource": [
+                        "arn:aws:ecs:*:*:task/*",
+                        "arn:aws:ssm:*:*:document/AmazonECS-ExecuteInteractiveCommand"
+                    ]
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-21T19:49:23Z"
+        "CreateDate": "2021-01-13T20:04:13Z"
     }
 }
