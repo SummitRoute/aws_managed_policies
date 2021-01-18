@@ -46,14 +46,16 @@
                         "iam:ListUsers",
                         "iam:ListRoles",
                         "rds:DescribeDBClusters",
-                        "rds:DescribeDBInstances"
+                        "rds:DescribeDBInstances",
+                        "ecs:DescribeClusters",
+                        "eks:DescribeNodegroup"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-12-21T21:18:19Z"
+        "CreateDate": "2021-01-18T15:40:47Z"
     }
 }
