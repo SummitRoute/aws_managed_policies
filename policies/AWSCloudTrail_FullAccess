@@ -92,11 +92,19 @@
                         "lambda:ListFunctions"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "dynamodb:ListGlobalTables",
+                        "dynamodb:ListTables"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-10-08T23:41:15Z"
+        "CreateDate": "2020-10-21T19:40:46Z"
     }
 }
