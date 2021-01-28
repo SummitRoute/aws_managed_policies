@@ -28,7 +28,8 @@
                         "s3:ListAllMyBuckets",
                         "s3:GetBucketLocation",
                         "xray:GetTraceSummaries",
-                        "xray:BatchGetTraces"
+                        "xray:BatchGetTraces",
+                        "apigateway:GET"
                     ],
                     "Resource": "*"
                 },
@@ -158,8 +159,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-09-18T16:39:53Z"
+        "CreateDate": "2021-01-27T20:12:41Z"
     }
 }
