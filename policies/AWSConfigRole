@@ -46,11 +46,28 @@
                         "dynamodb:ListTagsOfResource",
                         "ec2:Describe*",
                         "ec2:GetEbsEncryptionByDefault",
+                        "ecr:DescribeRepositories",
+                        "ecr:GetLifecyclePolicy",
+                        "ecr:GetRepositoryPolicy",
+                        "ecr:ListTagsForResource",
+                        "ecs:DescribeClusters",
+                        "ecs:DescribeServices",
+                        "ecs:DescribeTaskDefinition",
+                        "ecs:DescribeTaskSets",
+                        "ecs:ListClusters",
+                        "ecs:ListServices",
+                        "ecs:ListTagsForResource",
+                        "ecs:ListTaskDefinitions",
                         "eks:DescribeCluster",
+                        "eks:DescribeNodegroup",
                         "eks:ListClusters",
+                        "eks:ListNodegroups",
                         "elasticache:DescribeCacheClusters",
                         "elasticache:DescribeReplicationGroups",
                         "elasticfilesystem:DescribeFileSystems",
+                        "elasticfilesystem:DescribeLifecycleConfiguration",
+                        "elasticfilesystem:DescribeMountTargets",
+                        "elasticfilesystem:DescribeMountTargetSecurityGroups",
                         "elasticloadbalancing:DescribeListeners",
                         "elasticloadbalancing:DescribeLoadBalancerAttributes",
                         "elasticloadbalancing:DescribeLoadBalancerPolicies",
@@ -181,8 +198,8 @@
                 }
             ]
         },
-        "VersionId": "v35",
+        "VersionId": "v36",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-12-18T22:22:51Z"
+        "CreateDate": "2021-01-29T19:22:20Z"
     }
 }
