@@ -6,15 +6,27 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "guardduty:Describe*",
                         "guardduty:Get*",
                         "guardduty:List*"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "organizations:ListDelegatedAdministrators",
+                        "organizations:ListAWSServiceAccessForOrganization",
+                        "organizations:DescribeOrganizationalUnit",
+                        "organizations:DescribeAccount",
+                        "organizations:DescribeOrganization"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-04-25T21:07:17Z"
+        "CreateDate": "2021-02-16T23:37:57Z"
     }
 }

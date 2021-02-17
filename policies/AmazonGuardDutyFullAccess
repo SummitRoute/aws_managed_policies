@@ -17,11 +17,24 @@
                             "iam:AWSServiceName": "guardduty.amazonaws.com"
                         }
                     }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "organizations:EnableAWSServiceAccess",
+                        "organizations:RegisterDelegatedAdministrator",
+                        "organizations:ListDelegatedAdministrators",
+                        "organizations:ListAWSServiceAccessForOrganization",
+                        "organizations:DescribeOrganizationalUnit",
+                        "organizations:DescribeAccount",
+                        "organizations:DescribeOrganization"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2017-11-28T22:31:30Z"
+        "CreateDate": "2021-02-16T23:39:53Z"
     }
 }
