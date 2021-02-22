@@ -26,7 +26,8 @@
                     "Effect": "Allow",
                     "Action": [
                         "s3:CreateBucket",
-                        "s3:PutBucketPolicy"
+                        "s3:PutBucketPolicy",
+                        "s3:PutBucketPublicAccessBlock"
                     ],
                     "Resource": [
                         "arn:aws:s3:::aws-cloudtrail-logs*"
@@ -103,8 +104,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-10-21T19:40:46Z"
+        "CreateDate": "2021-02-22T19:01:00Z"
     }
 }
