@@ -7,7 +7,8 @@
                     "Effect": "Allow",
                     "Action": [
                         "s3:PutObject",
-                        "s3:GetBucketAcl"
+                        "s3:GetBucketAcl",
+                        "s3:PutObjectAcl"
                     ],
                     "Resource": [
                         "arn:aws:s3:::*SageMaker*",
@@ -17,8 +18,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-12-01T16:24:05Z"
+        "CreateDate": "2021-02-24T02:18:50Z"
     }
 }

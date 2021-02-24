@@ -300,6 +300,18 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "s3:GetBucketAcl",
+                        "s3:PutObjectAcl"
+                    ],
+                    "Resource": [
+                        "arn:aws:s3:::*SageMaker*",
+                        "arn:aws:s3:::*Sagemaker*",
+                        "arn:aws:s3:::*sagemaker*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
                         "lambda:InvokeFunction"
                     ],
                     "Resource": [
@@ -449,8 +461,8 @@
                 }
             ]
         },
-        "VersionId": "v18",
+        "VersionId": "v19",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-12-01T16:31:19Z"
+        "CreateDate": "2021-02-24T01:19:55Z"
     }
 }
