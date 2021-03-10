@@ -25,7 +25,8 @@
                         "rds:describeDBClusterSnapshots",
                         "rds:describeDBClusters",
                         "rds:describeDBParameterGroups",
-                        "rds:describeDBClusterParameterGroups"
+                        "rds:DescribeDBClusterParameterGroups",
+                        "rds:DescribeDBInstanceAutomatedBackups"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
@@ -238,8 +239,8 @@
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-11-09T16:49:24Z"
+        "CreateDate": "2021-03-10T18:32:22Z"
     }
 }

@@ -79,7 +79,8 @@
                         "rds:AddTagsToResource",
                         "rds:DescribeDBClusters",
                         "rds:RestoreDBClusterFromSnapshot",
-                        "rds:DeleteDBCluster"
+                        "rds:DeleteDBCluster",
+                        "rds:RestoreDBInstanceToPointInTime"
                     ],
                     "Resource": "*"
                 },
@@ -183,8 +184,8 @@
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-11-09T16:52:12Z"
+        "CreateDate": "2021-03-10T18:30:25Z"
     }
 }
