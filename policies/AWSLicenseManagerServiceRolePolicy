@@ -4,6 +4,21 @@
             "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Sid": "IAMPermissions",
+                    "Effect": "Allow",
+                    "Action": [
+                        "iam:CreateServiceLinkedRole"
+                    ],
+                    "Resource": [
+                        "arn:aws:iam::*:role/aws-service-role/license-management.marketplace.amazonaws.com/AWSServiceRoleForMarketplaceLicenseManagement"
+                    ],
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:AWSServiceName": "license-management.marketplace.amazonaws.com"
+                        }
+                    }
+                },
+                {
                     "Sid": "S3BucketPermissions1",
                     "Effect": "Allow",
                     "Action": [
@@ -105,8 +120,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-12-03T08:38:18Z"
+        "CreateDate": "2021-03-09T20:23:10Z"
     }
 }

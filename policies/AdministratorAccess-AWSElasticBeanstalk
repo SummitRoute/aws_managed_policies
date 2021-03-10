@@ -223,6 +223,7 @@
                             "iam:PassedToService": [
                                 "elasticbeanstalk.amazonaws.com",
                                 "ec2.amazonaws.com",
+                                "ec2.amazonaws.com.cn",
                                 "autoscaling.amazonaws.com",
                                 "elasticloadbalancing.amazonaws.com",
                                 "ecs.amazonaws.com",
@@ -333,8 +334,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-01-22T19:36:54Z"
+        "CreateDate": "2021-03-09T22:36:27Z"
     }
 }
