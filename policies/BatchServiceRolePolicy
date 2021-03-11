@@ -46,6 +46,21 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "logs:CreateLogGroup",
+                        "logs:CreateLogStream"
+                    ],
+                    "Resource": "arn:aws:logs:*:*:log-group:/aws/batch/job*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "logs:PutLogEvents"
+                    ],
+                    "Resource": "arn:aws:logs:*:*:log-group:/aws/batch/job*:log-stream:*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
                         "autoscaling:CreateOrUpdateTags"
                     ],
                     "Resource": "*",
@@ -218,8 +233,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-03-10T06:55:36Z"
+        "CreateDate": "2021-03-11T18:03:48Z"
     }
 }
