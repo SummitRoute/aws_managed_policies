@@ -24,6 +24,17 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "ssm:UpdateServiceSetting",
+                        "ssm:GetServiceSetting"
+                    ],
+                    "Resource": [
+                        "arn:aws:ssm:*:*:servicesetting/ssm/opsitem/*",
+                        "arn:aws:ssm:*:*:servicesetting/ssm/opsdata/*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
                         "ec2:DescribeInstanceAttribute",
                         "ec2:DescribeInstanceStatus",
                         "ec2:DescribeInstances"
@@ -166,8 +177,8 @@
                 }
             ]
         },
-        "VersionId": "v11",
+        "VersionId": "v12",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-01-05T23:57:10Z"
+        "CreateDate": "2021-03-23T18:12:57Z"
     }
 }
