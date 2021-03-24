@@ -1,0 +1,379 @@
+[
+    {
+        "findingDetails": "The action s3:ListBuckets does not exist. Did you mean s3:ListAllMyBuckets? The API called ListBuckets authorizes against the IAM action s3:ListAllMyBuckets",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 3
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 0
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 434,
+                        "line": 1,
+                        "offset": 434
+                    },
+                    "start": {
+                        "column": 418,
+                        "line": 1,
+                        "offset": 418
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action s3:ListObjects does not exist. Did you mean s3:ListBucket? The API called ListObjects authorizes against the IAM action s3:ListBucket.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 3
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 1
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 452,
+                        "line": 1,
+                        "offset": 452
+                    },
+                    "start": {
+                        "column": 436,
+                        "line": 1,
+                        "offset": 436
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action s3:ListObjectsV2 does not exist. Did you mean s3:ListBucket? The API called ListObjectsV2 authorizes against the IAM action s3:ListBucket.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 3
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 2
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 472,
+                        "line": 1,
+                        "offset": 472
+                    },
+                    "start": {
+                        "column": 454,
+                        "line": 1,
+                        "offset": 454
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: ec2:CreateInternetGateway.",
+        "findingType": "SUGGESTION",
+        "issueCode": "REDUNDANT_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 5
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 6
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 828,
+                        "line": 1,
+                        "offset": 828
+                    },
+                    "start": {
+                        "column": 801,
+                        "line": 1,
+                        "offset": 801
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 5
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 12
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 973,
+                        "line": 1,
+                        "offset": 973
+                    },
+                    "start": {
+                        "column": 946,
+                        "line": 1,
+                        "offset": 946
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: ec2:CreateNatGateway.",
+        "findingType": "SUGGESTION",
+        "issueCode": "REDUNDANT_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 5
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 7
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 852,
+                        "line": 1,
+                        "offset": 852
+                    },
+                    "start": {
+                        "column": 830,
+                        "line": 1,
+                        "offset": 830
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 5
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 14
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1018,
+                        "line": 1,
+                        "offset": 1018
+                    },
+                    "start": {
+                        "column": 996,
+                        "line": 1,
+                        "offset": 996
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "Add a Region to the logs resource ARN.",
+        "findingType": "ERROR",
+        "issueCode": "MISSING_ARN_REGION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-missing-arn-region",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 11
+                    },
+                    {
+                        "value": "Resource"
+                    },
+                    {
+                        "index": 7
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 4039,
+                        "line": 1,
+                        "offset": 4039
+                    },
+                    "start": {
+                        "column": 3999,
+                        "line": 1,
+                        "offset": 3999
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "Add a Region to the logs resource ARN.",
+        "findingType": "ERROR",
+        "issueCode": "MISSING_ARN_REGION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-missing-arn-region",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 13
+                    },
+                    {
+                        "value": "Resource"
+                    },
+                    {
+                        "index": 1
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 4498,
+                        "line": 1,
+                        "offset": 4498
+                    },
+                    "start": {
+                        "column": 4458,
+                        "line": 1,
+                        "offset": 4458
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "Add a Region to the logs resource ARN.",
+        "findingType": "ERROR",
+        "issueCode": "MISSING_ARN_REGION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-missing-arn-region",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 16
+                    },
+                    {
+                        "value": "Resource"
+                    },
+                    {
+                        "index": 1
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 6338,
+                        "line": 1,
+                        "offset": 6338
+                    },
+                    "start": {
+                        "column": 6298,
+                        "line": 1,
+                        "offset": 6298
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "Add a Region to the cloudformation resource ARN.",
+        "findingType": "ERROR",
+        "issueCode": "MISSING_ARN_REGION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-missing-arn-region",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 17
+                    },
+                    {
+                        "value": "Resource"
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 6485,
+                        "line": 1,
+                        "offset": 6485
+                    },
+                    "start": {
+                        "column": 6438,
+                        "line": 1,
+                        "offset": 6438
+                    }
+                }
+            }
+        ]
+    }
+]

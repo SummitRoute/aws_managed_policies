@@ -1,0 +1,66 @@
+[
+    {
+        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: qldb:GetBlock.",
+        "findingType": "SUGGESTION",
+        "issueCode": "REDUNDANT_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 13
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 444,
+                        "line": 1,
+                        "offset": 444
+                    },
+                    "start": {
+                        "column": 429,
+                        "line": 1,
+                        "offset": 429
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 16
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 499,
+                        "line": 1,
+                        "offset": 499
+                    },
+                    "start": {
+                        "column": 484,
+                        "line": 1,
+                        "offset": 484
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,66 @@
+[
+    {
+        "findingDetails": "The 2 resource ARN(s) are redundant because they reference the same resource. Review the use of wildcards (*), or remove the resource arn:aws:s3:::deeplens*/* to remove the redundancy.",
+        "findingType": "SUGGESTION",
+        "issueCode": "REDUNDANT_RESOURCE",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-resource",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Resource"
+                    },
+                    {
+                        "index": 0
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 177,
+                        "line": 1,
+                        "offset": 177
+                    },
+                    "start": {
+                        "column": 151,
+                        "line": 1,
+                        "offset": 151
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Resource"
+                    },
+                    {
+                        "index": 1
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 203,
+                        "line": 1,
+                        "offset": 203
+                    },
+                    "start": {
+                        "column": 179,
+                        "line": 1,
+                        "offset": 179
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,63 @@
+[
+    {
+        "findingDetails": "Using the iam:PassRole action with wildcards (*) in the resource can be overly permissive because it allows iam:PassRole permissions on multiple resources. We recommend that you specify resource ARNs or add the iam:PassedToService condition key to your statement.",
+        "findingType": "SECURITY_WARNING",
+        "issueCode": "PASS_ROLE_WITH_STAR_IN_RESOURCE",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-security-warning-pass-role-with-star-in-resource",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 16
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 311,
+                        "line": 1,
+                        "offset": 311
+                    },
+                    "start": {
+                        "column": 297,
+                        "line": 1,
+                        "offset": 297
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Resource"
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 617,
+                        "line": 1,
+                        "offset": 617
+                    },
+                    "start": {
+                        "column": 614,
+                        "line": 1,
+                        "offset": 614
+                    }
+                }
+            }
+        ]
+    }
+]

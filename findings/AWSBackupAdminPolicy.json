@@ -1,0 +1,66 @@
+[
+    {
+        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: rds:DescribeDBSnapshots.",
+        "findingType": "SUGGESTION",
+        "issueCode": "REDUNDANT_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 0
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 205,
+                        "line": 1,
+                        "offset": 205
+                    },
+                    "start": {
+                        "column": 180,
+                        "line": 1,
+                        "offset": 180
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 3
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 286,
+                        "line": 1,
+                        "offset": 286
+                    },
+                    "start": {
+                        "column": 261,
+                        "line": 1,
+                        "offset": 261
+                    }
+                }
+            }
+        ]
+    }
+]

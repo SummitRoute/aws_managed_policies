@@ -1,0 +1,450 @@
+[
+    {
+        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: ec2:CreateVpcEndpoint.",
+        "findingType": "SUGGESTION",
+        "issueCode": "REDUNDANT_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 22
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2858,
+                        "line": 1,
+                        "offset": 2858
+                    },
+                    "start": {
+                        "column": 2835,
+                        "line": 1,
+                        "offset": 2835
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 23
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2883,
+                        "line": 1,
+                        "offset": 2883
+                    },
+                    "start": {
+                        "column": 2860,
+                        "line": 1,
+                        "offset": 2860
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: ec2:DescribeAccountAttributes.",
+        "findingType": "SUGGESTION",
+        "issueCode": "REDUNDANT_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 24
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2916,
+                        "line": 1,
+                        "offset": 2916
+                    },
+                    "start": {
+                        "column": 2885,
+                        "line": 1,
+                        "offset": 2885
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 25
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2949,
+                        "line": 1,
+                        "offset": 2949
+                    },
+                    "start": {
+                        "column": 2918,
+                        "line": 1,
+                        "offset": 2918
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: ec2:DescribeAvailabilityZones.",
+        "findingType": "SUGGESTION",
+        "issueCode": "REDUNDANT_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 27
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 3007,
+                        "line": 1,
+                        "offset": 3007
+                    },
+                    "start": {
+                        "column": 2976,
+                        "line": 1,
+                        "offset": 2976
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 28
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 3040,
+                        "line": 1,
+                        "offset": 3040
+                    },
+                    "start": {
+                        "column": 3009,
+                        "line": 1,
+                        "offset": 3009
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: ec2:DescribeSecurityGroups.",
+        "findingType": "SUGGESTION",
+        "issueCode": "REDUNDANT_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 36
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 3280,
+                        "line": 1,
+                        "offset": 3280
+                    },
+                    "start": {
+                        "column": 3252,
+                        "line": 1,
+                        "offset": 3252
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 37
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 3310,
+                        "line": 1,
+                        "offset": 3310
+                    },
+                    "start": {
+                        "column": 3282,
+                        "line": 1,
+                        "offset": 3282
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: ec2:DescribeSubnets.",
+        "findingType": "SUGGESTION",
+        "issueCode": "REDUNDANT_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 38
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 3333,
+                        "line": 1,
+                        "offset": 3333
+                    },
+                    "start": {
+                        "column": 3312,
+                        "line": 1,
+                        "offset": 3312
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 39
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 3356,
+                        "line": 1,
+                        "offset": 3356
+                    },
+                    "start": {
+                        "column": 3335,
+                        "line": 1,
+                        "offset": 3335
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: ec2:DescribeVpcAttribute.",
+        "findingType": "SUGGESTION",
+        "issueCode": "REDUNDANT_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 40
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 3384,
+                        "line": 1,
+                        "offset": 3384
+                    },
+                    "start": {
+                        "column": 3358,
+                        "line": 1,
+                        "offset": 3358
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 41
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 3412,
+                        "line": 1,
+                        "offset": 3412
+                    },
+                    "start": {
+                        "column": 3386,
+                        "line": 1,
+                        "offset": 3386
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: ec2:DescribeVpcs.",
+        "findingType": "SUGGESTION",
+        "issueCode": "REDUNDANT_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 43
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 3460,
+                        "line": 1,
+                        "offset": 3460
+                    },
+                    "start": {
+                        "column": 3442,
+                        "line": 1,
+                        "offset": 3442
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 44
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 3480,
+                        "line": 1,
+                        "offset": 3480
+                    },
+                    "start": {
+                        "column": 3462,
+                        "line": 1,
+                        "offset": 3462
+                    }
+                }
+            }
+        ]
+    }
+]
