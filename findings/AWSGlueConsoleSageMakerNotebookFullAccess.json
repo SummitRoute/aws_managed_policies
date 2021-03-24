@@ -1,0 +1,144 @@
+[
+    {
+        "findingDetails": "The 2 resource ARN(s) are redundant because they reference the same resource. Review the use of wildcards (*), or remove the resource arn:aws:s3:::aws-glue-*/* to remove the redundancy.",
+        "findingType": "SUGGESTION",
+        "issueCode": "REDUNDANT_RESOURCE",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-resource",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Resource"
+                    },
+                    {
+                        "index": 0
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1200,
+                        "line": 1,
+                        "offset": 1200
+                    },
+                    "start": {
+                        "column": 1173,
+                        "line": 1,
+                        "offset": 1173
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Resource"
+                    },
+                    {
+                        "index": 2
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1259,
+                        "line": 1,
+                        "offset": 1259
+                    },
+                    "start": {
+                        "column": 1234,
+                        "line": 1,
+                        "offset": 1234
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The request context key aws:TagKeys has multiple values. Use the ForAllValues or ForAnyValue condition key qualifiers in your policy.",
+        "findingType": "ERROR",
+        "issueCode": "MISSING_QUALIFIER",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-missing-qualifier",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 9
+                    },
+                    {
+                        "value": "Condition"
+                    },
+                    {
+                        "value": "StringEquals"
+                    },
+                    {
+                        "value": "aws:TagKeys"
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 3081,
+                        "line": 1,
+                        "offset": 3081
+                    },
+                    "start": {
+                        "column": 3069,
+                        "line": 1,
+                        "offset": 3069
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "Your condition value includes a * or ? character. If you meant to use a wildcard (*, ?), update the condition operator to include Like.",
+        "findingType": "WARNING",
+        "issueCode": "WILDCARD_WITHOUT_LIKE_OPERATOR",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-general-warning-wildcard-without-like-operator",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 9
+                    },
+                    {
+                        "value": "Condition"
+                    },
+                    {
+                        "value": "StringEquals"
+                    },
+                    {
+                        "value": "aws:TagKeys"
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 3081,
+                        "line": 1,
+                        "offset": 3081
+                    },
+                    "start": {
+                        "column": 3069,
+                        "line": 1,
+                        "offset": 3069
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,255 @@
+[
+    {
+        "findingDetails": "Using the iam:PassRole action with wildcards (*) in the resource can be overly permissive because it allows iam:PassRole permissions on multiple resources. We recommend that you specify resource ARNs or add the iam:PassedToService condition key to your statement.",
+        "findingType": "SECURITY_WARNING",
+        "issueCode": "PASS_ROLE_WITH_STAR_IN_RESOURCE",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-security-warning-pass-role-with-star-in-resource",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 14
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 896,
+                        "line": 1,
+                        "offset": 896
+                    },
+                    "start": {
+                        "column": 882,
+                        "line": 1,
+                        "offset": 882
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Resource"
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 4716,
+                        "line": 1,
+                        "offset": 4716
+                    },
+                    "start": {
+                        "column": 4713,
+                        "line": 1,
+                        "offset": 4713
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: cognito-idp:DeleteGroup.",
+        "findingType": "SUGGESTION",
+        "issueCode": "REDUNDANT_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 66
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2321,
+                        "line": 1,
+                        "offset": 2321
+                    },
+                    "start": {
+                        "column": 2296,
+                        "line": 1,
+                        "offset": 2296
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 75
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2617,
+                        "line": 1,
+                        "offset": 2617
+                    },
+                    "start": {
+                        "column": 2592,
+                        "line": 1,
+                        "offset": 2592
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: lambda:DeleteFunction.",
+        "findingType": "SUGGESTION",
+        "issueCode": "REDUNDANT_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 81
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2780,
+                        "line": 1,
+                        "offset": 2780
+                    },
+                    "start": {
+                        "column": 2757,
+                        "line": 1,
+                        "offset": 2757
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 92
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 3068,
+                        "line": 1,
+                        "offset": 3068
+                    },
+                    "start": {
+                        "column": 3045,
+                        "line": 1,
+                        "offset": 3045
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: cognito-idp:AdminDeleteUser.",
+        "findingType": "SUGGESTION",
+        "issueCode": "REDUNDANT_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 47
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 6104,
+                        "line": 1,
+                        "offset": 6104
+                    },
+                    "start": {
+                        "column": 6075,
+                        "line": 1,
+                        "offset": 6075
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 49
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 6174,
+                        "line": 1,
+                        "offset": 6174
+                    },
+                    "start": {
+                        "column": 6145,
+                        "line": 1,
+                        "offset": 6145
+                    }
+                }
+            }
+        ]
+    }
+]

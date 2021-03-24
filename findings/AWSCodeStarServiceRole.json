@@ -1,0 +1,194 @@
+[
+    {
+        "findingDetails": "The 2 resource ARN(s) are redundant because they reference the same resource. Review the use of wildcards (*), or remove the resource arn:aws:s3:::aws-codestar-*/* to remove the redundancy.",
+        "findingType": "SUGGESTION",
+        "issueCode": "REDUNDANT_RESOURCE",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-resource",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 4
+                    },
+                    {
+                        "value": "Resource"
+                    },
+                    {
+                        "index": 0
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1074,
+                        "line": 1,
+                        "offset": 1074
+                    },
+                    "start": {
+                        "column": 1045,
+                        "line": 1,
+                        "offset": 1045
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 4
+                    },
+                    {
+                        "value": "Resource"
+                    },
+                    {
+                        "index": 1
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1107,
+                        "line": 1,
+                        "offset": 1107
+                    },
+                    "start": {
+                        "column": 1076,
+                        "line": 1,
+                        "offset": 1076
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The 2 resource ARN(s) are redundant because they reference the same resource. Review the use of wildcards (*), or remove the resource arn:aws:s3:::elasticbeanstalk-*/* to remove the redundancy.",
+        "findingType": "SUGGESTION",
+        "issueCode": "REDUNDANT_RESOURCE",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-resource",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 4
+                    },
+                    {
+                        "value": "Resource"
+                    },
+                    {
+                        "index": 2
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1142,
+                        "line": 1,
+                        "offset": 1142
+                    },
+                    "start": {
+                        "column": 1109,
+                        "line": 1,
+                        "offset": 1109
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 4
+                    },
+                    {
+                        "value": "Resource"
+                    },
+                    {
+                        "index": 3
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1179,
+                        "line": 1,
+                        "offset": 1179
+                    },
+                    "start": {
+                        "column": 1144,
+                        "line": 1,
+                        "offset": 1144
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: ec2:RunInstances.",
+        "findingType": "SUGGESTION",
+        "issueCode": "REDUNDANT_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 5
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 5
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1337,
+                        "line": 1,
+                        "offset": 1337
+                    },
+                    "start": {
+                        "column": 1319,
+                        "line": 1,
+                        "offset": 1319
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 5
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 8
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1382,
+                        "line": 1,
+                        "offset": 1382
+                    },
+                    "start": {
+                        "column": 1375,
+                        "line": 1,
+                        "offset": 1375
+                    }
+                }
+            }
+        ]
+    }
+]
