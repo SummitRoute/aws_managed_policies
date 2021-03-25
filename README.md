@@ -4,8 +4,6 @@
 
 Thanks to [@0xdabbad00](https://github.com/0xdabbad00) from [SummitRoute](https://summitroute.com/) for the original idea, this repo only automate the retrieval of new AWS Managed IAM Policies make it easier to monitor and get alerted when changes occur using "Watch" feature of Github or [Twitter Account](https://twitter.com/mamip_aws).
 
-I'm using this excuse for learning and experiment with new stuff: Automation, Terraform, and Containers with AWS Fargate (SPOT).
-
 ## Usage
 
 ### Three options
@@ -19,6 +17,10 @@ I'm using this excuse for learning and experiment with new stuff: Automation, Te
 ![setup](assets/watching.gif)
 
 3. Subscribe to the Github [RSS Feed](https://github.com/z0ph/aws_managed_policies/commits/master.atom) (master branch)
+
+## Policy Validation :white_check_mark:
+
+I'm using [AWS Access Analyzer Policy Validation](https://aws.amazon.com/blogs/aws/iam-access-analyzer-update-policy-validation/). You can check findings in the [findings folder](./findings/).
 
 ## How it works behind the scene
 

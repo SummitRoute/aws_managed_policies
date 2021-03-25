@@ -3,7 +3,8 @@ FROM woahbase/alpine-awscli:x86_64
 # Prepare the container
 RUN apk update && apk add \
     git \
-    jq
+    jq \
+    python3
 
 ENV AWS_REGION=eu-west-1
 

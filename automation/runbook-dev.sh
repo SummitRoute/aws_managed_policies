@@ -3,13 +3,15 @@
 DATE=`date +%Y-%m-%d-%H-%M`
 WORDTOREMOVE="policies/"
 
+python3 --version
+
 # job preparation (SSH + Git)
 echo "Job preparation"
 aws s3 cp s3://mamip-artifacts/mamip /tmp/mamip.key --region eu-west-1
 chmod 600 /tmp/mamip.key
 eval "$(ssh-agent -s)"
 ssh-add /tmp/mamip.key
-git config --global user.name "Mamip Bot"
+git config --global user.name "MAMIP Bot"
 git config --global user.email mamip_bot@github.com
 mkdir -p /root/.ssh/
 ssh-keyscan github.com >> /root/.ssh/known_hosts
@@ -40,7 +42,7 @@ then
         # Craft commit ID for tweet direct URL
         commit_id=$(git log --format="%h" -n 1)
         # Send message to qTweeter for publishing the tweet
-        aws sqs send-message --queue-url https://sqs.eu-west-1.amazonaws.com/567589703415/qtweet-mamip-sqs-queue.fifo --message-body "$diff https://github.com/z0ph/aws_managed_policies/commit/$commit_id" --message-group-id 1
+        echo "aws sqs send-message --queue-url https://sqs.eu-west-1.amazonaws.com/567589703415/qtweet-mamip-sqs-queue.fifo --message-body "$diff https://github.com/z0ph/aws_managed_policies/commit/$commit_id" --message-group-id 1"
         # push to mamip repository
         git push origin master
     else
