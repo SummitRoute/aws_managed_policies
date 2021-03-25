@@ -29,6 +29,7 @@ then
     # push the changes if any
     if [[ -n $(git status -s) ]];
     then
+        python3 /app/validate.py
         echo "Tagging"
         git tag $DATE
         git push --tags
@@ -47,5 +48,6 @@ then
         git push origin master
     else
         echo "No changes detected"
+        python3 /app/validate.py
     fi
 fi

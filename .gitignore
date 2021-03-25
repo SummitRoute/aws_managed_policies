@@ -19,7 +19,7 @@ Icon
 .vscode
 .terraform
 
-validate*
+validate-batch*
 
 # Thumbnails
 ._*
