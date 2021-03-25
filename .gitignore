@@ -6,6 +6,7 @@ build/
 .DS_Store
 .AppleDouble
 .LSOverride
+test.py
 
 # Icon must end with two \r
 Icon
@@ -17,6 +18,8 @@ Icon
 
 .vscode
 .terraform
+
+validate*
 
 # Thumbnails
 ._*

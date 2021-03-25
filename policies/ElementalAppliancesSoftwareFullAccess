@@ -6,14 +6,15 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "elemental-appliances-software:*"
+                        "elemental-appliances-software:*",
+                        "elemental-activations:CompleteAccountRegistration"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-12-02T18:50:28Z"
+        "CreateDate": "2021-02-05T21:01:25Z"
     }
 }

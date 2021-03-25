@@ -11,9 +11,16 @@
                     "Resource": "*"
                 },
                 {
-                    "Action": "s3:GetObject",
                     "Effect": "Allow",
-                    "Resource": "arn:aws:s3:::*aws-data-exchange*"
+                    "Action": "s3:GetObject",
+                    "Resource": "arn:aws:s3:::*aws-data-exchange*",
+                    "Condition": {
+                        "ForAnyValue:StringEquals": {
+                            "aws:CalledVia": [
+                                "dataexchange.amazonaws.com"
+                            ]
+                        }
+                    }
                 },
                 {
                     "Effect": "Allow",
@@ -22,16 +29,28 @@
                     "Condition": {
                         "StringEqualsIgnoreCase": {
                             "s3:ExistingObjectTag/AWSDataExchange": "true"
+                        },
+                        "ForAnyValue:StringEquals": {
+                            "aws:CalledVia": [
+                                "dataexchange.amazonaws.com"
+                            ]
                         }
                     }
                 },
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "s3:PutObject",
                         "s3:PutObjectAcl"
                     ],
-                    "Effect": "Allow",
-                    "Resource": "arn:aws:s3:::*aws-data-exchange*"
+                    "Resource": "arn:aws:s3:::*aws-data-exchange*",
+                    "Condition": {
+                        "ForAnyValue:StringEquals": {
+                            "aws:CalledVia": [
+                                "dataexchange.amazonaws.com"
+                            ]
+                        }
+                    }
                 },
                 {
                     "Effect": "Allow",
@@ -82,8 +101,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-27T14:22:05Z"
+        "CreateDate": "2021-01-19T19:42:47Z"
     }
 }

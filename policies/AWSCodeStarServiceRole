@@ -184,11 +184,31 @@
                     "Resource": [
                         "*"
                     ]
+                },
+                {
+                    "Sid": "ProjectCodeStarConnections",
+                    "Effect": "Allow",
+                    "Action": [
+                        "codestar-connections:UseConnection",
+                        "codestar-connections:GetConnection"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Sid": "ProjectCodeStarConnectionsPassConnections",
+                    "Effect": "Allow",
+                    "Action": "codestar-connections:PassConnection",
+                    "Resource": "*",
+                    "Condition": {
+                        "ForAnyValue:StringEqualsIfExists": {
+                            "codestar-connections:PassedToService": "codepipeline.amazonaws.com"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v9",
+        "VersionId": "v10",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-04-24T19:25:28Z"
+        "CreateDate": "2021-02-15T22:25:37Z"
     }
 }

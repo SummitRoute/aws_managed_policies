@@ -24,6 +24,7 @@
                         "athena:StartQueryExecution",
                         "athena:StopQueryExecution",
                         "athena:ListWorkGroups",
+                        "athena:ListEngineVersions",
                         "athena:GetWorkGroup",
                         "athena:GetDataCatalog",
                         "athena:GetDatabase",
@@ -90,8 +91,8 @@
                 }
             ]
         },
-        "VersionId": "v8",
+        "VersionId": "v9",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-11-11T02:12:40Z"
+        "CreateDate": "2021-01-29T02:07:58Z"
     }
 }

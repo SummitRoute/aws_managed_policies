@@ -23,7 +23,8 @@
                         "StringEquals": {
                             "dataexchange:JobType": [
                                 "EXPORT_ASSETS_TO_S3",
-                                "EXPORT_ASSET_TO_SIGNED_URL"
+                                "EXPORT_ASSET_TO_SIGNED_URL",
+                                "EXPORT_REVISIONS_TO_S3"
                             ]
                         }
                     }
@@ -31,7 +32,14 @@
                 {
                     "Action": "s3:GetObject",
                     "Effect": "Allow",
-                    "Resource": "arn:aws:s3:::*aws-data-exchange*"
+                    "Resource": "arn:aws:s3:::*aws-data-exchange*",
+                    "Condition": {
+                        "ForAnyValue:StringEquals": {
+                            "aws:CalledVia": [
+                                "dataexchange.amazonaws.com"
+                            ]
+                        }
+                    }
                 },
                 {
                     "Effect": "Allow",
@@ -65,8 +73,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-27T14:28:00Z"
+        "CreateDate": "2021-02-08T23:34:25Z"
     }
 }

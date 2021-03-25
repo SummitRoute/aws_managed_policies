@@ -30,11 +30,16 @@
                     "Action": "acm:GetCertificate",
                     "Resource": "*",
                     "Effect": "Allow"
+                },
+                {
+                    "Action": "secretsmanager:GetSecretValue",
+                    "Resource": "arn:aws:secretsmanager:*:*:aws-opsworks-cm-secrets-*",
+                    "Effect": "Allow"
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-10-22T07:40:17Z"
+        "CreateDate": "2021-01-12T09:37:42Z"
     }
 }

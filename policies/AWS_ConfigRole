@@ -46,11 +46,28 @@
                         "dynamodb:ListTagsOfResource",
                         "ec2:Describe*",
                         "ec2:GetEbsEncryptionByDefault",
+                        "ecr:DescribeRepositories",
+                        "ecr:GetLifecyclePolicy",
+                        "ecr:GetRepositoryPolicy",
+                        "ecr:ListTagsForResource",
+                        "ecs:DescribeClusters",
+                        "ecs:DescribeServices",
+                        "ecs:DescribeTaskDefinition",
+                        "ecs:DescribeTaskSets",
+                        "ecs:ListClusters",
+                        "ecs:ListServices",
+                        "ecs:ListTagsForResource",
+                        "ecs:ListTaskDefinitions",
                         "eks:DescribeCluster",
+                        "eks:DescribeNodegroup",
                         "eks:ListClusters",
+                        "eks:ListNodegroups",
                         "elasticache:DescribeCacheClusters",
                         "elasticache:DescribeReplicationGroups",
                         "elasticfilesystem:DescribeFileSystems",
+                        "elasticfilesystem:DescribeLifecycleConfiguration",
+                        "elasticfilesystem:DescribeMountTargets",
+                        "elasticfilesystem:DescribeMountTargetSecurityGroups",
                         "elasticloadbalancing:DescribeListeners",
                         "elasticloadbalancing:DescribeLoadBalancerAttributes",
                         "elasticloadbalancing:DescribeLoadBalancerPolicies",
@@ -168,6 +185,7 @@
                         "storagegateway:ListGateways",
                         "storagegateway:ListVolumes",
                         "support:DescribeCases",
+                        "tag:GetResources",
                         "waf:GetLoggingConfiguration",
                         "waf:GetWebACL",
                         "wafv2:GetLoggingConfiguration",
@@ -179,8 +197,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-09-15T20:30:30Z"
+        "CreateDate": "2021-01-29T19:24:13Z"
     }
 }

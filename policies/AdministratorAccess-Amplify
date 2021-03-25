@@ -42,6 +42,7 @@
                         "iam:GetPolicy",
                         "iam:GetRolePolicy",
                         "iam:PassRole",
+                        "iam:ListPolicyVersions",
                         "appsync:CreateApiKey",
                         "appsync:CreateDataSource",
                         "appsync:CreateFunction",
@@ -191,15 +192,23 @@
                     "Action": [
                         "appsync:GetIntrospectionSchema",
                         "appsync:GraphQL",
+                        "appsync:UpdateApiKey",
+                        "appsync:ListApiKeys",
                         "s3:PutObject",
                         "s3:GetObject",
                         "s3:ListBucket",
+                        "s3:ListBucketVersions",
                         "s3:DeleteBucket",
                         "s3:DeleteBucketPolicy",
                         "s3:DeleteBucketWebsite",
                         "s3:DeleteObject",
                         "s3:GetBucketLocation",
                         "s3:ListAllMyBuckets",
+                        "sts:AssumeRole",
+                        "iam:PutRolePolicy",
+                        "iam:CreatePolicy",
+                        "iam:AttachRolePolicy",
+                        "mobiletargeting:*",
                         "amplify:CreateApp",
                         "amplify:CreateBackendEnvironment",
                         "amplify:GetApp",
@@ -214,7 +223,7 @@
                         "amplify:DeleteBranch",
                         "amplify:DeleteApp",
                         "amplify:DeleteBackendEnvironment",
-                        "amplifybackend: *",
+                        "amplifybackend:*",
                         "cognito-idp:AdminAddUserToGroup",
                         "cognito-idp:AdminCreateUser",
                         "cognito-idp:CreateGroup",
@@ -233,14 +242,15 @@
                         "cognito-idp:AdminDeleteUser",
                         "cognito-idp:AdminConfirmSignUp",
                         "cognito-idp:AdminEnableUser",
-                        "cognito-idp:AdminUpdateUserAttributes"
+                        "cognito-idp:AdminUpdateUserAttributes",
+                        "cognito-idp:DescribeIdentityProvider"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-12-01T19:03:08Z"
+        "CreateDate": "2021-01-13T22:36:27Z"
     }
 }

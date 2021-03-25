@@ -460,11 +460,16 @@
                         "ssm:CreateOpsMetadata"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "ssm:DeleteOpsMetadata",
+                    "Resource": "arn:aws:ssm:*:*:opsmetadata/aws/ssm/LaunchWizard*"
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-12-12T21:51:14Z"
+        "CreateDate": "2021-02-12T17:06:05Z"
     }
 }

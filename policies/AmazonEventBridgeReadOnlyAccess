@@ -18,14 +18,18 @@
                         "events:DescribeArchive",
                         "events:ListArchives",
                         "events:DescribeReplay",
-                        "events:ListReplays"
+                        "events:ListReplays",
+                        "events:DescribeConnection",
+                        "events:ListConnections",
+                        "events:DescribeApiDestination",
+                        "events:ListApiDestinations"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-11-06T03:15:41Z"
+        "CreateDate": "2021-03-04T19:08:31Z"
     }
 }

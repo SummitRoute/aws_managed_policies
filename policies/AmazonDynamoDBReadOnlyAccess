@@ -25,6 +25,7 @@
                         "dynamodb:GetItem",
                         "dynamodb:Query",
                         "dynamodb:Scan",
+                        "dynamodb:PartiQLSelect",
                         "dax:Describe*",
                         "dax:List*",
                         "dax:GetItem",
@@ -62,8 +63,8 @@
                 }
             ]
         },
-        "VersionId": "v12",
+        "VersionId": "v13",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-12-11T20:17:37Z"
+        "CreateDate": "2021-01-27T01:01:47Z"
     }
 }

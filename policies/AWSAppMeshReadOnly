@@ -27,11 +27,20 @@
                         "acm-pca:ListCertificateAuthorities"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "servicediscovery:ListNamespaces",
+                        "servicediscovery:ListServices",
+                        "servicediscovery:ListInstances"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-03-05T23:54:06Z"
+        "CreateDate": "2021-01-07T19:53:16Z"
     }
 }

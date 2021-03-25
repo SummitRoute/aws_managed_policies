@@ -82,6 +82,7 @@
                         "StringLike": {
                             "iam:PassedToService": [
                                 "application-autoscaling.amazonaws.com",
+                                "application-autoscaling.amazonaws.com.cn",
                                 "dax.amazonaws.com"
                             ]
                         }
@@ -107,8 +108,8 @@
                 }
             ]
         },
-        "VersionId": "v14",
+        "VersionId": "v15",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-12-11T20:27:15Z"
+        "CreateDate": "2021-01-29T17:38:30Z"
     }
 }

@@ -1,0 +1,694 @@
+[
+    {
+        "findingDetails": "The 13 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: ec2:DescribeTransitGatewayPeeringAttachments.",
+        "findingType": "SUGGESTION",
+        "issueCode": "REDUNDANT_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 88
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2483,
+                        "line": 1,
+                        "offset": 2483
+                    },
+                    "start": {
+                        "column": 2468,
+                        "line": 1,
+                        "offset": 2468
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 89
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2524,
+                        "line": 1,
+                        "offset": 2524
+                    },
+                    "start": {
+                        "column": 2485,
+                        "line": 1,
+                        "offset": 2485
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 90
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2570,
+                        "line": 1,
+                        "offset": 2570
+                    },
+                    "start": {
+                        "column": 2526,
+                        "line": 1,
+                        "offset": 2526
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 91
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2618,
+                        "line": 1,
+                        "offset": 2618
+                    },
+                    "start": {
+                        "column": 2572,
+                        "line": 1,
+                        "offset": 2572
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 92
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2659,
+                        "line": 1,
+                        "offset": 2659
+                    },
+                    "start": {
+                        "column": 2620,
+                        "line": 1,
+                        "offset": 2620
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 93
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2690,
+                        "line": 1,
+                        "offset": 2690
+                    },
+                    "start": {
+                        "column": 2661,
+                        "line": 1,
+                        "offset": 2661
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 94
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2734,
+                        "line": 1,
+                        "offset": 2734
+                    },
+                    "start": {
+                        "column": 2692,
+                        "line": 1,
+                        "offset": 2692
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 288
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 7968,
+                        "line": 1,
+                        "offset": 7968
+                    },
+                    "start": {
+                        "column": 7929,
+                        "line": 1,
+                        "offset": 7929
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 289
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 8014,
+                        "line": 1,
+                        "offset": 8014
+                    },
+                    "start": {
+                        "column": 7970,
+                        "line": 1,
+                        "offset": 7970
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 290
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 8062,
+                        "line": 1,
+                        "offset": 8062
+                    },
+                    "start": {
+                        "column": 8016,
+                        "line": 1,
+                        "offset": 8016
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 291
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 8103,
+                        "line": 1,
+                        "offset": 8103
+                    },
+                    "start": {
+                        "column": 8064,
+                        "line": 1,
+                        "offset": 8064
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 292
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 8134,
+                        "line": 1,
+                        "offset": 8134
+                    },
+                    "start": {
+                        "column": 8105,
+                        "line": 1,
+                        "offset": 8105
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 293
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 8178,
+                        "line": 1,
+                        "offset": 8178
+                    },
+                    "start": {
+                        "column": 8136,
+                        "line": 1,
+                        "offset": 8136
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: ec2:GetManagedPrefixListAssociations.",
+        "findingType": "SUGGESTION",
+        "issueCode": "REDUNDANT_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 95
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2774,
+                        "line": 1,
+                        "offset": 2774
+                    },
+                    "start": {
+                        "column": 2736,
+                        "line": 1,
+                        "offset": 2736
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 294
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 8218,
+                        "line": 1,
+                        "offset": 8218
+                    },
+                    "start": {
+                        "column": 8180,
+                        "line": 1,
+                        "offset": 8180
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: ec2:GetManagedPrefixListEntries.",
+        "findingType": "SUGGESTION",
+        "issueCode": "REDUNDANT_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 96
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2809,
+                        "line": 1,
+                        "offset": 2809
+                    },
+                    "start": {
+                        "column": 2776,
+                        "line": 1,
+                        "offset": 2776
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 295
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 8253,
+                        "line": 1,
+                        "offset": 8253
+                    },
+                    "start": {
+                        "column": 8220,
+                        "line": 1,
+                        "offset": 8220
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: elasticbeanstalk:DescribeApplications.",
+        "findingType": "SUGGESTION",
+        "issueCode": "REDUNDANT_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 104
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2992,
+                        "line": 1,
+                        "offset": 2992
+                    },
+                    "start": {
+                        "column": 2964,
+                        "line": 1,
+                        "offset": 2964
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 302
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 8451,
+                        "line": 1,
+                        "offset": 8451
+                    },
+                    "start": {
+                        "column": 8412,
+                        "line": 1,
+                        "offset": 8412
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: sns:ListTagsForResource.",
+        "findingType": "SUGGESTION",
+        "issueCode": "REDUNDANT_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 232
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 6284,
+                        "line": 1,
+                        "offset": 6284
+                    },
+                    "start": {
+                        "column": 6259,
+                        "line": 1,
+                        "offset": 6259
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 313
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 8830,
+                        "line": 1,
+                        "offset": 8830
+                    },
+                    "start": {
+                        "column": 8805,
+                        "line": 1,
+                        "offset": 8805
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The 2 resource ARN(s) are redundant because they reference the same resource. Review the use of wildcards (*), or remove the resource arn:aws:apigateway:*::/restapis/*/resources/*/methods/* to remove the redundancy.",
+        "findingType": "SUGGESTION",
+        "issueCode": "REDUNDANT_RESOURCE",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-resource",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Resource"
+                    },
+                    {
+                        "index": 10
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 9413,
+                        "line": 1,
+                        "offset": 9413
+                    },
+                    "start": {
+                        "column": 9366,
+                        "line": 1,
+                        "offset": 9366
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Resource"
+                    },
+                    {
+                        "index": 11
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 9472,
+                        "line": 1,
+                        "offset": 9472
+                    },
+                    "start": {
+                        "column": 9415,
+                        "line": 1,
+                        "offset": 9415
+                    }
+                }
+            }
+        ]
+    }
+]

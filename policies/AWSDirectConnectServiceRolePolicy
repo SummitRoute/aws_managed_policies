@@ -1,0 +1,23 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "secretsmanager:DescribeSecret",
+                        "secretsmanager:ListSecretVersionIds",
+                        "secretsmanager:GetSecretValue"
+                    ],
+                    "Resource": [
+                        "arn:aws:secretsmanager:*:*:secret:*directconnect*"
+                    ]
+                }
+            ]
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2021-01-14T18:35:27Z"
+    }
+}

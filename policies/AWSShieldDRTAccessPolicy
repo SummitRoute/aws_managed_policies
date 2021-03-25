@@ -4,55 +4,41 @@
             "Version": "2012-10-17",
             "Statement": [
                 {
-                    "Sid": "DRTAccessProtectedResources",
+                    "Sid": "SRTAccessProtectedResources",
                     "Effect": "Allow",
                     "Action": [
                         "cloudfront:List*",
-                        "elasticloadbalancing:List*",
                         "route53:List*",
-                        "cloudfront:Describe*",
                         "elasticloadbalancing:Describe*",
-                        "route53:Describe*",
                         "cloudwatch:Describe*",
                         "cloudwatch:Get*",
                         "cloudwatch:List*",
                         "cloudfront:GetDistribution*",
                         "globalaccelerator:ListAccelerators",
-                        "globalaccelerator:DescribeAccelerator"
-                    ],
-                    "Resource": [
-                        "arn:aws:elasticloadbalancing:*:*:*",
-                        "arn:aws:cloudfront::*:*",
-                        "arn:aws:route53:::hostedzone/*",
-                        "arn:aws:cloudwatch:*:*:*:*",
-                        "arn:aws:globalaccelerator::*:*"
-                    ]
-                },
-                {
-                    "Sid": "DRTManageMitigations",
-                    "Effect": "Allow",
-                    "Action": [
-                        "waf:*",
-                        "wafv2:*",
-                        "waf-regional:*",
-                        "elasticloadbalancing:SetWebACL",
-                        "apigateway:SetWebACL",
-                        "cloudfront:UpdateDistribution"
+                        "globalaccelerator:DescribeAccelerator",
+                        "ec2:DescribeRegions",
+                        "ec2:DescribeAddresses"
                     ],
                     "Resource": "*"
                 },
                 {
-                    "Sid": "DRTManageProtections",
+                    "Sid": "SRTManageProtections",
                     "Effect": "Allow",
                     "Action": [
-                        "shield:*"
+                        "shield:*",
+                        "waf:*",
+                        "wafv2:*",
+                        "waf-regional:*",
+                        "elasticloadbalancing:SetWebACL",
+                        "cloudfront:UpdateDistribution",
+                        "apigateway:SetWebACL"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-09-23T19:02:59Z"
+        "CreateDate": "2020-12-15T17:28:15Z"
     }
 }

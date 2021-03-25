@@ -159,6 +159,7 @@
                     "Resource": [
                         "arn:aws:ec2:*:*:instance/*",
                         "arn:aws:ssm:*:*:document/AWSEC2-CheckPerformanceCounterSets",
+                        "arn:aws:ssm:*:*:document/AWS-ConfigureAWSPackage",
                         "arn:aws:ssm:*:*:document/AWSEC2-DetectWorkload"
                     ]
                 },
@@ -269,8 +270,8 @@
                 }
             ]
         },
-        "VersionId": "v11",
+        "VersionId": "v12",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-11-09T22:39:19Z"
+        "CreateDate": "2021-01-19T20:27:15Z"
     }
 }

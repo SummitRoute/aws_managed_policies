@@ -14,10 +14,22 @@
                         "ssm:GetAutomationExecution",
                         "ssm:GetParameters",
                         "ssm:StartAutomationExecution",
-                        "ssm:ListTagsForResource"
+                        "ssm:ListTagsForResource",
+                        "ssm:GetCalendarState"
                     ],
                     "Resource": [
                         "*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ssm:UpdateServiceSetting",
+                        "ssm:GetServiceSetting"
+                    ],
+                    "Resource": [
+                        "arn:aws:ssm:*:*:servicesetting/ssm/opsitem/*",
+                        "arn:aws:ssm:*:*:servicesetting/ssm/opsdata/*"
                     ]
                 },
                 {
@@ -165,8 +177,8 @@
                 }
             ]
         },
-        "VersionId": "v10",
+        "VersionId": "v12",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-12-11T17:30:16Z"
+        "CreateDate": "2021-03-23T18:12:57Z"
     }
 }

@@ -41,11 +41,23 @@
                         "arn:aws:iam::*:role/aws-ec2-spot-fleet-role",
                         "arn:aws:iam::*:role/AWSBatchJobRole*"
                     ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "iam:CreateServiceLinkedRole"
+                    ],
+                    "Resource": "arn:aws:iam::*:role/*Batch*",
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:AWSServiceName": "batch.amazonaws.com"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-11-05T21:09:23Z"
+        "CreateDate": "2021-03-10T07:02:45Z"
     }
 }

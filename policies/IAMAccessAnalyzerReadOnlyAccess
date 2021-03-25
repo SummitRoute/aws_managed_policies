@@ -7,14 +7,15 @@
                     "Effect": "Allow",
                     "Action": [
                         "access-analyzer:Get*",
-                        "access-analyzer:List*"
+                        "access-analyzer:List*",
+                        "access-analyzer:ValidatePolicy"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-12-02T17:12:53Z"
+        "CreateDate": "2021-03-16T20:37:30Z"
     }
 }

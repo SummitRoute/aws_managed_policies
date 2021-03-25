@@ -9,7 +9,6 @@
                     "Action": [
                         "s3:ListBucket",
                         "s3:GetBucket*",
-                        "s3:HeadBucket",
                         "s3:GetObject",
                         "s3:PutObject"
                     ],
@@ -54,8 +53,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-12-01T13:10:22Z"
+        "CreateDate": "2021-01-06T19:30:35Z"
     }
 }

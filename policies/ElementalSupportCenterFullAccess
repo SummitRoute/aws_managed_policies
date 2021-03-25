@@ -7,14 +7,15 @@
                     "Effect": "Allow",
                     "Action": [
                         "elemental-support-cases:*",
-                        "elemental-support-content:*"
+                        "elemental-support-content:*",
+                        "elemental-activations:CompleteAccountRegistration"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-11-25T18:08:30Z"
+        "CreateDate": "2021-02-05T21:02:54Z"
     }
 }

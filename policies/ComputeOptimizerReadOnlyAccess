@@ -12,8 +12,13 @@
                         "compute-optimizer:GetEC2InstanceRecommendations",
                         "compute-optimizer:GetEC2RecommendationProjectedMetrics",
                         "compute-optimizer:GetAutoScalingGroupRecommendations",
+                        "compute-optimizer:GetEBSVolumeRecommendations",
+                        "compute-optimizer:GetLambdaFunctionRecommendations",
                         "ec2:DescribeInstances",
+                        "ec2:DescribeVolumes",
                         "autoscaling:DescribeAutoScalingGroups",
+                        "lambda:ListFunctions",
+                        "lambda:ListProvisionedConcurrencyConfigs",
                         "cloudwatch:GetMetricData",
                         "organizations:ListAccounts",
                         "organizations:DescribeOrganization",
@@ -23,8 +28,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-11-04T20:57:54Z"
+        "CreateDate": "2020-12-23T18:00:54Z"
     }
 }

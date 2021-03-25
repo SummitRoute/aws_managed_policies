@@ -1,0 +1,41 @@
+[
+    {
+        "findingDetails": "Using ForAllValues qualifier with the single-valued condition key organizations:ServicePrincipal can be overly permissive. We recommend that you remove ForAllValues:.",
+        "findingType": "SECURITY_WARNING",
+        "issueCode": "FORALLVALUES_WITH_SINGLE_VALUED_KEY",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-security-warning-forallvalues-with-single-valued-key",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Condition"
+                    },
+                    {
+                        "value": "ForAllValues:StringLike"
+                    },
+                    {
+                        "value": "organizations:ServicePrincipal"
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 545,
+                        "line": 1,
+                        "offset": 545
+                    },
+                    "start": {
+                        "column": 524,
+                        "line": 1,
+                        "offset": 524
+                    }
+                }
+            }
+        ]
+    }
+]

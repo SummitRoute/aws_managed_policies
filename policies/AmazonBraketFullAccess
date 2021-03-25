@@ -39,6 +39,13 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "sagemaker:ListNotebookInstances"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
                         "sagemaker:CreatePresignedNotebookInstanceUrl",
                         "sagemaker:CreateNotebookInstance",
                         "sagemaker:DeleteNotebookInstance",
@@ -46,10 +53,11 @@
                         "sagemaker:StartNotebookInstance",
                         "sagemaker:StopNotebookInstance",
                         "sagemaker:UpdateNotebookInstance",
-                        "sagemaker:ListNotebookInstances",
-                        "sagemaker:ListTags"
+                        "sagemaker:ListTags",
+                        "sagemaker:AddTags",
+                        "sagemaker:DeleteTags"
                     ],
-                    "Resource": "arn:aws:sagemaker:*:*:notebook-instance/aws-braket-*"
+                    "Resource": "arn:aws:sagemaker:*:*:notebook-instance/amazon-braket-*"
                 },
                 {
                     "Effect": "Allow",
@@ -60,7 +68,7 @@
                         "sagemaker:ListNotebookInstanceLifecycleConfigs",
                         "sagemaker:UpdateNotebookInstanceLifecycleConfig"
                     ],
-                    "Resource": "arn:aws:sagemaker:*:*:notebook-instance-lifecycle-config/aws-braket-*"
+                    "Resource": "arn:aws:sagemaker:*:*:notebook-instance-lifecycle-config/amazon-braket-*"
                 },
                 {
                     "Effect": "Allow",
@@ -82,7 +90,7 @@
                         "iam:PassRole"
                     ],
                     "Effect": "Allow",
-                    "Resource": "arn:aws:iam::*:role/AmazonBraketServiceSageMakerNotebookRole*",
+                    "Resource": "arn:aws:iam::*:role/service-role/AmazonBraketServiceSageMakerNotebookRole*",
                     "Condition": {
                         "StringLike": {
                             "iam:PassedToService": [
@@ -93,8 +101,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-08-06T20:12:37Z"
+        "CreateDate": "2021-02-18T07:48:38Z"
     }
 }
