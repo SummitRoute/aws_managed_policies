@@ -1,6 +1,5 @@
 import boto3
 import json
-import glob
 
 client = boto3.client('accessanalyzer')
 
