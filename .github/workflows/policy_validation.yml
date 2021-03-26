@@ -27,7 +27,7 @@ jobs:
         run: python3 --version
       - name: pwd
         run: |
-        pwd
-        ls -l
+          pwd
+          ls -l
       - name: Install python requirements
         run: python3 -m pip install -r ./automation/requirements.txt
