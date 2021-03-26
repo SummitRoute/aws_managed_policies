@@ -25,11 +25,7 @@ jobs:
         run: aws sts get-caller-identity
 
       - name: Python version
-        run: pyton3 --version
-
-      # - name: Install Python3
-      #   run: sudo apt-get install python3
-
+        run: python3 --version
 
       - name: Install boto3
         run: python3 -m pip install -r /automation/requirements.txt
