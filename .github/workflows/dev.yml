@@ -31,6 +31,9 @@ jobs:
           role-duration-seconds: 1200
           role-session-name: GH-Actions-${{ env.project }}
 
+      - name: Who Am I?
+        run: aws sts get-caller-identity
+
       - name: 'Terraform Init'
         uses: hashicorp/terraform-github-actions@master
         with:
