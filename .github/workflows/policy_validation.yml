@@ -12,7 +12,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      
+        with:
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+          fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
       - name: AWS IAM Assume Role
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -39,3 +41,16 @@ jobs:
 
       - name: Policy Validation
         run: python3 ./automation/validate-batch.py
+
+      - name: Commit files
+        run: |
+          git config --local user.email "mamip@noreply"
+          git config --local user.name "mamip-github-actions[bot]"
+          git add ./findings
+          git commit -m "Add AWS Access Analyzer findings"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
