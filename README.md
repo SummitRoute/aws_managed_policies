@@ -57,4 +57,4 @@ This does the following:
 
 ### Architecture Design
 
-![Schema ECS Fargate](assets/schemav2.png)
+![Schema ECS Fargate](assets/schema.png)
