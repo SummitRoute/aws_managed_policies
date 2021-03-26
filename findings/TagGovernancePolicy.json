@@ -20,19 +20,19 @@
                         "value": "ForAllValues:StringLike"
                     },
                     {
-                        "value": "organizations:ServicePrincipal"
+                        "key": "organizations:ServicePrincipal"
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 545,
+                        "column": 522,
                         "line": 1,
-                        "offset": 545
+                        "offset": 522
                     },
                     "start": {
-                        "column": 524,
+                        "column": 490,
                         "line": 1,
-                        "offset": 524
+                        "offset": 490
                     }
                 }
             }
