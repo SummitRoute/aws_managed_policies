@@ -19,8 +19,6 @@ Icon
 .vscode
 .terraform
 
-validate*
-
 # Thumbnails
 ._*
 

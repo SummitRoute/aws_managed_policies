@@ -9,7 +9,7 @@ aws s3 cp s3://mamip-artifacts/mamip /tmp/mamip.key --region eu-west-1
 chmod 600 /tmp/mamip.key
 eval "$(ssh-agent -s)"
 ssh-add /tmp/mamip.key
-git config --global user.name "Mamip Bot"
+git config --global user.name "MAMIP Bot"
 git config --global user.email mamip_bot@github.com
 mkdir -p /root/.ssh/
 ssh-keyscan github.com >> /root/.ssh/known_hosts

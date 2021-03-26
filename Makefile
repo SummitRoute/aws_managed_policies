@@ -26,7 +26,11 @@ ENV ?= dev
 ECR ?= 567589703415.dkr.ecr.eu-west-1.amazonaws.com/mamip-ecr-dev
 ################################################
 
-build-docker:
+# Automation is done by Github Actions
+login:
+	@aws ecr get-login-password | docker login --username AWS --password-stdin $(ECR)
+
+build-docker: login
 	@docker build -t mamip-image ./automation/
 	@docker tag mamip-image $(ECR)
 	@docker push $(ECR)
@@ -63,7 +67,7 @@ destroy:
 
 update-runbook:
 	@echo "Copying runbook scripts in artifacts s3 bucket"
-	@aws s3 cp automation/runbook.sh 's3://${ARTIFACTS_BUCKET}/runbook.sh'
+	@aws s3 cp automation/runbook-$(ENV).sh 's3://${ARTIFACTS_BUCKET}/$(ENV)/runbook.sh'
 
 clean:
 	@rm -fr build/

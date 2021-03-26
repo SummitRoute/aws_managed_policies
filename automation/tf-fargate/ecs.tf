@@ -16,7 +16,7 @@ resource "aws_ecs_cluster" "ecs_cluster" {
 }
 
 data "template_file" "mamip_task" {
-  template = file("./tasks/task_definition.tpl")
+  template = file("./tasks/task_definition.json")
 
   vars = {
     container_image = "${data.aws_caller_identity.current.account_id}.dkr.ecr.${var.aws_region}.amazonaws.com/mamip-ecr-${var.env}:latest"
