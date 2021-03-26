@@ -12,6 +12,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+      
       - name: AWS IAM Assume Role
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -21,11 +22,17 @@ jobs:
           role-to-assume: ${{ secrets.ROLE_TO_ASSUME }}
           role-duration-seconds: 1200
           role-session-name: GH-Actions-${{ env.project }}
+      
       - name: Who Am I?
         run: aws sts get-caller-identity
 
       - name: Python version
         run: python3 --version
 
-      - name: Install boto3
-        run: python3 -m pip install -r /automation/requirements.txt
+      - name: pwd
+        run: |
+        pwd
+        ls -l
+
+      - name: Install python requirements
+        run: python3 -m pip install -r ./automation/requirements.txt
