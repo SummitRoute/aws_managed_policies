@@ -3,8 +3,6 @@
 DATE=`date +%Y-%m-%d-%H-%M`
 WORDTOREMOVE="policies/"
 
-python3 --version
-
 # job preparation (SSH + Git)
 echo "==> Job preparation"
 aws s3 cp s3://mamip-artifacts/mamip /tmp/mamip.key --region eu-west-1
