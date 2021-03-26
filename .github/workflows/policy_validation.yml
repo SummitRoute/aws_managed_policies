@@ -7,7 +7,7 @@ name: Policy Validation
 
 jobs:
   build:
-    name: Create Release
+    name: AWS Access Analyzer - Policy Validation
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -24,11 +24,12 @@ jobs:
       - name: Who Am I?
         run: aws sts get-caller-identity
 
-      - name: Install Python3
-        run: apt-get install python3
-
       - name: Python version
         run: pyton3 --version
 
-      - name: Python version
+      # - name: Install Python3
+      #   run: sudo apt-get install python3
+
+
+      - name: Install boto3
         run: python3 -m pip install -r /automation/requirements.txt
