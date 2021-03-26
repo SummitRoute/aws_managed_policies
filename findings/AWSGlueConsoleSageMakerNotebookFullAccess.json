@@ -84,19 +84,19 @@
                         "value": "StringEquals"
                     },
                     {
-                        "value": "aws:TagKeys"
+                        "key": "aws:TagKeys"
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 3081,
+                        "column": 3067,
                         "line": 1,
-                        "offset": 3081
+                        "offset": 3067
                     },
                     "start": {
-                        "column": 3069,
+                        "column": 3054,
                         "line": 1,
-                        "offset": 3069
+                        "offset": 3054
                     }
                 }
             }
