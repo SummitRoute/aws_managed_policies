@@ -13,6 +13,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - id: files
+        uses: jitterbit/get-changed-files@v1
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -23,5 +26,8 @@ jobs:
           release_name: Release ${{ github.ref }}
           body: |
             Update detected on ${{ github.ref }}
+            Added: ${{ steps.files.outputs.added }}
+            Modified: ${{ steps.files.outputs.modified }}
+            Removed: ${{ steps.files.outputs.removed }}
           draft: false
           prerelease: false
