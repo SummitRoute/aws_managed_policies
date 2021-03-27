@@ -14,7 +14,6 @@
                     "Effect": "Allow",
                     "Action": [
                         "s3:CreateBucket",
-                        "s3:PutBucketEncryption",
                         "s3:PutEncryptionConfiguration"
                     ],
                     "Resource": [
@@ -117,7 +116,6 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "lambda:GetLayerVersionByArn",
                         "lambda:GetLayerVersion",
                         "lambda:PublishLayerVersion"
                     ],
@@ -159,8 +157,8 @@
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-01-27T20:12:41Z"
+        "CreateDate": "2021-03-25T18:40:18Z"
     }
 }
