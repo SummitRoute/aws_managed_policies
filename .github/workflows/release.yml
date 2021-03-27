@@ -12,8 +12,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - id: file_changes
-        uses: trilom/file-changes-action@v1.2.4
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -24,9 +23,5 @@ jobs:
           release_name: Release ${{ github.ref }}
           body: |
             Update detected on ${{ github.ref }}
-            Files changed: '${{ steps.file_changes.outputs.files}}
-            Modified: ${{ steps.file_changes.outputs.files_modified}}
-            Added: ${{ steps.file_changes.outputs.files_added}}
-            Removed: ${{ steps.file_changes.outputs.files_removed}}
           draft: false
           prerelease: false
