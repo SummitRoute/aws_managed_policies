@@ -1,7 +1,8 @@
 on:
   push:
-    branches:
-    - master
+    tags:
+      - '202*'
+
 
 name: AAA - Policy Validation
 
