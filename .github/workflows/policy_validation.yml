@@ -47,7 +47,7 @@ jobs:
           git config --local user.email "mamip@noreply"
           git config --local user.name "mamip-github-actions[bot]"
           git add ./findings
-          git commit -m "Add AWS Access Analyzer findings"
+          git commit -m "Add AWS Access Analyzer findings" || :
 
       - name: Push findings
         uses: ad-m/github-push-action@master
