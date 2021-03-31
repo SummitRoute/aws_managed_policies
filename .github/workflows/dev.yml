@@ -98,3 +98,17 @@ jobs:
           pr_reviewer: "z0ph"
           pr_assignee: "z0ph"
           github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Get changed files
+        id: getfile
+        run: |
+          export is_the_first_deployment=false
+          if [[ is_the_first_deployment ]]; then
+              export DIFF=$( git diff --name-only origin/master ${{ github.sha }} )
+              echo "Diff between origin/master and ${{ github.sha }} "
+          else
+              export DIFF=$( git diff --name-only ${{ github.event.before }} ${{ github.sha }} )
+              echo "Diff between ${{ github.event.before }} and ${{ github.sha }} "
+          fi
+
+          echo "::set-output name=files::$( echo "$DIFF" | sed ':a;N;$!ba;s/\n/%0A/g' )"
