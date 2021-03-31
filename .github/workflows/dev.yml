@@ -106,7 +106,9 @@ jobs:
             echo "Diff between origin/master and ${{ github.sha }} "
             export DIFF2=$( git diff --name-only ${{ github.event.before }} ${{ github.sha }} )
             echo "Diff2 between ${{ github.event.before }} and ${{ github.sha }} "
-
-          echo "::set-output name=files::$( echo "$DIFF" | sed ':a;N;$!ba;s/\n/%0A/g' )"
-          echo "$DIFF"
-          echo "$DIFF2"
+            echo "--DIFF0:"
+            echo "::set-output name=files::$( echo "$DIFF" | sed ':a;N;$!ba;s/\n/%0A/g' )"
+            echo "--DIFF1:"
+            echo "$DIFF"
+            echo "--DIFF2:"
+            echo "$DIFF2"
