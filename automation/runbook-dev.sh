@@ -17,13 +17,13 @@ ssh-keyscan github.com >> /root/.ssh/known_hosts
 # run the magic
 echo "==> git clone"
 cd /app/
-git clone git@github.com:z0ph/aws_managed_policies.git -q
-if [ -d /app/aws_managed_policies ]
+git clone git@github.com:z0ph/MAMIP.git -q
+if [ -d /app/MAMIP ]
 then
-    cd /app/aws_managed_policies
+    cd /app/MAMIP
     echo "==> Run the magic"
-    aws iam list-policies > /app/aws_managed_policies/list-policies.json
-    cat /app/aws_managed_policies/list-policies.json | jq -cr '.Policies[] | select(.Arn | contains("iam::aws"))|.Arn +" "+ .DefaultVersionId+" "+.PolicyName' | xargs -n3 sh -c 'aws iam get-policy-version --policy-arn $1 --version-id $2 > "policies/$3"' sh
+    aws iam list-policies > /app/MAMIP/list-policies.json
+    cat /app/MAMIP/list-policies.json | jq -cr '.Policies[] | select(.Arn | contains("iam::aws"))|.Arn +" "+ .DefaultVersionId+" "+.PolicyName' | xargs -n3 sh -c 'aws iam get-policy-version --policy-arn $1 --version-id $2 > "policies/$3"' sh
     # push the changes if any
     if [[ -n $(git status -s) ]];
     then
@@ -40,7 +40,7 @@ then
         # Craft commit ID for tweet direct URL
         commit_id=$(git log --format="%h" -n 1)
         # Send message to qTweeter for publishing the tweet
-        echo "aws sqs send-message --queue-url https://sqs.eu-west-1.amazonaws.com/567589703415/qtweet-mamip-sqs-queue.fifo --message-body "$diff https://github.com/z0ph/aws_managed_policies/commit/$commit_id" --message-group-id 1"
+        echo "aws sqs send-message --queue-url https://sqs.eu-west-1.amazonaws.com/567589703415/qtweet-mamip-sqs-queue.fifo --message-body "$diff https://github.com/z0ph/MAMIP/commit/$commit_id" --message-group-id 1"
         # push to mamip repository
         git push origin master
     else
