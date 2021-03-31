@@ -6,7 +6,7 @@ Thanks to [@0xdabbad00](https://twitter.com/0xdabbad00) for the original idea, t
 
 ## :hand: Usage
 
-### Three options
+### :three: Three options
 
 1. Follow the [dedicated Twitter Account](https://twitter.com/mamip_aws).
 
@@ -16,7 +16,7 @@ Thanks to [@0xdabbad00](https://twitter.com/0xdabbad00) for the original idea, t
 
 ![setup](assets/watching.gif)
 
-3. Subscribe to the Github [RSS Feed](https://github.com/z0ph/aws_managed_policies/commits/master.atom) (`master` branch)
+1. Subscribe to the Github [RSS Feed](https://github.com/z0ph/MAMIP/commits/master.atom) (`master` branch)
 
 ## :white_check_mark: Policy Validation
 
@@ -43,7 +43,7 @@ This commands does the following:
 ### :gear: Automation Details
 
 - Infrastructure is deployed using Terraform:
-  - ECS/Fargate
+  - ECS + Fargate
 - Clone this repository
 - Run the magic (previously mentioned command)
 - If changes detected:
@@ -53,8 +53,8 @@ This commands does the following:
 
 #### :clock1: Schedule
 
-- ECS/Fargate (Spot): [current setting](https://github.com/z0ph/aws_managed_policies/blob/master/automation/tf-fargate/variables.tf#L66-L69)
+- ECS + Fargate (Spot): [current setting](https://github.com/z0ph/MAMIP/blob/master/automation/tf-fargate/variables.tf#L66-L69)
 
-### Architecture Design
+### :triangular_ruler: Architecture Design
 
 ![Schema ECS Fargate](assets/schema.png)
