@@ -18,6 +18,7 @@ Icon
 
 .vscode
 .terraform
+test-vgr/
 
 # Thumbnails
 ._*
