@@ -5237,12 +5237,12 @@
             "PolicyId": "ANPAJUCWFHNZER665LLQQ",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy",
             "Path": "/aws-service-role/",
-            "DefaultVersionId": "v22",
+            "DefaultVersionId": "v23",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2018-05-30T23:31:46+00:00",
-            "UpdateDate": "2021-01-29T19:19:53+00:00"
+            "UpdateDate": "2021-04-01T22:19:18+00:00"
         },
         {
             "PolicyName": "AmazonESReadOnlyAccess",
