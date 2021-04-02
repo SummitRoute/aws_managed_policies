@@ -1,7 +1,9 @@
-## Findings Stats - 2021-03-30
-- Policies analyzed: `837`
-- Errors: `35`
-- Sec_Warnings: `21`
-- Suggestions: `72`
+## Findings Stats - 2021-04-02
+
+- Policies analyzed: `802`
+- Errors: `3`
+- Sec_Warnings: `10`
+- Suggestions: `63`
 - Warnings: `7`
 - Fails: `1`
+- [Deprecated](../DEPRECATED.json): `35`

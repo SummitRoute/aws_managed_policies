@@ -1,7 +1,6 @@
 on:
-  push:
-    tags:
-      - '202*'
+  schedule:
+    - cron:  '0 * * * *'
 
 
 name: AAA - Policy Validation
@@ -40,6 +39,9 @@ jobs:
       - name: Install python requirements
         run: python3 -m pip install -r ./automation/requirements.txt
 
+      - name: Retrieve the list of current AWS Managed Policies
+        run: aws iam list-policies --scope AWS > policies-list.json
+
       - name: AWS Access Analyzer - Policy Validation
         run: python3 ./automation/validate-batch.py
 
@@ -48,10 +50,12 @@ jobs:
           git config --local user.email "mamip@noreply"
           git config --local user.name "mamip-github-actions[bot]"
           git add ./findings
-          git commit -m "Add AWS Access Analyzer findings" || :
+          git add DEPRECATED.json
+          git add policies-list.json
+          git commit -m "Add AA findings + current and deprecated policy lists" || :
 
       - name: Push findings
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: origin/master
+          branch: ${{ github.ref }}
