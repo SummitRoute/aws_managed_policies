@@ -1,7 +1,6 @@
 on:
-  push:
-    tags:
-      - '202*'
+  schedule:
+    - cron:  '0 * * * *'
 
 
 name: AAA - Policy Validation
@@ -59,4 +58,4 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: origin/master
+          branch: ${{ github.ref }}
