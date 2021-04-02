@@ -8,6 +8,7 @@ from datetime import date
 today = date.today()
 date = today.strftime("%Y-%m-%d")
 
+
 # Empty ./findings/ folder
 def clean_findings_folder():
     finds = glob.glob('./findings/*')
@@ -18,12 +19,12 @@ def clean_findings_folder():
 # Validate with AA for each AWS Managed Policy
 def validate_policies(deprecated):
     to_analyze = 5000
-    analyzed_count = 0
-    error = 0
-    fail = 0
-    sec_warning = 0
-    suggestion = 0
-    warning = 0
+    analyzed_count = error = fail = sec_warning = suggestion = warning = 0
+    error_list = []
+    fail_list = []
+    sec_warning_list = []
+    suggestion_list = []
+    warning_list = []
     policy_path = './policies'
     files = [f for f in glob.glob(policy_path + "**/*", recursive=True)]
     for f in files[:to_analyze]:
@@ -49,12 +50,15 @@ def validate_policies(deprecated):
                     )
                 except Exception as e:
                     fail += 1
+                    fail_list.append(policy_name)
+                    # Distinct list
+                    fail_list = list(set(fail_list))
                     # Write errors to a log file
-                    error_output = open("./findings/fails.txt", "a")
+                    error_output = open("./findings/fails.txt", "w")
                     error_output.write(str(f) + '\n')
                     error_output.write(str(e))
                     error_output.close()
-                
+
                 # Extract findings from response
                 findings = r['findings']
                 # More readable output (json)
@@ -79,14 +83,27 @@ def validate_policies(deprecated):
                     # Possible Types: 'ERROR'|'SECURITY_WARNING'|'SUGGESTION'|'WARNING'
                     if finding['findingType'] == 'ERROR':
                         error += 1
+                        error_list.append(policy_name)
+                        # Distinct on list
+                        error_list = list(set(error_list))
                     if finding['findingType'] == 'SECURITY_WARNING':
                         sec_warning += 1
+                        sec_warning_list.append(policy_name)
+                        # Distinct on list
+                        sec_warning_list = list(set(sec_warning_list))
                     if finding['findingType'] == 'SUGGESTION':
                         suggestion += 1
+                        suggestion_list.append(policy_name)
+                        # Distinct on list
+                        suggestion_list = list(set(suggestion_list))
                     if finding['findingType'] == 'WARNING':
                         warning += 1
+                        warning_list.append(policy_name)
+                        # Distinct on list
+                        warning_list = list(set(warning_list))
 
-    return analyzed_count, error, fail, sec_warning, suggestion, warning
+    return analyzed_count, error, fail, sec_warning, suggestion, warning, \
+        error_list, fail_list, sec_warning_list, suggestion_list, warning_list
 
 
 def check_deprecated():
@@ -99,7 +116,7 @@ def check_deprecated():
         json_policy = json.loads(policy)
         policy = json_policy["Policies"]
         current_policies_count = len(policy)
-        print("count current policies", current_policies_count)
+        print("Current AWS Managed Policies:", current_policies_count)
 
     for i in policy:
         PolicyName = i["PolicyName"]
@@ -116,16 +133,29 @@ def check_deprecated():
     print("Deprecated Policies:", deprecated)
     return deprecated
 
+
 # Create README.md for stats
-def output_writer(deprecated, analyzed_count, error, fail, sec_warning, suggestion, warning):
+def output_writer(deprecated, analyzed_count, error, fail, sec_warning, suggestion, warning,
+    error_list, fail_list, sec_warning_list, suggestion_list, warning_list):
+
     stats_output = open("./findings/README.md", "a")
     stats_output.write("## Findings Stats - " + str(date) + "\n\n")
     stats_output.write("- Policies analyzed: `" + str(analyzed_count) + "`\n")
     stats_output.write("- Errors: `" + str(error) + "`\n")
+    for i in error_list:
+        stats_output.write("  - `" + str(i) + "`\n")
     stats_output.write("- Sec_Warnings: `" + str(sec_warning) + "`\n")
+    for i in sec_warning_list:
+        stats_output.write("  - `" + str(i) + "`\n")
     stats_output.write("- Suggestions: `" + str(suggestion) + "`\n")
+    for i in suggestion_list:
+        stats_output.write("  - `" + str(i) + "`\n")
     stats_output.write("- Warnings: `" + str(warning) + "`\n")
+    for i in warning_list:
+        stats_output.write("  - `" + str(i) + "`\n")
     stats_output.write("- Fails: `" + str(fail) + "`\n")
+    for i in fail_list:
+        stats_output.write("  - `" + str(i) + "`\n")
     deprecated_number = len(deprecated)
     stats_output.write("- [Deprecated](../DEPRECATED.json): `" + str(deprecated_number) + "`\n")
     stats_output.close()
@@ -154,9 +184,12 @@ def stats(deprecated, analyzed_count, error, fail, sec_warning, suggestion, warn
 def main(event, context):
     clean_findings_folder()
     deprecated = check_deprecated()
-    analyzed_count, error, fail, sec_warning, suggestion, warning = validate_policies(deprecated)
-    output_writer(deprecated, analyzed_count, error, fail, sec_warning, suggestion, warning)
+    analyzed_count, error, fail, sec_warning, suggestion, warning, \
+        error_list, fail_list, sec_warning_list, suggestion_list, warning_list = validate_policies(deprecated)
+    output_writer(deprecated, analyzed_count, error, fail, sec_warning, suggestion, warning,
+        error_list, fail_list, sec_warning_list, suggestion_list, warning_list)
     stats(deprecated, analyzed_count, error, fail, sec_warning, suggestion, warning)
 
+
 if __name__ == '__main__':
-    main(0,0)
+    main(0, 0)
