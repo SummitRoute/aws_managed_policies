@@ -7,6 +7,8 @@
                     "Effect": "Allow",
                     "Action": [
                         "databrew:*",
+                        "glue:GetConnection",
+                        "glue:GetConnections",
                         "glue:GetDatabases",
                         "glue:GetPartitions",
                         "glue:GetTable",
@@ -18,13 +20,23 @@
                         "dataexchange:CreateJob",
                         "dataexchange:StartJob",
                         "dataexchange:GetJob",
+                        "ec2:DescribeSecurityGroups",
+                        "ec2:DescribeVpcs",
+                        "ec2:DescribeSubnets",
                         "kms:DescribeKey",
                         "kms:ListKeys",
                         "kms:ListAliases",
+                        "redshift:DescribeClusters",
+                        "redshift:DescribeClusterSubnetGroups",
+                        "redshift-data:ListDatabases",
+                        "redshift-data:ListSchemas",
+                        "redshift-data:ListTables",
                         "s3:ListAllMyBuckets",
                         "s3:GetBucketCORS",
                         "s3:GetBucketLocation",
                         "s3:GetEncryptionConfiguration",
+                        "secretsmanager:ListSecrets",
+                        "secretsmanager:DescribeSecret",
                         "sts:GetCallerIdentity",
                         "cloudtrail:LookupEvents",
                         "iam:ListRoles",
@@ -32,6 +44,16 @@
                     ],
                     "Resource": [
                         "*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "glue:CreateConnection"
+                    ],
+                    "Resource": [
+                        "arn:aws:glue:*:*:catalog",
+                        "arn:aws:glue:*:*:connection/AwsGlueDataBrew-*"
                     ]
                 },
                 {
@@ -74,8 +96,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-11-12T23:04:55Z"
+        "CreateDate": "2021-03-30T17:03:07Z"
     }
 }
