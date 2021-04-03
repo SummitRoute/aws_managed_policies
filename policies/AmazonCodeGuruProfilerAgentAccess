@@ -7,14 +7,15 @@
                     "Effect": "Allow",
                     "Action": [
                         "codeguru-profiler:ConfigureAgent",
+                        "codeguru-profiler:CreateProfilingGroup",
                         "codeguru-profiler:PostAgentProfile"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-02-05T22:11:56Z"
+        "CreateDate": "2021-04-02T23:21:37Z"
     }
 }
