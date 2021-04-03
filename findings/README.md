@@ -2,65 +2,65 @@
 
 - Policies analyzed: `802`
 - Errors: `12`
+  - `AWSGlueConsoleSageMakerNotebookFullAccess`
   - `FMSServiceRolePolicy`
   - `AWSIoTFleetHubFederationAccess`
-  - `AWSGlueConsoleSageMakerNotebookFullAccess`
 - Sec_Warnings: `10`
-  - `AmazonDynamoDBFullAccesswithDataPipeline`
-  - `AdministratorAccess`
-  - `AWSDataPipelineRole`
-  - `IAMFullAccess`
   - `AmazonElasticMapReduceFullAccess`
-  - `AWSServiceRoleForAmazonEKSNodegroup`
-  - `AWSElasticBeanstalkService`
+  - `AWSDataPipelineRole`
   - `AWSElasticBeanstalkFullAccess`
+  - `AdministratorAccess`
+  - `IAMFullAccess`
   - `AdministratorAccess-Amplify`
+  - `AWSElasticBeanstalkService`
+  - `AWSServiceRoleForAmazonEKSNodegroup`
+  - `AmazonDynamoDBFullAccesswithDataPipeline`
   - `AmazonElasticMapReduceRole`
 - Suggestions: `63`
-  - `AmazonQLDBReadOnly`
-  - `AWSCodeStarServiceRole`
-  - `AWSDiscoveryContinuousExportFirehosePolicy`
-  - `AWSElasticBeanstalkCustomPlatformforEC2Role`
-  - `AmazonCodeGuruReviewerServiceRolePolicy`
-  - `SecurityAudit`
-  - `AWSElasticBeanstalkService`
-  - `AWSDeepLensLambdaFunctionAccessPolicy`
-  - `AmazonTimestreamConsoleFullAccess`
   - `AmazonElasticMapReduceFullAccess`
-  - `NeptuneConsoleFullAccess`
-  - `AWSDeepRacerFullAccess`
-  - `AmazonQLDBFullAccess`
-  - `AWSBackupOperatorAccess`
-  - `AmazonCognitoPowerUser`
-  - `AmazonDocDBConsoleFullAccess`
-  - `DataScientist`
-  - `AWSGlueConsoleSageMakerNotebookFullAccess`
+  - `AWSCodeStarServiceRole`
   - `AWSDataPipelineRole`
-  - `AWSCodeDeployRole`
-  - `AWSElasticBeanstalkRoleCore`
-  - `SystemAdministrator`
+  - `DataScientist`
   - `AWSMarketplaceFullAccess`
-  - `AdministratorAccess-Amplify`
-  - `AmazonAppStreamServiceAccess`
-  - `AWSCodeCommitReadOnly`
-  - `AmazonLaunchWizard_Fullaccess`
-  - `AWSBatchFullAccess`
-  - `ViewOnlyAccess`
-  - `AmazonVPCFullAccess`
-  - `SupportUser`
-  - `AWSLakeFormationDataAdmin`
-  - `AWSElasticBeanstalkWebTier`
-  - `AWSElasticBeanstalkWorkerTier`
+  - `AWSElasticBeanstalkRoleCore`
+  - `AmazonQLDBReadOnly`
   - `AmazonQLDBConsoleFullAccess`
+  - `AmazonAppStreamServiceAccess`
+  - `AmazonCognitoPowerUser`
   - `AWSGlueConsoleFullAccess`
+  - `AWSCodeDeployRole`
+  - `SystemAdministrator`
+  - `AmazonLaunchWizard_Fullaccess`
+  - `AWSBackupOperatorAccess`
+  - `AWSCodeCommitReadOnly`
+  - `AmazonVPCFullAccess`
+  - `AWSLakeFormationDataAdmin`
+  - `SupportUser`
+  - `AWSBatchFullAccess`
+  - `AWSElasticBeanstalkWebTier`
+  - `NeptuneConsoleFullAccess`
+  - `AmazonQLDBFullAccess`
+  - `AWSGlueConsoleSageMakerNotebookFullAccess`
+  - `AWSDiscoveryContinuousExportFirehosePolicy`
+  - `AWSElasticBeanstalkService`
+  - `AWSElasticBeanstalkCustomPlatformforEC2Role`
+  - `AmazonTimestreamConsoleFullAccess`
+  - `AWSDeepLensLambdaFunctionAccessPolicy`
+  - `ViewOnlyAccess`
+  - `AWSElasticBeanstalkWorkerTier`
+  - `AWSDeepRacerFullAccess`
+  - `AmazonCodeGuruReviewerServiceRolePolicy`
+  - `AdministratorAccess-Amplify`
+  - `AmazonDocDBConsoleFullAccess`
+  - `SecurityAudit`
 - Warnings: `7`
   - `AlexaForBusinessFullAccess`
   - `ReadOnlyAccess`
-  - `AdministratorAccess`
   - `AWSGlueConsoleSageMakerNotebookFullAccess`
+  - `AdministratorAccess`
   - `IAMFullAccess`
-  - `PowerUserAccess`
   - `AWSOrganizationsServiceTrustPolicy`
+  - `PowerUserAccess`
 - Fails: `1`
   - `AWSSupportServiceRolePolicy`
 - [Deprecated](../DEPRECATED.json): `35`
