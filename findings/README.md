@@ -62,7 +62,7 @@
   - [`AWSOrganizationsServiceTrustPolicy`](./AWSOrganizationsServiceTrustPolicy.json)
 - Fails: `1`
   - [`AWSSupportServiceRolePolicy`](./AWSSupportServiceRolePolicy.json)
-- [Deprecated](../DEPRECATED.json): `35`
+- Deprecated: `35`
   - `TagGovernancePolicy`
   - `AWSLambdaReadOnlyAccess`
   - `AmazonEC2RolePolicyForApplicationWizard`

@@ -3,6 +3,7 @@ import json
 import glob
 import os
 from datetime import date
+from collections import OrderedDict
 
 # Date
 today = date.today()
@@ -85,22 +86,22 @@ def validate_policies(deprecated):
                         error += 1
                         error_list.append(policy_name)
                         # Distinct on list
-                        error_list = list(set(error_list))
+                        error_list = list(OrderedDict.fromkeys(error_list))
                     if finding['findingType'] == 'SECURITY_WARNING':
                         sec_warning += 1
                         sec_warning_list.append(policy_name)
                         # Distinct on list
-                        sec_warning_list = list(set(sec_warning_list))
+                        sec_warning_list = list(OrderedDict.fromkeys(sec_warning_list))
                     if finding['findingType'] == 'SUGGESTION':
                         suggestion += 1
                         suggestion_list.append(policy_name)
                         # Distinct on list
-                        suggestion_list = list(set(suggestion_list))
+                        suggestion_list = list(OrderedDict.fromkeys(suggestion_list))
                     if finding['findingType'] == 'WARNING':
                         warning += 1
                         warning_list.append(policy_name)
                         # Distinct on list
-                        warning_list = list(set(warning_list))
+                        warning_list = list(OrderedDict.fromkeys(warning_list))
 
     return analyzed_count, error, fail, sec_warning, suggestion, warning, \
         error_list, fail_list, sec_warning_list, suggestion_list, warning_list
@@ -139,25 +140,27 @@ def output_writer(deprecated, analyzed_count, error, fail, sec_warning, suggesti
     error_list, fail_list, sec_warning_list, suggestion_list, warning_list):
 
     stats_output = open("./findings/README.md", "a")
-    stats_output.write("## Findings Stats - " + str(date) + "\n\n")
+    stats_output.write("## AWS Access Analyzer - Findings - " + str(date) + "\n\n")
     stats_output.write("- Policies analyzed: `" + str(analyzed_count) + "`\n")
     stats_output.write("- Errors: `" + str(error) + "`\n")
     for i in error_list:
-        stats_output.write("  - `" + str(i) + "`\n")
+        stats_output.write("  - [`" + str(i) + "`](./" + str(i) + ".json)\n")
     stats_output.write("- Sec_Warnings: `" + str(sec_warning) + "`\n")
     for i in sec_warning_list:
-        stats_output.write("  - `" + str(i) + "`\n")
+        stats_output.write("  - [`" + str(i) + "`](./" + str(i) + ".json)\n")
     stats_output.write("- Suggestions: `" + str(suggestion) + "`\n")
     for i in suggestion_list:
-        stats_output.write("  - `" + str(i) + "`\n")
+        stats_output.write("  - [`" + str(i) + "`](./" + str(i) + ".json)\n")
     stats_output.write("- Warnings: `" + str(warning) + "`\n")
     for i in warning_list:
-        stats_output.write("  - `" + str(i) + "`\n")
+        stats_output.write("  - [`" + str(i) + "`](./" + str(i) + ".json)\n")
     stats_output.write("- Fails: `" + str(fail) + "`\n")
     for i in fail_list:
-        stats_output.write("  - `" + str(i) + "`\n")
+        stats_output.write("  - [`" + str(i) + "`](./" + str(i) + ".json)\n")
     deprecated_number = len(deprecated)
-    stats_output.write("- [Deprecated](../DEPRECATED.json): `" + str(deprecated_number) + "`\n")
+    stats_output.write("- Deprecated: `" + str(deprecated_number) + "`\n")
+    for i in deprecated:
+        stats_output.write("  - `" + str(i) + "`\n")
     stats_output.close()
 
     # Craft DEPRECATED.json Policies list
