@@ -22,12 +22,16 @@ Thanks to [@0xdabbad00](https://twitter.com/0xdabbad00) for the original idea, t
 
 I'm using [AWS Access Analyzer Policy Validation](https://aws.amazon.com/blogs/aws/iam-access-analyzer-update-policy-validation/). You can check findings in the [findings folder](./findings/).
 
+## :older_man: Deprecated Policies
+
+Some AWS Managed Policies are now [deprecated](./DEPRECATED.json) since they first appear in this repository. Policy validation only take place on actual AWS managed policies.
+
 ## :white_heart: How it works behind the scene
 
 AWS Managed Policies are acquired as follows:
 
 ```bash
-aws iam list-policies > list-policies.json
+aws iam list-policies --scope AWS > list-policies.json
 cat list-policies.json \
   | jq -cr '.Policies[] | select(.Arn | contains("iam::aws"))|.Arn +" "+ .DefaultVersionId+" "+.PolicyName' \
   | xargs -n3 sh -c 'aws iam get-policy-version --policy-arn $1 --version-id $2 > "policies/$3"' sh
@@ -48,8 +52,8 @@ This commands does the following:
 - Run the magic (previously mentioned command)
 - If changes detected:
   - Commit changes
-  - Push (with tags for GH release)
-  - Push to [qTweet](https://github.com/z0ph/qtweet)
+  - Push + Create Release
+  - Send SQS message to [qTweet](https://github.com/z0ph/qtweet)
 
 #### :clock1: Schedule
 
