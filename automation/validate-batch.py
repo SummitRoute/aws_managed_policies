@@ -53,7 +53,7 @@ def validate_policies(deprecated):
                     fail += 1
                     fail_list.append(policy_name)
                     # Distinct list
-                    fail_list = list(set(fail_list))
+                    fail_list = list(OrderedDict.fromkeys(fail_list))
                     # Write errors to a log file
                     error_output = open("./findings/fails.txt", "w")
                     error_output.write(str(f) + '\n')
