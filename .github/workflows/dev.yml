@@ -25,8 +25,8 @@ jobs:
       - name: AWS IAM Assume Role
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID_DEV }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_DEV }}
           aws-region: ${{ secrets.REGION }}
           role-to-assume: ${{ secrets.ROLE_TO_ASSUME_DEV }}
           role-duration-seconds: 1200
