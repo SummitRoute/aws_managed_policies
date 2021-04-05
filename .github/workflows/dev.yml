@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout'
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
 
       - name: AWS IAM Assume Role
         uses: aws-actions/configure-aws-credentials@v1
@@ -100,15 +100,3 @@ jobs:
           pr_reviewer: "z0ph"
           pr_assignee: "z0ph"
           github_token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Get changed files
-        id: getfile
-        run: |
-            export DIFF=$( git diff --name-only origin/master ${{ github.sha }} )
-            echo "Diff between origin/master and ${{ github.sha }} "
-            export DIFF2=$( git diff --name-only ${{ github.event.before }} ${{ github.sha }} )
-            echo "Diff2 between ${{ github.event.before }} and ${{ github.sha }} "
-            echo "--DIFF1:"
-            echo "$DIFF"
-            echo "--DIFF2:"
-            echo "$DIFF2"

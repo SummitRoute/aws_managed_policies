@@ -12,9 +12,22 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
-      # - id: files
-      #   uses: jitterbit/get-changed-files@v1
+      - name: Get changed files
+        id: getfile
+        run: |
+            export PREVIOUS=$( git describe --abbrev=0 --tags `git rev-list --tags --skip=1 --max-count=1` )
+            export DIFF=$( git diff --name-only ${{ github.ref }} $PREVIOUS )
+            echo "PREVIOUS: $PREVIOUS"
+            echo "DIFF: $DIFF"
+
+            filechange=$DIFF
+            filechange="${filechange//'%'/'%25'}"
+            filechange="${filechange//$'\n'/'%0A'}"
+            filechange="${filechange//$'\r'/'%0D'}"
+            echo "::set-output name=filechange_clean::$filechange"
 
       - name: Create Release
         id: create_release
@@ -25,21 +38,7 @@ jobs:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
           body: |
-            Update detected on ${{ github.ref }}
-          # Added: ${{ steps.files.outputs.added }}
-          # Modified: ${{ steps.files.outputs.modified }}
-          # Removed: ${{ steps.files.outputs.removed }}
+            File changed: 
+            ${{ steps.getfile.outputs.filechange_clean }}
           draft: false
           prerelease: false
-
-      - name: Get changed files
-        id: getfile
-        run: |
-            export DIFF=$( git diff --name-only ${{ github.ref }} ${{ github.sha }} )
-            echo "Diff between ${{ github.ref }} and ${{ github.sha }} "
-            export DIFF2=$( git diff --name-only ${{ github.event.before }} ${{ github.sha }} )
-            echo "Diff2 between ${{ github.event.before }} and ${{ github.sha }} "
-            echo "--DIFF1:"
-            echo "$DIFF"
-            echo "--DIFF2:"
-            echo "$DIFF2"
