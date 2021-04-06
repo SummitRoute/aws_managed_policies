@@ -3977,12 +3977,12 @@
             "PolicyId": "ANPAJHV6VMSNDDHJ3ESNI",
             "Arn": "arn:aws:iam::aws:policy/AmazonDocDBConsoleFullAccess",
             "Path": "/",
-            "DefaultVersionId": "v2",
+            "DefaultVersionId": "v3",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2019-01-09T20:37:28+00:00",
-            "UpdateDate": "2019-10-21T18:57:02+00:00"
+            "UpdateDate": "2021-04-05T22:42:40+00:00"
         },
         {
             "PolicyName": "ResourceGroupsandTagEditorReadOnlyAccess",

@@ -1,4 +1,4 @@
-## AWS Access Analyzer - Findings - 2021-04-05
+## AWS Access Analyzer - Findings - 2021-04-06
 
 - Policies analyzed: `802`
 - Errors: `3`
@@ -15,7 +15,7 @@
   - [`AdministratorAccess-Amplify`](./AdministratorAccess-Amplify.json)
   - [`AWSDataPipelineRole`](./AWSDataPipelineRole.json)
   - [`IAMFullAccess`](./IAMFullAccess.json)
-- Suggestions: `63`
+- Suggestions: `61`
   - [`NeptuneConsoleFullAccess`](./NeptuneConsoleFullAccess.json)
   - [`DataScientist`](./DataScientist.json)
   - [`AWSElasticBeanstalkCustomPlatformforEC2Role`](./AWSElasticBeanstalkCustomPlatformforEC2Role.json)
@@ -47,7 +47,6 @@
   - [`AdministratorAccess-Amplify`](./AdministratorAccess-Amplify.json)
   - [`AWSDiscoveryContinuousExportFirehosePolicy`](./AWSDiscoveryContinuousExportFirehosePolicy.json)
   - [`AWSGlueConsoleSageMakerNotebookFullAccess`](./AWSGlueConsoleSageMakerNotebookFullAccess.json)
-  - [`AmazonDocDBConsoleFullAccess`](./AmazonDocDBConsoleFullAccess.json)
   - [`AWSDataPipelineRole`](./AWSDataPipelineRole.json)
   - [`SystemAdministrator`](./SystemAdministrator.json)
   - [`AmazonVPCFullAccess`](./AmazonVPCFullAccess.json)
