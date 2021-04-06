@@ -4,6 +4,7 @@
             "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "rds:AddRoleToDBCluster",
                         "rds:AddSourceIdentifierToSubscription",
@@ -69,12 +70,12 @@
                         "rds:RestoreDBClusterFromSnapshot",
                         "rds:RestoreDBClusterToPointInTime"
                     ],
-                    "Effect": "Allow",
                     "Resource": [
                         "*"
                     ]
                 },
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "iam:GetRole",
                         "cloudwatch:GetMetricData",
@@ -112,8 +113,6 @@
                         "ec2:DescribeRouteTables",
                         "ec2:DescribeSecurityGroupReferences",
                         "ec2:DescribeSecurityGroups",
-                        "ec2:DescribeSecurityGroups",
-                        "ec2:DescribeSubnets",
                         "ec2:DescribeSubnets",
                         "ec2:DescribeVpcAttribute",
                         "ec2:DescribeVpcEndpoints",
@@ -133,14 +132,13 @@
                         "sns:ListTopics",
                         "sns:Publish"
                     ],
-                    "Effect": "Allow",
                     "Resource": [
                         "*"
                     ]
                 },
                 {
-                    "Action": "iam:CreateServiceLinkedRole",
                     "Effect": "Allow",
+                    "Action": "iam:CreateServiceLinkedRole",
                     "Resource": "arn:aws:iam::*:role/aws-service-role/rds.amazonaws.com/AWSServiceRoleForRDS",
                     "Condition": {
                         "StringLike": {
@@ -150,8 +148,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-10-21T18:57:02Z"
+        "CreateDate": "2021-04-05T22:42:40Z"
     }
 }
