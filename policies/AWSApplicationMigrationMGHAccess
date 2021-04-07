@@ -1,0 +1,25 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "mgh:AssociateCreatedArtifact",
+                        "mgh:CreateProgressUpdateStream",
+                        "mgh:DisassociateCreatedArtifact",
+                        "mgh:GetHomeRegion",
+                        "mgh:ImportMigrationTask",
+                        "mgh:NotifyMigrationTaskState",
+                        "mgh:PutResourceAttributes"
+                    ],
+                    "Resource": "*"
+                }
+            ]
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2021-04-07T07:10:01Z"
+    }
+}
