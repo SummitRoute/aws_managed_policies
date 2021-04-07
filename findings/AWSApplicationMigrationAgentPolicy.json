@@ -1,0 +1,536 @@
+[
+    {
+        "findingDetails": "The service mgn:SendAgentMetricsForMgn specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 0
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 99,
+                        "line": 1,
+                        "offset": 99
+                    },
+                    "start": {
+                        "column": 71,
+                        "line": 1,
+                        "offset": 71
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service mgn:SendAgentLogsForMgn specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 1
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 126,
+                        "line": 1,
+                        "offset": 126
+                    },
+                    "start": {
+                        "column": 101,
+                        "line": 1,
+                        "offset": 101
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service mgn:SendClientLogsForMgn specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 2
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 154,
+                        "line": 1,
+                        "offset": 154
+                    },
+                    "start": {
+                        "column": 128,
+                        "line": 1,
+                        "offset": 128
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service mgn:RegisterAgentForMgn specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 0
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 231,
+                        "line": 1,
+                        "offset": 231
+                    },
+                    "start": {
+                        "column": 206,
+                        "line": 1,
+                        "offset": 206
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service mgn:UpdateAgentSourcePropertiesForMgn specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 1
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 272,
+                        "line": 1,
+                        "offset": 272
+                    },
+                    "start": {
+                        "column": 233,
+                        "line": 1,
+                        "offset": 233
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service mgn:UpdateAgentReplicationInfoForMgn specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 2
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 312,
+                        "line": 1,
+                        "offset": 312
+                    },
+                    "start": {
+                        "column": 274,
+                        "line": 1,
+                        "offset": 274
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service mgn:UpdateAgentConversionInfoForMgn specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 3
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 351,
+                        "line": 1,
+                        "offset": 351
+                    },
+                    "start": {
+                        "column": 314,
+                        "line": 1,
+                        "offset": 314
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service mgn:GetAgentInstallationAssetsForMgn specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 4
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 391,
+                        "line": 1,
+                        "offset": 391
+                    },
+                    "start": {
+                        "column": 353,
+                        "line": 1,
+                        "offset": 353
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service mgn:GetAgentCommandForMgn specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 5
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 420,
+                        "line": 1,
+                        "offset": 420
+                    },
+                    "start": {
+                        "column": 393,
+                        "line": 1,
+                        "offset": 393
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service mgn:GetAgentConfirmedResumeInfoForMgn specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 6
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 461,
+                        "line": 1,
+                        "offset": 461
+                    },
+                    "start": {
+                        "column": 422,
+                        "line": 1,
+                        "offset": 422
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service mgn:GetAgentRuntimeConfigurationForMgn specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 7
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 503,
+                        "line": 1,
+                        "offset": 503
+                    },
+                    "start": {
+                        "column": 463,
+                        "line": 1,
+                        "offset": 463
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service mgn:UpdateAgentBacklogForMgn specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 8
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 535,
+                        "line": 1,
+                        "offset": 535
+                    },
+                    "start": {
+                        "column": 505,
+                        "line": 1,
+                        "offset": 505
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service mgn:GetAgentReplicationInfoForMgn specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 9
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 572,
+                        "line": 1,
+                        "offset": 572
+                    },
+                    "start": {
+                        "column": 537,
+                        "line": 1,
+                        "offset": 537
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service mgn:TagResource specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 640,
+                        "line": 1,
+                        "offset": 640
+                    },
+                    "start": {
+                        "column": 623,
+                        "line": 1,
+                        "offset": 623
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service mgn does not exist. Use a valid service name.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Resource"
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 687,
+                        "line": 1,
+                        "offset": 687
+                    },
+                    "start": {
+                        "column": 654,
+                        "line": 1,
+                        "offset": 654
+                    }
+                }
+            }
+        ]
+    }
+]

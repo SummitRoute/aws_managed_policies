@@ -1,8 +1,14 @@
 ## AWS Access Analyzer - Findings - 2021-04-07
 
-- Policies analyzed: `802`
-- Errors: `3`
+- Policies analyzed: `810`
+- Errors: `44`
+  - [`AWSApplicationMigrationAgentPolicy`](./AWSApplicationMigrationAgentPolicy.json)
   - [`AWSIoTFleetHubFederationAccess`](./AWSIoTFleetHubFederationAccess.json)
+  - [`AWSApplicationMigrationServiceRolePolicy`](./AWSApplicationMigrationServiceRolePolicy.json)
+  - [`AWSApplicationMigrationFullAccess`](./AWSApplicationMigrationFullAccess.json)
+  - [`AWSApplicationMigrationReplicationServerPolicy`](./AWSApplicationMigrationReplicationServerPolicy.json)
+  - [`AWSApplicationMigrationReadOnlyAccess`](./AWSApplicationMigrationReadOnlyAccess.json)
+  - [`AWSApplicationMigrationConversionServerPolicy`](./AWSApplicationMigrationConversionServerPolicy.json)
   - [`AWSGlueConsoleSageMakerNotebookFullAccess`](./AWSGlueConsoleSageMakerNotebookFullAccess.json)
 - Sec_Warnings: `10`
   - [`AdministratorAccess`](./AdministratorAccess.json)
