@@ -1,6 +1,6 @@
 ## AWS Access Analyzer - Findings - 2021-04-08
 
-- Policies analyzed: `810`
+- Policies analyzed: `811`
 - Errors: `44`
   - [`AWSApplicationMigrationAgentPolicy`](./AWSApplicationMigrationAgentPolicy.json)
   - [`AWSIoTFleetHubFederationAccess`](./AWSIoTFleetHubFederationAccess.json)
