@@ -1781,12 +1781,12 @@
             "PolicyId": "ANPAIOOYZSLZZXWFJJ5N2",
             "Arn": "arn:aws:iam::aws:policy/service-role/AWSBackupServiceRolePolicyForBackup",
             "Path": "/service-role/",
-            "DefaultVersionId": "v9",
+            "DefaultVersionId": "v10",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2019-01-10T21:01:28+00:00",
-            "UpdateDate": "2021-03-10T18:32:53+00:00"
+            "UpdateDate": "2021-04-12T18:07:46+00:00"
         },
         {
             "PolicyName": "AWSRoboMakerServiceRolePolicy",
@@ -7385,12 +7385,12 @@
             "PolicyId": "ANPAZKAPJZG4H4EGQA254",
             "Arn": "arn:aws:iam::aws:policy/service-role/AWSIoTFleetHubFederationAccess",
             "Path": "/service-role/",
-            "DefaultVersionId": "v1",
+            "DefaultVersionId": "v2",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-12-15T08:08:05+00:00",
-            "UpdateDate": "2020-12-15T08:08:05+00:00"
+            "UpdateDate": "2021-04-12T18:27:43+00:00"
         },
         {
             "PolicyName": "AmazonElasticFileSystemClientReadWriteAccess",
@@ -9317,12 +9317,12 @@
             "PolicyId": "ANPAZKAPJZG4ONJBD4ZY2",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/AWSBackupServiceLinkedRolePolicyForBackup",
             "Path": "/aws-service-role/",
-            "DefaultVersionId": "v2",
+            "DefaultVersionId": "v3",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-06-02T23:08:40+00:00",
-            "UpdateDate": "2020-11-10T18:37:51+00:00"
+            "UpdateDate": "2021-04-12T18:11:02+00:00"
         },
         {
             "PolicyName": "AmazonManagedBlockchainConsoleFullAccess",
