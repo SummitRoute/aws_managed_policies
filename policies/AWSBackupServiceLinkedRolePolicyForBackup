@@ -129,7 +129,8 @@
                         "StringLike": {
                             "kms:ViaService": [
                                 "ec2.*.amazonaws.com",
-                                "rds.*.amazonaws.com"
+                                "rds.*.amazonaws.com",
+                                "fsx.*.amazonaws.com"
                             ]
                         }
                     }
@@ -145,15 +146,26 @@
                         "StringLike": {
                             "kms:ViaService": [
                                 "ec2.*.amazonaws.com",
-                                "rds.*.amazonaws.com"
+                                "rds.*.amazonaws.com",
+                                "fsx.*.amazonaws.com"
                             ]
                         }
                     }
+                },
+                {
+                    "Action": [
+                        "fsx:CopyBackup",
+                        "fsx:TagResource",
+                        "fsx:DescribeBackups",
+                        "fsx:DeleteBackup"
+                    ],
+                    "Resource": "arn:aws:fsx:*:*:backup/*",
+                    "Effect": "Allow"
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-11-10T18:37:51Z"
+        "CreateDate": "2021-04-12T18:11:02Z"
     }
 }

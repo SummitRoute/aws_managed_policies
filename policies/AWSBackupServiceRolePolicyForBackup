@@ -267,11 +267,21 @@
                     "Action": "fsx:DeleteBackup",
                     "Effect": "Allow",
                     "Resource": "arn:aws:fsx:*:*:backup/*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "fsx:ListTagsForResource",
+                        "fsx:ManageBackupPrincipalAssociations",
+                        "fsx:CopyBackup",
+                        "fsx:TagResource"
+                    ],
+                    "Resource": "arn:aws:fsx:*:*:backup/*"
                 }
             ]
         },
-        "VersionId": "v9",
+        "VersionId": "v10",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-03-10T18:32:53Z"
+        "CreateDate": "2021-04-12T18:07:46Z"
     }
 }
