@@ -1,6 +1,6 @@
 [
     {
-        "findingDetails": "The action iotfleethub:ListDashboards does not exist.",
+        "findingDetails": "The action fsx:ManageBackupPrincipalAssociations does not exist.",
         "findingType": "ERROR",
         "issueCode": "INVALID_ACTION",
         "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
@@ -11,32 +11,32 @@
                         "value": "Statement"
                     },
                     {
-                        "index": 0
+                        "index": 30
                     },
                     {
                         "value": "Action"
                     },
                     {
-                        "index": 13
+                        "index": 1
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 417,
+                        "column": 4207,
                         "line": 1,
-                        "offset": 417
+                        "offset": 4207
                     },
                     "start": {
-                        "column": 389,
+                        "column": 4168,
                         "line": 1,
-                        "offset": 389
+                        "offset": 4168
                     }
                 }
             }
         ]
     },
     {
-        "findingDetails": "The action iotfleethub:DescribeDashboard does not exist.",
+        "findingDetails": "The action fsx:CopyBackup does not exist.",
         "findingType": "ERROR",
         "issueCode": "INVALID_ACTION",
         "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
@@ -47,25 +47,25 @@
                         "value": "Statement"
                     },
                     {
-                        "index": 0
+                        "index": 30
                     },
                     {
                         "value": "Action"
                     },
                     {
-                        "index": 14
+                        "index": 2
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 450,
+                        "column": 4225,
                         "line": 1,
-                        "offset": 450
+                        "offset": 4225
                     },
                     "start": {
-                        "column": 419,
+                        "column": 4209,
                         "line": 1,
-                        "offset": 419
+                        "offset": 4209
                     }
                 }
             }
