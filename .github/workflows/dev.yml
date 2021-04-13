@@ -1,10 +1,9 @@
-name: '[Dev] MAMIP - GitHub Actions'
+name: '[Dev] MAMIP - Infrastructure GitHub Actions'
 
 on:
   push:
     branches:
     - dev
-  
   workflow_dispatch:
 
 env:
