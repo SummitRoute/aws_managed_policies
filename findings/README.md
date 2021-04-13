@@ -22,7 +22,7 @@
   - [`AdministratorAccess-Amplify`](./AdministratorAccess-Amplify.json)
   - [`AWSDataPipelineRole`](./AWSDataPipelineRole.json)
   - [`IAMFullAccess`](./IAMFullAccess.json)
-- Suggestions: `61`
+- Suggestions: `62`
   - [`NeptuneConsoleFullAccess`](./NeptuneConsoleFullAccess.json)
   - [`DataScientist`](./DataScientist.json)
   - [`AWSElasticBeanstalkCustomPlatformforEC2Role`](./AWSElasticBeanstalkCustomPlatformforEC2Role.json)
@@ -44,6 +44,7 @@
   - [`AWSBackupOperatorAccess`](./AWSBackupOperatorAccess.json)
   - [`AWSCodeDeployRole`](./AWSCodeDeployRole.json)
   - [`AWSLakeFormationDataAdmin`](./AWSLakeFormationDataAdmin.json)
+  - [`ReadOnlyAccess`](./ReadOnlyAccess.json)
   - [`AmazonQLDBReadOnly`](./AmazonQLDBReadOnly.json)
   - [`AWSElasticBeanstalkWorkerTier`](./AWSElasticBeanstalkWorkerTier.json)
   - [`AmazonTimestreamConsoleFullAccess`](./AmazonTimestreamConsoleFullAccess.json)
