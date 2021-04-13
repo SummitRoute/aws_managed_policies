@@ -1,9 +1,9 @@
-name: '[Prod] MAMIP - GitHub Actions'
+name: '[Prod] MAMIP - Infrastructure GitHub Actions'
 
 on:
   push:
     tags-ignore:
-    - '**'
+    - '*.*'
     branches:
     - master
 

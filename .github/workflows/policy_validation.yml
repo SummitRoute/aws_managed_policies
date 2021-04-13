@@ -1,6 +1,7 @@
 on:
-  schedule:
-  - cron:  '30 */2 * * *'
+  push:
+    tags:
+      - '202*'
   workflow_dispatch:
 
 
@@ -53,7 +54,7 @@ jobs:
           git add ./findings
           git add DEPRECATED.json
           git add policies-list.json
-          git commit -m "Add AA findings + current and deprecated policy lists" || :
+          git commit -m "AccessAnalyzer - Policy Validation" || :
 
       - name: Push findings
         uses: ad-m/github-push-action@master

@@ -28,8 +28,7 @@ then
     if [[ -n $(git status -s) ]];
     then
         echo "==> Tagging"
-        git tag $DATE
-        git push --tags
+
         echo "==> Push the changes to master"
         # Prepare the Tweet
         diff="$(git diff --name-only) $(git ls-files --others --exclude-standard)"
@@ -37,12 +36,13 @@ then
         diff="${diff:0:200}..."
         git add ./policies
         git commit -am "Update detected"
+        git tag $DATE
         # Craft commit ID for tweet direct URL
         commit_id=$(git log --format="%h" -n 1)
         # Send message to qTweeter for publishing the tweet
         echo "aws sqs send-message --queue-url https://sqs.eu-west-1.amazonaws.com/567589703415/qtweet-mamip-sqs-queue.fifo --message-body "$diff https://github.com/z0ph/MAMIP/commit/$commit_id" --message-group-id 1"
         # push to mamip repository
-        git push origin dev
+        git push origin dev --tags
     else
         echo "==> No changes detected"
     fi
