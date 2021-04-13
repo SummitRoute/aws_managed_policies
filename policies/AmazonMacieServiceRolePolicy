@@ -5,7 +5,6 @@
             "Statement": [
                 {
                     "Effect": "Allow",
-                    "Resource": "*",
                     "Action": [
                         "cloudtrail:DescribeTrails",
                         "cloudtrail:GetEventSelectors",
@@ -33,11 +32,11 @@
                         "s3:GetObject",
                         "s3:GetObjectAcl",
                         "s3:GetObjectTagging"
-                    ]
+                    ],
+                    "Resource": "*"
                 },
                 {
                     "Effect": "Allow",
-                    "Resource": "arn:aws:cloudtrail:*:*:trail/AWSMacieTrail-DO-NOT-EDIT",
                     "Action": [
                         "cloudtrail:CreateTrail",
                         "cloudtrail:StartLogging",
@@ -45,15 +44,11 @@
                         "cloudtrail:UpdateTrail",
                         "cloudtrail:DeleteTrail",
                         "cloudtrail:PutEventSelectors"
-                    ]
+                    ],
+                    "Resource": "arn:aws:cloudtrail:*:*:trail/AWSMacieTrail-DO-NOT-EDIT"
                 },
                 {
                     "Effect": "Allow",
-                    "Resource": [
-                        "arn:aws:s3:::awsmacie-*",
-                        "arn:aws:s3:::awsmacietrail-*",
-                        "arn:aws:s3:::*-awsmacietrail-*"
-                    ],
                     "Action": [
                         "s3:CreateBucket",
                         "s3:DeleteBucket",
@@ -64,12 +59,37 @@
                         "s3:DeleteObjectVersion",
                         "s3:DeleteObjectVersionTagging",
                         "s3:PutBucketPolicy"
+                    ],
+                    "Resource": [
+                        "arn:aws:s3:::awsmacie-*",
+                        "arn:aws:s3:::awsmacietrail-*",
+                        "arn:aws:s3:::*-awsmacietrail-*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "logs:CreateLogGroup"
+                    ],
+                    "Resource": [
+                        "arn:aws:logs:*:*:log-group:/aws/macie/*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "logs:CreateLogStream",
+                        "logs:PutLogEvents",
+                        "logs:DescribeLogStreams"
+                    ],
+                    "Resource": [
+                        "arn:aws:logs:*:*:log-group:/aws/macie/*:log-stream:*"
                     ]
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-07-17T21:31:07Z"
+        "CreateDate": "2021-04-13T17:55:07Z"
     }
 }

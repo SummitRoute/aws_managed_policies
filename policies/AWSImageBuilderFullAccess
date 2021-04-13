@@ -83,8 +83,8 @@
                     "Resource": "arn:aws:s3::*:*imagebuilder*"
                 },
                 {
-                    "Action": "iam:CreateServiceLinkedRole",
                     "Effect": "Allow",
+                    "Action": "iam:CreateServiceLinkedRole",
                     "Resource": "arn:aws:iam::*:role/aws-service-role/imagebuilder.amazonaws.com/AWSServiceRoleForImageBuilder",
                     "Condition": {
                         "StringLike": {
@@ -96,19 +96,22 @@
                     "Effect": "Allow",
                     "Action": [
                         "ec2:DescribeImages",
+                        "ec2:DescribeSnapshots",
                         "ec2:DescribeVpcs",
                         "ec2:DescribeRegions",
                         "ec2:DescribeVolumes",
                         "ec2:DescribeSubnets",
                         "ec2:DescribeKeyPairs",
-                        "ec2:DescribeSecurityGroups"
+                        "ec2:DescribeSecurityGroups",
+                        "ec2:DescribeInstanceTypeOfferings",
+                        "ec2:DescribeLaunchTemplates"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-12-20T18:25:12Z"
+        "CreateDate": "2021-04-13T17:33:42Z"
     }
 }
