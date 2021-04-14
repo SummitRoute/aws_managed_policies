@@ -1,378 +1,29 @@
 [
     {
-        "findingDetails": "The 13 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: ec2:DescribeTransitGatewayPeeringAttachments.",
-        "findingType": "SUGGESTION",
-        "issueCode": "REDUNDANT_ACTION",
-        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
+        "findingDetails": "The 12263 characters in the identity policy, excluding whitespace, exceed the 10240 character maximum for inline and managed policies. We recommend that you use multiple granular policies.",
+        "findingType": "WARNING",
+        "issueCode": "POLICY_SIZE_EXCEEDS_IDENTITY_POLICY_QUOTA",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-general-warning-policy-size-exceeds-identity-policy-quota",
         "locations": [
             {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 0
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 88
-                    }
-                ],
+                "path": [],
                 "span": {
                     "end": {
-                        "column": 2483,
+                        "column": 12698,
                         "line": 1,
-                        "offset": 2483
+                        "offset": 12698
                     },
                     "start": {
-                        "column": 2468,
+                        "column": 0,
                         "line": 1,
-                        "offset": 2468
-                    }
-                }
-            },
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 0
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 89
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 2524,
-                        "line": 1,
-                        "offset": 2524
-                    },
-                    "start": {
-                        "column": 2485,
-                        "line": 1,
-                        "offset": 2485
-                    }
-                }
-            },
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 0
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 90
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 2570,
-                        "line": 1,
-                        "offset": 2570
-                    },
-                    "start": {
-                        "column": 2526,
-                        "line": 1,
-                        "offset": 2526
-                    }
-                }
-            },
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 0
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 91
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 2618,
-                        "line": 1,
-                        "offset": 2618
-                    },
-                    "start": {
-                        "column": 2572,
-                        "line": 1,
-                        "offset": 2572
-                    }
-                }
-            },
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 0
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 92
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 2659,
-                        "line": 1,
-                        "offset": 2659
-                    },
-                    "start": {
-                        "column": 2620,
-                        "line": 1,
-                        "offset": 2620
-                    }
-                }
-            },
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 0
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 93
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 2690,
-                        "line": 1,
-                        "offset": 2690
-                    },
-                    "start": {
-                        "column": 2661,
-                        "line": 1,
-                        "offset": 2661
-                    }
-                }
-            },
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 0
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 94
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 2734,
-                        "line": 1,
-                        "offset": 2734
-                    },
-                    "start": {
-                        "column": 2692,
-                        "line": 1,
-                        "offset": 2692
-                    }
-                }
-            },
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 0
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 288
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 7968,
-                        "line": 1,
-                        "offset": 7968
-                    },
-                    "start": {
-                        "column": 7929,
-                        "line": 1,
-                        "offset": 7929
-                    }
-                }
-            },
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 0
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 289
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 8014,
-                        "line": 1,
-                        "offset": 8014
-                    },
-                    "start": {
-                        "column": 7970,
-                        "line": 1,
-                        "offset": 7970
-                    }
-                }
-            },
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 0
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 290
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 8062,
-                        "line": 1,
-                        "offset": 8062
-                    },
-                    "start": {
-                        "column": 8016,
-                        "line": 1,
-                        "offset": 8016
-                    }
-                }
-            },
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 0
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 291
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 8103,
-                        "line": 1,
-                        "offset": 8103
-                    },
-                    "start": {
-                        "column": 8064,
-                        "line": 1,
-                        "offset": 8064
-                    }
-                }
-            },
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 0
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 292
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 8134,
-                        "line": 1,
-                        "offset": 8134
-                    },
-                    "start": {
-                        "column": 8105,
-                        "line": 1,
-                        "offset": 8105
-                    }
-                }
-            },
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 0
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 293
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 8178,
-                        "line": 1,
-                        "offset": 8178
-                    },
-                    "start": {
-                        "column": 8136,
-                        "line": 1,
-                        "offset": 8136
+                        "offset": 0
                     }
                 }
             }
         ]
     },
     {
-        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: ec2:GetManagedPrefixListAssociations.",
+        "findingDetails": "The 7 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: ec2:DescribeTransitGatewayPeeringAttachments.",
         "findingType": "SUGGESTION",
         "issueCode": "REDUNDANT_ACTION",
         "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
@@ -389,19 +40,19 @@
                         "value": "Action"
                     },
                     {
-                        "index": 95
+                        "index": 117
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 2774,
+                        "column": 3458,
                         "line": 1,
-                        "offset": 2774
+                        "offset": 3458
                     },
                     "start": {
-                        "column": 2736,
+                        "column": 3443,
                         "line": 1,
-                        "offset": 2736
+                        "offset": 3443
                     }
                 }
             },
@@ -417,55 +68,19 @@
                         "value": "Action"
                     },
                     {
-                        "index": 294
+                        "index": 118
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 8218,
+                        "column": 3499,
                         "line": 1,
-                        "offset": 8218
+                        "offset": 3499
                     },
                     "start": {
-                        "column": 8180,
+                        "column": 3460,
                         "line": 1,
-                        "offset": 8180
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: ec2:GetManagedPrefixListEntries.",
-        "findingType": "SUGGESTION",
-        "issueCode": "REDUNDANT_ACTION",
-        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
-        "locations": [
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 0
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 96
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 2809,
-                        "line": 1,
-                        "offset": 2809
-                    },
-                    "start": {
-                        "column": 2776,
-                        "line": 1,
-                        "offset": 2776
+                        "offset": 3460
                     }
                 }
             },
@@ -481,19 +96,131 @@
                         "value": "Action"
                     },
                     {
-                        "index": 295
+                        "index": 119
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 8253,
+                        "column": 3545,
                         "line": 1,
-                        "offset": 8253
+                        "offset": 3545
                     },
                     "start": {
-                        "column": 8220,
+                        "column": 3501,
                         "line": 1,
-                        "offset": 8220
+                        "offset": 3501
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 120
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 3593,
+                        "line": 1,
+                        "offset": 3593
+                    },
+                    "start": {
+                        "column": 3547,
+                        "line": 1,
+                        "offset": 3547
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 121
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 3634,
+                        "line": 1,
+                        "offset": 3634
+                    },
+                    "start": {
+                        "column": 3595,
+                        "line": 1,
+                        "offset": 3595
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 122
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 3678,
+                        "line": 1,
+                        "offset": 3678
+                    },
+                    "start": {
+                        "column": 3636,
+                        "line": 1,
+                        "offset": 3636
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 123
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 3709,
+                        "line": 1,
+                        "offset": 3709
+                    },
+                    "start": {
+                        "column": 3680,
+                        "line": 1,
+                        "offset": 3680
                     }
                 }
             }
@@ -517,19 +244,19 @@
                         "value": "Action"
                     },
                     {
-                        "index": 104
+                        "index": 153
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 2992,
+                        "column": 4652,
                         "line": 1,
-                        "offset": 2992
+                        "offset": 4652
                     },
                     "start": {
-                        "column": 2964,
+                        "column": 4624,
                         "line": 1,
-                        "offset": 2964
+                        "offset": 4624
                     }
                 }
             },
@@ -545,83 +272,19 @@
                         "value": "Action"
                     },
                     {
-                        "index": 302
+                        "index": 154
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 8451,
+                        "column": 4693,
                         "line": 1,
-                        "offset": 8451
+                        "offset": 4693
                     },
                     "start": {
-                        "column": 8412,
+                        "column": 4654,
                         "line": 1,
-                        "offset": 8412
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: sns:ListTagsForResource.",
-        "findingType": "SUGGESTION",
-        "issueCode": "REDUNDANT_ACTION",
-        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
-        "locations": [
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 0
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 232
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 6284,
-                        "line": 1,
-                        "offset": 6284
-                    },
-                    "start": {
-                        "column": 6259,
-                        "line": 1,
-                        "offset": 6259
-                    }
-                }
-            },
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 0
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 313
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 8830,
-                        "line": 1,
-                        "offset": 8830
-                    },
-                    "start": {
-                        "column": 8805,
-                        "line": 1,
-                        "offset": 8805
+                        "offset": 4654
                     }
                 }
             }
@@ -650,14 +313,14 @@
                 ],
                 "span": {
                     "end": {
-                        "column": 9413,
+                        "column": 12477,
                         "line": 1,
-                        "offset": 9413
+                        "offset": 12477
                     },
                     "start": {
-                        "column": 9366,
+                        "column": 12430,
                         "line": 1,
-                        "offset": 9366
+                        "offset": 12430
                     }
                 }
             },
@@ -678,14 +341,14 @@
                 ],
                 "span": {
                     "end": {
-                        "column": 9472,
+                        "column": 12536,
                         "line": 1,
-                        "offset": 9472
+                        "offset": 12536
                     },
                     "start": {
-                        "column": 9415,
+                        "column": 12479,
                         "line": 1,
-                        "offset": 9415
+                        "offset": 12479
                     }
                 }
             }

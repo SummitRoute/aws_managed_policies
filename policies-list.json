@@ -2501,12 +2501,12 @@
             "PolicyId": "ANPAIX2T3QCXHR2OGGCTO",
             "Arn": "arn:aws:iam::aws:policy/SecurityAudit",
             "Path": "/",
-            "DefaultVersionId": "v34",
+            "DefaultVersionId": "v35",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2015-02-06T18:41:01+00:00",
-            "UpdateDate": "2020-12-15T00:04:54+00:00"
+            "UpdateDate": "2021-04-14T20:28:28+00:00"
         },
         {
             "PolicyName": "AWSDiscoveryContinuousExportFirehosePolicy",

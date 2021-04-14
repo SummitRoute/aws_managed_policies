@@ -1,15 +1,9 @@
 ## AWS Access Analyzer - Findings - 2021-04-14
 
 - Policies analyzed: `811`
-- Errors: `45`
-  - [`AWSApplicationMigrationAgentPolicy`](./AWSApplicationMigrationAgentPolicy.json)
-  - [`AWSApplicationMigrationServiceRolePolicy`](./AWSApplicationMigrationServiceRolePolicy.json)
-  - [`AWSApplicationMigrationFullAccess`](./AWSApplicationMigrationFullAccess.json)
+- Errors: `4`
   - [`AWSBackupServiceRolePolicyForBackup`](./AWSBackupServiceRolePolicyForBackup.json)
   - [`AWSBackupServiceLinkedRolePolicyForBackup`](./AWSBackupServiceLinkedRolePolicyForBackup.json)
-  - [`AWSApplicationMigrationReplicationServerPolicy`](./AWSApplicationMigrationReplicationServerPolicy.json)
-  - [`AWSApplicationMigrationReadOnlyAccess`](./AWSApplicationMigrationReadOnlyAccess.json)
-  - [`AWSApplicationMigrationConversionServerPolicy`](./AWSApplicationMigrationConversionServerPolicy.json)
   - [`AWSGlueConsoleSageMakerNotebookFullAccess`](./AWSGlueConsoleSageMakerNotebookFullAccess.json)
 - Sec_Warnings: `10`
   - [`AdministratorAccess`](./AdministratorAccess.json)
@@ -22,7 +16,7 @@
   - [`AdministratorAccess-Amplify`](./AdministratorAccess-Amplify.json)
   - [`AWSDataPipelineRole`](./AWSDataPipelineRole.json)
   - [`IAMFullAccess`](./IAMFullAccess.json)
-- Suggestions: `62`
+- Suggestions: `59`
   - [`NeptuneConsoleFullAccess`](./NeptuneConsoleFullAccess.json)
   - [`DataScientist`](./DataScientist.json)
   - [`AWSElasticBeanstalkCustomPlatformforEC2Role`](./AWSElasticBeanstalkCustomPlatformforEC2Role.json)
@@ -59,7 +53,8 @@
   - [`SystemAdministrator`](./SystemAdministrator.json)
   - [`AmazonVPCFullAccess`](./AmazonVPCFullAccess.json)
   - [`AmazonQLDBConsoleFullAccess`](./AmazonQLDBConsoleFullAccess.json)
-- Warnings: `7`
+- Warnings: `8`
+  - [`SecurityAudit`](./SecurityAudit.json)
   - [`AdministratorAccess`](./AdministratorAccess.json)
   - [`ReadOnlyAccess`](./ReadOnlyAccess.json)
   - [`AWSOrganizationsServiceTrustPolicy`](./AWSOrganizationsServiceTrustPolicy.json)
