@@ -9,7 +9,9 @@
                         "ec2:DescribeNetworkInterfaces",
                         "ec2:ModifyNetworkInterfaceAttribute",
                         "ec2:DeleteNetworkInterface",
-                        "ec2:CreateNetworkInterfacePermission"
+                        "ec2:CreateNetworkInterfacePermission",
+                        "ec2:AssignIpv6Addresses",
+                        "ec2:UnAssignIpv6Addresses"
                     ],
                     "Resource": "*",
                     "Effect": "Allow",
@@ -17,8 +19,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-11-26T16:21:17Z"
+        "CreateDate": "2021-04-15T16:31:44Z"
     }
 }
