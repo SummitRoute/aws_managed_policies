@@ -147,6 +147,13 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "ssm:AddTagsToResource"
+                    ],
+                    "Resource": "arn:aws:ssm:*:*:opsitem/*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
                         "ssm:ListCommandInvocations"
                     ],
                     "Resource": [
@@ -270,8 +277,8 @@
                 }
             ]
         },
-        "VersionId": "v12",
+        "VersionId": "v13",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-01-19T20:27:15Z"
+        "CreateDate": "2021-04-15T00:30:19Z"
     }
 }
