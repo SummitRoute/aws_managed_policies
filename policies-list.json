@@ -4950,7 +4950,7 @@
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/APIGatewayServiceRolePolicy",
             "Path": "/aws-service-role/",
             "DefaultVersionId": "v8",
-            "AttachmentCount": 0,
+            "AttachmentCount": 1,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2017-10-20T17:23:10+00:00",
@@ -5069,12 +5069,12 @@
             "PolicyId": "ANPAJS2PBJSYV2EZW3MIQ",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/AWSVPCTransitGatewayServiceRolePolicy",
             "Path": "/aws-service-role/",
-            "DefaultVersionId": "v1",
+            "DefaultVersionId": "v2",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2018-11-26T16:21:17+00:00",
-            "UpdateDate": "2018-11-26T16:21:17+00:00"
+            "UpdateDate": "2021-04-15T16:31:44+00:00"
         },
         {
             "PolicyName": "NeptuneReadOnlyAccess",
