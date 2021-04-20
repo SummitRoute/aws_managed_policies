@@ -37,6 +37,7 @@
                         "sqs:GetQueueAttributes",
                         "sqs:GetQueueUrl",
                         "sqs:ListQueues",
+                        "synthetics:DescribeCanariesLastRun",
                         "tag:GetResources"
                     ],
                     "Effect": "Allow",
@@ -53,8 +54,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-12-18T17:48:20Z"
+        "CreateDate": "2021-04-20T13:05:40Z"
     }
 }
