@@ -217,18 +217,6 @@
             "UpdateDate": "2019-01-09T20:30:28+00:00"
         },
         {
-            "PolicyName": "AWSElasticBeanstalkReadOnlyAccess",
-            "PolicyId": "ANPAI47KNGXDAXFD4SDHG",
-            "Arn": "arn:aws:iam::aws:policy/AWSElasticBeanstalkReadOnlyAccess",
-            "Path": "/",
-            "DefaultVersionId": "v1",
-            "AttachmentCount": 0,
-            "PermissionsBoundaryUsageCount": 0,
-            "IsAttachable": true,
-            "CreateDate": "2015-02-06T18:40:19+00:00",
-            "UpdateDate": "2015-02-06T18:40:19+00:00"
-        },
-        {
             "PolicyName": "AmazonMQApiFullAccess",
             "PolicyId": "ANPAI4CMO533EBV3L2GW4",
             "Arn": "arn:aws:iam::aws:policy/AmazonMQApiFullAccess",
@@ -2773,18 +2761,6 @@
             "UpdateDate": "2015-02-06T18:40:59+00:00"
         },
         {
-            "PolicyName": "AWSElasticBeanstalkFullAccess",
-            "PolicyId": "ANPAIZYX2YLLBW2LJVUFW",
-            "Arn": "arn:aws:iam::aws:policy/AWSElasticBeanstalkFullAccess",
-            "Path": "/",
-            "DefaultVersionId": "v8",
-            "AttachmentCount": 0,
-            "PermissionsBoundaryUsageCount": 0,
-            "IsAttachable": true,
-            "CreateDate": "2015-02-06T18:40:18+00:00",
-            "UpdateDate": "2019-07-10T19:27:59+00:00"
-        },
-        {
             "PolicyName": "AmazonWorkSpacesAdmin",
             "PolicyId": "ANPAJ26AU6ATUQCT5KVJU",
             "Arn": "arn:aws:iam::aws:policy/AmazonWorkSpacesAdmin",
@@ -4578,7 +4554,7 @@
             "Arn": "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
             "Path": "/service-role/",
             "DefaultVersionId": "v1",
-            "AttachmentCount": 8,
+            "AttachmentCount": 9,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2015-04-09T15:03:43+00:00",
@@ -7949,12 +7925,12 @@
             "PolicyId": "ANPAZKAPJZG4JFCXGSE2Q",
             "Arn": "arn:aws:iam::aws:policy/CloudWatchAutomaticDashboardsAccess",
             "Path": "/",
-            "DefaultVersionId": "v3",
+            "DefaultVersionId": "v4",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2019-07-23T10:01:08+00:00",
-            "UpdateDate": "2020-12-18T17:48:20+00:00"
+            "UpdateDate": "2021-04-20T13:05:40+00:00"
         },
         {
             "PolicyName": "AWSDeepRacerFullAccess",

@@ -1,18 +1,15 @@
-## AWS Access Analyzer - Findings - 2021-04-15
+## AWS Access Analyzer - Findings - 2021-04-20
 
-- Policies analyzed: `811`
-- Errors: `4`
-  - [`AWSBackupServiceRolePolicyForBackup`](./AWSBackupServiceRolePolicyForBackup.json)
-  - [`AWSBackupServiceLinkedRolePolicyForBackup`](./AWSBackupServiceLinkedRolePolicyForBackup.json)
+- Policies analyzed: `809`
+- Errors: `1`
   - [`AWSGlueConsoleSageMakerNotebookFullAccess`](./AWSGlueConsoleSageMakerNotebookFullAccess.json)
-- Sec_Warnings: `10`
+- Sec_Warnings: `9`
   - [`AdministratorAccess`](./AdministratorAccess.json)
   - [`AmazonDynamoDBFullAccesswithDataPipeline`](./AmazonDynamoDBFullAccesswithDataPipeline.json)
   - [`AmazonElasticMapReduceRole`](./AmazonElasticMapReduceRole.json)
   - [`AWSElasticBeanstalkService`](./AWSElasticBeanstalkService.json)
   - [`AmazonElasticMapReduceFullAccess`](./AmazonElasticMapReduceFullAccess.json)
   - [`AWSServiceRoleForAmazonEKSNodegroup`](./AWSServiceRoleForAmazonEKSNodegroup.json)
-  - [`AWSElasticBeanstalkFullAccess`](./AWSElasticBeanstalkFullAccess.json)
   - [`AdministratorAccess-Amplify`](./AdministratorAccess-Amplify.json)
   - [`AWSDataPipelineRole`](./AWSDataPipelineRole.json)
   - [`IAMFullAccess`](./IAMFullAccess.json)
@@ -64,7 +61,7 @@
   - [`IAMFullAccess`](./IAMFullAccess.json)
 - Fails: `1`
   - [`AWSSupportServiceRolePolicy`](./AWSSupportServiceRolePolicy.json)
-- Deprecated: `35`
+- Deprecated: `37`
   - `AmazonMachineLearningRoleforRedshiftDataSource`
   - `ServiceCatalogEndUserAccess`
   - `AmazonConnectFullAccess`
@@ -74,6 +71,7 @@
   - `AWSServiceRoleForCodeGuruProfiler`
   - `AmazonLaunchWizardFullaccess`
   - `AWS_Config_Role`
+  - `AWSElasticBeanstalkReadOnlyAccess`
   - `AWSOpsWorksRole`
   - `AWSBackupOperatorPolicy`
   - `AmazonEC2SpotFleetRole`
@@ -85,6 +83,7 @@
   - `AmazonEverestServicePolicy`
   - `AmazonMachineLearningRoleforRedshiftDataSourceV2`
   - `AmazonEC2RolePolicyForApplicationWizard`
+  - `AWSElasticBeanstalkFullAccess`
   - `AWSLambdaFullAccess`
   - `AWSOpsWorksRegisterCLI`
   - `AWSCloudTrailFullAccess`
