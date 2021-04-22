@@ -6,6 +6,7 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "autoscaling:DescribeAutoScalingGroups",
                         "cloudtrail:LookupEvents",
                         "cloudwatch:GetMetricData",
                         "cloudwatch:ListMetrics",
@@ -46,6 +47,14 @@
                     "Resource": "*"
                 },
                 {
+                    "Sid": "AllowAddTagsToOpsItem",
+                    "Effect": "Allow",
+                    "Action": [
+                        "ssm:AddTagsToResource"
+                    ],
+                    "Resource": "arn:aws:ssm:*:*:opsitem/*"
+                },
+                {
                     "Sid": "AllowAccessOpsItem",
                     "Effect": "Allow",
                     "Action": [
@@ -61,8 +70,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-12-01T10:24:42Z"
+        "CreateDate": "2021-04-21T23:51:53Z"
     }
 }
