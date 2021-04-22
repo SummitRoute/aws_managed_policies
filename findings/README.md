@@ -1,6 +1,6 @@
-## AWS Access Analyzer - Findings - 2021-04-21
+## AWS Access Analyzer - Findings - 2021-04-22
 
-- Policies analyzed: `809`
+- Policies analyzed: `810`
 - Errors: `1`
   - [`AWSGlueConsoleSageMakerNotebookFullAccess`](./AWSGlueConsoleSageMakerNotebookFullAccess.json)
 - Sec_Warnings: `9`
