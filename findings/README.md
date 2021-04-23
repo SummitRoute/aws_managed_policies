@@ -1,8 +1,9 @@
-## AWS Access Analyzer - Findings - 2021-04-22
+## AWS Access Analyzer - Findings - 2021-04-23
 
 - Policies analyzed: `810`
-- Errors: `1`
+- Errors: `3`
   - [`AWSGlueConsoleSageMakerNotebookFullAccess`](./AWSGlueConsoleSageMakerNotebookFullAccess.json)
+  - [`AmazonDevOpsGuruReadOnlyAccess`](./AmazonDevOpsGuruReadOnlyAccess.json)
 - Sec_Warnings: `9`
   - [`AmazonElasticMapReduceFullAccess`](./AmazonElasticMapReduceFullAccess.json)
   - [`AWSServiceRoleForAmazonEKSNodegroup`](./AWSServiceRoleForAmazonEKSNodegroup.json)
