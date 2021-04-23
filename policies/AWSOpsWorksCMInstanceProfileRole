@@ -33,13 +33,13 @@
                 },
                 {
                     "Action": "secretsmanager:GetSecretValue",
-                    "Resource": "arn:aws:secretsmanager:*:*:aws-opsworks-cm-secrets-*",
+                    "Resource": "arn:aws:secretsmanager:*:*:opsworks-cm!aws-opsworks-cm-secrets-*",
                     "Effect": "Allow"
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-01-12T09:37:42Z"
+        "CreateDate": "2021-04-23T17:34:03Z"
     }
 }

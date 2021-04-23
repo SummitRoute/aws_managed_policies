@@ -155,7 +155,7 @@
                 },
                 {
                     "Effect": "Allow",
-                    "Resource": "arn:aws:secretsmanager:*:*:aws-opsworks-cm-secrets-*",
+                    "Resource": "arn:aws:secretsmanager:*:*:opsworks-cm!aws-opsworks-cm-secrets-*",
                     "Action": [
                         "secretsmanager:CreateSecret",
                         "secretsmanager:GetSecretValue",
@@ -176,8 +176,8 @@
                 }
             ]
         },
-        "VersionId": "v13",
+        "VersionId": "v14",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-01-06T15:08:35Z"
+        "CreateDate": "2021-04-23T17:32:13Z"
     }
 }
