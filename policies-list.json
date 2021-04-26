@@ -2573,12 +2573,12 @@
             "PolicyId": "ANPAIXJ26NUGBA3TCV7EC",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/AmazonSSMServiceRolePolicy",
             "Path": "/aws-service-role/",
-            "DefaultVersionId": "v12",
+            "DefaultVersionId": "v13",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2017-11-13T19:20:08+00:00",
-            "UpdateDate": "2021-03-23T18:12:57+00:00"
+            "UpdateDate": "2021-04-26T20:43:46+00:00"
         },
         {
             "PolicyName": "AWSDataPipeline_FullAccess",
@@ -7055,6 +7055,18 @@
             "IsAttachable": true,
             "CreateDate": "2020-08-24T18:36:01+00:00",
             "UpdateDate": "2020-08-24T18:36:01+00:00"
+        },
+        {
+            "PolicyName": "AWSSystemsManagerOpsDataSyncServiceRolePolicy",
+            "PolicyId": "ANPAZKAPJZG4FUXS4O2QJ",
+            "Arn": "arn:aws:iam::aws:policy/aws-service-role/AWSSystemsManagerOpsDataSyncServiceRolePolicy",
+            "Path": "/aws-service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-04-26T20:42:39+00:00",
+            "UpdateDate": "2021-04-26T20:42:39+00:00"
         },
         {
             "PolicyName": "AmazonCodeGuruProfilerFullAccess",

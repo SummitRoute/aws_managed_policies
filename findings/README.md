@@ -1,6 +1,6 @@
-## AWS Access Analyzer - Findings - 2021-04-23
+## AWS Access Analyzer - Findings - 2021-04-26
 
-- Policies analyzed: `810`
+- Policies analyzed: `811`
 - Errors: `3`
   - [`AWSGlueConsoleSageMakerNotebookFullAccess`](./AWSGlueConsoleSageMakerNotebookFullAccess.json)
   - [`AmazonDevOpsGuruReadOnlyAccess`](./AmazonDevOpsGuruReadOnlyAccess.json)
