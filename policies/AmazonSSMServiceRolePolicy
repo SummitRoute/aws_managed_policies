@@ -106,7 +106,8 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "compute-optimizer:GetEC2InstanceRecommendations"
+                        "compute-optimizer:GetEC2InstanceRecommendations",
+                        "compute-optimizer:GetEnrollmentStatus"
                     ],
                     "Resource": [
                         "*"
@@ -129,7 +130,8 @@
                     "Action": [
                         "config:DescribeComplianceByConfigRule",
                         "config:DescribeComplianceByResource",
-                        "config:DescribeRemediationConfigurations"
+                        "config:DescribeRemediationConfigurations",
+                        "config:DescribeConfigurationRecorders"
                     ],
                     "Resource": [
                         "*"
@@ -174,11 +176,44 @@
                         "arn:aws:cloudformation:*:*:stackset-target/AWS-QuickSetup-SSM*:*",
                         "arn:aws:cloudformation:*:*:type/resource/*"
                     ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "events:PutRule",
+                        "events:PutTargets"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEquals": {
+                            "events:ManagedBy": "ssm.amazonaws.com"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "events:RemoveTargets",
+                        "events:DeleteRule"
+                    ],
+                    "Resource": [
+                        "arn:aws:events:*:*:rule/SSMExplorerManagedRule"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "events:DescribeRule",
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "securityhub:DescribeHub",
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v12",
+        "VersionId": "v13",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-03-23T18:12:57Z"
+        "CreateDate": "2021-04-26T20:43:46Z"
     }
 }
