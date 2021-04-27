@@ -8041,6 +8041,18 @@
             "UpdateDate": "2020-12-07T23:31:31+00:00"
         },
         {
+            "PolicyName": "AWSCloudWatchAlarms_ActionSSMIncidentsServiceRolePolicy",
+            "PolicyId": "ANPAZKAPJZG4JS7SI2RZY",
+            "Arn": "arn:aws:iam::aws:policy/aws-service-role/AWSCloudWatchAlarms_ActionSSMIncidentsServiceRolePolicy",
+            "Path": "/aws-service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-04-27T13:30:52+00:00",
+            "UpdateDate": "2021-04-27T13:30:52+00:00"
+        },
+        {
             "PolicyName": "AWSIoTWirelessFullPublishAccess",
             "PolicyId": "ANPAZKAPJZG4JSRC2FZ22",
             "Arn": "arn:aws:iam::aws:policy/AWSIoTWirelessFullPublishAccess",
