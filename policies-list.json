@@ -6265,6 +6265,18 @@
             "UpdateDate": "2020-03-06T19:26:01+00:00"
         },
         {
+            "PolicyName": "AmazonNimbleStudio-StudioUser",
+            "PolicyId": "ANPAZKAPJZG4CA37MTXJV",
+            "Arn": "arn:aws:iam::aws:policy/AmazonNimbleStudio-StudioUser",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-04-28T04:48:11+00:00",
+            "UpdateDate": "2021-04-28T04:48:11+00:00"
+        },
+        {
             "PolicyName": "AWSCloudTrail_FullAccess",
             "PolicyId": "ANPAZKAPJZG4CA4SIJQAM",
             "Arn": "arn:aws:iam::aws:policy/AWSCloudTrail_FullAccess",
@@ -7163,6 +7175,18 @@
             "IsAttachable": true,
             "CreateDate": "2021-02-23T00:15:54+00:00",
             "UpdateDate": "2021-02-23T00:15:54+00:00"
+        },
+        {
+            "PolicyName": "AmazonNimbleStudio-LaunchProfileWorker",
+            "PolicyId": "ANPAZKAPJZG4G3GPJQ7LQ",
+            "Arn": "arn:aws:iam::aws:policy/AmazonNimbleStudio-LaunchProfileWorker",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-04-28T04:47:02+00:00",
+            "UpdateDate": "2021-04-28T04:47:02+00:00"
         },
         {
             "PolicyName": "AWSElasticBeanstalkRoleCWL",
@@ -9707,6 +9731,18 @@
             "IsAttachable": true,
             "CreateDate": "2020-09-15T20:30:30+00:00",
             "UpdateDate": "2021-03-31T21:44:14+00:00"
+        },
+        {
+            "PolicyName": "AmazonNimbleStudio-StudioAdmin",
+            "PolicyId": "ANPAZKAPJZG4PTQDL2ND4",
+            "Arn": "arn:aws:iam::aws:policy/AmazonNimbleStudio-StudioAdmin",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-04-28T04:47:36+00:00",
+            "UpdateDate": "2021-04-28T04:47:36+00:00"
         },
         {
             "PolicyName": "AWSCodeArtifactReadOnlyAccess",

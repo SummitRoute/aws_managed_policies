@@ -1,10 +1,12 @@
-## AWS Access Analyzer - Findings - 2021-04-27
+## AWS Access Analyzer - Findings - 2021-04-28
 
-- Policies analyzed: `812`
-- Errors: `4`
+- Policies analyzed: `815`
+- Errors: `43`
+  - [`AmazonNimbleStudio-StudioAdmin`](./AmazonNimbleStudio-StudioAdmin.json)
   - [`AWSGlueConsoleSageMakerNotebookFullAccess`](./AWSGlueConsoleSageMakerNotebookFullAccess.json)
   - [`AmazonDevOpsGuruReadOnlyAccess`](./AmazonDevOpsGuruReadOnlyAccess.json)
   - [`AWSCloudWatchAlarms_ActionSSMIncidentsServiceRolePolicy`](./AWSCloudWatchAlarms_ActionSSMIncidentsServiceRolePolicy.json)
+  - [`AmazonNimbleStudio-StudioUser`](./AmazonNimbleStudio-StudioUser.json)
 - Sec_Warnings: `9`
   - [`AmazonElasticMapReduceFullAccess`](./AmazonElasticMapReduceFullAccess.json)
   - [`AWSServiceRoleForAmazonEKSNodegroup`](./AWSServiceRoleForAmazonEKSNodegroup.json)
