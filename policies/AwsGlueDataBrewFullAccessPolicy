@@ -6,6 +6,9 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "appflow:DescribeFlow",
+                        "appflow:DescribeFlowExecutionRecords",
+                        "appflow:ListFlows",
                         "databrew:*",
                         "glue:GetConnection",
                         "glue:GetConnections",
@@ -96,8 +99,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-03-30T17:03:07Z"
+        "CreateDate": "2021-04-28T15:54:32Z"
     }
 }
