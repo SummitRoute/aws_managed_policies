@@ -37,11 +37,18 @@
                             "kms:ViaService": "lookoutequipment.*.amazonaws.com"
                         }
                     }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "kms:DescribeKey"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-04-08T15:52:08Z"
+        "CreateDate": "2021-05-05T16:46:56Z"
     }
 }
