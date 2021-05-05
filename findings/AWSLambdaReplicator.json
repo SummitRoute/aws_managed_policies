@@ -1,9 +1,9 @@
 [
     {
-        "findingDetails": "The service ssm-incidents:StartIncident specified in the action does not exist.",
+        "findingDetails": "The action cloudfront:ListDistributionsByLambdaFunction does not exist.",
         "findingType": "ERROR",
-        "issueCode": "INVALID_SERVICE_IN_ACTION",
-        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
         "locations": [
             {
                 "path": [
@@ -11,22 +11,25 @@
                         "value": "Statement"
                     },
                     {
-                        "index": 0
+                        "index": 2
                     },
                     {
                         "value": "Action"
+                    },
+                    {
+                        "index": 0
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 134,
+                        "column": 539,
                         "line": 1,
-                        "offset": 134
+                        "offset": 539
                     },
                     "start": {
-                        "column": 105,
+                        "column": 493,
                         "line": 1,
-                        "offset": 105
+                        "offset": 493
                     }
                 }
             }
