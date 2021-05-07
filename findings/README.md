@@ -1,6 +1,6 @@
-## AWS Access Analyzer - Findings - 2021-05-05
+## AWS Access Analyzer - Findings - 2021-05-07
 
-- Policies analyzed: `816`
+- Policies analyzed: `818`
 - Errors: `53`
   - [`AmazonNimbleStudio-StudioUser`](./AmazonNimbleStudio-StudioUser.json)
   - [`ViewOnlyAccess`](./ViewOnlyAccess.json)

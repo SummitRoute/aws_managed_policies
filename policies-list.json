@@ -6493,6 +6493,18 @@
             "UpdateDate": "2020-12-01T13:13:18+00:00"
         },
         {
+            "PolicyName": "AmazonLookoutMetricsFullAccess",
+            "PolicyId": "ANPAZKAPJZG4CYQN5ZMMA",
+            "Arn": "arn:aws:iam::aws:policy/AmazonLookoutMetricsFullAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-05-07T00:43:38+00:00",
+            "UpdateDate": "2021-05-07T00:43:38+00:00"
+        },
+        {
             "PolicyName": "AWSApplicationMigrationAgentPolicy",
             "PolicyId": "ANPAZKAPJZG4D2GD5QYXR",
             "Arn": "arn:aws:iam::aws:policy/AWSApplicationMigrationAgentPolicy",
@@ -8903,6 +8915,18 @@
             "IsAttachable": true,
             "CreateDate": "2020-05-27T19:38:34+00:00",
             "UpdateDate": "2020-05-27T19:38:34+00:00"
+        },
+        {
+            "PolicyName": "AmazonLookoutMetricsReadOnlyAccess",
+            "PolicyId": "ANPAZKAPJZG4MP33SLV3F",
+            "Arn": "arn:aws:iam::aws:policy/AmazonLookoutMetricsReadOnlyAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-05-07T00:43:34+00:00",
+            "UpdateDate": "2021-05-07T00:43:34+00:00"
         },
         {
             "PolicyName": "AWSDataExchangeFullAccess",
