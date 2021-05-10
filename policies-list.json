@@ -6593,12 +6593,12 @@
             "PolicyId": "ANPAZKAPJZG4DQNFEZURI",
             "Arn": "arn:aws:iam::aws:policy/AWSDataExchangeReadOnly",
             "Path": "/",
-            "DefaultVersionId": "v1",
+            "DefaultVersionId": "v2",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2019-11-13T19:27:37+00:00",
-            "UpdateDate": "2019-11-13T19:27:37+00:00"
+            "UpdateDate": "2021-05-10T21:15:26+00:00"
         },
         {
             "PolicyName": "AWSMarketplaceSellerProductsFullAccess",
@@ -8957,24 +8957,24 @@
             "PolicyId": "ANPAZKAPJZG4MPDTDB3FH",
             "Arn": "arn:aws:iam::aws:policy/AWSDataExchangeFullAccess",
             "Path": "/",
-            "DefaultVersionId": "v3",
+            "DefaultVersionId": "v4",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2019-11-13T19:27:59+00:00",
-            "UpdateDate": "2021-01-19T19:42:47+00:00"
+            "UpdateDate": "2021-05-10T21:07:38+00:00"
         },
         {
             "PolicyName": "AWSDataExchangeProviderFullAccess",
             "PolicyId": "ANPAZKAPJZG4MQSUGZZPZ",
             "Arn": "arn:aws:iam::aws:policy/AWSDataExchangeProviderFullAccess",
             "Path": "/",
-            "DefaultVersionId": "v5",
+            "DefaultVersionId": "v6",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2019-11-13T19:27:55+00:00",
-            "UpdateDate": "2021-01-14T21:20:09+00:00"
+            "UpdateDate": "2021-05-10T21:11:47+00:00"
         },
         {
             "PolicyName": "CloudWatchApplicationInsightsFullAccess",

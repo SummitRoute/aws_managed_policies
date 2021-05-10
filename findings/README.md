@@ -1,8 +1,7 @@
 ## AWS Access Analyzer - Findings - 2021-05-10
 
 - Policies analyzed: `820`
-- Errors: `72`
-  - [`AmazonNimbleStudio-StudioUser`](./AmazonNimbleStudio-StudioUser.json)
+- Errors: `33`
   - [`AmazonElasticFileSystemReadOnlyAccess`](./AmazonElasticFileSystemReadOnlyAccess.json)
   - [`ViewOnlyAccess`](./ViewOnlyAccess.json)
   - [`AWSGlueConsoleSageMakerNotebookFullAccess`](./AWSGlueConsoleSageMakerNotebookFullAccess.json)
@@ -12,7 +11,6 @@
   - [`AWSIncidentManagerResolverAccess`](./AWSIncidentManagerResolverAccess.json)
   - [`ReadOnlyAccess`](./ReadOnlyAccess.json)
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
-  - [`AmazonNimbleStudio-StudioAdmin`](./AmazonNimbleStudio-StudioAdmin.json)
 - Sec_Warnings: `9`
   - [`AWSElasticBeanstalkService`](./AWSElasticBeanstalkService.json)
   - [`AdministratorAccess-Amplify`](./AdministratorAccess-Amplify.json)
