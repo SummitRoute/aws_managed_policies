@@ -103,7 +103,9 @@
                         "aws-marketplace:ListAgreementApprovalRequests",
                         "aws-marketplace:AcceptAgreementApprovalRequest",
                         "aws-marketplace:RejectAgreementApprovalRequest",
-                        "aws-marketplace:UpdateAgreementApprovalRequest"
+                        "aws-marketplace:UpdateAgreementApprovalRequest",
+                        "aws-marketplace:SearchAgreements",
+                        "aws-marketplace:GetAgreementTerms"
                     ],
                     "Resource": "*"
                 },
@@ -118,8 +120,8 @@
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-01-14T21:20:09Z"
+        "CreateDate": "2021-05-10T21:11:47Z"
     }
 }
