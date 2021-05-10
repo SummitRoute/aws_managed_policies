@@ -6829,6 +6829,18 @@
             "UpdateDate": "2021-04-13T17:33:42+00:00"
         },
         {
+            "PolicyName": "AWSIncidentManagerResolverAccess",
+            "PolicyId": "ANPAZKAPJZG4EQ4SDPENY",
+            "Arn": "arn:aws:iam::aws:policy/AWSIncidentManagerResolverAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-05-10T06:12:34+00:00",
+            "UpdateDate": "2021-05-10T06:12:34+00:00"
+        },
+        {
             "PolicyName": "AWSCertificateManagerPrivateCAPrivilegedUser",
             "PolicyId": "ANPAZKAPJZG4EQ6CWU5X5",
             "Arn": "arn:aws:iam::aws:policy/AWSCertificateManagerPrivateCAPrivilegedUser",

@@ -1,0 +1,434 @@
+[
+    {
+        "findingDetails": "The action ssm-incidents:ListResponsePlans does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 0
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 262,
+                        "line": 1,
+                        "offset": 262
+                    },
+                    "start": {
+                        "column": 229,
+                        "line": 1,
+                        "offset": 229
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action ssm-incidents:GetResponsePlan does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 1
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 295,
+                        "line": 1,
+                        "offset": 295
+                    },
+                    "start": {
+                        "column": 264,
+                        "line": 1,
+                        "offset": 264
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action ssm-incidents:ListIncidentRecords does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 0
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 426,
+                        "line": 1,
+                        "offset": 426
+                    },
+                    "start": {
+                        "column": 391,
+                        "line": 1,
+                        "offset": 391
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action ssm-incidents:GetIncidentRecord does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 1
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 461,
+                        "line": 1,
+                        "offset": 461
+                    },
+                    "start": {
+                        "column": 428,
+                        "line": 1,
+                        "offset": 428
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action ssm-incidents:UpdateIncidentRecord does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 2
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 499,
+                        "line": 1,
+                        "offset": 499
+                    },
+                    "start": {
+                        "column": 463,
+                        "line": 1,
+                        "offset": 463
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action ssm-incidents:ListTimelineEvents does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 3
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 535,
+                        "line": 1,
+                        "offset": 535
+                    },
+                    "start": {
+                        "column": 501,
+                        "line": 1,
+                        "offset": 501
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action ssm-incidents:CreateTimelineEvent does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 4
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 572,
+                        "line": 1,
+                        "offset": 572
+                    },
+                    "start": {
+                        "column": 537,
+                        "line": 1,
+                        "offset": 537
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action ssm-incidents:GetTimelineEvent does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 5
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 606,
+                        "line": 1,
+                        "offset": 606
+                    },
+                    "start": {
+                        "column": 574,
+                        "line": 1,
+                        "offset": 574
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action ssm-incidents:UpdateTimelineEvent does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 6
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 643,
+                        "line": 1,
+                        "offset": 643
+                    },
+                    "start": {
+                        "column": 608,
+                        "line": 1,
+                        "offset": 608
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action ssm-incidents:DeleteTimelineEvent does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 7
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 680,
+                        "line": 1,
+                        "offset": 680
+                    },
+                    "start": {
+                        "column": 645,
+                        "line": 1,
+                        "offset": 645
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action ssm-incidents:ListRelatedItems does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 8
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 714,
+                        "line": 1,
+                        "offset": 714
+                    },
+                    "start": {
+                        "column": 682,
+                        "line": 1,
+                        "offset": 682
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action ssm-incidents:UpdateRelatedItems does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 9
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 750,
+                        "line": 1,
+                        "offset": 750
+                    },
+                    "start": {
+                        "column": 716,
+                        "line": 1,
+                        "offset": 716
+                    }
+                }
+            }
+        ]
+    }
+]
