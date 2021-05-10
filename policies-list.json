@@ -7765,6 +7765,18 @@
             "UpdateDate": "2021-01-07T19:54:08+00:00"
         },
         {
+            "PolicyName": "AWSIncidentManagerServiceRolePolicy",
+            "PolicyId": "ANPAZKAPJZG4INCMTEIEV",
+            "Arn": "arn:aws:iam::aws:policy/aws-service-role/AWSIncidentManagerServiceRolePolicy",
+            "Path": "/aws-service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-05-10T03:34:45+00:00",
+            "UpdateDate": "2021-05-10T03:34:45+00:00"
+        },
+        {
             "PolicyName": "AWSProtonFullAccess",
             "PolicyId": "ANPAZKAPJZG4IOK6P734E",
             "Arn": "arn:aws:iam::aws:policy/AWSProtonFullAccess",
