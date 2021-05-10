@@ -1865,12 +1865,12 @@
             "PolicyId": "ANPAIPN5S4NE5JJOKVC4Y",
             "Arn": "arn:aws:iam::aws:policy/AmazonElasticFileSystemReadOnlyAccess",
             "Path": "/",
-            "DefaultVersionId": "v5",
+            "DefaultVersionId": "v6",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2015-05-27T16:25:25+00:00",
-            "UpdateDate": "2020-07-16T16:46:50+00:00"
+            "UpdateDate": "2021-05-10T14:20:55+00:00"
         },
         {
             "PolicyName": "AWSCloudMapDiscoverInstanceAccess",
@@ -4241,12 +4241,12 @@
             "PolicyId": "ANPAJKXTMNVQGIDNCKPBC",
             "Arn": "arn:aws:iam::aws:policy/AmazonElasticFileSystemFullAccess",
             "Path": "/",
-            "DefaultVersionId": "v6",
+            "DefaultVersionId": "v7",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2015-05-27T16:22:28+00:00",
-            "UpdateDate": "2020-07-16T16:46:23+00:00"
+            "UpdateDate": "2021-05-10T14:25:43+00:00"
         },
         {
             "PolicyName": "LexChannelPolicy",

@@ -1,11 +1,13 @@
 ## AWS Access Analyzer - Findings - 2021-05-10
 
 - Policies analyzed: `820`
-- Errors: `69`
+- Errors: `72`
   - [`AmazonNimbleStudio-StudioUser`](./AmazonNimbleStudio-StudioUser.json)
+  - [`AmazonElasticFileSystemReadOnlyAccess`](./AmazonElasticFileSystemReadOnlyAccess.json)
   - [`ViewOnlyAccess`](./ViewOnlyAccess.json)
   - [`AWSGlueConsoleSageMakerNotebookFullAccess`](./AWSGlueConsoleSageMakerNotebookFullAccess.json)
   - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)
+  - [`AmazonElasticFileSystemFullAccess`](./AmazonElasticFileSystemFullAccess.json)
   - [`AWSIncidentManagerServiceRolePolicy`](./AWSIncidentManagerServiceRolePolicy.json)
   - [`AWSIncidentManagerResolverAccess`](./AWSIncidentManagerResolverAccess.json)
   - [`ReadOnlyAccess`](./ReadOnlyAccess.json)
