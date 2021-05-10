@@ -26,6 +26,7 @@
                         "elasticfilesystem:DeleteTags",
                         "elasticfilesystem:DeleteAccessPoint",
                         "elasticfilesystem:DeleteFileSystemPolicy",
+                        "elasticfilesystem:DescribeAccountPreferences",
                         "elasticfilesystem:DescribeBackupPolicy",
                         "elasticfilesystem:DescribeFileSystems",
                         "elasticfilesystem:DescribeFileSystemPolicy",
@@ -35,6 +36,7 @@
                         "elasticfilesystem:DescribeTags",
                         "elasticfilesystem:DescribeAccessPoints",
                         "elasticfilesystem:ModifyMountTargetSecurityGroups",
+                        "elasticfilesystem:PutAccountPreferences",
                         "elasticfilesystem:PutBackupPolicy",
                         "elasticfilesystem:PutLifecycleConfiguration",
                         "elasticfilesystem:PutFileSystemPolicy",
@@ -64,8 +66,8 @@
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-07-16T16:46:23Z"
+        "CreateDate": "2021-05-10T14:25:43Z"
     }
 }

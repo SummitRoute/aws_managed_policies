@@ -14,6 +14,7 @@
                         "ec2:DescribeSubnets",
                         "ec2:DescribeVpcAttribute",
                         "ec2:DescribeVpcs",
+                        "elasticfilesystem:DescribeAccountPreferences",
                         "elasticfilesystem:DescribeBackupPolicy",
                         "elasticfilesystem:DescribeFileSystems",
                         "elasticfilesystem:DescribeFileSystemPolicy",
@@ -30,8 +31,8 @@
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-07-16T16:46:50Z"
+        "CreateDate": "2021-05-10T14:20:55Z"
     }
 }
