@@ -1985,12 +1985,12 @@
             "PolicyId": "ANPAIQRXRDRGJUA33ELIO",
             "Arn": "arn:aws:iam::aws:policy/service-role/AWSConfigRole",
             "Path": "/service-role/",
-            "DefaultVersionId": "v37",
+            "DefaultVersionId": "v38",
             "AttachmentCount": 1,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2015-04-02T17:36:23+00:00",
-            "UpdateDate": "2021-03-31T21:17:48+00:00"
+            "UpdateDate": "2021-05-10T16:57:29+00:00"
         },
         {
             "PolicyName": "AWSSSOMemberAccountAdministrator",
