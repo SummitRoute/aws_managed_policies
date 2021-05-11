@@ -6337,6 +6337,18 @@
             "UpdateDate": "2020-06-02T23:26:51+00:00"
         },
         {
+            "PolicyName": "AmazonLookoutVisionConsoleReadOnlyAccess",
+            "PolicyId": "ANPAZKAPJZG4CE2DP5IDX",
+            "Arn": "arn:aws:iam::aws:policy/AmazonLookoutVisionConsoleReadOnlyAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-05-11T19:32:02+00:00",
+            "UpdateDate": "2021-05-11T19:32:02+00:00"
+        },
+        {
             "PolicyName": "AWSQuickSightTimestreamPolicy",
             "PolicyId": "ANPAZKAPJZG4CFKVDHQJH",
             "Arn": "arn:aws:iam::aws:policy/service-role/AWSQuickSightTimestreamPolicy",
@@ -6395,6 +6407,18 @@
             "IsAttachable": true,
             "CreateDate": "2020-04-01T22:31:09+00:00",
             "UpdateDate": "2020-04-01T22:31:09+00:00"
+        },
+        {
+            "PolicyName": "AmazonLookoutVisionFullAccess",
+            "PolicyId": "ANPAZKAPJZG4CMORWIX77",
+            "Arn": "arn:aws:iam::aws:policy/AmazonLookoutVisionFullAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-05-11T19:24:54+00:00",
+            "UpdateDate": "2021-05-11T19:24:54+00:00"
         },
         {
             "PolicyName": "AWSCodeDeployRoleForCloudFormation",
@@ -9169,6 +9193,18 @@
             "UpdateDate": "2021-04-02T23:21:37+00:00"
         },
         {
+            "PolicyName": "AmazonLookoutVisionConsoleFullAccess",
+            "PolicyId": "ANPAZKAPJZG4NJJ7RFZ5A",
+            "Arn": "arn:aws:iam::aws:policy/AmazonLookoutVisionConsoleFullAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-05-11T19:37:17+00:00",
+            "UpdateDate": "2021-05-11T19:37:17+00:00"
+        },
+        {
             "PolicyName": "AmazonCodeGuruReviewerServiceRolePolicy",
             "PolicyId": "ANPAZKAPJZG4NJY3GAUD2",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/AmazonCodeGuruReviewerServiceRolePolicy",
@@ -9371,6 +9407,18 @@
             "IsAttachable": true,
             "CreateDate": "2019-04-30T18:17:31+00:00",
             "UpdateDate": "2019-04-30T18:17:31+00:00"
+        },
+        {
+            "PolicyName": "AmazonLookoutVisionReadOnlyAccess",
+            "PolicyId": "ANPAZKAPJZG4OJEEMR6Q3",
+            "Arn": "arn:aws:iam::aws:policy/AmazonLookoutVisionReadOnlyAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-05-11T19:11:07+00:00",
+            "UpdateDate": "2021-05-11T19:11:07+00:00"
         },
         {
             "PolicyName": "AmazonRekognitionCustomLabelsFullAccess",

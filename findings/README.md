@@ -1,6 +1,6 @@
 ## AWS Access Analyzer - Findings - 2021-05-11
 
-- Policies analyzed: `820`
+- Policies analyzed: `824`
 - Errors: `33`
   - [`AmazonElasticFileSystemReadOnlyAccess`](./AmazonElasticFileSystemReadOnlyAccess.json)
   - [`ViewOnlyAccess`](./ViewOnlyAccess.json)
