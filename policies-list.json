@@ -7057,6 +7057,18 @@
             "UpdateDate": "2020-12-15T15:28:56+00:00"
         },
         {
+            "PolicyName": "AppRunnerServiceRolePolicy",
+            "PolicyId": "ANPAZKAPJZG4FKEGI2QN2",
+            "Arn": "arn:aws:iam::aws:policy/aws-service-role/AppRunnerServiceRolePolicy",
+            "Path": "/aws-service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-05-14T19:15:04+00:00",
+            "UpdateDate": "2021-05-14T19:15:04+00:00"
+        },
+        {
             "PolicyName": "AWSThinkboxDeadlineResourceTrackerAdminPolicy",
             "PolicyId": "ANPAZKAPJZG4FKWWNUOP2",
             "Arn": "arn:aws:iam::aws:policy/AWSThinkboxDeadlineResourceTrackerAdminPolicy",
@@ -8723,6 +8735,18 @@
             "IsAttachable": true,
             "CreateDate": "2020-08-28T18:28:58+00:00",
             "UpdateDate": "2020-08-28T18:28:58+00:00"
+        },
+        {
+            "PolicyName": "AWSAppRunnerServicePolicyForECRAccess",
+            "PolicyId": "ANPAZKAPJZG4LYM3IT6IY",
+            "Arn": "arn:aws:iam::aws:policy/service-role/AWSAppRunnerServicePolicyForECRAccess",
+            "Path": "/service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-05-14T19:17:21+00:00",
+            "UpdateDate": "2021-05-14T19:17:21+00:00"
         },
         {
             "PolicyName": "AWSNetworkManagerReadOnlyAccess",
