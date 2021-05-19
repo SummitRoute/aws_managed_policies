@@ -7465,6 +7465,18 @@
             "UpdateDate": "2020-11-20T00:19:00+00:00"
         },
         {
+            "PolicyName": "AWSServiceCatalogAppRegistryServiceRolePolicy",
+            "PolicyId": "ANPAZKAPJZG4H3V4QGJFH",
+            "Arn": "arn:aws:iam::aws:policy/aws-service-role/AWSServiceCatalogAppRegistryServiceRolePolicy",
+            "Path": "/aws-service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-05-18T22:18:55+00:00",
+            "UpdateDate": "2021-05-18T22:18:55+00:00"
+        },
+        {
             "PolicyName": "AWSIoTFleetHubFederationAccess",
             "PolicyId": "ANPAZKAPJZG4H4EGQA254",
             "Arn": "arn:aws:iam::aws:policy/service-role/AWSIoTFleetHubFederationAccess",
