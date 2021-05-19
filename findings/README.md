@@ -1,13 +1,14 @@
 ## AWS Access Analyzer - Findings - 2021-05-19
 
 - Policies analyzed: `827`
-- Errors: `33`
+- Errors: `34`
   - [`AmazonElasticFileSystemReadOnlyAccess`](./AmazonElasticFileSystemReadOnlyAccess.json)
   - [`ViewOnlyAccess`](./ViewOnlyAccess.json)
   - [`AWSGlueConsoleSageMakerNotebookFullAccess`](./AWSGlueConsoleSageMakerNotebookFullAccess.json)
   - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)
   - [`AmazonElasticFileSystemFullAccess`](./AmazonElasticFileSystemFullAccess.json)
   - [`AWSIncidentManagerServiceRolePolicy`](./AWSIncidentManagerServiceRolePolicy.json)
+  - [`AWSCodeDeployRole`](./AWSCodeDeployRole.json)
   - [`AWSIncidentManagerResolverAccess`](./AWSIncidentManagerResolverAccess.json)
   - [`ReadOnlyAccess`](./ReadOnlyAccess.json)
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
@@ -21,7 +22,7 @@
   - [`AdministratorAccess`](./AdministratorAccess.json)
   - [`AmazonElasticMapReduceRole`](./AmazonElasticMapReduceRole.json)
   - [`AmazonElasticMapReduceFullAccess`](./AmazonElasticMapReduceFullAccess.json)
-- Suggestions: `62`
+- Suggestions: `59`
   - [`AmazonLaunchWizard_Fullaccess`](./AmazonLaunchWizard_Fullaccess.json)
   - [`AmazonVPCFullAccess`](./AmazonVPCFullAccess.json)
   - [`AWSCodeCommitReadOnly`](./AWSCodeCommitReadOnly.json)
@@ -45,7 +46,6 @@
   - [`AWSElasticBeanstalkRoleCore`](./AWSElasticBeanstalkRoleCore.json)
   - [`AWSLakeFormationDataAdmin`](./AWSLakeFormationDataAdmin.json)
   - [`NeptuneConsoleFullAccess`](./NeptuneConsoleFullAccess.json)
-  - [`AWSCodeDeployRole`](./AWSCodeDeployRole.json)
   - [`AWSCodeStarServiceRole`](./AWSCodeStarServiceRole.json)
   - [`AWSBatchFullAccess`](./AWSBatchFullAccess.json)
   - [`AmazonTimestreamConsoleFullAccess`](./AmazonTimestreamConsoleFullAccess.json)

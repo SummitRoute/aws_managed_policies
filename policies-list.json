@@ -2777,12 +2777,12 @@
             "PolicyId": "ANPAJ2NKMKD73QS5NBFLA",
             "Arn": "arn:aws:iam::aws:policy/service-role/AWSCodeDeployRole",
             "Path": "/service-role/",
-            "DefaultVersionId": "v8",
+            "DefaultVersionId": "v9",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2015-05-04T18:05:37+00:00",
-            "UpdateDate": "2020-05-19T17:11:39+00:00"
+            "UpdateDate": "2021-05-19T00:42:51+00:00"
         },
         {
             "PolicyName": "AmazonSESFullAccess",
