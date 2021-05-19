@@ -11,6 +11,7 @@
                         "ec2:DescribeInstances",
                         "ec2:DescribeInternetGateways",
                         "ec2:DescribeSubnets",
+                        "ec2:DescribeRegions",
                         "ec2:ModifyNetworkInterfaceAttribute",
                         "ec2:DeleteNetworkInterface"
                     ],
@@ -49,8 +50,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-10-14T21:05:22Z"
+        "CreateDate": "2021-05-19T17:10:49Z"
     }
 }
