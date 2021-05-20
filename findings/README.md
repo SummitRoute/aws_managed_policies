@@ -1,13 +1,11 @@
-## AWS Access Analyzer - Findings - 2021-05-19
+## AWS Access Analyzer - Findings - 2021-05-20
 
 - Policies analyzed: `827`
-- Errors: `29`
+- Errors: `15`
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
   - [`ViewOnlyAccess`](./ViewOnlyAccess.json)
-  - [`AmazonElasticFileSystemFullAccess`](./AmazonElasticFileSystemFullAccess.json)
   - [`AWSCodeDeployRole`](./AWSCodeDeployRole.json)
   - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)
-  - [`AWSIncidentManagerResolverAccess`](./AWSIncidentManagerResolverAccess.json)
   - [`ReadOnlyAccess`](./ReadOnlyAccess.json)
   - [`AWSGlueConsoleSageMakerNotebookFullAccess`](./AWSGlueConsoleSageMakerNotebookFullAccess.json)
 - Sec_Warnings: `9`
@@ -20,8 +18,7 @@
   - [`AdministratorAccess`](./AdministratorAccess.json)
   - [`AWSDataPipelineRole`](./AWSDataPipelineRole.json)
   - [`AmazonElasticMapReduceFullAccess`](./AmazonElasticMapReduceFullAccess.json)
-- Suggestions: `55`
-  - [`AmazonTimestreamConsoleFullAccess`](./AmazonTimestreamConsoleFullAccess.json)
+- Suggestions: `54`
   - [`NeptuneConsoleFullAccess`](./NeptuneConsoleFullAccess.json)
   - [`AWSElasticBeanstalkService`](./AWSElasticBeanstalkService.json)
   - [`AmazonQLDBConsoleFullAccess`](./AmazonQLDBConsoleFullAccess.json)
