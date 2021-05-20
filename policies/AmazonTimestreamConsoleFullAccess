@@ -48,15 +48,14 @@
                         "dbqms:CreateQueryHistory",
                         "dbqms:DescribeQueryHistory",
                         "dbqms:UpdateQueryHistory",
-                        "dbqms:DeleteQueryHistory",
-                        "dbqms:DescribeQueryHistory"
+                        "dbqms:DeleteQueryHistory"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-09-30T21:47:18Z"
+        "CreateDate": "2021-05-20T00:48:09Z"
     }
 }
