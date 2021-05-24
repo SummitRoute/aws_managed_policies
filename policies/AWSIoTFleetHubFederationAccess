@@ -19,6 +19,17 @@
                         "iot:DeleteFleetMetric",
                         "iot:DescribeFleetMetric",
                         "iot:UpdateFleetMetric",
+                        "iot:ListThingGroups",
+                        "iot:ListThingsInThingGroup",
+                        "iot:ListJobTemplates",
+                        "iot:DescribeJobTemplate",
+                        "iot:ListJobs",
+                        "iot:CreateJob",
+                        "iot:CancelJob",
+                        "iot:DescribeJob",
+                        "iot:ListJobExecutionsForJob",
+                        "iot:ListJobExecutionsForThing",
+                        "iot:DescribeJobExecution",
                         "iotfleethub:DescribeApplication",
                         "cloudwatch:DescribeAlarms",
                         "cloudwatch:GetMetricData",
@@ -49,8 +60,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-04-12T18:27:43Z"
+        "CreateDate": "2021-05-24T14:12:59Z"
     }
 }
