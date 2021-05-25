@@ -1,9 +1,10 @@
 ## AWS Access Analyzer - Findings - 2021-05-25
 
 - Policies analyzed: `827`
-- Errors: `17`
+- Errors: `18`
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
   - [`ViewOnlyAccess`](./ViewOnlyAccess.json)
+  - [`AWSDataExchangeProviderFullAccess`](./AWSDataExchangeProviderFullAccess.json)
   - [`AWSCodeDeployRole`](./AWSCodeDeployRole.json)
   - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)
   - [`AWSIoTFleetHubFederationAccess`](./AWSIoTFleetHubFederationAccess.json)
