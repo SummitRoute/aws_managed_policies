@@ -148,11 +148,24 @@
                     "Resource": [
                         "arn:aws:ssm:*:*:document/AWSSAP-InstallBackint"
                     ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "fsx:DescribeFileSystems",
+                        "fsx:ListTagsForResource"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "ForAllValues:StringLike": {
+                            "aws:TagKeys": "LaunchWizard*"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-10-09T22:28:01Z"
+        "CreateDate": "2021-05-24T23:05:02Z"
     }
 }

@@ -445,7 +445,8 @@
                         "secretsmanager:UntagResource",
                         "secretsmanager:PutResourcePolicy",
                         "secretsmanager:DeleteResourcePolicy",
-                        "secretsmanager:ListSecretVersionIds"
+                        "secretsmanager:ListSecretVersionIds",
+                        "secretsmanager:GetSecretValue"
                     ],
                     "Resource": "arn:aws:secretsmanager:*:*:secret:LaunchWizard*"
                 },
@@ -478,11 +479,47 @@
                         "sns:Unsubscribe"
                     ],
                     "Resource": "arn:aws:sns:*:*:LaunchWizard*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "fsx:UntagResource",
+                        "fsx:TagResource",
+                        "fsx:DeleteFileSystem",
+                        "fsx:ListTagsForResource"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringLike": {
+                            "aws:ResourceTag/Name": "LaunchWizard*"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "fsx:CreateFileSystem"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringLike": {
+                            "aws:RequestTag/Name": [
+                                "LaunchWizard*"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "fsx:DescribeFileSystems"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v9",
+        "VersionId": "v10",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-04-08T19:03:02Z"
+        "CreateDate": "2021-05-24T23:04:20Z"
     }
 }
