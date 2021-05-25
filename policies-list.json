@@ -5681,12 +5681,12 @@
             "PolicyId": "ANPAJZCCL6F2WPVOUXZKI",
             "Arn": "arn:aws:iam::aws:policy/service-role/AWSBackupServiceRolePolicyForRestores",
             "Path": "/service-role/",
-            "DefaultVersionId": "v8",
+            "DefaultVersionId": "v9",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2019-01-12T00:23:54+00:00",
-            "UpdateDate": "2021-03-10T18:30:25+00:00"
+            "UpdateDate": "2021-05-25T00:02:53+00:00"
         },
         {
             "PolicyName": "AWSElementalMediaStoreFullAccess",
@@ -5789,12 +5789,12 @@
             "PolicyId": "ANPAZKAPJZG4ABPQ7BLC2",
             "Arn": "arn:aws:iam::aws:policy/AmazonLaunchWizard_Fullaccess",
             "Path": "/",
-            "DefaultVersionId": "v9",
+            "DefaultVersionId": "v10",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-08-06T17:47:30+00:00",
-            "UpdateDate": "2021-04-08T19:03:02+00:00"
+            "UpdateDate": "2021-05-24T23:04:20+00:00"
         },
         {
             "PolicyName": "AmazonChimeSDK",
@@ -6317,12 +6317,12 @@
             "PolicyId": "ANPAZKAPJZG4CBGI56NFS",
             "Arn": "arn:aws:iam::aws:policy/AmazonEC2RolePolicyForLaunchWizard",
             "Path": "/",
-            "DefaultVersionId": "v7",
+            "DefaultVersionId": "v8",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2019-11-13T08:05:53+00:00",
-            "UpdateDate": "2020-10-09T22:28:01+00:00"
+            "UpdateDate": "2021-05-24T23:05:02+00:00"
         },
         {
             "PolicyName": "AmazonAppFlowReadOnlyAccess",
