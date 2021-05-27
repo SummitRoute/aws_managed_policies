@@ -4,18 +4,19 @@
             "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "kendra:Describe*",
                         "kendra:List*",
-                        "kendra:Query"
+                        "kendra:Query",
+                        "kendra:GetQuerySuggestions"
                     ],
-                    "Effect": "Allow",
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-12-03T16:13:45Z"
+        "CreateDate": "2021-05-27T17:01:20Z"
     }
 }

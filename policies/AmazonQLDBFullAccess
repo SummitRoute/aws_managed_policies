@@ -4,9 +4,11 @@
             "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "qldb:CreateLedger",
                         "qldb:UpdateLedger",
+                        "qldb:UpdateLedgerPermissionsMode",
                         "qldb:DeleteLedger",
                         "qldb:ListLedgers",
                         "qldb:DescribeLedger",
@@ -18,22 +20,30 @@
                         "qldb:DescribeJournalKinesisStream",
                         "qldb:ListJournalKinesisStreamsForLedger",
                         "qldb:StreamJournalToKinesis",
-                        "qldb:GetBlock",
                         "qldb:GetDigest",
                         "qldb:GetRevision",
                         "qldb:GetBlock",
                         "qldb:TagResource",
                         "qldb:UntagResource",
                         "qldb:ListTagsForResource",
-                        "qldb:SendCommand"
+                        "qldb:SendCommand",
+                        "qldb:PartiQLCreateTable",
+                        "qldb:PartiQLCreateIndex",
+                        "qldb:PartiQLDropTable",
+                        "qldb:PartiQLDropIndex",
+                        "qldb:PartiQLUndropTable",
+                        "qldb:PartiQLDelete",
+                        "qldb:PartiQLInsert",
+                        "qldb:PartiQLUpdate",
+                        "qldb:PartiQLSelect",
+                        "qldb:PartiQLHistoryFunction"
                     ],
-                    "Effect": "Allow",
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-05-19T17:47:10Z"
+        "CreateDate": "2021-05-27T17:15:06Z"
     }
 }
