@@ -1,9 +1,9 @@
 [
     {
-        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: qldb:GetBlock.",
-        "findingType": "SUGGESTION",
-        "issueCode": "REDUNDANT_ACTION",
-        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
+        "findingDetails": "The action qldb:UpdateLedgerPermissionsMode does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
         "locations": [
             {
                 "path": [
@@ -17,22 +17,30 @@
                         "value": "Action"
                     },
                     {
-                        "index": 13
+                        "index": 2
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 444,
+                        "column": 128,
                         "line": 1,
-                        "offset": 444
+                        "offset": 128
                     },
                     "start": {
-                        "column": 429,
+                        "column": 94,
                         "line": 1,
-                        "offset": 429
+                        "offset": 94
                     }
                 }
-            },
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action qldb:PartiQLCreateTable does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
             {
                 "path": [
                     {
@@ -45,19 +53,343 @@
                         "value": "Action"
                     },
                     {
-                        "index": 16
+                        "index": 24
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 499,
+                        "column": 705,
                         "line": 1,
-                        "offset": 499
+                        "offset": 705
                     },
                     "start": {
-                        "column": 484,
+                        "column": 680,
                         "line": 1,
-                        "offset": 484
+                        "offset": 680
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action qldb:PartiQLCreateIndex does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 25
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 732,
+                        "line": 1,
+                        "offset": 732
+                    },
+                    "start": {
+                        "column": 707,
+                        "line": 1,
+                        "offset": 707
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action qldb:PartiQLDropTable does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 26
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 757,
+                        "line": 1,
+                        "offset": 757
+                    },
+                    "start": {
+                        "column": 734,
+                        "line": 1,
+                        "offset": 734
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action qldb:PartiQLDropIndex does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 27
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 782,
+                        "line": 1,
+                        "offset": 782
+                    },
+                    "start": {
+                        "column": 759,
+                        "line": 1,
+                        "offset": 759
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action qldb:PartiQLUndropTable does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 28
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 809,
+                        "line": 1,
+                        "offset": 809
+                    },
+                    "start": {
+                        "column": 784,
+                        "line": 1,
+                        "offset": 784
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action qldb:PartiQLDelete does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 29
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 831,
+                        "line": 1,
+                        "offset": 831
+                    },
+                    "start": {
+                        "column": 811,
+                        "line": 1,
+                        "offset": 811
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action qldb:PartiQLInsert does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 30
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 853,
+                        "line": 1,
+                        "offset": 853
+                    },
+                    "start": {
+                        "column": 833,
+                        "line": 1,
+                        "offset": 833
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action qldb:PartiQLUpdate does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 31
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 875,
+                        "line": 1,
+                        "offset": 875
+                    },
+                    "start": {
+                        "column": 855,
+                        "line": 1,
+                        "offset": 855
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action qldb:PartiQLSelect does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 32
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 897,
+                        "line": 1,
+                        "offset": 897
+                    },
+                    "start": {
+                        "column": 877,
+                        "line": 1,
+                        "offset": 877
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action qldb:PartiQLHistoryFunction does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 33
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 928,
+                        "line": 1,
+                        "offset": 928
+                    },
+                    "start": {
+                        "column": 899,
+                        "line": 1,
+                        "offset": 899
                     }
                 }
             }

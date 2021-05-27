@@ -1,6 +1,42 @@
 [
     {
-        "findingDetails": "The action qldb:UpdateLedgerPermissionsMode does not exist.",
+        "findingDetails": "The action aws-marketplace:StartPrivateMarketplace does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 1
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 156,
+                        "line": 1,
+                        "offset": 156
+                    },
+                    "start": {
+                        "column": 115,
+                        "line": 1,
+                        "offset": 115
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action aws-marketplace:StopPrivateMarketplace does not exist.",
         "findingType": "ERROR",
         "issueCode": "INVALID_ACTION",
         "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
@@ -22,21 +58,21 @@
                 ],
                 "span": {
                     "end": {
-                        "column": 147,
+                        "column": 198,
                         "line": 1,
-                        "offset": 147
+                        "offset": 198
                     },
                     "start": {
-                        "column": 113,
+                        "column": 158,
                         "line": 1,
-                        "offset": 113
+                        "offset": 158
                     }
                 }
             }
         ]
     },
     {
-        "findingDetails": "The action qldb:PartiQLCreateTable does not exist.",
+        "findingDetails": "The action aws-marketplace:ListPrivateMarketplaceProducts does not exist.",
         "findingType": "ERROR",
         "issueCode": "INVALID_ACTION",
         "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
@@ -53,26 +89,26 @@
                         "value": "Action"
                     },
                     {
-                        "index": 21
+                        "index": 6
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 654,
+                        "column": 421,
                         "line": 1,
-                        "offset": 654
+                        "offset": 421
                     },
                     "start": {
-                        "column": 629,
+                        "column": 373,
                         "line": 1,
-                        "offset": 629
+                        "offset": 373
                     }
                 }
             }
         ]
     },
     {
-        "findingDetails": "The action qldb:PartiQLCreateIndex does not exist.",
+        "findingDetails": "The action aws-marketplace:DescribePrivateMarketplaceProducts does not exist.",
         "findingType": "ERROR",
         "issueCode": "INVALID_ACTION",
         "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
@@ -89,26 +125,26 @@
                         "value": "Action"
                     },
                     {
-                        "index": 22
+                        "index": 7
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 681,
+                        "column": 475,
                         "line": 1,
-                        "offset": 681
+                        "offset": 475
                     },
                     "start": {
-                        "column": 656,
+                        "column": 423,
                         "line": 1,
-                        "offset": 656
+                        "offset": 423
                     }
                 }
             }
         ]
     },
     {
-        "findingDetails": "The action qldb:PartiQLDropTable does not exist.",
+        "findingDetails": "The action aws-marketplace:UpdatePrivateMarketplaceSettings does not exist.",
         "findingType": "ERROR",
         "issueCode": "INVALID_ACTION",
         "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
@@ -125,26 +161,26 @@
                         "value": "Action"
                     },
                     {
-                        "index": 23
+                        "index": 10
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 706,
+                        "column": 631,
                         "line": 1,
-                        "offset": 706
+                        "offset": 631
                     },
                     "start": {
-                        "column": 683,
+                        "column": 581,
                         "line": 1,
-                        "offset": 683
+                        "offset": 581
                     }
                 }
             }
         ]
     },
     {
-        "findingDetails": "The action qldb:PartiQLDropIndex does not exist.",
+        "findingDetails": "The action aws-marketplace:DescribePrivateMarketplaceSettings does not exist.",
         "findingType": "ERROR",
         "issueCode": "INVALID_ACTION",
         "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
@@ -161,26 +197,26 @@
                         "value": "Action"
                     },
                     {
-                        "index": 24
+                        "index": 11
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 731,
+                        "column": 685,
                         "line": 1,
-                        "offset": 731
+                        "offset": 685
                     },
                     "start": {
-                        "column": 708,
+                        "column": 633,
                         "line": 1,
-                        "offset": 708
+                        "offset": 633
                     }
                 }
             }
         ]
     },
     {
-        "findingDetails": "The action qldb:PartiQLUndropTable does not exist.",
+        "findingDetails": "The action aws-marketplace:CreatePrivateMarketplaceProfile does not exist.",
         "findingType": "ERROR",
         "issueCode": "INVALID_ACTION",
         "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
@@ -197,26 +233,26 @@
                         "value": "Action"
                     },
                     {
-                        "index": 25
+                        "index": 12
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 758,
+                        "column": 736,
                         "line": 1,
-                        "offset": 758
+                        "offset": 736
                     },
                     "start": {
-                        "column": 733,
+                        "column": 687,
                         "line": 1,
-                        "offset": 733
+                        "offset": 687
                     }
                 }
             }
         ]
     },
     {
-        "findingDetails": "The action qldb:PartiQLDelete does not exist.",
+        "findingDetails": "The action aws-marketplace:UpdatePrivateMarketplaceProfile does not exist.",
         "findingType": "ERROR",
         "issueCode": "INVALID_ACTION",
         "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
@@ -233,26 +269,26 @@
                         "value": "Action"
                     },
                     {
-                        "index": 26
+                        "index": 13
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 780,
+                        "column": 787,
                         "line": 1,
-                        "offset": 780
+                        "offset": 787
                     },
                     "start": {
-                        "column": 760,
+                        "column": 738,
                         "line": 1,
-                        "offset": 760
+                        "offset": 738
                     }
                 }
             }
         ]
     },
     {
-        "findingDetails": "The action qldb:PartiQLInsert does not exist.",
+        "findingDetails": "The action aws-marketplace:DescribePrivateMarketplaceProfile does not exist.",
         "findingType": "ERROR",
         "issueCode": "INVALID_ACTION",
         "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
@@ -269,127 +305,19 @@
                         "value": "Action"
                     },
                     {
-                        "index": 27
+                        "index": 14
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 802,
+                        "column": 840,
                         "line": 1,
-                        "offset": 802
+                        "offset": 840
                     },
                     "start": {
-                        "column": 782,
+                        "column": 789,
                         "line": 1,
-                        "offset": 782
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "findingDetails": "The action qldb:PartiQLUpdate does not exist.",
-        "findingType": "ERROR",
-        "issueCode": "INVALID_ACTION",
-        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
-        "locations": [
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 0
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 28
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 824,
-                        "line": 1,
-                        "offset": 824
-                    },
-                    "start": {
-                        "column": 804,
-                        "line": 1,
-                        "offset": 804
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "findingDetails": "The action qldb:PartiQLSelect does not exist.",
-        "findingType": "ERROR",
-        "issueCode": "INVALID_ACTION",
-        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
-        "locations": [
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 0
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 29
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 846,
-                        "line": 1,
-                        "offset": 846
-                    },
-                    "start": {
-                        "column": 826,
-                        "line": 1,
-                        "offset": 826
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "findingDetails": "The action qldb:PartiQLHistoryFunction does not exist.",
-        "findingType": "ERROR",
-        "issueCode": "INVALID_ACTION",
-        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
-        "locations": [
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 0
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 30
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 877,
-                        "line": 1,
-                        "offset": 877
-                    },
-                    "start": {
-                        "column": 848,
-                        "line": 1,
-                        "offset": 848
+                        "offset": 789
                     }
                 }
             }

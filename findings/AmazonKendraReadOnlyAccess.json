@@ -1,6 +1,6 @@
 [
     {
-        "findingDetails": "The action autoscaling:PutWarmPool does not exist.",
+        "findingDetails": "The action kendra:GetQuerySuggestions does not exist.",
         "findingType": "ERROR",
         "issueCode": "INVALID_ACTION",
         "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
@@ -17,19 +17,19 @@
                         "value": "Action"
                     },
                     {
-                        "index": 19
+                        "index": 3
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 829,
+                        "column": 151,
                         "line": 1,
-                        "offset": 829
+                        "offset": 151
                     },
                     "start": {
-                        "column": 804,
+                        "column": 123,
                         "line": 1,
-                        "offset": 804
+                        "offset": 123
                     }
                 }
             }

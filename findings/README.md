@@ -1,15 +1,18 @@
 ## AWS Access Analyzer - Findings - 2021-05-27
 
 - Policies analyzed: `828`
-- Errors: `18`
+- Errors: `49`
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
+  - [`AmazonQLDBConsoleFullAccess`](./AmazonQLDBConsoleFullAccess.json)
   - [`ViewOnlyAccess`](./ViewOnlyAccess.json)
   - [`AWSDataExchangeProviderFullAccess`](./AWSDataExchangeProviderFullAccess.json)
-  - [`AWSCodeDeployRole`](./AWSCodeDeployRole.json)
+  - [`AmazonKendraReadOnlyAccess`](./AmazonKendraReadOnlyAccess.json)
   - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)
+  - [`AWSPrivateMarketplaceAdminFullAccess`](./AWSPrivateMarketplaceAdminFullAccess.json)
   - [`AWSIoTFleetHubFederationAccess`](./AWSIoTFleetHubFederationAccess.json)
   - [`ReadOnlyAccess`](./ReadOnlyAccess.json)
   - [`AWSGlueConsoleSageMakerNotebookFullAccess`](./AWSGlueConsoleSageMakerNotebookFullAccess.json)
+  - [`AmazonQLDBFullAccess`](./AmazonQLDBFullAccess.json)
 - Sec_Warnings: `9`
   - [`AmazonElasticMapReduceRole`](./AmazonElasticMapReduceRole.json)
   - [`AmazonDynamoDBFullAccesswithDataPipeline`](./AmazonDynamoDBFullAccesswithDataPipeline.json)
@@ -20,10 +23,9 @@
   - [`AdministratorAccess`](./AdministratorAccess.json)
   - [`AWSDataPipelineRole`](./AWSDataPipelineRole.json)
   - [`AmazonElasticMapReduceFullAccess`](./AmazonElasticMapReduceFullAccess.json)
-- Suggestions: `54`
+- Suggestions: `52`
   - [`NeptuneConsoleFullAccess`](./NeptuneConsoleFullAccess.json)
   - [`AWSElasticBeanstalkService`](./AWSElasticBeanstalkService.json)
-  - [`AmazonQLDBConsoleFullAccess`](./AmazonQLDBConsoleFullAccess.json)
   - [`ViewOnlyAccess`](./ViewOnlyAccess.json)
   - [`AWSElasticBeanstalkWebTier`](./AWSElasticBeanstalkWebTier.json)
   - [`AWSBackupOperatorAccess`](./AWSBackupOperatorAccess.json)
@@ -53,7 +55,6 @@
   - [`AWSCodeStarServiceRole`](./AWSCodeStarServiceRole.json)
   - [`AmazonElasticMapReduceFullAccess`](./AmazonElasticMapReduceFullAccess.json)
   - [`AWSGlueConsoleSageMakerNotebookFullAccess`](./AWSGlueConsoleSageMakerNotebookFullAccess.json)
-  - [`AmazonQLDBFullAccess`](./AmazonQLDBFullAccess.json)
 - Warnings: `8`
   - [`PowerUserAccess`](./PowerUserAccess.json)
   - [`AlexaForBusinessFullAccess`](./AlexaForBusinessFullAccess.json)
