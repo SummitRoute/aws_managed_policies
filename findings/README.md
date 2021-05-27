@@ -1,6 +1,6 @@
-## AWS Access Analyzer - Findings - 2021-05-26
+## AWS Access Analyzer - Findings - 2021-05-27
 
-- Policies analyzed: `827`
+- Policies analyzed: `828`
 - Errors: `18`
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
   - [`ViewOnlyAccess`](./ViewOnlyAccess.json)
