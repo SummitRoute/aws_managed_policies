@@ -7577,12 +7577,12 @@
             "PolicyId": "ANPAZKAPJZG4HMS72N6JG",
             "Arn": "arn:aws:iam::aws:policy/AmazonKeyspacesFullAccess",
             "Path": "/",
-            "DefaultVersionId": "v1",
+            "DefaultVersionId": "v2",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-04-23T17:06:37+00:00",
-            "UpdateDate": "2020-04-23T17:06:37+00:00"
+            "UpdateDate": "2021-06-01T19:31:39+00:00"
         },
         {
             "PolicyName": "AWSIoTDeviceDefenderReplaceDefaultPolicyMitigationAction",
@@ -8645,12 +8645,12 @@
             "PolicyId": "ANPAZKAPJZG4LHLFMFIPN",
             "Arn": "arn:aws:iam::aws:policy/AmazonKeyspacesReadOnlyAccess",
             "Path": "/",
-            "DefaultVersionId": "v1",
+            "DefaultVersionId": "v2",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-04-23T17:07:14+00:00",
-            "UpdateDate": "2020-04-23T17:07:14+00:00"
+            "UpdateDate": "2021-06-01T19:32:47+00:00"
         },
         {
             "PolicyName": "CloudFormationStackSetsOrgMemberServiceRolePolicy",
