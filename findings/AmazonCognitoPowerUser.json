@@ -1,9 +1,9 @@
 [
     {
-        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: iam:ListRoles.",
-        "findingType": "SUGGESTION",
-        "issueCode": "REDUNDANT_ACTION",
-        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
+        "findingDetails": "The action sns:GetSMSSandboxAccountStatus does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
         "locations": [
             {
                 "path": [
@@ -17,175 +17,19 @@
                         "value": "Action"
                     },
                     {
-                        "index": 3
+                        "index": 11
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 143,
+                        "column": 341,
                         "line": 1,
-                        "offset": 143
+                        "offset": 341
                     },
                     "start": {
-                        "column": 128,
+                        "column": 309,
                         "line": 1,
-                        "offset": 128
-                    }
-                }
-            },
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 0
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 8
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 275,
-                        "line": 1,
-                        "offset": 275
-                    },
-                    "start": {
-                        "column": 260,
-                        "line": 1,
-                        "offset": 260
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: iam:ListOpenIdConnectProviders.",
-        "findingType": "SUGGESTION",
-        "issueCode": "REDUNDANT_ACTION",
-        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
-        "locations": [
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 0
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 4
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 177,
-                        "line": 1,
-                        "offset": 177
-                    },
-                    "start": {
-                        "column": 145,
-                        "line": 1,
-                        "offset": 145
-                    }
-                }
-            },
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 0
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 7
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 258,
-                        "line": 1,
-                        "offset": 258
-                    },
-                    "start": {
-                        "column": 226,
-                        "line": 1,
-                        "offset": 226
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: sns:ListPlatformApplications.",
-        "findingType": "SUGGESTION",
-        "issueCode": "REDUNDANT_ACTION",
-        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
-        "locations": [
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 0
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 5
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 209,
-                        "line": 1,
-                        "offset": 209
-                    },
-                    "start": {
-                        "column": 179,
-                        "line": 1,
-                        "offset": 179
-                    }
-                }
-            },
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 0
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 14
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 422,
-                        "line": 1,
-                        "offset": 422
-                    },
-                    "start": {
-                        "column": 392,
-                        "line": 1,
-                        "offset": 392
+                        "offset": 309
                     }
                 }
             }

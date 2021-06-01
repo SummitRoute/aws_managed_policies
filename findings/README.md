@@ -1,10 +1,11 @@
-## AWS Access Analyzer - Findings - 2021-05-27
+## AWS Access Analyzer - Findings - 2021-06-01
 
 - Policies analyzed: `828`
-- Errors: `49`
+- Errors: `50`
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
   - [`AmazonQLDBConsoleFullAccess`](./AmazonQLDBConsoleFullAccess.json)
   - [`ViewOnlyAccess`](./ViewOnlyAccess.json)
+  - [`AmazonCognitoPowerUser`](./AmazonCognitoPowerUser.json)
   - [`AWSDataExchangeProviderFullAccess`](./AWSDataExchangeProviderFullAccess.json)
   - [`AmazonKendraReadOnlyAccess`](./AmazonKendraReadOnlyAccess.json)
   - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)
@@ -23,13 +24,12 @@
   - [`AdministratorAccess`](./AdministratorAccess.json)
   - [`AWSDataPipelineRole`](./AWSDataPipelineRole.json)
   - [`AmazonElasticMapReduceFullAccess`](./AmazonElasticMapReduceFullAccess.json)
-- Suggestions: `52`
+- Suggestions: `49`
   - [`NeptuneConsoleFullAccess`](./NeptuneConsoleFullAccess.json)
   - [`AWSElasticBeanstalkService`](./AWSElasticBeanstalkService.json)
   - [`ViewOnlyAccess`](./ViewOnlyAccess.json)
   - [`AWSElasticBeanstalkWebTier`](./AWSElasticBeanstalkWebTier.json)
   - [`AWSBackupOperatorAccess`](./AWSBackupOperatorAccess.json)
-  - [`AmazonCognitoPowerUser`](./AmazonCognitoPowerUser.json)
   - [`AWSElasticBeanstalkWorkerTier`](./AWSElasticBeanstalkWorkerTier.json)
   - [`AdministratorAccess-Amplify`](./AdministratorAccess-Amplify.json)
   - [`DataScientist`](./DataScientist.json)
