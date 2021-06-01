@@ -22,7 +22,9 @@
                         "application-autoscaling:DescribeScheduledActions",
                         "application-autoscaling:PutScheduledAction",
                         "application-autoscaling:PutScalingPolicy",
-                        "application-autoscaling:RegisterScalableTarget"
+                        "application-autoscaling:RegisterScalableTarget",
+                        "kms:DescribeKey",
+                        "kms:ListAliases"
                     ],
                     "Resource": "*"
                 },
@@ -47,8 +49,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-23T17:06:37Z"
+        "CreateDate": "2021-06-01T19:31:39Z"
     }
 }
