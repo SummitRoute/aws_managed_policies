@@ -60,6 +60,7 @@
                         "cloudtrail:StartLogging",
                         "cloudtrail:StopLogging",
                         "cloudtrail:UpdateTrail",
+                        "cloudtrail:PutEventSelectors",
                         "logs:CreateLogStream",
                         "logs:PutLogEvents",
                         "logs:PutRetentionPolicy"
@@ -162,8 +163,8 @@
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-11-10T21:08:05Z"
+        "CreateDate": "2021-06-04T23:00:46Z"
     }
 }
