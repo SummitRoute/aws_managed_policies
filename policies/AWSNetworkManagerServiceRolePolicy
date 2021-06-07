@@ -4,7 +4,9 @@
             "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Effect": "Allow",
                     "Action": [
+                        "directconnect:DescribeDirectConnectGateways",
                         "directconnect:DescribeConnections",
                         "directconnect:DescribeDirectConnectGatewayAttachments",
                         "directconnect:DescribeLocations",
@@ -14,19 +16,19 @@
                         "ec2:DescribeTransitGatewayRouteTables",
                         "ec2:DescribeTransitGateways",
                         "ec2:DescribeVpnConnections",
+                        "ec2:DescribeVpcs",
                         "ec2:GetTransitGatewayRouteTableAssociations",
                         "ec2:SearchTransitGatewayRoutes",
                         "ec2:DescribeTransitGatewayPeeringAttachments",
                         "ec2:DescribeTransitGatewayConnects",
                         "ec2:DescribeTransitGatewayConnectPeers"
                     ],
-                    "Effect": "Allow",
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-12-10T12:06:22Z"
+        "CreateDate": "2021-06-07T16:18:24Z"
     }
 }
