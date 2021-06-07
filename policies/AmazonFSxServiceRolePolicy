@@ -22,11 +22,29 @@
                         "route53:AssociateVPCWithHostedZone"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "logs:DescribeLogGroups",
+                        "logs:DescribeLogStreams",
+                        "logs:PutLogEvents"
+                    ],
+                    "Resource": "arn:aws:logs:*:*:log-group:/aws/fsx/*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "firehose:DescribeDeliveryStream",
+                        "firehose:PutRecord",
+                        "firehose:PutRecordBatch"
+                    ],
+                    "Resource": "arn:aws:firehose:*:*:deliverystream/aws-fsx-*"
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-11-12T20:19:45Z"
+        "CreateDate": "2021-06-07T21:03:26Z"
     }
 }
