@@ -21,8 +21,7 @@
                         "s3:PutObject"
                     ],
                     "Resource": [
-                        "arn:aws:s3:::aws-application-discovery-service-*",
-                        "arn:aws:s3:::aws-application-discovery-service-*/*"
+                        "arn:aws:s3:::aws-application-discovery-service-*"
                     ]
                 },
                 {
@@ -36,8 +35,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-08-09T18:29:39Z"
+        "CreateDate": "2021-06-08T17:32:46Z"
     }
 }
