@@ -12,16 +12,18 @@
                         "ec2:DescribeSecurityGroups",
                         "ec2:DescribeSubnets",
                         "ec2:DescribeVpcs",
+                        "firehose:ListDeliveryStreams",
                         "fsx:Describe*",
                         "fsx:ListTagsForResource",
-                        "kms:DescribeKey"
+                        "kms:DescribeKey",
+                        "logs:DescribeLogGroups"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-09-10T13:17:59Z"
+        "CreateDate": "2021-06-08T12:21:09Z"
     }
 }

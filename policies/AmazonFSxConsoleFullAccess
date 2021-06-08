@@ -12,18 +12,20 @@
                         "ec2:DescribeSecurityGroups",
                         "ec2:DescribeSubnets",
                         "ec2:DescribeVpcs",
+                        "firehose:ListDeliveryStreams",
                         "fsx:*",
                         "kms:ListAliases",
+                        "logs:DescribeLogGroups",
                         "s3:ListBucket"
                     ],
                     "Resource": "*"
                 },
                 {
-                    "Action": "iam:CreateServiceLinkedRole",
                     "Effect": "Allow",
+                    "Action": "iam:CreateServiceLinkedRole",
                     "Resource": "*",
                     "Condition": {
-                        "StringLike": {
+                        "StringEquals": {
                             "iam:AWSServiceName": [
                                 "fsx.amazonaws.com"
                             ]
@@ -31,11 +33,11 @@
                     }
                 },
                 {
-                    "Action": "iam:CreateServiceLinkedRole",
                     "Effect": "Allow",
+                    "Action": "iam:CreateServiceLinkedRole",
                     "Resource": "*",
                     "Condition": {
-                        "StringLike": {
+                        "StringEquals": {
                             "iam:AWSServiceName": [
                                 "s3.data-source.lustre.fsx.amazonaws.com"
                             ]
@@ -44,8 +46,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-01-21T16:42:58Z"
+        "CreateDate": "2021-06-08T12:14:00Z"
     }
 }
