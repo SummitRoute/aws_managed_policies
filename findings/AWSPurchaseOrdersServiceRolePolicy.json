@@ -1,9 +1,9 @@
 [
     {
-        "findingDetails": "The action kendra:GetQuerySuggestions does not exist.",
+        "findingDetails": "The service awsbillingconsole:*Billing specified in the action does not exist.",
         "findingType": "ERROR",
-        "issueCode": "INVALID_ACTION",
-        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
         "locations": [
             {
                 "path": [
@@ -17,19 +17,19 @@
                         "value": "Action"
                     },
                     {
-                        "index": 3
+                        "index": 1
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 151,
+                        "column": 122,
                         "line": 1,
-                        "offset": 151
+                        "offset": 122
                     },
                     "start": {
-                        "column": 123,
+                        "column": 94,
                         "line": 1,
-                        "offset": 123
+                        "offset": 94
                     }
                 }
             }

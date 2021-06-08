@@ -2501,12 +2501,12 @@
             "PolicyId": "ANPAIX6FHUTEUNXYDFZ7C",
             "Arn": "arn:aws:iam::aws:policy/AWSDiscoveryContinuousExportFirehosePolicy",
             "Path": "/",
-            "DefaultVersionId": "v1",
+            "DefaultVersionId": "v2",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2018-08-09T18:29:39+00:00",
-            "UpdateDate": "2018-08-09T18:29:39+00:00"
+            "UpdateDate": "2021-06-08T17:32:46+00:00"
         },
         {
             "PolicyName": "AmazonCognitoIdpEmailServiceRolePolicy",

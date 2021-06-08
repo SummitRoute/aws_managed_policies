@@ -1,17 +1,15 @@
 ## AWS Access Analyzer - Findings - 2021-06-08
 
 - Policies analyzed: `828`
-- Errors: `47`
+- Errors: `25`
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
-  - [`AmazonQLDBConsoleFullAccess`](./AmazonQLDBConsoleFullAccess.json)
   - [`ViewOnlyAccess`](./ViewOnlyAccess.json)
   - [`AmazonCognitoPowerUser`](./AmazonCognitoPowerUser.json)
-  - [`AmazonKendraReadOnlyAccess`](./AmazonKendraReadOnlyAccess.json)
   - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)
   - [`AWSPrivateMarketplaceAdminFullAccess`](./AWSPrivateMarketplaceAdminFullAccess.json)
   - [`ReadOnlyAccess`](./ReadOnlyAccess.json)
+  - [`AWSPurchaseOrdersServiceRolePolicy`](./AWSPurchaseOrdersServiceRolePolicy.json)
   - [`AWSGlueConsoleSageMakerNotebookFullAccess`](./AWSGlueConsoleSageMakerNotebookFullAccess.json)
-  - [`AmazonQLDBFullAccess`](./AmazonQLDBFullAccess.json)
 - Sec_Warnings: `9`
   - [`AmazonElasticMapReduceRole`](./AmazonElasticMapReduceRole.json)
   - [`AmazonDynamoDBFullAccesswithDataPipeline`](./AmazonDynamoDBFullAccesswithDataPipeline.json)
@@ -22,7 +20,7 @@
   - [`AdministratorAccess`](./AdministratorAccess.json)
   - [`AWSDataPipelineRole`](./AWSDataPipelineRole.json)
   - [`AmazonElasticMapReduceFullAccess`](./AmazonElasticMapReduceFullAccess.json)
-- Suggestions: `49`
+- Suggestions: `48`
   - [`NeptuneConsoleFullAccess`](./NeptuneConsoleFullAccess.json)
   - [`AWSElasticBeanstalkService`](./AWSElasticBeanstalkService.json)
   - [`ViewOnlyAccess`](./ViewOnlyAccess.json)
@@ -33,7 +31,6 @@
   - [`DataScientist`](./DataScientist.json)
   - [`AWSMarketplaceFullAccess`](./AWSMarketplaceFullAccess.json)
   - [`AmazonAppStreamServiceAccess`](./AmazonAppStreamServiceAccess.json)
-  - [`AWSDiscoveryContinuousExportFirehosePolicy`](./AWSDiscoveryContinuousExportFirehosePolicy.json)
   - [`AmazonVPCFullAccess`](./AmazonVPCFullAccess.json)
   - [`AWSDataPipelineRole`](./AWSDataPipelineRole.json)
   - [`AWSElasticBeanstalkRoleCore`](./AWSElasticBeanstalkRoleCore.json)
