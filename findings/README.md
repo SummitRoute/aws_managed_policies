@@ -1,10 +1,10 @@
-## AWS Access Analyzer - Findings - 2021-06-08
+## AWS Access Analyzer - Findings - 2021-06-10
 
 - Policies analyzed: `828`
 - Errors: `25`
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
   - [`ViewOnlyAccess`](./ViewOnlyAccess.json)
-  - [`AmazonCognitoPowerUser`](./AmazonCognitoPowerUser.json)
+  - [`AmazonSageMakerReadOnly`](./AmazonSageMakerReadOnly.json)
   - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)
   - [`AWSPrivateMarketplaceAdminFullAccess`](./AWSPrivateMarketplaceAdminFullAccess.json)
   - [`ReadOnlyAccess`](./ReadOnlyAccess.json)

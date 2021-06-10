@@ -1,6 +1,6 @@
 [
     {
-        "findingDetails": "The action sns:GetSMSSandboxAccountStatus does not exist.",
+        "findingDetails": "The action sagemaker:BatchGetRecord does not exist.",
         "findingType": "ERROR",
         "issueCode": "INVALID_ACTION",
         "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
@@ -17,19 +17,19 @@
                         "value": "Action"
                     },
                     {
-                        "index": 11
+                        "index": 8
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 341,
+                        "column": 314,
                         "line": 1,
-                        "offset": 341
+                        "offset": 314
                     },
                     "start": {
-                        "column": 309,
+                        "column": 288,
                         "line": 1,
-                        "offset": 309
+                        "offset": 288
                     }
                 }
             }
