@@ -34,7 +34,6 @@
                         "codedeploy:Get*",
                         "codepipeline:ListPipelines",
                         "codestar:List*",
-                        "codestar:Verify*",
                         "cognito-idp:List*",
                         "cognito-identity:ListIdentities",
                         "cognito-identity:ListIdentityPools",
@@ -118,7 +117,6 @@
                         "elasticloadbalancing:DescribeListeners",
                         "elasticloadbalancing:DescribeLoadBalancers",
                         "elasticloadbalancing:DescribeTargetGroups",
-                        "elasticloadbalancing:DescribeTargetHealth",
                         "elasticfilesystem:DescribeFileSystems",
                         "elasticloadbalancing:DescribeInstanceHealth",
                         "elasticloadbalancing:DescribeTargetHealth",
@@ -132,6 +130,7 @@
                         "events:ListTargetsByRule",
                         "firehose:List*",
                         "firehose:DescribeDeliveryStream",
+                        "fsx:DescribeFileSystems",
                         "gamelift:List*",
                         "glacier:List*",
                         "greengrass:List*",
@@ -170,6 +169,11 @@
                         "opsworks:Describe*",
                         "opsworks-cm:Describe*",
                         "organizations:List*",
+                        "outposts:GetOutpost",
+                        "outposts:GetOutpostInstanceTypes",
+                        "outposts:ListOutposts",
+                        "outposts:ListSites",
+                        "outposts:ListTagsForResource",
                         "mobiletargeting:GetApplicationSettings",
                         "mobiletargeting:GetCampaigns",
                         "mobiletargeting:GetImportJobs",
@@ -218,8 +222,8 @@
                 }
             ]
         },
-        "VersionId": "v10",
+        "VersionId": "v11",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-08-18T22:51:43Z"
+        "CreateDate": "2021-06-11T19:27:03Z"
     }
 }

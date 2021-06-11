@@ -9,8 +9,9 @@
                         "acm:DescribeCertificate",
                         "acm:GetCertificate",
                         "acm:List*",
+                        "acm-pca:DescribeCertificateAuthority",
+                        "acm-pca:ListCertificateAuthorities",
                         "apigateway:GET",
-                        "appstream:Get*",
                         "autoscaling:Describe*",
                         "aws-marketplace:ViewSubscriptions",
                         "cloudformation:Describe*",
@@ -210,8 +211,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-08-18T22:30:18Z"
+        "CreateDate": "2021-06-11T19:46:10Z"
     }
 }
