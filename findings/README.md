@@ -1,9 +1,8 @@
-## AWS Access Analyzer - Findings - 2021-06-10
+## AWS Access Analyzer - Findings - 2021-06-11
 
 - Policies analyzed: `828`
-- Errors: `25`
+- Errors: `24`
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
-  - [`ViewOnlyAccess`](./ViewOnlyAccess.json)
   - [`AmazonSageMakerReadOnly`](./AmazonSageMakerReadOnly.json)
   - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)
   - [`AWSPrivateMarketplaceAdminFullAccess`](./AWSPrivateMarketplaceAdminFullAccess.json)
@@ -20,10 +19,9 @@
   - [`AdministratorAccess`](./AdministratorAccess.json)
   - [`AWSDataPipelineRole`](./AWSDataPipelineRole.json)
   - [`AmazonElasticMapReduceFullAccess`](./AmazonElasticMapReduceFullAccess.json)
-- Suggestions: `48`
+- Suggestions: `47`
   - [`NeptuneConsoleFullAccess`](./NeptuneConsoleFullAccess.json)
   - [`AWSElasticBeanstalkService`](./AWSElasticBeanstalkService.json)
-  - [`ViewOnlyAccess`](./ViewOnlyAccess.json)
   - [`AWSElasticBeanstalkWebTier`](./AWSElasticBeanstalkWebTier.json)
   - [`AWSBackupOperatorAccess`](./AWSBackupOperatorAccess.json)
   - [`AWSElasticBeanstalkWorkerTier`](./AWSElasticBeanstalkWorkerTier.json)
