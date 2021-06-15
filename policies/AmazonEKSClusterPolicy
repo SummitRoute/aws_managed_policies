@@ -30,6 +30,9 @@
                         "ec2:ModifyInstanceAttribute",
                         "ec2:ModifyVolume",
                         "ec2:RevokeSecurityGroupIngress",
+                        "ec2:DescribeAccountAttributes",
+                        "ec2:DescribeAddresses",
+                        "ec2:DescribeInternetGateways",
                         "elasticloadbalancing:AddTags",
                         "elasticloadbalancing:ApplySecurityGroupsToLoadBalancer",
                         "elasticloadbalancing:AttachLoadBalancerToSubnets",
@@ -70,15 +73,15 @@
                     "Action": "iam:CreateServiceLinkedRole",
                     "Resource": "*",
                     "Condition": {
-                        "StringLike": {
+                        "StringEquals": {
                             "iam:AWSServiceName": "elasticloadbalancing.amazonaws.com"
                         }
                     }
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-02-21T20:10:11Z"
+        "CreateDate": "2021-06-15T20:57:05Z"
     }
 }
