@@ -641,12 +641,12 @@
             "PolicyId": "ANPAIBTLDQMIC6UOIGFWA",
             "Arn": "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy",
             "Path": "/",
-            "DefaultVersionId": "v4",
+            "DefaultVersionId": "v5",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2018-05-27T21:06:14+00:00",
-            "UpdateDate": "2020-02-21T20:10:11+00:00"
+            "UpdateDate": "2021-06-15T20:57:05+00:00"
         },
         {
             "PolicyName": "AmazonEKSWorkerNodePolicy",
