@@ -111,8 +111,7 @@
                         "license-manager:GetServiceSettings",
                         "license-manager:GetLicense*",
                         "license-manager:UpdateLicenseSpecificationsForResource",
-                        "license-manager:ListUsageForLicenseConfiguration",
-                        "license-manager:ListDistributedGrants"
+                        "license-manager:List*"
                     ],
                     "Resource": [
                         "*"
@@ -120,8 +119,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-03-09T20:23:10Z"
+        "CreateDate": "2021-06-15T17:06:26Z"
     }
 }
