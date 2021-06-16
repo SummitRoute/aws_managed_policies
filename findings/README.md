@@ -1,6 +1,6 @@
 ## AWS Access Analyzer - Findings - 2021-06-16
 
-- Policies analyzed: `829`
+- Policies analyzed: `830`
 - Errors: `25`
   - [`ReadOnlyAccess`](./ReadOnlyAccess.json)
   - [`AWSKeyManagementServiceMultiRegionKeysServiceRolePolicy`](./AWSKeyManagementServiceMultiRegionKeysServiceRolePolicy.json)
