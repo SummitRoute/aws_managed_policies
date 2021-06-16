@@ -1,0 +1,35 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Sid": "AllowCreateOpsItem",
+                    "Effect": "Allow",
+                    "Action": [
+                        "ssm:CreateOpsItem",
+                        "ssm:AddTagsToResource"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Sid": "AllowAccessOpsItem",
+                    "Effect": "Allow",
+                    "Action": [
+                        "ssm:UpdateOpsItem",
+                        "ssm:GetOpsItem"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEquals": {
+                            "aws:ResourceTag/SsmOperationalInsight": "true"
+                        }
+                    }
+                }
+            ]
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2021-06-16T20:12:52Z"
+    }
+}
