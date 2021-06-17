@@ -19,6 +19,21 @@
                     }
                 },
                 {
+                    "Sid": "IAMPermissionsForCreatingMemberSLR",
+                    "Effect": "Allow",
+                    "Action": [
+                        "iam:CreateServiceLinkedRole"
+                    ],
+                    "Resource": [
+                        "arn:*:iam::*:role/aws-service-role/license-manager.member-account.amazonaws.com/AWSServiceRoleForAWSLicenseManagerMemberAccountRole"
+                    ],
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:AWSServiceName": "license-manager.amazonaws.com"
+                        }
+                    }
+                },
+                {
                     "Sid": "S3BucketPermissions1",
                     "Effect": "Allow",
                     "Action": [
@@ -98,7 +113,8 @@
                     "Effect": "Allow",
                     "Action": [
                         "organizations:ListAWSServiceAccessForOrganization",
-                        "organizations:DescribeOrganization"
+                        "organizations:DescribeOrganization",
+                        "organizations:ListDelegatedAdministrators"
                     ],
                     "Resource": [
                         "*"
@@ -119,8 +135,8 @@
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-06-15T17:06:26Z"
+        "CreateDate": "2021-06-17T03:54:13Z"
     }
 }
