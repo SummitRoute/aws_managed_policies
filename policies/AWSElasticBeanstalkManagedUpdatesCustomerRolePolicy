@@ -44,6 +44,7 @@
                         "autoscaling:DescribeScheduledActions",
                         "ec2:DescribeAccountAttributes",
                         "ec2:DescribeAddresses",
+                        "ec2:DescribeAvailabilityZones",
                         "ec2:DescribeImages",
                         "ec2:DescribeInstanceAttribute",
                         "ec2:DescribeInstances",
@@ -267,8 +268,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-03-09T22:36:04Z"
+        "CreateDate": "2021-06-16T22:40:31Z"
     }
 }
