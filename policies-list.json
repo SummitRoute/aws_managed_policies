@@ -3425,12 +3425,12 @@
             "PolicyId": "ANPAJBWPGNOVKZD3JI2P2",
             "Arn": "arn:aws:iam::aws:policy/AmazonVPCFullAccess",
             "Path": "/",
-            "DefaultVersionId": "v7",
+            "DefaultVersionId": "v8",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2015-02-06T18:41:16+00:00",
-            "UpdateDate": "2018-03-15T18:30:25+00:00"
+            "UpdateDate": "2021-06-23T20:58:45+00:00"
         },
         {
             "PolicyName": "AWSCertificateManagerPrivateCAUser",
@@ -4421,12 +4421,12 @@
             "PolicyId": "ANPAJM2KI2UJDR24XPS2K",
             "Arn": "arn:aws:iam::aws:policy/AWSIoTDataAccess",
             "Path": "/",
-            "DefaultVersionId": "v2",
+            "DefaultVersionId": "v3",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2015-10-27T21:51:18+00:00",
-            "UpdateDate": "2017-11-16T18:24:11+00:00"
+            "UpdateDate": "2021-06-23T21:34:47+00:00"
         },
         {
             "PolicyName": "AmazonWorkLinkFullAccess",

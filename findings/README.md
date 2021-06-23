@@ -1,12 +1,10 @@
 ## AWS Access Analyzer - Findings - 2021-06-23
 
 - Policies analyzed: `830`
-- Errors: `25`
+- Errors: `23`
   - [`AWSPrivateMarketplaceAdminFullAccess`](./AWSPrivateMarketplaceAdminFullAccess.json)
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
   - [`ReadOnlyAccess`](./ReadOnlyAccess.json)
-  - [`AWSKeyManagementServiceMultiRegionKeysServiceRolePolicy`](./AWSKeyManagementServiceMultiRegionKeysServiceRolePolicy.json)
-  - [`AmazonSageMakerReadOnly`](./AmazonSageMakerReadOnly.json)
   - [`AWSPurchaseOrdersServiceRolePolicy`](./AWSPurchaseOrdersServiceRolePolicy.json)
   - [`AWSGlueConsoleSageMakerNotebookFullAccess`](./AWSGlueConsoleSageMakerNotebookFullAccess.json)
   - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)
@@ -20,7 +18,7 @@
   - [`IAMFullAccess`](./IAMFullAccess.json)
   - [`AmazonElasticMapReduceFullAccess`](./AmazonElasticMapReduceFullAccess.json)
   - [`AWSElasticBeanstalkService`](./AWSElasticBeanstalkService.json)
-- Suggestions: `47`
+- Suggestions: `46`
   - [`AmazonAppStreamServiceAccess`](./AmazonAppStreamServiceAccess.json)
   - [`AWSCodeStarServiceRole`](./AWSCodeStarServiceRole.json)
   - [`AWSMarketplaceFullAccess`](./AWSMarketplaceFullAccess.json)
@@ -40,7 +38,6 @@
   - [`AWSLakeFormationDataAdmin`](./AWSLakeFormationDataAdmin.json)
   - [`AWSBatchFullAccess`](./AWSBatchFullAccess.json)
   - [`AWSElasticBeanstalkRoleCore`](./AWSElasticBeanstalkRoleCore.json)
-  - [`AmazonVPCFullAccess`](./AmazonVPCFullAccess.json)
   - [`AWSGlueConsoleSageMakerNotebookFullAccess`](./AWSGlueConsoleSageMakerNotebookFullAccess.json)
   - [`NeptuneConsoleFullAccess`](./NeptuneConsoleFullAccess.json)
   - [`AmazonQLDBReadOnly`](./AmazonQLDBReadOnly.json)
