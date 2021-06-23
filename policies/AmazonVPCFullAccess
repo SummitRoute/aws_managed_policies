@@ -22,6 +22,7 @@
                         "ec2:AttachVpnGateway",
                         "ec2:AuthorizeSecurityGroupEgress",
                         "ec2:AuthorizeSecurityGroupIngress",
+                        "ec2:CreateCarrierGateway",
                         "ec2:CreateCustomerGateway",
                         "ec2:CreateDefaultSubnet",
                         "ec2:CreateDefaultVpc",
@@ -29,8 +30,8 @@
                         "ec2:CreateEgressOnlyInternetGateway",
                         "ec2:CreateFlowLogs",
                         "ec2:CreateInternetGateway",
+                        "ec2:CreateLocalGatewayRouteTableVpcAssociation",
                         "ec2:CreateNatGateway",
-                        "ec2:CreateNetworkAcl",
                         "ec2:CreateNetworkAcl",
                         "ec2:CreateNetworkAclEntry",
                         "ec2:CreateNetworkInterface",
@@ -48,11 +49,13 @@
                         "ec2:CreateVpnConnection",
                         "ec2:CreateVpnConnectionRoute",
                         "ec2:CreateVpnGateway",
+                        "ec2:DeleteCarrierGateway",
                         "ec2:DeleteCustomerGateway",
                         "ec2:DeleteDhcpOptions",
                         "ec2:DeleteEgressOnlyInternetGateway",
                         "ec2:DeleteFlowLogs",
                         "ec2:DeleteInternetGateway",
+                        "ec2:DeleteLocalGatewayRouteTableVpcAssociation",
                         "ec2:DeleteNatGateway",
                         "ec2:DeleteNetworkAcl",
                         "ec2:DeleteNetworkAclEntry",
@@ -74,6 +77,7 @@
                         "ec2:DescribeAccountAttributes",
                         "ec2:DescribeAddresses",
                         "ec2:DescribeAvailabilityZones",
+                        "ec2:DescribeCarrierGateways",
                         "ec2:DescribeClassicLinkInstances",
                         "ec2:DescribeCustomerGateways",
                         "ec2:DescribeDhcpOptions",
@@ -81,6 +85,9 @@
                         "ec2:DescribeFlowLogs",
                         "ec2:DescribeInstances",
                         "ec2:DescribeInternetGateways",
+                        "ec2:DescribeIpv6Pools",
+                        "ec2:DescribeLocalGatewayRouteTables",
+                        "ec2:DescribeLocalGatewayRouteTableVpcAssociations",
                         "ec2:DescribeKeyPairs",
                         "ec2:DescribeMovingAddresses",
                         "ec2:DescribeNatGateways",
@@ -152,8 +159,8 @@
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-03-15T18:30:25Z"
+        "CreateDate": "2021-06-23T20:58:45Z"
     }
 }
