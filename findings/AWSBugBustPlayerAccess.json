@@ -1,0 +1,362 @@
+[
+    {
+        "findingDetails": "The service bugbust:ListBugs specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 0
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 421,
+                        "line": 1,
+                        "offset": 421
+                    },
+                    "start": {
+                        "column": 403,
+                        "line": 1,
+                        "offset": 403
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service bugbust:ListProfilingGroups specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 1
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 452,
+                        "line": 1,
+                        "offset": 452
+                    },
+                    "start": {
+                        "column": 423,
+                        "line": 1,
+                        "offset": 423
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service bugbust:JoinEvent specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 2
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 473,
+                        "line": 1,
+                        "offset": 473
+                    },
+                    "start": {
+                        "column": 454,
+                        "line": 1,
+                        "offset": 454
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service bugbust:GetEvent specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 3
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 493,
+                        "line": 1,
+                        "offset": 493
+                    },
+                    "start": {
+                        "column": 475,
+                        "line": 1,
+                        "offset": 475
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service bugbust:ListEvents specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 4
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 515,
+                        "line": 1,
+                        "offset": 515
+                    },
+                    "start": {
+                        "column": 495,
+                        "line": 1,
+                        "offset": 495
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service bugbust:GetJoinEventStatus specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 5
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 545,
+                        "line": 1,
+                        "offset": 545
+                    },
+                    "start": {
+                        "column": 517,
+                        "line": 1,
+                        "offset": 517
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service bugbust:ListEventScores specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 6
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 572,
+                        "line": 1,
+                        "offset": 572
+                    },
+                    "start": {
+                        "column": 547,
+                        "line": 1,
+                        "offset": 547
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service bugbust:ListEventParticipants specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 7
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 605,
+                        "line": 1,
+                        "offset": 605
+                    },
+                    "start": {
+                        "column": 574,
+                        "line": 1,
+                        "offset": 574
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service bugbust:UpdateWorkItem specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 8
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 631,
+                        "line": 1,
+                        "offset": 631
+                    },
+                    "start": {
+                        "column": 607,
+                        "line": 1,
+                        "offset": 607
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service bugbust:ListPullRequests specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 9
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 659,
+                        "line": 1,
+                        "offset": 659
+                    },
+                    "start": {
+                        "column": 633,
+                        "line": 1,
+                        "offset": 633
+                    }
+                }
+            }
+        ]
+    }
+]

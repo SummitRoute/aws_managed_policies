@@ -1,13 +1,15 @@
-## AWS Access Analyzer - Findings - 2021-06-23
+## AWS Access Analyzer - Findings - 2021-06-24
 
-- Policies analyzed: `830`
-- Errors: `23`
+- Policies analyzed: `833`
+- Errors: `34`
   - [`AWSPrivateMarketplaceAdminFullAccess`](./AWSPrivateMarketplaceAdminFullAccess.json)
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
   - [`ReadOnlyAccess`](./ReadOnlyAccess.json)
+  - [`AWSBugBustFullAccess`](./AWSBugBustFullAccess.json)
   - [`AWSPurchaseOrdersServiceRolePolicy`](./AWSPurchaseOrdersServiceRolePolicy.json)
   - [`AWSGlueConsoleSageMakerNotebookFullAccess`](./AWSGlueConsoleSageMakerNotebookFullAccess.json)
   - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)
+  - [`AWSBugBustPlayerAccess`](./AWSBugBustPlayerAccess.json)
 - Sec_Warnings: `9`
   - [`AWSServiceRoleForAmazonEKSNodegroup`](./AWSServiceRoleForAmazonEKSNodegroup.json)
   - [`AdministratorAccess`](./AdministratorAccess.json)

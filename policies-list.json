@@ -6457,6 +6457,18 @@
             "UpdateDate": "2020-11-18T18:03:08+00:00"
         },
         {
+            "PolicyName": "AWSBugBustPlayerAccess",
+            "PolicyId": "ANPAZKAPJZG4CPEJPLKKR",
+            "Arn": "arn:aws:iam::aws:policy/AWSBugBustPlayerAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-06-24T07:15:00+00:00",
+            "UpdateDate": "2021-06-24T07:15:00+00:00"
+        },
+        {
             "PolicyName": "AmazonSageMakerEdgeDeviceFleetPolicy",
             "PolicyId": "ANPAZKAPJZG4CPENAJLBT",
             "Arn": "arn:aws:iam::aws:policy/service-role/AmazonSageMakerEdgeDeviceFleetPolicy",
@@ -8773,6 +8785,18 @@
             "UpdateDate": "2020-08-28T18:28:58+00:00"
         },
         {
+            "PolicyName": "AWSBugBustServiceRolePolicy",
+            "PolicyId": "ANPAZKAPJZG4LXHZTN64K",
+            "Arn": "arn:aws:iam::aws:policy/aws-service-role/AWSBugBustServiceRolePolicy",
+            "Path": "/aws-service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-06-24T06:59:05+00:00",
+            "UpdateDate": "2021-06-24T06:59:05+00:00"
+        },
+        {
             "PolicyName": "AWSAppRunnerServicePolicyForECRAccess",
             "PolicyId": "ANPAZKAPJZG4LYM3IT6IY",
             "Arn": "arn:aws:iam::aws:policy/service-role/AWSAppRunnerServicePolicyForECRAccess",
@@ -9059,6 +9083,18 @@
             "IsAttachable": true,
             "CreateDate": "2019-11-13T19:27:55+00:00",
             "UpdateDate": "2021-05-25T19:26:14+00:00"
+        },
+        {
+            "PolicyName": "AWSBugBustFullAccess",
+            "PolicyId": "ANPAZKAPJZG4MQU5DXLFC",
+            "Arn": "arn:aws:iam::aws:policy/AWSBugBustFullAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-06-24T07:03:26+00:00",
+            "UpdateDate": "2021-06-24T07:03:26+00:00"
         },
         {
             "PolicyName": "CloudWatchApplicationInsightsFullAccess",
