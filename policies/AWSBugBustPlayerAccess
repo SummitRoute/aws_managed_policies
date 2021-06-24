@@ -1,0 +1,46 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Sid": "CodeGuruReviewerPermission",
+                    "Effect": "Allow",
+                    "Action": [
+                        "codeguru-reviewer:DescribeCodeReview",
+                        "codeguru-reviewer:ListRecommendations"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Sid": "CodeGuruProfilerPermission",
+                    "Effect": "Allow",
+                    "Action": [
+                        "codeguru-profiler:DescribeProfilingGroup"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Sid": "AWSBugBustPlayerAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "bugbust:ListBugs",
+                        "bugbust:ListProfilingGroups",
+                        "bugbust:JoinEvent",
+                        "bugbust:GetEvent",
+                        "bugbust:ListEvents",
+                        "bugbust:GetJoinEventStatus",
+                        "bugbust:ListEventScores",
+                        "bugbust:ListEventParticipants",
+                        "bugbust:UpdateWorkItem",
+                        "bugbust:ListPullRequests"
+                    ],
+                    "Resource": "*"
+                }
+            ]
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2021-06-24T07:15:00Z"
+    }
+}
