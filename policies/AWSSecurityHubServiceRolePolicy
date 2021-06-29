@@ -32,14 +32,15 @@
                         "config:PutConfigRule",
                         "config:DeleteConfigRule",
                         "config:GetComplianceDetailsByConfigRule",
-                        "config:DescribeConfigRuleEvaluationStatus"
+                        "config:DescribeConfigRuleEvaluationStatus",
+                        "config:PutEvaluations"
                     ],
                     "Resource": "arn:aws:config:*:*:config-rule/aws-service-rule/*securityhub*"
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-09-21T19:59:01Z"
+        "CreateDate": "2021-06-29T19:55:36Z"
     }
 }
