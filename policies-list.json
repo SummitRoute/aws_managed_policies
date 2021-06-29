@@ -4901,12 +4901,12 @@
             "PolicyId": "ANPAJQPCESDDYDLLSOGYO",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/AWSSecurityHubServiceRolePolicy",
             "Path": "/aws-service-role/",
-            "DefaultVersionId": "v7",
+            "DefaultVersionId": "v8",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2018-11-27T23:47:51+00:00",
-            "UpdateDate": "2020-09-21T19:59:01+00:00"
+            "UpdateDate": "2021-06-29T19:55:36+00:00"
         },
         {
             "PolicyName": "AWSElasticBeanstalkMaintenance",
