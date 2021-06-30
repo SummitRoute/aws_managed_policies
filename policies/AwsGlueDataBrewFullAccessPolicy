@@ -76,6 +76,7 @@
                     ],
                     "Resource": [
                         "arn:aws:glue:*:*:catalog",
+                        "arn:aws:glue:*:*:database/*",
                         "arn:aws:glue:*:*:table/*/awsgluedatabrew*"
                     ]
                 },
@@ -119,8 +120,8 @@
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-06-30T16:50:53Z"
+        "CreateDate": "2021-06-30T18:23:37Z"
     }
 }
