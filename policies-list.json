@@ -8165,12 +8165,12 @@
             "PolicyId": "ANPAZKAPJZG4JLZR2TQJD",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/AmazonFISServiceRolePolicy",
             "Path": "/aws-service-role/",
-            "DefaultVersionId": "v2",
+            "DefaultVersionId": "v3",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-12-21T21:18:19+00:00",
-            "UpdateDate": "2021-01-18T15:40:47+00:00"
+            "UpdateDate": "2021-06-30T13:50:04+00:00"
         },
         {
             "PolicyName": "AWSThinkboxDeadlineSpotEventPluginWorkerPolicy",

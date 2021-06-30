@@ -1,10 +1,8 @@
-## AWS Access Analyzer - Findings - 2021-06-29
+## AWS Access Analyzer - Findings - 2021-06-30
 
 - Policies analyzed: `833`
-- Errors: `34`
+- Errors: `23`
   - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)
-  - [`AWSBugBustFullAccess`](./AWSBugBustFullAccess.json)
-  - [`AWSBugBustPlayerAccess`](./AWSBugBustPlayerAccess.json)
   - [`AWSPrivateMarketplaceAdminFullAccess`](./AWSPrivateMarketplaceAdminFullAccess.json)
   - [`AWSGlueConsoleSageMakerNotebookFullAccess`](./AWSGlueConsoleSageMakerNotebookFullAccess.json)
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
