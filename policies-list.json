@@ -5813,12 +5813,12 @@
             "PolicyId": "ANPAZKAPJZG4ACNRIK7M3",
             "Arn": "arn:aws:iam::aws:policy/AwsGlueDataBrewFullAccessPolicy",
             "Path": "/",
-            "DefaultVersionId": "v5",
+            "DefaultVersionId": "v6",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-11-11T16:51:39+00:00",
-            "UpdateDate": "2021-06-30T16:50:53+00:00"
+            "UpdateDate": "2021-06-30T18:23:37+00:00"
         },
         {
             "PolicyName": "AmazonElasticContainerRegistryPublicReadOnly",
