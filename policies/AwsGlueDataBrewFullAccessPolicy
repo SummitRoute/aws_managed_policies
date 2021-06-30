@@ -62,6 +62,26 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "glue:GetDatabases"
+                    ],
+                    "Resource": [
+                        "arn:aws:glue:*:*:catalog",
+                        "arn:aws:glue:*:*:database/*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "glue:CreateTable"
+                    ],
+                    "Resource": [
+                        "arn:aws:glue:*:*:catalog",
+                        "arn:aws:glue:*:*:table/*/awsgluedatabrew*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
                         "s3:ListBucket",
                         "s3:GetObject"
                     ],
@@ -99,8 +119,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-04-28T15:54:32Z"
+        "CreateDate": "2021-06-30T16:50:53Z"
     }
 }
