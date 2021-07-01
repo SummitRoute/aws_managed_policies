@@ -8237,12 +8237,12 @@
             "PolicyId": "ANPAZKAPJZG4JXAE7KLRO",
             "Arn": "arn:aws:iam::aws:policy/AmazonConnect_FullAccess",
             "Path": "/",
-            "DefaultVersionId": "v1",
+            "DefaultVersionId": "v2",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-11-20T19:54:21+00:00",
-            "UpdateDate": "2020-11-20T19:54:21+00:00"
+            "UpdateDate": "2021-07-01T18:41:26+00:00"
         },
         {
             "PolicyName": "AWSElementalMediaLiveFullAccess",
