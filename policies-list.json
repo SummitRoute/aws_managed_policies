@@ -3257,12 +3257,12 @@
             "PolicyId": "ANPAJ7W6266ELXF5MISDS",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/AWSSupportServiceRolePolicy",
             "Path": "/aws-service-role/",
-            "DefaultVersionId": "v15",
+            "DefaultVersionId": "v16",
             "AttachmentCount": 1,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2018-04-19T18:04:44+00:00",
-            "UpdateDate": "2021-03-23T17:45:15+00:00"
+            "UpdateDate": "2021-07-01T21:52:12+00:00"
         },
         {
             "PolicyName": "AWSApplicationAutoscalingRDSClusterPolicy",
