@@ -20,6 +20,8 @@
                         "kms:DescribeKey",
                         "kms:ListAliases",
                         "lex:GetBots",
+                        "lex:ListBots",
+                        "lex:ListBotAliases",
                         "logs:CreateLogGroup",
                         "s3:GetBucketLocation",
                         "s3:ListAllMyBuckets",
@@ -60,8 +62,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-11-20T19:54:21Z"
+        "CreateDate": "2021-07-01T18:41:26Z"
     }
 }
