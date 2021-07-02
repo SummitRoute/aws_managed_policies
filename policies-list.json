@@ -9197,12 +9197,12 @@
             "PolicyId": "ANPAZKAPJZG4NAOSKQH4V",
             "Arn": "arn:aws:iam::aws:policy/AmazonSageMakerAdmin-ServiceCatalogProductsServiceRolePolicy",
             "Path": "/",
-            "DefaultVersionId": "v1",
+            "DefaultVersionId": "v2",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-11-27T18:48:07+00:00",
-            "UpdateDate": "2020-11-27T18:48:07+00:00"
+            "UpdateDate": "2021-07-02T06:13:39+00:00"
         },
         {
             "PolicyName": "AWSTrustedAdvisorReportingServiceRolePolicy",
