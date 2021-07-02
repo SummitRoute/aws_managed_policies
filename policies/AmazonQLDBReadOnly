@@ -4,6 +4,7 @@
             "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "qldb:ListLedgers",
                         "qldb:DescribeLedger",
@@ -15,16 +16,14 @@
                         "qldb:GetBlock",
                         "qldb:GetDigest",
                         "qldb:GetRevision",
-                        "qldb:GetBlock",
                         "qldb:ListTagsForResource"
                     ],
-                    "Effect": "Allow",
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-05-19T17:47:55Z"
+        "CreateDate": "2021-07-02T02:17:25Z"
     }
 }
