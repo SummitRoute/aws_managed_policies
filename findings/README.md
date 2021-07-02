@@ -1,4 +1,4 @@
-## AWS Access Analyzer - Findings - 2021-07-01
+## AWS Access Analyzer - Findings - 2021-07-02
 
 - Policies analyzed: `833`
 - Errors: `23`
@@ -18,7 +18,7 @@
   - [`AWSDataPipelineRole`](./AWSDataPipelineRole.json)
   - [`AdministratorAccess`](./AdministratorAccess.json)
   - [`AdministratorAccess-Amplify`](./AdministratorAccess-Amplify.json)
-- Suggestions: `46`
+- Suggestions: `45`
   - [`AmazonElasticMapReduceFullAccess`](./AmazonElasticMapReduceFullAccess.json)
   - [`AWSElasticBeanstalkCustomPlatformforEC2Role`](./AWSElasticBeanstalkCustomPlatformforEC2Role.json)
   - [`AWSCodeCommitReadOnly`](./AWSCodeCommitReadOnly.json)
@@ -32,7 +32,6 @@
   - [`AWSCodeStarServiceRole`](./AWSCodeStarServiceRole.json)
   - [`AWSElasticBeanstalkWorkerTier`](./AWSElasticBeanstalkWorkerTier.json)
   - [`AWSGlueConsoleSageMakerNotebookFullAccess`](./AWSGlueConsoleSageMakerNotebookFullAccess.json)
-  - [`AmazonQLDBReadOnly`](./AmazonQLDBReadOnly.json)
   - [`DataScientist`](./DataScientist.json)
   - [`AWSLakeFormationDataAdmin`](./AWSLakeFormationDataAdmin.json)
   - [`AWSElasticBeanstalkRoleCore`](./AWSElasticBeanstalkRoleCore.json)
