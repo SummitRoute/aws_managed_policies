@@ -157,14 +157,14 @@
                     }
                 },
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "ecr:CreateRepository",
                         "ecr:DeleteRepository"
                     ],
                     "Resource": [
                         "arn:aws:ecr:*:*:repository/sagemaker-*"
-                    ],
-                    "Effect": "Allow"
+                    ]
                 },
                 {
                     "Effect": "Allow",
@@ -194,6 +194,7 @@
                     "Resource": "arn:aws:firehose:*:*:deliverystream/sagemaker-*"
                 },
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "glue:CreateDatabase",
                         "glue:DeleteDatabase"
@@ -203,10 +204,10 @@
                         "arn:aws:glue:*:*:database/sagemaker-*",
                         "arn:aws:glue:*:*:table/sagemaker-*",
                         "arn:aws:glue:*:*:userDefinedFunction/sagemaker-*"
-                    ],
-                    "Effect": "Allow"
+                    ]
                 },
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "glue:CreateClassifier",
                         "glue:DeleteClassifier",
@@ -218,46 +219,45 @@
                     ],
                     "Resource": [
                         "*"
-                    ],
-                    "Effect": "Allow"
+                    ]
                 },
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "glue:CreateWorkflow"
                     ],
                     "Resource": [
                         "arn:aws:glue:*:*:workflow/sagemaker-*"
-                    ],
-                    "Effect": "Allow"
+                    ]
                 },
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "glue:CreateJob"
                     ],
                     "Resource": [
                         "arn:aws:glue:*:*:job/sagemaker-*"
-                    ],
-                    "Effect": "Allow"
+                    ]
                 },
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "glue:CreateCrawler",
                         "glue:GetCrawler"
                     ],
                     "Resource": [
                         "arn:aws:glue:*:*:crawler/sagemaker-*"
-                    ],
-                    "Effect": "Allow"
+                    ]
                 },
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "glue:CreateTrigger",
                         "glue:GetTrigger"
                     ],
                     "Resource": [
                         "arn:aws:glue:*:*:trigger/sagemaker-*"
-                    ],
-                    "Effect": "Allow"
+                    ]
                 },
                 {
                     "Effect": "Allow",
@@ -328,11 +328,14 @@
                         "s3:PutBucketPolicy",
                         "s3:PutBucketPublicAccessBlock",
                         "s3:PutBucketLogging",
-                        "s3:PutEncryptionConfiguration"
+                        "s3:PutEncryptionConfiguration",
+                        "s3:PutBucketTagging",
+                        "s3:PutObjectTagging"
                     ],
                     "Resource": "arn:aws:s3:::sagemaker-*"
                 },
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "sagemaker:CreateEndpoint",
                         "sagemaker:CreateEndpointConfig",
@@ -345,14 +348,18 @@
                         "sagemaker:DescribeModel",
                         "sagemaker:DescribeEndpointConfig",
                         "sagemaker:DescribeEndpoint",
-                        "sagemaker:DescribeWorkteam"
+                        "sagemaker:DescribeWorkteam",
+                        "sagemaker:CreateCodeRepository",
+                        "sagemaker:DescribeCodeRepository",
+                        "sagemaker:UpdateCodeRepository",
+                        "sagemaker:DeleteCodeRepository"
                     ],
                     "Resource": [
                         "arn:aws:sagemaker:*:*:*"
-                    ],
-                    "Effect": "Allow"
+                    ]
                 },
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "states:CreateStateMachine",
                         "states:DeleteStateMachine",
@@ -360,13 +367,22 @@
                     ],
                     "Resource": [
                         "arn:aws:states:*:*:stateMachine:sagemaker-*"
-                    ],
-                    "Effect": "Allow"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "codestar-connections:PassConnection",
+                    "Resource": "arn:aws:codestar-connections:*:*:connection/*",
+                    "Condition": {
+                        "StringEquals": {
+                            "codestar-connections:PassedToService": "codepipeline.amazonaws.com"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-11-27T18:48:07Z"
+        "CreateDate": "2021-07-02T06:13:39Z"
     }
 }
