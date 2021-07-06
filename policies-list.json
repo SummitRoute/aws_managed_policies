@@ -8729,12 +8729,12 @@
             "PolicyId": "ANPAZKAPJZG4LL52EIPJX",
             "Arn": "arn:aws:iam::aws:policy/AWSBackupFullAccess",
             "Path": "/",
-            "DefaultVersionId": "v7",
+            "DefaultVersionId": "v8",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2019-11-18T22:21:52+00:00",
-            "UpdateDate": "2021-03-10T18:32:22+00:00"
+            "UpdateDate": "2021-07-05T23:28:54+00:00"
         },
         {
             "PolicyName": "AmazonDevOpsGuruServiceRolePolicy",
@@ -9545,12 +9545,12 @@
             "PolicyId": "ANPAZKAPJZG4ONJBD4ZY2",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/AWSBackupServiceLinkedRolePolicyForBackup",
             "Path": "/aws-service-role/",
-            "DefaultVersionId": "v3",
+            "DefaultVersionId": "v4",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-06-02T23:08:40+00:00",
-            "UpdateDate": "2021-04-12T18:11:02+00:00"
+            "UpdateDate": "2021-07-05T23:27:46+00:00"
         },
         {
             "PolicyName": "AmazonManagedBlockchainConsoleFullAccess",
