@@ -236,11 +236,21 @@
                     "Action": "ds:DescribeDirectories",
                     "Effect": "Allow",
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "iam:CreateServiceLinkedRole",
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:AWSServiceName": "backup.amazonaws.com"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-03-10T18:32:22Z"
+        "CreateDate": "2021-07-05T23:28:54Z"
     }
 }
