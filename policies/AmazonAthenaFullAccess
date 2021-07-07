@@ -49,7 +49,8 @@
                         "s3:ListMultipartUploadParts",
                         "s3:AbortMultipartUpload",
                         "s3:CreateBucket",
-                        "s3:PutObject"
+                        "s3:PutObject",
+                        "s3:PutBucketPublicAccessBlock"
                     ],
                     "Resource": [
                         "arn:aws:s3:::aws-athena-query-results-*"
@@ -108,8 +109,8 @@
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-08-08T17:52:27Z"
+        "CreateDate": "2021-07-07T20:15:04Z"
     }
 }
