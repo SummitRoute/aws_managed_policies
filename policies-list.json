@@ -257,12 +257,12 @@
             "PolicyId": "ANPAI4JB77JXFQXDWNRPM",
             "Arn": "arn:aws:iam::aws:policy/service-role/AWSQuicksightAthenaAccess",
             "Path": "/service-role/",
-            "DefaultVersionId": "v9",
+            "DefaultVersionId": "v10",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2016-12-09T02:31:03+00:00",
-            "UpdateDate": "2021-01-29T02:07:58+00:00"
+            "UpdateDate": "2021-07-07T20:09:06+00:00"
         },
         {
             "PolicyName": "AWSCloudMapRegisterInstanceAccess",
@@ -1853,12 +1853,12 @@
             "PolicyId": "ANPAIPJMLMD4C7RYZ6XCK",
             "Arn": "arn:aws:iam::aws:policy/AmazonAthenaFullAccess",
             "Path": "/",
-            "DefaultVersionId": "v6",
+            "DefaultVersionId": "v7",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2016-11-30T16:46:01+00:00",
-            "UpdateDate": "2019-08-08T17:52:27+00:00"
+            "UpdateDate": "2021-07-07T20:15:04+00:00"
         },
         {
             "PolicyName": "AmazonElasticFileSystemReadOnlyAccess",
