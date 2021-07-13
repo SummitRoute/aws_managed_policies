@@ -4925,12 +4925,12 @@
             "PolicyId": "ANPAJQQDZNLDBF2ULTWK6",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/APIGatewayServiceRolePolicy",
             "Path": "/aws-service-role/",
-            "DefaultVersionId": "v8",
+            "DefaultVersionId": "v9",
             "AttachmentCount": 1,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2017-10-20T17:23:10+00:00",
-            "UpdateDate": "2020-02-25T20:24:49+00:00"
+            "UpdateDate": "2021-07-12T22:24:40+00:00"
         },
         {
             "PolicyName": "AWSAccountActivityAccess",
