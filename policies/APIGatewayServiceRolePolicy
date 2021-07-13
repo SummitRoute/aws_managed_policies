@@ -38,7 +38,8 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "acm:DescribeCertificate"
+                        "acm:DescribeCertificate",
+                        "acm:GetCertificate"
                     ],
                     "Resource": "arn:aws:acm:*:*:certificate/*"
                 },
@@ -92,8 +93,8 @@
                 }
             ]
         },
-        "VersionId": "v8",
+        "VersionId": "v9",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-02-25T20:24:49Z"
+        "CreateDate": "2021-07-12T22:24:40Z"
     }
 }
