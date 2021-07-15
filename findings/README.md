@@ -1,10 +1,9 @@
-## AWS Access Analyzer - Findings - 2021-07-14
+## AWS Access Analyzer - Findings - 2021-07-15
 
 - Policies analyzed: `833`
-- Errors: `23`
+- Errors: `22`
   - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)
   - [`AWSPrivateMarketplaceAdminFullAccess`](./AWSPrivateMarketplaceAdminFullAccess.json)
-  - [`AWSGlueConsoleSageMakerNotebookFullAccess`](./AWSGlueConsoleSageMakerNotebookFullAccess.json)
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
   - [`AWSPurchaseOrdersServiceRolePolicy`](./AWSPurchaseOrdersServiceRolePolicy.json)
   - [`ReadOnlyAccess`](./ReadOnlyAccess.json)
@@ -18,7 +17,7 @@
   - [`AWSDataPipelineRole`](./AWSDataPipelineRole.json)
   - [`AdministratorAccess`](./AdministratorAccess.json)
   - [`AdministratorAccess-Amplify`](./AdministratorAccess-Amplify.json)
-- Suggestions: `45`
+- Suggestions: `44`
   - [`AmazonElasticMapReduceFullAccess`](./AmazonElasticMapReduceFullAccess.json)
   - [`AWSElasticBeanstalkCustomPlatformforEC2Role`](./AWSElasticBeanstalkCustomPlatformforEC2Role.json)
   - [`AWSCodeCommitReadOnly`](./AWSCodeCommitReadOnly.json)
@@ -31,7 +30,6 @@
   - [`AWSElasticBeanstalkService`](./AWSElasticBeanstalkService.json)
   - [`AWSCodeStarServiceRole`](./AWSCodeStarServiceRole.json)
   - [`AWSElasticBeanstalkWorkerTier`](./AWSElasticBeanstalkWorkerTier.json)
-  - [`AWSGlueConsoleSageMakerNotebookFullAccess`](./AWSGlueConsoleSageMakerNotebookFullAccess.json)
   - [`DataScientist`](./DataScientist.json)
   - [`AWSLakeFormationDataAdmin`](./AWSLakeFormationDataAdmin.json)
   - [`AWSElasticBeanstalkRoleCore`](./AWSElasticBeanstalkRoleCore.json)
@@ -45,10 +43,9 @@
   - [`AmazonAppStreamServiceAccess`](./AmazonAppStreamServiceAccess.json)
   - [`AWSDeepLensLambdaFunctionAccessPolicy`](./AWSDeepLensLambdaFunctionAccessPolicy.json)
   - [`AWSGlueConsoleFullAccess`](./AWSGlueConsoleFullAccess.json)
-- Warnings: `8`
+- Warnings: `7`
   - [`PowerUserAccess`](./PowerUserAccess.json)
   - [`AWSOrganizationsServiceTrustPolicy`](./AWSOrganizationsServiceTrustPolicy.json)
-  - [`AWSGlueConsoleSageMakerNotebookFullAccess`](./AWSGlueConsoleSageMakerNotebookFullAccess.json)
   - [`IAMFullAccess`](./IAMFullAccess.json)
   - [`AlexaForBusinessFullAccess`](./AlexaForBusinessFullAccess.json)
   - [`AdministratorAccess`](./AdministratorAccess.json)

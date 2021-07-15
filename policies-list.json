@@ -3605,12 +3605,12 @@
             "PolicyId": "ANPAJELFOHJC42QS3ZSYY",
             "Arn": "arn:aws:iam::aws:policy/AWSGlueConsoleSageMakerNotebookFullAccess",
             "Path": "/",
-            "DefaultVersionId": "v2",
+            "DefaultVersionId": "v3",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2018-10-05T17:52:35+00:00",
-            "UpdateDate": "2019-09-26T17:14:11+00:00"
+            "UpdateDate": "2021-07-15T15:24:19+00:00"
         },
         {
             "PolicyName": "AmazonMSKFullAccess",
@@ -8003,6 +8003,18 @@
             "IsAttachable": true,
             "CreateDate": "2019-08-22T19:36:29+00:00",
             "UpdateDate": "2019-08-22T19:36:29+00:00"
+        },
+        {
+            "PolicyName": "Route53RecoveryReadinessServiceRolePolicy",
+            "PolicyId": "ANPAZKAPJZG4J7MSL2FYD",
+            "Arn": "arn:aws:iam::aws:policy/aws-service-role/Route53RecoveryReadinessServiceRolePolicy",
+            "Path": "/aws-service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-07-15T16:06:21+00:00",
+            "UpdateDate": "2021-07-15T16:06:21+00:00"
         },
         {
             "PolicyName": "AmazonEKSForFargateServiceRolePolicy",
