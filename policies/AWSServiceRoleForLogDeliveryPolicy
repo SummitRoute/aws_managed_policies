@@ -4,6 +4,7 @@
             "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "firehose:PutRecord",
                         "firehose:PutRecordBatch",
@@ -12,15 +13,14 @@
                     "Resource": "*",
                     "Condition": {
                         "StringEquals": {
-                            "firehose:ResourceTag/LogDeliveryEnabled": "true"
+                            "aws:ResourceTag/LogDeliveryEnabled": "true"
                         }
-                    },
-                    "Effect": "Allow"
+                    }
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-07-27T19:38:52Z"
+        "CreateDate": "2021-07-15T20:07:44Z"
     }
 }
