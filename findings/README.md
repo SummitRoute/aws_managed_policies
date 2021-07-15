@@ -1,6 +1,6 @@
 ## AWS Access Analyzer - Findings - 2021-07-15
 
-- Policies analyzed: `833`
+- Policies analyzed: `834`
 - Errors: `22`
   - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)
   - [`AWSPrivateMarketplaceAdminFullAccess`](./AWSPrivateMarketplaceAdminFullAccess.json)
