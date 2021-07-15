@@ -56,7 +56,6 @@
                         "s3:PutObject"
                     ],
                     "Resource": [
-                        "arn:aws:s3:::aws-glue-*/*",
                         "arn:aws:s3:::*/*aws-glue-*/*",
                         "arn:aws:s3:::aws-glue-*"
                     ]
@@ -154,8 +153,10 @@
                         "*"
                     ],
                     "Condition": {
-                        "StringEquals": {
-                            "aws:TagKeys": "aws-glue-*"
+                        "ForAllValues:StringLike": {
+                            "aws:TagKeys": [
+                                "aws-glue-*"
+                            ]
                         }
                     }
                 },
@@ -219,8 +220,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-09-26T17:14:11Z"
+        "CreateDate": "2021-07-15T15:24:19Z"
     }
 }
