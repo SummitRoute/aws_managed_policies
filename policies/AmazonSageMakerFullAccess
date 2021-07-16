@@ -358,15 +358,26 @@
                     "Action": [
                         "iam:PassRole"
                     ],
-                    "Resource": "arn:aws:iam::*:role/*",
+                    "Resource": "arn:aws:iam::*:role/*AmazonSageMaker*",
                     "Condition": {
                         "StringEquals": {
                             "iam:PassedToService": [
-                                "sagemaker.amazonaws.com",
                                 "glue.amazonaws.com",
                                 "robomaker.amazonaws.com",
                                 "states.amazonaws.com"
                             ]
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "iam:PassRole"
+                    ],
+                    "Resource": "arn:aws:iam::*:role/*",
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:PassedToService": "sagemaker.amazonaws.com"
                         }
                     }
                 },
@@ -461,8 +472,8 @@
                 }
             ]
         },
-        "VersionId": "v19",
-        "IsDefaultVersion": false,
-        "CreateDate": "2021-02-24T01:19:55Z"
+        "VersionId": "v20",
+        "IsDefaultVersion": true,
+        "CreateDate": "2021-07-16T00:06:59Z"
     }
 }
