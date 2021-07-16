@@ -5657,12 +5657,12 @@
             "PolicyId": "ANPAJZ5IWYMXO5QDB4QOG",
             "Arn": "arn:aws:iam::aws:policy/AmazonSageMakerFullAccess",
             "Path": "/",
-            "DefaultVersionId": "v19",
+            "DefaultVersionId": "v20",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2017-11-29T13:07:59+00:00",
-            "UpdateDate": "2021-02-24T01:19:55+00:00"
+            "UpdateDate": "2021-07-16T00:06:59+00:00"
         },
         {
             "PolicyName": "WAFLoggingServiceRolePolicy",
