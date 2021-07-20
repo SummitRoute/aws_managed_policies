@@ -7,6 +7,12 @@
                     "Effect": "Allow",
                     "Action": [
                         "autoscaling:Describe*",
+                        "cloudfront:ListDistributions",
+                        "cloudwatch:DeleteAlarms",
+                        "cloudwatch:DescribeAlarms",
+                        "cloudwatch:GetMetricStatistics",
+                        "cloudwatch:PutMetricAlarm",
+                        "directconnect:*",
                         "ec2:AcceptVpcEndpointConnections",
                         "ec2:AllocateAddress",
                         "ec2:AssignIpv6Addresses",
@@ -20,8 +26,6 @@
                         "ec2:AttachNetworkInterface",
                         "ec2:AttachVpnGateway",
                         "ec2:CreateCarrierGateway",
-                        "ec2:DeleteCarrierGateway",
-                        "ec2:DescribeCarrierGateways",
                         "ec2:CreateCustomerGateway",
                         "ec2:CreateDefaultSubnet",
                         "ec2:CreateDefaultVpc",
@@ -47,6 +51,7 @@
                         "ec2:CreateVpnConnection",
                         "ec2:CreateVpnConnectionRoute",
                         "ec2:CreateVpnGateway",
+                        "ec2:DeleteCarrierGateway",
                         "ec2:DeleteEgressOnlyInternetGateway",
                         "ec2:DeleteFlowLogs",
                         "ec2:DeleteNatGateway",
@@ -57,14 +62,15 @@
                         "ec2:DeleteTags",
                         "ec2:DeleteVpc",
                         "ec2:DeleteVpcEndpointConnectionNotifications",
-                        "ec2:DeleteVpcEndpoints",
                         "ec2:DeleteVpcEndpointServiceConfigurations",
+                        "ec2:DeleteVpcEndpoints",
                         "ec2:DeleteVpnConnection",
                         "ec2:DeleteVpnConnectionRoute",
                         "ec2:DeleteVpnGateway",
                         "ec2:DescribeAccountAttributes",
                         "ec2:DescribeAddresses",
                         "ec2:DescribeAvailabilityZones",
+                        "ec2:DescribeCarrierGateways",
                         "ec2:DescribeClassicLinkInstances",
                         "ec2:DescribeCustomerGateways",
                         "ec2:DescribeDhcpOptions",
@@ -92,10 +98,10 @@
                         "ec2:DescribeVpcClassicLinkDnsSupport",
                         "ec2:DescribeVpcEndpointConnectionNotifications",
                         "ec2:DescribeVpcEndpointConnections",
-                        "ec2:DescribeVpcEndpoints",
                         "ec2:DescribeVpcEndpointServiceConfigurations",
                         "ec2:DescribeVpcEndpointServicePermissions",
                         "ec2:DescribeVpcEndpointServices",
+                        "ec2:DescribeVpcEndpoints",
                         "ec2:DescribeVpcPeeringConnections",
                         "ec2:DescribeVpcs",
                         "ec2:DescribeVpnConnections",
@@ -133,25 +139,19 @@
                         "ec2:UnassignPrivateIpAddresses",
                         "ec2:UpdateSecurityGroupRuleDescriptionsEgress",
                         "ec2:UpdateSecurityGroupRuleDescriptionsIngress",
-                        "directconnect:*",
-                        "route53:*",
-                        "route53domains:*",
-                        "cloudfront:ListDistributions",
-                        "elasticloadbalancing:*",
                         "elasticbeanstalk:Describe*",
                         "elasticbeanstalk:List*",
-                        "elasticbeanstalk:RetrieveEnvironmentInfo",
                         "elasticbeanstalk:RequestEnvironmentInfo",
-                        "sns:ListTopics",
-                        "sns:ListSubscriptionsByTopic",
-                        "sns:CreateTopic",
-                        "cloudwatch:DescribeAlarms",
-                        "cloudwatch:PutMetricAlarm",
-                        "cloudwatch:DeleteAlarms",
-                        "cloudwatch:GetMetricStatistics",
+                        "elasticbeanstalk:RetrieveEnvironmentInfo",
+                        "elasticloadbalancing:*",
                         "logs:DescribeLogGroups",
                         "logs:DescribeLogStreams",
-                        "logs:GetLogEvents"
+                        "logs:GetLogEvents",
+                        "route53:*",
+                        "route53domains:*",
+                        "sns:CreateTopic",
+                        "sns:ListSubscriptionsByTopic",
+                        "sns:ListTopics"
                     ],
                     "Resource": "*"
                 },
@@ -188,9 +188,26 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "s3:ListBucket",
+                        "ec2:CreateLocalGatewayRoute",
+                        "ec2:CreateLocalGatewayRouteTableVpcAssociation",
+                        "ec2:DeleteLocalGatewayRoute",
+                        "ec2:DeleteLocalGatewayRouteTableVpcAssociation",
+                        "ec2:DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociations",
+                        "ec2:DescribeLocalGatewayRouteTableVpcAssociations",
+                        "ec2:DescribeLocalGatewayRouteTables",
+                        "ec2:DescribeLocalGatewayVirtualInterfaceGroups",
+                        "ec2:DescribeLocalGatewayVirtualInterfaces",
+                        "ec2:DescribeLocalGateways",
+                        "ec2:SearchLocalGatewayRoutes"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
                         "s3:GetBucketLocation",
-                        "s3:GetBucketWebsite"
+                        "s3:GetBucketWebsite",
+                        "s3:ListBucket"
                     ],
                     "Resource": [
                         "*"
@@ -236,6 +253,7 @@
                         "ec2:GetTransitGatewayAttachmentPropagations",
                         "ec2:GetTransitGatewayRouteTableAssociations",
                         "ec2:GetTransitGatewayRouteTablePropagations",
+                        "ec2:ModifyTransitGateway",
                         "ec2:ModifyTransitGatewayVpcAttachment",
                         "ec2:RejectTransitGatewayVpcAttachment",
                         "ec2:ReplaceTransitGatewayRoute",
@@ -259,8 +277,8 @@
                 }
             ]
         },
-        "VersionId": "v8",
+        "VersionId": "v9",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-09-24T23:55:10Z"
+        "CreateDate": "2021-07-20T21:05:41Z"
     }
 }
