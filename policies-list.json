@@ -4769,12 +4769,12 @@
             "PolicyId": "ANPAJPNMADZFJCVPJVZA2",
             "Arn": "arn:aws:iam::aws:policy/job-function/NetworkAdministrator",
             "Path": "/job-function/",
-            "DefaultVersionId": "v8",
+            "DefaultVersionId": "v9",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2016-11-10T17:31:35+00:00",
-            "UpdateDate": "2020-09-24T23:55:10+00:00"
+            "UpdateDate": "2021-07-20T21:05:41+00:00"
         },
         {
             "PolicyName": "AWSIoT1ClickFullAccess",
