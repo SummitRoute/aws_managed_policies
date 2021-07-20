@@ -106,6 +106,7 @@
                         "lambda:CreateFunction",
                         "lambda:AddPermission",
                         "lambda:PublishVersion",
+                        "lambda:UpdateFunctionCode",
                         "lambda:UpdateFunctionConfiguration",
                         "lambda:GetFunctionConfiguration"
                     ],
@@ -157,8 +158,8 @@
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-03-25T18:40:18Z"
+        "CreateDate": "2021-07-20T15:56:52Z"
     }
 }
