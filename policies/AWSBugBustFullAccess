@@ -29,11 +29,22 @@
                         "bugbust:*"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Sid": "AWSBugBustSLRCreation",
+                    "Effect": "Allow",
+                    "Action": "iam:CreateServiceLinkedRole",
+                    "Resource": "arn:aws:iam::*:role/aws-service-role/bugbust.amazonaws.com/AWSServiceRoleForBugBust",
+                    "Condition": {
+                        "StringLike": {
+                            "iam:AWSServiceName": "bugbust.amazonaws.com"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v1",
-        "IsDefaultVersion": false,
-        "CreateDate": "2021-06-24T07:03:26Z"
+        "VersionId": "v2",
+        "IsDefaultVersion": true,
+        "CreateDate": "2021-07-22T20:04:29Z"
     }
 }
