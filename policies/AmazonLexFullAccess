@@ -15,16 +15,16 @@
                         "lambda:ListFunctions",
                         "lex:*",
                         "polly:DescribeVoices",
-                        "polly:SynthesizeSpeech"
+                        "polly:SynthesizeSpeech",
+                        "kendra:ListIndices",
+                        "iam:ListRoles",
+                        "s3:ListAllMyBuckets",
+                        "logs:DescribeLogGroups",
+                        "s3:GetBucketLocation"
                     ],
                     "Resource": [
                         "*"
                     ]
-                },
-                {
-                    "Effect": "Allow",
-                    "Action": "kendra:ListIndices",
-                    "Resource": "*"
                 },
                 {
                     "Effect": "Allow",
@@ -34,7 +34,7 @@
                     ],
                     "Resource": "arn:aws:lambda:*:*:function:AmazonLex*",
                     "Condition": {
-                        "StringLike": {
+                        "StringEquals": {
                             "lambda:Principal": "lex.amazonaws.com"
                         }
                     }
@@ -42,12 +42,13 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "iam:GetRole",
-                        "iam:DeleteRole"
+                        "iam:GetRole"
                     ],
                     "Resource": [
                         "arn:aws:iam::*:role/aws-service-role/lex.amazonaws.com/AWSServiceRoleForLexBots",
-                        "arn:aws:iam::*:role/aws-service-role/channels.lex.amazonaws.com/AWSServiceRoleForLexChannels"
+                        "arn:aws:iam::*:role/aws-service-role/channels.lex.amazonaws.com/AWSServiceRoleForLexChannels",
+                        "arn:aws:iam::*:role/aws-service-role/lexv2.amazonaws.com/AWSServiceRoleForLexV2Bots*",
+                        "arn:aws:iam::*:role/aws-service-role/channels.lexv2.amazonaws.com/AWSServiceRoleForLexV2Channels*"
                     ]
                 },
                 {
@@ -59,7 +60,7 @@
                         "arn:aws:iam::*:role/aws-service-role/lex.amazonaws.com/AWSServiceRoleForLexBots"
                     ],
                     "Condition": {
-                        "StringLike": {
+                        "StringEquals": {
                             "iam:AWSServiceName": "lex.amazonaws.com"
                         }
                     }
@@ -67,24 +68,14 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "iam:DeleteServiceLinkedRole",
-                        "iam:GetServiceLinkedRoleDeletionStatus"
+                        "iam:CreateServiceLinkedRole"
                     ],
                     "Resource": [
-                        "arn:aws:iam::*:role/aws-service-role/lex.amazonaws.com/AWSServiceRoleForLexBots"
-                    ]
-                },
-                {
-                    "Effect": "Allow",
-                    "Action": [
-                        "iam:DetachRolePolicy"
-                    ],
-                    "Resource": [
-                        "arn:aws:iam::*:role/aws-service-role/lex.amazonaws.com/AWSServiceRoleForLexBots"
+                        "arn:aws:iam::*:role/aws-service-role/channels.lex.amazonaws.com/AWSServiceRoleForLexChannels"
                     ],
                     "Condition": {
-                        "StringLike": {
-                            "iam:PolicyArn": "arn:aws:iam::aws:policy/aws-service-role/AmazonLexBotPolicy"
+                        "StringEquals": {
+                            "iam:AWSServiceName": "channels.lex.amazonaws.com"
                         }
                     }
                 },
@@ -94,11 +85,25 @@
                         "iam:CreateServiceLinkedRole"
                     ],
                     "Resource": [
-                        "arn:aws:iam::*:role/aws-service-role/channels.lex.amazonaws.com/AWSServiceRoleForLexChannels"
+                        "arn:aws:iam::*:role/aws-service-role/lexv2.amazonaws.com/AWSServiceRoleForLexV2Bots*"
                     ],
                     "Condition": {
-                        "StringLike": {
-                            "iam:AWSServiceName": "channels.lex.amazonaws.com"
+                        "StringEquals": {
+                            "iam:AWSServiceName": "lexv2.amazonaws.com"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "iam:CreateServiceLinkedRole"
+                    ],
+                    "Resource": [
+                        "arn:aws:iam::*:role/aws-service-role/channels.lexv2.amazonaws.com/AWSServiceRoleForLexV2Channels*"
+                    ],
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:AWSServiceName": "channels.lexv2.amazonaws.com"
                         }
                     }
                 },
@@ -109,19 +114,22 @@
                         "iam:GetServiceLinkedRoleDeletionStatus"
                     ],
                     "Resource": [
-                        "arn:aws:iam::*:role/aws-service-role/channels.lex.amazonaws.com/AWSServiceRoleForLexChannels"
+                        "arn:aws:iam::*:role/aws-service-role/lex.amazonaws.com/AWSServiceRoleForLexBots",
+                        "arn:aws:iam::*:role/aws-service-role/channels.lex.amazonaws.com/AWSServiceRoleForLexChannels",
+                        "arn:aws:iam::*:role/aws-service-role/lexv2.amazonaws.com/AWSServiceRoleForLexV2Bots*",
+                        "arn:aws:iam::*:role/aws-service-role/channels.lexv2.amazonaws.com/AWSServiceRoleForLexV2Channels*"
                     ]
                 },
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "iam:PassRole"
                     ],
-                    "Effect": "Allow",
                     "Resource": [
                         "arn:aws:iam::*:role/aws-service-role/lex.amazonaws.com/AWSServiceRoleForLexBots"
                     ],
                     "Condition": {
-                        "StringLike": {
+                        "StringEquals": {
                             "iam:PassedToService": [
                                 "lex.amazonaws.com"
                             ]
@@ -131,21 +139,39 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "iam:DetachRolePolicy"
+                        "iam:PassRole"
                     ],
                     "Resource": [
-                        "arn:aws:iam::*:role/aws-service-role/channels.lex.amazonaws.com/AWSServiceRoleForLexChannels"
+                        "arn:aws:iam::*:role/aws-service-role/lexv2.amazonaws.com/AWSServiceRoleForLexV2Bots*"
                     ],
                     "Condition": {
-                        "StringLike": {
-                            "iam:PolicyArn": "arn:aws:iam::aws:policy/aws-service-role/LexChannelPolicy"
+                        "StringEquals": {
+                            "iam:PassedToService": [
+                                "lexv2.amazonaws.com"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "iam:PassRole"
+                    ],
+                    "Resource": [
+                        "arn:aws:iam::*:role/aws-service-role/channels.lexv2.amazonaws.com/AWSServiceRoleForLexV2Channels*"
+                    ],
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:PassedToService": [
+                                "channels.lexv2.amazonaws.com"
+                            ]
                         }
                     }
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-05-29T15:21:00Z"
+        "CreateDate": "2021-07-26T21:48:05Z"
     }
 }
