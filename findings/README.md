@@ -1,4 +1,4 @@
-## AWS Access Analyzer - Findings - 2021-07-26
+## AWS Access Analyzer - Findings - 2021-07-27
 
 - Policies analyzed: `834`
 - Errors: `22`
@@ -7,7 +7,7 @@
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
   - [`AWSPurchaseOrdersServiceRolePolicy`](./AWSPurchaseOrdersServiceRolePolicy.json)
   - [`ReadOnlyAccess`](./ReadOnlyAccess.json)
-- Sec_Warnings: `9`
+- Sec_Warnings: `10`
   - [`AmazonElasticMapReduceFullAccess`](./AmazonElasticMapReduceFullAccess.json)
   - [`AmazonElasticMapReduceRole`](./AmazonElasticMapReduceRole.json)
   - [`AWSElasticBeanstalkService`](./AWSElasticBeanstalkService.json)

@@ -17,19 +17,19 @@
                         "value": "Action"
                     },
                     {
-                        "index": 14
+                        "index": 13
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 896,
+                        "column": 915,
                         "line": 1,
-                        "offset": 896
+                        "offset": 915
                     },
                     "start": {
-                        "column": 882,
+                        "column": 901,
                         "line": 1,
-                        "offset": 882
+                        "offset": 901
                     }
                 }
             },
@@ -47,14 +47,14 @@
                 ],
                 "span": {
                     "end": {
-                        "column": 4716,
+                        "column": 5047,
                         "line": 1,
-                        "offset": 4716
+                        "offset": 5047
                     },
                     "start": {
-                        "column": 4713,
+                        "column": 5044,
                         "line": 1,
-                        "offset": 4713
+                        "offset": 5044
                     }
                 }
             }
@@ -78,19 +78,19 @@
                         "value": "Action"
                     },
                     {
-                        "index": 66
+                        "index": 71
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 2321,
+                        "column": 2507,
                         "line": 1,
-                        "offset": 2321
+                        "offset": 2507
                     },
                     "start": {
-                        "column": 2296,
+                        "column": 2482,
                         "line": 1,
-                        "offset": 2296
+                        "offset": 2482
                     }
                 }
             },
@@ -106,19 +106,19 @@
                         "value": "Action"
                     },
                     {
-                        "index": 75
+                        "index": 80
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 2617,
+                        "column": 2803,
                         "line": 1,
-                        "offset": 2617
+                        "offset": 2803
                     },
                     "start": {
-                        "column": 2592,
+                        "column": 2778,
                         "line": 1,
-                        "offset": 2592
+                        "offset": 2778
                     }
                 }
             }
@@ -142,19 +142,19 @@
                         "value": "Action"
                     },
                     {
-                        "index": 81
+                        "index": 86
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 2780,
+                        "column": 2966,
                         "line": 1,
-                        "offset": 2780
+                        "offset": 2966
                     },
                     "start": {
-                        "column": 2757,
+                        "column": 2943,
                         "line": 1,
-                        "offset": 2757
+                        "offset": 2943
                     }
                 }
             },
@@ -170,19 +170,19 @@
                         "value": "Action"
                     },
                     {
-                        "index": 92
+                        "index": 97
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 3068,
+                        "column": 3254,
                         "line": 1,
-                        "offset": 3068
+                        "offset": 3254
                     },
                     "start": {
-                        "column": 3045,
+                        "column": 3231,
                         "line": 1,
-                        "offset": 3045
+                        "offset": 3231
                     }
                 }
             }
@@ -206,19 +206,19 @@
                         "value": "Action"
                     },
                     {
-                        "index": 47
+                        "index": 32
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 6104,
+                        "column": 6041,
                         "line": 1,
-                        "offset": 6104
+                        "offset": 6041
                     },
                     "start": {
-                        "column": 6075,
+                        "column": 6012,
                         "line": 1,
-                        "offset": 6075
+                        "offset": 6012
                     }
                 }
             },
@@ -234,19 +234,80 @@
                         "value": "Action"
                     },
                     {
-                        "index": 49
+                        "index": 34
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 6174,
+                        "column": 6111,
                         "line": 1,
-                        "offset": 6174
+                        "offset": 6111
                     },
                     "start": {
-                        "column": 6145,
+                        "column": 6082,
                         "line": 1,
-                        "offset": 6145
+                        "offset": 6082
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "Using the iam:PassRole action with wildcards (*) in the resource can be overly permissive because it allows iam:PassRole permissions on multiple resources. We recommend that you specify resource ARNs or add the iam:PassedToService condition key to your statement.",
+        "findingType": "SECURITY_WARNING",
+        "issueCode": "PASS_ROLE_WITH_STAR_IN_RESOURCE",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-security-warning-pass-role-with-star-in-resource",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 65
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 7071,
+                        "line": 1,
+                        "offset": 7071
+                    },
+                    "start": {
+                        "column": 7057,
+                        "line": 1,
+                        "offset": 7057
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Resource"
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 7441,
+                        "line": 1,
+                        "offset": 7441
+                    },
+                    "start": {
+                        "column": 7438,
+                        "line": 1,
+                        "offset": 7438
                     }
                 }
             }

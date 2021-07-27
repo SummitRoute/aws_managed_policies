@@ -5897,12 +5897,12 @@
             "PolicyId": "ANPAZKAPJZG4AML23RALR",
             "Arn": "arn:aws:iam::aws:policy/AdministratorAccess-Amplify",
             "Path": "/",
-            "DefaultVersionId": "v2",
+            "DefaultVersionId": "v3",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-12-01T19:03:08+00:00",
-            "UpdateDate": "2021-01-13T22:36:27+00:00"
+            "UpdateDate": "2021-07-26T22:49:07+00:00"
         },
         {
             "PolicyName": "AWSNetworkManagerFullAccess",
