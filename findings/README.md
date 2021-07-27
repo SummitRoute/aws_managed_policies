@@ -1,12 +1,13 @@
 ## AWS Access Analyzer - Findings - 2021-07-27
 
 - Policies analyzed: `834`
-- Errors: `22`
+- Errors: `23`
   - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)
   - [`AWSPrivateMarketplaceAdminFullAccess`](./AWSPrivateMarketplaceAdminFullAccess.json)
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
   - [`AWSPurchaseOrdersServiceRolePolicy`](./AWSPurchaseOrdersServiceRolePolicy.json)
   - [`ReadOnlyAccess`](./ReadOnlyAccess.json)
+  - [`AmazonRedshiftDataFullAccess`](./AmazonRedshiftDataFullAccess.json)
 - Sec_Warnings: `10`
   - [`AmazonElasticMapReduceFullAccess`](./AmazonElasticMapReduceFullAccess.json)
   - [`AmazonElasticMapReduceRole`](./AmazonElasticMapReduceRole.json)
