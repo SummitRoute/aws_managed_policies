@@ -192,7 +192,11 @@
                         "lambda:CreateFunction",
                         "lambda:DeleteFunction",
                         "lambda:GetFunction",
-                        "lambda:GetFunctionConfiguration"
+                        "lambda:GetFunctionConfiguration",
+                        "lambda:UpdateFunctionCode",
+                        "lambda:TagResource",
+                        "lambda:ListTags",
+                        "lambda:UntagResource"
                     ],
                     "Resource": [
                         "arn:aws:lambda:*:*:function:DeadlineResourceTracker*"
@@ -225,8 +229,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-10-06T19:06:57Z"
+        "CreateDate": "2021-07-27T21:13:41Z"
     }
 }

@@ -5,7 +5,9 @@
             "Statement": [
                 {
                     "Sid": "DataAPIPermissions",
+                    "Effect": "Allow",
                     "Action": [
+                        "redshift-data:BatchExecuteStatement",
                         "redshift-data:ExecuteStatement",
                         "redshift-data:CancelStatement",
                         "redshift-data:ListStatements",
@@ -16,15 +18,14 @@
                         "redshift-data:ListTables",
                         "redshift-data:DescribeTable"
                     ],
-                    "Effect": "Allow",
                     "Resource": "*"
                 },
                 {
                     "Sid": "SecretsManagerPermissions",
+                    "Effect": "Allow",
                     "Action": [
                         "secretsmanager:GetSecretValue"
                     ],
-                    "Effect": "Allow",
                     "Resource": "*",
                     "Condition": {
                         "StringLike": {
@@ -62,8 +63,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
-        "IsDefaultVersion": false,
-        "CreateDate": "2020-09-09T19:23:55Z"
+        "VersionId": "v2",
+        "IsDefaultVersion": true,
+        "CreateDate": "2021-07-27T20:05:33Z"
     }
 }
