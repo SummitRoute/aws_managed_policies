@@ -4,6 +4,7 @@
             "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "lex:GetBot",
                         "lex:GetBotAlias",
@@ -21,15 +22,38 @@
                         "lex:GetSlotType",
                         "lex:GetSlotTypes",
                         "lex:GetSlotTypeVersions",
-                        "lex:GetUtterancesView"
+                        "lex:GetUtterancesView",
+                        "lex:DescribeBot",
+                        "lex:DescribeBotAlias",
+                        "lex:DescribeBotChannel",
+                        "lex:DescribeBotLocale",
+                        "lex:DescribeBotVersion",
+                        "lex:DescribeExport",
+                        "lex:DescribeImport",
+                        "lex:DescribeIntent",
+                        "lex:DescribeResourcePolicy",
+                        "lex:DescribeSlot",
+                        "lex:DescribeSlotType",
+                        "lex:ListBots",
+                        "lex:ListBotLocales",
+                        "lex:ListBotAliases",
+                        "lex:ListBotChannels",
+                        "lex:ListBotVersions",
+                        "lex:ListBuiltInIntents",
+                        "lex:ListBuiltInSlotTypes",
+                        "lex:ListExports",
+                        "lex:ListImports",
+                        "lex:ListIntents",
+                        "lex:ListSlots",
+                        "lex:ListSlotTypes",
+                        "lex:ListTagsForResource"
                     ],
-                    "Effect": "Allow",
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2017-04-11T23:13:33Z"
+        "CreateDate": "2021-07-26T22:04:56Z"
     }
 }
