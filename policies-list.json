@@ -1985,12 +1985,12 @@
             "PolicyId": "ANPAIQRXRDRGJUA33ELIO",
             "Arn": "arn:aws:iam::aws:policy/service-role/AWSConfigRole",
             "Path": "/service-role/",
-            "DefaultVersionId": "v39",
+            "DefaultVersionId": "v40",
             "AttachmentCount": 1,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2015-04-02T17:36:23+00:00",
-            "UpdateDate": "2021-06-07T23:03:51+00:00"
+            "UpdateDate": "2021-07-27T22:34:36+00:00"
         },
         {
             "PolicyName": "AWSSSOMemberAccountAdministrator",
@@ -5213,12 +5213,12 @@
             "PolicyId": "ANPAJUCWFHNZER665LLQQ",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy",
             "Path": "/aws-service-role/",
-            "DefaultVersionId": "v25",
+            "DefaultVersionId": "v26",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2018-05-30T23:31:46+00:00",
-            "UpdateDate": "2021-06-07T23:01:42+00:00"
+            "UpdateDate": "2021-07-27T22:31:53+00:00"
         },
         {
             "PolicyName": "AmazonESReadOnlyAccess",
@@ -9953,12 +9953,12 @@
             "PolicyId": "ANPAZKAPJZG4PP7QZ4FBG",
             "Arn": "arn:aws:iam::aws:policy/service-role/AWS_ConfigRole",
             "Path": "/service-role/",
-            "DefaultVersionId": "v6",
+            "DefaultVersionId": "v7",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-09-15T20:30:30+00:00",
-            "UpdateDate": "2021-06-07T23:02:26+00:00"
+            "UpdateDate": "2021-07-27T22:41:23+00:00"
         },
         {
             "PolicyName": "AmazonNimbleStudio-StudioAdmin",
