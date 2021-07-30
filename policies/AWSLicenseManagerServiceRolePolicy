@@ -29,7 +29,7 @@
                     ],
                     "Condition": {
                         "StringEquals": {
-                            "iam:AWSServiceName": "license-manager.amazonaws.com"
+                            "iam:AWSServiceName": "license-manager.member-account.amazonaws.com"
                         }
                     }
                 },
@@ -135,8 +135,8 @@
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-06-17T03:54:13Z"
+        "CreateDate": "2021-07-30T01:43:19Z"
     }
 }
