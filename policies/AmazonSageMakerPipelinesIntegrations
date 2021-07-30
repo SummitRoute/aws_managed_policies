@@ -1,0 +1,52 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "lambda:CreateFunction",
+                        "lambda:DeleteFunction",
+                        "lambda:InvokeFunction",
+                        "lambda:UpdateFunctionCode"
+                    ],
+                    "Resource": [
+                        "arn:aws:lambda:*:*:function:*sagemaker*",
+                        "arn:aws:lambda:*:*:function:*sageMaker*",
+                        "arn:aws:lambda:*:*:function:*SageMaker*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "sqs:CreateQueue",
+                        "sqs:SendMessage"
+                    ],
+                    "Resource": [
+                        "arn:aws:sqs:*:*:*sagemaker*",
+                        "arn:aws:sqs:*:*:*sageMaker*",
+                        "arn:aws:sqs:*:*:*SageMaker*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "iam:PassRole"
+                    ],
+                    "Resource": "arn:aws:iam::*:role/*",
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:PassedToService": [
+                                "lambda.amazonaws.com"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2021-07-30T16:35:10Z"
+    }
+}
