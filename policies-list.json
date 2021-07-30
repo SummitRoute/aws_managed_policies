@@ -1481,12 +1481,12 @@
             "PolicyId": "ANPAIM7JPETWHTYNBQSZE",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/AWSLicenseManagerServiceRolePolicy",
             "Path": "/aws-service-role/",
-            "DefaultVersionId": "v6",
+            "DefaultVersionId": "v7",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2018-11-26T19:02:53+00:00",
-            "UpdateDate": "2021-06-17T03:54:13+00:00"
+            "UpdateDate": "2021-07-30T01:43:19+00:00"
         },
         {
             "PolicyName": "AWSCloudHSMFullAccess",
