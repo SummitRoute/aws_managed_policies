@@ -1133,12 +1133,12 @@
             "PolicyId": "ANPAIICZJNOJN36GTG6CM",
             "Arn": "arn:aws:iam::aws:policy/AmazonVPCReadOnlyAccess",
             "Path": "/",
-            "DefaultVersionId": "v7",
+            "DefaultVersionId": "v8",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2015-02-06T18:41:17+00:00",
-            "UpdateDate": "2021-06-23T17:03:33+00:00"
+            "UpdateDate": "2021-08-02T15:47:38+00:00"
         },
         {
             "PolicyName": "AWSElasticBeanstalkServiceRolePolicy",
