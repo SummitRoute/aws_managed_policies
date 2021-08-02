@@ -3425,12 +3425,12 @@
             "PolicyId": "ANPAJBWPGNOVKZD3JI2P2",
             "Arn": "arn:aws:iam::aws:policy/AmazonVPCFullAccess",
             "Path": "/",
-            "DefaultVersionId": "v8",
+            "DefaultVersionId": "v9",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2015-02-06T18:41:16+00:00",
-            "UpdateDate": "2021-06-23T20:58:45+00:00"
+            "UpdateDate": "2021-08-02T19:12:14+00:00"
         },
         {
             "PolicyName": "AWSCertificateManagerPrivateCAUser",
