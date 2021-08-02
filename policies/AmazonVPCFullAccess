@@ -98,6 +98,7 @@
                         "ec2:DescribePrefixLists",
                         "ec2:DescribeRouteTables",
                         "ec2:DescribeSecurityGroupReferences",
+                        "ec2:DescribeSecurityGroupRules",
                         "ec2:DescribeSecurityGroups",
                         "ec2:DescribeStaleSecurityGroups",
                         "ec2:DescribeSubnets",
@@ -130,6 +131,7 @@
                         "ec2:EnableVpcClassicLink",
                         "ec2:EnableVpcClassicLinkDnsSupport",
                         "ec2:ModifyNetworkInterfaceAttribute",
+                        "ec2:ModifySecurityGroupRules",
                         "ec2:ModifySubnetAttribute",
                         "ec2:ModifyVpcAttribute",
                         "ec2:ModifyVpcEndpoint",
@@ -159,8 +161,8 @@
                 }
             ]
         },
-        "VersionId": "v8",
+        "VersionId": "v9",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-06-23T20:58:45Z"
+        "CreateDate": "2021-08-02T19:12:14Z"
     }
 }
