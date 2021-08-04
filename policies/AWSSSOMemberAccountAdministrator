@@ -22,15 +22,15 @@
                         "organizations:ListChildren",
                         "organizations:ListOrganizationalUnitsForParent",
                         "sso:*",
-                        "sso-directory:DescribeDirectory",
+                        "sso-directory:*",
                         "ds:CreateAlias"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2018-10-17T20:35:52Z"
+        "CreateDate": "2021-08-04T20:13:14Z"
     }
 }
