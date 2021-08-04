@@ -1,10 +1,9 @@
 ## AWS Access Analyzer - Findings - 2021-08-04
 
-- Policies analyzed: `835`
-- Errors: `23`
+- Policies analyzed: `836`
+- Errors: `22`
   - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
-  - [`AmazonRedshiftDataFullAccess`](./AmazonRedshiftDataFullAccess.json)
   - [`AWSPrivateMarketplaceAdminFullAccess`](./AWSPrivateMarketplaceAdminFullAccess.json)
   - [`ReadOnlyAccess`](./ReadOnlyAccess.json)
   - [`AWSPurchaseOrdersServiceRolePolicy`](./AWSPurchaseOrdersServiceRolePolicy.json)

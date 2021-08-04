@@ -1109,12 +1109,12 @@
             "PolicyId": "ANPAIHXAQZIS3GOYIETUC",
             "Arn": "arn:aws:iam::aws:policy/AWSSSOMasterAccountAdministrator",
             "Path": "/",
-            "DefaultVersionId": "v3",
+            "DefaultVersionId": "v4",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2018-06-27T20:36:51+00:00",
-            "UpdateDate": "2018-10-17T20:41:20+00:00"
+            "UpdateDate": "2021-08-04T21:10:42+00:00"
         },
         {
             "PolicyName": "AmazonGuardDutyServiceRolePolicy",
@@ -1997,12 +1997,12 @@
             "PolicyId": "ANPAIQYHEY7KJWXZFNDPY",
             "Arn": "arn:aws:iam::aws:policy/AWSSSOMemberAccountAdministrator",
             "Path": "/",
-            "DefaultVersionId": "v2",
+            "DefaultVersionId": "v3",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2018-06-27T20:45:42+00:00",
-            "UpdateDate": "2018-10-17T20:35:52+00:00"
+            "UpdateDate": "2021-08-04T20:13:14+00:00"
         },
         {
             "PolicyName": "AWSApplicationAutoscalingAppStreamFleetPolicy",
@@ -6563,6 +6563,18 @@
             "IsAttachable": true,
             "CreateDate": "2021-01-22T16:29:08+00:00",
             "UpdateDate": "2021-01-22T16:29:08+00:00"
+        },
+        {
+            "PolicyName": "AmazonChimeTranscriptionServiceLinkedRolePolicy",
+            "PolicyId": "ANPAZKAPJZG4DC6EM4O3Q",
+            "Arn": "arn:aws:iam::aws:policy/aws-service-role/AmazonChimeTranscriptionServiceLinkedRolePolicy",
+            "Path": "/aws-service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-08-04T21:47:41+00:00",
+            "UpdateDate": "2021-08-04T21:47:41+00:00"
         },
         {
             "PolicyName": "AWSNetworkFirewallServiceRolePolicy",
