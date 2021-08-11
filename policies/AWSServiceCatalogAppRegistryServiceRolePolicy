@@ -10,7 +10,10 @@
                 },
                 {
                     "Effect": "Allow",
-                    "Action": "resource-groups:CreateGroup",
+                    "Action": [
+                        "resource-groups:CreateGroup",
+                        "resource-groups:Tag"
+                    ],
                     "Resource": "*",
                     "Condition": {
                         "StringEquals": {
@@ -37,8 +40,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-05-18T22:18:55Z"
+        "CreateDate": "2021-08-11T19:49:17Z"
     }
 }

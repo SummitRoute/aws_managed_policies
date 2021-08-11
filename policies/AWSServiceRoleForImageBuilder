@@ -133,7 +133,8 @@
                         "ssm:StopAutomationExecution",
                         "ssm:ListInventoryEntries",
                         "ssm:SendAutomationSignal",
-                        "ssm:DescribeInstanceAssociationsStatus"
+                        "ssm:DescribeInstanceAssociationsStatus",
+                        "ssm:DescribeAssociationExecutions"
                     ],
                     "Resource": "*"
                 },
@@ -254,8 +255,8 @@
                 }
             ]
         },
-        "VersionId": "v12",
-        "IsDefaultVersion": false,
-        "CreateDate": "2020-12-04T23:27:05Z"
+        "VersionId": "v13",
+        "IsDefaultVersion": true,
+        "CreateDate": "2021-08-11T18:07:10Z"
     }
 }
