@@ -37,6 +37,7 @@
                         "elasticloadbalancing:DescribeLoadBalancerPolicies",
                         "elasticloadbalancing:DescribeLoadBalancerPolicyTypes",
                         "elasticloadbalancing:DescribeLoadBalancers",
+                        "elasticloadbalancing:DescribeTargetGroups",
                         "iam:GenerateCredentialReport",
                         "iam:GetAccountPasswordPolicy",
                         "iam:GetAccountSummary",
@@ -71,6 +72,7 @@
                         "route53:ListHostedZones",
                         "route53:ListHostedZonesByName",
                         "route53:ListResourceRecordSets",
+                        "s3:GetAccountPublicAccessBlock",
                         "s3:GetBucketAcl",
                         "s3:GetBucketPolicy",
                         "s3:GetBucketPolicyStatus",
@@ -90,8 +92,8 @@
                 }
             ]
         },
-        "VersionId": "v8",
+        "VersionId": "v9",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-08T16:15:31Z"
+        "CreateDate": "2021-08-10T22:41:30Z"
     }
 }
