@@ -54,8 +54,8 @@
                         "waf-regional:GetChangeToken"
                     ],
                     "Resource": [
-                        "arn:aws:waf:*",
-                        "arn:aws:waf-regional:*"
+                        "arn:aws:waf:*:*:*",
+                        "arn:aws:waf-regional:*:*:*"
                     ]
                 },
                 {
@@ -516,8 +516,8 @@
                 }
             ]
         },
-        "VersionId": "v18",
+        "VersionId": "v19",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-03-31T21:02:38Z"
+        "CreateDate": "2021-08-12T19:21:06Z"
     }
 }
