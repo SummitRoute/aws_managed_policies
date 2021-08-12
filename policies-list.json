@@ -7109,12 +7109,12 @@
             "PolicyId": "ANPAZKAPJZG4FKWWNUOP2",
             "Arn": "arn:aws:iam::aws:policy/AWSThinkboxDeadlineResourceTrackerAdminPolicy",
             "Path": "/",
-            "DefaultVersionId": "v3",
+            "DefaultVersionId": "v4",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-05-27T19:29:09+00:00",
-            "UpdateDate": "2021-07-27T21:13:41+00:00"
+            "UpdateDate": "2021-08-12T21:28:43+00:00"
         },
         {
             "PolicyName": "IAMAccessAdvisorReadOnly",
