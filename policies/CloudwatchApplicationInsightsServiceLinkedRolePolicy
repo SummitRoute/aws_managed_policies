@@ -301,7 +301,8 @@
                         "eks:DescribeNodegroup",
                         "eks:ListClusters",
                         "eks:ListFargateProfiles",
-                        "eks:ListNodegroups"
+                        "eks:ListNodegroups",
+                        "fsx:DescribeFileSystems"
                     ],
                     "Resource": [
                         "*"
@@ -309,8 +310,8 @@
                 }
             ]
         },
-        "VersionId": "v14",
+        "VersionId": "v15",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-05-11T22:38:14Z"
+        "CreateDate": "2021-08-13T19:59:56Z"
     }
 }
