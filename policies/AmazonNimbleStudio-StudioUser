@@ -71,15 +71,15 @@
                     "Resource": "*",
                     "Condition": {
                         "StringEquals": {
-                            "nimble:createdBy": "${nimble:requesterPrincipalId}"
+                            "nimble:ownedBy": "${nimble:requesterPrincipalId}"
                         }
                     }
                 }
             ],
             "Version": "2012-10-17"
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-04-28T04:48:11Z"
+        "CreateDate": "2021-08-16T18:26:50Z"
     }
 }
