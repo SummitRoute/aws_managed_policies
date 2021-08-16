@@ -6269,12 +6269,12 @@
             "PolicyId": "ANPAZKAPJZG4CA37MTXJV",
             "Arn": "arn:aws:iam::aws:policy/AmazonNimbleStudio-StudioUser",
             "Path": "/",
-            "DefaultVersionId": "v1",
+            "DefaultVersionId": "v2",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2021-04-28T04:48:11+00:00",
-            "UpdateDate": "2021-04-28T04:48:11+00:00"
+            "UpdateDate": "2021-08-16T18:26:50+00:00"
         },
         {
             "PolicyName": "AWSCloudTrail_FullAccess",
