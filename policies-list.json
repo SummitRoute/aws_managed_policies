@@ -5761,6 +5761,18 @@
             "UpdateDate": "2020-11-12T00:43:25+00:00"
         },
         {
+            "PolicyName": "AWSApplicationAutoscalingElastiCacheRGPolicy",
+            "PolicyId": "ANPAZKAPJZG4A7HPQJPZ7",
+            "Arn": "arn:aws:iam::aws:policy/aws-service-role/AWSApplicationAutoscalingElastiCacheRGPolicy",
+            "Path": "/aws-service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-08-17T23:41:42+00:00",
+            "UpdateDate": "2021-08-17T23:41:42+00:00"
+        },
+        {
             "PolicyName": "AmazonAugmentedAIIntegratedAPIAccess",
             "PolicyId": "ANPAZKAPJZG4A7KC4RFTV",
             "Arn": "arn:aws:iam::aws:policy/AmazonAugmentedAIIntegratedAPIAccess",
@@ -8567,6 +8579,18 @@
             "IsAttachable": true,
             "CreateDate": "2020-09-29T15:16:47+00:00",
             "UpdateDate": "2020-09-29T15:16:47+00:00"
+        },
+        {
+            "PolicyName": "MemoryDBServiceRolePolicy",
+            "PolicyId": "ANPAZKAPJZG4KWEJCOJNF",
+            "Arn": "arn:aws:iam::aws:policy/aws-service-role/MemoryDBServiceRolePolicy",
+            "Path": "/aws-service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-08-17T22:34:59+00:00",
+            "UpdateDate": "2021-08-17T22:34:59+00:00"
         },
         {
             "PolicyName": "AWSLicenseManagerConsumptionPolicy",
