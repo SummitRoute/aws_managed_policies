@@ -4,20 +4,23 @@
             "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "lex:PostContent",
                         "lex:PostText",
                         "lex:PutSession",
                         "lex:GetSession",
-                        "lex:DeleteSession"
+                        "lex:DeleteSession",
+                        "lex:RecognizeText",
+                        "lex:RecognizeUtterance",
+                        "lex:StartConversation"
                     ],
-                    "Effect": "Allow",
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-05-12T19:26:15Z"
+        "CreateDate": "2021-08-18T00:15:48Z"
     }
 }
