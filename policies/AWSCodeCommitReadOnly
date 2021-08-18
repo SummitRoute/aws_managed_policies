@@ -55,7 +55,6 @@
                     "Sid": "IAMReadOnlyConsoleAccess",
                     "Effect": "Allow",
                     "Action": [
-                        "iam:ListAccessKeys",
                         "iam:ListSSHPublicKeys",
                         "iam:ListServiceSpecificCredentials",
                         "iam:ListAccessKeys",
@@ -108,8 +107,8 @@
                 }
             ]
         },
-        "VersionId": "v10",
+        "VersionId": "v11",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-07-30T23:08:05Z"
+        "CreateDate": "2021-08-18T18:18:01Z"
     }
 }
