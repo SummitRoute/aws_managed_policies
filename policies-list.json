@@ -9901,6 +9901,18 @@
             "UpdateDate": "2021-04-21T22:30:59+00:00"
         },
         {
+            "PolicyName": "AmazonS3ObjectLambdaExecutionRolePolicy",
+            "PolicyId": "ANPAZKAPJZG4PG47VBSXA",
+            "Arn": "arn:aws:iam::aws:policy/service-role/AmazonS3ObjectLambdaExecutionRolePolicy",
+            "Path": "/service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-08-18T10:07:41+00:00",
+            "UpdateDate": "2021-08-18T10:07:41+00:00"
+        },
+        {
             "PolicyName": "ClientVPNServiceConnectionsRolePolicy",
             "PolicyId": "ANPAZKAPJZG4PG4VWZTEZ",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/ClientVPNServiceConnectionsRolePolicy",
