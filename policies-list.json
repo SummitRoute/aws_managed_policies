@@ -5333,12 +5333,12 @@
             "PolicyId": "ANPAJVZGB5CM3N6YWJHBE",
             "Arn": "arn:aws:iam::aws:policy/AmazonLexRunBotsOnly",
             "Path": "/",
-            "DefaultVersionId": "v2",
+            "DefaultVersionId": "v3",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2017-04-11T23:06:24+00:00",
-            "UpdateDate": "2020-05-12T19:26:15+00:00"
+            "UpdateDate": "2021-08-18T00:15:48+00:00"
         },
         {
             "PolicyName": "AWSCertificateManagerPrivateCAAuditor",
