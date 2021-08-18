@@ -3329,12 +3329,12 @@
             "PolicyId": "ANPAJACNSXR7Z2VLJW3D6",
             "Arn": "arn:aws:iam::aws:policy/AWSCodeCommitReadOnly",
             "Path": "/",
-            "DefaultVersionId": "v10",
+            "DefaultVersionId": "v11",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2015-07-09T17:05:06+00:00",
-            "UpdateDate": "2020-07-30T23:08:05+00:00"
+            "UpdateDate": "2021-08-18T18:18:01+00:00"
         },
         {
             "PolicyName": "AmazonFreeRTOSFullAccess",
@@ -9143,6 +9143,18 @@
             "IsAttachable": true,
             "CreateDate": "2020-01-17T19:51:28+00:00",
             "UpdateDate": "2020-01-17T19:51:28+00:00"
+        },
+        {
+            "PolicyName": "AmazonRoute53RecoveryClusterFullAccess",
+            "PolicyId": "ANPAZKAPJZG4MMWM2PHKW",
+            "Arn": "arn:aws:iam::aws:policy/AmazonRoute53RecoveryClusterFullAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-08-18T18:37:00+00:00",
+            "UpdateDate": "2021-08-18T18:37:00+00:00"
         },
         {
             "PolicyName": "AmazonSageMakerCoreServiceRolePolicy",

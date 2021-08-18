@@ -1,10 +1,12 @@
 ## AWS Access Analyzer - Findings - 2021-08-18
 
-- Policies analyzed: `843`
-- Errors: `24`
+- Policies analyzed: `846`
+- Errors: `26`
   - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
+  - [`AmazonRoute53RecoveryControlConfigReadOnlyAccess`](./AmazonRoute53RecoveryControlConfigReadOnlyAccess.json)
   - [`AWSPrivateMarketplaceAdminFullAccess`](./AWSPrivateMarketplaceAdminFullAccess.json)
+  - [`AmazonRoute53RecoveryReadinessReadOnlyAccess`](./AmazonRoute53RecoveryReadinessReadOnlyAccess.json)
   - [`AmazonLexRunBotsOnly`](./AmazonLexRunBotsOnly.json)
   - [`AmazonNimbleStudio-StudioUser`](./AmazonNimbleStudio-StudioUser.json)
   - [`ReadOnlyAccess`](./ReadOnlyAccess.json)
@@ -19,13 +21,12 @@
   - [`AmazonDynamoDBFullAccesswithDataPipeline`](./AmazonDynamoDBFullAccesswithDataPipeline.json)
   - [`AdministratorAccess-Amplify`](./AdministratorAccess-Amplify.json)
   - [`IAMFullAccess`](./IAMFullAccess.json)
-- Suggestions: `44`
+- Suggestions: `43`
   - [`SupportUser`](./SupportUser.json)
   - [`SecurityAudit`](./SecurityAudit.json)
   - [`AWSMarketplaceFullAccess`](./AWSMarketplaceFullAccess.json)
   - [`AmazonLaunchWizard_Fullaccess`](./AmazonLaunchWizard_Fullaccess.json)
   - [`AWSElasticBeanstalkCustomPlatformforEC2Role`](./AWSElasticBeanstalkCustomPlatformforEC2Role.json)
-  - [`AWSCodeCommitReadOnly`](./AWSCodeCommitReadOnly.json)
   - [`AWSDeepLensLambdaFunctionAccessPolicy`](./AWSDeepLensLambdaFunctionAccessPolicy.json)
   - [`AWSDeepRacerFullAccess`](./AWSDeepRacerFullAccess.json)
   - [`AmazonElasticMapReduceFullAccess`](./AmazonElasticMapReduceFullAccess.json)
