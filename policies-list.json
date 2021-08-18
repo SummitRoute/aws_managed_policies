@@ -5917,6 +5917,18 @@
             "UpdateDate": "2021-07-26T22:49:07+00:00"
         },
         {
+            "PolicyName": "AmazonRoute53RecoveryReadinessFullAccess",
+            "PolicyId": "ANPAZKAPJZG4AP3B2MSA3",
+            "Arn": "arn:aws:iam::aws:policy/AmazonRoute53RecoveryReadinessFullAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-08-18T16:45:07+00:00",
+            "UpdateDate": "2021-08-18T16:45:07+00:00"
+        },
+        {
             "PolicyName": "AWSNetworkManagerFullAccess",
             "PolicyId": "ANPAZKAPJZG4ARXJ4NU7I",
             "Arn": "arn:aws:iam::aws:policy/AWSNetworkManagerFullAccess",
@@ -6143,6 +6155,18 @@
             "IsAttachable": true,
             "CreateDate": "2020-09-09T17:27:19+00:00",
             "UpdateDate": "2020-10-15T17:09:55+00:00"
+        },
+        {
+            "PolicyName": "AmazonRoute53RecoveryControlConfigFullAccess",
+            "PolicyId": "ANPAZKAPJZG4BNPPOPVZM",
+            "Arn": "arn:aws:iam::aws:policy/AmazonRoute53RecoveryControlConfigFullAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-08-18T17:48:35+00:00",
+            "UpdateDate": "2021-08-18T17:48:35+00:00"
         },
         {
             "PolicyName": "AWSApplicationAutoscalingCassandraTablePolicy",
@@ -6575,6 +6599,18 @@
             "IsAttachable": true,
             "CreateDate": "2021-01-22T16:29:08+00:00",
             "UpdateDate": "2021-01-22T16:29:08+00:00"
+        },
+        {
+            "PolicyName": "AmazonRoute53RecoveryControlConfigReadOnlyAccess",
+            "PolicyId": "ANPAZKAPJZG4DBQWX62W5",
+            "Arn": "arn:aws:iam::aws:policy/AmazonRoute53RecoveryControlConfigReadOnlyAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-08-18T18:01:12+00:00",
+            "UpdateDate": "2021-08-18T18:01:12+00:00"
         },
         {
             "PolicyName": "AmazonChimeTranscriptionServiceLinkedRolePolicy",
@@ -8953,6 +8989,18 @@
             "UpdateDate": "2020-12-05T00:10:43+00:00"
         },
         {
+            "PolicyName": "AmazonRoute53RecoveryReadinessReadOnlyAccess",
+            "PolicyId": "ANPAZKAPJZG4M6P5L3S4F",
+            "Arn": "arn:aws:iam::aws:policy/AmazonRoute53RecoveryReadinessReadOnlyAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-08-18T18:11:33+00:00",
+            "UpdateDate": "2021-08-18T18:11:33+00:00"
+        },
+        {
             "PolicyName": "AmazonWorkMailMessageFlowReadOnlyAccess",
             "PolicyId": "ANPAZKAPJZG4M6UETQLYG",
             "Arn": "arn:aws:iam::aws:policy/AmazonWorkMailMessageFlowReadOnlyAccess",
@@ -9995,6 +10043,18 @@
             "IsAttachable": true,
             "CreateDate": "2019-07-03T21:29:37+00:00",
             "UpdateDate": "2019-07-03T21:29:37+00:00"
+        },
+        {
+            "PolicyName": "AmazonRoute53RecoveryClusterReadOnlyAccess",
+            "PolicyId": "ANPAZKAPJZG4PNOFP2E23",
+            "Arn": "arn:aws:iam::aws:policy/AmazonRoute53RecoveryClusterReadOnlyAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-08-18T17:36:01+00:00",
+            "UpdateDate": "2021-08-18T17:36:01+00:00"
         },
         {
             "PolicyName": "AmazonKendraReadOnlyAccess",
