@@ -8,7 +8,6 @@ data "aws_iam_policy_document" "ecs_service_policy" {
   statement {
     effect = "Allow"
     resources = [
-      "arn:aws:s3:::mamip-artifacts/mamip",
       "arn:aws:s3:::mamip-artifacts/*"
     ]
     actions = [
