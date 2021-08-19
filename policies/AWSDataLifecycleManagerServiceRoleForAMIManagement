@@ -37,11 +37,19 @@
                         "ec2:ModifyImageAttribute"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ec2:EnableImageDeprecation",
+                        "ec2:DisableImageDeprecation"
+                    ],
+                    "Resource": "arn:aws:ec2:*::image/*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-10-21T19:39:41Z"
+        "CreateDate": "2021-08-19T17:03:44Z"
     }
 }
