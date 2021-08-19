@@ -1,10 +1,11 @@
 ## AWS Access Analyzer - Findings - 2021-08-19
 
-- Policies analyzed: `846`
-- Errors: `26`
+- Policies analyzed: `847`
+- Errors: `27`
   - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
   - [`AmazonRoute53RecoveryControlConfigReadOnlyAccess`](./AmazonRoute53RecoveryControlConfigReadOnlyAccess.json)
+  - [`AWSServiceRolePolicyForBackupReports`](./AWSServiceRolePolicyForBackupReports.json)
   - [`AWSPrivateMarketplaceAdminFullAccess`](./AWSPrivateMarketplaceAdminFullAccess.json)
   - [`AmazonRoute53RecoveryReadinessReadOnlyAccess`](./AmazonRoute53RecoveryReadinessReadOnlyAccess.json)
   - [`AmazonLexRunBotsOnly`](./AmazonLexRunBotsOnly.json)

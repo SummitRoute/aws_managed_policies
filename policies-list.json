@@ -9229,6 +9229,18 @@
             "UpdateDate": "2021-07-22T20:04:29+00:00"
         },
         {
+            "PolicyName": "AWSServiceRolePolicyForBackupReports",
+            "PolicyId": "ANPAZKAPJZG4MSKXNYMTU",
+            "Arn": "arn:aws:iam::aws:policy/aws-service-role/AWSServiceRolePolicyForBackupReports",
+            "Path": "/aws-service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-08-19T21:16:45+00:00",
+            "UpdateDate": "2021-08-19T21:16:45+00:00"
+        },
+        {
             "PolicyName": "CloudWatchApplicationInsightsFullAccess",
             "PolicyId": "ANPAZKAPJZG4MSQN23AKX",
             "Arn": "arn:aws:iam::aws:policy/CloudWatchApplicationInsightsFullAccess",
