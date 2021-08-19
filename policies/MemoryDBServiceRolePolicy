@@ -47,6 +47,14 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "ec2:DeleteNetworkInterface",
+                        "ec2:ModifyNetworkInterfaceAttribute"
+                    ],
+                    "Resource": "arn:aws:ec2:*:*:security-group/*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
                         "ec2:DescribeSecurityGroups",
                         "ec2:DescribeNetworkInterfaces",
                         "ec2:DescribeAvailabilityZones",
@@ -69,8 +77,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-08-17T22:34:59Z"
+        "CreateDate": "2021-08-18T23:48:16Z"
     }
 }
