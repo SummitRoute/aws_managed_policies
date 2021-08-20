@@ -2,7 +2,7 @@
 
 [![[Prod] MAMIP - GitHub Actions](https://github.com/z0ph/aws_managed_policies/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/z0ph/aws_managed_policies/actions/workflows/main.yml)
 
-Thanks to [@0xdabbad00](https://twitter.com/0xdabbad00) for the original idea, this repo automate the retrieval of new AWS Managed IAM Policies make it easier to monitor and get alerted when changes occur using "Watch" feature of Github or using [Twitter Account](https://twitter.com/mamip_aws).
+Thanks to [@0xdabbad00](https://twitter.com/0xdabbad00) for the original idea, this repo automates the retrieval of new AWS Managed IAM Policies make it easier to monitor and get alerted when changes occur using "Watch" feature of Github or using [Twitter Account](https://twitter.com/mamip_aws).
 
 ## :hand: Usage
 
@@ -16,7 +16,7 @@ Thanks to [@0xdabbad00](https://twitter.com/0xdabbad00) for the original idea, t
 
 ![setup](assets/watching.gif)
 
-1. Subscribe to the Github [RSS Feed](https://github.com/z0ph/MAMIP/commits/master.atom) (`master` branch)
+3. Subscribe to the Github [RSS Feed](https://github.com/z0ph/MAMIP/commits/master.atom) (`master` branch)
 
 ## :white_check_mark: Policy Validation
 
@@ -24,7 +24,7 @@ I'm using [AWS Access Analyzer Policy Validation](https://aws.amazon.com/blogs/a
 
 ## :older_man: Deprecated Policies
 
-Some AWS Managed Policies are now [deprecated](./DEPRECATED.json) since they first appear in this repository. Policy validation only take place on actual AWS managed policies.
+Some AWS Managed Policies are now [deprecated](./DEPRECATED.json) since they first appear in this repository. Policy validation only takes place on actual AWS-managed policies.
 
 ## :white_heart: How it works behind the scene
 
@@ -37,7 +37,7 @@ cat list-policies.json \
   | xargs -n3 sh -c 'aws iam get-policy-version --policy-arn $1 --version-id $2 > "policies/$3"' sh
 ```
 
-This commands does the following:
+This command does the following:
 
 - Gets the list of all IAM Policies in the AWS account
 - Finds the ones with an ARN containing `iam::aws`, so that only the AWS managed policies are grabbed.
@@ -50,7 +50,7 @@ This commands does the following:
   - ECS + Fargate
 - Clone this repository
 - Run the magic (previously mentioned command)
-- If changes detected:
+- If changes are detected:
   - Commit changes
   - Push + Create Release
   - Send SQS message to [qTweet](https://github.com/z0ph/qtweet)
