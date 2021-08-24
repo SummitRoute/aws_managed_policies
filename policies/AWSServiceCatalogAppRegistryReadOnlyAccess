@@ -8,17 +8,19 @@
                     "Action": [
                         "servicecatalog:GetApplication",
                         "servicecatalog:ListApplications",
+                        "servicecatalog:GetAssociatedResource",
                         "servicecatalog:ListAssociatedResources",
                         "servicecatalog:ListAssociatedAttributeGroups",
                         "servicecatalog:GetAttributeGroup",
-                        "servicecatalog:ListAttributeGroups"
+                        "servicecatalog:ListAttributeGroups",
+                        "servicecatalog:ListTagsForResource"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-11-12T22:34:32Z"
+        "CreateDate": "2021-08-24T17:03:28Z"
     }
 }

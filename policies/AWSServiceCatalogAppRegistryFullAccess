@@ -6,6 +6,28 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "cloudformation:UpdateStack"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "ForAnyValue:StringEquals": {
+                            "aws:CalledVia": "servicecatalog-appregistry.amazonaws.com"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "iam:CreateServiceLinkedRole",
+                    "Resource": "arn:aws:iam::*:role/aws-service-role/servicecatalog-appregistry.amazonaws.com/AWSServiceRoleForAWSServiceCatalogAppRegistry*",
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:AWSServiceName": "servicecatalog-appregistry.amazonaws.com"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
                         "cloudformation:DescribeStacks",
                         "servicecatalog:CreateApplication",
                         "servicecatalog:GetApplication",
@@ -14,6 +36,7 @@
                         "servicecatalog:ListApplications",
                         "servicecatalog:AssociateResource",
                         "servicecatalog:DisassociateResource",
+                        "servicecatalog:GetAssociatedResource",
                         "servicecatalog:ListAssociatedResources",
                         "servicecatalog:AssociateAttributeGroup",
                         "servicecatalog:DisassociateAttributeGroup",
@@ -22,14 +45,24 @@
                         "servicecatalog:UpdateAttributeGroup",
                         "servicecatalog:DeleteAttributeGroup",
                         "servicecatalog:GetAttributeGroup",
-                        "servicecatalog:ListAttributeGroups"
+                        "servicecatalog:ListAttributeGroups",
+                        "servicecatalog:SyncResource"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "servicecatalog:ListTagsForResource",
+                        "servicecatalog:UntagResource",
+                        "servicecatalog:TagResource"
+                    ],
+                    "Resource": "arn:aws:servicecatalog:*:*:*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-11-12T22:25:58Z"
+        "CreateDate": "2021-08-24T17:06:03Z"
     }
 }
