@@ -1,0 +1,470 @@
+[
+    {
+        "findingDetails": "The action backup:CreateFramework does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 0
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 95,
+                        "line": 1,
+                        "offset": 95
+                    },
+                    "start": {
+                        "column": 71,
+                        "line": 1,
+                        "offset": 71
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action backup:UpdateFramework does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 1
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 121,
+                        "line": 1,
+                        "offset": 121
+                    },
+                    "start": {
+                        "column": 97,
+                        "line": 1,
+                        "offset": 97
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action backup:ListFrameworks does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 2
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 146,
+                        "line": 1,
+                        "offset": 146
+                    },
+                    "start": {
+                        "column": 123,
+                        "line": 1,
+                        "offset": 123
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action backup:DescribeFramework does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 3
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 174,
+                        "line": 1,
+                        "offset": 174
+                    },
+                    "start": {
+                        "column": 148,
+                        "line": 1,
+                        "offset": 148
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action backup:DeleteFramework does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 4
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 200,
+                        "line": 1,
+                        "offset": 200
+                    },
+                    "start": {
+                        "column": 176,
+                        "line": 1,
+                        "offset": 176
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action backup:CreateReportPlan does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 7
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 280,
+                        "line": 1,
+                        "offset": 280
+                    },
+                    "start": {
+                        "column": 255,
+                        "line": 1,
+                        "offset": 255
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action backup:UpdateReportPlan does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 8
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 307,
+                        "line": 1,
+                        "offset": 307
+                    },
+                    "start": {
+                        "column": 282,
+                        "line": 1,
+                        "offset": 282
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action backup:ListReportPlans does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 9
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 333,
+                        "line": 1,
+                        "offset": 333
+                    },
+                    "start": {
+                        "column": 309,
+                        "line": 1,
+                        "offset": 309
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action backup:DescribeReportPlan does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 10
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 362,
+                        "line": 1,
+                        "offset": 362
+                    },
+                    "start": {
+                        "column": 335,
+                        "line": 1,
+                        "offset": 335
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action backup:DeleteReportPlan does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 11
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 389,
+                        "line": 1,
+                        "offset": 389
+                    },
+                    "start": {
+                        "column": 364,
+                        "line": 1,
+                        "offset": 364
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action backup:StartReportJob does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 12
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 414,
+                        "line": 1,
+                        "offset": 414
+                    },
+                    "start": {
+                        "column": 391,
+                        "line": 1,
+                        "offset": 391
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action backup:ListReportJobs does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 13
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 439,
+                        "line": 1,
+                        "offset": 439
+                    },
+                    "start": {
+                        "column": 416,
+                        "line": 1,
+                        "offset": 416
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action backup:DescribeReportJob does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 14
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 467,
+                        "line": 1,
+                        "offset": 467
+                    },
+                    "start": {
+                        "column": 441,
+                        "line": 1,
+                        "offset": 441
+                    }
+                }
+            }
+        ]
+    }
+]

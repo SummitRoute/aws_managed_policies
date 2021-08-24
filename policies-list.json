@@ -2418,7 +2418,7 @@
             "Arn": "arn:aws:iam::aws:policy/AdministratorAccess",
             "Path": "/",
             "DefaultVersionId": "v1",
-            "AttachmentCount": 5,
+            "AttachmentCount": 4,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2015-02-06T18:39:46+00:00",
@@ -6287,6 +6287,18 @@
             "IsAttachable": true,
             "CreateDate": "2020-12-08T15:12:12+00:00",
             "UpdateDate": "2020-12-08T15:12:12+00:00"
+        },
+        {
+            "PolicyName": "AWSBackupAuditAccess",
+            "PolicyId": "ANPAZKAPJZG4C7QUTQXCL",
+            "Arn": "arn:aws:iam::aws:policy/AWSBackupAuditAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-08-24T01:02:23+00:00",
+            "UpdateDate": "2021-08-24T01:02:23+00:00"
         },
         {
             "PolicyName": "CloudWatchSyntheticsReadOnlyAccess",
