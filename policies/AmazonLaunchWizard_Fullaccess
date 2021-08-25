@@ -131,7 +131,10 @@
                         "ds:AddIpRoutes",
                         "ds:CreateComputer",
                         "ds:CreateMicrosoftAD",
-                        "ds:DeleteDirectory"
+                        "ds:DeleteDirectory",
+                        "servicecatalog:AssociateProductWithPortfolio",
+                        "cloudformation:GetTemplateSummary",
+                        "sts:GetCallerIdentity"
                     ],
                     "Resource": "*",
                     "Condition": {
@@ -270,6 +273,7 @@
                         "cloudformation:DescribeAccountLimits",
                         "cloudformation:DescribeStackDriftDetectionStatus",
                         "cloudformation:List*",
+                        "cloudformation:ValidateTemplate",
                         "ds:Describe*",
                         "ds:ListAuthorizedApplications",
                         "ec2:Describe*",
@@ -515,11 +519,31 @@
                         "fsx:DescribeFileSystems"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "servicecatalog:CreatePortfolio",
+                        "servicecatalog:DescribePortfolio",
+                        "servicecatalog:CreateConstraint",
+                        "servicecatalog:CreateProduct",
+                        "servicecatalog:AssociatePrincipalWithPortfolio",
+                        "servicecatalog:CreateProvisioningArtifact"
+                    ],
+                    "Resource": [
+                        "arn:aws:servicecatalog:*:*:*/*",
+                        "arn:aws:catalog:*:*:*/*"
+                    ],
+                    "Condition": {
+                        "ForAnyValue:StringEquals": {
+                            "aws:CalledVia": "launchwizard.amazonaws.com"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v10",
+        "VersionId": "v11",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-05-24T23:04:20Z"
+        "CreateDate": "2021-08-25T17:24:45Z"
     }
 }
