@@ -1,10 +1,11 @@
-## AWS Access Analyzer - Findings - 2021-08-24
+## AWS Access Analyzer - Findings - 2021-08-25
 
 - Policies analyzed: `848`
-- Errors: `37`
+- Errors: `38`
   - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
   - [`AWSServiceRolePolicyForBackupReports`](./AWSServiceRolePolicyForBackupReports.json)
+  - [`AmazonLaunchWizard_Fullaccess`](./AmazonLaunchWizard_Fullaccess.json)
   - [`AWSPrivateMarketplaceAdminFullAccess`](./AWSPrivateMarketplaceAdminFullAccess.json)
   - [`AmazonRoute53RecoveryReadinessReadOnlyAccess`](./AmazonRoute53RecoveryReadinessReadOnlyAccess.json)
   - [`AWSBackupAuditAccess`](./AWSBackupAuditAccess.json)
@@ -45,10 +46,11 @@
   - [`AdministratorAccess-Amplify`](./AdministratorAccess-Amplify.json)
   - [`AWSElasticBeanstalkRoleCore`](./AWSElasticBeanstalkRoleCore.json)
   - [`AmazonAppStreamServiceAccess`](./AmazonAppStreamServiceAccess.json)
-- Warnings: `7`
+- Warnings: `8`
   - [`AdministratorAccess`](./AdministratorAccess.json)
   - [`SecurityAudit`](./SecurityAudit.json)
   - [`AWSOrganizationsServiceTrustPolicy`](./AWSOrganizationsServiceTrustPolicy.json)
+  - [`AmazonLaunchWizard_Fullaccess`](./AmazonLaunchWizard_Fullaccess.json)
   - [`PowerUserAccess`](./PowerUserAccess.json)
   - [`ReadOnlyAccess`](./ReadOnlyAccess.json)
   - [`AlexaForBusinessFullAccess`](./AlexaForBusinessFullAccess.json)

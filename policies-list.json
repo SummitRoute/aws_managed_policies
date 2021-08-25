@@ -5801,12 +5801,12 @@
             "PolicyId": "ANPAZKAPJZG4ABPQ7BLC2",
             "Arn": "arn:aws:iam::aws:policy/AmazonLaunchWizard_Fullaccess",
             "Path": "/",
-            "DefaultVersionId": "v10",
+            "DefaultVersionId": "v11",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-08-06T17:47:30+00:00",
-            "UpdateDate": "2021-05-24T23:04:20+00:00"
+            "UpdateDate": "2021-08-25T17:24:45+00:00"
         },
         {
             "PolicyName": "AmazonChimeSDK",
