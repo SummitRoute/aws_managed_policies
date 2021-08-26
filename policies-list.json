@@ -809,12 +809,12 @@
             "PolicyId": "ANPAIDPMLA3IUIOQCISJ4",
             "Arn": "arn:aws:iam::aws:policy/ElasticLoadBalancingFullAccess",
             "Path": "/",
-            "DefaultVersionId": "v5",
+            "DefaultVersionId": "v6",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2018-09-20T20:42:07+00:00",
-            "UpdateDate": "2020-12-04T20:01:39+00:00"
+            "UpdateDate": "2021-08-26T18:32:13+00:00"
         },
         {
             "PolicyName": "AmazonRoute53DomainsReadOnlyAccess",
@@ -1517,12 +1517,12 @@
             "PolicyId": "ANPAIMHWGGSRHLOQUICJQ",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/AWSElasticLoadBalancingServiceRolePolicy",
             "Path": "/aws-service-role/",
-            "DefaultVersionId": "v6",
+            "DefaultVersionId": "v7",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2017-09-19T22:19:04+00:00",
-            "UpdateDate": "2020-05-19T16:40:28+00:00"
+            "UpdateDate": "2021-08-26T19:01:48+00:00"
         },
         {
             "PolicyName": "AWSCodeBuildDeveloperAccess",
@@ -7085,12 +7085,12 @@
             "PolicyId": "ANPAZKAPJZG4FI27MEARJ",
             "Arn": "arn:aws:iam::aws:policy/ComputeOptimizerReadOnlyAccess",
             "Path": "/",
-            "DefaultVersionId": "v3",
+            "DefaultVersionId": "v4",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-03-07T00:11:02+00:00",
-            "UpdateDate": "2020-12-23T18:00:54+00:00"
+            "UpdateDate": "2021-08-26T18:34:10+00:00"
         },
         {
             "PolicyName": "AlexaForBusinessPolyDelegatedAccessPolicy",

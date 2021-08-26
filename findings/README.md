@@ -1,7 +1,7 @@
 ## AWS Access Analyzer - Findings - 2021-08-26
 
 - Policies analyzed: `849`
-- Errors: `38`
+- Errors: `39`
   - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
   - [`AWSServiceRolePolicyForBackupReports`](./AWSServiceRolePolicyForBackupReports.json)
@@ -10,6 +10,7 @@
   - [`AmazonRoute53RecoveryReadinessReadOnlyAccess`](./AmazonRoute53RecoveryReadinessReadOnlyAccess.json)
   - [`AWSBackupAuditAccess`](./AWSBackupAuditAccess.json)
   - [`ReadOnlyAccess`](./ReadOnlyAccess.json)
+  - [`ComputeOptimizerReadOnlyAccess`](./ComputeOptimizerReadOnlyAccess.json)
   - [`AWSPurchaseOrdersServiceRolePolicy`](./AWSPurchaseOrdersServiceRolePolicy.json)
 - Sec_Warnings: `10`
   - [`AdministratorAccess`](./AdministratorAccess.json)
