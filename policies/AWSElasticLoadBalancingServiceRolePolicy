@@ -32,6 +32,7 @@
                         "ec2:AssignIpv6Addresses",
                         "ec2:ReleaseAddress",
                         "ec2:UnassignIpv6Addresses",
+                        "ec2:DescribeVpcPeeringConnections",
                         "logs:CreateLogDelivery",
                         "logs:GetLogDelivery",
                         "logs:UpdateLogDelivery",
@@ -43,8 +44,8 @@
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-05-19T16:40:28Z"
+        "CreateDate": "2021-08-26T19:01:48Z"
     }
 }

@@ -8,6 +8,7 @@
                     "Action": [
                         "compute-optimizer:DescribeRecommendationExportJobs",
                         "compute-optimizer:GetEnrollmentStatus",
+                        "compute-optimizer:GetEnrollmentStatusesForOrganization",
                         "compute-optimizer:GetRecommendationSummaries",
                         "compute-optimizer:GetEC2InstanceRecommendations",
                         "compute-optimizer:GetEC2RecommendationProjectedMetrics",
@@ -28,8 +29,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-12-23T18:00:54Z"
+        "CreateDate": "2021-08-26T18:34:10Z"
     }
 }

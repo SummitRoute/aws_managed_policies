@@ -24,6 +24,7 @@
                         "ec2:DescribeRouteTables",
                         "ec2:DescribeCoipPools",
                         "ec2:GetCoipPoolUsage",
+                        "ec2:DescribeVpcPeeringConnections",
                         "cognito-idp:DescribeUserPoolClient"
                     ],
                     "Resource": "*"
@@ -40,8 +41,8 @@
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-12-04T20:01:39Z"
+        "CreateDate": "2021-08-26T18:32:13Z"
     }
 }
