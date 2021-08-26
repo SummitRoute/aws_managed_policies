@@ -9421,6 +9421,18 @@
             "UpdateDate": "2021-08-11T18:07:10+00:00"
         },
         {
+            "PolicyName": "AmazonOpenSearchServiceRolePolicy",
+            "PolicyId": "ANPAZKAPJZG4NHHCOTRP6",
+            "Arn": "arn:aws:iam::aws:policy/aws-service-role/AmazonOpenSearchServiceRolePolicy",
+            "Path": "/aws-service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-08-26T09:27:09+00:00",
+            "UpdateDate": "2021-08-26T09:27:09+00:00"
+        },
+        {
             "PolicyName": "AmazonBraketServiceRolePolicy",
             "PolicyId": "ANPAZKAPJZG4NIYU42I3S",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/AmazonBraketServiceRolePolicy",

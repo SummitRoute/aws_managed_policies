@@ -1,6 +1,6 @@
-## AWS Access Analyzer - Findings - 2021-08-25
+## AWS Access Analyzer - Findings - 2021-08-26
 
-- Policies analyzed: `848`
+- Policies analyzed: `849`
 - Errors: `38`
   - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
