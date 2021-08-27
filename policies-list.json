@@ -3149,12 +3149,12 @@
             "PolicyId": "ANPAJ6VRZDDCYDOVCOCEI",
             "Arn": "arn:aws:iam::aws:policy/AWSPrivateMarketplaceAdminFullAccess",
             "Path": "/",
-            "DefaultVersionId": "v3",
+            "DefaultVersionId": "v4",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2018-11-27T16:32:32+00:00",
-            "UpdateDate": "2020-12-03T15:12:31+00:00"
+            "UpdateDate": "2021-08-27T15:34:07+00:00"
         },
         {
             "PolicyName": "AWSConnector",
