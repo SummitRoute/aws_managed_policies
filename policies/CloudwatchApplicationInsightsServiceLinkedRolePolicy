@@ -86,6 +86,16 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "resource-groups:CreateGroup",
+                        "resource-groups:DeleteGroup"
+                    ],
+                    "Resource": [
+                        "arn:aws:resource-groups:*:*:group/ApplicationInsights-*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
                         "elasticloadbalancing:DescribeLoadBalancers",
                         "elasticloadbalancing:DescribeTargetGroups",
                         "elasticloadbalancing:DescribeTargetHealth"
@@ -194,6 +204,7 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "lambda:ListFunctions",
                         "lambda:GetFunctionConfiguration",
                         "lambda:ListEventSourceMappings"
                     ],
@@ -228,6 +239,7 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "dynamodb:ListTables",
                         "dynamodb:DescribeTable",
                         "dynamodb:DescribeContributorInsights",
                         "dynamodb:DescribeTimeToLive"
@@ -248,6 +260,7 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "s3:ListAllMyBuckets",
                         "s3:GetMetricsConfiguration",
                         "s3:GetReplicationConfiguration"
                     ],
@@ -258,6 +271,7 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "states:ListStateMachines",
                         "states:DescribeExecution",
                         "states:DescribeStateMachine",
                         "states:GetExecutionHistory"
@@ -307,11 +321,31 @@
                     "Resource": [
                         "*"
                     ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "sns:GetSubscriptionAttributes",
+                        "sns:GetTopicAttributes",
+                        "sns:GetSMSAttributes",
+                        "sns:ListSubscriptionsByTopic",
+                        "sns:ListTopics"
+                    ],
+                    "Resource": [
+                        "*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "sqs:ListQueues"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v15",
-        "IsDefaultVersion": false,
-        "CreateDate": "2021-08-13T19:59:56Z"
+        "VersionId": "v16",
+        "IsDefaultVersion": true,
+        "CreateDate": "2021-08-27T22:03:15Z"
     }
 }
