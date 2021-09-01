@@ -11,7 +11,8 @@
                     ],
                     "Resource": [
                         "arn:aws:ec2:*:*:network-interface/*",
-                        "arn:aws:ec2:*:*:subnet/*"
+                        "arn:aws:ec2:*:*:subnet/*",
+                        "arn:aws:ec2:*:*:security-group/*"
                     ]
                 },
                 {
@@ -88,8 +89,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-08-26T09:27:09Z"
+        "CreateDate": "2021-09-01T05:43:03Z"
     }
 }
