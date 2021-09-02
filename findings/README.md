@@ -1,6 +1,6 @@
 ## AWS Access Analyzer - Findings - 2021-09-02
 
-- Policies analyzed: `850`
+- Policies analyzed: `851`
 - Errors: `20`
   - [`ComputeOptimizerReadOnlyAccess`](./ComputeOptimizerReadOnlyAccess.json)
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)

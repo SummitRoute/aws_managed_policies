@@ -8857,6 +8857,18 @@
             "UpdateDate": "2020-07-20T22:25:07+00:00"
         },
         {
+            "PolicyName": "AWSApplicationAutoscalingNeptuneClusterPolicy",
+            "PolicyId": "ANPAZKAPJZG4LJVNMME6T",
+            "Arn": "arn:aws:iam::aws:policy/aws-service-role/AWSApplicationAutoscalingNeptuneClusterPolicy",
+            "Path": "/aws-service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-09-02T21:14:55+00:00",
+            "UpdateDate": "2021-09-02T21:14:55+00:00"
+        },
+        {
             "PolicyName": "AWSBackupFullAccess",
             "PolicyId": "ANPAZKAPJZG4LL52EIPJX",
             "Arn": "arn:aws:iam::aws:policy/AWSBackupFullAccess",
