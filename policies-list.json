@@ -6341,12 +6341,12 @@
             "PolicyId": "ANPAZKAPJZG4CAIXDDRI2",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/AccessAnalyzerServiceRolePolicy",
             "Path": "/aws-service-role/",
-            "DefaultVersionId": "v5",
+            "DefaultVersionId": "v6",
             "AttachmentCount": 1,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2019-12-02T17:13:10+00:00",
-            "UpdateDate": "2020-11-24T20:58:37+00:00"
+            "UpdateDate": "2021-09-02T16:49:47+00:00"
         },
         {
             "PolicyName": "AmazonRoute53ResolverReadOnlyAccess",
