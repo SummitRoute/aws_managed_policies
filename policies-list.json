@@ -7801,6 +7801,18 @@
             "UpdateDate": "2020-06-12T20:31:59+00:00"
         },
         {
+            "PolicyName": "AmazonOpenSearchServiceCognitoAccess",
+            "PolicyId": "ANPAZKAPJZG4I2NKQTDYL",
+            "Arn": "arn:aws:iam::aws:policy/AmazonOpenSearchServiceCognitoAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-09-02T06:31:49+00:00",
+            "UpdateDate": "2021-09-02T06:31:49+00:00"
+        },
+        {
             "PolicyName": "AmazonTimestreamReadOnlyAccess",
             "PolicyId": "ANPAZKAPJZG4I7VUQXAEJ",
             "Arn": "arn:aws:iam::aws:policy/AmazonTimestreamReadOnlyAccess",
