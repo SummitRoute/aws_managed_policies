@@ -35,6 +35,7 @@
                         "organizations:ListOrganizationalUnitsForParent",
                         "organizations:ListParents",
                         "organizations:ListRoots",
+                        "s3:DescribeMultiRegionAccessPointOperation",
                         "s3:GetAccessPoint",
                         "s3:GetAccessPointPolicy",
                         "s3:GetAccessPointPolicyStatus",
@@ -44,8 +45,12 @@
                         "s3:GetBucketPolicyStatus",
                         "s3:GetBucketPolicy",
                         "s3:GetBucketPublicAccessBlock",
+                        "s3:GetMultiRegionAccessPoint",
+                        "s3:GetMultiRegionAccessPointPolicy",
+                        "s3:GetMultiRegionAccessPointPolicyStatus",
                         "s3:ListAccessPoints",
                         "s3:ListAllMyBuckets",
+                        "s3:ListMultiRegionAccessPoints",
                         "sns:GetTopicAttributes",
                         "sns:ListTopics",
                         "secretsmanager:DescribeSecret",
@@ -58,8 +63,8 @@
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-11-24T20:58:37Z"
+        "CreateDate": "2021-09-02T16:49:47Z"
     }
 }
