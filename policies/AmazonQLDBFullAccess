@@ -39,11 +39,21 @@
                         "qldb:PartiQLHistoryFunction"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "iam:PassRole",
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEquals": {
+                            "iam:PassedToService": "qldb.amazonaws.com"
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-05-27T17:15:06Z"
+        "CreateDate": "2021-09-02T23:21:04Z"
     }
 }
