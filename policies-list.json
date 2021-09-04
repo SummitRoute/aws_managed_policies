@@ -7561,6 +7561,18 @@
             "UpdateDate": "2020-11-20T00:19:00+00:00"
         },
         {
+            "PolicyName": "AmazonEKSConnectorServiceRolePolicy",
+            "PolicyId": "ANPAZKAPJZG4H2PH3AV2C",
+            "Arn": "arn:aws:iam::aws:policy/aws-service-role/AmazonEKSConnectorServiceRolePolicy",
+            "Path": "/aws-service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-09-04T20:31:08+00:00",
+            "UpdateDate": "2021-09-04T20:31:08+00:00"
+        },
+        {
             "PolicyName": "AWSServiceCatalogAppRegistryServiceRolePolicy",
             "PolicyId": "ANPAZKAPJZG4H3V4QGJFH",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/AWSServiceCatalogAppRegistryServiceRolePolicy",
