@@ -86,6 +86,7 @@
                         "elasticache:DescribeCacheParameterGroups",
                         "elasticache:DescribeCacheSubnetGroups",
                         "elasticache:DescribeReplicationGroups",
+                        "elasticache:DescribeSnapshots",
                         "elasticache:ListTagsForResource",
                         "elasticfilesystem:DescribeAccessPoints",
                         "elasticfilesystem:DescribeBackupPolicy",
@@ -115,6 +116,8 @@
                         "es:DescribeElasticsearchDomains",
                         "es:ListDomainNames",
                         "es:ListTags",
+                        "es:DescribeDomain",
+                        "es:DescribeDomains",
                         "firehose:DescribeDeliveryStream",
                         "firehose:ListDeliveryStreams",
                         "firehose:ListTagsForDeliveryStream",
@@ -191,6 +194,7 @@
                         "rds:DescribeDBSubnetGroups",
                         "rds:DescribeEventSubscriptions",
                         "rds:ListTagsForResource",
+                        "rds:DescribeDBParameters",
                         "redshift:DescribeClusterParameterGroups",
                         "redshift:DescribeClusterParameters",
                         "redshift:DescribeClusters",
@@ -295,8 +299,8 @@
                 }
             ]
         },
-        "VersionId": "v26",
+        "VersionId": "v27",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-07-27T22:31:53Z"
+        "CreateDate": "2021-09-08T18:12:00Z"
     }
 }
