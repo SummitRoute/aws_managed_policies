@@ -345,7 +345,8 @@
                     "Effect": "Allow",
                     "Action": [
                         "sns:Subscribe",
-                        "sns:CreateTopic"
+                        "sns:CreateTopic",
+                        "sns:Publish"
                     ],
                     "Resource": [
                         "arn:aws:sns:*:*:*SageMaker*",
@@ -472,8 +473,8 @@
                 }
             ]
         },
-        "VersionId": "v20",
+        "VersionId": "v21",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-07-16T00:06:59Z"
+        "CreateDate": "2021-09-08T17:12:25Z"
     }
 }
