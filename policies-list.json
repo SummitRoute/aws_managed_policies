@@ -1373,12 +1373,12 @@
             "PolicyId": "ANPAILL3HVNFSB6DCOWYQ",
             "Arn": "arn:aws:iam::aws:policy/ReadOnlyAccess",
             "Path": "/",
-            "DefaultVersionId": "v78",
+            "DefaultVersionId": "v79",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2015-02-06T18:39:48+00:00",
-            "UpdateDate": "2021-05-25T23:10:47+00:00"
+            "UpdateDate": "2021-09-08T19:43:26+00:00"
         },
         {
             "PolicyName": "AWSAppSyncInvokeFullAccess",

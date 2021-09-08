@@ -1,6 +1,6 @@
 [
     {
-        "findingDetails": "The 22411 characters in the identity policy, excluding whitespace, exceed the 10240 character maximum for inline and managed policies. We recommend that you use multiple granular policies.",
+        "findingDetails": "The 27085 characters in the identity policy, excluding whitespace, exceed the 10240 character maximum for inline and managed policies. We recommend that you use multiple granular policies.",
         "findingType": "WARNING",
         "issueCode": "POLICY_SIZE_EXCEEDS_IDENTITY_POLICY_QUOTA",
         "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-general-warning-policy-size-exceeds-identity-policy-quota",
@@ -9,50 +9,14 @@
                 "path": [],
                 "span": {
                     "end": {
-                        "column": 23281,
+                        "column": 28112,
                         "line": 1,
-                        "offset": 23281
+                        "offset": 28112
                     },
                     "start": {
                         "column": 0,
                         "line": 1,
                         "offset": 0
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "findingDetails": "The action codestar:Verify* does not exist.",
-        "findingType": "ERROR",
-        "issueCode": "INVALID_ACTION",
-        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
-        "locations": [
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 0
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 162
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 4590,
-                        "line": 1,
-                        "offset": 4590
-                    },
-                    "start": {
-                        "column": 4572,
-                        "line": 1,
-                        "offset": 4572
                     }
                 }
             }

@@ -1,13 +1,12 @@
 ## AWS Access Analyzer - Findings - 2021-09-08
 
 - Policies analyzed: `856`
-- Errors: `19`
+- Errors: `18`
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
   - [`AmazonLaunchWizard_Fullaccess`](./AmazonLaunchWizard_Fullaccess.json)
   - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)
   - [`AccessAnalyzerServiceRolePolicy`](./AccessAnalyzerServiceRolePolicy.json)
   - [`AWSPurchaseOrdersServiceRolePolicy`](./AWSPurchaseOrdersServiceRolePolicy.json)
-  - [`ReadOnlyAccess`](./ReadOnlyAccess.json)
 - Sec_Warnings: `10`
   - [`IAMFullAccess`](./IAMFullAccess.json)
   - [`AmazonElasticMapReduceFullAccess`](./AmazonElasticMapReduceFullAccess.json)
