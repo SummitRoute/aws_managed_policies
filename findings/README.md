@@ -1,8 +1,7 @@
-## AWS Access Analyzer - Findings - 2021-09-07
+## AWS Access Analyzer - Findings - 2021-09-08
 
-- Policies analyzed: `853`
-- Errors: `20`
-  - [`ComputeOptimizerReadOnlyAccess`](./ComputeOptimizerReadOnlyAccess.json)
+- Policies analyzed: `854`
+- Errors: `19`
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
   - [`AmazonLaunchWizard_Fullaccess`](./AmazonLaunchWizard_Fullaccess.json)
   - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)

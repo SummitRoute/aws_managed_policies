@@ -6149,12 +6149,12 @@
             "PolicyId": "ANPAZKAPJZG4BLUM3JVIN",
             "Arn": "arn:aws:iam::aws:policy/service-role/AWSQuickSightElasticsearchPolicy",
             "Path": "/service-role/",
-            "DefaultVersionId": "v2",
+            "DefaultVersionId": "v3",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-09-09T17:27:19+00:00",
-            "UpdateDate": "2020-10-15T17:09:55+00:00"
+            "UpdateDate": "2021-09-07T23:25:55+00:00"
         },
         {
             "PolicyName": "AmazonRoute53RecoveryControlConfigFullAccess",
@@ -8351,6 +8351,18 @@
             "IsAttachable": true,
             "CreateDate": "2020-11-24T14:13:41+00:00",
             "UpdateDate": "2020-11-24T14:13:41+00:00"
+        },
+        {
+            "PolicyName": "AWSQuicksightOpenSearchPolicy",
+            "PolicyId": "ANPAZKAPJZG4JW5IRBCM3",
+            "Arn": "arn:aws:iam::aws:policy/service-role/AWSQuicksightOpenSearchPolicy",
+            "Path": "/service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-09-07T23:26:19+00:00",
+            "UpdateDate": "2021-09-07T23:26:19+00:00"
         },
         {
             "PolicyName": "AmazonConnect_FullAccess",
