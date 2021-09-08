@@ -7033,6 +7033,18 @@
             "UpdateDate": "2020-04-17T19:21:34+00:00"
         },
         {
+            "PolicyName": "AmazonOpenSearchServiceFullAccess",
+            "PolicyId": "ANPAZKAPJZG4F6P6N56MG",
+            "Arn": "arn:aws:iam::aws:policy/AmazonOpenSearchServiceFullAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-09-08T05:33:47+00:00",
+            "UpdateDate": "2021-09-08T05:33:47+00:00"
+        },
+        {
             "PolicyName": "AWSRoboMaker_FullAccess",
             "PolicyId": "ANPAZKAPJZG4FACURHLCA",
             "Arn": "arn:aws:iam::aws:policy/AWSRoboMaker_FullAccess",
@@ -10199,6 +10211,18 @@
             "IsAttachable": true,
             "CreateDate": "2020-09-15T20:30:30+00:00",
             "UpdateDate": "2021-07-27T22:41:23+00:00"
+        },
+        {
+            "PolicyName": "AmazonOpenSearchServiceReadOnlyAccess",
+            "PolicyId": "ANPAZKAPJZG4PQONZTCWT",
+            "Arn": "arn:aws:iam::aws:policy/AmazonOpenSearchServiceReadOnlyAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-09-08T05:38:13+00:00",
+            "UpdateDate": "2021-09-08T05:38:13+00:00"
         },
         {
             "PolicyName": "AmazonNimbleStudio-StudioAdmin",

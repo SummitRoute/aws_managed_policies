@@ -1,6 +1,6 @@
 ## AWS Access Analyzer - Findings - 2021-09-08
 
-- Policies analyzed: `854`
+- Policies analyzed: `856`
 - Errors: `19`
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
   - [`AmazonLaunchWizard_Fullaccess`](./AmazonLaunchWizard_Fullaccess.json)
