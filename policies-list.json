@@ -9497,12 +9497,12 @@
             "PolicyId": "ANPAZKAPJZG4NHHCOTRP6",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/AmazonOpenSearchServiceRolePolicy",
             "Path": "/aws-service-role/",
-            "DefaultVersionId": "v2",
+            "DefaultVersionId": "v3",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2021-08-26T09:27:09+00:00",
-            "UpdateDate": "2021-09-01T05:43:03+00:00"
+            "UpdateDate": "2021-09-09T10:43:21+00:00"
         },
         {
             "PolicyName": "AmazonBraketServiceRolePolicy",
