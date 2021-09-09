@@ -212,6 +212,7 @@
                         "codestar:Describe*",
                         "codestar:Get*",
                         "codestar:List*",
+                        "codestar:Verify*",
                         "cognito-identity:Describe*",
                         "cognito-identity:GetCredentialsForIdentity",
                         "cognito-identity:GetIdentityPoolRoles",
@@ -1032,8 +1033,8 @@
                 }
             ]
         },
-        "VersionId": "v79",
-        "IsDefaultVersion": false,
-        "CreateDate": "2021-09-08T19:43:26Z"
+        "VersionId": "v80",
+        "IsDefaultVersion": true,
+        "CreateDate": "2021-09-09T00:01:51Z"
     }
 }
