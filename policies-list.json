@@ -1374,7 +1374,7 @@
             "Arn": "arn:aws:iam::aws:policy/ReadOnlyAccess",
             "Path": "/",
             "DefaultVersionId": "v80",
-            "AttachmentCount": 0,
+            "AttachmentCount": 1,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2015-02-06T18:39:48+00:00",
@@ -9425,12 +9425,12 @@
             "PolicyId": "ANPAZKAPJZG4NAOSKQH4V",
             "Arn": "arn:aws:iam::aws:policy/AmazonSageMakerAdmin-ServiceCatalogProductsServiceRolePolicy",
             "Path": "/",
-            "DefaultVersionId": "v2",
+            "DefaultVersionId": "v3",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-11-27T18:48:07+00:00",
-            "UpdateDate": "2021-07-02T06:13:39+00:00"
+            "UpdateDate": "2021-09-15T20:00:26+00:00"
         },
         {
             "PolicyName": "AWSTrustedAdvisorReportingServiceRolePolicy",
