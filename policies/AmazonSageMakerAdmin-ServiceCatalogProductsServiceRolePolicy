@@ -359,6 +359,19 @@
                     ]
                 },
                 {
+                    "Action": [
+                        "sagemaker:CreateImage",
+                        "sagemaker:DeleteImage",
+                        "sagemaker:DescribeImage",
+                        "sagemaker:UpdateImage",
+                        "sagemaker:ListTags"
+                    ],
+                    "Resource": [
+                        "arn:aws:sagemaker:*:*:image/*"
+                    ],
+                    "Effect": "Allow"
+                },
+                {
                     "Effect": "Allow",
                     "Action": [
                         "states:CreateStateMachine",
@@ -381,8 +394,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-07-02T06:13:39Z"
+        "CreateDate": "2021-09-15T20:00:26Z"
     }
 }
