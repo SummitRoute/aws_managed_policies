@@ -21,41 +21,5 @@
                 }
             }
         ]
-    },
-    {
-        "findingDetails": "The action codestar:Verify* does not exist.",
-        "findingType": "ERROR",
-        "issueCode": "INVALID_ACTION",
-        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
-        "locations": [
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 0
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 206
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 5986,
-                        "line": 1,
-                        "offset": 5986
-                    },
-                    "start": {
-                        "column": 5968,
-                        "line": 1,
-                        "offset": 5968
-                    }
-                }
-            }
-        ]
     }
 ]

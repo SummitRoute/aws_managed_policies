@@ -2418,7 +2418,7 @@
             "Arn": "arn:aws:iam::aws:policy/AdministratorAccess",
             "Path": "/",
             "DefaultVersionId": "v1",
-            "AttachmentCount": 5,
+            "AttachmentCount": 6,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2015-02-06T18:39:46+00:00",
@@ -3257,12 +3257,12 @@
             "PolicyId": "ANPAJ7W6266ELXF5MISDS",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/AWSSupportServiceRolePolicy",
             "Path": "/aws-service-role/",
-            "DefaultVersionId": "v16",
+            "DefaultVersionId": "v17",
             "AttachmentCount": 1,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2018-04-19T18:04:44+00:00",
-            "UpdateDate": "2021-07-01T21:52:12+00:00"
+            "UpdateDate": "2021-09-16T21:02:10+00:00"
         },
         {
             "PolicyName": "AWSApplicationAutoscalingRDSClusterPolicy",
@@ -4769,12 +4769,12 @@
             "PolicyId": "ANPAJPNMADZFJCVPJVZA2",
             "Arn": "arn:aws:iam::aws:policy/job-function/NetworkAdministrator",
             "Path": "/job-function/",
-            "DefaultVersionId": "v10",
+            "DefaultVersionId": "v11",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2016-11-10T17:31:35+00:00",
-            "UpdateDate": "2021-09-03T20:25:05+00:00"
+            "UpdateDate": "2021-09-16T20:22:54+00:00"
         },
         {
             "PolicyName": "AWSIoT1ClickFullAccess",
@@ -5658,7 +5658,7 @@
             "Arn": "arn:aws:iam::aws:policy/AmazonSageMakerFullAccess",
             "Path": "/",
             "DefaultVersionId": "v21",
-            "AttachmentCount": 0,
+            "AttachmentCount": 1,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2017-11-29T13:07:59+00:00",
@@ -7049,12 +7049,12 @@
             "PolicyId": "ANPAZKAPJZG4FACURHLCA",
             "Arn": "arn:aws:iam::aws:policy/AWSRoboMaker_FullAccess",
             "Path": "/",
-            "DefaultVersionId": "v1",
+            "DefaultVersionId": "v2",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-09-10T18:34:18+00:00",
-            "UpdateDate": "2020-09-10T18:34:18+00:00"
+            "UpdateDate": "2021-09-16T21:06:10+00:00"
         },
         {
             "PolicyName": "AWSAppMeshPreviewServiceRolePolicy",
