@@ -20,6 +20,26 @@
                 },
                 {
                     "Effect": "Allow",
+                    "Action": "ecr:BatchGetImage",
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEquals": {
+                            "aws:CalledViaFirst": "robomaker.amazonaws.com"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "ecr-public:DescribeImages",
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEquals": {
+                            "aws:CalledViaFirst": "robomaker.amazonaws.com"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
                     "Action": "iam:CreateServiceLinkedRole",
                     "Resource": "*",
                     "Condition": {
@@ -30,8 +50,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-09-10T18:34:18Z"
+        "CreateDate": "2021-09-16T21:06:10Z"
     }
 }
