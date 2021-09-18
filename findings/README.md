@@ -1,6 +1,6 @@
-## AWS Access Analyzer - Findings - 2021-09-16
+## AWS Access Analyzer - Findings - 2021-09-18
 
-- Policies analyzed: `856`
+- Policies analyzed: `857`
 - Errors: `13`
   - [`AWSPurchaseOrdersServiceRolePolicy`](./AWSPurchaseOrdersServiceRolePolicy.json)
   - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)
