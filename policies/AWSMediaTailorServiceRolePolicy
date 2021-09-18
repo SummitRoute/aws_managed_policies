@@ -1,0 +1,27 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Action": "logs:PutLogEvents",
+                    "Resource": "arn:aws:logs:*:*:log-group:MediaTailor/*:log-stream:*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "logs:CreateLogStream",
+                        "logs:CreateLogGroup",
+                        "logs:DescribeLogGroups",
+                        "logs:DescribeLogStreams"
+                    ],
+                    "Resource": "arn:aws:logs:*:*:log-group:MediaTailor/*"
+                }
+            ]
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2021-09-17T22:27:10Z"
+    }
+}
