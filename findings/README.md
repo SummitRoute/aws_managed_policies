@@ -17,7 +17,7 @@
   - [`AmazonDynamoDBFullAccesswithDataPipeline`](./AmazonDynamoDBFullAccesswithDataPipeline.json)
   - [`AWSElasticBeanstalkService`](./AWSElasticBeanstalkService.json)
   - [`AWSServiceRoleForAmazonEKSNodegroup`](./AWSServiceRoleForAmazonEKSNodegroup.json)
-- Suggestions: `43`
+- Suggestions: `40`
   - [`AWSElasticBeanstalkCustomPlatformforEC2Role`](./AWSElasticBeanstalkCustomPlatformforEC2Role.json)
   - [`AmazonCodeGuruReviewerServiceRolePolicy`](./AmazonCodeGuruReviewerServiceRolePolicy.json)
   - [`DataScientist`](./DataScientist.json)
@@ -35,7 +35,6 @@
   - [`AWSElasticBeanstalkRoleCore`](./AWSElasticBeanstalkRoleCore.json)
   - [`AmazonAppStreamServiceAccess`](./AmazonAppStreamServiceAccess.json)
   - [`AWSDeepRacerFullAccess`](./AWSDeepRacerFullAccess.json)
-  - [`AWSCodeStarServiceRole`](./AWSCodeStarServiceRole.json)
   - [`AWSBackupOperatorAccess`](./AWSBackupOperatorAccess.json)
   - [`AmazonLaunchWizard_Fullaccess`](./AmazonLaunchWizard_Fullaccess.json)
   - [`AWSGlueConsoleFullAccess`](./AWSGlueConsoleFullAccess.json)

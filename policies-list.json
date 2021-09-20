@@ -1577,12 +1577,12 @@
             "PolicyId": "ANPAIN6D4M2KD3NBOC4M4",
             "Arn": "arn:aws:iam::aws:policy/service-role/AWSCodeStarServiceRole",
             "Path": "/service-role/",
-            "DefaultVersionId": "v10",
+            "DefaultVersionId": "v11",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2017-04-19T15:20:50+00:00",
-            "UpdateDate": "2021-02-15T22:25:37+00:00"
+            "UpdateDate": "2021-09-20T19:11:03+00:00"
         },
         {
             "PolicyName": "AmazonTranscribeFullAccess",
