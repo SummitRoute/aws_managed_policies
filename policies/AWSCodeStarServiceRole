@@ -61,9 +61,7 @@
                     ],
                     "Resource": [
                         "arn:aws:s3:::aws-codestar-*",
-                        "arn:aws:s3:::aws-codestar-*/*",
-                        "arn:aws:s3:::elasticbeanstalk-*",
-                        "arn:aws:s3:::elasticbeanstalk-*/*"
+                        "arn:aws:s3:::elasticbeanstalk-*"
                     ]
                 },
                 {
@@ -75,7 +73,6 @@
                         "codepipeline:*",
                         "codedeploy:*",
                         "codebuild:*",
-                        "ec2:RunInstances",
                         "autoscaling:*",
                         "cloudwatch:Put*",
                         "ec2:*",
@@ -200,15 +197,15 @@
                     "Action": "codestar-connections:PassConnection",
                     "Resource": "*",
                     "Condition": {
-                        "ForAnyValue:StringEqualsIfExists": {
+                        "StringEqualsIfExists": {
                             "codestar-connections:PassedToService": "codepipeline.amazonaws.com"
                         }
                     }
                 }
             ]
         },
-        "VersionId": "v10",
+        "VersionId": "v11",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-02-15T22:25:37Z"
+        "CreateDate": "2021-09-20T19:11:03Z"
     }
 }
