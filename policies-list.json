@@ -9445,6 +9445,18 @@
             "UpdateDate": "2021-09-15T20:00:26+00:00"
         },
         {
+            "PolicyName": "AmazonMSKConnectReadOnlyAccess",
+            "PolicyId": "ANPAZKAPJZG4NBJ5F5NIS",
+            "Arn": "arn:aws:iam::aws:policy/AmazonMSKConnectReadOnlyAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-09-20T10:18:43+00:00",
+            "UpdateDate": "2021-09-20T10:18:43+00:00"
+        },
+        {
             "PolicyName": "AWSTrustedAdvisorReportingServiceRolePolicy",
             "PolicyId": "ANPAZKAPJZG4NCBYW5OGK",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/AWSTrustedAdvisorReportingServiceRolePolicy",
