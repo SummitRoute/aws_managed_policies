@@ -7349,12 +7349,12 @@
             "PolicyId": "ANPAZKAPJZG4G37QQNGZW",
             "Arn": "arn:aws:iam::aws:policy/AWSGrafanaWorkspacePermissionManagement",
             "Path": "/",
-            "DefaultVersionId": "v1",
+            "DefaultVersionId": "v2",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2021-02-23T00:15:54+00:00",
-            "UpdateDate": "2021-02-23T00:15:54+00:00"
+            "UpdateDate": "2021-09-21T20:30:06+00:00"
         },
         {
             "PolicyName": "AmazonNimbleStudio-LaunchProfileWorker",
@@ -9737,12 +9737,12 @@
             "PolicyId": "ANPAZKAPJZG4OHSWBMKNF",
             "Arn": "arn:aws:iam::aws:policy/AWSGrafanaConsoleReadOnlyAccess",
             "Path": "/",
-            "DefaultVersionId": "v1",
+            "DefaultVersionId": "v2",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2021-02-23T00:10:40+00:00",
-            "UpdateDate": "2021-02-23T00:10:40+00:00"
+            "UpdateDate": "2021-09-21T20:36:14+00:00"
         },
         {
             "PolicyName": "AWSMarketplaceMeteringRegisterUsage",
