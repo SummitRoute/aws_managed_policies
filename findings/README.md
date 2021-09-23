@@ -1,10 +1,11 @@
 ## AWS Access Analyzer - Findings - 2021-09-23
 
-- Policies analyzed: `858`
-- Errors: `25`
+- Policies analyzed: `859`
+- Errors: `26`
   - [`AWSPurchaseOrdersServiceRolePolicy`](./AWSPurchaseOrdersServiceRolePolicy.json)
   - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)
   - [`AmazonMSKConnectReadOnlyAccess`](./AmazonMSKConnectReadOnlyAccess.json)
+  - [`AmazonConnectCampaignsServiceLinkedRolePolicy`](./AmazonConnectCampaignsServiceLinkedRolePolicy.json)
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
   - [`AmazonLaunchWizard_Fullaccess`](./AmazonLaunchWizard_Fullaccess.json)
 - Sec_Warnings: `10`

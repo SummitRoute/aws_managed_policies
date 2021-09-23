@@ -1374,7 +1374,7 @@
             "Arn": "arn:aws:iam::aws:policy/ReadOnlyAccess",
             "Path": "/",
             "DefaultVersionId": "v80",
-            "AttachmentCount": 1,
+            "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2015-02-06T18:39:48+00:00",
@@ -2490,7 +2490,7 @@
             "Arn": "arn:aws:iam::aws:policy/SecurityAudit",
             "Path": "/",
             "DefaultVersionId": "v35",
-            "AttachmentCount": 0,
+            "AttachmentCount": 1,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2015-02-06T18:41:01+00:00",
@@ -10247,6 +10247,18 @@
             "IsAttachable": true,
             "CreateDate": "2021-09-08T05:38:13+00:00",
             "UpdateDate": "2021-09-08T05:38:13+00:00"
+        },
+        {
+            "PolicyName": "AmazonConnectCampaignsServiceLinkedRolePolicy",
+            "PolicyId": "ANPAZKAPJZG4PT3AZPOPK",
+            "Arn": "arn:aws:iam::aws:policy/aws-service-role/AmazonConnectCampaignsServiceLinkedRolePolicy",
+            "Path": "/aws-service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-09-23T20:54:26+00:00",
+            "UpdateDate": "2021-09-23T20:54:26+00:00"
         },
         {
             "PolicyName": "AmazonNimbleStudio-StudioAdmin",
