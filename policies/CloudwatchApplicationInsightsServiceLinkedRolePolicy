@@ -177,7 +177,8 @@
                         "arn:aws:ec2:*:*:instance/*",
                         "arn:aws:ssm:*:*:document/AWSEC2-CheckPerformanceCounterSets",
                         "arn:aws:ssm:*:*:document/AWS-ConfigureAWSPackage",
-                        "arn:aws:ssm:*:*:document/AWSEC2-DetectWorkload"
+                        "arn:aws:ssm:*:*:document/AWSEC2-DetectWorkload",
+                        "arn:aws:ssm:*:*:document/AmazonCloudWatch-ManageAgent"
                     ]
                 },
                 {
@@ -344,8 +345,8 @@
                 }
             ]
         },
-        "VersionId": "v16",
+        "VersionId": "v17",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-08-27T22:03:15Z"
+        "CreateDate": "2021-09-22T22:35:38Z"
     }
 }
