@@ -1,14 +1,15 @@
-## AWS Access Analyzer - Findings - 2021-09-23
+## AWS Access Analyzer - Findings - 2021-09-24
 
 - Policies analyzed: `859`
-- Errors: `26`
+- Errors: `28`
   - [`AWSPurchaseOrdersServiceRolePolicy`](./AWSPurchaseOrdersServiceRolePolicy.json)
   - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)
   - [`AmazonMSKConnectReadOnlyAccess`](./AmazonMSKConnectReadOnlyAccess.json)
   - [`AmazonConnectCampaignsServiceLinkedRolePolicy`](./AmazonConnectCampaignsServiceLinkedRolePolicy.json)
+  - [`AdministratorAccess-Amplify`](./AdministratorAccess-Amplify.json)
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
   - [`AmazonLaunchWizard_Fullaccess`](./AmazonLaunchWizard_Fullaccess.json)
-- Sec_Warnings: `10`
+- Sec_Warnings: `11`
   - [`AWSDataPipelineRole`](./AWSDataPipelineRole.json)
   - [`AdministratorAccess`](./AdministratorAccess.json)
   - [`AdministratorAccess-Amplify`](./AdministratorAccess-Amplify.json)
@@ -18,14 +19,13 @@
   - [`AmazonDynamoDBFullAccesswithDataPipeline`](./AmazonDynamoDBFullAccesswithDataPipeline.json)
   - [`AWSElasticBeanstalkService`](./AWSElasticBeanstalkService.json)
   - [`AWSServiceRoleForAmazonEKSNodegroup`](./AWSServiceRoleForAmazonEKSNodegroup.json)
-- Suggestions: `40`
+- Suggestions: `37`
   - [`AWSElasticBeanstalkCustomPlatformforEC2Role`](./AWSElasticBeanstalkCustomPlatformforEC2Role.json)
   - [`AmazonCodeGuruReviewerServiceRolePolicy`](./AmazonCodeGuruReviewerServiceRolePolicy.json)
   - [`DataScientist`](./DataScientist.json)
   - [`AWSBatchFullAccess`](./AWSBatchFullAccess.json)
   - [`AWSDataPipelineRole`](./AWSDataPipelineRole.json)
   - [`AWSLakeFormationDataAdmin`](./AWSLakeFormationDataAdmin.json)
-  - [`AdministratorAccess-Amplify`](./AdministratorAccess-Amplify.json)
   - [`SecurityAudit`](./SecurityAudit.json)
   - [`SystemAdministrator`](./SystemAdministrator.json)
   - [`NeptuneConsoleFullAccess`](./NeptuneConsoleFullAccess.json)
@@ -42,10 +42,11 @@
   - [`AWSElasticBeanstalkWorkerTier`](./AWSElasticBeanstalkWorkerTier.json)
   - [`AWSElasticBeanstalkService`](./AWSElasticBeanstalkService.json)
   - [`AWSMarketplaceFullAccess`](./AWSMarketplaceFullAccess.json)
-- Warnings: `8`
+- Warnings: `9`
   - [`AlexaForBusinessFullAccess`](./AlexaForBusinessFullAccess.json)
   - [`AWSOrganizationsServiceTrustPolicy`](./AWSOrganizationsServiceTrustPolicy.json)
   - [`AdministratorAccess`](./AdministratorAccess.json)
+  - [`AdministratorAccess-Amplify`](./AdministratorAccess-Amplify.json)
   - [`SecurityAudit`](./SecurityAudit.json)
   - [`PowerUserAccess`](./PowerUserAccess.json)
   - [`ReadOnlyAccess`](./ReadOnlyAccess.json)

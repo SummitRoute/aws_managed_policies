@@ -22,14 +22,14 @@
                 ],
                 "span": {
                     "end": {
-                        "column": 915,
+                        "column": 1016,
                         "line": 1,
-                        "offset": 915
+                        "offset": 1016
                     },
                     "start": {
-                        "column": 901,
+                        "column": 1002,
                         "line": 1,
-                        "offset": 901
+                        "offset": 1002
                     }
                 }
             },
@@ -47,24 +47,24 @@
                 ],
                 "span": {
                     "end": {
-                        "column": 5047,
+                        "column": 5163,
                         "line": 1,
-                        "offset": 5047
+                        "offset": 5163
                     },
                     "start": {
-                        "column": 5044,
+                        "column": 5160,
                         "line": 1,
-                        "offset": 5044
+                        "offset": 5160
                     }
                 }
             }
         ]
     },
     {
-        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: cognito-idp:DeleteGroup.",
-        "findingType": "SUGGESTION",
-        "issueCode": "REDUNDANT_ACTION",
-        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
+        "findingDetails": "The action lambda:GetLayerVersionByArn does not exist. Did you mean lambda:GetLayerVersion? The API called GetLayerVersionByArn authorizes against the IAM action lambda:GetLayerVersion.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
         "locations": [
             {
                 "path": [
@@ -78,175 +78,19 @@
                         "value": "Action"
                     },
                     {
-                        "index": 71
+                        "index": 107
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 2507,
+                        "column": 3694,
                         "line": 1,
-                        "offset": 2507
+                        "offset": 3694
                     },
                     "start": {
-                        "column": 2482,
+                        "column": 3665,
                         "line": 1,
-                        "offset": 2482
-                    }
-                }
-            },
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 1
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 80
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 2803,
-                        "line": 1,
-                        "offset": 2803
-                    },
-                    "start": {
-                        "column": 2778,
-                        "line": 1,
-                        "offset": 2778
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: lambda:DeleteFunction.",
-        "findingType": "SUGGESTION",
-        "issueCode": "REDUNDANT_ACTION",
-        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
-        "locations": [
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 1
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 86
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 2966,
-                        "line": 1,
-                        "offset": 2966
-                    },
-                    "start": {
-                        "column": 2943,
-                        "line": 1,
-                        "offset": 2943
-                    }
-                }
-            },
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 1
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 97
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 3254,
-                        "line": 1,
-                        "offset": 3254
-                    },
-                    "start": {
-                        "column": 3231,
-                        "line": 1,
-                        "offset": 3231
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "findingDetails": "The 2 action(s) are redundant because they provide similar permissions. Update the policy to remove the redundant action such as: cognito-idp:AdminDeleteUser.",
-        "findingType": "SUGGESTION",
-        "issueCode": "REDUNDANT_ACTION",
-        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-action",
-        "locations": [
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 2
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 32
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 6041,
-                        "line": 1,
-                        "offset": 6041
-                    },
-                    "start": {
-                        "column": 6012,
-                        "line": 1,
-                        "offset": 6012
-                    }
-                }
-            },
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 2
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 34
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 6111,
-                        "line": 1,
-                        "offset": 6111
-                    },
-                    "start": {
-                        "column": 6082,
-                        "line": 1,
-                        "offset": 6082
+                        "offset": 3665
                     }
                 }
             }
@@ -270,19 +114,19 @@
                         "value": "Action"
                     },
                     {
-                        "index": 65
+                        "index": 55
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 7071,
+                        "column": 6968,
                         "line": 1,
-                        "offset": 7071
+                        "offset": 6968
                     },
                     "start": {
-                        "column": 7057,
+                        "column": 6954,
                         "line": 1,
-                        "offset": 7057
+                        "offset": 6954
                     }
                 }
             },
@@ -300,14 +144,172 @@
                 ],
                 "span": {
                     "end": {
-                        "column": 7441,
+                        "column": 7593,
                         "line": 1,
-                        "offset": 7441
+                        "offset": 7593
                     },
                     "start": {
-                        "column": 7438,
+                        "column": 7590,
                         "line": 1,
-                        "offset": 7438
+                        "offset": 7590
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action cloudfront:ListDistributionsByLambdaFunction does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 6
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 7
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 8794,
+                        "line": 1,
+                        "offset": 8794
+                    },
+                    "start": {
+                        "column": 8748,
+                        "line": 1,
+                        "offset": 8748
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "Using the iam:CreateServiceLinkedRole action with wildcards (*) in the resource can allow creation of unintended service-linked roles. We recommend that you specify resource ARNs instead.",
+        "findingType": "WARNING",
+        "issueCode": "CREATE_SLR_WITH_STAR_IN_RESOURCE",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-general-warning-create-slr-with-star-in-resource",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 6
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 20
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 9225,
+                        "line": 1,
+                        "offset": 9225
+                    },
+                    "start": {
+                        "column": 9196,
+                        "line": 1,
+                        "offset": 9196
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 6
+                    },
+                    {
+                        "value": "Resource"
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 10189,
+                        "line": 1,
+                        "offset": 10189
+                    },
+                    "start": {
+                        "column": 10186,
+                        "line": 1,
+                        "offset": 10186
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "Using the iam:PassRole action with wildcards (*) in the resource can be overly permissive because it allows iam:PassRole permissions on multiple resources. We recommend that you specify resource ARNs or add the iam:PassedToService condition key to your statement.",
+        "findingType": "SECURITY_WARNING",
+        "issueCode": "PASS_ROLE_WITH_STAR_IN_RESOURCE",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-security-warning-pass-role-with-star-in-resource",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 6
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 23
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 9277,
+                        "line": 1,
+                        "offset": 9277
+                    },
+                    "start": {
+                        "column": 9263,
+                        "line": 1,
+                        "offset": 9263
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 6
+                    },
+                    {
+                        "value": "Resource"
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 10189,
+                        "line": 1,
+                        "offset": 10189
+                    },
+                    "start": {
+                        "column": 10186,
+                        "line": 1,
+                        "offset": 10186
                     }
                 }
             }
