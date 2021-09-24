@@ -6145,6 +6145,18 @@
             "UpdateDate": "2020-10-02T17:26:30+00:00"
         },
         {
+            "PolicyName": "AmazonRedshiftQueryEditorV2FullAccess",
+            "PolicyId": "ANPAZKAPJZG4BKYFZHR4E",
+            "Arn": "arn:aws:iam::aws:policy/AmazonRedshiftQueryEditorV2FullAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-09-24T14:06:02+00:00",
+            "UpdateDate": "2021-09-24T14:06:02+00:00"
+        },
+        {
             "PolicyName": "AWSQuickSightElasticsearchPolicy",
             "PolicyId": "ANPAZKAPJZG4BLUM3JVIN",
             "Arn": "arn:aws:iam::aws:policy/service-role/AWSQuickSightElasticsearchPolicy",
@@ -7405,6 +7417,18 @@
             "UpdateDate": "2020-06-05T21:46:55+00:00"
         },
         {
+            "PolicyName": "AmazonRedshiftQueryEditorV2ReadSharing",
+            "PolicyId": "ANPAZKAPJZG4G5PCICHSV",
+            "Arn": "arn:aws:iam::aws:policy/AmazonRedshiftQueryEditorV2ReadSharing",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-09-24T14:22:21+00:00",
+            "UpdateDate": "2021-09-24T14:22:21+00:00"
+        },
+        {
             "PolicyName": "AWSPanoramaServiceRolePolicy",
             "PolicyId": "ANPAZKAPJZG4G7G35B6C5",
             "Arn": "arn:aws:iam::aws:policy/service-role/AWSPanoramaServiceRolePolicy",
@@ -8209,6 +8233,18 @@
             "UpdateDate": "2020-10-09T22:23:38+00:00"
         },
         {
+            "PolicyName": "AmazonRedshiftQueryEditorV2NoSharing",
+            "PolicyId": "ANPAZKAPJZG4JFCSC6IV2",
+            "Arn": "arn:aws:iam::aws:policy/AmazonRedshiftQueryEditorV2NoSharing",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-09-24T14:18:42+00:00",
+            "UpdateDate": "2021-09-24T14:18:42+00:00"
+        },
+        {
             "PolicyName": "CloudWatchAutomaticDashboardsAccess",
             "PolicyId": "ANPAZKAPJZG4JFCXGSE2Q",
             "Arn": "arn:aws:iam::aws:policy/CloudWatchAutomaticDashboardsAccess",
@@ -8879,6 +8915,18 @@
             "IsAttachable": true,
             "CreateDate": "2019-12-09T20:41:37+00:00",
             "UpdateDate": "2019-12-09T20:41:37+00:00"
+        },
+        {
+            "PolicyName": "AmazonRedshiftQueryEditorV2ReadWriteSharing",
+            "PolicyId": "ANPAZKAPJZG4LIWZX3BPO",
+            "Arn": "arn:aws:iam::aws:policy/AmazonRedshiftQueryEditorV2ReadWriteSharing",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-09-24T14:25:37+00:00",
+            "UpdateDate": "2021-09-24T14:25:37+00:00"
         },
         {
             "PolicyName": "AWSBillingReadOnlyAccess",

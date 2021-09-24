@@ -1,0 +1,1685 @@
+[
+    {
+        "findingDetails": "The service sqlworkbench:CreateFolder specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 0
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 629,
+                        "line": 1,
+                        "offset": 629
+                    },
+                    "start": {
+                        "column": 602,
+                        "line": 1,
+                        "offset": 602
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:PutTab specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 1
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 652,
+                        "line": 1,
+                        "offset": 652
+                    },
+                    "start": {
+                        "column": 631,
+                        "line": 1,
+                        "offset": 631
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:BatchDeleteFolder specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 2
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 686,
+                        "line": 1,
+                        "offset": 686
+                    },
+                    "start": {
+                        "column": 654,
+                        "line": 1,
+                        "offset": 654
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:DeleteTab specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 3
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 712,
+                        "line": 1,
+                        "offset": 712
+                    },
+                    "start": {
+                        "column": 688,
+                        "line": 1,
+                        "offset": 688
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:GenerateSession specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 4
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 744,
+                        "line": 1,
+                        "offset": 744
+                    },
+                    "start": {
+                        "column": 714,
+                        "line": 1,
+                        "offset": 714
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:GetAccountInfo specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 5
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 775,
+                        "line": 1,
+                        "offset": 775
+                    },
+                    "start": {
+                        "column": 746,
+                        "line": 1,
+                        "offset": 746
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:GetUserInfo specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 6
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 803,
+                        "line": 1,
+                        "offset": 803
+                    },
+                    "start": {
+                        "column": 777,
+                        "line": 1,
+                        "offset": 777
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:GetUserWorkspaceSettings specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 7
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 844,
+                        "line": 1,
+                        "offset": 844
+                    },
+                    "start": {
+                        "column": 805,
+                        "line": 1,
+                        "offset": 805
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:PutUserWorkspaceSettings specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 8
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 885,
+                        "line": 1,
+                        "offset": 885
+                    },
+                    "start": {
+                        "column": 846,
+                        "line": 1,
+                        "offset": 846
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:ListConnections specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 9
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 917,
+                        "line": 1,
+                        "offset": 917
+                    },
+                    "start": {
+                        "column": 887,
+                        "line": 1,
+                        "offset": 887
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:ListFiles specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 10
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 943,
+                        "line": 1,
+                        "offset": 943
+                    },
+                    "start": {
+                        "column": 919,
+                        "line": 1,
+                        "offset": 919
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:ListTabs specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 11
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 968,
+                        "line": 1,
+                        "offset": 968
+                    },
+                    "start": {
+                        "column": 945,
+                        "line": 1,
+                        "offset": 945
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:UpdateFolder specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 12
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 997,
+                        "line": 1,
+                        "offset": 997
+                    },
+                    "start": {
+                        "column": 970,
+                        "line": 1,
+                        "offset": 970
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:ListRedshiftClusters specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 13
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1034,
+                        "line": 1,
+                        "offset": 1034
+                    },
+                    "start": {
+                        "column": 999,
+                        "line": 1,
+                        "offset": 999
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:DriverExecute specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 2
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 14
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1064,
+                        "line": 1,
+                        "offset": 1064
+                    },
+                    "start": {
+                        "column": 1036,
+                        "line": 1,
+                        "offset": 1036
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:CreateConnection specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 3
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 0
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1215,
+                        "line": 1,
+                        "offset": 1215
+                    },
+                    "start": {
+                        "column": 1184,
+                        "line": 1,
+                        "offset": 1184
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:CreateSavedQuery specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 3
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 1
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1248,
+                        "line": 1,
+                        "offset": 1248
+                    },
+                    "start": {
+                        "column": 1217,
+                        "line": 1,
+                        "offset": 1217
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:CreateChart specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 3
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 2
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1276,
+                        "line": 1,
+                        "offset": 1276
+                    },
+                    "start": {
+                        "column": 1250,
+                        "line": 1,
+                        "offset": 1250
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:DeleteChart specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 4
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 0
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1512,
+                        "line": 1,
+                        "offset": 1512
+                    },
+                    "start": {
+                        "column": 1486,
+                        "line": 1,
+                        "offset": 1486
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:DeleteConnection specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 4
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 1
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1545,
+                        "line": 1,
+                        "offset": 1545
+                    },
+                    "start": {
+                        "column": 1514,
+                        "line": 1,
+                        "offset": 1514
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:DeleteSavedQuery specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 4
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 2
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1578,
+                        "line": 1,
+                        "offset": 1578
+                    },
+                    "start": {
+                        "column": 1547,
+                        "line": 1,
+                        "offset": 1547
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:GetChart specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 4
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 3
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1603,
+                        "line": 1,
+                        "offset": 1603
+                    },
+                    "start": {
+                        "column": 1580,
+                        "line": 1,
+                        "offset": 1580
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:GetConnection specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 4
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 4
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1633,
+                        "line": 1,
+                        "offset": 1633
+                    },
+                    "start": {
+                        "column": 1605,
+                        "line": 1,
+                        "offset": 1605
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:GetSavedQuery specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 4
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 5
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1663,
+                        "line": 1,
+                        "offset": 1663
+                    },
+                    "start": {
+                        "column": 1635,
+                        "line": 1,
+                        "offset": 1635
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:ListSavedQueryVersions specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 4
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 6
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1702,
+                        "line": 1,
+                        "offset": 1702
+                    },
+                    "start": {
+                        "column": 1665,
+                        "line": 1,
+                        "offset": 1665
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:UpdateChart specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 4
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 7
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1730,
+                        "line": 1,
+                        "offset": 1730
+                    },
+                    "start": {
+                        "column": 1704,
+                        "line": 1,
+                        "offset": 1704
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:UpdateConnection specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 4
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 8
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1763,
+                        "line": 1,
+                        "offset": 1763
+                    },
+                    "start": {
+                        "column": 1732,
+                        "line": 1,
+                        "offset": 1732
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:UpdateSavedQuery specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 4
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 9
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1796,
+                        "line": 1,
+                        "offset": 1796
+                    },
+                    "start": {
+                        "column": 1765,
+                        "line": 1,
+                        "offset": 1765
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:AssociateConnectionWithTab specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 4
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 10
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1839,
+                        "line": 1,
+                        "offset": 1839
+                    },
+                    "start": {
+                        "column": 1798,
+                        "line": 1,
+                        "offset": 1798
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:AssociateQueryWithTab specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 4
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 11
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1877,
+                        "line": 1,
+                        "offset": 1877
+                    },
+                    "start": {
+                        "column": 1841,
+                        "line": 1,
+                        "offset": 1841
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:AssociateConnectionWithChart specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 4
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 12
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1922,
+                        "line": 1,
+                        "offset": 1922
+                    },
+                    "start": {
+                        "column": 1879,
+                        "line": 1,
+                        "offset": 1879
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:UpdateFileFolder specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 4
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 13
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1955,
+                        "line": 1,
+                        "offset": 1955
+                    },
+                    "start": {
+                        "column": 1924,
+                        "line": 1,
+                        "offset": 1924
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:ListTagsForResource specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 4
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 14
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 1991,
+                        "line": 1,
+                        "offset": 1991
+                    },
+                    "start": {
+                        "column": 1957,
+                        "line": 1,
+                        "offset": 1957
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:TagResource specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 5
+                    },
+                    {
+                        "value": "Action"
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2227,
+                        "line": 1,
+                        "offset": 2227
+                    },
+                    "start": {
+                        "column": 2201,
+                        "line": 1,
+                        "offset": 2201
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:GetChart specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 6
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 0
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2606,
+                        "line": 1,
+                        "offset": 2606
+                    },
+                    "start": {
+                        "column": 2583,
+                        "line": 1,
+                        "offset": 2583
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:GetConnection specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 6
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 1
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2636,
+                        "line": 1,
+                        "offset": 2636
+                    },
+                    "start": {
+                        "column": 2608,
+                        "line": 1,
+                        "offset": 2608
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:GetSavedQuery specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 6
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 2
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2666,
+                        "line": 1,
+                        "offset": 2666
+                    },
+                    "start": {
+                        "column": 2638,
+                        "line": 1,
+                        "offset": 2638
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:ListSavedQueryVersions specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 6
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 3
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2705,
+                        "line": 1,
+                        "offset": 2705
+                    },
+                    "start": {
+                        "column": 2668,
+                        "line": 1,
+                        "offset": 2668
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:ListTagsForResource specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 6
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 4
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2741,
+                        "line": 1,
+                        "offset": 2741
+                    },
+                    "start": {
+                        "column": 2707,
+                        "line": 1,
+                        "offset": 2707
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:UpdateChart specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 6
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 5
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2769,
+                        "line": 1,
+                        "offset": 2769
+                    },
+                    "start": {
+                        "column": 2743,
+                        "line": 1,
+                        "offset": 2743
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:UpdateConnection specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 6
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 6
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2802,
+                        "line": 1,
+                        "offset": 2802
+                    },
+                    "start": {
+                        "column": 2771,
+                        "line": 1,
+                        "offset": 2771
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:UpdateSavedQuery specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 6
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 7
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2835,
+                        "line": 1,
+                        "offset": 2835
+                    },
+                    "start": {
+                        "column": 2804,
+                        "line": 1,
+                        "offset": 2804
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:AssociateConnectionWithTab specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 6
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 8
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2878,
+                        "line": 1,
+                        "offset": 2878
+                    },
+                    "start": {
+                        "column": 2837,
+                        "line": 1,
+                        "offset": 2837
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:AssociateQueryWithTab specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 6
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 9
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2916,
+                        "line": 1,
+                        "offset": 2916
+                    },
+                    "start": {
+                        "column": 2880,
+                        "line": 1,
+                        "offset": 2880
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:AssociateConnectionWithChart specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 6
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 10
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2961,
+                        "line": 1,
+                        "offset": 2961
+                    },
+                    "start": {
+                        "column": 2918,
+                        "line": 1,
+                        "offset": 2918
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:TagResource specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 7
+                    },
+                    {
+                        "value": "Action"
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 3209,
+                        "line": 1,
+                        "offset": 3209
+                    },
+                    "start": {
+                        "column": 3183,
+                        "line": 1,
+                        "offset": 3183
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service sqlworkbench:UntagResource specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 8
+                    },
+                    {
+                        "value": "Action"
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 3590,
+                        "line": 1,
+                        "offset": 3590
+                    },
+                    "start": {
+                        "column": 3562,
+                        "line": 1,
+                        "offset": 3562
+                    }
+                }
+            }
+        ]
+    }
+]
