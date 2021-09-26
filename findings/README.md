@@ -1,13 +1,14 @@
-## AWS Access Analyzer - Findings - 2021-09-24
+## AWS Access Analyzer - Findings - 2021-09-26
 
-- Policies analyzed: `863`
-- Errors: `151`
+- Policies analyzed: `864`
+- Errors: `152`
   - [`AWSPurchaseOrdersServiceRolePolicy`](./AWSPurchaseOrdersServiceRolePolicy.json)
   - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)
   - [`AmazonMSKConnectReadOnlyAccess`](./AmazonMSKConnectReadOnlyAccess.json)
   - [`AmazonConnectCampaignsServiceLinkedRolePolicy`](./AmazonConnectCampaignsServiceLinkedRolePolicy.json)
   - [`AmazonRedshiftQueryEditorV2ReadSharing`](./AmazonRedshiftQueryEditorV2ReadSharing.json)
   - [`AdministratorAccess-Amplify`](./AdministratorAccess-Amplify.json)
+  - [`AmazonConnectVoiceIDFullAccess`](./AmazonConnectVoiceIDFullAccess.json)
   - [`AmazonRedshiftQueryEditorV2NoSharing`](./AmazonRedshiftQueryEditorV2NoSharing.json)
   - [`AmazonRedshiftQueryEditorV2ReadWriteSharing`](./AmazonRedshiftQueryEditorV2ReadWriteSharing.json)
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
