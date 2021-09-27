@@ -929,12 +929,12 @@
             "PolicyId": "ANPAIFIR6V6BVTRAHWINE",
             "Arn": "arn:aws:iam::aws:policy/AmazonS3FullAccess",
             "Path": "/",
-            "DefaultVersionId": "v1",
+            "DefaultVersionId": "v2",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2015-02-06T18:40:58+00:00",
-            "UpdateDate": "2015-02-06T18:40:58+00:00"
+            "UpdateDate": "2021-09-27T20:16:37+00:00"
         },
         {
             "PolicyName": "AWSStorageGatewayReadOnlyAccess",
@@ -2753,12 +2753,12 @@
             "PolicyId": "ANPAIZTJ4DXE7G6AGAE6M",
             "Arn": "arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess",
             "Path": "/",
-            "DefaultVersionId": "v1",
+            "DefaultVersionId": "v2",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2015-02-06T18:40:59+00:00",
-            "UpdateDate": "2015-02-06T18:40:59+00:00"
+            "UpdateDate": "2021-09-27T20:24:58+00:00"
         },
         {
             "PolicyName": "AmazonWorkSpacesAdmin",
