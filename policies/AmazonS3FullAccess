@@ -5,13 +5,16 @@
             "Statement": [
                 {
                     "Effect": "Allow",
-                    "Action": "s3:*",
+                    "Action": [
+                        "s3:*",
+                        "s3-object-lambda:*"
+                    ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2015-02-06T18:40:58Z"
+        "CreateDate": "2021-09-27T20:16:37Z"
     }
 }

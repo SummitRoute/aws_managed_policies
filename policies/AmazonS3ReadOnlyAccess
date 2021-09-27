@@ -7,14 +7,16 @@
                     "Effect": "Allow",
                     "Action": [
                         "s3:Get*",
-                        "s3:List*"
+                        "s3:List*",
+                        "s3-object-lambda:Get*",
+                        "s3-object-lambda:List*"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2015-02-06T18:40:59Z"
+        "CreateDate": "2021-09-27T20:24:58Z"
     }
 }
