@@ -39,14 +39,16 @@
                         "comprehend:ListEntityRecognizers",
                         "comprehend:ListTagsForResource",
                         "comprehend:DescribeEndpoint",
-                        "comprehend:ListEndpoints"
+                        "comprehend:ListEndpoints",
+                        "comprehend:ListDocumentClassifierSummaries",
+                        "comprehend:ListEntityRecognizerSummaries"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v8",
+        "VersionId": "v9",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-03-26T21:19:49Z"
+        "CreateDate": "2021-09-28T19:07:01Z"
     }
 }
