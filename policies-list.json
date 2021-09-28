@@ -4013,12 +4013,12 @@
             "PolicyId": "ANPAJIUV5K2YCHQBBAH7G",
             "Arn": "arn:aws:iam::aws:policy/ComprehendReadOnly",
             "Path": "/",
-            "DefaultVersionId": "v8",
+            "DefaultVersionId": "v9",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2017-11-29T18:10:19+00:00",
-            "UpdateDate": "2021-03-26T21:19:49+00:00"
+            "UpdateDate": "2021-09-28T19:07:01+00:00"
         },
         {
             "PolicyName": "AWSStepFunctionsConsoleFullAccess",
