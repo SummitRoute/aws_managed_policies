@@ -1,0 +1,326 @@
+[
+    {
+        "findingDetails": "The action aps:DescribeAlertManagerDefinition does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 5
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 316,
+                        "line": 1,
+                        "offset": 316
+                    },
+                    "start": {
+                        "column": 280,
+                        "line": 1,
+                        "offset": 280
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action aps:DescribeRuleGroupsNamespace does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 6
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 351,
+                        "line": 1,
+                        "offset": 351
+                    },
+                    "start": {
+                        "column": 318,
+                        "line": 1,
+                        "offset": 318
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action aps:CreateAlertManagerDefinition does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 7
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 387,
+                        "line": 1,
+                        "offset": 387
+                    },
+                    "start": {
+                        "column": 353,
+                        "line": 1,
+                        "offset": 353
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action aps:CreateRuleGroupsNamespace does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 8
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 420,
+                        "line": 1,
+                        "offset": 420
+                    },
+                    "start": {
+                        "column": 389,
+                        "line": 1,
+                        "offset": 389
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action aps:DeleteAlertManagerDefinition does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 9
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 456,
+                        "line": 1,
+                        "offset": 456
+                    },
+                    "start": {
+                        "column": 422,
+                        "line": 1,
+                        "offset": 422
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action aps:DeleteRuleGroupsNamespace does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 10
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 489,
+                        "line": 1,
+                        "offset": 489
+                    },
+                    "start": {
+                        "column": 458,
+                        "line": 1,
+                        "offset": 458
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action aps:ListRuleGroupsNamespaces does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 11
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 521,
+                        "line": 1,
+                        "offset": 521
+                    },
+                    "start": {
+                        "column": 491,
+                        "line": 1,
+                        "offset": 491
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action aps:PutAlertManagerDefinition does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 12
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 554,
+                        "line": 1,
+                        "offset": 554
+                    },
+                    "start": {
+                        "column": 523,
+                        "line": 1,
+                        "offset": 523
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action aps:PutRuleGroupsNamespace does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 1
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 13
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 584,
+                        "line": 1,
+                        "offset": 584
+                    },
+                    "start": {
+                        "column": 556,
+                        "line": 1,
+                        "offset": 556
+                    }
+                }
+            }
+        ]
+    }
+]
