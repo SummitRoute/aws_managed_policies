@@ -4,20 +4,39 @@
             "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Effect": "Allow",
+                    "Action": [
+                        "tag:GetTagValues",
+                        "tag:GetTagKeys"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
                     "Action": [
                         "aps:CreateWorkspace",
                         "aps:DescribeWorkspace",
                         "aps:UpdateWorkspaceAlias",
                         "aps:DeleteWorkspace",
-                        "aps:ListWorkspaces"
+                        "aps:ListWorkspaces",
+                        "aps:DescribeAlertManagerDefinition",
+                        "aps:DescribeRuleGroupsNamespace",
+                        "aps:CreateAlertManagerDefinition",
+                        "aps:CreateRuleGroupsNamespace",
+                        "aps:DeleteAlertManagerDefinition",
+                        "aps:DeleteRuleGroupsNamespace",
+                        "aps:ListRuleGroupsNamespaces",
+                        "aps:PutAlertManagerDefinition",
+                        "aps:PutRuleGroupsNamespace",
+                        "aps:TagResource",
+                        "aps:UntagResource"
                     ],
-                    "Effect": "Allow",
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-12-15T18:11:10Z"
+        "CreateDate": "2021-09-29T15:29:28Z"
     }
 }
