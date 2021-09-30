@@ -9185,12 +9185,12 @@
             "PolicyId": "ANPAZKAPJZG4MAWRW4GF7",
             "Arn": "arn:aws:iam::aws:policy/AWSDataExchangeSubscriberFullAccess",
             "Path": "/",
-            "DefaultVersionId": "v4",
+            "DefaultVersionId": "v5",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2019-11-13T19:27:52+00:00",
-            "UpdateDate": "2021-02-08T23:34:25+00:00"
+            "UpdateDate": "2021-09-30T21:31:28+00:00"
         },
         {
             "PolicyName": "IAMAccessAnalyzerFullAccess",
