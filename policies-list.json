@@ -365,12 +365,12 @@
             "PolicyId": "ANPAI62NTGYJB446ACUEA",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy",
             "Path": "/aws-service-role/",
-            "DefaultVersionId": "v19",
+            "DefaultVersionId": "v20",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2018-03-28T23:01:12+00:00",
-            "UpdateDate": "2021-08-12T19:21:06+00:00"
+            "UpdateDate": "2021-09-30T17:12:33+00:00"
         },
         {
             "PolicyName": "AmazonSQSFullAccess",
