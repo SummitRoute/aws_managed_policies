@@ -25,12 +25,18 @@
                     "Action": [
                         "iam:ListRoles",
                         "s3:ListAllMyBuckets",
-                        "s3:GetBucketLocation",
                         "xray:GetTraceSummaries",
                         "xray:BatchGetTraces",
                         "apigateway:GET"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "s3:GetBucketLocation"
+                    ],
+                    "Resource": "arn:aws:s3:::*"
                 },
                 {
                     "Effect": "Allow",
@@ -155,11 +161,39 @@
                     "Resource": [
                         "arn:*:sns:*:*:Synthetics-*"
                     ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "kms:ListAliases"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "kms:DescribeKey"
+                    ],
+                    "Resource": "arn:aws:kms:*:*:key/*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "kms:Decrypt"
+                    ],
+                    "Resource": "arn:aws:kms:*:*:key/*",
+                    "Condition": {
+                        "StringLike": {
+                            "kms:ViaService": [
+                                "s3.*.amazonaws.com"
+                            ]
+                        }
+                    }
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-07-20T15:56:52Z"
+        "CreateDate": "2021-09-29T23:07:11Z"
     }
 }
