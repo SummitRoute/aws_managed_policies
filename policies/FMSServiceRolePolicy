@@ -178,11 +178,13 @@
                         "ec2:RevokeSecurityGroupIngress",
                         "ec2:UpdateSecurityGroupRuleDescriptionsEgress",
                         "ec2:UpdateSecurityGroupRuleDescriptionsIngress",
-                        "ec2:DescribeNetworkInterfaceAttribute"
+                        "ec2:DescribeNetworkInterfaceAttribute",
+                        "ec2:DescribeInstances"
                     ],
                     "Resource": [
                         "arn:aws:ec2:*:*:network-interface/*",
-                        "arn:aws:ec2:*:*:security-group/*"
+                        "arn:aws:ec2:*:*:security-group/*",
+                        "arn:aws:ec2:*:*:instance/*"
                     ]
                 },
                 {
@@ -451,7 +453,9 @@
                         "network-firewall:ListRuleGroups",
                         "network-firewall:PutResourcePolicy",
                         "network-firewall:DescribeResourcePolicy",
-                        "network-firewall:DeleteResourcePolicy"
+                        "network-firewall:DeleteResourcePolicy",
+                        "network-firewall:DescribeLoggingConfiguration",
+                        "network-firewall:UpdateLoggingConfiguration"
                     ],
                     "Resource": "*"
                 },
@@ -471,7 +475,11 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "logs:ListLogDeliveries"
+                        "logs:ListLogDeliveries",
+                        "logs:CreateLogDelivery",
+                        "logs:GetLogDelivery",
+                        "logs:UpdateLogDelivery",
+                        "logs:DeleteLogDelivery"
                     ],
                     "Resource": "*"
                 },
@@ -516,8 +524,8 @@
                 }
             ]
         },
-        "VersionId": "v19",
+        "VersionId": "v20",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-08-12T19:21:06Z"
+        "CreateDate": "2021-09-30T17:12:33Z"
     }
 }
