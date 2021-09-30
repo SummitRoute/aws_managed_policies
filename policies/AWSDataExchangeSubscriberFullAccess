@@ -30,8 +30,17 @@
                     }
                 },
                 {
-                    "Action": "s3:GetObject",
                     "Effect": "Allow",
+                    "Action": [
+                        "dataexchange:CreateEventAction",
+                        "dataexchange:UpdateEventAction",
+                        "dataexchange:DeleteEventAction"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "s3:GetObject",
                     "Resource": "arn:aws:s3:::*aws-data-exchange*",
                     "Condition": {
                         "ForAnyValue:StringEquals": {
@@ -73,8 +82,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-02-08T23:34:25Z"
+        "CreateDate": "2021-09-30T21:31:28Z"
     }
 }
