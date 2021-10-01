@@ -1,13 +1,14 @@
-## AWS Access Analyzer - Findings - 2021-09-30
+## AWS Access Analyzer - Findings - 2021-10-01
 
-- Policies analyzed: `865`
-- Errors: `30`
+- Policies analyzed: `867`
+- Errors: `31`
   - [`AWSPurchaseOrdersServiceRolePolicy`](./AWSPurchaseOrdersServiceRolePolicy.json)
   - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)
   - [`AWSDataExchangeSubscriberFullAccess`](./AWSDataExchangeSubscriberFullAccess.json)
   - [`AmazonSageMakerGroundTruthExecution`](./AmazonSageMakerGroundTruthExecution.json)
   - [`AdministratorAccess-Amplify`](./AdministratorAccess-Amplify.json)
   - [`AmazonConnectVoiceIDFullAccess`](./AmazonConnectVoiceIDFullAccess.json)
+  - [`AWSAccountManagementReadOnlyAccess`](./AWSAccountManagementReadOnlyAccess.json)
   - [`AWSEC2CapacityReservationFleetRolePolicy`](./AWSEC2CapacityReservationFleetRolePolicy.json)
   - [`AmazonPrometheusConsoleFullAccess`](./AmazonPrometheusConsoleFullAccess.json)
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)

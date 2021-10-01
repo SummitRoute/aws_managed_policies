@@ -7153,6 +7153,18 @@
             "UpdateDate": "2019-06-25T13:07:47+00:00"
         },
         {
+            "PolicyName": "AWSAccountManagementReadOnlyAccess",
+            "PolicyId": "ANPAZKAPJZG4FJMX42HLT",
+            "Arn": "arn:aws:iam::aws:policy/AWSAccountManagementReadOnlyAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-09-30T23:29:53+00:00",
+            "UpdateDate": "2021-09-30T23:29:53+00:00"
+        },
+        {
             "PolicyName": "AmazonEKSFargatePodExecutionRolePolicy",
             "PolicyId": "ANPAZKAPJZG4FJRXZH7YQ",
             "Arn": "arn:aws:iam::aws:policy/AmazonEKSFargatePodExecutionRolePolicy",
@@ -9635,6 +9647,18 @@
             "IsAttachable": true,
             "CreateDate": "2021-05-11T19:37:17+00:00",
             "UpdateDate": "2021-05-11T19:37:17+00:00"
+        },
+        {
+            "PolicyName": "AWSAccountManagementFullAccess",
+            "PolicyId": "ANPAZKAPJZG4NJRKI5OH5",
+            "Arn": "arn:aws:iam::aws:policy/AWSAccountManagementFullAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-09-30T23:20:37+00:00",
+            "UpdateDate": "2021-09-30T23:20:37+00:00"
         },
         {
             "PolicyName": "AmazonCodeGuruReviewerServiceRolePolicy",
