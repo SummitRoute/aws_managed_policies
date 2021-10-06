@@ -553,9 +553,6 @@
                         "dynamodb:listStreams",
                         "dynamodb:listTables",
                         "dynamodb:listTagsOfResource",
-                        "ec2:acceptReservedInstancesExchangeQuote",
-                        "ec2:cancelReservedInstancesListing",
-                        "ec2:createReservedInstancesListing",
                         "ec2:describeAccountAttributes",
                         "ec2:describeAddresses",
                         "ec2:describeAvailabilityZones",
@@ -658,8 +655,6 @@
                         "ec2:getTransitGatewayAttachmentPropagations",
                         "ec2:getTransitGatewayRouteTableAssociations",
                         "ec2:getTransitGatewayRouteTablePropagations",
-                        "ec2:modifyReservedInstances",
-                        "ec2:purchaseReservedInstancesOffering",
                         "ec2:searchLocalGatewayRoutes",
                         "ecr-public:describeImages",
                         "ecr-public:describeImageTags",
@@ -2017,8 +2012,8 @@
             ],
             "Version": "2012-10-17"
         },
-        "VersionId": "v17",
+        "VersionId": "v18",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-09-16T21:02:10Z"
+        "CreateDate": "2021-10-06T19:23:26Z"
     }
 }

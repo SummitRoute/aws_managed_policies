@@ -34,6 +34,17 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "lambda:GetFunctionConcurrency",
+                        "lambda:GetFunctionConfiguration",
+                        "lambda:GetProvisionedConcurrencyConfig",
+                        "lambda:ListAliases",
+                        "lambda:ListVersionsByFunction"
+                    ],
+                    "Resource": "arn:aws:lambda:*:*:function:*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
                         "rds:DescribeDBClusters"
                     ],
                     "Resource": "arn:aws:rds:*:*:cluster:*"
@@ -116,6 +127,7 @@
                         "elasticloadbalancing:DescribeTargetHealth",
                         "kafka:DescribeCluster",
                         "kafka:DescribeConfigurationRevision",
+                        "lambda:ListEventSourceMappings",
                         "lambda:ListFunctions",
                         "rds:DescribeAccountAttributes",
                         "route53:GetHostedZone",
@@ -130,8 +142,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-07-15T16:06:21Z"
+        "CreateDate": "2021-10-06T18:52:33Z"
     }
 }
