@@ -3257,12 +3257,12 @@
             "PolicyId": "ANPAJ7W6266ELXF5MISDS",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/AWSSupportServiceRolePolicy",
             "Path": "/aws-service-role/",
-            "DefaultVersionId": "v17",
+            "DefaultVersionId": "v18",
             "AttachmentCount": 1,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2018-04-19T18:04:44+00:00",
-            "UpdateDate": "2021-09-16T21:02:10+00:00"
+            "UpdateDate": "2021-10-06T19:23:26+00:00"
         },
         {
             "PolicyName": "AWSApplicationAutoscalingRDSClusterPolicy",
@@ -8189,12 +8189,12 @@
             "PolicyId": "ANPAZKAPJZG4J7MSL2FYD",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/Route53RecoveryReadinessServiceRolePolicy",
             "Path": "/aws-service-role/",
-            "DefaultVersionId": "v1",
+            "DefaultVersionId": "v2",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2021-07-15T16:06:21+00:00",
-            "UpdateDate": "2021-07-15T16:06:21+00:00"
+            "UpdateDate": "2021-10-06T18:52:33+00:00"
         },
         {
             "PolicyName": "AmazonEKSForFargateServiceRolePolicy",
