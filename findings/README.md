@@ -1,6 +1,6 @@
 ## AWS Access Analyzer - Findings - 2021-10-08
 
-- Policies analyzed: `869`
+- Policies analyzed: `871`
 - Errors: `19`
   - [`AWSPurchaseOrdersServiceRolePolicy`](./AWSPurchaseOrdersServiceRolePolicy.json)
   - [`AWSAuditManagerAdministratorAccess`](./AWSAuditManagerAdministratorAccess.json)
@@ -21,7 +21,7 @@
   - [`AdministratorAccess-Amplify`](./AdministratorAccess-Amplify.json)
   - [`IAMFullAccess`](./IAMFullAccess.json)
   - [`AWSDataPipelineRole`](./AWSDataPipelineRole.json)
-- Suggestions: `37`
+- Suggestions: `39`
   - [`AmazonAppStreamServiceAccess`](./AmazonAppStreamServiceAccess.json)
   - [`AWSElasticBeanstalkWebTier`](./AWSElasticBeanstalkWebTier.json)
   - [`AWSDeepRacerFullAccess`](./AWSDeepRacerFullAccess.json)
@@ -42,7 +42,9 @@
   - [`AWSGlueConsoleFullAccess`](./AWSGlueConsoleFullAccess.json)
   - [`AWSElasticBeanstalkWorkerTier`](./AWSElasticBeanstalkWorkerTier.json)
   - [`AWSMarketplaceFullAccess`](./AWSMarketplaceFullAccess.json)
+  - [`AmazonRDSCustomPreviewServiceRolePolicy`](./AmazonRDSCustomPreviewServiceRolePolicy.json)
   - [`AWSElasticBeanstalkRoleCore`](./AWSElasticBeanstalkRoleCore.json)
+  - [`AmazonRDSCustomServiceRolePolicy`](./AmazonRDSCustomServiceRolePolicy.json)
   - [`AWSDataPipelineRole`](./AWSDataPipelineRole.json)
 - Warnings: `9`
   - [`ReadOnlyAccess`](./ReadOnlyAccess.json)

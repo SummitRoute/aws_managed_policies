@@ -6625,6 +6625,18 @@
             "UpdateDate": "2021-01-22T16:29:08+00:00"
         },
         {
+            "PolicyName": "AmazonRDSCustomPreviewServiceRolePolicy",
+            "PolicyId": "ANPAZKAPJZG4D6BEPON2G",
+            "Arn": "arn:aws:iam::aws:policy/aws-service-role/AmazonRDSCustomPreviewServiceRolePolicy",
+            "Path": "/aws-service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-10-08T21:44:15+00:00",
+            "UpdateDate": "2021-10-08T21:44:15+00:00"
+        },
+        {
             "PolicyName": "AmazonRoute53RecoveryControlConfigReadOnlyAccess",
             "PolicyId": "ANPAZKAPJZG4DBQWX62W5",
             "Arn": "arn:aws:iam::aws:policy/AmazonRoute53RecoveryControlConfigReadOnlyAccess",
@@ -7031,6 +7043,18 @@
             "IsAttachable": true,
             "CreateDate": "2019-12-16T13:28:21+00:00",
             "UpdateDate": "2020-06-08T12:48:44+00:00"
+        },
+        {
+            "PolicyName": "AmazonRDSCustomServiceRolePolicy",
+            "PolicyId": "ANPAZKAPJZG4F2M3XYA7J",
+            "Arn": "arn:aws:iam::aws:policy/aws-service-role/AmazonRDSCustomServiceRolePolicy",
+            "Path": "/aws-service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-10-08T21:39:12+00:00",
+            "UpdateDate": "2021-10-08T21:39:12+00:00"
         },
         {
             "PolicyName": "AmazonElasticContainerRegistryPublicFullAccess",
