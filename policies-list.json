@@ -1373,12 +1373,12 @@
             "PolicyId": "ANPAILL3HVNFSB6DCOWYQ",
             "Arn": "arn:aws:iam::aws:policy/ReadOnlyAccess",
             "Path": "/",
-            "DefaultVersionId": "v80",
+            "DefaultVersionId": "v81",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2015-02-06T18:39:48+00:00",
-            "UpdateDate": "2021-09-09T00:01:51+00:00"
+            "UpdateDate": "2021-10-08T19:08:00+00:00"
         },
         {
             "PolicyName": "AWSAppSyncInvokeFullAccess",
@@ -7705,6 +7705,18 @@
             "UpdateDate": "2019-08-07T17:55:37+00:00"
         },
         {
+            "PolicyName": "AmazonMemoryDBReadOnlyAccess",
+            "PolicyId": "ANPAZKAPJZG4HGOZ3UBWP",
+            "Arn": "arn:aws:iam::aws:policy/AmazonMemoryDBReadOnlyAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-10-08T19:27:28+00:00",
+            "UpdateDate": "2021-10-08T19:27:28+00:00"
+        },
+        {
             "PolicyName": "AWSIoTWirelessDataAccess",
             "PolicyId": "ANPAZKAPJZG4HH6GBXNUO",
             "Arn": "arn:aws:iam::aws:policy/AWSIoTWirelessDataAccess",
@@ -8915,6 +8927,18 @@
             "IsAttachable": true,
             "CreateDate": "2021-04-07T06:43:20+00:00",
             "UpdateDate": "2021-04-07T06:43:20+00:00"
+        },
+        {
+            "PolicyName": "AmazonMemoryDBFullAccess",
+            "PolicyId": "ANPAZKAPJZG4LGPHLZEWJ",
+            "Arn": "arn:aws:iam::aws:policy/AmazonMemoryDBFullAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-10-08T19:24:16+00:00",
+            "UpdateDate": "2021-10-08T19:24:16+00:00"
         },
         {
             "PolicyName": "AmazonKeyspacesReadOnlyAccess",

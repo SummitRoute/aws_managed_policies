@@ -1,6 +1,6 @@
-## AWS Access Analyzer - Findings - 2021-10-06
+## AWS Access Analyzer - Findings - 2021-10-08
 
-- Policies analyzed: `867`
+- Policies analyzed: `869`
 - Errors: `19`
   - [`AWSPurchaseOrdersServiceRolePolicy`](./AWSPurchaseOrdersServiceRolePolicy.json)
   - [`AWSAuditManagerAdministratorAccess`](./AWSAuditManagerAdministratorAccess.json)
