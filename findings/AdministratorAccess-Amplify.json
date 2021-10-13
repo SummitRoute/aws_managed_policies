@@ -47,50 +47,14 @@
                 ],
                 "span": {
                     "end": {
-                        "column": 5163,
+                        "column": 5132,
                         "line": 1,
-                        "offset": 5163
+                        "offset": 5132
                     },
                     "start": {
-                        "column": 5160,
+                        "column": 5129,
                         "line": 1,
-                        "offset": 5160
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "findingDetails": "The action lambda:GetLayerVersionByArn does not exist. Did you mean lambda:GetLayerVersion? The API called GetLayerVersionByArn authorizes against the IAM action lambda:GetLayerVersion.",
-        "findingType": "ERROR",
-        "issueCode": "INVALID_ACTION",
-        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
-        "locations": [
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 1
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 107
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 3694,
-                        "line": 1,
-                        "offset": 3694
-                    },
-                    "start": {
-                        "column": 3665,
-                        "line": 1,
-                        "offset": 3665
+                        "offset": 5129
                     }
                 }
             }
@@ -119,14 +83,14 @@
                 ],
                 "span": {
                     "end": {
-                        "column": 6968,
+                        "column": 6937,
                         "line": 1,
-                        "offset": 6968
+                        "offset": 6937
                     },
                     "start": {
-                        "column": 6954,
+                        "column": 6923,
                         "line": 1,
-                        "offset": 6954
+                        "offset": 6923
                     }
                 }
             },
@@ -144,14 +108,14 @@
                 ],
                 "span": {
                     "end": {
-                        "column": 7593,
+                        "column": 7562,
                         "line": 1,
-                        "offset": 7593
+                        "offset": 7562
                     },
                     "start": {
-                        "column": 7590,
+                        "column": 7559,
                         "line": 1,
-                        "offset": 7590
+                        "offset": 7559
                     }
                 }
             }
@@ -180,14 +144,14 @@
                 ],
                 "span": {
                     "end": {
-                        "column": 9225,
+                        "column": 9194,
                         "line": 1,
-                        "offset": 9225
+                        "offset": 9194
                     },
                     "start": {
-                        "column": 9196,
+                        "column": 9165,
                         "line": 1,
-                        "offset": 9196
+                        "offset": 9165
                     }
                 }
             },
@@ -205,14 +169,14 @@
                 ],
                 "span": {
                     "end": {
-                        "column": 10189,
+                        "column": 10158,
                         "line": 1,
-                        "offset": 10189
+                        "offset": 10158
                     },
                     "start": {
-                        "column": 10186,
+                        "column": 10155,
                         "line": 1,
-                        "offset": 10186
+                        "offset": 10155
                     }
                 }
             }
@@ -241,14 +205,14 @@
                 ],
                 "span": {
                     "end": {
-                        "column": 9277,
+                        "column": 9246,
                         "line": 1,
-                        "offset": 9277
+                        "offset": 9246
                     },
                     "start": {
-                        "column": 9263,
+                        "column": 9232,
                         "line": 1,
-                        "offset": 9263
+                        "offset": 9232
                     }
                 }
             },
@@ -266,14 +230,14 @@
                 ],
                 "span": {
                     "end": {
-                        "column": 10189,
+                        "column": 10158,
                         "line": 1,
-                        "offset": 10189
+                        "offset": 10158
                     },
                     "start": {
-                        "column": 10186,
+                        "column": 10155,
                         "line": 1,
-                        "offset": 10186
+                        "offset": 10155
                     }
                 }
             }

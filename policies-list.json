@@ -8633,12 +8633,12 @@
             "PolicyId": "ANPAZKAPJZG4KHVCM25DH",
             "Arn": "arn:aws:iam::aws:policy/AWSGrafanaAccountAdministrator",
             "Path": "/",
-            "DefaultVersionId": "v1",
+            "DefaultVersionId": "v2",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2021-02-23T00:20:38+00:00",
-            "UpdateDate": "2021-02-23T00:20:38+00:00"
+            "UpdateDate": "2021-10-13T22:13:18+00:00"
         },
         {
             "PolicyName": "AWSBackupOperatorAccess",
