@@ -138,7 +138,6 @@
                         "lambda:ListLayerVersions",
                         "lambda:PublishLayerVersion",
                         "lambda:RemoveLayerVersionPermission",
-                        "lambda:GetLayerVersionByArn",
                         "dynamodb:CreateTable",
                         "dynamodb:DeleteItem",
                         "dynamodb:DeleteTable",
@@ -400,8 +399,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
-        "IsDefaultVersion": false,
-        "CreateDate": "2021-09-23T23:12:41Z"
+        "VersionId": "v5",
+        "IsDefaultVersion": true,
+        "CreateDate": "2021-10-13T20:03:40Z"
     }
 }
