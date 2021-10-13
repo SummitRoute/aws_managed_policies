@@ -158,42 +158,6 @@
         ]
     },
     {
-        "findingDetails": "The action cloudfront:ListDistributionsByLambdaFunction does not exist.",
-        "findingType": "ERROR",
-        "issueCode": "INVALID_ACTION",
-        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
-        "locations": [
-            {
-                "path": [
-                    {
-                        "value": "Statement"
-                    },
-                    {
-                        "index": 6
-                    },
-                    {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 7
-                    }
-                ],
-                "span": {
-                    "end": {
-                        "column": 8794,
-                        "line": 1,
-                        "offset": 8794
-                    },
-                    "start": {
-                        "column": 8748,
-                        "line": 1,
-                        "offset": 8748
-                    }
-                }
-            }
-        ]
-    },
-    {
         "findingDetails": "Using the iam:CreateServiceLinkedRole action with wildcards (*) in the resource can allow creation of unintended service-linked roles. We recommend that you specify resource ARNs instead.",
         "findingType": "WARNING",
         "issueCode": "CREATE_SLR_WITH_STAR_IN_RESOURCE",

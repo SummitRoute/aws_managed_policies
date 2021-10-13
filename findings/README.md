@@ -1,14 +1,13 @@
-## AWS Access Analyzer - Findings - 2021-10-08
+## AWS Access Analyzer - Findings - 2021-10-13
 
 - Policies analyzed: `871`
-- Errors: `19`
+- Errors: `17`
   - [`AWSPurchaseOrdersServiceRolePolicy`](./AWSPurchaseOrdersServiceRolePolicy.json)
   - [`AWSAuditManagerAdministratorAccess`](./AWSAuditManagerAdministratorAccess.json)
   - [`AmazonLaunchWizard_Fullaccess`](./AmazonLaunchWizard_Fullaccess.json)
   - [`AmazonEKSConnectorServiceRolePolicy`](./AmazonEKSConnectorServiceRolePolicy.json)
   - [`AWSAuditManagerServiceRolePolicy`](./AWSAuditManagerServiceRolePolicy.json)
   - [`AdministratorAccess-Amplify`](./AdministratorAccess-Amplify.json)
-  - [`AWSLambdaReplicator`](./AWSLambdaReplicator.json)
   - [`AmazonSageMakerGroundTruthExecution`](./AmazonSageMakerGroundTruthExecution.json)
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
 - Sec_Warnings: `11`
