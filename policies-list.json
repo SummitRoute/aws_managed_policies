@@ -9461,12 +9461,12 @@
             "PolicyId": "ANPAZKAPJZG4MSQN23AKX",
             "Arn": "arn:aws:iam::aws:policy/CloudWatchApplicationInsightsFullAccess",
             "Path": "/",
-            "DefaultVersionId": "v1",
+            "DefaultVersionId": "v2",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-11-24T18:44:14+00:00",
-            "UpdateDate": "2020-11-24T18:44:14+00:00"
+            "UpdateDate": "2021-10-18T17:48:51+00:00"
         },
         {
             "PolicyName": "AWSControlTowerServiceRolePolicy",
