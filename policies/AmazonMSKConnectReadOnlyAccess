@@ -6,29 +6,11 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "kafkaconnect:ListConnectors"
-                    ],
-                    "Resource": [
-                        "arn:aws:kafkaconnect:*:*:/*/connectors"
-                    ]
-                },
-                {
-                    "Effect": "Allow",
-                    "Action": [
-                        "kafkaconnect:ListCustomPlugins"
-                    ],
-                    "Resource": [
-                        "arn:aws:kafkaconnect:*:*:/*/custom-plugins"
-                    ]
-                },
-                {
-                    "Effect": "Allow",
-                    "Action": [
+                        "kafkaconnect:ListConnectors",
+                        "kafkaconnect:ListCustomPlugins",
                         "kafkaconnect:ListWorkerConfigurations"
                     ],
-                    "Resource": [
-                        "arn:aws:kafkaconnect:*:*:/*/worker-configurations"
-                    ]
+                    "Resource": "*"
                 },
                 {
                     "Effect": "Allow",
@@ -59,8 +41,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-09-20T10:18:43Z"
+        "CreateDate": "2021-10-18T09:16:26Z"
     }
 }
