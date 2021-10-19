@@ -1,11 +1,13 @@
-## AWS Access Analyzer - Findings - 2021-10-18
+## AWS Access Analyzer - Findings - 2021-10-19
 
-- Policies analyzed: `871`
-- Errors: `16`
+- Policies analyzed: `874`
+- Errors: `24`
   - [`AWSPurchaseOrdersServiceRolePolicy`](./AWSPurchaseOrdersServiceRolePolicy.json)
+  - [`AWSMigrationHubStrategyConsoleFullAccess`](./AWSMigrationHubStrategyConsoleFullAccess.json)
   - [`AWSAuditManagerAdministratorAccess`](./AWSAuditManagerAdministratorAccess.json)
   - [`AmazonLaunchWizard_Fullaccess`](./AmazonLaunchWizard_Fullaccess.json)
   - [`AmazonEKSConnectorServiceRolePolicy`](./AmazonEKSConnectorServiceRolePolicy.json)
+  - [`AWSMigrationHubStrategyCollector`](./AWSMigrationHubStrategyCollector.json)
   - [`AWSAuditManagerServiceRolePolicy`](./AWSAuditManagerServiceRolePolicy.json)
   - [`AmazonSageMakerGroundTruthExecution`](./AmazonSageMakerGroundTruthExecution.json)
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)

@@ -1,0 +1,251 @@
+[
+    {
+        "findingDetails": "The service migrationhub-strategy:RegisterCollector specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 3
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 0
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 521,
+                        "line": 1,
+                        "offset": 521
+                    },
+                    "start": {
+                        "column": 480,
+                        "line": 1,
+                        "offset": 480
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service migrationhub-strategy:GetAntiPattern specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 3
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 1
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 561,
+                        "line": 1,
+                        "offset": 561
+                    },
+                    "start": {
+                        "column": 523,
+                        "line": 1,
+                        "offset": 523
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service migrationhub-strategy:GetMessage specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 3
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 2
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 597,
+                        "line": 1,
+                        "offset": 597
+                    },
+                    "start": {
+                        "column": 563,
+                        "line": 1,
+                        "offset": 563
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service migrationhub-strategy:SendMessage specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 3
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 3
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 634,
+                        "line": 1,
+                        "offset": 634
+                    },
+                    "start": {
+                        "column": 599,
+                        "line": 1,
+                        "offset": 599
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service migrationhub-strategy:ListAntiPatterns specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 3
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 4
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 676,
+                        "line": 1,
+                        "offset": 676
+                    },
+                    "start": {
+                        "column": 636,
+                        "line": 1,
+                        "offset": 636
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service migrationhub-strategy:ListJarArtifacts specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 3
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 5
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 718,
+                        "line": 1,
+                        "offset": 718
+                    },
+                    "start": {
+                        "column": 678,
+                        "line": 1,
+                        "offset": 678
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service migrationhub-strategy does not exist. Use a valid service name.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 3
+                    },
+                    {
+                        "value": "Resource"
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 770,
+                        "line": 1,
+                        "offset": 770
+                    },
+                    "start": {
+                        "column": 733,
+                        "line": 1,
+                        "offset": 733
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -7045,6 +7045,18 @@
             "UpdateDate": "2020-06-08T12:48:44+00:00"
         },
         {
+            "PolicyName": "AWSMigrationHubStrategyServiceRolePolicy",
+            "PolicyId": "ANPAZKAPJZG4EZOM3LHDI",
+            "Arn": "arn:aws:iam::aws:policy/aws-service-role/AWSMigrationHubStrategyServiceRolePolicy",
+            "Path": "/aws-service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-10-19T20:02:37+00:00",
+            "UpdateDate": "2021-10-19T20:02:37+00:00"
+        },
+        {
             "PolicyName": "AmazonRDSCustomServiceRolePolicy",
             "PolicyId": "ANPAZKAPJZG4F2M3XYA7J",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/AmazonRDSCustomServiceRolePolicy",
@@ -8977,6 +8989,18 @@
             "UpdateDate": "2021-06-01T19:32:47+00:00"
         },
         {
+            "PolicyName": "AWSMigrationHubStrategyCollector",
+            "PolicyId": "ANPAZKAPJZG4LHUI3MFF6",
+            "Arn": "arn:aws:iam::aws:policy/AWSMigrationHubStrategyCollector",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-10-19T20:15:15+00:00",
+            "UpdateDate": "2021-10-19T20:15:15+00:00"
+        },
+        {
             "PolicyName": "CloudFormationStackSetsOrgMemberServiceRolePolicy",
             "PolicyId": "ANPAZKAPJZG4LHV6H6QDU",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/CloudFormationStackSetsOrgMemberServiceRolePolicy",
@@ -9779,6 +9803,18 @@
             "IsAttachable": true,
             "CreateDate": "2020-08-24T17:55:18+00:00",
             "UpdateDate": "2020-08-24T17:55:18+00:00"
+        },
+        {
+            "PolicyName": "AWSMigrationHubStrategyConsoleFullAccess",
+            "PolicyId": "ANPAZKAPJZG4NOFRRYUC5",
+            "Arn": "arn:aws:iam::aws:policy/AWSMigrationHubStrategyConsoleFullAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-10-19T20:13:26+00:00",
+            "UpdateDate": "2021-10-19T20:13:26+00:00"
         },
         {
             "PolicyName": "ECRReplicationServiceRolePolicy",
