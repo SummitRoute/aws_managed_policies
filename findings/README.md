@@ -1,6 +1,6 @@
-## AWS Access Analyzer - Findings - 2021-10-19
+## AWS Access Analyzer - Findings - 2021-10-20
 
-- Policies analyzed: `874`
+- Policies analyzed: `876`
 - Errors: `24`
   - [`AWSPurchaseOrdersServiceRolePolicy`](./AWSPurchaseOrdersServiceRolePolicy.json)
   - [`AWSMigrationHubStrategyConsoleFullAccess`](./AWSMigrationHubStrategyConsoleFullAccess.json)
