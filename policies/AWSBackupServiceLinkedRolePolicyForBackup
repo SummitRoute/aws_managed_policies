@@ -18,7 +18,15 @@
                 },
                 {
                     "Action": [
-                        "tag:GetResources"
+                        "tag:GetResources",
+                        "elasticfilesystem:DescribeFileSystems",
+                        "dynamodb:ListTables",
+                        "storagegateway:ListVolumes",
+                        "ec2:DescribeVolumes",
+                        "ec2:DescribeInstances",
+                        "rds:DescribeDBInstances",
+                        "rds:DescribeDBClusters",
+                        "fsx:DescribeFileSystems"
                     ],
                     "Resource": "*",
                     "Effect": "Allow"
@@ -169,8 +177,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-07-05T23:27:46Z"
+        "CreateDate": "2021-10-20T18:16:29Z"
     }
 }
