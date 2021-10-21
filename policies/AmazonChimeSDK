@@ -4,6 +4,7 @@
             "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Effect": "Allow",
                     "Action": [
                         "chime:CreateMeeting",
                         "chime:CreateMeetingWithAttendees",
@@ -23,15 +24,16 @@
                         "chime:TagResource",
                         "chime:UntagAttendee",
                         "chime:UntagMeeting",
-                        "chime:UntagResource"
+                        "chime:UntagResource",
+                        "chime:StartMeetingTranscription",
+                        "chime:StopMeetingTranscription"
                     ],
-                    "Effect": "Allow",
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v3",
-        "IsDefaultVersion": false,
-        "CreateDate": "2020-09-18T21:07:30Z"
+        "VersionId": "v4",
+        "IsDefaultVersion": true,
+        "CreateDate": "2021-10-21T18:04:27Z"
     }
 }
