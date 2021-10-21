@@ -5813,12 +5813,12 @@
             "PolicyId": "ANPAZKAPJZG4ACM6EA4B7",
             "Arn": "arn:aws:iam::aws:policy/AmazonChimeSDK",
             "Path": "/",
-            "DefaultVersionId": "v3",
+            "DefaultVersionId": "v4",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-02-04T21:53:37+00:00",
-            "UpdateDate": "2020-09-18T21:07:30+00:00"
+            "UpdateDate": "2021-10-21T18:04:27+00:00"
         },
         {
             "PolicyName": "AwsGlueDataBrewFullAccessPolicy",
