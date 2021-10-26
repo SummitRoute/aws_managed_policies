@@ -165,6 +165,7 @@
                         "cloudformation:Estimate*",
                         "cloudformation:Get*",
                         "cloudformation:List*",
+                        "cloudfront:DescribeFunction",
                         "cloudfront:Get*",
                         "cloudfront:List*",
                         "cloudhsm:Describe*",
@@ -1024,6 +1025,7 @@
                         "sts:GetAccessKeyInfo",
                         "sts:GetCallerIdentity",
                         "sts:GetSessionToken",
+                        "support:DescribeCases",
                         "swf:Count*",
                         "swf:Describe*",
                         "swf:Get*",
@@ -1070,8 +1072,8 @@
                 }
             ]
         },
-        "VersionId": "v81",
+        "VersionId": "v82",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-10-08T19:08:00Z"
+        "CreateDate": "2021-10-26T20:14:30Z"
     }
 }
