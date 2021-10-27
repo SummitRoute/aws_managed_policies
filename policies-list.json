@@ -6109,6 +6109,18 @@
             "UpdateDate": "2020-03-19T16:01:55+00:00"
         },
         {
+            "PolicyName": "AWSMarketplacePurchaseOrdersServiceRolePolicy",
+            "PolicyId": "ANPAZKAPJZG4BHDLJGTI4",
+            "Arn": "arn:aws:iam::aws:policy/aws-service-role/AWSMarketplacePurchaseOrdersServiceRolePolicy",
+            "Path": "/aws-service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-10-27T15:12:37+00:00",
+            "UpdateDate": "2021-10-27T15:12:37+00:00"
+        },
+        {
             "PolicyName": "AmazonKendraFullAccess",
             "PolicyId": "ANPAZKAPJZG4BK2ALV3AM",
             "Arn": "arn:aws:iam::aws:policy/AmazonKendraFullAccess",
