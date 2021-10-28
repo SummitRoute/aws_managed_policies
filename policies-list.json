@@ -7997,12 +7997,12 @@
             "PolicyId": "ANPAZKAPJZG4IAPULBSWQ",
             "Arn": "arn:aws:iam::aws:policy/AWSPanoramaFullAccess",
             "Path": "/",
-            "DefaultVersionId": "v2",
+            "DefaultVersionId": "v3",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-12-01T13:12:47+00:00",
-            "UpdateDate": "2021-10-20T12:14:58+00:00"
+            "UpdateDate": "2021-10-28T15:37:05+00:00"
         },
         {
             "PolicyName": "AmazonQLDBReadOnly",
