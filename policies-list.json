@@ -7813,6 +7813,18 @@
             "UpdateDate": "2019-12-03T16:21:56+00:00"
         },
         {
+            "PolicyName": "AWSDeepRacerAccountAdminAccess",
+            "PolicyId": "ANPAZKAPJZG4HKQKG3YSU",
+            "Arn": "arn:aws:iam::aws:policy/AWSDeepRacerAccountAdminAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-10-28T01:27:13+00:00",
+            "UpdateDate": "2021-10-28T01:27:13+00:00"
+        },
+        {
             "PolicyName": "AWSEC2CapacityReservationFleetRolePolicy",
             "PolicyId": "ANPAZKAPJZG4HMH3YJXLU",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/AWSEC2CapacityReservationFleetRolePolicy",
@@ -8015,6 +8027,18 @@
             "IsAttachable": true,
             "CreateDate": "2019-11-18T16:39:50+00:00",
             "UpdateDate": "2019-11-18T16:39:50+00:00"
+        },
+        {
+            "PolicyName": "AWSDeepRacerDefaultMultiUserAccess",
+            "PolicyId": "ANPAZKAPJZG4IDMSNDQGW",
+            "Arn": "arn:aws:iam::aws:policy/AWSDeepRacerDefaultMultiUserAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-10-28T01:27:13+00:00",
+            "UpdateDate": "2021-10-28T01:27:13+00:00"
         },
         {
             "PolicyName": "AWSLambda_ReadOnlyAccess",
