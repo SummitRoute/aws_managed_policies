@@ -22,7 +22,7 @@
                     "Resource": "*",
                     "Condition": {
                         "StringLike": {
-                            "s3:DataAccessPointArn": "arn:aws:s3:*:*:accesspoint/panorama-*"
+                            "s3:DataAccessPointArn": "arn:aws:s3:*:*:accesspoint/panorama*"
                         }
                     }
                 },
@@ -94,8 +94,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-10-20T12:14:58Z"
+        "CreateDate": "2021-10-28T15:37:05Z"
     }
 }
