@@ -97,6 +97,7 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "apigateway:GET",
                         "application-autoscaling:DescribeScalableTargets",
                         "application-autoscaling:DescribeScalingPolicies",
                         "autoscaling:DescribeAccountLimits",
@@ -142,8 +143,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-10-06T18:52:33Z"
+        "CreateDate": "2021-10-29T07:09:46Z"
     }
 }
