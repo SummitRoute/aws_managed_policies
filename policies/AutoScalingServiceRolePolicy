@@ -94,11 +94,19 @@
                             "events:ManagedBy": "autoscaling.amazonaws.com"
                         }
                     }
+                },
+                {
+                    "Sid": "SystemsManagerParameterManagement",
+                    "Effect": "Allow",
+                    "Action": [
+                        "ssm:GetParameters"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-03-29T22:33:25Z"
+        "CreateDate": "2021-10-29T22:06:23Z"
     }
 }
