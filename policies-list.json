@@ -689,12 +689,12 @@
             "PolicyId": "ANPAIC5D2V7MRWBMHGD7G",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/AutoScalingServiceRolePolicy",
             "Path": "/aws-service-role/",
-            "DefaultVersionId": "v5",
+            "DefaultVersionId": "v6",
             "AttachmentCount": 1,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2018-01-08T23:10:55+00:00",
-            "UpdateDate": "2021-03-29T22:33:25+00:00"
+            "UpdateDate": "2021-10-29T22:06:23+00:00"
         },
         {
             "PolicyName": "AmazonElasticTranscoder_FullAccess",
