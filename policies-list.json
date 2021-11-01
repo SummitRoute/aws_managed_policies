@@ -9497,12 +9497,12 @@
             "PolicyId": "ANPAZKAPJZG4MQSUGZZPZ",
             "Arn": "arn:aws:iam::aws:policy/AWSDataExchangeProviderFullAccess",
             "Path": "/",
-            "DefaultVersionId": "v7",
+            "DefaultVersionId": "v8",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2019-11-13T19:27:55+00:00",
-            "UpdateDate": "2021-05-25T19:26:14+00:00"
+            "UpdateDate": "2021-11-01T15:13:01+00:00"
         },
         {
             "PolicyName": "AWSBugBustFullAccess",
