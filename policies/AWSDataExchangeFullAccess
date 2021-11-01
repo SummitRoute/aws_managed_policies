@@ -100,11 +100,31 @@
                         "kms:ListKeys"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "redshift:AuthorizeDataShare"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEqualsIgnoreCase": {
+                            "redshift:ConsumerIdentifier": "ADX"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "redshift:DescribeDataSharesForProducer",
+                        "redshift:DescribeDataShares"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-05-10T21:07:38Z"
+        "CreateDate": "2021-11-01T18:55:49Z"
     }
 }
