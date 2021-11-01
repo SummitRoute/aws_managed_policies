@@ -35,7 +35,8 @@
                                 "IMPORT_ASSETS_FROM_S3",
                                 "IMPORT_ASSET_FROM_SIGNED_URL",
                                 "EXPORT_ASSETS_TO_S3",
-                                "EXPORT_ASSET_TO_SIGNED_URL"
+                                "EXPORT_ASSET_TO_SIGNED_URL",
+                                "IMPORT_ASSETS_FROM_REDSHIFT_DATA_SHARES"
                             ]
                         }
                     }
@@ -118,11 +119,31 @@
                         "kms:ListKeys"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "redshift:AuthorizeDataShare"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringEqualsIgnoreCase": {
+                            "redshift:ConsumerIdentifier": "ADX"
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "redshift:DescribeDataSharesForProducer",
+                        "redshift:DescribeDataShares"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-05-25T19:26:14Z"
+        "CreateDate": "2021-11-01T15:13:01Z"
     }
 }
