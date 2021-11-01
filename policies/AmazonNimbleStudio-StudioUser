@@ -64,6 +64,8 @@
                     "Action": [
                         "nimble:DeleteStreamingSession",
                         "nimble:GetStreamingSession",
+                        "nimble:StartStreamingSession",
+                        "nimble:StopStreamingSession",
                         "nimble:CreateStreamingSessionStream",
                         "nimble:GetStreamingSessionStream",
                         "nimble:ListStreamingSessions"
@@ -78,8 +80,8 @@
             ],
             "Version": "2012-10-17"
         },
-        "VersionId": "v2",
-        "IsDefaultVersion": false,
-        "CreateDate": "2021-08-16T18:26:50Z"
+        "VersionId": "v3",
+        "IsDefaultVersion": true,
+        "CreateDate": "2021-11-01T20:01:52Z"
     }
 }
