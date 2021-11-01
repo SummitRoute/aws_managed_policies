@@ -8857,6 +8857,18 @@
             "UpdateDate": "2020-09-29T15:16:47+00:00"
         },
         {
+            "PolicyName": "AWSCostAndUsageReportAutomationPolicy",
+            "PolicyId": "ANPAZKAPJZG4KVW6KKXOP",
+            "Arn": "arn:aws:iam::aws:policy/service-role/AWSCostAndUsageReportAutomationPolicy",
+            "Path": "/service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-11-01T21:27:29+00:00",
+            "UpdateDate": "2021-11-01T21:27:29+00:00"
+        },
+        {
             "PolicyName": "MemoryDBServiceRolePolicy",
             "PolicyId": "ANPAZKAPJZG4KWEJCOJNF",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/MemoryDBServiceRolePolicy",

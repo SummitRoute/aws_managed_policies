@@ -1,0 +1,74 @@
+[
+    {
+        "findingDetails": "The action nimble:StartStreamingSession does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 2
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 171,
+                        "line": 1,
+                        "offset": 171
+                    },
+                    "start": {
+                        "column": 141,
+                        "line": 1,
+                        "offset": 141
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The action nimble:StopStreamingSession does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 0
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 3
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 202,
+                        "line": 1,
+                        "offset": 202
+                    },
+                    "start": {
+                        "column": 173,
+                        "line": 1,
+                        "offset": 173
+                    }
+                }
+            }
+        ]
+    }
+]
