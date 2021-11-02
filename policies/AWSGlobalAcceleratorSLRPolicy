@@ -19,7 +19,11 @@
                 },
                 {
                     "Effect": "Allow",
-                    "Action": "ec2:DeleteSecurityGroup",
+                    "Action": [
+                        "ec2:DeleteSecurityGroup",
+                        "ec2:AssignIpv6Addresses",
+                        "ec2:UnassignIpv6Addresses"
+                    ],
                     "Resource": "*",
                     "Condition": {
                         "StringEquals": {
@@ -50,8 +54,8 @@
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-05-19T17:10:49Z"
+        "CreateDate": "2021-11-02T18:33:56Z"
     }
 }
