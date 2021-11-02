@@ -25,7 +25,10 @@
                         "config:DescribeConfigurationRecorderStatus",
                         "config:GetResourceConfigHistory",
                         "events:ListRuleNamesByTarget",
-                        "xray:GetServiceGraph"
+                        "xray:GetServiceGraph",
+                        "organizations:ListRoots",
+                        "organizations:ListChildren",
+                        "organizations:ListDelegatedAdministrators"
                     ],
                     "Resource": "*"
                 },
@@ -70,8 +73,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-04-21T23:51:53Z"
+        "CreateDate": "2021-11-01T23:24:23Z"
     }
 }
