@@ -6929,12 +6929,12 @@
             "PolicyId": "ANPAZKAPJZG4EJ5ZEQR2C",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/AWSGlobalAcceleratorSLRPolicy",
             "Path": "/aws-service-role/",
-            "DefaultVersionId": "v5",
+            "DefaultVersionId": "v6",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2019-04-05T19:39:13+00:00",
-            "UpdateDate": "2021-05-19T17:10:49+00:00"
+            "UpdateDate": "2021-11-02T18:33:56+00:00"
         },
         {
             "PolicyName": "EC2InstanceProfileForImageBuilder",
