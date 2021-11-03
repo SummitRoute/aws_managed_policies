@@ -29,14 +29,24 @@
                         "rekognition:DescribeProjectVersions",
                         "rekognition:DetectCustomLabels",
                         "rekognition:DeleteProject",
-                        "rekognition:DeleteProjectVersion"
+                        "rekognition:DeleteProjectVersion",
+                        "rekognition:TagResource",
+                        "rekognition:UntagResource",
+                        "rekognition:ListTagsForResource",
+                        "rekognition:CreateDataset",
+                        "rekognition:ListDatasetEntries",
+                        "rekognition:ListDatasetLabels",
+                        "rekognition:DescribeDataset",
+                        "rekognition:UpdateDatasetEntries",
+                        "rekognition:DistributeDatasetEntries",
+                        "rekognition:DeleteDataset"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-04-17T17:26:10Z"
+        "CreateDate": "2021-11-03T02:53:05Z"
     }
 }

@@ -30,14 +30,18 @@
                         "rekognition:DescribeProjects",
                         "rekognition:DescribeProjectVersions",
                         "rekognition:DetectCustomLabels",
-                        "rekognition:DetectProtectiveEquipment"
+                        "rekognition:DetectProtectiveEquipment",
+                        "rekognition:ListTagsForResource",
+                        "rekognition:ListDatasetEntries",
+                        "rekognition:ListDatasetLabels",
+                        "rekognition:DescribeDataset"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-10-15T22:07:44Z"
+        "CreateDate": "2021-11-03T02:53:36Z"
     }
 }
