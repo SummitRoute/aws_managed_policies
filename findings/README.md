@@ -1,8 +1,9 @@
-## AWS Access Analyzer - Findings - 2021-11-02
+## AWS Access Analyzer - Findings - 2021-11-03
 
 - Policies analyzed: `880`
-- Errors: `20`
+- Errors: `30`
   - [`AWSAuditManagerAdministratorAccess`](./AWSAuditManagerAdministratorAccess.json)
+  - [`AmazonRekognitionCustomLabelsFullAccess`](./AmazonRekognitionCustomLabelsFullAccess.json)
   - [`AWSAuditManagerServiceRolePolicy`](./AWSAuditManagerServiceRolePolicy.json)
   - [`AmazonNimbleStudio-StudioAdmin`](./AmazonNimbleStudio-StudioAdmin.json)
   - [`AmazonEKSConnectorServiceRolePolicy`](./AmazonEKSConnectorServiceRolePolicy.json)
@@ -11,6 +12,7 @@
   - [`AmazonNimbleStudio-StudioUser`](./AmazonNimbleStudio-StudioUser.json)
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
   - [`AmazonLaunchWizard_Fullaccess`](./AmazonLaunchWizard_Fullaccess.json)
+  - [`AmazonRekognitionReadOnlyAccess`](./AmazonRekognitionReadOnlyAccess.json)
 - Sec_Warnings: `11`
   - [`AmazonElasticMapReduceFullAccess`](./AmazonElasticMapReduceFullAccess.json)
   - [`AWSDataPipelineRole`](./AWSDataPipelineRole.json)

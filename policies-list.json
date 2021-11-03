@@ -1445,12 +1445,12 @@
             "PolicyId": "ANPAILWSUHXUY4ES43SA4",
             "Arn": "arn:aws:iam::aws:policy/AmazonRekognitionReadOnlyAccess",
             "Path": "/",
-            "DefaultVersionId": "v6",
+            "DefaultVersionId": "v7",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2016-11-30T14:58:06+00:00",
-            "UpdateDate": "2020-10-15T22:07:44+00:00"
+            "UpdateDate": "2021-11-03T02:53:36+00:00"
         },
         {
             "PolicyName": "AWSCodeDeployReadOnlyAccess",
@@ -10037,12 +10037,12 @@
             "PolicyId": "ANPAZKAPJZG4OJEQDEQQQ",
             "Arn": "arn:aws:iam::aws:policy/AmazonRekognitionCustomLabelsFullAccess",
             "Path": "/",
-            "DefaultVersionId": "v2",
+            "DefaultVersionId": "v3",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-01-08T19:18:34+00:00",
-            "UpdateDate": "2020-04-17T17:26:10+00:00"
+            "UpdateDate": "2021-11-03T02:53:05+00:00"
         },
         {
             "PolicyName": "AmazonHealthLakeFullAccess",
