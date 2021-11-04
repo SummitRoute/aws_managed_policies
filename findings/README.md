@@ -1,6 +1,6 @@
-## AWS Access Analyzer - Findings - 2021-11-03
+## AWS Access Analyzer - Findings - 2021-11-04
 
-- Policies analyzed: `880`
+- Policies analyzed: `881`
 - Errors: `30`
   - [`AWSAuditManagerAdministratorAccess`](./AWSAuditManagerAdministratorAccess.json)
   - [`AmazonRekognitionCustomLabelsFullAccess`](./AmazonRekognitionCustomLabelsFullAccess.json)
@@ -23,7 +23,8 @@
   - [`AWSServiceRoleForAmazonEKSNodegroup`](./AWSServiceRoleForAmazonEKSNodegroup.json)
   - [`AdministratorAccess`](./AdministratorAccess.json)
   - [`IAMFullAccess`](./IAMFullAccess.json)
-- Suggestions: `39`
+- Suggestions: `41`
+  - [`AmazonRedshiftAllCommandsFullAccess`](./AmazonRedshiftAllCommandsFullAccess.json)
   - [`AmazonRDSCustomServiceRolePolicy`](./AmazonRDSCustomServiceRolePolicy.json)
   - [`AWSElasticBeanstalkRoleCore`](./AWSElasticBeanstalkRoleCore.json)
   - [`AmazonElasticMapReduceFullAccess`](./AmazonElasticMapReduceFullAccess.json)

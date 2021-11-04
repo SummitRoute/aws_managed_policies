@@ -1,0 +1,186 @@
+[
+    {
+        "findingDetails": "The 4 resource ARN(s) are redundant because they reference the same resource. Review the use of wildcards (*), or remove the resource arn:aws:s3:::redshift-downloads/* to remove the redundancy.",
+        "findingType": "SUGGESTION",
+        "issueCode": "REDUNDANT_RESOURCE",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-resource",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 4
+                    },
+                    {
+                        "value": "Resource"
+                    },
+                    {
+                        "index": 0
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2260,
+                        "line": 1,
+                        "offset": 2260
+                    },
+                    "start": {
+                        "column": 2227,
+                        "line": 1,
+                        "offset": 2227
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 4
+                    },
+                    {
+                        "value": "Resource"
+                    },
+                    {
+                        "index": 1
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2297,
+                        "line": 1,
+                        "offset": 2297
+                    },
+                    "start": {
+                        "column": 2262,
+                        "line": 1,
+                        "offset": 2262
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 4
+                    },
+                    {
+                        "value": "Resource"
+                    },
+                    {
+                        "index": 2
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2324,
+                        "line": 1,
+                        "offset": 2324
+                    },
+                    "start": {
+                        "column": 2299,
+                        "line": 1,
+                        "offset": 2299
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 4
+                    },
+                    {
+                        "value": "Resource"
+                    },
+                    {
+                        "index": 3
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2353,
+                        "line": 1,
+                        "offset": 2353
+                    },
+                    "start": {
+                        "column": 2326,
+                        "line": 1,
+                        "offset": 2326
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The 2 resource ARN(s) are redundant because they reference the same resource. Review the use of wildcards (*), or remove the resource arn:aws:dynamodb:*:*:table/*redshift*/index/* to remove the redundancy.",
+        "findingType": "SUGGESTION",
+        "issueCode": "REDUNDANT_RESOURCE",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-suggestion-redundant-resource",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 6
+                    },
+                    {
+                        "value": "Resource"
+                    },
+                    {
+                        "index": 0
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 2974,
+                        "line": 1,
+                        "offset": 2974
+                    },
+                    "start": {
+                        "column": 2935,
+                        "line": 1,
+                        "offset": 2935
+                    }
+                }
+            },
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 6
+                    },
+                    {
+                        "value": "Resource"
+                    },
+                    {
+                        "index": 1
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 3023,
+                        "line": 1,
+                        "offset": 3023
+                    },
+                    "start": {
+                        "column": 2976,
+                        "line": 1,
+                        "offset": 2976
+                    }
+                }
+            }
+        ]
+    }
+]

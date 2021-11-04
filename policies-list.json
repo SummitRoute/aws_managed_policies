@@ -7285,6 +7285,18 @@
             "UpdateDate": "2021-08-12T21:28:43+00:00"
         },
         {
+            "PolicyName": "AmazonRedshiftAllCommandsFullAccess",
+            "PolicyId": "ANPAZKAPJZG4FLN3TI7CS",
+            "Arn": "arn:aws:iam::aws:policy/AmazonRedshiftAllCommandsFullAccess",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-11-04T00:48:08+00:00",
+            "UpdateDate": "2021-11-04T00:48:08+00:00"
+        },
+        {
             "PolicyName": "IAMAccessAdvisorReadOnly",
             "PolicyId": "ANPAZKAPJZG4FNDX5PG6Z",
             "Arn": "arn:aws:iam::aws:policy/IAMAccessAdvisorReadOnly",
