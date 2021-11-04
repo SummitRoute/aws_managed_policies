@@ -5909,12 +5909,12 @@
             "PolicyId": "ANPAZKAPJZG4AML23RALR",
             "Arn": "arn:aws:iam::aws:policy/AdministratorAccess-Amplify",
             "Path": "/",
-            "DefaultVersionId": "v5",
+            "DefaultVersionId": "v6",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-12-01T19:03:08+00:00",
-            "UpdateDate": "2021-10-13T20:03:40+00:00"
+            "UpdateDate": "2021-11-04T17:51:32+00:00"
         },
         {
             "PolicyName": "AmazonRoute53RecoveryReadinessFullAccess",
@@ -9557,12 +9557,12 @@
             "PolicyId": "ANPAZKAPJZG4MSQN23AKX",
             "Arn": "arn:aws:iam::aws:policy/CloudWatchApplicationInsightsFullAccess",
             "Path": "/",
-            "DefaultVersionId": "v2",
+            "DefaultVersionId": "v3",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-11-24T18:44:14+00:00",
-            "UpdateDate": "2021-10-18T17:48:51+00:00"
+            "UpdateDate": "2021-11-04T17:13:25+00:00"
         },
         {
             "PolicyName": "AWSControlTowerServiceRolePolicy",
