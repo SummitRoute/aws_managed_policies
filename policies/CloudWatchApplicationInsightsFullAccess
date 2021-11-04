@@ -17,6 +17,8 @@
                         "rds:DescribeDBClusters",
                         "sqs:ListQueues",
                         "elasticloadbalancing:DescribeLoadBalancers",
+                        "elasticloadbalancing:DescribeTargetGroups",
+                        "elasticloadbalancing:DescribeTargetHealth",
                         "autoscaling:DescribeAutoScalingGroups",
                         "lambda:ListFunctions",
                         "dynamodb:ListTables",
@@ -50,8 +52,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-10-18T17:48:51Z"
+        "CreateDate": "2021-11-04T17:13:25Z"
     }
 }

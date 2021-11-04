@@ -183,6 +183,8 @@
                         "kinesis:CreateStream",
                         "kinesis:DeleteStream",
                         "kinesis:DescribeStream",
+                        "kinesis:DescribeStreamSummary",
+                        "kinesis:ListTagsForStream",
                         "kinesis:PutRecords",
                         "es:AddTags",
                         "es:CreateElasticsearchDomain",
@@ -239,6 +241,8 @@
                         "cognito-idp:AdminSetUserPassword",
                         "cognito-idp:ListUserPools",
                         "cognito-idp:ListUserPoolClients",
+                        "cognito-idp:ListIdentityProviders",
+                        "cognito-idp:GetUserPoolMfaConfig",
                         "cognito-identity:GetIdentityPoolRoles",
                         "cognito-identity:SetIdentityPoolRoles",
                         "cognito-identity:CreateIdentityPool",
@@ -251,7 +255,9 @@
                         "lambda:CreateFunction",
                         "lambda:AddPermission",
                         "lambda:DeleteFunction",
+                        "lambda:DeleteLayerVersion",
                         "lambda:InvokeFunction",
+                        "lambda:ListLayerVersions",
                         "iam:PutRolePolicy",
                         "iam:CreatePolicy",
                         "iam:AttachRolePolicy",
@@ -324,8 +330,10 @@
                         "s3:PutBucketCORS",
                         "s3:PutBucketNotification",
                         "s3:PutBucketPolicy",
+                        "s3:PutBucketVersioning",
                         "s3:PutBucketWebsite",
                         "s3:PutEncryptionConfiguration",
+                        "s3:PutLifecycleConfiguration",
                         "s3:PutObject",
                         "s3:PutObjectAcl"
                     ],
@@ -399,8 +407,8 @@
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-10-13T20:03:40Z"
+        "CreateDate": "2021-11-04T17:51:32Z"
     }
 }
