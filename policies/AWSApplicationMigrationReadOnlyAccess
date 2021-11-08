@@ -11,6 +11,7 @@
                         "mgn:DescribeSourceServers",
                         "mgn:DescribeReplicationConfigurationTemplates",
                         "mgn:GetLaunchConfiguration",
+                        "mgn:DescribeVcenterClients",
                         "mgn:GetReplicationConfiguration"
                     ],
                     "Resource": "*"
@@ -27,8 +28,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-04-07T07:15:26Z"
+        "CreateDate": "2021-11-08T12:54:08Z"
     }
 }

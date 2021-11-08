@@ -1,0 +1,33 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "mgn:CreateVcenterClientForMgn",
+                        "mgn:DescribeVcenterClients"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "mgn:GetVcenterClientCommandsForMgn",
+                        "mgn:SendVcenterClientCommandResultForMgn",
+                        "mgn:SendVcenterClientLogsForMgn",
+                        "mgn:SendVcenterClientMetricsForMgn",
+                        "mgn:DeleteVcenterClient",
+                        "mgn:TagResource",
+                        "mgn:NotifyVcenterClientStartedForMgn"
+                    ],
+                    "Resource": "arn:aws:mgn:*:*:vcenter-client/*"
+                }
+            ]
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2021-11-08T12:53:08Z"
+    }
+}
