@@ -1,18 +1,16 @@
-## AWS Access Analyzer - Findings - 2021-11-08
+## AWS Access Analyzer - Findings - 2021-11-09
 
 - Policies analyzed: `882`
-- Errors: `40`
+- Errors: `36`
   - [`AWSAuditManagerAdministratorAccess`](./AWSAuditManagerAdministratorAccess.json)
   - [`AmazonRekognitionCustomLabelsFullAccess`](./AmazonRekognitionCustomLabelsFullAccess.json)
   - [`AWSApplicationMigrationReadOnlyAccess`](./AWSApplicationMigrationReadOnlyAccess.json)
   - [`AWSApplicationMigrationVCenterClientPolicy`](./AWSApplicationMigrationVCenterClientPolicy.json)
   - [`AWSAuditManagerServiceRolePolicy`](./AWSAuditManagerServiceRolePolicy.json)
-  - [`AmazonNimbleStudio-StudioAdmin`](./AmazonNimbleStudio-StudioAdmin.json)
   - [`AWSCompromisedKeyQuarantineV2`](./AWSCompromisedKeyQuarantineV2.json)
   - [`AmazonEKSConnectorServiceRolePolicy`](./AmazonEKSConnectorServiceRolePolicy.json)
   - [`AmazonSageMakerGroundTruthExecution`](./AmazonSageMakerGroundTruthExecution.json)
   - [`AWSPurchaseOrdersServiceRolePolicy`](./AWSPurchaseOrdersServiceRolePolicy.json)
-  - [`AmazonNimbleStudio-StudioUser`](./AmazonNimbleStudio-StudioUser.json)
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
   - [`AmazonLaunchWizard_Fullaccess`](./AmazonLaunchWizard_Fullaccess.json)
   - [`AmazonRekognitionReadOnlyAccess`](./AmazonRekognitionReadOnlyAccess.json)
