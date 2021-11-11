@@ -55,7 +55,7 @@
                         "s3:DeleteObjectVersion",
                         "s3:PutLifecycleConfiguration",
                         "s3:PutBucketAcl",
-                        "s3:DeleteBucketOwnershipControls",
+                        "s3:PutBucketOwnershipControls",
                         "s3:DeleteBucketPolicy",
                         "s3:ObjectOwnerOverrideToBucketOwner",
                         "s3:PutAccountPublicAccessBlock",
@@ -68,8 +68,8 @@
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-04-21T22:30:59Z"
+        "CreateDate": "2021-11-11T21:32:48Z"
     }
 }

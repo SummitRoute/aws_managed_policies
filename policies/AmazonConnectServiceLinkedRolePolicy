@@ -60,11 +60,38 @@
                         "lex:ListBotAliases"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "profile:SearchProfiles",
+                        "profile:CreateProfile",
+                        "profile:UpdateProfile",
+                        "profile:AddProfileKey"
+                    ],
+                    "Resource": "arn:aws:profile:*:*:domains/amazon-connect-*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "profile:ListProfileObjects"
+                    ],
+                    "Resource": [
+                        "arn:aws:profile:*:*:domains/amazon-connect-*/object-types/CTR",
+                        "arn:aws:profile:*:*:domains/amazon-connect-*/object-types/_asset"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "profile:ListAccountIntegrations"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-04-14T00:13:10Z"
+        "CreateDate": "2021-11-11T20:33:20Z"
     }
 }
