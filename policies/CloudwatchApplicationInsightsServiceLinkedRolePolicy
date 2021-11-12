@@ -311,6 +311,15 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "ecs:UpdateClusterSettings"
+                    ],
+                    "Resource": [
+                        "arn:aws:ecs:*:*:cluster/*"
+                    ]
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
                         "eks:DescribeCluster",
                         "eks:DescribeFargateProfile",
                         "eks:DescribeNodegroup",
@@ -345,8 +354,8 @@
                 }
             ]
         },
-        "VersionId": "v17",
+        "VersionId": "v18",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-09-22T22:35:38Z"
+        "CreateDate": "2021-11-11T23:03:50Z"
     }
 }

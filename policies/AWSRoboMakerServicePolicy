@@ -33,10 +33,7 @@
                         "robomaker:TagResource"
                     ],
                     "Effect": "Allow",
-                    "Resource": [
-                        "arn:aws:robomaker:*:*:/createsimulationjob",
-                        "arn:aws:robomaker:*:*:simulation-job/*"
-                    ]
+                    "Resource": "arn:aws:robomaker:*:*:simulation-job/*"
                 },
                 {
                     "Action": [
@@ -68,8 +65,8 @@
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-08-04T20:38:08Z"
+        "CreateDate": "2021-11-11T22:23:45Z"
     }
 }
