@@ -21,11 +21,35 @@
                         "ec2:ModifyVpcEndpoint"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Sid": "EnableCreationAndManagementOfRedshiftCloudwatchLogGroups",
+                    "Effect": "Allow",
+                    "Action": [
+                        "logs:CreateLogGroup",
+                        "logs:PutRetentionPolicy"
+                    ],
+                    "Resource": [
+                        "arn:aws:logs:*:*:log-group:/aws/redshift/*"
+                    ]
+                },
+                {
+                    "Sid": "EnableCreationAndManagementOfRedshiftCloudwatchLogStreams",
+                    "Effect": "Allow",
+                    "Action": [
+                        "logs:CreateLogStream",
+                        "logs:PutLogEvents",
+                        "logs:DescribeLogStreams",
+                        "logs:GetLogEvents"
+                    ],
+                    "Resource": [
+                        "arn:aws:logs:*:*:log-group:/aws/redshift/*:log-stream:*"
+                    ]
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-09-15T20:44:31Z"
+        "CreateDate": "2021-11-15T06:41:10Z"
     }
 }
