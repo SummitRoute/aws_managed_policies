@@ -28,7 +28,9 @@
                         "xray:GetServiceGraph",
                         "organizations:ListRoots",
                         "organizations:ListChildren",
-                        "organizations:ListDelegatedAdministrators"
+                        "organizations:ListDelegatedAdministrators",
+                        "rds:DescribeDBInstances",
+                        "pi:GetResourceMetrics"
                     ],
                     "Resource": "*"
                 },
@@ -73,8 +75,8 @@
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-11-01T23:24:23Z"
+        "CreateDate": "2021-11-15T23:26:01Z"
     }
 }
