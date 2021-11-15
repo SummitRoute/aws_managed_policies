@@ -4,6 +4,8 @@
             "Version": "2012-10-17",
             "Statement": [
                 {
+                    "Sid": "AllowUseOfAWSWAF",
+                    "Effect": "Allow",
                     "Action": [
                         "waf:*",
                         "waf-regional:*",
@@ -12,13 +14,47 @@
                         "apigateway:SetWebACL",
                         "appsync:SetWebACL"
                     ],
-                    "Effect": "Allow",
                     "Resource": "*"
+                },
+                {
+                    "Sid": "AllowLogDeliverySubscription",
+                    "Effect": "Allow",
+                    "Action": [
+                        "logs:CreateLogDelivery",
+                        "logs:DeleteLogDelivery"
+                    ],
+                    "Resource": [
+                        "arn:aws:s3:::aws-waf-logs-*",
+                        "arn:aws:logs:*:*:aws-waf-logs-*"
+                    ]
+                },
+                {
+                    "Sid": "GrantLogDeliveryPermissionForS3Bucket",
+                    "Effect": "Allow",
+                    "Action": [
+                        "s3:PutBucketPolicy",
+                        "s3:GetBucketPolicy"
+                    ],
+                    "Resource": [
+                        "arn:aws:s3:::aws-waf-logs-*"
+                    ]
+                },
+                {
+                    "Sid": "GrantLogDeliveryPermissionForCloudWatchLogGroup",
+                    "Effect": "Allow",
+                    "Action": [
+                        "logs:PutResourcePolicy",
+                        "logs:DescribeResourcePolicies",
+                        "logs:DescribeLogGroups"
+                    ],
+                    "Resource": [
+                        "arn:aws:logs:*:*:aws-waf-logs-*"
+                    ]
                 }
             ]
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-10-01T20:13:54Z"
+        "CreateDate": "2021-11-15T19:33:27Z"
     }
 }
