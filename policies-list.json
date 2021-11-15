@@ -7733,12 +7733,12 @@
             "PolicyId": "ANPAZKAPJZG4H4EGQA254",
             "Arn": "arn:aws:iam::aws:policy/service-role/AWSIoTFleetHubFederationAccess",
             "Path": "/service-role/",
-            "DefaultVersionId": "v3",
+            "DefaultVersionId": "v4",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-12-15T08:08:05+00:00",
-            "UpdateDate": "2021-05-24T14:12:59+00:00"
+            "UpdateDate": "2021-11-15T23:28:19+00:00"
         },
         {
             "PolicyName": "AmazonElasticFileSystemClientReadWriteAccess",
@@ -9173,12 +9173,12 @@
             "PolicyId": "ANPAZKAPJZG4LOGPH224B",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/AmazonDevOpsGuruServiceRolePolicy",
             "Path": "/aws-service-role/",
-            "DefaultVersionId": "v3",
+            "DefaultVersionId": "v4",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-12-01T10:24:42+00:00",
-            "UpdateDate": "2021-11-01T23:24:23+00:00"
+            "UpdateDate": "2021-11-15T23:26:01+00:00"
         },
         {
             "PolicyName": "AWSElasticBeanstalkRoleWorkerTier",
