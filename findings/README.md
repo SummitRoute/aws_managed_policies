@@ -1,8 +1,9 @@
-## AWS Access Analyzer - Findings - 2021-11-15
+## AWS Access Analyzer - Findings - 2021-11-16
 
-- Policies analyzed: `882`
-- Errors: `25`
+- Policies analyzed: `883`
+- Errors: `30`
   - [`AWSAuditManagerAdministratorAccess`](./AWSAuditManagerAdministratorAccess.json)
+  - [`AmazonDevOpsGuruOrganizationsAccess`](./AmazonDevOpsGuruOrganizationsAccess.json)
   - [`AWSApplicationMigrationReadOnlyAccess`](./AWSApplicationMigrationReadOnlyAccess.json)
   - [`AWSApplicationMigrationVCenterClientPolicy`](./AWSApplicationMigrationVCenterClientPolicy.json)
   - [`AWSAuditManagerServiceRolePolicy`](./AWSAuditManagerServiceRolePolicy.json)
