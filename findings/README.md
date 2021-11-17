@@ -1,7 +1,7 @@
 ## AWS Access Analyzer - Findings - 2021-11-17
 
-- Policies analyzed: `885`
-- Errors: `48`
+- Policies analyzed: `891`
+- Errors: `102`
   - [`AWSApplicationMigrationVCenterClientPolicy`](./AWSApplicationMigrationVCenterClientPolicy.json)
   - [`AmazonSageMakerGroundTruthExecution`](./AmazonSageMakerGroundTruthExecution.json)
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
@@ -9,9 +9,15 @@
   - [`AmazonEKSConnectorServiceRolePolicy`](./AmazonEKSConnectorServiceRolePolicy.json)
   - [`AWSAuditManagerServiceRolePolicy`](./AWSAuditManagerServiceRolePolicy.json)
   - [`AWSApplicationMigrationReadOnlyAccess`](./AWSApplicationMigrationReadOnlyAccess.json)
+  - [`AWSElasticDisasterRecoveryReadOnlyAccess`](./AWSElasticDisasterRecoveryReadOnlyAccess.json)
+  - [`AWSElasticDisasterRecoveryFailbackPolicy`](./AWSElasticDisasterRecoveryFailbackPolicy.json)
   - [`AWSAuditManagerAdministratorAccess`](./AWSAuditManagerAdministratorAccess.json)
   - [`AWSElasticDisasterRecoveryRecoveryInstancePolicy`](./AWSElasticDisasterRecoveryRecoveryInstancePolicy.json)
   - [`AmazonDevOpsGuruOrganizationsAccess`](./AmazonDevOpsGuruOrganizationsAccess.json)
+  - [`AWSElasticDisasterRecoveryConsoleFullAccess`](./AWSElasticDisasterRecoveryConsoleFullAccess.json)
+  - [`AWSElasticDisasterRecoveryServiceRolePolicy`](./AWSElasticDisasterRecoveryServiceRolePolicy.json)
+  - [`AWSElasticDisasterRecoveryAgentInstallationPolicy`](./AWSElasticDisasterRecoveryAgentInstallationPolicy.json)
+  - [`AWSElasticDisasterRecoveryAgentPolicy`](./AWSElasticDisasterRecoveryAgentPolicy.json)
   - [`AmazonLaunchWizard_Fullaccess`](./AmazonLaunchWizard_Fullaccess.json)
   - [`AWSPurchaseOrdersServiceRolePolicy`](./AWSPurchaseOrdersServiceRolePolicy.json)
 - Sec_Warnings: `11`
