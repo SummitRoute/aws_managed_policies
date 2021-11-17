@@ -8173,6 +8173,18 @@
             "UpdateDate": "2021-02-17T19:07:18+00:00"
         },
         {
+            "PolicyName": "AWSElasticDisasterRecoveryAgentPolicy",
+            "PolicyId": "ANPAZKAPJZG4IPFHAAF4L",
+            "Arn": "arn:aws:iam::aws:policy/service-role/AWSElasticDisasterRecoveryAgentPolicy",
+            "Path": "/service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-11-17T10:32:32+00:00",
+            "UpdateDate": "2021-11-17T10:32:32+00:00"
+        },
+        {
             "PolicyName": "AWSCloud9SSMInstanceProfile",
             "PolicyId": "ANPAZKAPJZG4IQOSNAKW6",
             "Arn": "arn:aws:iam::aws:policy/AWSCloud9SSMInstanceProfile",
@@ -9085,6 +9097,18 @@
             "UpdateDate": "2021-06-01T19:32:47+00:00"
         },
         {
+            "PolicyName": "AWSElasticDisasterRecoveryAgentInstallationPolicy",
+            "PolicyId": "ANPAZKAPJZG4LHPRHPQKB",
+            "Arn": "arn:aws:iam::aws:policy/AWSElasticDisasterRecoveryAgentInstallationPolicy",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-11-17T10:37:54+00:00",
+            "UpdateDate": "2021-11-17T10:37:54+00:00"
+        },
+        {
             "PolicyName": "AWSMigrationHubStrategyCollector",
             "PolicyId": "ANPAZKAPJZG4LHUI3MFF6",
             "Arn": "arn:aws:iam::aws:policy/AWSMigrationHubStrategyCollector",
@@ -9779,6 +9803,18 @@
             "IsAttachable": true,
             "CreateDate": "2019-11-29T22:02:13+00:00",
             "UpdateDate": "2021-08-11T18:07:10+00:00"
+        },
+        {
+            "PolicyName": "AWSElasticDisasterRecoveryRecoveryInstancePolicy",
+            "PolicyId": "ANPAZKAPJZG4NGCMXUFTL",
+            "Arn": "arn:aws:iam::aws:policy/service-role/AWSElasticDisasterRecoveryRecoveryInstancePolicy",
+            "Path": "/service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-11-17T10:20:43+00:00",
+            "UpdateDate": "2021-11-17T10:20:43+00:00"
         },
         {
             "PolicyName": "AmazonOpenSearchServiceRolePolicy",
