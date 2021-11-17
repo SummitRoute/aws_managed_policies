@@ -7585,6 +7585,18 @@
             "UpdateDate": "2020-12-01T13:14:43+00:00"
         },
         {
+            "PolicyName": "AWSElasticDisasterRecoveryConversionServerPolicy",
+            "PolicyId": "ANPAZKAPJZG4G7IPHJVFX",
+            "Arn": "arn:aws:iam::aws:policy/service-role/AWSElasticDisasterRecoveryConversionServerPolicy",
+            "Path": "/service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-11-17T13:42:23+00:00",
+            "UpdateDate": "2021-11-17T13:42:23+00:00"
+        },
+        {
             "PolicyName": "AmazonEMRReadOnlyAccessPolicy_v2",
             "PolicyId": "ANPAZKAPJZG4GDFTJ74PD",
             "Arn": "arn:aws:iam::aws:policy/AmazonEMRReadOnlyAccessPolicy_v2",
@@ -10523,6 +10535,18 @@
             "IsAttachable": true,
             "CreateDate": "2020-06-02T23:30:14+00:00",
             "UpdateDate": "2020-12-07T22:49:15+00:00"
+        },
+        {
+            "PolicyName": "AWSElasticDisasterRecoveryReplicationServerPolicy",
+            "PolicyId": "ANPAZKAPJZG4PHOT5QARB",
+            "Arn": "arn:aws:iam::aws:policy/service-role/AWSElasticDisasterRecoveryReplicationServerPolicy",
+            "Path": "/service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-11-17T13:34:00+00:00",
+            "UpdateDate": "2021-11-17T13:34:00+00:00"
         },
         {
             "PolicyName": "Ec2ImageBuilderCrossAccountDistributionAccess",
