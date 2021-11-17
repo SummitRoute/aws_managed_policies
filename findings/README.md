@@ -1,7 +1,7 @@
 ## AWS Access Analyzer - Findings - 2021-11-17
 
-- Policies analyzed: `891`
-- Errors: `102`
+- Policies analyzed: `892`
+- Errors: `112`
   - [`AWSApplicationMigrationVCenterClientPolicy`](./AWSApplicationMigrationVCenterClientPolicy.json)
   - [`AmazonSageMakerGroundTruthExecution`](./AmazonSageMakerGroundTruthExecution.json)
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
@@ -13,6 +13,7 @@
   - [`AWSElasticDisasterRecoveryFailbackPolicy`](./AWSElasticDisasterRecoveryFailbackPolicy.json)
   - [`AWSAuditManagerAdministratorAccess`](./AWSAuditManagerAdministratorAccess.json)
   - [`AWSElasticDisasterRecoveryRecoveryInstancePolicy`](./AWSElasticDisasterRecoveryRecoveryInstancePolicy.json)
+  - [`AWSElasticDisasterRecoveryFailbackInstallationPolicy`](./AWSElasticDisasterRecoveryFailbackInstallationPolicy.json)
   - [`AmazonDevOpsGuruOrganizationsAccess`](./AmazonDevOpsGuruOrganizationsAccess.json)
   - [`AWSElasticDisasterRecoveryConsoleFullAccess`](./AWSElasticDisasterRecoveryConsoleFullAccess.json)
   - [`AWSElasticDisasterRecoveryServiceRolePolicy`](./AWSElasticDisasterRecoveryServiceRolePolicy.json)
