@@ -1,0 +1,38 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "drs:DescribeJobLogItems",
+                        "drs:DescribeJobs",
+                        "drs:DescribeRecoveryInstances",
+                        "drs:DescribeRecoverySnapshots",
+                        "drs:DescribeReplicationConfigurationTemplates",
+                        "drs:DescribeSourceServers",
+                        "drs:GetFailbackReplicationConfiguration",
+                        "drs:GetLaunchConfiguration",
+                        "drs:GetReplicationConfiguration",
+                        "drs:ListTagsForResource"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ec2:DescribeInstances",
+                        "ec2:DescribeLaunchTemplateVersions",
+                        "ec2:DescribeSecurityGroups",
+                        "ec2:DescribeSubnets"
+                    ],
+                    "Resource": "*"
+                }
+            ]
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2021-11-17T10:50:05Z"
+    }
+}
