@@ -1,0 +1,28 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "drs:SendClientMetricsForDrs",
+                        "drs:SendClientLogsForDrs"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "drs:GetChannelCommandsForDrs",
+                        "drs:SendChannelCommandResultForDrs"
+                    ],
+                    "Resource": "*"
+                }
+            ]
+        },
+        "VersionId": "v1",
+        "IsDefaultVersion": true,
+        "CreateDate": "2021-11-17T13:42:23Z"
+    }
+}
