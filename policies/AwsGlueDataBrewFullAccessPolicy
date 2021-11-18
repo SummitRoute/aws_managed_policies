@@ -107,6 +107,51 @@
                 {
                     "Effect": "Allow",
                     "Action": [
+                        "secretsmanager:CreateSecret"
+                    ],
+                    "Resource": "arn:aws:secretsmanager:*:*:secret:AwsGlueDataBrew-*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "kms:GenerateRandom"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "secretsmanager:GetSecretValue"
+                    ],
+                    "Resource": "arn:aws:secretsmanager:*:*:secret:databrew!default-*",
+                    "Condition": {
+                        "ForAnyValue:StringEquals": {
+                            "aws:CalledVia": [
+                                "databrew.amazonaws.com"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "secretsmanager:CreateSecret"
+                    ],
+                    "Resource": "arn:aws:secretsmanager:*:*:secret:databrew!default-*",
+                    "Condition": {
+                        "StringLike": {
+                            "secretsmanager:Name": "databrew!default"
+                        },
+                        "ForAnyValue:StringEquals": {
+                            "aws:CalledVia": [
+                                "databrew.amazonaws.com"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
                         "iam:PassRole"
                     ],
                     "Resource": "arn:aws:iam::*:role/*",
@@ -120,8 +165,8 @@
                 }
             ]
         },
-        "VersionId": "v6",
+        "VersionId": "v7",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-06-30T18:23:37Z"
+        "CreateDate": "2021-11-18T19:37:52Z"
     }
 }

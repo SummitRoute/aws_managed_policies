@@ -88,11 +88,18 @@
                         "lakeformation:GetDataAccess"
                     ],
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "secretsmanager:GetSecretValue"
+                    ],
+                    "Resource": "arn:aws:secretsmanager:*:*:secret:databrew!default-*"
                 }
             ]
         },
-        "VersionId": "v1",
+        "VersionId": "v2",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-12-04T21:26:50Z"
+        "CreateDate": "2021-11-18T19:44:16Z"
     }
 }
