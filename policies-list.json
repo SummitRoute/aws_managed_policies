@@ -365,12 +365,12 @@
             "PolicyId": "ANPAI62NTGYJB446ACUEA",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/FMSServiceRolePolicy",
             "Path": "/aws-service-role/",
-            "DefaultVersionId": "v20",
+            "DefaultVersionId": "v21",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2018-03-28T23:01:12+00:00",
-            "UpdateDate": "2021-09-30T17:12:33+00:00"
+            "UpdateDate": "2021-11-18T19:05:49+00:00"
         },
         {
             "PolicyName": "AmazonSQSFullAccess",
@@ -5837,12 +5837,12 @@
             "PolicyId": "ANPAZKAPJZG4ACNRIK7M3",
             "Arn": "arn:aws:iam::aws:policy/AwsGlueDataBrewFullAccessPolicy",
             "Path": "/",
-            "DefaultVersionId": "v6",
+            "DefaultVersionId": "v7",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-11-11T16:51:39+00:00",
-            "UpdateDate": "2021-06-30T18:23:37+00:00"
+            "UpdateDate": "2021-11-18T19:37:52+00:00"
         },
         {
             "PolicyName": "AmazonElasticContainerRegistryPublicReadOnly",
