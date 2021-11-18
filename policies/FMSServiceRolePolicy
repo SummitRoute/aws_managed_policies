@@ -61,7 +61,8 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "elasticloadbalancing:ApplySecurityGroupsToLoadBalancer"
+                        "elasticloadbalancing:ApplySecurityGroupsToLoadBalancer",
+                        "elasticloadbalancing:DescribeTags"
                     ],
                     "Resource": "*"
                 },
@@ -524,8 +525,8 @@
                 }
             ]
         },
-        "VersionId": "v20",
+        "VersionId": "v21",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-09-30T17:12:33Z"
+        "CreateDate": "2021-11-18T19:05:49Z"
     }
 }
