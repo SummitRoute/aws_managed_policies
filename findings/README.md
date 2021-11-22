@@ -1,6 +1,6 @@
-## AWS Access Analyzer - Findings - 2021-11-18
+## AWS Access Analyzer - Findings - 2021-11-22
 
-- Policies analyzed: `897`
+- Policies analyzed: `898`
 - Errors: `130`
   - [`AWSElasticDisasterRecoveryReplicationServerPolicy`](./AWSElasticDisasterRecoveryReplicationServerPolicy.json)
   - [`AWSApplicationMigrationVCenterClientPolicy`](./AWSApplicationMigrationVCenterClientPolicy.json)

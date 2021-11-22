@@ -7705,6 +7705,18 @@
             "UpdateDate": "2020-09-18T17:45:47+00:00"
         },
         {
+            "PolicyName": "AmazonGrafanaAthenaAccess",
+            "PolicyId": "ANPAZKAPJZG4GXSPM7QQ7",
+            "Arn": "arn:aws:iam::aws:policy/service-role/AmazonGrafanaAthenaAccess",
+            "Path": "/service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-11-22T17:11:11+00:00",
+            "UpdateDate": "2021-11-22T17:11:11+00:00"
+        },
+        {
             "PolicyName": "IAMAccessAnalyzerReadOnlyAccess",
             "PolicyId": "ANPAZKAPJZG4GY4R3GAPM",
             "Arn": "arn:aws:iam::aws:policy/IAMAccessAnalyzerReadOnlyAccess",
