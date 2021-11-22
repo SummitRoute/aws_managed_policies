@@ -1,7 +1,7 @@
 ## AWS Access Analyzer - Findings - 2021-11-22
 
 - Policies analyzed: `898`
-- Errors: `129`
+- Errors: `128`
   - [`AWSElasticDisasterRecoveryReplicationServerPolicy`](./AWSElasticDisasterRecoveryReplicationServerPolicy.json)
   - [`AWSApplicationMigrationVCenterClientPolicy`](./AWSApplicationMigrationVCenterClientPolicy.json)
   - [`AmazonSageMakerGroundTruthExecution`](./AmazonSageMakerGroundTruthExecution.json)
@@ -21,7 +21,6 @@
   - [`AWSElasticDisasterRecoveryAgentInstallationPolicy`](./AWSElasticDisasterRecoveryAgentInstallationPolicy.json)
   - [`AWSElasticDisasterRecoveryAgentPolicy`](./AWSElasticDisasterRecoveryAgentPolicy.json)
   - [`AmazonLaunchWizard_Fullaccess`](./AmazonLaunchWizard_Fullaccess.json)
-  - [`AWSPurchaseOrdersServiceRolePolicy`](./AWSPurchaseOrdersServiceRolePolicy.json)
 - Sec_Warnings: `11`
   - [`AWSDataPipelineRole`](./AWSDataPipelineRole.json)
   - [`AWSServiceRoleForAmazonEKSNodegroup`](./AWSServiceRoleForAmazonEKSNodegroup.json)
