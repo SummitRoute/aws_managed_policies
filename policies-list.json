@@ -8945,12 +8945,12 @@
             "PolicyId": "ANPAZKAPJZG4KQXTYO5FP",
             "Arn": "arn:aws:iam::aws:policy/AWSPurchaseOrdersServiceRolePolicy",
             "Path": "/",
-            "DefaultVersionId": "v1",
+            "DefaultVersionId": "v2",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-05-06T18:15:47+00:00",
-            "UpdateDate": "2020-05-06T18:15:47+00:00"
+            "UpdateDate": "2021-11-22T20:06:47+00:00"
         },
         {
             "PolicyName": "AmazonHoneycodeTeamAssociationReadOnlyAccess",
