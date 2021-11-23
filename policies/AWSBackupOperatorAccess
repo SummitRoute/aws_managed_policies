@@ -11,7 +11,6 @@
                         "backup:Describe*",
                         "backup:CreateBackupSelection",
                         "backup:DeleteBackupSelection",
-                        "backup:GetRecoveryPointRestoreMetadata",
                         "backup:StartBackupJob",
                         "backup:StartRestoreJob",
                         "backup:StartCopyJob"
@@ -23,7 +22,6 @@
                         "rds:DescribeDBSnapshots",
                         "rds:ListTagsForResource",
                         "rds:DescribeDBInstances",
-                        "rds:describeDBSnapshots",
                         "rds:describeDBEngineVersions",
                         "rds:describeOptionGroups",
                         "rds:describeOrderableDBInstanceOptions",
@@ -158,11 +156,21 @@
                     "Action": "ds:DescribeDirectories",
                     "Effect": "Allow",
                     "Resource": "*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "backup-gateway:ListGateways",
+                        "backup-gateway:ListHypervisors",
+                        "backup-gateway:ListTagsForResource",
+                        "backup-gateway:ListVirtualMachines"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-03-10T18:31:50Z"
+        "CreateDate": "2021-11-23T22:00:28Z"
     }
 }

@@ -246,11 +246,33 @@
                             "iam:AWSServiceName": "backup.amazonaws.com"
                         }
                     }
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "backup-gateway:AssociateGatewayToServer",
+                        "backup-gateway:CreateGateway",
+                        "backup-gateway:DeleteGateway",
+                        "backup-gateway:DeleteHypervisor",
+                        "backup-gateway:DisassociateGatewayFromServer",
+                        "backup-gateway:ImportHypervisorConfiguration",
+                        "backup-gateway:ListGateways",
+                        "backup-gateway:ListHypervisors",
+                        "backup-gateway:ListTagsForResource",
+                        "backup-gateway:ListVirtualMachines",
+                        "backup-gateway:PutMaintenanceStartTime",
+                        "backup-gateway:TagResource",
+                        "backup-gateway:TestHypervisorConfiguration",
+                        "backup-gateway:UntagResource",
+                        "backup-gateway:UpdateGatewayInformation",
+                        "backup-gateway:UpdateHypervisor"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v8",
+        "VersionId": "v9",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-07-05T23:28:54Z"
+        "CreateDate": "2021-11-23T22:00:22Z"
     }
 }

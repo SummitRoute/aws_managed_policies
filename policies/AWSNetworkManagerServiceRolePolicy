@@ -21,14 +21,15 @@
                         "ec2:SearchTransitGatewayRoutes",
                         "ec2:DescribeTransitGatewayPeeringAttachments",
                         "ec2:DescribeTransitGatewayConnects",
-                        "ec2:DescribeTransitGatewayConnectPeers"
+                        "ec2:DescribeTransitGatewayConnectPeers",
+                        "ec2:DescribeRegions"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-06-07T16:18:24Z"
+        "CreateDate": "2021-11-23T21:38:47Z"
     }
 }
