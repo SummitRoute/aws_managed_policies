@@ -174,11 +174,35 @@
                     "Effect": "Allow",
                     "Action": "dynamodb:DeleteBackup",
                     "Resource": "arn:aws:dynamodb:*:*:table/*/backup/*"
+                },
+                {
+                    "Sid": "BackupGateway",
+                    "Effect": "Allow",
+                    "Action": [
+                        "backup-gateway:ListVirtualMachines"
+                    ],
+                    "Resource": "*"
+                },
+                {
+                    "Sid": "ListTagsForBackupGateway",
+                    "Effect": "Allow",
+                    "Action": [
+                        "backup-gateway:ListTagsForResource"
+                    ],
+                    "Resource": "arn:aws:backup-gateway:*:*:vm/*"
+                },
+                {
+                    "Sid": "ListTagsForDynamoDBTable",
+                    "Effect": "Allow",
+                    "Action": [
+                        "dynamodb:ListTagsOfResource"
+                    ],
+                    "Resource": "arn:aws:dynamodb:*:*:table/*"
                 }
             ]
         },
-        "VersionId": "v5",
-        "IsDefaultVersion": false,
-        "CreateDate": "2021-10-20T18:16:29Z"
+        "VersionId": "v6",
+        "IsDefaultVersion": true,
+        "CreateDate": "2021-11-23T22:00:49Z"
     }
 }

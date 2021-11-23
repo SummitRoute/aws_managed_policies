@@ -186,11 +186,27 @@
                     "Effect": "Allow",
                     "Action": "ds:DescribeDirectories",
                     "Resource": "*"
+                },
+                {
+                    "Sid": "DynamoDBRestorePermissions",
+                    "Effect": "Allow",
+                    "Action": [
+                        "dynamodb:RestoreTableFromAwsBackup"
+                    ],
+                    "Resource": "arn:aws:dynamodb:*:*:table/*"
+                },
+                {
+                    "Sid": "GatewayRestorePermissions",
+                    "Effect": "Allow",
+                    "Action": [
+                        "backup-gateway:Restore"
+                    ],
+                    "Resource": "arn:aws:backup-gateway:*:*:hypervisor/*"
                 }
             ]
         },
-        "VersionId": "v9",
-        "IsDefaultVersion": false,
-        "CreateDate": "2021-05-25T00:02:53Z"
+        "VersionId": "v10",
+        "IsDefaultVersion": true,
+        "CreateDate": "2021-11-23T22:00:41Z"
     }
 }
