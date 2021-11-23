@@ -1,9 +1,9 @@
 [
     {
-        "findingDetails": "The service backup-gateway:ListGateways specified in the action does not exist.",
+        "findingDetails": "The action dynamodb:StartAwsBackupJob does not exist.",
         "findingType": "ERROR",
-        "issueCode": "INVALID_SERVICE_IN_ACTION",
-        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "issueCode": "INVALID_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-action",
         "locations": [
             {
                 "path": [
@@ -11,7 +11,7 @@
                         "value": "Statement"
                     },
                     {
-                        "index": 17
+                        "index": 31
                     },
                     {
                         "value": "Action"
@@ -22,21 +22,21 @@
                 ],
                 "span": {
                     "end": {
-                        "column": 2838,
+                        "column": 4383,
                         "line": 1,
-                        "offset": 2838
+                        "offset": 4383
                     },
                     "start": {
-                        "column": 2809,
+                        "column": 4355,
                         "line": 1,
-                        "offset": 2809
+                        "offset": 4355
                     }
                 }
             }
         ]
     },
     {
-        "findingDetails": "The service backup-gateway:ListHypervisors specified in the action does not exist.",
+        "findingDetails": "The service backup-gateway:Backup specified in the action does not exist.",
         "findingType": "ERROR",
         "issueCode": "INVALID_SERVICE_IN_ACTION",
         "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
@@ -47,25 +47,25 @@
                         "value": "Statement"
                     },
                     {
-                        "index": 17
+                        "index": 32
                     },
                     {
                         "value": "Action"
                     },
                     {
-                        "index": 1
+                        "index": 0
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 2872,
+                        "column": 4557,
                         "line": 1,
-                        "offset": 2872
+                        "offset": 4557
                     },
                     "start": {
-                        "column": 2840,
+                        "column": 4534,
                         "line": 1,
-                        "offset": 2840
+                        "offset": 4534
                     }
                 }
             }
@@ -83,35 +83,35 @@
                         "value": "Statement"
                     },
                     {
-                        "index": 17
+                        "index": 32
                     },
                     {
                         "value": "Action"
                     },
                     {
-                        "index": 2
+                        "index": 1
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 2910,
+                        "column": 4595,
                         "line": 1,
-                        "offset": 2910
+                        "offset": 4595
                     },
                     "start": {
-                        "column": 2874,
+                        "column": 4559,
                         "line": 1,
-                        "offset": 2874
+                        "offset": 4559
                     }
                 }
             }
         ]
     },
     {
-        "findingDetails": "The service backup-gateway:ListVirtualMachines specified in the action does not exist.",
+        "findingDetails": "The service backup-gateway does not exist. Use a valid service name.",
         "findingType": "ERROR",
-        "issueCode": "INVALID_SERVICE_IN_ACTION",
-        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "issueCode": "INVALID_SERVICE",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service",
         "locations": [
             {
                 "path": [
@@ -119,25 +119,22 @@
                         "value": "Statement"
                     },
                     {
-                        "index": 17
+                        "index": 32
                     },
                     {
-                        "value": "Action"
-                    },
-                    {
-                        "index": 3
+                        "value": "Resource"
                     }
                 ],
                 "span": {
                     "end": {
-                        "column": 2948,
+                        "column": 4643,
                         "line": 1,
-                        "offset": 2948
+                        "offset": 4643
                     },
                     "start": {
-                        "column": 2912,
+                        "column": 4610,
                         "line": 1,
-                        "offset": 2912
+                        "offset": 4610
                     }
                 }
             }

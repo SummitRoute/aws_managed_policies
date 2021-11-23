@@ -1769,12 +1769,12 @@
             "PolicyId": "ANPAIOOYZSLZZXWFJJ5N2",
             "Arn": "arn:aws:iam::aws:policy/service-role/AWSBackupServiceRolePolicyForBackup",
             "Path": "/service-role/",
-            "DefaultVersionId": "v10",
+            "DefaultVersionId": "v11",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2019-01-10T21:01:28+00:00",
-            "UpdateDate": "2021-04-12T18:07:46+00:00"
+            "UpdateDate": "2021-11-23T22:00:34+00:00"
         },
         {
             "PolicyName": "AWSRoboMakerServiceRolePolicy",
@@ -5681,12 +5681,12 @@
             "PolicyId": "ANPAJZCCL6F2WPVOUXZKI",
             "Arn": "arn:aws:iam::aws:policy/service-role/AWSBackupServiceRolePolicyForRestores",
             "Path": "/service-role/",
-            "DefaultVersionId": "v9",
+            "DefaultVersionId": "v10",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2019-01-12T00:23:54+00:00",
-            "UpdateDate": "2021-05-25T00:02:53+00:00"
+            "UpdateDate": "2021-11-23T22:00:41+00:00"
         },
         {
             "PolicyName": "AWSElementalMediaStoreFullAccess",
@@ -8717,12 +8717,12 @@
             "PolicyId": "ANPAZKAPJZG4JXAE7KLRO",
             "Arn": "arn:aws:iam::aws:policy/AmazonConnect_FullAccess",
             "Path": "/",
-            "DefaultVersionId": "v2",
+            "DefaultVersionId": "v3",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-11-20T19:54:21+00:00",
-            "UpdateDate": "2021-07-01T18:41:26+00:00"
+            "UpdateDate": "2021-11-23T22:05:12+00:00"
         },
         {
             "PolicyName": "AWSElementalMediaLiveFullAccess",
@@ -8873,12 +8873,12 @@
             "PolicyId": "ANPAZKAPJZG4KHXVYMY4O",
             "Arn": "arn:aws:iam::aws:policy/AWSBackupOperatorAccess",
             "Path": "/",
-            "DefaultVersionId": "v7",
+            "DefaultVersionId": "v8",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2019-11-18T22:23:17+00:00",
-            "UpdateDate": "2021-03-10T18:31:50+00:00"
+            "UpdateDate": "2021-11-23T22:00:28+00:00"
         },
         {
             "PolicyName": "AWSApplicationAutoscalingLambdaConcurrencyPolicy",
@@ -9329,12 +9329,12 @@
             "PolicyId": "ANPAZKAPJZG4LL52EIPJX",
             "Arn": "arn:aws:iam::aws:policy/AWSBackupFullAccess",
             "Path": "/",
-            "DefaultVersionId": "v8",
+            "DefaultVersionId": "v9",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2019-11-18T22:21:52+00:00",
-            "UpdateDate": "2021-07-05T23:28:54+00:00"
+            "UpdateDate": "2021-11-23T22:00:22+00:00"
         },
         {
             "PolicyName": "AmazonDevOpsGuruServiceRolePolicy",
@@ -10301,12 +10301,12 @@
             "PolicyId": "ANPAZKAPJZG4ONJBD4ZY2",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/AWSBackupServiceLinkedRolePolicyForBackup",
             "Path": "/aws-service-role/",
-            "DefaultVersionId": "v5",
+            "DefaultVersionId": "v6",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-06-02T23:08:40+00:00",
-            "UpdateDate": "2021-10-20T18:16:29+00:00"
+            "UpdateDate": "2021-11-23T22:00:49+00:00"
         },
         {
             "PolicyName": "AmazonManagedBlockchainConsoleFullAccess",

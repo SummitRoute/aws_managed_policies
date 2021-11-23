@@ -1,0 +1,578 @@
+[
+    {
+        "findingDetails": "The service backup-gateway:AssociateGatewayToServer specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 25
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 0
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 3966,
+                        "line": 1,
+                        "offset": 3966
+                    },
+                    "start": {
+                        "column": 3925,
+                        "line": 1,
+                        "offset": 3925
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service backup-gateway:CreateGateway specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 25
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 1
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 3998,
+                        "line": 1,
+                        "offset": 3998
+                    },
+                    "start": {
+                        "column": 3968,
+                        "line": 1,
+                        "offset": 3968
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service backup-gateway:DeleteGateway specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 25
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 2
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 4030,
+                        "line": 1,
+                        "offset": 4030
+                    },
+                    "start": {
+                        "column": 4000,
+                        "line": 1,
+                        "offset": 4000
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service backup-gateway:DeleteHypervisor specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 25
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 3
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 4065,
+                        "line": 1,
+                        "offset": 4065
+                    },
+                    "start": {
+                        "column": 4032,
+                        "line": 1,
+                        "offset": 4032
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service backup-gateway:DisassociateGatewayFromServer specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 25
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 4
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 4113,
+                        "line": 1,
+                        "offset": 4113
+                    },
+                    "start": {
+                        "column": 4067,
+                        "line": 1,
+                        "offset": 4067
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service backup-gateway:ImportHypervisorConfiguration specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 25
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 5
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 4161,
+                        "line": 1,
+                        "offset": 4161
+                    },
+                    "start": {
+                        "column": 4115,
+                        "line": 1,
+                        "offset": 4115
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service backup-gateway:ListGateways specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 25
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 6
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 4192,
+                        "line": 1,
+                        "offset": 4192
+                    },
+                    "start": {
+                        "column": 4163,
+                        "line": 1,
+                        "offset": 4163
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service backup-gateway:ListHypervisors specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 25
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 7
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 4226,
+                        "line": 1,
+                        "offset": 4226
+                    },
+                    "start": {
+                        "column": 4194,
+                        "line": 1,
+                        "offset": 4194
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service backup-gateway:ListTagsForResource specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 25
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 8
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 4264,
+                        "line": 1,
+                        "offset": 4264
+                    },
+                    "start": {
+                        "column": 4228,
+                        "line": 1,
+                        "offset": 4228
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service backup-gateway:ListVirtualMachines specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 25
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 9
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 4302,
+                        "line": 1,
+                        "offset": 4302
+                    },
+                    "start": {
+                        "column": 4266,
+                        "line": 1,
+                        "offset": 4266
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service backup-gateway:PutMaintenanceStartTime specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 25
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 10
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 4344,
+                        "line": 1,
+                        "offset": 4344
+                    },
+                    "start": {
+                        "column": 4304,
+                        "line": 1,
+                        "offset": 4304
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service backup-gateway:TagResource specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 25
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 11
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 4374,
+                        "line": 1,
+                        "offset": 4374
+                    },
+                    "start": {
+                        "column": 4346,
+                        "line": 1,
+                        "offset": 4346
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service backup-gateway:TestHypervisorConfiguration specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 25
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 12
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 4420,
+                        "line": 1,
+                        "offset": 4420
+                    },
+                    "start": {
+                        "column": 4376,
+                        "line": 1,
+                        "offset": 4376
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service backup-gateway:UntagResource specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 25
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 13
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 4452,
+                        "line": 1,
+                        "offset": 4452
+                    },
+                    "start": {
+                        "column": 4422,
+                        "line": 1,
+                        "offset": 4422
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service backup-gateway:UpdateGatewayInformation specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 25
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 14
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 4495,
+                        "line": 1,
+                        "offset": 4495
+                    },
+                    "start": {
+                        "column": 4454,
+                        "line": 1,
+                        "offset": 4454
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "findingDetails": "The service backup-gateway:UpdateHypervisor specified in the action does not exist.",
+        "findingType": "ERROR",
+        "issueCode": "INVALID_SERVICE_IN_ACTION",
+        "learnMoreLink": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.html#access-analyzer-reference-policy-checks-error-invalid-service-in-action",
+        "locations": [
+            {
+                "path": [
+                    {
+                        "value": "Statement"
+                    },
+                    {
+                        "index": 25
+                    },
+                    {
+                        "value": "Action"
+                    },
+                    {
+                        "index": 15
+                    }
+                ],
+                "span": {
+                    "end": {
+                        "column": 4530,
+                        "line": 1,
+                        "offset": 4530
+                    },
+                    "start": {
+                        "column": 4497,
+                        "line": 1,
+                        "offset": 4497
+                    }
+                }
+            }
+        ]
+    }
+]

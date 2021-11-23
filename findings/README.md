@@ -1,11 +1,12 @@
 ## AWS Access Analyzer - Findings - 2021-11-23
 
 - Policies analyzed: `901`
-- Errors: `128`
+- Errors: `152`
   - [`AWSElasticDisasterRecoveryReplicationServerPolicy`](./AWSElasticDisasterRecoveryReplicationServerPolicy.json)
   - [`AWSApplicationMigrationVCenterClientPolicy`](./AWSApplicationMigrationVCenterClientPolicy.json)
   - [`AmazonSageMakerGroundTruthExecution`](./AmazonSageMakerGroundTruthExecution.json)
   - [`AWSQuicksightAthenaAccess`](./AWSQuicksightAthenaAccess.json)
+  - [`AWSBackupOperatorAccess`](./AWSBackupOperatorAccess.json)
   - [`AmazonInspector2ServiceRolePolicy`](./AmazonInspector2ServiceRolePolicy.json)
   - [`AmazonEKSConnectorServiceRolePolicy`](./AmazonEKSConnectorServiceRolePolicy.json)
   - [`AWSApplicationMigrationReadOnlyAccess`](./AWSApplicationMigrationReadOnlyAccess.json)
@@ -16,7 +17,9 @@
   - [`AWSElasticDisasterRecoveryRecoveryInstancePolicy`](./AWSElasticDisasterRecoveryRecoveryInstancePolicy.json)
   - [`AWSElasticDisasterRecoveryFailbackInstallationPolicy`](./AWSElasticDisasterRecoveryFailbackInstallationPolicy.json)
   - [`AmazonDevOpsGuruOrganizationsAccess`](./AmazonDevOpsGuruOrganizationsAccess.json)
+  - [`AWSBackupServiceRolePolicyForBackup`](./AWSBackupServiceRolePolicyForBackup.json)
   - [`AWSElasticDisasterRecoveryConsoleFullAccess`](./AWSElasticDisasterRecoveryConsoleFullAccess.json)
+  - [`AWSBackupFullAccess`](./AWSBackupFullAccess.json)
   - [`AWSElasticDisasterRecoveryServiceRolePolicy`](./AWSElasticDisasterRecoveryServiceRolePolicy.json)
   - [`AWSElasticDisasterRecoveryAgentInstallationPolicy`](./AWSElasticDisasterRecoveryAgentInstallationPolicy.json)
   - [`AWSElasticDisasterRecoveryAgentPolicy`](./AWSElasticDisasterRecoveryAgentPolicy.json)
@@ -31,12 +34,11 @@
   - [`AdministratorAccess`](./AdministratorAccess.json)
   - [`AmazonElasticMapReduceFullAccess`](./AmazonElasticMapReduceFullAccess.json)
   - [`AWSElasticBeanstalkService`](./AWSElasticBeanstalkService.json)
-- Suggestions: `41`
+- Suggestions: `39`
   - [`AWSDataPipelineRole`](./AWSDataPipelineRole.json)
   - [`AmazonRDSCustomServiceRolePolicy`](./AmazonRDSCustomServiceRolePolicy.json)
   - [`AmazonAppStreamServiceAccess`](./AmazonAppStreamServiceAccess.json)
   - [`AmazonRedshiftAllCommandsFullAccess`](./AmazonRedshiftAllCommandsFullAccess.json)
-  - [`AWSBackupOperatorAccess`](./AWSBackupOperatorAccess.json)
   - [`SecurityAudit`](./SecurityAudit.json)
   - [`SupportUser`](./SupportUser.json)
   - [`DataScientist`](./DataScientist.json)
