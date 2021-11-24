@@ -8245,6 +8245,18 @@
             "UpdateDate": "2020-01-21T19:56:53+00:00"
         },
         {
+            "PolicyName": "AWSECRPullThroughCacheServiceRolePolicy",
+            "PolicyId": "ANPAZKAPJZG4IL7YZMW4H",
+            "Arn": "arn:aws:iam::aws:policy/aws-service-role/AWSECRPullThroughCacheServiceRolePolicy",
+            "Path": "/aws-service-role/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 0,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2021-11-23T23:37:27+00:00",
+            "UpdateDate": "2021-11-23T23:37:27+00:00"
+        },
+        {
             "PolicyName": "AWSAppMeshFullAccess",
             "PolicyId": "ANPAZKAPJZG4ILVZ5BWFU",
             "Arn": "arn:aws:iam::aws:policy/AWSAppMeshFullAccess",
