@@ -9353,12 +9353,12 @@
             "PolicyId": "ANPAZKAPJZG4LOGPH224B",
             "Arn": "arn:aws:iam::aws:policy/aws-service-role/AmazonDevOpsGuruServiceRolePolicy",
             "Path": "/aws-service-role/",
-            "DefaultVersionId": "v4",
+            "DefaultVersionId": "v5",
             "AttachmentCount": 0,
             "PermissionsBoundaryUsageCount": 0,
             "IsAttachable": true,
             "CreateDate": "2020-12-01T10:24:42+00:00",
-            "UpdateDate": "2021-11-15T23:26:01+00:00"
+            "UpdateDate": "2021-11-24T01:23:43+00:00"
         },
         {
             "PolicyName": "AWSElasticBeanstalkRoleWorkerTier",
