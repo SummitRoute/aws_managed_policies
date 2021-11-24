@@ -27,8 +27,6 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "kms:DescribeKey",
-                        "kms:RetireGrant",
                         "kms:CreateGrant"
                     ],
                     "Resource": "*",
@@ -41,14 +39,15 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "kms:DescribeKey"
+                        "kms:DescribeKey",
+                        "kms:ListAliases"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2021-05-05T16:46:56Z"
+        "CreateDate": "2021-11-24T21:00:13Z"
     }
 }
