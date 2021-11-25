@@ -34,6 +34,7 @@
     "AmazonConnectFullAccess",
     "AmazonApplicationWizardFullaccess",
     "AWSRoboMakerFullAccess",
+    "AWSECRPullThroughCacheServiceRolePolicy",
     "AWSLambdaReadOnlyAccess",
     "AWSBackupAdminPolicy"
 ]

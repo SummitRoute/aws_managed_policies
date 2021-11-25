@@ -1,6 +1,6 @@
 ## AWS Access Analyzer - Findings - 2021-11-25
 
-- Policies analyzed: `902`
+- Policies analyzed: `901`
 - Errors: `158`
   - [`AWSBackupServiceLinkedRolePolicyForBackup`](./AWSBackupServiceLinkedRolePolicyForBackup.json)
   - [`AWSElasticDisasterRecoveryReplicationServerPolicy`](./AWSElasticDisasterRecoveryReplicationServerPolicy.json)
@@ -73,7 +73,7 @@
   - [`AmazonLaunchWizard_Fullaccess`](./AmazonLaunchWizard_Fullaccess.json)
 - Fails: `1`
   - [`AWSSupportServiceRolePolicy`](./AWSSupportServiceRolePolicy.json)
-- Deprecated: `37`
+- Deprecated: `38`
   - `AWS_Config_Role`
   - `CheesepuffsServiceRolePolicy`
   - `AWSLambdaReplicatorInternal`
@@ -109,5 +109,6 @@
   - `AmazonConnectFullAccess`
   - `AmazonApplicationWizardFullaccess`
   - `AWSRoboMakerFullAccess`
+  - `AWSECRPullThroughCacheServiceRolePolicy`
   - `AWSLambdaReadOnlyAccess`
   - `AWSBackupAdminPolicy`
